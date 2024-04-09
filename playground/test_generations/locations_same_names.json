@@ -1,0 +1,282 @@
+[
+    {
+        "name": "Deus Data Dome",
+        "description": "Pulsating with terabytes of streaming data, the Deus Data Dome is envisioned as the cerebral cortex of the Neon Nexus. Standing apart, it's a cybernetic cathedral for the ardent disciples of data religiously coding amidst the steady hum of servers. Illuminated by the ethereal glow of countless screens, meticulously safeguarded and monitored by an army of corporate sentinels and AI gatekeepers.",
+        "connections": {
+            "west": "Neon Nexus"
+        },
+        "travel_descriptions": {
+            "west": "Leaving behind the humming servers and glowing screens of the Deus Data Dome, you traverse back to the sprawling Neon Nexus. As you tread the broken data lanes and murky alleyways littered with corporate espionage and rogue AI, the vibrant neon lights guide you back to the towering jungle of glass and concrete that forms the backbone of the Nexus. Each step you take echoes with the ceaseless rhythm of the heart of the cybernetics and mega-corporations."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Circuit Bazaar",
+        "description": "A thriving hub of trade in the belly of the nexus, Circuit Bazaar never sleeps, echoing with discordant symphony of vendors selling illicit tech, valuable schematics, rare components, and dark-web secrets. The cybernetic cornucopia is always a hotspot for rumors, shady dealings, and whispers of rebellion.",
+        "connections": {
+            "north": "Neon Nexus",
+            "down": "Data Haven"
+        },
+        "travel_descriptions": {
+            "north": "Pushing past the stentorian bustle of the Circuit Bazaar, you start your journey northwards. You travel against the stream of the crowd, heading back to the towering monuments of technology at the heart of the city. Before long, the intimidating skyscrapers and glowing billboards of the Neon Nexus come into view, signalling your return to the heart of the sprawling cyber metropolis.",
+            "down": "Leaving the constant buzz of the Circuit Bazaar, you delve deeper into the belly of the nexus. As you venture south, the dazzling lights and vendor cries recede, replaced by the low hum of computer networks and hushed whispers. Soon you find yourself standing before the enigmatic realm of the Data Haven, the undercurrent pulse of data streams seeping into your senses."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "System Sprawl",
+        "description": "The residential core of the Neon Nexus, System Sprawl is a juxtaposition of towering deluxe apartments for the corporate elite and shadowy makeshift habitats of the impoverished coders. A potpourri of lifestyles, marked by urban decay and opulence, and veiled under the dystopian neon.",
+        "connections": {
+            "south": "Neon Nexus",
+            "in": "Cyber Drifter's Alley",
+            "up": "Sky Vista Deluxe Apartments"
+        },
+        "travel_descriptions": {
+            "south": "Leaving behind the quieter ambiance of System Sprawl, you begin your journey south. Soon enough, the domestic glow of residential buildings gives way to the formidable skyscrapers of the Neon Nexus. The city\u2019s heartbeat grows stronger with each step, the flashing neon lights intensifying, symbolizing your reentry into the electric wilderness of the metropolis.",
+            "in": "Leaving the expanse of System Sprawl behind, you venture into the labyrinthine network of Cyber Drifter's Alley. The air becomes heavier with the thrum of illicit tech and low conversations, the neon glow of the residential district receding as you delve deeper into the hacker's haven.",
+            "up": "Leaving the grimy, neon-lit streets of System Sprawl, you approach the glistening, glass-fronted facade of Sky Vista Deluxe Apartments. Ascending in the high-speed elevator, you leave behind the chaotic cityscape and emerge into a world of opulence and tranquility, the bustling heart of the city now just a muted rumble far below."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Neurolink Nooks",
+        "description": "Mysterious alleyways branching off from the main streets, Neurolink Nooks are notorious for forbidden Digital-Delves and illegal Memory-Markets. Here, knowledge and experience are traded as data, and those desperate enough risk their sanity spiraling down the data-hallucinations.",
+        "connections": {
+            "out": "Neon Nexus",
+            "in": "Digital-Delve X13"
+        },
+        "travel_descriptions": {
+            "out": "Stepping back into the harsh, artificial glow of the Neon Nexus, you breathe a sigh of relief as you leave the whispering shadows of the Neurolink Nooks behind. As you return to the main streets, you can feel the comforting hum of the bustling city life consuming you once again.",
+            "in": "Turning away from the chaotic frenzy of the Neurolink Nooks, you step through the unassuming entrance of Digital-Delve X13. You're instantly immersed in an entirely different environment, the relentless intensity and grit of the Nooks giving way to the rhythmic hum of computer servers and the pulsating rhythm of electronica. Here, amongst hackers and data-divers, you are one step closer to the pulse of the digital world, the sparks of ambition and tension electrifying the air."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Etherweb Entrypoint",
+        "description": "Etherweb Entrypoint, a matrix of quantum servers, is where reality becomes blurred. Digital Avatars navigate the simulacrum, hunting secrets, engaging in silent wars, and covert deals, away from prying corporate eyes.",
+        "connections": {
+            "in": "Neon Nexus"
+        },
+        "travel_descriptions": {
+            "in": "Extricating yourself from the whirlpool of data and secrets of the Etherweb Entrypoint, you launch yourself back into the Neon Nexus. The cold, precise logic of the digital realm is replaced by the warm glow of neon lights, the feeling of cool metal under your fingers, and the familiar sounds and smells of the technological jungle you call home."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Subterra Slums",
+        "description": "Hidden beneath the gleaming skyscrapers, subterra slums are home to fringe-dwellers disconnected from the grid. Cast away in the shadows, they have created their own tech-jungle, a world unseen but slowly growing in power.",
+        "connections": {
+            "up": "Neon Nexus"
+        },
+        "travel_descriptions": {
+            "up": "Ascending from the Subterra Slums, you navigate the labyrinth of weathered buildings and murky paths. The faint flickering of neon in the distance grows brighter with each step, as the ethereal hum of the Nexus gradually drowns out the voices of the slums. You emerge back into the vibrant neon chaos of the Neon Nexus, once again ready to face the thriving metropolis teetering on dystopia and utopia."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Skytouch Outpost",
+        "description": "Skytouch Outpost is the highest point in Neon Nexus. Towering beyond the clouds, it's a symbol of corporate supremacy, offering a panoramic view of the neon forests below and the vast, starry expanse above.",
+        "connections": {
+            "down": "Neon Nexus",
+            "east": "The Skytouched Spire"
+        },
+        "travel_descriptions": {
+            "down": "Starting from Skytouch Outpost, the echoing silence of heights guiding you, you descend. Leaving the celestial expanse, you feel the ghostly quiet slowly giving way to the frenetic energy of the Neon Nexus. Traversing the length of the mighty skyscrapers, you feel the power of the nexus seeping back in. The ground seems to pulse beneath your feet, electricity crackling in the air, until finally, you step back onto the hauntingly vibrant realm of the Neon Nexus, once more joining the ebb and flow of cybernetic life.",
+            "east": "Leaving the Skytouch Outpost, you move towards the Skytouched Spire. Crossing the sleek glass Skybridge, you feel the pulse of energy of the Neon Nexus beat below your feet. The Spire's neon lights rise to meet you, mimicking the stars glistening above. You ascend towards corporate grandeur and the unknown dangers that wait within the Spire."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Echoing Archives",
+        "description": "Buried deep beneath the surface is the Echoing Archives, a warehouse of the old world's knick-knacks and knowledge. Guarded by relics of the past, it echoes with the whispers of a bygone era, a treasure trove for those daring to delve into history.",
+        "connections": {
+            "east": "Neon Nexus"
+        },
+        "travel_descriptions": {
+            "east": "Leaving the Echoing Archives behind, you begin your journey west. The whispers of historical relics subtly give way to the distant hum of the Neon Nexus. The further you journey, the stronger becomes the electronic vibrance of the metropolis. As the strobe of neon lights hits your eyes and bustling noises fill your ears, you know you've arrived back at the heart of the digital city."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Neon Nexus",
+        "description": "The heart of the sprawling cybernetics and mega-corporations lies the Neon Nexus, a searing expanse of electric vibrancy and shadowy precincts. Skyscrapers loom like giants, their glass facades bathed in the artificial glow of neon, casting long, wavering shadows that curl like serpents in the labyrinthine streets below. Holographic billboards flicker with faceless promises of a better future, their glare piercing the perpetual night. It's a technological jungle, where the concrete and glass jungle towers over the old, forgotten world. Be it the unseen data lanes running through the Etherweb or the murky alleyways, it's a hunting ground for hackers, corporate spies, and rogue AI, each vying for control and survival. It's a place of dreams and despair, opportunities and uncertainties, safety and danger. A world teetering on the knife-edge of dystopia and utopia.",
+        "connections": {
+            "east": "Deus Data Dome",
+            "south": "Circuit Bazaar",
+            "north": "System Sprawl",
+            "in": "Neurolink Nooks",
+            "out": "Etherweb Entrypoint",
+            "down": "Subterra Slums",
+            "up": "Skytouch Outpost",
+            "west": "Echoing Archives"
+        },
+        "travel_descriptions": {
+            "east": "Walking through the labyrinthine pathways and under the towering skyscrapers of the Neon Nexus, the glow of neon lights guiding your path, you eventually reach the Deus Data Dome. It sits like a cybernetic cathedral in the heart of this electric wilderness, its screens illuminating the surrounding area with an ethereal glow. Each step brings you closer to the humming beat of the servers that mark the heartbeat of the Nexus.",
+            "south": "Pushing through the teeming crowds and the hustle of the Neon Nexus, you steer yourself southwards, leaving behind the towering skyscrapers and their glowing billboards. You move ever deeper into the shadow-choked streets until you eventually find yourself at the Circuit Bazaar. The murmur of voices and clatter of cybernetic components immediately hit your ears, marking your arrival at the humming heart of trade activity.",
+            "north": "Moving away from the pulsing Neon Nexus, you navigate through its labyrinthine streets. As you walk, the glaring neon lights begin to dwindle, replaced instead by the warm glow emanating from residential complexes. This quieter, though no less vibrant neighborhood is the echo of the bustling city - The System Sprawl. It's a sprawling expanse where countless lives coexist behind myriad windows, each pane a vignette of life in this cybernetic metropolis.",
+            "in": "Turning away from the artificial neon glow and toward the alleyways, you veer off the main labyrinthine pathways of the Neon Nexus. You delve deeper into the eerie silence of the Neurolink Nooks. As you tread carefully through the winding, narrow pathways, you can feel the hairs on your neck prickling with the unseen dangers lurking in the shadows.",
+            "out": "Leaving the searing electric lights of the Neon Nexus behind, you move towards the Etherweb Entrypoint, stepping out of the physical world into a realm where data is the only reality. The sky-high skyscrapers and neon billboards fade away as your senses adjust to the pulsating rhythm of flowing information, the air around growing electric with the power of quantum servers.",
+            "down": "Descending from the vibrant and bustling Neon Nexus, you swiftly bypass the maze of alleyways and dimly lit streets. Gradually, the hum and electric glow of cybernetics fade into ghostly echoes, replaced by the eerier atmosphere of the Subterra Slums. As you journey deeper into the subterranean world, the forgotten and fringe-dwellers disconnected from the grid surround you, proving you've traded the technological jungle for a different kind of survival.",
+            "up": "Ascending from the heart of Neon Nexus, you make your way through the towering skyscrapers, their glass facades reflecting the neon glow. You journey into the inky sky, leaving the electric wilderness for the pristine solitude of the heights. Slowly, the pulsating energy of the nexus diminishes, replaced by the serenity of the unseen heights. Moving within these gigantic metallic entities, you finally reach the Skytouch Outpost. Here, high above the chaos of the neon jungle, you revel in the spectacular panorama of the cybernetic forest beneath and the boundless starry expanse above.",
+            "west": "You leave the Neon Nexus, passing through the maze-like streets, with neon lights flickering off tall skyscrapers. As you pursue your trail west, the vibrant metropolis gradually gives way to a quiet stillness. Finally, you reach the Echoing Archives. The contrast is stark. The neon glow is replaced by the softer luminescence of ancient artefacts, each echoing tales from the old world."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Data Haven",
+        "description": "Beneath the neon skyline and towering constructs of Circuit Bazaar, a hidden realm exists. Dimly lit and ever-vigilant, the Data Haven is a sanctuary for hackers, data miners, and informants. Here underground networks intersect, guarded secrets are traded, and untraceable digital transactions are the currency. Glowing interface terminals, whispering data streams, and echoes of hushed discussions fill the air, creating a palpable sense of mystique and tension.",
+        "connections": {
+            "up": "Circuit Bazaar"
+        },
+        "travel_descriptions": {
+            "up": "Emerging from the dimly lit Data Haven, you ascend back into the brilliant vibrance of the Circuit Bazaar. As you journey northwards, the whispers of hushed discussions and quiet keyboard strokes fall away, replaced by the euphonic chaos of vendors and the tantalizing promise of cybernetic wonders. Before long, you find yourself once again in the heart of the bustling Bazaar, embraced by the discordant harmony of trade and technology."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Cyber Drifter's Alley",
+        "description": "A labyrinth of narrow back-alleys hidden in the shadow of luxurious towers of System Sprawl. Frequented by hackers and digital drifters, it is brimming with illegal tech stalls, makeshift workshops and dimly-lit bars enveloped in hushed whispers of the latest codes and underground news. The air is filled with the constant hum of machines, and the neon-mirage reflected on the wet asphalt sets an uncanny scene.",
+        "connections": {
+            "out": "System Sprawl"
+        },
+        "travel_descriptions": {
+            "out": "Emerging from the humming, clandestine confines of Cyber Drifter's Alley, you find yourself back out in the patchwork urban landscape of the System Sprawl. The air noticeably shifts, becoming cleaner, the maze-like back-alleys giving way to the paradoxically decayed and opulent residential district."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Sky Vista Deluxe Apartments",
+        "description": "Sky Vista Deluxe Apartments serve as the neon-lit beacon of corporate success amidst the sprawling urban labyrinth. With its opulent skyscrapers piercing the smoggy sky, Sky Vista stands dominantly over the System Sprawl, a constant reminder of the overriding corporate presence. Its high-speed elevators, glass-fronted balconies, and walled Zen gardens offer a stark contrast to the street-level grime and chaos.",
+        "connections": {
+            "down": "System Sprawl"
+        },
+        "travel_descriptions": {
+            "down": "Exiting the Deluxe Apartments, you descend in the high-speed elevator, leaving behind the serenity and opulence of Sky Vista. As the elevator descends, the cityscape of System Sprawl grows closer, the neon lights growing brighter and the urban hum intensifying, marking your reentry into the chaotic heart of the Neon Nexus."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Neon Nexus",
+        "description": "The pulsating heart of the city, the Neon Nexus is a network of converging streets bathed in the glow of neon lights. Here, humans and machines coexist in a chaotic ballet of survival and ambition. Mega-screens projecting corporate propaganda loom high above the crowded thoroughfares, their relentless transmissions promising a better tomorrow amid a reality that suggests otherwise.",
+        "connections": {
+            "in": "Neurolink Nooks"
+        },
+        "travel_descriptions": {
+            "in": "Leaving behind the buzzing noise of the Neon Nexus, you wind your way into the secretive corridors of Neurolink Nooks. As the din of the city slowly fades, you suddenly find yourself enveloped in the quiet whispers of the data markets. The familiar glow of neon lights is replaced by the eerie glimmer of illicit data exchanges."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Digital-Delve X13",
+        "description": "An unassuming entrance in the winding alleyways of the Neurolink Nooks leads you to Digital-Delve X13, a safe-house and gathering spot for hackers and data-divers. Here, amid the hum of computer servers and electronica music, information is the ultimate currency, traded, bartered, and sometimes stolen under the pulsating LED lights. The air is heavy with tension and ambition as countless individuals pour over their screens, striving to crack the next big corp firewall or explore the latest digital frontier.",
+        "connections": {
+            "out": "Neurolink Nooks"
+        },
+        "travel_descriptions": {
+            "out": "Leaving the pulsing energy of Digital-Delve X13 behind, you often find yourself bereft by the silencing of the music and the turn of lights-off. As you step outside and immerse back into the grungy expanse of the Neurolink Nooks, information and knowledge echo in your mind - a currency, a product, a liability all at once. The harsh, artificial glow of the Neon Nexus beyond the Nooks is both a promise and a threat, and the shadows of the alleyway whisper with possibility and danger."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Neon Nexus",
+        "description": "The heart and soul of the city, the Neon Nexus is a sprawling network of interconnected digital realms. Towering data columns cast neon shadows that dance in the virtual wind, their surfaces sparkling with millions of sentient data packets. The booming vibrato of techno-music echoes through the shimmering streets, while holographic advertisements flicker and beckon customers to the myriad of techno-bazaars and data dens.",
+        "connections": {
+            "up": "Skytouch Outpost"
+        },
+        "travel_descriptions": {
+            "up": "Beginning your ascent back to Skytouch Outpost from the Neon Nexus, you break away from the pulsating rhythm of the city. As you climb, the electric hum of the Nexus fades into a distant echo. The radiant neon lights slowly give way to the infinite expanse of the cosmic sky above. The solitude of the heights envelops you, signifying your return to Skytouch Outpost. From here, standing above the clouds, you take one last look at the vivid neon web that is the Neon Nexus, before turning your gaze upwards to the tranquility of the stars."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "The Skytouched Spire",
+        "description": "Connected to the Skytouch Outpost by a sleek glass Skybridge, the Skytouched Spire is a symbol of the Corporation's power and grandeur. As you approach, you can't help but gape at the colossal structure, its neon lights glistening against the black of the night. The Spire's uppermost levels are populated by the Corporate elite, while its lower levels serve as the detention area for data thieves and cybercriminals.",
+        "connections": {
+            "west": "Skytouch Outpost"
+        },
+        "travel_descriptions": {
+            "west": "Departing from the ethos of power and grandeur encapsulated in the Skytouched Spire, you cross the glistening Skybridge once more, facing towards the Skytouch Outpost. The starry expanse above welcomes you back as you descend towards the soothing serenity of the outpost, leaving behind the pulsating neon lights and whispering dangers of the Spire. The magnificent view of Neon Nexus beneath you makes the journey worthwhile, making you feel a part of the cybernetic life once more."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    }
+]

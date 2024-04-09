@@ -1,0 +1,26 @@
+[
+    {
+        "name": "The Orbital Observatory",
+        "description": "Located in the skies of the Neon Nexus, this futuristic observatory is not only for star-gazing but also provides a vantage point to monitor the activities of the populated city below. It's a blueprint of advanced technology where celestial and urban surveillance integrate, with AI-guided telescopes projecting holographic maps and real-time data. The floor illuminates with soft electroluminescent lights, drawing attention to the constellation patterns etched into the polished steel deck.",
+        "connections": {},
+        "travel_descriptions": {},
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "The Parallax Pinnacle",
+        "description": "Perched on the border of the stratosphere, the Parallax Pinnacle is the nexus between the terrestrial and extraterrestrial. It boasts a blend of structural audacity and technological elegance, serving as a launchpad for nano-satellites and a teleport station for interstellar diplomats. Its dichroic glass panels give an ever-shifting reflection of the city and the cosmos, portraying a symbiosis between nature's vast creativity and humankind's boundless innovation.",
+        "connections": {},
+        "travel_descriptions": {},
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    }
+]

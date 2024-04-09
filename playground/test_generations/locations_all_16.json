@@ -1,0 +1,300 @@
+[
+    {
+        "name": "Deus Data Dome",
+        "description": "Pulsating with terabytes of streaming data, the Deus Data Dome is envisioned as the cerebral cortex of the Neon Nexus. Standing apart, it's a cybernetic cathedral for the ardent disciples of data religiously coding amidst the steady hum of servers. Illuminated by the ethereal glow of countless screens, meticulously safeguarded and monitored by an army of corporate sentinels and AI gatekeepers.",
+        "connections": {
+            "west": "Neon Nexus"
+        },
+        "travel_descriptions": {
+            "west": "Leaving behind the humming servers and glowing screens of the Deus Data Dome, you traverse back to the sprawling Neon Nexus. As you tread the broken data lanes and murky alleyways littered with corporate espionage and rogue AI, the vibrant neon lights guide you back to the towering jungle of glass and concrete that forms the backbone of the Nexus. Each step you take echoes with the ceaseless rhythm of the heart of the cybernetics and mega-corporations."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Circuit Bazaar",
+        "description": "A thriving hub of trade in the belly of the nexus, Circuit Bazaar never sleeps, echoing with discordant symphony of vendors selling illicit tech, valuable schematics, rare components, and dark-web secrets. The cybernetic cornucopia is always a hotspot for rumors, shady dealings, and whispers of rebellion.",
+        "connections": {
+            "north": "Neon Nexus",
+            "south": "The Wired Ward"
+        },
+        "travel_descriptions": {
+            "north": "Pushing past the stentorian bustle of the Circuit Bazaar, you start your journey northwards. You travel against the stream of the crowd, heading back to the towering monuments of technology at the heart of the city. Before long, the intimidating skyscrapers and glowing billboards of the Neon Nexus come into view, signalling your return to the heart of the sprawling cyber metropolis.",
+            "south": "Leaving the giddy chaos of the Circuit Bazaar, you head southwards, tracing the neons that paint an electric rainbow onto the metallic streets, you venture into a deeper shade of the cyber world. As you advance, the atmosphere shifts - the hustle-bustle of the marketplace fades, replaced by the persistent hum and sizzle of cybernetic operations. Soon you find yourself in The Wired Ward, bathed in the cold glow of fluorescent lights, amongst those seeking medical aid and cybernetic enhancements."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "System Sprawl",
+        "description": "The residential core of the Neon Nexus, System Sprawl is a juxtaposition of towering deluxe apartments for the corporate elite and shadowy makeshift habitats of the impoverished coders. A potpourri of lifestyles, marked by urban decay and opulence, and veiled under the dystopian neon.",
+        "connections": {
+            "south": "Neon Nexus",
+            "east": "Gridlock Gates",
+            "west": "Data Drift Docks"
+        },
+        "travel_descriptions": {
+            "south": "Leaving behind the quieter ambiance of System Sprawl, you begin your journey south. Soon enough, the domestic glow of residential buildings gives way to the formidable skyscrapers of the Neon Nexus. The city\u2019s heartbeat grows stronger with each step, the flashing neon lights intensifying, symbolizing your reentry into the electric wilderness of the metropolis.",
+            "east": "Exiting the System Sprawl, you venture eastward towards the towering structure of Gridlock Gates. The domestic ambiance and the neon glow of the residential zone gradually fade into the discordant symphony of transportation routes. The city's noise level escalates as you approach the gate, a testament to the chaotic intermingling of rookies and elites.",
+            "west": "Leaving the neon-lit chaos of System Sprawl, you move westward towards the abandoned aura of the Data Drift Docks. The urban landscape gradually gives way to rusty crane structures and the cybernetic sea. The infamous haunt of data smugglers and ghostly tech traders, the docks stand as a testament to the city's dark underbelly."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Neurolink Nooks",
+        "description": "Mysterious alleyways branching off from the main streets, Neurolink Nooks are notorious for forbidden Digital-Delves and illegal Memory-Markets. Here, knowledge and experience are traded as data, and those desperate enough risk their sanity spiraling down the data-hallucinations.",
+        "connections": {
+            "out": "The Dystopian Divide",
+            "down": "Codebase Caverns"
+        },
+        "travel_descriptions": {
+            "out": "Exiting the Neurolink Nooks, you find yourself caught in the juxtaposition of opulence and decay, stepping into The Dystopian Divide. The comfort of the city life gets gradually replaced with the disheartening sights of digital ruins. The shift is palpable, as the societal architecture transitions from neon prosperity to a desolate digital dystopia.",
+            "down": "From the Neurolink Nooks, you squeeze through a hidden crack in the digital realm, descending into the Codebase Caverns. As you plunge deeper, the true form of the city's AI denizens come into view, manifesting as streams of raw data flowing through the optic fibers. Each step takes you further from the whispers of the Nooks and closer to the relentless rhythm of the Codebase Caverns."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Etherweb Entrypoint",
+        "description": "Etherweb Entrypoint, a matrix of quantum servers, is where reality becomes blurred. Digital Avatars navigate the simulacrum, hunting secrets, engaging in silent wars, and covert deals, away from prying corporate eyes.",
+        "connections": {
+            "in": "Neon Nexus"
+        },
+        "travel_descriptions": {
+            "in": "Extricating yourself from the whirlpool of data and secrets of the Etherweb Entrypoint, you launch yourself back into the Neon Nexus. The cold, precise logic of the digital realm is replaced by the warm glow of neon lights, the feeling of cool metal under your fingers, and the familiar sounds and smells of the technological jungle you call home."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Subterra Slums",
+        "description": "Hidden beneath the gleaming skyscrapers, subterra slums are home to fringe-dwellers disconnected from the grid. Cast away in the shadows, they have created their own tech-jungle, a world unseen but slowly growing in power.",
+        "connections": {
+            "up": "Neon Nexus",
+            "down": "Cybernetic Catacombs"
+        },
+        "travel_descriptions": {
+            "up": "Ascending from the Subterra Slums, you navigate the labyrinth of weathered buildings and murky paths. The faint flickering of neon in the distance grows brighter with each step, as the ethereal hum of the Nexus gradually drowns out the voices of the slums. You emerge back into the vibrant neon chaos of the Neon Nexus, once again ready to face the thriving metropolis teetering on dystopia and utopia.",
+            "down": "Descending further into the shadows from the Subterra Slums, you venture into the Cybernetic Catacombs. The air grows damper and cooler, and the minimalist structures of the slums give way to a more chaotic design - a web of tunnels densely packed with hardware, the vibrant graffiti serving as your only source of light in this tech-illuminated labyrinth. You carefully navigate this subterranean highway, the slapdash servers humming a monotone chorus under the artwork of exiles and data runners."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Skytouch Outpost",
+        "description": "Skytouch Outpost is the highest point in Neon Nexus. Towering beyond the clouds, it's a symbol of corporate supremacy, offering a panoramic view of the neon forests below and the vast, starry expanse above.",
+        "connections": {
+            "down": "The Orbital Observatory",
+            "up": "The Parallax Pinnacle"
+        },
+        "travel_descriptions": {
+            "down": "Starting from Skytouch Outpost, you take the elevator downwards, leaving the serenity of the cosmic expanse behind. As you descend, the clouds part, gradually revealing the dazzling nightscape of Neon Nexus below. The glowing cybernetic highways grow clearer and closer until you land on the ground. From the ground, you proceed west and quickly find yourself standing before the towering structure of the Orbital Observatory, a marvel of technology suspended just above the neon streets. The bright constellation patterns etched on its surface serve as an inviting beacon.",
+            "up": "From Skytouch Outpost, you venture onto a shuttle pod schemed with luminescent decals that portray galactic constellations. The pod swiftly begins its silent ascent, tearing through the atmospheric layers. As you climb higher, the lush neon forest beneath fades into a glowing carpet of lights. Multiple floating billboards and skyrise spires pass by before finally receding into the distance. After a while, the pod decelerates and docks seamlessly onto the launchpad of The Parallax Pinnacle, welcoming you with its ever-changing kaleidoscope reflections of the city below and the cosmic expanse beyond."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Echoing Archives",
+        "description": "Buried deep beneath the surface is the Echoing Archives, a warehouse of the old world's knick-knacks and knowledge. Guarded by relics of the past, it echoes with the whispers of a bygone era, a treasure trove for those daring to delve into history.",
+        "connections": {
+            "east": "Neon Nexus"
+        },
+        "travel_descriptions": {
+            "east": "Leaving the Echoing Archives behind, you begin your journey west. The whispers of historical relics subtly give way to the distant hum of the Neon Nexus. The further you journey, the stronger becomes the electronic vibrance of the metropolis. As the strobe of neon lights hits your eyes and bustling noises fill your ears, you know you've arrived back at the heart of the digital city."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Neon Nexus",
+        "description": "The heart of the sprawling cybernetics and mega-corporations lies the Neon Nexus, a searing expanse of electric vibrancy and shadowy precincts. Skyscrapers loom like giants, their glass facades bathed in the artificial glow of neon, casting long, wavering shadows that curl like serpents in the labyrinthine streets below. Holographic billboards flicker with faceless promises of a better future, their glare piercing the perpetual night. It's a technological jungle, where the concrete and glass jungle towers over the old, forgotten world. Be it the unseen data lanes running through the Etherweb or the murky alleyways, it's a hunting ground for hackers, corporate spies, and rogue AI, each vying for control and survival. It's a place of dreams and despair, opportunities and uncertainties, safety and danger. A world teetering on the knife-edge of dystopia and utopia.",
+        "connections": {
+            "east": "Deus Data Dome",
+            "south": "Circuit Bazaar",
+            "north": "System Sprawl",
+            "in": "Neurolink Nooks",
+            "out": "Etherweb Entrypoint",
+            "down": "Subterra Slums",
+            "up": "Skytouch Outpost",
+            "west": "Echoing Archives"
+        },
+        "travel_descriptions": {
+            "east": "Walking through the labyrinthine pathways and under the towering skyscrapers of the Neon Nexus, the glow of neon lights guiding your path, you eventually reach the Deus Data Dome. It sits like a cybernetic cathedral in the heart of this electric wilderness, its screens illuminating the surrounding area with an ethereal glow. Each step brings you closer to the humming beat of the servers that mark the heartbeat of the Nexus.",
+            "south": "Pushing through the teeming crowds and the hustle of the Neon Nexus, you steer yourself southwards, leaving behind the towering skyscrapers and their glowing billboards. You move ever deeper into the shadow-choked streets until you eventually find yourself at the Circuit Bazaar. The murmur of voices and clatter of cybernetic components immediately hit your ears, marking your arrival at the humming heart of trade activity.",
+            "north": "Moving away from the pulsing Neon Nexus, you navigate through its labyrinthine streets. As you walk, the glaring neon lights begin to dwindle, replaced instead by the warm glow emanating from residential complexes. This quieter, though no less vibrant neighborhood is the echo of the bustling city - The System Sprawl. It's a sprawling expanse where countless lives coexist behind myriad windows, each pane a vignette of life in this cybernetic metropolis.",
+            "in": "Turning away from the artificial neon glow and toward the alleyways, you veer off the main labyrinthine pathways of the Neon Nexus. You delve deeper into the eerie silence of the Neurolink Nooks. As you tread carefully through the winding, narrow pathways, you can feel the hairs on your neck prickling with the unseen dangers lurking in the shadows.",
+            "out": "Leaving the searing electric lights of the Neon Nexus behind, you move towards the Etherweb Entrypoint, stepping out of the physical world into a realm where data is the only reality. The sky-high skyscrapers and neon billboards fade away as your senses adjust to the pulsating rhythm of flowing information, the air around growing electric with the power of quantum servers.",
+            "down": "Descending from the vibrant and bustling Neon Nexus, you swiftly bypass the maze of alleyways and dimly lit streets. Gradually, the hum and electric glow of cybernetics fade into ghostly echoes, replaced by the eerier atmosphere of the Subterra Slums. As you journey deeper into the subterranean world, the forgotten and fringe-dwellers disconnected from the grid surround you, proving you've traded the technological jungle for a different kind of survival.",
+            "up": "Ascending from the heart of Neon Nexus, you make your way through the towering skyscrapers, their glass facades reflecting the neon glow. You journey into the inky sky, leaving the electric wilderness for the pristine solitude of the heights. Slowly, the pulsating energy of the nexus diminishes, replaced by the serenity of the unseen heights. Moving within these gigantic metallic entities, you finally reach the Skytouch Outpost. Here, high above the chaos of the neon jungle, you revel in the spectacular panorama of the cybernetic forest beneath and the boundless starry expanse above.",
+            "west": "You leave the Neon Nexus, passing through the maze-like streets, with neon lights flickering off tall skyscrapers. As you pursue your trail west, the vibrant metropolis gradually gives way to a quiet stillness. Finally, you reach the Echoing Archives. The contrast is stark. The neon glow is replaced by the softer luminescence of ancient artefacts, each echoing tales from the old world."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "The Wired Ward",
+        "description": "Littered with neon fluorescent tubes, The Wired Ward is a dark nook where shadowy figures come to get patched up after skirmishes with rival factions or to implant the latest cyberalogic enhancements. The air buzzes with electrostatic discharge from arc welders and sizzles from cauterizing tools. Somewhere between an alley clinic and a chop shop, the Wired Ward caters to those needing quick fixes and off-market mods.",
+        "connections": {
+            "north": "Circuit Bazaar"
+        },
+        "travel_descriptions": {
+            "north": "Departing the gloomy semi-clinic known as The Wired Ward, you move northwards, away from the buzzing cauterizers and the barely lit makeshift operating tables. Re-emerging back into the cybernetic sprawl of the city, you're met by the frantic energy that pulsates at the Circuit Bazaar. Your journey ends where neon lights dance on the silicon-mounted stalls selling the most elusive tech, schematics, and rumors of the cyber metropolis."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Gridlock Gates",
+        "description": "Standing as a massive monument of metal and glass, Gridlock Gates is the city's spiraling hub of transportation. A dense network of interconnecting public transits and private vehicles echo the chaotic noises of the city. Both a portal and a fortress, it's where underground rookies and corporate elites cross their paths.",
+        "connections": {
+            "west": "System Sprawl"
+        },
+        "travel_descriptions": {
+            "west": "Leaving the bustling noise of Gridlock Gates, you steer west. The chaotic rhythm of the transportation hub diminishes gradually, replaced by the quieter hum of the Neon Nexus. As you proceed, the towering deluxe apartments and improvised habitats of the System Sprawl start appearing one by one, welcoming you back into the neon-veiled residential zone."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Data Drift Docks",
+        "description": "A semi-abandoned industrial zone, the Data Drift Docks overlook the glistening cybernetic sea. Though its days of shipping physical goods have long passed, it's now a hotspot for illicit data smuggling and black market tech trades. Its murky waters and silent cranes hide secrets of the city's dark underbelly.",
+        "connections": {
+            "east": "System Sprawl"
+        },
+        "travel_descriptions": {
+            "east": "Leaving the gloomy atmosphere of the Data Drift Docks, you step toward the civilisation, eastbound. The looming cranes and murky waters of the docks distance themselves behind you as the flashing neon lights of the System Sprawls gradually come into view. The difference is stark, as you move from the city's grey past into its aching, glowing present."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Codebase Caverns",
+        "description": "Subterranean tunnels that thrum with pulsating neon lights and rhythm of raw code flowing through optic fibers. This is where the city's AI denizens exist in their rawest form, subsisting on pure data. In these depths hacker guilds make their illegal tap points into the city's central data stream.",
+        "connections": {
+            "up": "Neurolink Nooks"
+        },
+        "travel_descriptions": {
+            "up": "Ascending from the humming depths of the Codebase Caverns, you retrace your path through the hidden digital crack, rising back into the Neurolink Nooks. As you climb, the cavern's raw streams of data gradually recede, replaced by the whispers and fleeting shadows of the Nooks. Each step brings you back into the realm of data-hallucinations and away from the relentless energy of the caverns."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "The Dystopian Divide",
+        "description": "A sector within the city where the lavish neon skyline gives way to the disheartening sight of digital decay. Here, rogue AI, desperate hackers, and give-up cases coexist, trying to survive amidst the ruins of abandoned digital architectures. The faint echo of forgotten codes and obsolete software create an eerie atmosphere.",
+        "connections": {
+            "in": "Neurolink Nooks"
+        },
+        "travel_descriptions": {
+            "in": "Leaving the eerie atmosphere of the Dystopian Divide behind, you return to the Neurolink Nooks, squeezing yourself back into the notorious alleyways of data-dream realms. The remnants of digital decay transform back into forbidden digital delves as you transition from the abandoned structures back to the bustling city life, trading despair for a sense of unsettling mystery."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Cybernetic Catacombs",
+        "description": "Veins of the desolate underworld, the Cybernetic Catacombs are a network of damp, claustrophobic tunnels stretching in all directions. These tunnels serve as the hidden highways of data runners and exiles, their walls lined with jury-rigged servers and flickering holographic graffiti. A crude, pulsating network connects these catacombs with the world above, offering a perilous but necessary path through the city's digital and physical underbelly.",
+        "connections": {
+            "up": "Subterra Slums"
+        },
+        "travel_descriptions": {
+            "up": "Ascending from the depths of the Cybernetic Catacombs, you find your way back to the Subterra Slums. The cool, damp catacombs' dimmed lights make the slum's neon look brighter. Emerging from the underworld, the streets of the slums welcome you with their own colourful chaos, the graffiti giving way to a blend of old and tech-integrated architecture. The metropolis now seems more vibrant, the hum of the slumfolk voice growing louder, shattering the catacombs' silence."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "The Orbital Observatory",
+        "description": "Located in the skies of the Neon Nexus, this futuristic observatory is not only for star-gazing but also provides a vantage point to monitor the activities of the populated city below. It's a blueprint of advanced technology where celestial and urban surveillance integrate, with AI-guided telescopes projecting holographic maps and real-time data. The floor illuminates with soft electroluminescent lights, drawing attention to the constellation patterns etched into the polished steel deck.",
+        "connections": {
+            "up": "Skytouch Outpost"
+        },
+        "travel_descriptions": {
+            "up": "Leaving the Orbital Observatory, you travel east, making your way through the pulsating neon streets of Neon Nexus. Keeping the bright skyline at your back, you eventually reach the massive elevator leading to Skytouch Outpost. You step inside, and as the elevator ascends, the clamour of Neon Nexus is soon replaced by the tranquility of heights. Skytouch Outpost's silhouette emerges from the clouds, a sight that never fails to inspire awe. Finally, you find yourself back atop the highest point of Neon Nexus, facing a vast, starry infinity."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "The Parallax Pinnacle",
+        "description": "Perched on the border of the stratosphere, the Parallax Pinnacle is the nexus between the terrestrial and extraterrestrial. It boasts a blend of structural audacity and technological elegance, serving as a launchpad for nano-satellites and a teleport station for interstellar diplomats. Its dichroic glass panels give an ever-shifting reflection of the city and the cosmos, portraying a symbiosis between nature's vast creativity and humankind's boundless innovation.",
+        "connections": {
+            "down": "Skytouch Outpost"
+        },
+        "travel_descriptions": {
+            "down": "Departing the Parallax Pinnacle, you board the sleek shuttle pod once more. The descent begins with a minor jolt as the cloaked forcefields separate, releasing the pod back into the city's atmospheric embraces. As you descend, you watch as the neon-dappled cityscape burgeons, its myriad lights blooming like bioluminescent flora from a distance. The luminescent pathways and skyrise habitats appear as though they're rushing up to meet you. After what feels like a thrilling vertical plunge, the pod gently docks back at Skytouch Outpost, where the neon kaleidoscope is no longer a remote, aerial view, but a surrounding panorama once again."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    }
+]
