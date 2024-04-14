@@ -1,5 +1,8 @@
 # TODO: 5-shot prompt all models
 # TODO: can we have a separate function for verifying the JSON format, and regenerate (with an enhanced prompt?)?
+
+
+#TODO: player-centric: what character is the player playing?
 """
 Playground for location generation
 """
@@ -162,7 +165,6 @@ def main():
     #     loc_center, neib_locs[i], dir_take_out = generate_connections(loc_center, neib_locs[i], directions)
     #     directions.remove(dir_take_out)
     #     print("Took out ", dir_take_out, " | list now: ", directions)
-    # TODO: read from previously generated json
     neib_locs = read_json_examples("test_generations/locations_first_round_8.json")
     all_locs = neib_locs
     # Do another round of location gen for all first-round locations (except the central)
