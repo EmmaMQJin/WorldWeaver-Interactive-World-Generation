@@ -152,7 +152,7 @@ Therefore, your output should be a list of 2 JSON objects in a format like this:
 
 def main():
     story_desc = read_file_to_str("data/story-cyberpunk.txt")
-    location_init_examples = read_json_examples("data/locations-name-desc-3.json")
+    location_init_examples = read_json_examples("data/locations-name-desc-4.json")
     location_init_example_story = read_file_to_str("data/story-insidetemple.txt")
     location_neib_prompt_example = read_json_examples("data/location-name-desc-1.json")
     # loc_center = generate_new_location(story_desc, location_init_examples)
