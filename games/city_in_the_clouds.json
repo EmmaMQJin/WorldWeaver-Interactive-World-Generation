@@ -1,0 +1,1241 @@
+{
+    "player": "Joel",
+    "start_at": "Dragon Lift",
+    "game_history": [],
+    "game_over": false,
+    "game_over_description": null,
+    "characters": [
+        {
+            "name": "Joel",
+            "description": "He is the older gentleman and owner of Dragon Lift, always found wearing a tattered smock.",
+            "persona": "I am just a humble businessman trying to keep my Dragon Lift service intact. I might seem gruff, but I have a soft spot for the dragons under my care.",
+            "location": "Dragon Lift",
+            "goal": "His main goal is to keep his dragon rental business profitable.",
+            "inventory": {}
+        },
+        {
+            "name": "King",
+            "description": "The king, a jolly man with a hearty laugh, often spotted in his royal robes.",
+            "persona": "I am the king of the city in the clouds, and I love watching the movements of the moon and stars from my observatory.",
+            "location": "The Moon Observatory",
+            "goal": "His goal is to make sure his kingdom is running smoothly and his queen is happy.",
+            "inventory": {}
+        },
+        {
+            "name": "The Bartender",
+            "description": "A chipper barman with a knack for mixing up a perfect brew.",
+            "persona": "Welcome to Cloud Nine, the finest bar in the sky. Let me make you a drink that tastes as good as a sundown view.",
+            "location": "Cloud Nine Bar",
+            "goal": "His goal is to keep his patrons satisfied with excellent drinks.",
+            "inventory": {}
+        },
+        {
+            "name": "The Blacksmith",
+            "description": "A burly man with arms as strong as his anvils, is the craftsman of the city.",
+            "persona": "Bet the sword I forge today could cut through stone. That Cloudwine is something, ain\u2019t it?",
+            "location": "Main Square Of The City In The Clouds",
+            "goal": "His goal is to craft the finest weapons and shields for the city.",
+            "inventory": {}
+        },
+        {
+            "name": "The Wizard",
+            "description": "An elderly wizard devoted to hatching and training dragons.",
+            "persona": "Harnessing the power of these magnificent dragons is no small task. Each egg requires exquisite care.",
+            "location": "Wizards Dragon Egg Incubatory",
+            "goal": "His goal is to successfully hatch and train dragons for the city in the clouds.",
+            "inventory": {}
+        },
+        {
+            "name": "The Harp Seller",
+            "description": "The angelic man of the harp store selling beautiful musical instruments to the angel men.",
+            "persona": "These harps...they whir and hum with a magic you won\u2019t find anywhere else. Try one?",
+            "location": "Harp Store",
+            "goal": "His goal is to sell harps and other musical instruments to the residents of the cloud city.",
+            "inventory": {}
+        },
+        {
+            "name": "City Hall Assistant",
+            "description": "A diligent worker always seen running errands and managing day-to-day operations.",
+            "persona": "From festivals to royal weddings, these halls don\u2019t manage themselves you know.",
+            "location": "Grand Hall Of The City",
+            "goal": "His goal is to ensure all city events and functions go smoothly.",
+            "inventory": {}
+        },
+        {
+            "name": "Astronomer",
+            "description": "An intelligent observer passionate about understanding the universe.",
+            "persona": "From galaxies to the twinkle of a distant star...the universe unveils its secrets to those who look closer.",
+            "location": "Observatory",
+            "goal": "His goal is to discover new celestial bodies and understand the universe better.",
+            "inventory": {}
+        },
+        {
+            "name": "Tavern Keeper",
+            "description": "He is in charge of the Cloud Tavern and handles rowdiness with ease.",
+            "persona": "What\u2019ll it be? Something strong? Eye of newt, or Angel Ale?",
+            "location": "Cloud Tavern",
+            "goal": "His goal is to keep the tensions low and spirits high in his tavern.",
+            "inventory": {}
+        },
+        {
+            "name": "Head Cook of the Mess Hall",
+            "description": "A stout woman, both kind and patient, who loves feeding everyone.",
+            "persona": "The food here might not be the finest, but I put my love into every bite.",
+            "location": "Mess Hall Of The Servants",
+            "goal": "Her goal is to feed every servant and make certain that all are well cared for.",
+            "inventory": {}
+        }
+    ],
+    "locations": [
+        {
+            "name": "Cloud Nine Bar",
+            "description": "A bar in the clouds. Lively atmosphere with good drinks and even better views.",
+            "background": "The bar was built as an escape from the doldrums of a working day. The bar is enjoyed by all citizens in the city in the clouds.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Descending towards the west, the busy, vibrant atmosphere of the Main Square Of The City In The Clouds gradually envelops you. Amidst the bustling crowd, a vast array of stalls and shops sell all manner of wares.",
+                "south": "Moving southwards, the jolly sounds from the Cloud Nine Bar fade. Soon, the somewhat somber, lively environment of the Mess Hall Of The Servants greets you. Here, the workers take their meals and share their stories of the day.",
+                "up": "As you ascend, the bar's hum diminishes; replaced by the silent majesty of the night sky and the quiet stars. Once you reach the serenity of The Moon Observatory, your view of the cosmos is unobstructed and breathtaking."
+            },
+            "connections": {
+                "west": "Main Square Of The City In The Clouds",
+                "south": "Mess Hall Of The Servants",
+                "up": "The Moon Observatory"
+            },
+            "items": {
+                "Cloud Chalice": {
+                    "name": "Cloud Chalice",
+                    "description": "A light blue, cloudy glass full of refreshing ale.",
+                    "examine_text": "The chalice looks beautiful. You can see the froth at the top of the ale and the condensation on the outside of the chalice.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Cloud Nine Bar"
+                },
+                "Sky Spectacles": {
+                    "name": "Sky Spectacles",
+                    "description": "A pair of spectacles with a light blue frame, giving a hazy view of the sky city.",
+                    "examine_text": "The spectacles are slightly heavy, but they're surprisingly comfortable. They provide a unique, clearer view of the city.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Cloud Nine Bar"
+                },
+                "Elixir of Levitation": {
+                    "name": "Elixir of Levitation",
+                    "description": "A mysterious, shimmering potion in a vial. Known to give temporary levitation ability.",
+                    "examine_text": "The elixir is swirling with sparkling particles, and gives off a soothing glow. It smells sweet and tangy.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Cloud Nine Bar"
+                },
+                "Cloud Cushion": {
+                    "name": "Cloud Cushion",
+                    "description": "A fluffy white cushion made of cloud fabric, perfect for a peaceful rest.",
+                    "examine_text": "The cushion looks invitingly soft and comfortable. It does seem like sitting on a cloud!",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Cloud Nine Bar"
+                }
+            },
+            "characters": {
+                "The Bartender": {
+                    "name": "The Bartender",
+                    "description": "A chipper barman with a knack for mixing up a perfect brew.",
+                    "persona": "Welcome to Cloud Nine, the finest bar in the sky. Let me make you a drink that tastes as good as a sundown view.",
+                    "location": "Cloud Nine Bar",
+                    "goal": "His goal is to keep his patrons satisfied with excellent drinks.",
+                    "inventory": {
+                        "Cloud Chalice": {
+                            "name": "Cloud Chalice",
+                            "description": "A beautiful drinking vessel sculpted from cloud crystals.",
+                            "examine_text": "The Cloud Chalice shimmers with iridescent hues, throwing off miniature rainbows as the light catches it. The craftsmanship is exquisite reflecting the hard work of cloud artisans.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Elixir of Levitation": {
+                            "name": "Elixir of Levitation",
+                            "description": "A magical brew that makes body lighter than air.",
+                            "examine_text": "The Elixir of Levitation pulsates with a soft, ethereal light. It's as if countless tiny stars are trapped within, twinkling mysteriously. The liquid inside is weightless not conforming to gravity.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": true,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "City In The Clouds"
+        },
+        {
+            "name": "The Moon Observatory",
+            "description": "The Moon Observatory is a dome shape with ornate wooden levers along the walls. When pulled the levers open the curved wooden ceiling to the night sky above.",
+            "background": "The king commissioned the observatory to be built for his queen after she became enraptured with looking at the night sky and tracking the movement of the moon.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "down": "A journey filled with vertigo-inducing views as you descend through fluffy cloud formations and past floating islands, towards the ethereal glow of the Cloud Nine Bar.",
+                "east": "An enchanting trek through a mystical mist-filled pathway. Echoes of magical spell chants and dragon roars can be heard as you approach the Wizards Dragon Egg Incubatory."
+            },
+            "connections": {
+                "down": "Cloud Nine Bar",
+                "east": "Wizards Dragon Egg Incubatory"
+            },
+            "items": {
+                "Celestial Globe": {
+                    "name": "Celestial Globe",
+                    "description": "A large, antique celestial globe, providing a map of the heavens.",
+                    "examine_text": "The celestial globe is intricately carved with the constellations. The zodiacs are drawn in gold leaf and cities are marked with precious stones.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Moon Observatory"
+                },
+                "Telescope": {
+                    "name": "Telescope",
+                    "description": "A grand telescope, polished to a mirror shine, mounted to a rotating base.",
+                    "examine_text": "Upon closer inspection, you take note of the elaborate carvings on its wooden body and brass lenses on both ends. It's adjusted by a set of intricate gears and wheels.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Moon Observatory"
+                },
+                "Moon Map": {
+                    "name": "Moon Map",
+                    "description": "An aged and detailed map of the moon's surface, hung on the wall.",
+                    "examine_text": "The map is quite large, dominated by countless gray and white circles symbolizing the moon's craters. A network of thin lines mark natural features, and notes in neat handwriting can be seen along the margins.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Moon Observatory"
+                },
+                "King's Royal Robe": {
+                    "name": "King's Royal Robe",
+                    "description": "A magnificent, plush robe adorned with golden embroidery, likely belonging to the king.",
+                    "examine_text": "The texture of the robe is luxuriously soft and the intricate, golden threadwork depicts celestial bodies and constellations. It is truly fit for a king.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "The Moon Observatory"
+                }
+            },
+            "characters": {
+                "King": {
+                    "name": "King",
+                    "description": "The king, a jolly man with a hearty laugh, often spotted in his royal robes.",
+                    "persona": "I am the king of the city in the clouds, and I love watching the movements of the moon and stars from my observatory.",
+                    "location": "The Moon Observatory",
+                    "goal": "His goal is to make sure his kingdom is running smoothly and his queen is happy.",
+                    "inventory": {
+                        "King's Royal Robe": {
+                            "name": "King's Royal Robe",
+                            "description": "A richly embroidered royal robe, the color of the midnight sky with tiny gems inlaid to mimic the stars.",
+                            "examine_text": "The robe is made of velvety fabric that looks like night itself. It's speckled with tiny gems that glimmer like the stars, embodying the king's love for the night sky. The thread used for the intricate design glistens in the light, and the entire outfit radiates with an undeniable majesty.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Celestial Globe": {
+                            "name": "Celestial Globe",
+                            "description": "A beautifully crafted globe featuring the sky map of this cloud city.",
+                            "examine_text": "The globe sits on a polished wooden stand. It displays the thorough understanding and love the king has for the cosmos. The stars and constellations on the globe originate from the night sky visible from this city in the clouds. You can rotate the globe and all the labeled constellations come into view as if you're spinning the night sky itself.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "City In The Clouds"
+        },
+        {
+            "name": "Mess Hall Of The Servants",
+            "description": "this is a long narrow room with wooden tables down the center and wooden benches all along. candles burn on the table and sconces on the wall. there is black smoke and soot everywhere. the smell of garbage and bad cooking abounds. the cobbled stone floors are greasy and there is moss along the wall bottoms.",
+            "background": "anyone who works in labor for the king is bound to be here at set times for whatever meals are left from the higher ups. some food is not too bad but the sanitation could be better. everyone from blacksmiths to tanners and fletchers will be found here at times and gossip runs rampant.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "You ascend a winding brownstone staircase patterned with lichen, gradually noticing the rising decibels of jovial laughter and clinking glassware.",
+                "west": "Walking down a series of narrow corridors, the echo of your footsteps gives ways to the buzz of countless voices amalgamating under the labyrinthine arches of the grand hall.",
+                "outside": "Venturing beyond the servants' entrance, a crisp breeze gusts as you make your way towards the boisterous sounds and warm, inviting light of the Cloud Tavern."
+            },
+            "connections": {
+                "north": "Cloud Nine Bar",
+                "west": "Grand Hall Of The City",
+                "outside": "Cloud Tavern"
+            },
+            "items": {
+                "Wooden Table": {
+                    "name": "Wooden Table",
+                    "description": "A worn, long wooden table filled with remnants of meals past.",
+                    "examine_text": "The lengthy table, drenched in candle wax and spotted with various stains, hints at years of usage. Tiny engravings litter its surface, possibly from the idle hands of past workers.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Mess Hall Of The Servants"
+                },
+                "Candle": {
+                    "name": "Candle",
+                    "description": "A dimly burning candle providing the room with scarce light.",
+                    "examine_text": "Upon closer inspection, the candle wax drips slowly from its base, revealing countless nights of use. The flame, though small, flickers stubbornly against the darkness.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Mess Hall Of The Servants"
+                },
+                "Worn Apron": {
+                    "name": "Worn Apron",
+                    "description": "A soiled apron hanging from a nearby bench.",
+                    "examine_text": "This apron, stained with dirt and grease, tells stories of kitchens bustling with activity. A few embroidered threads come loose at the edges, evidence of its owner's hard work.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Mess Hall Of The Servants"
+                },
+                "Mossy Stone": {
+                    "name": "Mossy Stone",
+                    "description": "A damp stone overgrown with a patch of green moss.",
+                    "examine_text": "Up close, the tiny leaves of the moss plants thrive in the damp environment. The stone itself feels cold underneath, a silent reminder of the hall's aging structure.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Mess Hall Of The Servants"
+                }
+            },
+            "characters": {
+                "Head Cook of the Mess Hall": {
+                    "name": "Head Cook of the Mess Hall",
+                    "description": "A stout woman, both kind and patient, who loves feeding everyone.",
+                    "persona": "The food here might not be the finest, but I put my love into every bite.",
+                    "location": "Mess Hall Of The Servants",
+                    "goal": "Her goal is to feed every servant and make certain that all are well cared for.",
+                    "inventory": {
+                        "Wooden Table": {
+                            "name": "Wooden Table",
+                            "description": "A long wooden table strewn with a mix of foods and cooking implements.",
+                            "examine_text": "A marks and cuts-worn, long table. The wood is lined with food splatters from countless meals past. A variety of half-chopped vegetables are scattered at one end, next to an ancient-looking, dull-bladed knife that might've seen better days. At the other end is a bowl filled with a stew simmering over a small burner.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Worn Apron": {
+                            "name": "Worn Apron",
+                            "description": "A well-loved, food-stained kitchen apron.",
+                            "examine_text": "The apron is stained with various food smears and scorch marks, belying years of use, resonating the motto of the Head Cook. The fabric is thin and faded, especially at the spots where it's come in contact with the most spills and splatters. Despite its worn appearance, it has a comforting aura, depicting an obvious affection between it and its owner.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "City In The Clouds"
+        },
+        {
+            "name": "Harp Store",
+            "description": "it's a cloudy store selling harps for angel men",
+            "background": "this is a business for angel men to purchase their musical instruments, they sell harps mostly, but there are some lyres and a few bouzoukis",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Moving east from the Harp Store, you leave the melodic hum of ethereal instruments behind, stepping out into the busy hubbub of the Main Square of the city in the clouds, adorned with various stalls and bustling with the city's vibrant life.",
+                "south": "Heading south from the Harp Store means leaving behind the soft strumming of harps. You approach Dragon Lift, a dull, boxy building standing distinctly from its cloud surroundings, hinting at the rare and exciting experience of dragon riding that lies within."
+            },
+            "connections": {
+                "east": "Main Square Of The City In The Clouds",
+                "south": "Dragon Lift"
+            },
+            "items": {
+                "Golden Harp": {
+                    "name": "Golden Harp",
+                    "description": "A beautiful golden harp glinting in the ethereal cloud light.",
+                    "examine_text": "On close examination, the Golden Harp appears extremely well-crafted. It's made from a shiny gold material that gives off a melodious sound when strummed.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Harp Store"
+                },
+                "Cloud Lyre": {
+                    "name": "Cloud Lyre",
+                    "description": "An exquisite lyre made from condensed cloud fiber.",
+                    "examine_text": "The Cloud Lyre is a breathtaking instrument. Made from pure cloud fiber somehow condensed into a stable form, its strings create a sound that echoes like a soft wind.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Harp Store"
+                },
+                "Ether Bouzouki": {
+                    "name": "Ether Bouzouki",
+                    "description": "A bouzouki created from ether, a highly atmospheric and rare material.",
+                    "examine_text": "The Ether Bouzouki is a rarity among rarities. The ether gives it a near-transparent appearance, but when it's played, it resonates with a sound that seems to vibrate the very air around it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Harp Store"
+                }
+            },
+            "characters": {
+                "The Harp Seller": {
+                    "name": "The Harp Seller",
+                    "description": "The angelic man of the harp store selling beautiful musical instruments to the angel men.",
+                    "persona": "These harps...they whir and hum with a magic you won\u2019t find anywhere else. Try one?",
+                    "location": "Harp Store",
+                    "goal": "His goal is to sell harps and other musical instruments to the residents of the cloud city.",
+                    "inventory": {
+                        "Golden Harp": {
+                            "name": "Golden Harp",
+                            "description": "A beautifully crafted harp made of gold",
+                            "examine_text": "The Golden Harp shines with a gentle glow, its strings humming softly with a celestial melody. The harp's design is intricate, with heavenly patterns wound around its frame, each detail signifying the immense craftsmanship put into its creation.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Cloud Lyre": {
+                            "name": "Cloud Lyre",
+                            "description": "A lyre made from the soft material of clouds",
+                            "examine_text": "Upon close examination, the Cloud Lyre reveals itself to be a work of art. Its body, made of cloud material, seems to sway subtly with the rhythm of the wind, almost as if it were breathing. The sound it produces is light and airy, like a whisper in the breeze.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "City In The Clouds"
+        },
+        {
+            "name": "Main Square Of The City In The Clouds",
+            "description": "The main square is the central location of the city in the clouds, the city on the top of the mountain where the clouds pass. It is extremely busy, with many vendors selling wares such as the blacksmith and the sword-maker. The ground is made of stone, and buildings surround it. There are also tables where people can eat after they've gotten food from the various people cooking over open fires.",
+            "background": "The main square is the central location for the city in the clouds. It is where people come to chat and spend the day. People come here to eat and learn the day's news. They can see the newest creations from the blacksmith. They also hold public meetings and performances.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Walking westward, the sounds of delicate musical notes fill the air as you approach the Harp Store, where angel men purchase their musical instruments.",
+                "east": "As you make your way east, the atmosphere lightens, laughter and clinking glasses growing louder as you near the lively Cloud Nine Bar - an escape from the mundane.",
+                "south": "Heading south, the grandeur of City Hall appears. Its doors, always open, welcome all citizens; a symbol of unending public service and the heart of the city's operations."
+            },
+            "connections": {
+                "west": "Harp Store",
+                "east": "Cloud Nine Bar",
+                "south": "Grand Hall Of The City"
+            },
+            "items": {
+                "Stormshield": {
+                    "name": "Stormshield",
+                    "description": "A mighty shield crafted from a strange, sky-blue metal.",
+                    "examine_text": "Upon closer inspection, the shield seems to shimmer with energy. Its surface is engraved with beautiful cloud patterns. It is clear the blacksmith has put great skill into making this shield.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": true
+                    },
+                    "location": "Main Square Of The City In The Clouds"
+                },
+                "Cloudwine": {
+                    "name": "Cloudwine",
+                    "description": "A bottle of refreshing, crisp wine that smells heavenly.",
+                    "examine_text": "The wine is light and airy, bubbles occasionally traveling to the surface. On the label, there is an image of the city in the clouds.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Main Square Of The City In The Clouds"
+                },
+                "Market Table": {
+                    "name": "Market Table",
+                    "description": "A sturdy wooden table strewn with goods for sale.",
+                    "examine_text": "The table is laden with all kinds of local produce, artisan breads, cheeses, fruits and other food items. There are a couple of chairs tucked underneath for buyers to sit and make their transactions.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Main Square Of The City In The Clouds"
+                },
+                "Skydrifter Sword": {
+                    "name": "Skydrifter Sword",
+                    "description": "A finely crafted sword with a hilt of cloud-shaped silver.",
+                    "examine_text": "The sword is surprisingly light. Its blade is nearly transparent and its grip feels comfortable. You notice intricate carvings on the hilt that look like tiny cloud formations.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Main Square Of The City In The Clouds"
+                }
+            },
+            "characters": {
+                "The Blacksmith": {
+                    "name": "The Blacksmith",
+                    "description": "A burly man with arms as strong as his anvils, is the craftsman of the city.",
+                    "persona": "Bet the sword I forge today could cut through stone. That Cloudwine is something, ain\u2019t it?",
+                    "location": "Main Square Of The City In The Clouds",
+                    "goal": "His goal is to craft the finest weapons and shields for the city.",
+                    "inventory": {
+                        "Stormshield": {
+                            "name": "Stormshield",
+                            "description": "A large sturdy shield forged by the Blacksmith.",
+                            "examine_text": "The Stormshield, renowned for its durability and lightness, is a testament to the Blacksmith's skills. Its core is made from a unique alloy, providing superior strength, while its outer layer is imbued with a mystical cloud essence that increases its resistance to magic attacks.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Skydrifter Sword": {
+                            "name": "Skydrifter Sword",
+                            "description": "A sword crafted by the Blacksmith, designed for swift and sure attacks",
+                            "examine_text": "The Skydrifter Sword is a brilliant weapon, a blend of craftsmanship and practicality that reflects the Blacksmith's talent. Its blade is surprisingly lightweight and sharp, echoing the fluidity of the clouds, making it an effective weapon in combat. The hilt is wrapped in durable leather providing a firm and comfortable grip.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "City In The Clouds"
+        },
+        {
+            "name": "Cloud Tavern",
+            "description": "this is a tavern in the cloud city, a rowdy place of winged drunkards throwing winged darts and drinking from winged tankards",
+            "background": "This is the local watering hole of angel men who come here after work to socialize after work and blow off some steam",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "inside": "Navigating through the uproar of the tavern, you disappear through an unassuming door into the dimly lit, smoky confines of the Servants\u2019 Mess - an abrupt transition from the bar's frivolity to the labor-hardened ambiance.",
+                "west": "Stepping westward, you take the amazing Cloud Elevator, ascending the sky-high layers of the city until you reach the unimpressive but intriguing Dragon Lift, evoking a sense of thrill at the exotic adventure that awaits inside.",
+                "east": "Traveling east, a grand structure looms in sight - the hallmark of the city's vibrancy, the Grand Hall. The journey is a surreal glide through billowy clouds, casting transitory shadows against the colossal entrance to the hub of city life."
+            },
+            "connections": {
+                "inside": "Mess Hall Of The Servants",
+                "west": "Dragon Lift",
+                "east": "Grand Hall Of The City"
+            },
+            "items": {
+                "Winged Tankard": {
+                    "name": "Winged Tankard",
+                    "description": "A metal tankard with small wings etched along the sides.",
+                    "examine_text": "The winged tankard is made from silver, with delicate wings etched elegantly on its sides. It's heavier than it looks and cold to touch.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Cloud Tavern"
+                },
+                "Winged Darts": {
+                    "name": "Winged Darts",
+                    "description": "Sharp darts with tiny wings on them.",
+                    "examine_text": "A set of sharp pointed darts, crafted from steel and feathered with miniature wings. They have a good balance and are incredibly sharp.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Cloud Tavern"
+                },
+                "Angel Ale": {
+                    "name": "Angel Ale",
+                    "description": "A heavenly brew served in the Cloud Tavern.",
+                    "examine_text": "An enticing ale with an intoxicating scent and an ethereal, golden glow. It tastes cloud-light and slightly sweet.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Cloud Tavern"
+                }
+            },
+            "characters": {
+                "Tavern Keeper": {
+                    "name": "Tavern Keeper",
+                    "description": "He is in charge of the Cloud Tavern and handles rowdiness with ease.",
+                    "persona": "What\u2019ll it be? Something strong? Eye of newt, or Angel Ale?",
+                    "location": "Cloud Tavern",
+                    "goal": "His goal is to keep the tensions low and spirits high in his tavern.",
+                    "inventory": {
+                        "Winged Tankard": {
+                            "name": "Winged Tankard",
+                            "description": "A shiny metallic tankard with weaved wings attached at the sides.",
+                            "examine_text": "Upon closer inspection, the tankard seems to be made of pure silver. The wings, beautifully weaved with fine threads, give this drinking vessel a kind of levity that's fit for the ethers. There's a warmth that teems on its surface, indicating its frequent use.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Angel Ale": {
+                            "name": "Angel Ale",
+                            "description": "A frothy golden ale, often served in the taverns of the cloud city.",
+                            "examine_text": "Beneath the light, the ale shimmers with a golden hue, and the frothy texture seems to resemble small whimsical clouds. The smell of strong hops wafts through the air and the lively bubbles seem to dance merrily inside. Drinking this ale is said to give one a divine feeling of buoyancy.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": true,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "City In The Clouds"
+        },
+        {
+            "name": "Grand Hall Of The City",
+            "description": "A great massive hall with chairs and tables. several door ways line the walls of the hall leading to other places. A massive front door that is slightly swung open.",
+            "background": "The grand hall of the city is where most business for city matters take place. Be it a festival, exotic markets, or even the royal weddings. People may come and go to the grand hall as they please unless the massive door is shut which hasn't happened in years.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Exiting the grand hall via the city's main street, the shifting clouds and mountain air accompany your journey to the bustling main square.",
+                "west": "Moving westward, the clinking of tankards and boisterous laughter lead the way to the lively Cloud Tavern.",
+                "east": "Travelling east, the aroma of cooking food and distinct clamor of the servants' chatter mark the path to the Mess Hall."
+            },
+            "connections": {
+                "north": "Main Square Of The City In The Clouds",
+                "west": "Cloud Tavern",
+                "east": "Mess Hall Of The Servants"
+            },
+            "items": {
+                "Grand Chair": {
+                    "name": "Grand Chair",
+                    "description": "A mahogany chair at the end of a long table.",
+                    "examine_text": "The chair is massive, made from expensive mahogany. It's very likely used by a person of importance.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Grand Hall Of The City"
+                },
+                "Long Table": {
+                    "name": "Long Table",
+                    "description": "A long table that dominates the center of the hall.",
+                    "examine_text": "The table is made out of the same mahogany wood as the chair. It is beautifully cared for and polished.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Grand Hall Of The City"
+                },
+                "Massive Door": {
+                    "name": "Massive Door",
+                    "description": "The massive main entrance to the grand hall.",
+                    "examine_text": "Astonishingly large and intricately carved with images of the city's history, this door only closes during times of extreme crisis.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Grand Hall Of The City"
+                }
+            },
+            "characters": {
+                "City Hall Assistant": {
+                    "name": "City Hall Assistant",
+                    "description": "A diligent worker always seen running errands and managing day-to-day operations.",
+                    "persona": "From festivals to royal weddings, these halls don\u2019t manage themselves you know.",
+                    "location": "Grand Hall Of The City",
+                    "goal": "His goal is to ensure all city events and functions go smoothly.",
+                    "inventory": {
+                        "Market Table": {
+                            "name": "Market Table",
+                            "description": "A sturdy, well-worn table used for displaying goods.",
+                            "examine_text": "On closer inspection, the table seems weathered, the effects of countless merchandise placed upon it throughout the years. Hand carved symbols add to its charm, indicating its served many vendors over the years.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "City In The Clouds"
+        },
+        {
+            "name": "Dragon Lift",
+            "description": "You reach Dragon Lift via the Cloud Elevator, which is a series of rising clouds that you step on to ascend to the highest cloud in the city. Dragon Lift looks really drab on the outside. It is a dull brown, boxy looking building but has a red awning proclaiming Dragon Lift in golden script. Inside Dragon Lift, Joel is waiting in his tattered smock to rent you a dragon that you'll swoop around the clouds on. When you enter the door to Dragon Lift, you realize it's bigger than you imagined and feels like a barn with dragons in stalls that you can examine.",
+            "background": "Dragon Lift has been around for over 75 years and even though the owner, Joel, is often sued by customers when flights go wrong, the business is pretty profitable.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Traveling east from Dragon Lift, you ride a dragon along the cloud path towards the clamor of boisterous angel men at the Cloud Tavern. The soothing rhythmic beat of the dragon's wings in the air makes the journey ecstatic.",
+                "up": "Traveling up from Dragon Lift, the dragon whisks you above the cloud skyline towards the Harp Store that appears like a cloud fortress from distance. You feel the rush of cool, high altitude breeze against your face and the city beneath turns miniature.",
+                "south": "Traveling south, you board a dragon and soar lower towards the city's Observatory. The impressive view offers the expanse of the cloud city beneath your feet and creates a blend of thrill and vertigo."
+            },
+            "connections": {
+                "east": "Cloud Tavern",
+                "up": "Harp Store",
+                "south": "Observatory"
+            },
+            "items": {
+                "Dragon Saddle": {
+                    "name": "Dragon Saddle",
+                    "description": "This is a sizeable, black leather saddle with shiny, silver buckles. It's worn out a bit but it looks comfortable enough for a dragon ride.",
+                    "examine_text": "As you scrutinize the saddle more closely, you see the quality in the dense, black leather and well-made, silver buckles. Despite being used frequently, it's been well-maintained. The seat is padded for added comfort, and harnesses are adjustable to fit various dragon sizes.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Dragon Lift"
+                },
+                "Dragon Feed": {
+                    "name": "Dragon Feed",
+                    "description": "This is a large bag of ground meat mixed with other dragon-approved goodies. Sealed tightly, it's used to feed the dragons.",
+                    "examine_text": "Upon closer examination, this bag is quite large, stuffed full with a mix of meats, fruits, and other ingredients that dragons are known to enjoy. The scent is odd, a combination of musk and sweet fruit.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Dragon Lift"
+                },
+                "Joel's Smock": {
+                    "name": "Joel's Smock",
+                    "description": "A dirty, tattered smock belonging to Joel Delgado, the dragon keeper, hangs on a hook by the door.",
+                    "examine_text": "You notice the various stains of dragon feed, oils, and maybe even a little blood on the worn out fabric. Despite its condition, a faint smell of dragons clings to the garment hinting at many hours spent tending these majestic beasts.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Dragon Lift"
+                }
+            },
+            "characters": {
+                "Joel": {
+                    "name": "Joel",
+                    "description": "He is the older gentleman and owner of Dragon Lift, always found wearing a tattered smock.",
+                    "persona": "I am just a humble businessman trying to keep my Dragon Lift service intact. I might seem gruff, but I have a soft spot for the dragons under my care.",
+                    "location": "Dragon Lift",
+                    "goal": "His main goal is to keep his dragon rental business profitable.",
+                    "inventory": {
+                        "Dragon Feed": {
+                            "name": "Dragon Feed",
+                            "description": "A handful of mysterious morsels that the dragons seem to love.",
+                            "examine_text": "The feed is a mix of red and gold pieces of what appears to be dried fruit and what can only be described as 'shimmering pebbles'. It has an unusual, sweet smell to it that tingles your nostrils.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": true,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Smock": {
+                            "name": "Smock",
+                            "description": "Joel's tattered smock, sign of years of hard work and devotion to dragons.",
+                            "examine_text": "This old, faded smock was once possibly a bright color, but now it is smudged charcoal grey. There are patches of burn marks and scales of dragons embedded in cloth. It is still worn with pride by Joel, despite its obvious wear and tear.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "City In The Clouds"
+        },
+        {
+            "name": "Observatory",
+            "description": "High atop the tallest tower in the city, the observatory is a large, single, circular room. It contains one window, almost the entire length of the room. Dozens of telescopes are pointed outside of this window. Through these telescopes, people in the observatory can see in all directions. Inside the room are tables, lined with maps and instruments. Globes and scales are also found throughout the room. There is one door leading into the room, and one leading outside to the deck.",
+            "background": "From high in the clouds, the denizens of the city always wished they could see what was going on in the world below them. By building the observatory in their tallest tower, the people knew that they could now see not only the goings on in their city, but could also see what was going on underneath their city. In this way they will always know if danger approaches them from below, and they will be ready to fight it. Ever since it was built, the observatory has been an important location for the defense of the city. Adjacent to the room they built a deck, and a large trumpet there can immediately notify people of an attack. Meanwhile, the security room below can be notified to ready their forces.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Taking a series of escalading clouds, you ascend higher into the city towards the drab but intriguing Dragon Lift, anticipation building at the prospect of a dragon ride.",
+                "up": "As you move upwards to The Moon Observatory, you can feel a change in the air; it's cooler, thinner. The anticipation of viewing the night sky through the observatory fills you with a sense of excitement.",
+                "east": "Heading east towards the Wizards Dragon Egg Incubatory, the air grows warmer, filled with a magical energy. You anticipate being able to witness the fascinating process of nurturing dragon eggs."
+            },
+            "connections": {
+                "north": "Dragon Lift",
+                "up": "The Moon Observatory",
+                "east": "Wizards Dragon Egg Incubatory"
+            },
+            "items": {
+                "Telescope": {
+                    "name": "Telescope",
+                    "description": "A large, brass telescope pointed out the window.",
+                    "examine_text": "This robust telescope appears to be held together by brass and leather fittings. Its lens is sharp and clear, revealing far-off details with stunning clarity.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Observatory"
+                },
+                "Map": {
+                    "name": "Map",
+                    "description": "A parchment map full of notes and markings.",
+                    "examine_text": "On closer inspection, you notice this map encompasses the lands beneath the cloud city. It's covered in annotations, coordinates, and markings, presumably for monitoring activity below.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Observatory"
+                },
+                "Globe": {
+                    "name": "Globe",
+                    "description": "An intricate globe mounted on a mahogany stand.",
+                    "examine_text": "The globe is a delicate, intricate model of the world below. Mountains, rivers, and cities are rendered with stunning detail.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Observatory"
+                },
+                "Trumpet": {
+                    "name": "Trumpet",
+                    "description": "A large, brass trumpet meant for signaling.",
+                    "examine_text": "This ornate trumpet is designed for issuing alerts throughout the cloud city. It has a wide mouth piece and seems to be connected to a series of tubes that lead throughout the city.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Observatory"
+                }
+            },
+            "characters": {
+                "Astronomer": {
+                    "name": "Astronomer",
+                    "description": "An intelligent observer passionate about understanding the universe.",
+                    "persona": "From galaxies to the twinkle of a distant star...the universe unveils its secrets to those who look closer.",
+                    "location": "Observatory",
+                    "goal": "His goal is to discover new celestial bodies and understand the universe better.",
+                    "inventory": {
+                        "Telescope": {
+                            "name": "Telescope",
+                            "description": "A long, slender instrument with a dark metallic finish. Used for observing celestial events.",
+                            "examine_text": "This is a finely-crafted telescope, its dark metal body cool to the touch. Through its lens, the stars seem close enough to touch, and their mysteries may be probed and pondered. It appears capable of fine adjustments to focus and position, requiring a steady hand and sharp eye to operate effectively.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Moon Map": {
+                            "name": "Moon Map",
+                            "description": "A detailed chart of the moon's surface, depicting craters and lunar seas.",
+                            "examine_text": "This is a detailed map of the moon, intricately drawn on parchment. It's edges have yellowed with age, but the black ink markings are still very prominent. The map depicts various named craters and seas, offering a comprehensive guide for lunar observations. It\u2019s exact enough to show specific coordinates of these areas and even includes distinctions between highlands and lowlands.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "City In The Clouds"
+        },
+        {
+            "name": "Wizards Dragon Egg Incubatory",
+            "description": "This room has stone recesses filled with hay. It is warmed by a fireplace and jars that glow blue and sit around the floor. the walls are covered with heavy cloth to further hold in the heat. the room is circular with a hall coming in from both sides. there is a round stone table in the middle with several pieces of lab equipment on it. there seems to be a few round objects like large stones buried in the hay at places.",
+            "background": "this location is used by a wizard who has been in a kings hire. he is trying to both hatch, and train dragons to fight along with soldiers. female dragons are kept nearby under the guise of many promises or treachery.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Ascending the towering spiral staircase, you wind your way up to the Observatory. As you ascend, you can feel the air thinning and cooling. The city sounds slowly fade away replaced with the soft whispers of the wind.",
+                "south": "Heading south, you find yourself on a path lit by twinkling lanterns, leading you towards The Moon Observatory. The journey is peaceful, with the serene silence of the night occasionally interrupted by the hoot of an owl."
+            },
+            "connections": {
+                "west": "Observatory",
+                "south": "The Moon Observatory"
+            },
+            "items": {
+                "Dragon Eggs": {
+                    "name": "Dragon Eggs",
+                    "description": "Large, stone-like objects nestled in the hay.",
+                    "examine_text": "These are eggs of different colours representing different species of dragon. They are rough to the touch and almost impossibly hard, with a faint warmth radiating from them.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Wizards Dragon Egg Incubatory"
+                },
+                "Lab Equipment": {
+                    "name": "Lab Equipment",
+                    "description": "Various scientific tools and apparatus on the stone table.",
+                    "examine_text": "There are beakers, vials, scales, and probably instruments of wizardy used in hatching and caring for dragon eggs. Some are still bubbling with latent magic.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Wizards Dragon Egg Incubatory"
+                },
+                "Glowing Jars": {
+                    "name": "Glowing Jars",
+                    "description": "Blue-glowing jars scattered around the room.",
+                    "examine_text": "Each jar is filled with luminescent crystals that provide both light and heat. You can see arcane symbols scribed on the glass.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Wizards Dragon Egg Incubatory"
+                },
+                "Stone Table": {
+                    "name": "Stone Table",
+                    "description": "A round stone table standing in the middle of the room.",
+                    "examine_text": "A perfectly circular table made from a single stone. It emanates an old, timeless kind of power.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Wizards Dragon Egg Incubatory"
+                }
+            },
+            "characters": {
+                "The Wizard": {
+                    "name": "The Wizard",
+                    "description": "An elderly wizard devoted to hatching and training dragons.",
+                    "persona": "Harnessing the power of these magnificent dragons is no small task. Each egg requires exquisite care.",
+                    "location": "Wizards Dragon Egg Incubatory",
+                    "goal": "His goal is to successfully hatch and train dragons for the city in the clouds.",
+                    "inventory": {
+                        "Dragon Eggs": {
+                            "name": "Dragon Eggs",
+                            "description": "Large, round objects partially buried in the hay.",
+                            "examine_text": "These are dragon eggs. Each one is unique in color and pattern, with a variety of shades and sheen. They are considerably warm to the touch, evidence of the innocent life brewing within.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Lab Equipment": {
+                            "name": "Lab Equipment",
+                            "description": "Pieces of lab equipment scattered across the stone table in the center of the room.",
+                            "examine_text": "There are various tools and apparatus in well-used condition. Included among the items are mystical brass globes, glass tubes of strange powders, a scale for precise measurements, and an intricate set of calipers for examining egg shell thickness.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "City In The Clouds"
+        }
+    ],
+    "actions": []
+}

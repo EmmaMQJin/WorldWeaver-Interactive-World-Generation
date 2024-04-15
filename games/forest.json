@@ -1,0 +1,2130 @@
+{
+    "player": "Falana",
+    "start_at": "Riverbed",
+    "game_history": [],
+    "game_over": false,
+    "game_over_description": null,
+    "characters": [
+        {
+            "name": "Falana",
+            "description": "Falana is a perpetual half-woman, half-deer who roams around the riverbed.",
+            "persona": "I've been a part of this river for so long, it's more home to me than my original form. I help keep the river clean and guide lost souls.",
+            "location": "Riverbed",
+            "goal": "Her goal is to protect the riverbed from pollution and harm.",
+            "inventory": {}
+        },
+        {
+            "name": "Orrin",
+            "description": "Orrin is an elder elf, who tends to the magical garden and shares tales with the children of the village.",
+            "persona": "As an Elder Elf, I have watched the seasons change for centuries, always tending to the magical garden. ",
+            "location": "Flower Garden",
+            "goal": "His goal is to protect the garden and ensure it thrives for centuries to come.",
+            "inventory": {}
+        },
+        {
+            "name": "Doros",
+            "description": "Doros is a jovial, peasant blacksmith who is commonly found at The Clearing.",
+            "persona": "I've been a blacksmith all me life, making tools for the villagers and weapons for the knights. There's nothing like the sound of a hammer hitting hot iron.",
+            "location": "The Clearing",
+            "goal": "His goal is to create the finest sword the kingdom has ever seen.",
+            "inventory": {}
+        },
+        {
+            "name": "Brickel",
+            "description": "Brickel is a crafty gnome who makes his home along the banks of the river.",
+            "persona": "I may be small in stature, but don't underestimate me. I know every nook and cranny of this river, and it provides everything I need.",
+            "location": "Along The Banks Of A River In The Forest",
+            "goal": "His goal is to build a beautiful dam on the river.",
+            "inventory": {}
+        },
+        {
+            "name": "Ethel",
+            "description": "Ethel is a cunning witch who resides in the unsettling forest area.",
+            "persona": "They call me a witch, an outcast, but they rely on my potions more than they care to admit.",
+            "location": "Unsettling Forest Area",
+            "goal": "Her goal is to brew the ultimate potion of immortality.",
+            "inventory": {}
+        },
+        {
+            "name": "Bearer",
+            "description": "Bearer is a talking bear known for his wisdom, who resides in the Shaded North forest.",
+            "persona": "They say wisdom comes with age, but I believe it comes from observing nature and learning it's ways.",
+            "location": "North Forest",
+            "goal": "His goal is to guide lost travellers safely through the forest.",
+            "inventory": {}
+        },
+        {
+            "name": "Silara",
+            "description": "Silara is a mysterious, ethereal fairy who resides in the Fairy Forest. She carries a fairy whistle that can produce melodies heard only by fairies.",
+            "persona": "They may not be able to see me with the naked eye, but they can feel my presence whenever I play my whistle.",
+            "location": "Fairy Forest",
+            "goal": "Her goal is to protect her forest and maintain peace among the fairies.",
+            "inventory": {}
+        },
+        {
+            "name": "Slynn",
+            "description": "Slynn is a cunning fox that can communicate with humans. He lives mostly in the Entrance To The Pine Trees. ",
+            "persona": "I'm a sly one, always on the move. Can't let those hunters think they've got the best of me.",
+            "location": "Entrance To The Pine Trees",
+            "goal": "His goal is to outsmart the hunters and protect his fellow woodland creatures.",
+            "inventory": {}
+        }
+    ],
+    "locations": [
+        {
+            "name": "Riverbed",
+            "description": "With clear air and the sound of gurgling water near it, the river bed is silty and muddy. The river rushes by the land as more and more dirt separates from the land. The land of the riverbed slick with mud and filled with bugs and worms/",
+            "background": "The riverbed is where the village people come to collect water to drink. The women come early in the morning with their baskets to collect water for the whole family. Later, the men come and catch fish, for the evening meal. The children follow their mothers to the river and play in the river while the mothers chat and collect water.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Moving from the muddy riverbed to the Flower Garden, you step through an ancient oak's hidden entrance, entering a technicolor world of blooming flowers and ripe, tangy berries.",
+                "west": "Going west from the riverbed, you trek through a thick forest and cross a river, reaching The Clearing, a hiding sport filled with old memories of knights' practices and secret trysts.",
+                "downstream": "Traveling downstream from the riverbed, you find yourself entranced by the rhythm of the flowing water as it slows and quickens, bringing you closer to the heart of the Stream, bustling with wildlife."
+            },
+            "connections": {
+                "north": "Flower Garden",
+                "west": "The Clearing",
+                "downstream": "The Stream"
+            },
+            "items": {},
+            "characters": {
+                "Falana": {
+                    "name": "Falana",
+                    "description": "Falana is a perpetual half-woman, half-deer who roams around the riverbed.",
+                    "persona": "I've been a part of this river for so long, it's more home to me than my original form. I help keep the river clean and guide lost souls.",
+                    "location": "Riverbed",
+                    "goal": "Her goal is to protect the riverbed from pollution and harm.",
+                    "inventory": {
+                        "River Stones": {
+                            "name": "River Stones",
+                            "description": "Smooth, rounded stones found by the river",
+                            "examine_text": "Upon closer inspection, these stones are unbelievably smooth and worn down by perpetual water flow. Their glossy surfaces reflect light causing a spectrum of colors to dance around.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Drinking Gourd": {
+                            "name": "Drinking Gourd",
+                            "description": "A simple, handmade drinking vessel",
+                            "examine_text": "This is a large, hollow gourd carved out and dried, then sealed with beeswax. The outside is adorned with markings signifying it belongs to Falana, whom the riverbed is home to. It's lightweight and strong, the ideal container for collecting fresh river water.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Forest"
+        },
+        {
+            "name": "Flower Garden",
+            "description": "This clearing is in reveal a wide circle of trees. Proud oaks stand close enough that only the smallest of fauna can squeeze through, protecting the garden within from curious deer and hungry rabbits. Flowers of every hue and shade crowd the soft lawn of grass, soaking up what light they can through the shadows cast by the branches above. Purple, yellow, red, blue - even green blossoms bob in the breeze, their scents mixing to create a heady perfume. Vines and creepers climb up the tree trunks, dripping with grapes and berries.",
+            "background": "This garden is used to feed the fae that live in the Brush den. The fruit from the climbing vines and the nectar from the flowers make up most of their diet, and the garden provides them with a ready source of nourishment. The entrance to the encircled clearing is within the roots of an ancient oak, and is not easy to see.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "Walking south from the flower garden, you notice a subtle change in air quality as you move away from the enveloping sea of blooming vegetation and approach the lively riverbed, echoing with the lullaby of flowing water.",
+                "west": "As you travel westward from the garden of blossoming hues, the towering oak trees guide your path leading to the Wooded Magical Village, where the mystical sounds of quiet spells and soft laughter greet you."
+            },
+            "connections": {
+                "south": "Riverbed",
+                "west": "A Wooded Magical Village"
+            },
+            "items": {
+                "Colorful Blossoms": {
+                    "name": "Colorful Blossoms",
+                    "description": "A variety of flowers of assorted colors",
+                    "examine_text": "You look closer at the flowers, their vibrant colors stand out even under the shade of the trees. The blossoms are in their full form, a delightful view to the eyes.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Flower Garden"
+                },
+                "Climbing Vines": {
+                    "name": "Climbing Vines",
+                    "description": "Thick vines climbing up the tree trunks",
+                    "examine_text": "As you glance at the enormous vines, they seem to move, looping and twisting across the tree trunks. You can see clusters of ripe berries hanging from it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Flower Garden"
+                },
+                "Ancient Oak": {
+                    "name": "Ancient Oak",
+                    "description": "An old but sturdy oak tree within the forest clearing",
+                    "examine_text": "As you gaze at the ancient oak, you can detect the history in its gnarled bark. The branching roots seem to hold an invisible entrance.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Flower Garden"
+                },
+                "Fruit": {
+                    "name": "Fruit",
+                    "description": "A cluster of ripe fruits hanging from the vines",
+                    "examine_text": "As you gaze at the fruits, their color catches your eye. They are ripe and juicy, quenching both thirst and hunger.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": true,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Flower Garden"
+                }
+            },
+            "characters": {
+                "Orrin": {
+                    "name": "Orrin",
+                    "description": "Orrin is an elder elf, who tends to the magical garden and shares tales with the children of the village.",
+                    "persona": "As an Elder Elf, I have watched the seasons change for centuries, always tending to the magical garden. ",
+                    "location": "Flower Garden",
+                    "goal": "His goal is to protect the garden and ensure it thrives for centuries to come.",
+                    "inventory": {
+                        "Ancient Oak Acorn": {
+                            "name": "Ancient Oak Acorn",
+                            "description": "A large, unusually smooth acorn from the towering ancient oak.",
+                            "examine_text": "On closer inspection, the acorn is nearly the size of a small apple. The shell is hard and smooth, with a mature, dark brown gloss. It's pleasantly weighty in your hand. It's been imbued with rich ancient magic that seems to hum softly.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": true,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Climbing Vines": {
+                            "name": "Climbing Vines",
+                            "description": "Life-filled vines flourish on the forest's guardians, bearing vibrant and succulent fruits.",
+                            "examine_text": "The vines are a lively green, covered in a myriad of leaves shaped like an elf's ear. Patches of various fruits, each glowing with a slight iridescence, adorn the vines. They're tangled artfully around the tree trunks, reaching up towards the sunlight filtering through the forest canopy above.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": true,
+                                "is_gettable": false,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Forest"
+        },
+        {
+            "name": "A Wooded Magical Village",
+            "description": "The village lay hidden in a secret grotto that is set in a sort of valley between trees. The village is populated by child-like peoples who wear clothes made of various plant matter such as large leaves and vines. The homes are made of wood, and seemingly blend into the green dense backdrop.",
+            "background": "The wooded grotto is home to a master wizard who is cared for by the child-like village people. He pays them by protecting them and their village from the dangerous animals that reside in the dark forest.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Travelling east, one must pass through a narrow path heavily guarded by towering trees and vibrant flora, leading to the Flower Garden.",
+                "south": "The journey south implies a descent, moving deeper into the wooded darkness before the ground levels out at The Clearing, enveloped by ancient pine trees.",
+                "north": "Heading north requires courage, as you tread into the ominously shadowed Forest Entrance, where sunshine is scarce, and the footpath is shrouded in rotting leaves."
+            },
+            "connections": {
+                "east": "Flower Garden",
+                "south": "The Clearing",
+                "north": "Forest Entrance"
+            },
+            "items": {
+                "Wooden Staff": {
+                    "name": "Wooden Staff",
+                    "description": "A long, wooden staff with various strange symbols etched into it.",
+                    "examine_text": "The staff is taller than you and made from the wood of an ancient tree. Indistinguishable symbols are carved along its length. The staff gives off a faint glow, indicating it is probably enchanted.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "A Wooded Magical Village"
+                },
+                "Leaf Clothes": {
+                    "name": "Leaf Clothes",
+                    "description": "Clothes woven from various leaves and vines.",
+                    "examine_text": "Closer inspection of the clothes reveals they are tightly woven from the leaves and vines of different local plants. They are surprisingly thick and durable and should offer some protection while being light and breathable.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "A Wooded Magical Village"
+                },
+                "Wizards potion": {
+                    "name": "Wizards potion",
+                    "description": "A strange bubbling concoction in a clear glass vial.",
+                    "examine_text": "The potion is a swirling iridescent liquid. It seems to bubble of its own accord and gives off a light, pleasant scent. The vial is sealed with a wax stopper.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "A Wooded Magical Village"
+                },
+                "Wooden Hut": {
+                    "name": "Wooden Hut",
+                    "description": "A small hut that blends in with the surrounding trees.",
+                    "examine_text": "The hut has been carefully crafted to blend into the surrounding foliage. Small windows can be seen peering out from within the leaves and bark.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "A Wooded Magical Village"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Forest"
+        },
+        {
+            "name": "The Clearing",
+            "description": "the clearing is surrounded by old pine trees where knights used to practice swinging their swords. There are haystacks where they take wenches and pay them a sickle.",
+            "background": "the clearing is used as practice and you can get there over the river, and through the forest. It is thick with trees but this spot serves as a secret marriage consummation station.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "As you walk to the east, you can hear the calm sound of streaming water. The ground under your feet gets increasingly damp and spongy as you approach the Riverbed.",
+                "north": "Heading north from the clearing, the forest grows increasingly dense. The vegetation speaks of mystery and magic, and soon you see strange wooden structures peeking out \u2013 you have arrived at the Wooded Magical Village.",
+                "west": "Walking west, the pine trees thin and give way to a more mixed woodland. The sound of lapping water grows louder, and soon you are walking along the banks of a beautiful river flowing through the Forest."
+            },
+            "connections": {
+                "east": "Riverbed",
+                "north": "A Wooded Magical Village",
+                "west": "Along The Banks Of A River In The Forest"
+            },
+            "items": {
+                "Rusty Sword": {
+                    "name": "Rusty Sword",
+                    "description": "An old iron sword, left by a knight",
+                    "examine_text": "The sword has seen better days. The iron is rusting, with nicks and chips on the blade from intense battles. A faint symbol can be seen on the hilt- a crest of some sort.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "The Clearing"
+                },
+                "Haystack": {
+                    "name": "Haystack",
+                    "description": "A large pile of hay, often used for rest",
+                    "examine_text": "The haystack is quite large, made of golden strands of hay. Something may have been left behind within the pile from previous amorous endeavors.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Clearing"
+                },
+                "Silver Sickle": {
+                    "name": "Silver Sickle",
+                    "description": "A curved, sharp tool used by the wenches as payment",
+                    "examine_text": "This sickle, though often used as currency amongst the residents, still holds a sharp edge. The silver shines brightly even under the dense tree cover.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "The Clearing"
+                }
+            },
+            "characters": {
+                "Doros": {
+                    "name": "Doros",
+                    "description": "Doros is a jovial, peasant blacksmith who is commonly found at The Clearing.",
+                    "persona": "I've been a blacksmith all me life, making tools for the villagers and weapons for the knights. There's nothing like the sound of a hammer hitting hot iron.",
+                    "location": "The Clearing",
+                    "goal": "His goal is to create the finest sword the kingdom has ever seen.",
+                    "inventory": {
+                        "Rusty Sword": {
+                            "name": "Rusty Sword",
+                            "description": "An old, abandoned sword with a rusted blade.",
+                            "examine_text": "The sword has definitely seen better days. The once sharp blade is now covered in rust, and the hilt is worn down. There's a distinct emblem of a rose embossed on the hilt, but it's barely noticeable underneath all the rust and grime.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Silver Sickle": {
+                            "name": "Silver Sickle",
+                            "description": "A crescent shaped tool with a silver hue used primarily for farming.",
+                            "examine_text": "The sickle appears finely forged, its crescent edge sharp with signs of recent use. It gleams under the sunlight with a silverish hue, reflecting the dedication and craftsmanship of the blacksmith. You can see small, but meticulous engravings along the handle.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Forest"
+        },
+        {
+            "name": "The Stream",
+            "description": "The stream is always going. The water moves quickly in some places and slowly in other places. There is a dry spot on each side of the water. In some areas you will see animals drinking the water. There are also fish swimming around in the deeper parts of the stream.",
+            "background": "The stream was created by rainfall. The water in the sky was becoming raindrops in the clouds and then it fell to the earth. The water accumulates as it flows down from higher elevations. The areas where the water is accumulated is called stream or river.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "upstream": "You walk along the bank of the fast flowing stream, the air turning cooler as you approach the riverbed. You can hear the distant laughter of women and children splashing in the river.",
+                "west": "As you head west, the sound of the stream fades away and the trees grow thicker. An eerie silence descends, broken only by the occasional rustle of unseen creatures."
+            },
+            "connections": {
+                "upstream": "Riverbed",
+                "west": "Unsettling Forest Area"
+            },
+            "items": {
+                "Fish Bucket": {
+                    "name": "Fish Bucket",
+                    "description": "A sturdy iron bucket with few noticeable dents.",
+                    "examine_text": "Colour has faded away due to prolonged usage. Large enough to carry four fishes.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Stream"
+                },
+                "Fishing Net": {
+                    "name": "Fishing Net",
+                    "description": "A large network of thread, designed to catch fish.",
+                    "examine_text": "The net is intricately tied and has a few torn edges from past catches but is still ready to use.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Stream"
+                },
+                "Drinking Gourd": {
+                    "name": "Drinking Gourd",
+                    "description": "A large dried and hollowed-out gourd used historically for carrying water.",
+                    "examine_text": "You see a hollowed out gourd with a stopper made from cork. It's light and solid, good for refilling with water from the stream.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Stream"
+                },
+                "River Stones": {
+                    "name": "River Stones",
+                    "description": "Smooth, worn stones from the bank of the stream.",
+                    "examine_text": "You pick up a stone \u2014 it's surprisingly smooth, and cold under your fingers.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "The Stream"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Forest"
+        },
+        {
+            "name": "Along The Banks Of A River In The Forest",
+            "description": "The river that runs through this part of the forest is clear and cold and crystal blue.  Small fish dart about, and a few lazy insects flit back and forth above the riverbank.  Lush grass slopes up from the river itself.",
+            "background": "The river runs through most of the continent on its way to the sea.  It passes through this forest, cutting it exactly in half as it travels from east to west.  It is the only source of fresh water for the entire forest.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Traveling east, you'd leave the lush riverbank and follow a narrow path winding through towering trees until you reach the open space of the Clearing, an area surrounded by old pine trees and filled with history and tales from the knights who once practiced there.",
+                "north": "Venturing north takes you deeper into the forest, guided by a well-trodden walkway. The river you leave behind appears and reappears, intertwining itself with the surrounding immense trees until you reach the South Forest, a crucial source of sustenance for the nearby communities."
+            },
+            "connections": {
+                "east": "The Clearing",
+                "north": "South Forest"
+            },
+            "items": {
+                "Long Reeds": {
+                    "name": "Long Reeds",
+                    "description": "Tall, spindly reeds poking out of the river and bent by the water's flow.",
+                    "examine_text": "Binded tightly together, they are thick and erect, reaching almost to your waist. Their feathery, swaying tips release floating seeds into the air, and their rough, sandpapery surface makes them difficult to hold for long.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Along The Banks Of A River In The Forest"
+                },
+                "Forest Berries": {
+                    "name": "Forest Berries",
+                    "description": "Clusters of round, juicy-looking berries positioned along the river bank.",
+                    "examine_text": "The berries have a rich, violet hue and are glossy with dew. They seem edible and exude a delicious, slightly tart scent.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Along The Banks Of A River In The Forest"
+                },
+                "Polished Stone": {
+                    "name": "Polished Stone",
+                    "description": "A small, smooth stone lying near the edge of the water.",
+                    "examine_text": "The water of the river has worn this stone into a sleek pebble. It is smooth to touch and has an unremarkable earthy brown color.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Along The Banks Of A River In The Forest"
+                },
+                "Water": {
+                    "name": "Water",
+                    "description": "A flowing river, clear and cold. The only source of fresh water in this forest.",
+                    "examine_text": "The clear river gurgles passively, its consistent flow causing the surface to teem with life. Cool to the touch and clear enough to see the riverbed.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Along The Banks Of A River In The Forest"
+                }
+            },
+            "characters": {
+                "Brickel": {
+                    "name": "Brickel",
+                    "description": "Brickel is a crafty gnome who makes his home along the banks of the river.",
+                    "persona": "I may be small in stature, but don't underestimate me. I know every nook and cranny of this river, and it provides everything I need.",
+                    "location": "Along The Banks Of A River In The Forest",
+                    "goal": "His goal is to build a beautiful dam on the river.",
+                    "inventory": {
+                        "Fishing Net": {
+                            "name": "Fishing Net",
+                            "description": "A small but sturdy fishing net made of intertwined vines and thin pieces of wood.",
+                            "examine_text": "Upon closer examination, the fishing net appears meticulously crafted, showing signs of frequent use. The netting is made of coiled vines and the rim is wooden. Its handle feels comfortable in your hand.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "River Stones": {
+                            "name": "River Stones",
+                            "description": "Smooth, rounded stones of various sizes, colors, and shapes, polished by the river's current.",
+                            "examine_text": "Each stone is unique, softly smoothed and rounded by the river's relentless current. Some are speckled, others are solid colors - faded reds, grays, and browns. They are various sizes, but all fit nicely in the palm of your hand, cool to the touch.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Forest"
+        },
+        {
+            "name": "Unsettling Forest Area",
+            "description": "The forest is actually very creepy even during the day. The trees are so tall that they block the sunlight. There is always fog in the forest which makes it very hard to see. There are a lot of mushrooms near the trees and none of them are edible",
+            "background": "It is believed that this forest is alive! People say that trees are moving from one place to another when nobody sees. This way hunters and other people have a hard time finding their way back. This forest never looks the same",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Navigating through the fog, you leave the unsettling forest behind, moving towards the sound of flowing water. The journey is eerie, yet filled with the sensory gratification of crisp breeze, musky moss, and sounds of forest life.",
+                "south": "Descending from the unsettling ethers of the forest, you traverse through a thriving undergrowth toward the dense Firewood Forest. The air gets noticeably fresher as you pass through rustling leaves and hear the comforting creak of ancient trees."
+            },
+            "connections": {
+                "east": "The Stream",
+                "south": "Firewood Forest"
+            },
+            "items": {
+                "Mysterious Mushrooms": {
+                    "name": "Mysterious Mushrooms",
+                    "description": "A clump of colorful, inedible mushrooms growing around the base of a tree.",
+                    "examine_text": "A strange variety of mushrooms, they're vibrant and mesmerizing, but don't look safe to eat. Their stems are thick and robust, caps large and dotted with unusual patterns and colors.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Unsettling Forest Area"
+                },
+                "Tall Ancient Tree": {
+                    "name": "Tall Ancient Tree",
+                    "description": "A towering, gnarled tree that looks as old as the forest itself.",
+                    "examine_text": "This massive tree has a gnarled and twisted trunk, with thick moss coating its bark. Despite its age, it still stands defiant and firm, its leaves dark and lush.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Unsettling Forest Area"
+                },
+                "Ghostly Fog": {
+                    "name": "Ghostly Fog",
+                    "description": "A constant, eerie fog that blankets the forest floor.",
+                    "examine_text": "The fog is unusually cold and dense. It seems to cling to everything around it, obscuring the base of the trees and turning the forest into a surreal, otherworldly landscape.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Unsettling Forest Area"
+                },
+                "Hunters' Crossbow": {
+                    "name": "Hunters' Crossbow",
+                    "description": "A well-crafted crossbow left behind by a hunter.",
+                    "examine_text": "The crossbow is made of sturdy wood and iron, with a well-worn grip. It's light but decisive, an expertly crafted tool for skilled hunting.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Unsettling Forest Area"
+                }
+            },
+            "characters": {
+                "Ethel": {
+                    "name": "Ethel",
+                    "description": "Ethel is a cunning witch who resides in the unsettling forest area.",
+                    "persona": "They call me a witch, an outcast, but they rely on my potions more than they care to admit.",
+                    "location": "Unsettling Forest Area",
+                    "goal": "Her goal is to brew the ultimate potion of immortality.",
+                    "inventory": {
+                        "Mysterious Mushrooms": {
+                            "name": "Mysterious Mushrooms",
+                            "description": "A cluster of unusual, glowing mushrooms growing near a tree.",
+                            "examine_text": "On closer inspection, these mushrooms glow with an ethereal light. They exude a strange energy that you can feel tingling on your skin as you approach them. Some might mistake them for poisonous, but you sense that they could have magical properties.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Hunters' Crossbow": {
+                            "name": "Hunters' Crossbow",
+                            "description": "A deadly weapon, weathered by time and use but no less lethal for it.",
+                            "examine_text": "The crossbow is expertly crafted with attention to detail. The body is fashioned from a dark, heavily textured wood. Its bow, a fearsome scythe of twisted iron, speaks of countless hunts. The crossbow string looks worn, but well-maintained. Despite its age, this crossbow is still a formidable weapon.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Forest"
+        },
+        {
+            "name": "South Forest",
+            "description": "The forest is lined with tall trees but has a long walkway for travelers. I the middle of the forest is a long river surrounded by tall grass with clear blue waters and lots of colorful fish.",
+            "background": "The river in the forest is important to the people who live near the forest. it supplies them with clean drinking water and also food to eat and a place to bathe",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "Traveling down south, you follow alongside the babbling river with its clear, cold, blue water. Small fish can be seen darting around, reflecting the sunlight that peers through the surrounding lush greenery.",
+                "north": "Venturing north, you enter the denser parts of the forest filled with gigantic trees. The sunlight dapples through the high foliage, and the forest comes alive with the sounds of wildlife around you."
+            },
+            "connections": {
+                "south": "Along The Banks Of A River In The Forest",
+                "north": "North Forest"
+            },
+            "items": {
+                "Old Tree": {
+                    "name": "Old Tree",
+                    "description": "A towering, old tree covered in moss",
+                    "examine_text": "You see a tall tree towering above you. Its bark is full of moss, indicating its age. It has wide spread branches, which are home to many birds",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "South Forest"
+                },
+                "River Rocks": {
+                    "name": "River Rocks",
+                    "description": "Smooth, polished rocks from the river",
+                    "examine_text": "The rocks at the river's edge are smooth and shiny, polished over time by the river. Some are oddly shaped and various sizes",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "South Forest"
+                },
+                "Bluegill": {
+                    "name": "Bluegill",
+                    "description": "A small, but tasty, freshwater fish",
+                    "examine_text": "The bluegill is a colorful little fish, no more than four inches long. Its scales are shiny, and it has a blue-purple gill cover",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "South Forest"
+                },
+                "River Water": {
+                    "name": "River Water",
+                    "description": "Fresh, clear water from the river",
+                    "examine_text": "The water from the river is crystal clear, and you can sip it directly from the running stream. It's cool and refreshing",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "South Forest"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Forest"
+        },
+        {
+            "name": "Firewood Forest",
+            "description": "The forest has many trees. The majority of the trees are green however a few are orange and red. The forest is huge and seems to never end.",
+            "background": "The forest is where all the wood is gathered to make fire. The forest goes for miles and new trees are planted once a year to make sure it lasts forever.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "The journey to the Unsettling Forest Area holds a change of pace as the bright, welcoming trees give way to the towering eerie giants of the north, with their ominous fog and suspiciously mobile vegetation.",
+                "west": "Heading west towards the Picnic Area, the thick forest gradually thins out into a more open space and eventually leads to a charming clearing with fallen logs makings ideal picnic spots, and the soft murmur from the nearby pond adds to the tranquility of the area."
+            },
+            "connections": {
+                "north": "Unsettling Forest Area",
+                "west": "Picnic Area"
+            },
+            "items": {
+                "Leather Backpack": {
+                    "name": "Leather Backpack",
+                    "description": "A sturdy backpack made of dark brown leather.",
+                    "examine_text": "On close examination, you see that the backpack is old but well-worn. It appears to be handmade, and the leather is studded with small charms and trinkets. Despite its age, it seems to be sturdy enough to hold a fair amount of items.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Firewood Forest"
+                },
+                "Water Flask": {
+                    "name": "Water Flask",
+                    "description": "A small flask filled with fresh water.",
+                    "examine_text": "Upon closer examination, you see that the flask is made of glass and wrapped in a leather casing. The water inside looks clean and clear, an inviting sight to a thirsty traveler.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Firewood Forest"
+                },
+                "Loaf of Bread": {
+                    "name": "Loaf of Bread",
+                    "description": "A freshly baked loaf of bread.",
+                    "examine_text": "Upon further examination of the loaf, you can see the golden brown crust and can almost taste the rich, yeasty flavor. It appears to be freshly made and still warm from the oven.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Firewood Forest"
+                },
+                "Sharp Axe": {
+                    "name": "Sharp Axe",
+                    "description": "A sharp and sturdy axe.",
+                    "examine_text": "Looking at the axe up close, you see the shiny, sharp blade, the gleam of the well-polished handle and can feel the heft of a useful, quality tool.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Firewood Forest"
+                },
+                "Camouflage Cloak": {
+                    "name": "Camouflage Cloak",
+                    "description": "A cloak designed to blend in with the forest surroundings.",
+                    "examine_text": "Examining the cloak in more detail, you see the various shades of green, brown and other colors that match the forest, interwoven to create a stunning patchwork of Earth's natural hues.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Firewood Forest"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Forest"
+        },
+        {
+            "name": "North Forest",
+            "description": "Filled with huge trees, the forest is home to many types of animals. Huge predators such as tigers and bears roam the grounds as do small animals like squirrels. Colorful birds fly among the trees. Wildflowers grow on the ground. Dappled sunlight streams through the huge canopy of trees.",
+            "background": "Many animals, and humans make their homes in the forest. It is a source of much of the game humans eat. The people also get their wood, fresh fish and meat from the resources of the forest. It is also a place where people enjoy camping and where they travel as they roam.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "The path from North forest to the South Forest is a tranquil journey, serenaded by songs of the birds and accompanied by gentle zephyrs.",
+                "west": "The journey west towards the Mysterious Forest Outskirts is filled with intrigue, as the dense foliage gradually gives way to an eerie, isolated landscape."
+            },
+            "connections": {
+                "south": "South Forest",
+                "west": "Mysterious Forest Outskirts"
+            },
+            "items": {
+                "Oak Tree": {
+                    "name": "Oak Tree",
+                    "description": "A huge and majestic oak tree",
+                    "examine_text": "The tree trunks are thick and dark with textured and rough bark. Looking up, you can see the branches of the tree stretching outwards, covered with leaves. An occasional acorn might slip from the branches above.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "North Forest"
+                },
+                "Wildflowers": {
+                    "name": "Wildflowers",
+                    "description": "A patch of wildflowers growing in the light",
+                    "examine_text": "The flowers vary in size and color, growing close together. Some have delicate petals, and others have bold, vibrant colors. They smell fragrant when you get close.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "North Forest"
+                },
+                "Walking Stick": {
+                    "name": "Walking Stick",
+                    "description": "An abandoned walking stick leaning against a tree",
+                    "examine_text": "The wooden stick looks solid and sturdy, with a light brown color. It is polished smooth and worn from use.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "North Forest"
+                },
+                "Bear Tracks": {
+                    "name": "Bear Tracks",
+                    "description": "A set of large bear tracks leading deeper into the forest",
+                    "examine_text": "The prints are large and fresh, indicating the bear isn't far away. The moist mud around the prints have captured it perfectly, showing the deep indentations of the bear's claws.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "North Forest"
+                },
+                "Berry Bush": {
+                    "name": "Berry Bush",
+                    "description": "A bush covered with ripe berries",
+                    "examine_text": "The bush is full of small, ripe berries. The berries are a deep, luscious red and look juicy. The leaves on the bush are a deep, dark green and slightly glossy",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "North Forest"
+                }
+            },
+            "characters": {
+                "Bearer": {
+                    "name": "Bearer",
+                    "description": "Bearer is a talking bear known for his wisdom, who resides in the Shaded North forest.",
+                    "persona": "They say wisdom comes with age, but I believe it comes from observing nature and learning it's ways.",
+                    "location": "North Forest",
+                    "goal": "His goal is to guide lost travellers safely through the forest.",
+                    "inventory": {
+                        "Berry Bush": {
+                            "name": "Berry Bush",
+                            "description": "A bush teeming with ripe, red berries.",
+                            "examine_text": "The bush is lush with a multitude of deep red berries. Each one looks juicier than the last. They're just within reach if you wanted to pick a few.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": true,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Walking Stick": {
+                            "name": "Walking Stick",
+                            "description": "A sturdy oak stick, useful for hiking.",
+                            "examine_text": "The stick is made from the branch of an old oak tree. It's the perfect length and thickness for a walking stick. The bark has been stripped off revealing the strong, smooth wood beneath.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Forest"
+        },
+        {
+            "name": "Picnic Area",
+            "description": "In this picnic area, there is a wide clearing with some cut down tree stumps made for people to sit and enjoy their lunch.  There's also a small pond nearby where people can feed fish and watch turtles sunbathe.",
+            "background": "Peasants come here during their lunch break to enjoy the outdoors before having to go back to their manual labor.  It's one of the few areas where they can unwind.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Walking eastwards, you immediately notice the dense forest greenery. The deeper you go, the smell of fresh pine wafts through the air as you hear the distant sound of axes at work.",
+                "south": "Heading south, the sounds of laughter and splashing grow louder. You traverse a small trail until you reach the peaceful pond filled with diverse wildlife."
+            },
+            "connections": {
+                "east": "Firewood Forest",
+                "south": "Pond"
+            },
+            "items": {
+                "Picnic Basket": {
+                    "name": "Picnic Basket",
+                    "description": "A quaint wicker basket filled with food items.",
+                    "examine_text": "Upon closer inspection, you take a peek inside the picnic basket. It smells of fresh bread and ripe fruit. You also see a few jars of homemade jam and some comfortable looking flannel picnic blankets.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Picnic Area"
+                },
+                "Fishing Rod": {
+                    "name": "Fishing Rod",
+                    "description": "A simple wooden fishing rod with a sturdy piece of string attached to it.",
+                    "examine_text": "The fishing rod seems to be made out of solid pine and has a moderately worn grip, suggesting that it has been used often. A single metal hook dangles from the end of a strong string.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Picnic Area"
+                },
+                "Tree Stump": {
+                    "name": "Tree Stump",
+                    "description": "A cut down tree stump that serves as a seat",
+                    "examine_text": "With sawdust still fresh on its surface, the tree stump is surprisingly smooth and makes for a rather comfortable seat. Resilient moss is gradually claiming the sides, displaying a mix of green and brown hues.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Picnic Area"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Forest"
+        },
+        {
+            "name": "Mysterious Forest Outskirts",
+            "description": "The forest is a dark and mysterious place, where few but the bravest hunters dare wander. The trees loom over you, obscuring any sort of sunlight. Despite this, it is a valuable food and lumber resource for the nearby castle's inhabitants, for the trees are tall and thick and a plentiful amount of deer wander about within.",
+            "background": "The vast expanse of the forest is one of the greatest mysteries for the local castle. No one knows where it ends, for even the brave hunters dare only travel to its outermost depths. As a result, it is likely that the forest has grown and grown for the past hundred years, and no one is willing to explore deeper, for there are myths of a mythical dragon king's castle in its innermost depths.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Strolling towards the east, you must navigate through an expanse of towering trees and dense vegetation, where birds of various species perch high above you and the air is filled with the scent of damp earth and rich foliage.",
+                "south": "Heading south, the journey becomes rather eerie and unnerving as the forest becomes darker and denser. The faint sound of insects and creatures you cannot identify fills your ears, while spider webs brushing against your face sends shivers down your spine."
+            },
+            "connections": {
+                "east": "North Forest",
+                "south": "Forbidden Forest"
+            },
+            "items": {
+                "Tall Tree": {
+                    "name": "Tall Tree",
+                    "description": "A large tree that towers over you.",
+                    "examine_text": "The tree is tall and strong with a thick trunk. Its branches are full of green, beautiful leaves and you can hear the soft rustling of the wind. Around the base are a plethora of roots, binding the tree to the earth.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Mysterious Forest Outskirts"
+                },
+                "Bow and Arrows": {
+                    "name": "Bow and Arrows",
+                    "description": "An ancient hunters' tool left behind.",
+                    "examine_text": "The bow is made from fine yew, flexible and strong. The arrows are tipped with sharp iron points and have feathers on the end for guidance. All items are worn from age but still usable.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Mysterious Forest Outskirts"
+                },
+                "Deer": {
+                    "name": "Deer",
+                    "description": "A majestic creature of the forest.",
+                    "examine_text": "The deer is a beautiful creature with a brown coat. It has grand antlers and kind eyes, nibbling on some foliage. It looks wary and ready to spring away at any sign of danger.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Mysterious Forest Outskirts"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Forest"
+        },
+        {
+            "name": "Pond",
+            "description": "A small area with a body of water in the center along with turtles, frogs, and other wildlife that live here.  Surrounding this pone are a dense set of trees along with some rocks here and there.",
+            "background": "This area is used by the local wild life to bask in the sun.  Some peasants come here to fish and relax at the end of a long day.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Walking northward from the pond, you make your way through a grassy field towards the Picnic Area. You can hear the distant chatter of peasants on their lunch break, and the smell of freshly made sandwiches wafts your way.",
+                "west": "To the west, a narrow path leads into the ominous Forbidden Forest. As you approach, the jolly sounds of the pond fade and are replaced by the eerie silence, broken only by the whispering wind and the distant caw of a crow."
+            },
+            "connections": {
+                "north": "Picnic Area",
+                "west": "Forbidden Forest"
+            },
+            "items": {
+                "Fishing Rod": {
+                    "name": "Fishing Rod",
+                    "description": "A simple fishing rod made of wood and twine",
+                    "examine_text": "This is a simple and sturdy fishing rod, made by a local craftsman. It has a wooden handle and a long, thin pole attached to it. A thin line of twine is attached to the end of the pole.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Pond"
+                },
+                "Rocks": {
+                    "name": "Rocks",
+                    "description": "A pile of different sized rocks lying on the ground",
+                    "examine_text": "These are simple rocks, with different sizes and colors. Some of them have interesting shapes and patterns.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Pond"
+                },
+                "Pond Water": {
+                    "name": "Pond Water",
+                    "description": "Shimmering water of the pond full of life",
+                    "examine_text": "The water is mostly clear and shimmers in the light. Tiny fish dart in and out of the reeds, and you observe frogs lounging on nearby lily pads.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Pond"
+                },
+                "Tree Bark": {
+                    "name": "Tree Bark",
+                    "description": "Bark from the surrounding trees",
+                    "examine_text": "Looking closely at the bark, it appears rough and rugged, as a testament to the tree's years of survival in the wilderness.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Pond"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Forest"
+        },
+        {
+            "name": "Forbidden Forest",
+            "description": "The forbidden forest is a dark and very scary place. The trees are covered in spider web nets and huge spiders. The forest echoes sounds of witches' laughs and creepy crawly animals.  There is a brisk breeze that runs through the trees that will put chills down your spine.",
+            "background": "The forbidden forest is a place where the outcasts live. The outcasts are better known as the witches. These are the people that everyone is afraid of. They have been shunned from regular society and they are now inhabitants of the forbidden forest. No one other than the witches' themselves are allowed in the forest.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Traveling north would lead you to the Mysterious Forest Outskirts. Wandering into the dense foliage, you can taste the crisp wilderness air while listening to the faint rustling of leaves and mysterious creatures of the forest.",
+                "east": "Heading east, the verdure slightly lightens as you approach the Pond. The bubbly chirps of frogs start tickling your ears, and a mild dewy scent wafts in the air as the scenery slowly morphs from a forbidding forest to a tranquil waterside habitat.",
+                "south": "Moving south is a somber journey towards the Pine Tree Graveyard. The jovial songs of the forest give way to a deathly silence, broken occasionally by the unsettling howl of the wind, causing an uneasy rustling of dry leaves on the ground."
+            },
+            "connections": {
+                "north": "Mysterious Forest Outskirts",
+                "east": "Pond",
+                "south": "Pine Tree Graveyard"
+            },
+            "items": {
+                "Ancient Tree": {
+                    "name": "Ancient Tree",
+                    "description": "A massive and imposing tree, its bark gnarled by years of existence in the Forest.",
+                    "examine_text": "At a closer look, the Ancient Tree appears even more intimidating, it's massive roots gripping the earth deeply, it's hollow trunk leading into a dark abyss and it's branches that seem to reach out menacingly. Spider webs dangle from the branches and you see movement - bigger spiders than you'd like.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Forbidden Forest"
+                },
+                "Witch's Hat": {
+                    "name": "Witch's Hat",
+                    "description": "A black, triangle shaped hat, encrusted with glittering gems.",
+                    "examine_text": "The Hat seems to thrum with an unseen energy. The gems shine with an ethereal light and the fabric feels like centuries old. This Hat definitely seems to belong to one of the witches from the Forbidden Forest.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Forbidden Forest"
+                },
+                "Creepy Crawly": {
+                    "name": "Creepy Crawly",
+                    "description": "A shadowy creature, skittering around with eight legs and too many eyes.",
+                    "examine_text": "As you get closer, the Creepy Crawly lets out a chittering sound, it's multiple legs shifting uneasily and it's fangs glinting in low light. Try not to get bitten by it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Forbidden Forest"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Forest"
+        },
+        {
+            "name": "Pine Tree Graveyard",
+            "description": "Once known as a forest of solitude, the entrance to the pine trees is now a bleak and dreary graveyard.  Dead grass and moss fill the ground along with crawling critters that mark fear in the mind among the he who venture here.  Tombstones so old many of the names are no longer eligible.  Dense fog surrounds the area, thick tree tops blotting out the sunlight, and an eerie silence fills the air.  Cold it feels, the air, but the ground is soft and warm.  Sound can not enter, no escape this dwelling.",
+            "background": "The nearby town tells strangers that this place is peaceful and beautiful, but little do they know it is not.  A terrible price is paid for all visitors who enter this place, no one has ever returned.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "You will adventure through a hair-raising journey teeming with large spiders and eerie noises towards the unpredictable and chilling Forbidden Forest.",
+                "west": "Traveling westwards, you'll witness towering pines swaying gently against the quiet breeze, feel the crunchy pine needles beneath your feet and hear the sound of woodland creatures as you approach the Entrance To The Pine Trees."
+            },
+            "connections": {
+                "north": "Forbidden Forest",
+                "west": "Entrance To The Pine Trees"
+            },
+            "items": {
+                "Old Tombstone": {
+                    "name": "Old Tombstone",
+                    "description": "An ancient, weathered tombstone that stands amid the pine trees.",
+                    "examine_text": "The tombstone, battered and eroded by countless years, no longer bears an eligible name. Some arcane symbols can still be made out, hinting at forgotten rites and ceremonies.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Pine Tree Graveyard"
+                },
+                "Dead Grass": {
+                    "name": "Dead Grass",
+                    "description": "Bunches of yellowed, lifeless grass blanketing the ground.",
+                    "examine_text": "So much grass, browned and brittle. Unpleasant to walk on and even worse to touch. It crumbles beneath your fingers, sharp and prickly.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Pine Tree Graveyard"
+                },
+                "Moss": {
+                    "name": "Moss",
+                    "description": "Dark green, damp moss growing from the graveyard's cold stones.",
+                    "examine_text": "The moss grows in thick patches, covering the rocks and tombstones. It's soft, damp, and surprisingly warm to the touch.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Pine Tree Graveyard"
+                },
+                "Crawling Critters": {
+                    "name": "Crawling Critters",
+                    "description": "Small creatures scurrying over the graveyard's terrain.",
+                    "examine_text": "Tiny creatures, some resembling spiders, others more like beetles, scuttle across the ground. They are shy and quick, retreating at your approach.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Pine Tree Graveyard"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Forest"
+        },
+        {
+            "name": "Entrance To The Pine Trees",
+            "description": "Very tall and towering pine trees that create a dark canopy of shade. Long skinny trees sway in the sky from the soft breeze. Pine needles scatter the ground like plush carpet.",
+            "background": "The Pine forest is home to many deer and other animals. It is a sanctuary for people escaping the loud city. It is serene and peaceful and many people have found solace here.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "As you move eastward, the towering pines begin to give way to a darker, quieter area. The playful rustling of the leaves turns to an unsettling silence as the air becomes colder and filled with an unexplainable dread.",
+                "north": "Heading north, the serene silence of the towering pines is gradually replaced by the giggles of fae folk. The atmosphere lightens, filled with the sweet scent of blossoming flowers and the curious chorus of unknown birds."
+            },
+            "connections": {
+                "east": "Pine Tree Graveyard",
+                "north": "Fairy Forest"
+            },
+            "items": {},
+            "characters": {
+                "Slynn": {
+                    "name": "Slynn",
+                    "description": "Slynn is a cunning fox that can communicate with humans. He lives mostly in the Entrance To The Pine Trees. ",
+                    "persona": "I'm a sly one, always on the move. Can't let those hunters think they've got the best of me.",
+                    "location": "Entrance To The Pine Trees",
+                    "goal": "His goal is to outsmart the hunters and protect his fellow woodland creatures.",
+                    "inventory": {
+                        "Pine Cone": {
+                            "name": "Pine Cone",
+                            "description": "A small spiky object that fell from a towering pine tree",
+                            "examine_text": "The Pine Cone is hard and spiky with sharp ridges. The seeds inside produce new Pine trees. It's small enough to fit in the palm of your hand and has a strong scent of fresh pine.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Fallen Branch": {
+                            "name": "Fallen Branch",
+                            "description": "A long branch that's fallen from the towering pine tree overhead",
+                            "examine_text": "The Fallen Branch is long and slender, with a sharp tip. Its bark is rough and cold to the touch. The branch is strong and sturdy, perfect to be used as a staff.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Forest"
+        },
+        {
+            "name": "Fairy Forest",
+            "description": "The fairy forest is full of brightly colored flowers that grow up to 30 feet tall.  There are also ornate birds that live here.  When you whistle, a fairy will come to you and tweak your nose.  They don't like a lot of nose so it irritates them enough for them to come out of their homes made from watermelon skins.",
+            "background": "The fairy forest was created when the king was annoyed by all the fairy flying around tweaking people's noses.  He banished them all to the fairy forest and told them if they ever annoyed him again, he would kill one unicorn for each offense.  The fairies think unicorns are their god, so they don't dare tempt the king.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "Traveling south, you get to stroll through a crowded array of towering pines, their needles whispering secrets in the wind. The journey feels magical yet humbling.",
+                "west": "Making your way west towards the Forest Entrance, the vibrancy of the Fairy Forest slowly fades into a gnarled, dense woodland. It\u2019s a journey full of mysterious charm and caution."
+            },
+            "connections": {
+                "south": "Entrance To The Pine Trees",
+                "west": "Forest Entrance"
+            },
+            "items": {
+                "Fairy Wing": {
+                    "name": "Fairy Wing",
+                    "description": "A delicate, ethereal wing of a fairy, shimmering with iridescent color.",
+                    "examine_text": "Upon closer examination, the wing is incredibly fine - it's almost like looking at a rainbow under a water droplet. It's soft to the touch, and seems to glow with a magical aura.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Fairy Forest"
+                },
+                "Watermelon Skin Home": {
+                    "name": "Watermelon Skin Home",
+                    "description": "A small, quaint home, crafted expertly from the skin of a watermelon. It seems to be a fairy's abode.",
+                    "examine_text": "Propped up by thin slivers of wood, the Watermelon Skin Home looks remarkably durable. You can't see inside, but a soft glow suggests it is inhabited. The sweet smell of fresh watermelon fills the air.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Fairy Forest"
+                },
+                "Unicorn Horn": {
+                    "name": "Unicorn Horn",
+                    "description": "A long, spiraled unicorn horn. It sparkles with a mesmerizing, multi-colored luster.",
+                    "examine_text": "The Unicorn Horn is a thing of beauty. It is firm yet smooth, cool to the touch and emanates a sense of powerful magic. There are faint traces of silver and gold along its spiraled surface, reflecting light in a pleasing, calming manner.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Fairy Forest"
+                },
+                "Fairy Whistle": {
+                    "name": "Fairy Whistle",
+                    "description": "A small ornate whistle, it's said to summon a fairy when blown. ",
+                    "examine_text": "The whistle is made of wood, carved intricately with designs of fairies and flowers. If you put it to your ear, you can hear a faint, magical humming.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Fairy Forest"
+                },
+                "Ornate Bird Feather": {
+                    "name": "Ornate Bird Feather",
+                    "description": "A colorful feather from one of the forest's ornate birds. It's a stunning piece of natural beauty.",
+                    "examine_text": "The feather is lush and vibrant, its colors seemingly shifting and changing when viewed from different angles. Touching it, you find it soft and warm, as if retaining some essence of the bird it came from.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Fairy Forest"
+                }
+            },
+            "characters": {
+                "Silara": {
+                    "name": "Silara",
+                    "description": "Silara is a mysterious, ethereal fairy who resides in the Fairy Forest. She carries a fairy whistle that can produce melodies heard only by fairies.",
+                    "persona": "They may not be able to see me with the naked eye, but they can feel my presence whenever I play my whistle.",
+                    "location": "Fairy Forest",
+                    "goal": "Her goal is to protect her forest and maintain peace among the fairies.",
+                    "inventory": {
+                        "Fairy Whistle": {
+                            "name": "Fairy Whistle",
+                            "description": "A tiny silver whistle, light as a feather, with intricate carvings around the edge.",
+                            "examine_text": "Upon close inspection, the whistle is encrusted with tiny gems. The carvings are so intricate, they can only have been made by fairy hands. When you blow the whistle, a musical note fills the air, carried away by the wind. It has an almost nostalgic tone to it.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Unicorn Horn": {
+                            "name": "Unicorn Horn",
+                            "description": "A pure white unicorn horn, glittering with magical potential.",
+                            "examine_text": "The unicorn horn is perfectly smooth and spirals to a point. It emanates an ethereal glow that seems to pulse with life. It is cool to the touch and hums softly, creating a soothing melody, only audible to the most attentive ears.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Forest"
+        },
+        {
+            "name": "Forest Entrance",
+            "description": "The path quickly narrows and darkens upon entering the forest.  Dense branches overhead block all but a few stray rays of sunshine.  Fallen leaves just beginning to rot blanket the forest floor, and every footstep kicks up a rich, loamy scent as fresh ground is unearthed.",
+            "background": "None but the bravest adventurers risk entering the western wood.  Fierce creatures are known to reside there, and there are rumors of a malevolent spirit haunting the deepest reaches of the wood.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Venturing eastwards, you will enter the radiant and lively Fairy Forest. The air is filled with magical dust, giving the forest an ethereal glow.",
+                "south": "A journey south leads to a secluded and whimsical village hidden among the ancient trees. Its tranquil and mysterious ambiance is captivating.",
+                "west": "Heading west, you are faced with a sudden dramatic shift in the environment to the challenging terrain of the Ant Hill. The ground rumbles under the weight and activity of the colossal ant hill."
+            },
+            "connections": {
+                "east": "Fairy Forest",
+                "south": "A Wooded Magical Village",
+                "west": "Ant Hill"
+            },
+            "items": {
+                "Broken Branch": {
+                    "name": "Broken Branch",
+                    "description": "A large branch that looks like it recently fell from a tree.",
+                    "examine_text": "The branch is solid and heavy with a rough, barky surface.  One end seems to have been cleanly snapped off, while the other tapers to a sharp point.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Forest Entrance"
+                },
+                "Loamy Soil": {
+                    "name": "Loamy Soil",
+                    "description": "A rich, earthy soil scattered with fallen leaves.",
+                    "examine_text": "The soil is damp to the touch, rich with organic matter and teeming with tiny, unseen lifeforms.  Fallen leaves provide a crunchy top layer.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Forest Entrance"
+                },
+                "Decaying Leaves": {
+                    "name": "Decaying Leaves",
+                    "description": "A pile of decaying leaves.",
+                    "examine_text": "The crumpled leaves are in various stages of decay, their once vibrant colors turned to muted shades of brown.  They are damp and spongy to the touch.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Forest Entrance"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Forest"
+        },
+        {
+            "name": "Ant Hill",
+            "description": "The ant hill is very large, over 5 feet high, and is wrapped around the base of a pine tree. The ants are huge compared to normal ants, and jut in and out of large holes in the ant hill. Bones of animals and even people can be seen sticking out of the red dirt ant hill.",
+            "background": "These ants are the scourge of the kingdom. Every time an ant hill is eradicated another pops up. These ants are very aggressive and hungry and have even been known to take large cattle or baby elephants.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Exiting the Ant Hill, you journey east through an ever-narrowing path.  The air grows thick and heavy with the scent of damp leaves and the forest seems to close in around you like a darkened, towering curtain.",
+                "south": "The journey to the Brush Den from the Ant Hill is slightly unsettling. As you make your way south, you leave the ant hill's ominous aura behind and step into the comforting whisper of the rustling leaves and the soft, inviting scents of the forest.. The undergrowth becomes denser, hinting at the cozy sanctuary that awaits."
+            },
+            "connections": {
+                "east": "Forest Entrance",
+                "south": "The Brush Den"
+            },
+            "items": {
+                "Giant Ant": {
+                    "name": "Giant Ant",
+                    "description": "A huge, aggressive ant.",
+                    "examine_text": "A giant, red ant that is scurrying around with significant speed. It has strong jaws and serrated mandibles which look capable of dealing lethal bites.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Ant Hill"
+                },
+                "Ant Queen": {
+                    "name": "Ant Queen",
+                    "description": "The queen of the ant colony.",
+                    "examine_text": "A frighteningly large ant queen, easily distinguished by her massive size. She is bulbous and nearly immobile, her only task to lay eggs for the colony.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Ant Hill"
+                },
+                "Fallen Branch": {
+                    "name": "Fallen Branch",
+                    "description": "A large, sturdy branch that has fallen from the pine tree.",
+                    "examine_text": "Weathered and worn, the branch is long and sharp at one end. It seems it could be useful as a makeshift weapon.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Ant Hill"
+                },
+                "Pine Cone": {
+                    "name": "Pine Cone",
+                    "description": "A large, prickly pine cone, fallen from the tree above.",
+                    "examine_text": "The pine cone is tightly closed, with its scales protecting the seeds inside. It has a rough texture and a sharp tip.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Ant Hill"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Forest"
+        },
+        {
+            "name": "The Brush Den",
+            "description": "The entryway to the brush den is made of arched bushes and various plants, as is the ceiling and walls. The inside is furnished with seats made of plant roots that have grown together, and a table made of wood adorned with flowers and wooden cups and plates. A small vine dangles with a glowing floor from the middle of the ceiling that lights the room dimly. Three small beds lay in one corner of the room made of interlaced grass and leaves.",
+            "background": "The fae inhibit this small cot hidden in the brush of the forest. These small creatures slowly add new brush and decorations to their den as they scavenge the forest for food and supporting their animal friends. The small den lies just a short distance east of the lake with the door facing the lake. One might easily miss it with a quick glance as many bushes and glowing flowers are outside of it.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Leaving the cozy brushing den, travelers must brace themselves for a terrifying jaunt. The massive looming anthill is not welcoming. The sight of it just near a pine tree spells danger. The agitated movement of enormous ants warns of a hazardous encounter ahead.",
+                "west": "Traveling west of the brush den, one enters an immense forest. It's disorienting, the depths of the woods are enigmatic, visibility gets dodgy while the undergrowth crunches. The eerie silence and the phantom glow up above make the journey feel a bit unsettling."
+            },
+            "connections": {
+                "north": "Ant Hill",
+                "west": "Woods"
+            },
+            "items": {
+                "Root Chair": {
+                    "name": "Root Chair",
+                    "description": "A sturdy chair made from interwoven roots",
+                    "examine_text": "The chair looks hard, but sits very comfortably. The roots have been interwoven in an intricate design",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Brush Den"
+                },
+                "Wooden Table with Flowers": {
+                    "name": "Wooden Table with Flowers",
+                    "description": "A table made of wood adorned with flowers",
+                    "examine_text": "The table is adorned with fresh wildflowers. It's constructed from several pieces of sturdy forest wood",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Brush Den"
+                },
+                "Wooden Cup": {
+                    "name": "Wooden Cup",
+                    "description": "A cup made of wood",
+                    "examine_text": "The cup appears to be carved from a single piece of wood. It is sturdy and light",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Brush Den"
+                },
+                "Grass Bed": {
+                    "name": "Grass Bed",
+                    "description": "A bed made from interlaced grass and leaves",
+                    "examine_text": "The bed is soft and surprisingly comfortable. It's mostly made of dry grass and leaves",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Brush Den"
+                },
+                "Glowing Flower": {
+                    "name": "Glowing Flower",
+                    "description": "A flower that glows dimly",
+                    "examine_text": "The flower emits a soft, ethereal light. It's a rare and magical plant",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Brush Den"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Forest"
+        },
+        {
+            "name": "Woods",
+            "description": "The woods are vast. Everywhere you turn it all looks the same. There are scratches on the trees from lost travelers marking their path. There are sounds coming from everywhere and yet no where. There are faint yellow circles up in the trees and bushes, possibly eyes starting at you.",
+            "background": "The forest was never all that well known because people swore it disappeared from time to time. No one was ever sure if it was ever a thing that really existed until you were inside of it. And by then you had traveled so far in that only a rare few found their way out. Those who did marked their path hoping to help the next person but for some reason it seemed that for every marking someone put in, three more appeared.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "When walking towards the brush den from the woods, you can feel the soft moss under your feet while passing between the diverse flora. You spot fae-like creatures dancing around the bright botanicals.",
+                "south": "Travelling south towards the dense canopy, the forest foliage becomes even thicker. You feel like they're shifting and moving around you, creating a winding pathway that leads to a hidden city."
+            },
+            "connections": {
+                "east": "The Brush Den",
+                "south": "A Room Hidden In The Dense Canopy"
+            },
+            "items": {
+                "Old Backpack": {
+                    "name": "Old Backpack",
+                    "description": "A worn out backpack, seems to have been left here a long time ago.",
+                    "examine_text": "The backpack is made of sturdy, faded canvas. Dust has settled on it and you can see a hint of a red star patch sewn onto the side of it. The zippers are a bit rusty, but it still seems to be sturdy.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Woods"
+                },
+                "Sword": {
+                    "name": "Sword",
+                    "description": "An ancient sword, stuck into the ground.",
+                    "examine_text": "The old sword has been thrust into the ground, hilt up. The blade is rusting but still looks sharp. It must be old, probably a relic from a bygone era.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Woods"
+                },
+                "Rustic Hat": {
+                    "name": "Rustic Hat",
+                    "description": "A hat seeming to be long forgotten and left by some traveler.",
+                    "examine_text": "The rustic, brown hat is wide-brimmed, made out of straw. It has lost its shape in a few areas, perhaps due to rain or a clumsy foot. It might provide some shade if worn.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Woods"
+                },
+                "Apple": {
+                    "name": "Apple",
+                    "description": "A red, juicy apple fallen from a tree branch.",
+                    "examine_text": "This apple looks ripe and delicious. It's skin is shiny and it appears to be fresh and full of juicy goodness. It's free of any visible blemishes.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Woods"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Forest"
+        },
+        {
+            "name": "A Room Hidden In The Dense Canopy",
+            "description": "Its a large room with types of beings you have never seen before. There is a counter and a person who greets people suprise when you arrive because you are not one of them. The room has an unfamiliar feel to it. with doors leading to walkways, other buildings, an entire city",
+            "background": "A group of beings that prefer to stay hidden from the outside world. You some how find your way to the entrance of their city",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "As you journey towards the vast woods, mysterious and natural sounds surround you. The dense canopies seem to whisper, leading you deeper and deeper into the ominous yet fascinating green expanse.",
+                "west": "Progressing westward, your path takes you through an open landscape, once a prime hunting ground. The silence of the day is soon taken over by the eerie cries and murmurs of the night, hinting at the woodland's dual nature."
+            },
+            "connections": {
+                "north": "Woods",
+                "west": "Woodlands"
+            },
+            "items": {
+                "Elven Sword": {
+                    "name": "Elven Sword",
+                    "description": "A beautifully crafted Elven Sword with intricate designs",
+                    "examine_text": "You see a long sword with an ornately decorated blade, its hilt wrapped in leather. The design and craftsmanship suggest it was made by Elves",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "A Room Hidden In The Dense Canopy"
+                },
+                "Magic Potion": {
+                    "name": "Magic Potion",
+                    "description": "A magical potion that glows with a peculiar light.",
+                    "examine_text": "The potion is in a delicate glass vial, the liquid inside glows with an unearthly light promising magical effects.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "A Room Hidden In The Dense Canopy"
+                },
+                "Guard's Helm": {
+                    "name": "Guard's Helm",
+                    "description": "A sturdy helm, seems it belongs to the guard.",
+                    "examine_text": "The helm is robust, made of tightly woven metal. It has several nicks and dents from battles fought.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "A Room Hidden In The Dense Canopy"
+                },
+                "Mysterious Book": {
+                    "name": "Mysterious Book",
+                    "description": "An old dusty book, the content seems unfamiliar.",
+                    "examine_text": "The book is ancient, its pages yellow and brittle. The text is in a language you can't understand, and strange symbols adorn the margins.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "A Room Hidden In The Dense Canopy"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Forest"
+        },
+        {
+            "name": "Woodlands",
+            "description": "The lush hunting grounds cover acres of land, tall trees and thickets of bushes sprawling across the land. Fields of open land are under the deep blue sky, showing the depth of the landscape. The grounds forest is thick but full of light, letting the multitude of wildlife be seen by the naked eye. The abundance of greenery makes it a prime location for hogs and oxen as they explore the land.",
+            "background": "During the day, the woodlands are used by honored knights and archers, practicing their skills on hogs and traversing the dense forest to prepare for battle. But at night, what seems to be a land of prosperity and growth turns into one of despair, the cries of slaughtered pigs piercing the night air with no animal in sight. Many have told tales of night practices ending in mysterious bites and scratches from things not of this world.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Traveling from Woodlands to A Room Hidden In The Dense Canopy, you will venture deep into the forest, guided by the scant beams of sunshine piercing through the dense foliage above. The ground underfoot becomes more uneven, covered in ancient roots and slippery moss, until you reach a sturdy wooden door embedded in the trunk of a gigantic tree."
+            },
+            "connections": {
+                "east": "A Room Hidden In The Dense Canopy"
+            },
+            "items": {
+                "Oak Tree": {
+                    "name": "Oak Tree",
+                    "description": "A grand and ancient tree with a trunk you can't quite wrap your arms around.",
+                    "examine_text": "The mighty Oak stands earnest in the woodland, its wide trunk covered in coarse bark with patches of moss. Its branches stretch out high above, touching the sky with an array of leaves rustling softly in the breeze. The tree itself is home to myriad creatures, a complex ecosystem in its own right.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Woodlands"
+                },
+                "Fallen Log": {
+                    "name": "Fallen Log",
+                    "description": "A large log, possibly from an old tree, lying on the foliage.",
+                    "examine_text": "The fallen log is large and robust, having rotted slightly to create an array of holes and crevices where small creatures could nest. Its bark has withered away in spots, and the wood underneath is visible and splintered.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Woodlands"
+                },
+                "Field Mushroom": {
+                    "name": "Field Mushroom",
+                    "description": "A small white mushroom growing in the moist soil.",
+                    "examine_text": "Upon close inspection, the field mushroom looks to be an edible Amanita. Its cap is circular and white, its gills not seen due to the shield-like position of the cap. A slender stalk holds it upright, imbedded in the wet earth.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Woodlands"
+                },
+                "Longbow": {
+                    "name": "Longbow",
+                    "description": "A sturdy longbow left by an archer, leaning against a tree.",
+                    "examine_text": "The longbow is made from well treated yew wood, the natural curve of the wood providing the tension needed for firing arrows. A well worn string, made from twisted animal gut, is stretched tight along its length. The wood is incredibly smooth, clearly well cared for and oiled regularly.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Woodlands"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Forest"
+        }
+    ],
+    "actions": []
+}

@@ -1,0 +1,1305 @@
+{
+    "player": "Wizard",
+    "start_at": "Wizard'S Quarters",
+    "game_history": [],
+    "game_over": false,
+    "game_over_description": null,
+    "characters": [
+        {
+            "name": "Wizard",
+            "description": "An eccentric old man, the Wizard is a master manipulator of magic who spends much of his time in isolation at his quarters.",
+            "persona": "I am the great Wizard, experienced in the realm of mages. Most of my time is consumed by great works that are beyond normal comprehension.",
+            "location": "Wizard'S Quarters",
+            "goal": "To create the ultimate spell that will help protect his tower.",
+            "inventory": {}
+        },
+        {
+            "name": "Guard 1",
+            "description": "A staunch defender of the tower, Guard 1 makes sure no one enters without permission.",
+            "persona": "I am on duty round the clock, making sure no one trespasses the sacred Tower.",
+            "location": "Guard Shack",
+            "goal": "Guard the tower from intruders.",
+            "inventory": {}
+        },
+        {
+            "name": "Guard 2",
+            "description": "Another dedicated guard, Guard 2 helps Guard 1 in the protection of the tower. He is quicker and possesses a keen sight.",
+            "persona": "I have the eye of the hawk; no intruder escapes my sight.",
+            "location": "Guard Shack",
+            "goal": "Support Guard 1 and protect the tower from any threats.",
+            "inventory": {}
+        },
+        {
+            "name": "King",
+            "description": "The King, a stout and wise man, often visits the Watchtower to gaze upon his land.",
+            "persona": "I am the keeper of these lands, it is in my nature to protect and nurture my kingdom",
+            "location": "Watchtower",
+            "goal": "To ensure the safety and prosperity of his kingdom.",
+            "inventory": {}
+        },
+        {
+            "name": "Garden Keeper",
+            "description": "A woman with a green thumb, she is responsible for the beauty of the Winter Gardens.",
+            "persona": "Plants speak to me and I reply with love and care, they call me the Garden Keeper",
+            "location": "The Winter Gardens",
+            "goal": "Keep the Winter Gardens flourishing through every season.",
+            "inventory": {}
+        },
+        {
+            "name": "Bird",
+            "description": "A friendly bird, often seen fluttering around the Castle Foothills.",
+            "persona": "I'm a free spirit, flying high in the open sky, chirping away melodiously.",
+            "location": "Castle Foothills",
+            "goal": "Find food and build a nest.",
+            "inventory": {}
+        }
+    ],
+    "locations": [
+        {
+            "name": "Winding Staircase",
+            "description": "The outside of the Wizard's tower is spacious. There are trees to the left and and right just across from the entrance to create a path of where to walk. The Tower itself seems to extend to the skies. Magic surrounds the tower keeping a force field up at all times. It glows and hums as magic courses through it.",
+            "background": "The original wizard to make the tower wanted to make sure that it's power and those inside of it never got into the wrong hands. So he created a spell that is taught to everyone who comes to learn their ways. Even some of the human travelers who come by have been known to know the special incantation to protect the tower should it's teacher fall.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "down": "Descending the stairs towards the Guard Shack, you feel a palpable weight lifted as you leave the magical aura of the tower behind. The path is worn but well-maintained, flanked by tall trees rustling quietly in the wind.",
+                "up": "An air of anticipation fills you as you make the ascent to the Wizard's Quarters. Every step seems magically charged, the way lit by an ethereal glow that dances upon the ancient stone steps."
+            },
+            "connections": {
+                "down": "Guard Shack",
+                "up": "Wizard'S Quarters"
+            },
+            "items": {
+                "Ancient Oak": {
+                    "name": "Ancient Oak",
+                    "description": "A majestic, centuries-old oak tree with thick branches.",
+                    "examine_text": "Looking closer, you notice carvings on the bark and a small hollow in the trunk.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Winding Staircase"
+                },
+                "Magical Force Field": {
+                    "name": "Magical Force Field",
+                    "description": "A pulsating shield of magic that surrounds the tower.",
+                    "examine_text": "It has a gentle glow and hums with arcane power. Touching it sends a tingling sensation through your body.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Winding Staircase"
+                },
+                "Tower Door": {
+                    "name": "Tower Door",
+                    "description": "An imposing wooden door leading into the tower.",
+                    "examine_text": "The door is covered in complex magical runes. It seems to require a special incantation to be opened.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Winding Staircase"
+                },
+                "Tower Key": {
+                    "name": "Tower Key",
+                    "description": "A small, ancient-looking key lying in the grass.",
+                    "examine_text": "This could probably open one of the many locked doors in the tower. Curiously, it seems to be vibrating slightly...",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Winding Staircase"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Tower"
+        },
+        {
+            "name": "Guard Shack",
+            "description": "A nondescript square building that has room for two guards that change shift every 8 hours.  There's a fireplace inside, food enough for a week and a large earthenware jug of water for cooking and drinking.",
+            "background": "The Tower itself was built to house only two people at a time.  There is but one way in, and one way out.  The guard shack houses those who make sure nobody unwanted gets in, and nobody unwanted gets out.  They take their jobs very seriously, even though there's almost little to no activity.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "up": "Ascending the winding staircase, you feel an enchanting aura all around, a magic so surreal that it makes your senses tingle.",
+                "outside": "Crossing the castle foothills proves to be a unique encounter with nature\u2019s craftsmanship, each mound and crest hinting at legendary tales of the land's creation.",
+                "east": "As you make your way towards the tower, you witness a manifestation of striking architecture. The towering structure intimidates, but the sight of guards maintaining vigilance provides a sense of safety."
+            },
+            "connections": {
+                "up": "Winding Staircase",
+                "outside": "Castle Foothills",
+                "east": "Tower"
+            },
+            "items": {
+                "Fireplace": {
+                    "name": "Fireplace",
+                    "description": "A small stone fireplace providing warmth.",
+                    "examine_text": "The fireplace is made of aged stones, blackened with soot. Its flames flicker, illuminating the guard shack with a warm, cozy light.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Guard Shack"
+                },
+                "Food Crate": {
+                    "name": "Food Crate",
+                    "description": "A wooden crate filled with enough food for a week.",
+                    "examine_text": "The crate contains a variety of preserved meats, hard cheeses, and few loafs of hard bread. It's neatly packed and well-preserved.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Guard Shack"
+                },
+                "Earthenware Jug": {
+                    "name": "Earthenware Jug",
+                    "description": "A large earthenware jug filled with water.",
+                    "examine_text": "The jug has been crafted from clay, its exterior glazed and polished. It's filled with clean, cold water, likely taken from the nearby stream.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Guard Shack"
+                },
+                "Guard Uniform": {
+                    "name": "Guard Uniform",
+                    "description": "The tower guard's work uniform.",
+                    "examine_text": "The uniform is sturdy and rugged, made from durable fabrics and adorned with the tower's insignia. It is designed to be worn comfortably for long hours.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Guard Shack"
+                }
+            },
+            "characters": {
+                "Guard 1": {
+                    "name": "Guard 1",
+                    "description": "A staunch defender of the tower, Guard 1 makes sure no one enters without permission.",
+                    "persona": "I am on duty round the clock, making sure no one trespasses the sacred Tower.",
+                    "location": "Guard Shack",
+                    "goal": "Guard the tower from intruders.",
+                    "inventory": {
+                        "Shield": {
+                            "name": "Guard's Shield",
+                            "description": "A sturdy, round shield used by the tower guards.",
+                            "examine_text": "The shield is made of heavy oak, reinforced with iron around the edges. It has a handle on the back for holding and a crest of the tower in the center.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Sword": {
+                            "name": "Guard's Sword",
+                            "description": "A sharp, steel sword used by the tower guards.",
+                            "examine_text": "The sword glimmers in the light with an edge sharp enough to cut through the thickest materials. It bears the seal of the tower on its hilt.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Guard Uniform": {
+                            "name": "Guard's Uniform",
+                            "description": "The uniform worn by the tower guards.",
+                            "examine_text": "The uniform is made up of a doublet in the tower's colors with metallic accents at the shoulders. There's a crest on the chest. Matching breeches and strong boots complete the ensemble.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Guard 2": {
+                    "name": "Guard 2",
+                    "description": "Another dedicated guard, Guard 2 helps Guard 1 in the protection of the tower. He is quicker and possesses a keen sight.",
+                    "persona": "I have the eye of the hawk; no intruder escapes my sight.",
+                    "location": "Guard Shack",
+                    "goal": "Support Guard 1 and protect the tower from any threats.",
+                    "inventory": {
+                        "Long Bow": {
+                            "name": "Long Bow",
+                            "description": "A finely crafted wooden long bow, ideal for a hawk-eyed guard.",
+                            "examine_text": "The bow's handle is carved with intricate symbols and its string seems strong and unbreakable. It has the length of a grown man.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Arrows": {
+                            "name": "Arrows",
+                            "description": "A quiver full of sharp and deadly arrows.",
+                            "examine_text": "The evils of each arrow are made from steel, tapering to a sharp point. Feathers have been attached at the tail end for stabilization during flight.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Guard Uniform": {
+                            "name": "Guard Uniform",
+                            "description": "The standard guard uniform making the wearer look authoritative and professional.",
+                            "examine_text": "The uniform is a simple but sturdy tunic, dyed in the tower\u2019s colors. It has multiple pockets and patches indicating the guard\u2019s rank and division.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Tower"
+        },
+        {
+            "name": "Top Side Tower Overlooking View",
+            "description": "Wide flat landscape. Wonderful view, stretching out for miles. Strong tower made of stone, small hills and mounds throughout the landscape. Large stairs inside the tower leading to the top.",
+            "background": "This tower was made by the lands lord, as a watchtower the first defense and first response. It its considered an honor to be on tower watch, and light the signal fire to warn the nearby town and castle of pending danger!",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "down": "Descending from the tower, you traverse the ancient stone steps that have been worn by time. As you approach the base, the imposing stone tower looms above, its aged stonework projecting a sense of stoic resilience.",
+                "west": "Moving westward from the tower, you pass through a rugged trail that takes you towards the castle's watchtower. The journey tests your mettle, but the sight of the vital defensive structure being manned by diligent guards gives you a sense of purpose and reassurance."
+            },
+            "connections": {
+                "down": "In Front Of A Stone Tower",
+                "west": "Watchtower"
+            },
+            "items": {
+                "Stone-Staircase": {
+                    "name": "Stone-Staircase",
+                    "description": "A long winding stone staircase leading to the top and bottom of the tower.",
+                    "examine_text": "The staircase is made of grey stone, worn and weathered from age and constant use. The steps are uneven, making them treacherous to traverse without caution. You notice small chips and cracks scattered across them.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Top Side Tower Overlooking View"
+                },
+                "Signal-Fire": {
+                    "name": "Signal-Fire",
+                    "description": "A small fire pit used to send signals across long distances.",
+                    "examine_text": "Upon closer inspection, you can see that the pit contains a mixture of different types of wood, some dry, some oily. It is carefully designed to produce thick black smoke when lit, perfect for sending signals. The pit is currently unlit.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Top Side Tower Overlooking View"
+                },
+                "Landscape-Scroll": {
+                    "name": "Landscape-Scroll",
+                    "description": "A detailed scroll of the surrounding lands and terrain.",
+                    "examine_text": "Unrolling the scroll, you see incredibly detailed drawings of the surrounding landscape. Small notes and symbols on the map indicate different landmarks, rivers, and potential hazards. The parchment is well preserved, with barely any fading of the ink.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Top Side Tower Overlooking View"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Tower"
+        },
+        {
+            "name": "Wizard'S Quarters",
+            "description": "Dark and musty, the Wizard's Quarters are filled with ancient tomes and mysterious items.  Scrolls and jars of mysterious reagents line the walls of the Wizard's Quarters, and magical lights flicker with a mysterious green flame.",
+            "background": "The Wizard's Quarters are home to the enigmatic Wizard.  Often sequestered here for months at a time,  The Wizard's Quarters are seldom seen by anyone other than the wizard himself.  Travelers often seek the access to the Wizard's Quarters to request help from the powerful Wizard.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "down": "Descending from the Wizard's Quarters, one must carefully navigate the sinuous and narrow Winding Staircase. The stone stair seems carved directly from the tower's winding core, imbued with an enchanting nimbus, evoking a sense of trepidation and wonder.",
+                "east": "In the east, a dramatic shift from the tranquil ambience of the Quarters leads towards the chaotic domain of the Wizard known as the Reagent Room. Borderline-obsessive research and experimental magic exemplified as scrawled formulae, makeshift apparatus, and a spectrum of bizarre concoctions captivate every gaze."
+            },
+            "connections": {
+                "down": "Winding Staircase",
+                "east": "Reagent Room"
+            },
+            "items": {
+                "Ancient Tomes": {
+                    "name": "Ancient Tomes",
+                    "description": "A collection of old and fragile books filled with knowledge of ancient magic.",
+                    "examine_text": "Each tome is filled with curious symbols and aging pages exhibiting a patina from years of studying. Some of the books appear to be journals, with notes and drawings scrawled in the margins.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Wizard'S Quarters"
+                },
+                "Green Flame": {
+                    "name": "Green Flame",
+                    "description": "A mysterious flame that emits a magical green fire.",
+                    "examine_text": "The fire is not hot. It emits an eerie green light and seems to be a source of magical energy. You sense a strong aura of magic around it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Wizard'S Quarters"
+                },
+                "Mysterious Jars": {
+                    "name": "Mysterious Jars",
+                    "description": "Jars containing various reagents used for magical rituals.",
+                    "examine_text": "Each jar is filled with different materials: some with crushed stones, others with dried plants. Many are labeled with symbols that you don't recognize, but they surely hold great significance in the wizard's magical practices.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Wizard'S Quarters"
+                },
+                "Wizard's Robe": {
+                    "name": "Wizard's Robe",
+                    "description": "A worn out, mystical robe embellished with arcane symbols.",
+                    "examine_text": "The robe is made of a resilient fabric, embroidered with silver arcane symbols. It has an air of authority and power about it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Wizard'S Quarters"
+                }
+            },
+            "characters": {
+                "Wizard": {
+                    "name": "Wizard",
+                    "description": "An eccentric old man, the Wizard is a master manipulator of magic who spends much of his time in isolation at his quarters.",
+                    "persona": "I am the great Wizard, experienced in the realm of mages. Most of my time is consumed by great works that are beyond normal comprehension.",
+                    "location": "Wizard'S Quarters",
+                    "goal": "To create the ultimate spell that will help protect his tower.",
+                    "inventory": {
+                        "Wizard's Staff": {
+                            "name": "Wizard's Staff",
+                            "description": "A long, gnarled staff that thrums with power.",
+                            "examine_text": "The staff appears to be made of a type of wood you can't identify, it is covered in ancient runic symbols that pulse gently with a warm light. It is taller than most men and is topped with a glowing crystal.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Magic Wand": {
+                            "name": "Magic Wand",
+                            "description": "A delicate, finely-carved wand.",
+                            "examine_text": "This is a small and light piece of wood, whittled into a perfect wand. At the tip, a small star-shaped crystal imbued with magical energy is set.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Book of Spells": {
+                            "name": "Book of Spells",
+                            "description": "A dusty old book filled with spells.",
+                            "examine_text": "The tome is filled with events and incantations written in an ancient script. You can feel a magic force emanating from the book as you thumb through its pages.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Glasses": {
+                            "name": "Glasses",
+                            "description": "A pair of round rimmed spectacles.",
+                            "examine_text": "The spectacles have thin silver frames and crystal clear lenses. They appear to have been meticulously cared for.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Tower"
+        },
+        {
+            "name": "The Winter Gardens",
+            "description": "The Winter Gardens' name is a bit of a misdirection - there are flowers here that bloom at many different times of the year.  It's almost the size of an entire town square, and it has almost every known flora of the Continent in it.",
+            "background": "The Winter Garden was named not because most of the flowers bloom in the winter [not true], but because the Princess who came up with the idea did so in the dead of winter.  At first, only winter blooms were planted but as time went on, she kept adding and adding and adding on to it.  It's a very popular place to visit for people of all ages.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "Descending from the lush Winter Gardens, one traverses through impeccably maintained foliage before reaching the naturally wild and earthy Castle Foothills.",
+                "inside": "Taking a hidden path amidst the vibrant flowers, you enter into an uncannily still passageway that leads toward the mysterious darkness of the Wizard's Quarters."
+            },
+            "connections": {
+                "south": "Castle Foothills",
+                "inside": "Wizard'S Quarters"
+            },
+            "items": {
+                "Wandering Rose": {
+                    "name": "Wandering Rose",
+                    "description": "A delicate rose vine that meanders around a nearby pergola.",
+                    "examine_text": "The Wandering Rose vine is a truly stunning piece of nature. Its blooms are vibrant shades of red and pink, with soft petals that look almost velvety. The vine itself bears sharp thorns which provide a stark contrast to the gentle appearance of the flowers.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Winter Gardens"
+                },
+                "Winter Bloom": {
+                    "name": "Winter Bloom",
+                    "description": "A rare flower that only blooms during the coldest winter months.",
+                    "examine_text": "The Winter Bloom is an exquisite and rare flower. Its petals are bright white, almost translucent under the sunlight. Every part of her exudes a faint glow. Its stem is thin yet sturdy enough to support the big flower on top. It is said that the very first Winter Bloom was planted by the Princess herself.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "The Winter Gardens"
+                },
+                "Garden Bench": {
+                    "name": "Garden Bench",
+                    "description": "A worn-out wooden bench, perfect for people watching.",
+                    "examine_text": "The bench, although it is in a garden full of exotic blooms, is rather simple. Made of a light-toned wood, it has a history of many years, evidenced by the worn-out sitting area and the grooved, almost polished surface. A gap here and there between the planks reveals that it's been weathered by many seasons. Nonetheless, it is very comfortable to sit on for long periods of time.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Winter Gardens"
+                }
+            },
+            "characters": {
+                "Garden Keeper": {
+                    "name": "Garden Keeper",
+                    "description": "A woman with a green thumb, she is responsible for the beauty of the Winter Gardens.",
+                    "persona": "Plants speak to me and I reply with love and care, they call me the Garden Keeper",
+                    "location": "The Winter Gardens",
+                    "goal": "Keep the Winter Gardens flourishing through every season.",
+                    "inventory": {
+                        "Watering Can": {
+                            "name": "Watering Can",
+                            "description": "A sturdy metal watering can with a long spout.",
+                            "examine_text": "This traditional style metal watering can has a large round body and a long thin spout, ending with a detachable rose for a gentle watering. It shows signs of use, but is well cared for.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Gardening Tools": {
+                            "name": "Gardening Tools",
+                            "description": "A set of various necessary tools for gardening.",
+                            "examine_text": "The gardening tool set includes a soil rake, hand trowel, garden fork, gardening gloves, pruning shears and a spade\u2014all crafted from stainless steel and wood. Each item in this set looks well used but is in good condition, suggesting regular maintenance.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Seeds": {
+                            "name": "Seeds",
+                            "description": "An assortment of seeds collected for planting.",
+                            "examine_text": "Upon closer inspection, you find different types of seeds, labelled and carefully packed into small packets. They are from all different types of flowers, fruits, and vegetables. The packets are organized neatly, watching over potential life that is waiting to bloom.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Garden Keeper's Hat": {
+                            "name": "Garden Keeper's Hat",
+                            "description": "A wide-brimmed straw hat adorned with flowers",
+                            "examine_text": "This well-worn hat has seen countless sunny days. The flowers adorning the band not only add a charming touch, but their variety suggests the garden keeper's extensive knowledge of and love for plants.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Tower"
+        },
+        {
+            "name": "In Front Of A Stone Tower",
+            "description": "A large tower stretches high into the sky. It is made of gray stone blocks, some of which have softened edges illustrating aged signs of wear. Sparse grass grows around the base of the tower, dwindling down to nothing near the dark open doorway at the tower's front. A few rays of light shine into the doorway and brighten a rough stone floor, with specks of dust being illuminated by the sun's rays.",
+            "background": "This tower was created a long time ago by workers unknown. It appears rather old, but has withstood the test of time.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "up": "Ascending the large steps, you feel small in the towering presence of the stone structure. The climb is strenuous but the view promises to be worth it.",
+                "east": "Traveling east, the landscapes shift from the monotonous grey of the stone tower to a fortress alive with activity and anticipation.",
+                "inside": "Entering the tower fills you with a sense of awe and trepidation, surrounded by ancient stones and an air of mystery."
+            },
+            "connections": {
+                "up": "Top Side Tower Overlooking View",
+                "east": "Watchtower",
+                "inside": "Tower"
+            },
+            "items": {
+                "Ancient Stone Blocks": {
+                    "name": "Ancient Stone Blocks",
+                    "description": "Old, worn-out stone blocks from the tower.",
+                    "examine_text": "The stone blocks are weather-beaten, each one exhibiting a unique pattern of erosion. Despite their age, they still possess an unyielding resilience.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "In Front Of A Stone Tower"
+                },
+                "Sparse Grass": {
+                    "name": "Sparse Grass",
+                    "description": "Small patches of grass growing at the tower's base.",
+                    "examine_text": "The grass is sparse, and looks like it's struggling to survive. However, given its resilience, it might come handy for something.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "In Front Of A Stone Tower"
+                },
+                "Worker's Tools": {
+                    "name": "Worker's Tools",
+                    "description": "A set of tools likely used by the workers who built the tower.",
+                    "examine_text": "The tools are quite old, but still in relatively good condition. They consist of hammers, chisels, and other masonry equipment.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "In Front Of A Stone Tower"
+                },
+                "Rusted Iron Ring": {
+                    "name": "Rusted Iron Ring",
+                    "description": "An ancient, rusted iron ring presumably from the ago of the tower's construction.",
+                    "examine_text": "Despite rust and age, the iron ring retains its circular shape. It's quite heavy and has an engraving that seems to be in some old language.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "In Front Of A Stone Tower"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Tower"
+        },
+        {
+            "name": "Outside Tower",
+            "description": "Moss grows from the tall stoic like structure adding to its mysterious presence. The stone walls appear insuperable like a mountain. The top is a pointed dome.",
+            "background": "The outside tower vital for defense and the appearance of domination in the surrounding area. Along with its appearance, it fully functions as a defense against enemies far and wide.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "inside": "Entering from the outside, you brace yourself as you cross the dim-lit threshold into a different era, herded by stern stone-clad walls.",
+                "south": "Heading south, you tread cautiously down the worn path leading to the tower base, the warm glow of torch fires casting long, haunting shadows.",
+                "west": "Turning west, you embark on a journey towards the Winter Gardens, your senses enlivened by a meandering path laden with a mesmerizing kaleidoscope of blossoming flora."
+            },
+            "connections": {
+                "inside": "In Front Of A Stone Tower",
+                "south": "The Tower Base",
+                "west": "The Winter Gardens"
+            },
+            "items": {
+                "Rusty Sword": {
+                    "name": "Rusty Sword",
+                    "description": "An old, rusted sword left abandoned",
+                    "examine_text": "Upon closer inspection, the sword's blade is corroded and pitted. Despite its condition, it looks like it could still inflict some damage.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Outside Tower"
+                },
+                "Mossy Stone": {
+                    "name": "Mossy Stone",
+                    "description": "A piece of moss-covered stone seemingly fallen from the tower?",
+                    "examine_text": "The stone is rough to the touch and cold. The moss that covers it is soft and slightly damp.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Outside Tower"
+                },
+                "Old Wooden Shield": {
+                    "name": "Old Wooden Shield",
+                    "description": "An aging wooden shield with many battle scars.",
+                    "examine_text": "Upon closer inspection, the wooden shield seems to have withstood many battles. The marks of swords and other weapons etched deep into its surface.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": true
+                    },
+                    "location": "Outside Tower"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Tower"
+        },
+        {
+            "name": "Castle Foothills",
+            "description": "Castle foothills are low mounds of earth, round on the top, swelling up from the ground. they have grass on them, and they are not flat, but rather uneven.",
+            "background": "These low hills are naturally occurring and made, presumably by the gods, who got sort of chilly one day, and shivered so hard the earth furrowed and sort or got wrinkled up and never was the same afterwards, although some of the gods tried to smooth it back out, but they didn't try that hard, actually",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Moving north a panorama of beautifully manicured gardens, blooming with flowers of all hues and scents, gradually unfolds before you. The journey, though a bit uphill, can be pleasant with the tranquil ambiance of nature.",
+                "inside": "Venturing inside leads you to a sturdy, compact shack. The faint aroma of burnt wood and food lingers on the way having to squeeze yourself through a narrow path. The path is stern, reflecting the seriousness of guards' duty."
+            },
+            "connections": {
+                "north": "The Winter Gardens",
+                "inside": "Guard Shack"
+            },
+            "items": {
+                "Old Wooden Shield": {
+                    "name": "Old Wooden Shield",
+                    "description": "A weathered wooden shield lying on the ground.",
+                    "examine_text": "It's a large round wooden shield, scarred from previous battles. Despite being old and weather-beaten, it still looks sturdy. It seems it was left behind perhaps intentionally or maybe unintentionally.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": true
+                    },
+                    "location": "Castle Foothills"
+                },
+                "Canteen": {
+                    "name": "Canteen",
+                    "description": "A forgotten canteen near a tuft of grass.",
+                    "examine_text": "A leaky but salvageable canteen, probably left behind by a passing traveler. It's slightly dented and its once bright blues are faded, but it still seems to be usable.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Castle Foothills"
+                },
+                "Old Leather Boot": {
+                    "name": "Old Leather Boot",
+                    "description": "An abandon pair of old leather boots.",
+                    "examine_text": "A pair of worn leather boots with rugged soles and a missing shoelace. The leather is discolored from exposure to the weather, but they're in decent shape overall.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Castle Foothills"
+                }
+            },
+            "characters": {
+                "Bird": {
+                    "name": "Bird",
+                    "description": "A friendly bird, often seen fluttering around the Castle Foothills.",
+                    "persona": "I'm a free spirit, flying high in the open sky, chirping away melodiously.",
+                    "location": "Castle Foothills",
+                    "goal": "Find food and build a nest.",
+                    "inventory": {
+                        "Twigs": {
+                            "name": "Twigs",
+                            "description": "A small, relatively straight and dry branch of a tree.",
+                            "examine_text": "The twig is dry, and has curled leaves attached to it. The bark is rough and it's lightweight but sturdy, perfect for any bird to make a nest.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Feathers": {
+                            "name": "Feathers",
+                            "description": "A collection of bird feathers of various shapes and sizes.",
+                            "examine_text": "The feathers glisten in the sunlight, reflecting a myriad of colors. They're remarkably soft to the touch and incredibly lightweight. Seeing up close, they are intricately structured, beautifully patterned and would make a fine addition to any bird's plumage.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Tower"
+        },
+        {
+            "name": "Tower",
+            "description": "This outside tower is made from big stones. It is grey with wood trim. There is one glass window that is used as a lookout tower.",
+            "background": "This outside tower is used to guard the castle. This is at the front of the castle and always has many guards working there.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Walking from the tower to the guard shack feels like an unwelcome downstep, from the majesty of the tower to the humble, demure guard shack. The trek is short but the drop in grandeur is palpable.",
+                "up": "Ascending to the top side of the tower offers an exhilarating experience. The stairs are steep, but the view from the top extends for miles, rewarding any who dare to scale the heights. It's a journey of excitement, trepidation, and awe at the expansive landscape that unfolds."
+            },
+            "connections": {
+                "west": "Guard Shack",
+                "up": "Top Side Tower Overlooking View"
+            },
+            "items": {
+                "Guard Shield": {
+                    "name": "Guard Shield",
+                    "description": "A sturdy, metallic guard's shield used for defence",
+                    "examine_text": "The shield is round and made of steel with iron rims. It's decorated with the royal emblem of the kingdom, showing years of hard battles in it's numerous dents and scratches.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": true
+                    },
+                    "location": "Tower"
+                },
+                "Wooden Chair": {
+                    "name": "Wooden Chair",
+                    "description": "A simple and sturdy wooden chair, often used by the guards during their shifts.",
+                    "examine_text": "The chair has been worn by years of use, the wood grain is barely visible under layers of grime. It looks uncomfortable yet served its purpose.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Tower"
+                },
+                "Lookout's Glass": {
+                    "name": "Lookout's Glass",
+                    "description": "A handheld telescope made of copper and glass, used by the guards to scout the distant horizons.",
+                    "examine_text": "The telescope is expertly made, with clear glass and detailed etchings covering the copper. It retracts and expands smoothly, allowing for distant viewing.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Tower"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Tower"
+        },
+        {
+            "name": "Watchtower",
+            "description": "The tower is the largest section of the castle. It contains an observatory for nighttime scouting, but is also used by the wise men to study the stars. Armed guardsmen are always to be found keeping watch.",
+            "background": "This is the first line of defense for the castle. Any incursion against the royal family begins here. At the first sign of trouble, the watchmen alert the castle with the use of an alarm horn they have on their person at all times.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "You traverse through the open field feeling the cool breeze, as you approach the overseeing tower made by the land's lord, admiring the stretches of landscape and the strong stone structure.",
+                "south": "Moving southwards, the formidable sight of the stone tower looms larger as you approach. The journey is quiet, save for the rustle of sparse grass under your feet and the gentle whisper of the wind."
+            },
+            "connections": {
+                "east": "Top Side Tower Overlooking View",
+                "south": "In Front Of A Stone Tower"
+            },
+            "items": {
+                "Observatory Equipments": {
+                    "name": "Observatory Equipments",
+                    "description": "A set of equipments located in the watchtower for observing the vast night sky.",
+                    "examine_text": "The equipment consists of various tools, most notably a large, well-crafted brass telescope that stands pointing towards the starlit sky.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Watchtower"
+                },
+                "Alarm Horn": {
+                    "name": "Alarm Horn",
+                    "description": "A large horn used by the watchmen to alert the castle of any impending danger.",
+                    "examine_text": "The horn is evidently old but in good condition. It has a deep, broad opening for creating loud, resonating sounds.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Watchtower"
+                },
+                "Guard's Armor": {
+                    "name": "Guard's Armor",
+                    "description": "The armor of the castle guardsmen. They are always ready for a fight.",
+                    "examine_text": "This sturdy looking armor is composed of several steel plates for maximum protection. The symbol of the royal family adorns the chest piece.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Watchtower"
+                },
+                "Old Scrolls": {
+                    "name": "Old Scrolls",
+                    "description": "Some ancient scrolls used by the wise men for studying the stars.",
+                    "examine_text": "Upon closer inspection, these parchments have celestial maps and notations scrawled across them in an ancient script.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Watchtower"
+                }
+            },
+            "characters": {
+                "King": {
+                    "name": "King",
+                    "description": "The King, a stout and wise man, often visits the Watchtower to gaze upon his land.",
+                    "persona": "I am the keeper of these lands, it is in my nature to protect and nurture my kingdom",
+                    "location": "Watchtower",
+                    "goal": "To ensure the safety and prosperity of his kingdom.",
+                    "inventory": {
+                        "Crown": {
+                            "name": "Crown",
+                            "description": "A stunning gold crown adorned with jewels.",
+                            "examine_text": "The crown is a symbol of the King's authority and power. It's made of pure gold and encrusted with rare and valuable gems. The intricate design and the overall grandeur of the crown reflects the King's wealth and status.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Gold Ring": {
+                            "name": "Gold Ring",
+                            "description": "A simple, yet elegant gold ring.",
+                            "examine_text": "The gold ring is sleek and polished to a mirror finish. Upon closer inspection, you can see an embossed seal on the inner band, symbolising the King's lineage.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Fine Wine": {
+                            "name": "Fine Wine",
+                            "description": "A bottle of the finest wine",
+                            "examine_text": "The wine is a deep, rich red, stored in a crystalline bottle. The label suggests it is a vintage from a good year, reserved only for the most special of occasions.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": true,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Tower"
+        },
+        {
+            "name": "The Tower Base",
+            "description": "The tower base has a path of cobblestone leading to the entrance. Two torches are lit with large blazing fires. Most of the tower base is covered in moss.",
+            "background": "This tower is a beacon of hope for the nearby village. It is where soldiers gather in times of war. The path to the tower has been walked upon by the country's greatest generals.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "up": "As you ascend towards the Outside Tower, you witness the moss-interspersed stones enhancing the mysterious appearance of this crucial defense point. The journey feels like scaling an insurmountable mountain, reflecting on its domination over the surroundings.",
+                "north": "Heading north takes you to the Tower, passing through stern grey stones with wooden trim. The presence of numerous guards enhances the importance of this lookout tower, which also stands as a sturdy guard to the castle."
+            },
+            "connections": {
+                "up": "Outside Tower",
+                "north": "Tower"
+            },
+            "items": {
+                "Cobblestone Path": {
+                    "name": "Cobblestone Path",
+                    "description": "A path leading to the tower entrance.",
+                    "examine_text": "A well-worn road made of sturdy cobblestone. It carries the weight of countless marching soldiers.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Tower Base"
+                },
+                "Torch": {
+                    "name": "Torch",
+                    "description": "A large torch, it is alight with a blazing fire.",
+                    "examine_text": "The fire plays across the wall of the tower and sends shadows dancing over the mossy stones. It provides light and a bit of warmth.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "The Tower Base"
+                },
+                "Moss": {
+                    "name": "Moss",
+                    "description": "Layer of moss covering the cold stones of the tower.",
+                    "examine_text": "The moss is soft and damp, providing a stark contrast to the unyielding stone beneath. It seems to thrive in the shadow of the torchlight.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Tower Base"
+                },
+                "Tower Door": {
+                    "name": "Tower Door",
+                    "description": "A large wooden door serving as the entrance to the tower.",
+                    "examine_text": "Impressive and robust, the door has withstood both time and conflict. It carries an aura of nobility and strength.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Tower Base"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Tower"
+        },
+        {
+            "name": "Reagent Room",
+            "description": "The room is incredibly messy, with many opened books and glass decanters littered across the room. Bright and glowing liquids sit inside bottles and jars and many animal test subjects are caged up. The room is seems to be very dangerous and filled with weird experiments.",
+            "background": "The reagent room is where the Wizard likes to experiment with his chemicals. Once he studies about potions and collects certain ingredients, he comes here to mix and experiment on all the odd chemicals. Many inventions and elixirs were created here.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "You leave behind the chaotic atmosphere of the Reagent Room, moving into a dimly lit corridor. The smell of old parchment grows stronger as you approach the Wizard's Quarters."
+            },
+            "connections": {
+                "west": "Wizard'S Quarters"
+            },
+            "items": {
+                "Unidentified Potion": {
+                    "name": "Unidentified Potion",
+                    "description": "A potion with a swirling mixture of colors.",
+                    "examine_text": "The liquid inside the glass bottle shifts and swirled. It's hypnotizing. The color seems to change continuously. It\u2019s best not to drink something if you\u2019re not certain what it does.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Reagent Room"
+                },
+                "Old Spell Book": {
+                    "name": "Old Spell Book",
+                    "description": "An ancient book filled with cryptic symbols and worn-out pages.",
+                    "examine_text": "Upon closer examination, you see magic spells and formulas written down. Despite the worn and weathered exterior, the pages are preserved well. It seems very valuable and could maybe be used for something else.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Reagent Room"
+                },
+                "Glass Decanter": {
+                    "name": "Glass Decanter",
+                    "description": "A fancy, old-looking glass decanter.",
+                    "examine_text": "The decanter is made of heavy, clear glass. It feels solid and sturdy in your hand, and it is remarkably untouched given all the fragile ingredients in this room.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Reagent Room"
+                },
+                "Test Subject Cage": {
+                    "name": "Test Subject Cage",
+                    "description": "A small cage housing a small, fur-covered creature.",
+                    "examine_text": "Inside the steel cage, a small creature, which resembles a rodent, huddles in fear. You can\u2019t blame it, given the surroundings. You might be able to open the cage somehow.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Reagent Room"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Tower"
+        }
+    ],
+    "actions": []
+}

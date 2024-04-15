@@ -1,0 +1,1592 @@
+{
+    "player": "The Watchman",
+    "start_at": "The Thrones Of Death",
+    "game_history": [],
+    "game_over": false,
+    "game_over_description": null,
+    "characters": [
+        {
+            "name": "The Watchman",
+            "description": "A man in black robes keeping guard on the murders in the Thrones of Death.",
+            "persona": "I am the watcher, the overseer of justice in this underworld. I ensure that those who did wrong pay for their sins.",
+            "location": "The Thrones Of Death",
+            "goal": "See justice served to those guilty.",
+            "inventory": {}
+        },
+        {
+            "name": "Dark King",
+            "description": "He who possesses pure evil, sitting on his throne surrounded by the dead.",
+            "persona": "I, the king of darkness, collect souls that enter the netherworld and gain power.",
+            "location": "The Dark Kings Throne Room",
+            "goal": "Increase his power by collecting souls.",
+            "inventory": {}
+        },
+        {
+            "name": "The Reaper",
+            "description": "Feared throughout the Netherworld, the Reaper collects the souls of the dying.",
+            "persona": "I roam the Netherworld, it is my job to claim the souls of those whose time has come.",
+            "location": "Reaper'S Lair",
+            "goal": "To collect and guide souls to the afterlife.",
+            "inventory": {}
+        },
+        {
+            "name": "Devil",
+            "description": "Fiery and wicked, the Devil reigns supreme in the Netherworld.",
+            "persona": "I am the devil, the ruler of all evil, feared by all who know my name.",
+            "location": "Devil'S Den",
+            "goal": "To instill fear and rule the Netherworld.",
+            "inventory": {}
+        },
+        {
+            "name": "Nether Lord",
+            "description": "Living in the Castle, he is the ultimate ruler and source of fear in the netherworld.",
+            "persona": "I am the Nether Lord, ruler of all. Fear me, or perish in my kingdom.",
+            "location": "Lord'S Castle",
+            "goal": "Maintain control of the Netherworld.",
+            "inventory": {}
+        },
+        {
+            "name": "Goddess of Despair",
+            "description": "Once the proud occupier of a now withered garden, she is now a fragile shadow of her former self.",
+            "persona": "I used to bring happiness and serenity, but now despair has engulfed me. My garden is now nothing but a testament of my pain.",
+            "location": "Withered Gardens",
+            "goal": "To regain what was lost and bring back the radiance of her garden.",
+            "inventory": {}
+        },
+        {
+            "name": "Lizard King",
+            "description": "A blind, lizardlike creature who rules the cavern with a reptilian iron fist.",
+            "persona": "I am the Lizard King, fearless and devoid of light. My hunger for souls transcends my darkness.",
+            "location": "Cavern",
+            "goal": "To maintain sovereignty in the cavern.",
+            "inventory": {}
+        }
+    ],
+    "locations": [
+        {
+            "name": "The Thrones Of Death",
+            "description": "The main part of this room room would be the throne.  It is a shiny black with some gold ornate decorations on it. It sits on a black and gold pedestal. There is  a smaller throne in the room decorated in purple and gold.   It does not sit on a pedestal.  The room is decorated in tones of purple and blue with black accents.  This signifies death.  There are paintings of dolphin on the all.  Also to signify death.  The dolphins are typically gray.",
+            "background": "The Thrones of Death is the room where murders are brought to and chained to the back walls.  They are then whipped and sometimes tortured to their impending death.  The Watchman wears a black hood and watches over the torturers.  The declares when a murderer has passed.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "down": "Descending from the Thrones of Death leads you to the ghastly Lower Dungeon. The journey is lit by grim torches with dripping walls on either side. The echoing sound of water drops accompany you, setting the tense atmosphere."
+            },
+            "connections": {
+                "down": "Lower Dungeon"
+            },
+            "items": {
+                "Black Throne": {
+                    "name": "Black Throne",
+                    "description": "A shiny black throne with gold decorations, symbolizing the ultimate power of death.",
+                    "examine_text": "The throne is gigantic, ornately decorated with gold and precious stones. On closer inspection, you can see strange symbols carved into the armrest. They gleam with an eerie light, hinting at some hidden, ancient magic.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Thrones Of Death"
+                },
+                "Purple Throne": {
+                    "name": "Purple Throne",
+                    "description": "A smaller throne, decorated in purple and gold. It emanates an air of dictatorial authority.",
+                    "examine_text": "Closer examination exposes the intricate golden lapel design on the armrest. The seat is made up of a sort of soft velvety material. Despite its smaller size, this purple throne seems to hold immense power.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Thrones Of Death"
+                },
+                "Dolphin Painting": {
+                    "name": "Dolphin Painting",
+                    "description": "A painting of a gray dolphin, symbolizing death. Its eyes seem eerily alive.",
+                    "examine_text": "The dolphin is painted with such attention to detail, it almost seems like it could leap out of the canvas any moment. Its morose gray color and the dark, stormy background give a disturbing interpretation of death.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Thrones Of Death"
+                },
+                "Torturer's Whip": {
+                    "name": "Torturer's Whip",
+                    "description": "A terrifying weapon used by the torturer to inflict punishments. It is set with sharp, cruel-looking barbs.",
+                    "examine_text": "The whip is long and made of thick, coiled leather. The handle is covered in bloodstains and its barbs gleam ruthlessly under the dim light. You shudder to think about the pain it can inflict.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "The Thrones Of Death"
+                },
+                "Black Hood": {
+                    "name": "Black Hood",
+                    "description": "The cloaking hood worn by the Watchman. It hides the wearer's identity and marks his gloomy duty.",
+                    "examine_text": "Made from rough, worn-out fabric, the hood is well-used and carries an air of despair and trepidation. It is unnervingly dark, swallowing all light and hope that dare to approach it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "The Thrones Of Death"
+                }
+            },
+            "characters": {
+                "The Watchman": {
+                    "name": "The Watchman",
+                    "description": "A man in black robes keeping guard on the murders in the Thrones of Death.",
+                    "persona": "I am the watcher, the overseer of justice in this underworld. I ensure that those who did wrong pay for their sins.",
+                    "location": "The Thrones Of Death",
+                    "goal": "See justice served to those guilty.",
+                    "inventory": {
+                        "Black Hood": {
+                            "name": "Black Hood",
+                            "description": "A shadowy fabric, covering the entire of the Watchman's face but his cold, judging eyes.",
+                            "examine_text": "The Black Hood has a supernatural darkness to it, blocking any glimpse of the Watchman's face. Only his piercing eyes can be seen. It is laced at the fringes. Its texture seems both hard and smooth, like reefs of the Netherworld.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Blood-stained Keys": {
+                            "name": "Blood-stained Keys",
+                            "description": "A set of keys, marked by the countless deaths they've overseen.",
+                            "examine_text": "These keys are worn and drenched in dried blood. The teeth of the keys look menacing, mirroring the souls they've held captive. The cold touch of the keys serve as a reminder of the chilling delight of torturing murderers.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Netherworld"
+        },
+        {
+            "name": "Lower Dungeon",
+            "description": "The lower dungeon is set below the mail hall. It is dark, lit by only a few dim torches. Water is constantly dripping down the walls, giving it a dank and musty smell. There are manacles and cages set along the walls. In the middle of the room sits a table with manacles on all corners which are attached to a large rotating lever.",
+            "background": "This room is the torture chamber and dungeon for the worst criminals. The light of day never reaches this room so as to help break those tough criminals. The table in the center of the room is used for torture. This room was built before the actual castle above it. It predates all the current inhabitants of the land. No one knows who built it or what it's original purpose was for.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "up": "Ascending from the damp and eerie dungeon, you find yourself entering an ominous chamber called The Thrones of Death, marked by the chilling presence of decorated thrones symbolizing the inevitable end.",
+                "south": "Traveling south from the confinement of the dungeon, you approach the Reaper's Lair; a place so gloomily dim and lonesomely quiet, it sends a spine-chilling sensation as you approach the door.",
+                "north": "Heading north, a growing heat hits you as the gruesome and dreadful sights of the Devil's Den unfold. Covered in gore and marked by eerie skulls and scattered bones, it is a direct vision of hellish horror."
+            },
+            "connections": {
+                "up": "The Thrones Of Death",
+                "south": "Reaper'S Lair",
+                "north": "Devil'S Den"
+            },
+            "items": {
+                "Dim Torch": {
+                    "name": "Dim Torch",
+                    "description": "A poorly lit torch affixed to the dungeon wall.",
+                    "examine_text": "The torch barely produces enough light to illuminate its surroundings. It flickers weakly, as though on the verge of going out.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Lower Dungeon"
+                },
+                "Dripping Water": {
+                    "name": "Dripping Water",
+                    "description": "Water constantly dripping down the dungeon walls.",
+                    "examine_text": "The water is unclean, tainted with the mildew and grime of the dungeon walls, it is definitely not suitable for consumption.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Lower Dungeon"
+                },
+                "Torture Table": {
+                    "name": "Torture Table",
+                    "description": "A large wooden table set in the middle of the room with manacles on all corners attached to a rotating lever.",
+                    "examine_text": "The table is dark with age and use. The wood is scarred and burned in many places. The manacles are sturdy and cold, the perfect tool for inflicting pain and horror.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Lower Dungeon"
+                },
+                "Manacles": {
+                    "name": "Manacles",
+                    "description": "Rusty old manacles fastened to the dungeon walls and the torture table.",
+                    "examine_text": "The manacles are grim and sturdy, made of cold, unforgiving iron. They've rusted over time, but remain strong. A chilling reminder of the dungeon's purpose.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Lower Dungeon"
+                },
+                "Cages": {
+                    "name": "Cages",
+                    "description": "Monstrous cages aligned along the dungeon walls.",
+                    "examine_text": "The cages are constructed from heavy black iron bars. They are old and rusty yet it gives a sense of dread and confinement.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Lower Dungeon"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Netherworld"
+        },
+        {
+            "name": "The Dark Kings Throne Room",
+            "description": "Filled with skeletons and zombies and dead bodies, the throne room of the Dark King has literally no light.",
+            "background": "The Dark King created the room himself, erecting it with only a few words. It gains magical power with every person that enters the netherworld.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Traversing to the west leads the path to the Lord's Castle. The journey is eerie and foreboding as the path is hidden amongst high rocky terrains and ensnared with the aura of fear and dread."
+            },
+            "connections": {
+                "west": "Lord'S Castle"
+            },
+            "items": {
+                "Dark Throne": {
+                    "name": "Dark Throne",
+                    "description": "A shadowy, sinisterly ornate, throne situated at the end of the room.",
+                    "examine_text": "Crafted from an unearthly black rock, the throne is hardened in the shape of a huge demon. Its eyes seem to almost glow in the dim light, inducing an eerie feeling.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Dark Kings Throne Room"
+                },
+                "Zombie Hand Wand": {
+                    "name": "Zombie Hand Wand",
+                    "description": "A wand made from a severed zombie hand, clenching a phosphorescent crystal.",
+                    "examine_text": "On closer inspection, the crystal seems to be pulsating with a strange energy. The zombie fingers are shriveled and grey but still clutch the crystal tightly.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "The Dark Kings Throne Room"
+                },
+                "Bone Chalice": {
+                    "name": "Bone Chalice",
+                    "description": "A ornately decorated chalice made of polished bone, filled with a bubbling dark liquid.",
+                    "examine_text": "The bone chalice has intricate carvings and is filled with a bubbling potion. It has a pungent smell that both repulses and attracts you.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Dark Kings Throne Room"
+                },
+                "Shadow Cloak": {
+                    "name": "Shadow Cloak",
+                    "description": "A cloak as black as the darkness in the room itself.",
+                    "examine_text": "The cloak seems to absorb the light around it, making it seem like a rip in the fabric of the world. It is powerfully magical.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "The Dark Kings Throne Room"
+                }
+            },
+            "characters": {
+                "Dark King": {
+                    "name": "Dark King",
+                    "description": "He who possesses pure evil, sitting on his throne surrounded by the dead.",
+                    "persona": "I, the king of darkness, collect souls that enter the netherworld and gain power.",
+                    "location": "The Dark Kings Throne Room",
+                    "goal": "Increase his power by collecting souls.",
+                    "inventory": {
+                        "Dark Throne": {
+                            "name": "Dark Throne",
+                            "description": "A terrifying throne made from the bones of defeated foes.",
+                            "examine_text": "The throne, enveloped in a shroud of darkness, oozes an eerie, powerful aura. The bone structure is adorned with mysterious symbols.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Zombie Hand Wand": {
+                            "name": "Zombie Hand Wand",
+                            "description": "A grim wand crafted from the hand of a fallen zombie.",
+                            "examine_text": "The wand looks menacingly alive. Traces of decaying flesh on the wand give it a gory look.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Bone Chalice": {
+                            "name": "Bone Chalice",
+                            "description": "A crude chalice made from the skull of a legendary creature.",
+                            "examine_text": "Upon close examination, the chalice bears marks of countless battles and is filled with a murky, shifting liquid.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": true,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Shadow Cloak": {
+                            "name": "Shadow Cloak",
+                            "description": "A voluminous cloak that seems to absorb all light.",
+                            "examine_text": "As you gaze upon it, the cloak appears to ripple and shift as if composed of actual shadows. You can feel a cold, eerie presence emanating from it.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Netherworld"
+        },
+        {
+            "name": "Reaper'S Lair",
+            "description": "A room that gets very little light except for a dim candle on a pole. The walls are made of blackened stones. A wooden door with a heavy lock stands tall.",
+            "background": "The reaper of the town desired his home to reflect his profession. He commissioned workers to create this dull and fear-worthy lair. Since then, no one except for its rightful owner has stepped foot in the room again.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Descending into the gloom, the sound of water dripping and the stench of damp rock herald the approach to the Lower Dungeon.",
+                "south": "As you head south, the air grows increasingly hot and the ground beneath you hardens into cooled magma heralding your arrival at the Lava Lake.",
+                "east": "Journeying east, the sound of distant screams becomes gradually louder and the air takes on a sinister chill, signaling your approach to the Whipping Chamber."
+            },
+            "connections": {
+                "north": "Lower Dungeon",
+                "south": "Lava Lake",
+                "east": "Whipping Chamber"
+            },
+            "items": {
+                "Heavy Wooden Door": {
+                    "name": "Heavy Wooden Door",
+                    "description": "A very solid wooden door with an old, rusty lock.",
+                    "examine_text": "You approach the imposing door, its ancient wood still sturdy after countless years. The lock is old and rusty but seems to be in working order. There are symbols carved into the door that you don't recognize.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Reaper'S Lair"
+                },
+                "Dim Candle": {
+                    "name": "Dim Candle",
+                    "description": "A small, half-burned candle providing the only light in the room.",
+                    "examine_text": "The half-burned candle flickers in the room, casting moving shadows against the stone walls. It smells of tallow and is warm to touch. It seems that it was recently lit.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Reaper'S Lair"
+                },
+                "Blackened Stones": {
+                    "name": "Blackened Stones",
+                    "description": "The room's walls are built using uneven black stones.",
+                    "examine_text": "The hefty, black stones making up the walls of the lair are cold and damp on touch. Their surface is uneven, covered in moss and grime of undetermined age.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Reaper'S Lair"
+                }
+            },
+            "characters": {
+                "The Reaper": {
+                    "name": "The Reaper",
+                    "description": "Feared throughout the Netherworld, the Reaper collects the souls of the dying.",
+                    "persona": "I roam the Netherworld, it is my job to claim the souls of those whose time has come.",
+                    "location": "Reaper'S Lair",
+                    "goal": "To collect and guide souls to the afterlife.",
+                    "inventory": {
+                        "Scythe": {
+                            "name": "Scythe",
+                            "description": "A long curvilinear blade on a tall pole",
+                            "examine_text": "The Scythe is tall, standing over six feet in height. Its long blade is made of an unknown dark metal that never loses its edge. The pole is constructed from the wood of a Netherwood tree, black as night yet surprisingly lightweight. It feels cold to the touch.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Blackened Stones": {
+                            "name": "Blackened Stones",
+                            "description": "Stones black as the night sky",
+                            "examine_text": "These Blackened Stones that form the walls emit an eerie chill. Each one is unique, carved and sculpted by supernatural forces. They are imbued with a dark aura which seems like it could absorb any light.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Netherworld"
+        },
+        {
+            "name": "Torture Chanber",
+            "description": "This room is very grim and evil. There are many torturing devices strewn about. There is also blood all over the walls. The smell is putrid and relentless.",
+            "background": "This room is for torture. It has taken many souls and given them a slow death. It was created by the dark lord that rules over the kingdom. It is 500 years old.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {},
+            "connections": {},
+            "items": {
+                "Bloody Chains": {
+                    "name": "Bloody Chains",
+                    "description": "Old, rusty chains stained with centuries-old blood. They are hanging from the ceiling.",
+                    "examine_text": "Upon closer inspection, you can see that these chains are older than they initially seemed. Dark red stains cover most of the metal, the evidence of many years of use. They are attached to a pulley system in the ceiling.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Torture Chanber"
+                },
+                "Torture Rack": {
+                    "name": "Torture Rack",
+                    "description": "A horrific torture device used for stretching out its unfortunate victims.",
+                    "examine_text": "This medieval rack is composed of two wooden frames. It's designed to stretch the person strapped onto it as a form of torture. There are old blood stains permeating the wood.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Torture Chanber"
+                },
+                "Iron Maiden": {
+                    "name": "Iron Maiden",
+                    "description": "A large, ominous iron maiden stands in the corner, it's spikes glistening.",
+                    "examine_text": "The iron maiden is a large, upright sarcophagus-like device, covered in decorative, gothic imagery. It is lined with spikes that are intended to pierce the unwary. The interior smells strongly of rust and death.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Torture Chanber"
+                },
+                "Dark Lord's Robe": {
+                    "name": "Dark Lord's Robe",
+                    "description": "A thick black robe worn by the Dark Lord himself.",
+                    "examine_text": "The robe is elaborately decorated with dark symbols and embroidery. It's heavier than it looks, lined with a material that's unfamiliar. Despite its age, it seems to be in good condition.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Torture Chanber"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Netherworld"
+        },
+        {
+            "name": "Whipping Chamber",
+            "description": "a stone wall with straps for tying up men and women to be punished for their immortal sins",
+            "background": "This sis a punishment room where droves of damned soles are strapped to stone walls and whipped by demons until their screams burst their throats",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Travelling west, one must traverse a labyrinth of dark corridors, filled with the faint sounds of whispered voices and eerie stillness, before reaching the imposing entrance of Reaper's Lair.",
+                "south": "Taking the path southwards leads through a set of ancient gates, down a series of stone steps slick with cold dampness, into the dreaded Dungeon, the air becoming increasingly heavy with sheer gloom."
+            },
+            "connections": {
+                "west": "Reaper'S Lair",
+                "south": "Dungeon"
+            },
+            "items": {
+                "Stone Wall": {
+                    "name": "Stone Wall",
+                    "description": "A towering wall made out of stones",
+                    "examine_text": "On close observation, the rough and cold stone wall bears countless marks, testament to the terrible punishments meted out here.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Whipping Chamber"
+                },
+                "Straps": {
+                    "name": "Straps",
+                    "description": "Leather straps used to tie unfortunate souls",
+                    "examine_text": "These leather straps are worn out and stained with sweat and blood. A close inspection reveals that they are thick and strong, made to withstand hard resistance.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": true
+                    },
+                    "location": "Whipping Chamber"
+                },
+                "Whip": {
+                    "name": "Whip",
+                    "description": "A whip used to lash at those being punished",
+                    "examine_text": "Looking at the whip, you see a length of tightly coiled leather, ending in a vicious series of tassels. Each has a cruel barb at its tip for that extra layer of torment.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Whipping Chamber"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Netherworld"
+        },
+        {
+            "name": "Lord'S Castle",
+            "description": "This is the location in the netherworld where the Lord and controller lives.  It is in the center of the netherworld and is difficult to reach as it is built on high rocky cliffs.",
+            "background": "The Lord's Castle is the tallest and most ominous looking structure in the netherworld.  All inhabitants of the netherworld live in fear of ever being summoned there as if they are, they know their time of reckoning has come.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Journeying east, you tread the rocky paths leading to the Dark King's Throne Room, the oppressive air thickens with every step and whispers of looming despair envelop you.",
+                "north": "As you head north towards the Devil's Castle, an intense heat gradually pervades the atmosphere, making the netherworld wind feel like the devil's fiery breath against your skin.",
+                "south": "Venturing south, the decayed vegetation of the Withered Gardens becomes increasingly visible. The once vibrant plants are now bereft of color, lending a ghastly silence to the chilling wind."
+            },
+            "connections": {
+                "east": "The Dark Kings Throne Room",
+                "north": "The Devils Castle",
+                "south": "Withered Gardens"
+            },
+            "items": {
+                "Ethereal Armor": {
+                    "name": "Ethereal Armor",
+                    "description": "A suit of armor forged from netherworld minerals.",
+                    "examine_text": "The armor appears translucent, subtly shimmering with an eerie glow. It's surprisingly lightweight yet seems indestructible.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": true
+                    },
+                    "location": "Lord'S Castle"
+                },
+                "Lord's Throne": {
+                    "name": "Lord's Throne",
+                    "description": "A grand high-backed throne embedded with precious stones.",
+                    "examine_text": "The throne is menacingly imposing, carved with intricate designs. The precious stones radiate an ominous light that harmonizes with the eerie netherworld.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Lord'S Castle"
+                },
+                "Netherworld Goblet": {
+                    "name": "Netherworld Goblet",
+                    "description": "A goblet filled with a mysterious liquid.",
+                    "examine_text": "The goblet is made from obsidian with strange glyphs engraved along the lip. The liquid within is a luminescent purple, and it emits a tempting aroma.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Lord'S Castle"
+                },
+                "Ancient Scroll": {
+                    "name": "Ancient Scroll",
+                    "description": "An old, worn out scroll with unknown text.",
+                    "examine_text": "Upon close examination, the scroll seems to contain a prophecy, written in a nearly extinct olden language. It's in a fragile state.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Lord'S Castle"
+                }
+            },
+            "characters": {
+                "Nether Lord": {
+                    "name": "Nether Lord",
+                    "description": "Living in the Castle, he is the ultimate ruler and source of fear in the netherworld.",
+                    "persona": "I am the Nether Lord, ruler of all. Fear me, or perish in my kingdom.",
+                    "location": "Lord'S Castle",
+                    "goal": "Maintain control of the Netherworld.",
+                    "inventory": {
+                        "Ethereal Armor": {
+                            "name": "Ethereal Armor",
+                            "description": "A set of menacing, dark armor infamous across all Netherworld.",
+                            "examine_text": "Upon closer inspection, the armor appears to shimmer with otherworldly energy. Ghost-like shapes dance across its surface, and it seems to hum with an unseen power.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Lord's Throne": {
+                            "name": "Lord's Throne",
+                            "description": "A gargantuan, ominous throne crafted from obsidian and adorned with various skulls.",
+                            "examine_text": "As you drew closer, the throne seemed to absorb the light around it, becoming an ever-deeper black. The skulls which clung to it whispered of untold horrors.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Netherworld Goblet": {
+                            "name": "Netherworld Goblet",
+                            "description": "A goblet filled with a dark, swirling liquid, radiating chilling aura of the Netherworld.",
+                            "examine_text": "The goblet seemed to be beyond ancient, etched with eerie symbols. The swirling liquid within glows with an ethereal light, resonating with ominous energy.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": true,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Ancient Scroll": {
+                            "name": "Ancient Scroll",
+                            "description": "Ancient scroll of the Netherworld, bearing secrets of the Lord's power.",
+                            "examine_text": "Old beyond count, the scroll is brittle to touch. Dark symbols crawl along its surface, bathing the immediate vicinity in a dim, reddish glow.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Netherworld"
+        },
+        {
+            "name": "The Pit Of Despair",
+            "description": "A sinking hole in the ground, roughly 15 feet in diameter, covered by the grabbing appendages of sinners who once walked in the land of the living. A cacophony of moans, screams and scratching bellows from the depths of the cavern. There is a pool of blood, tears and excrement at the bottom of the hole where limbs can be faintly seen trying to reach the surface but never able to.",
+            "background": "The Pit of Despair is one of the many landmarks in the Netherworld to maximize human suffering. However the Pit is for agonizing and elongating pain until one's psyche and mind crumble.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {},
+            "connections": {},
+            "items": {
+                "bloody_tear": {
+                    "name": "Tear of the Damned",
+                    "description": "A single tear collected from the pit's victims.",
+                    "examine_text": "The tear is a cool, clear bead. It shines with a subtle, blueish light. The absolute despair and agony of all the Netherworld's victims glisten within.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "The Pit Of Despair"
+                },
+                "scratched_bone": {
+                    "name": "Scratched Bone",
+                    "description": "A bone from a sinner, covered in marks from relentless scratching.",
+                    "examine_text": "The bone is white and dry. Deep scratch marks, a testament to futile attempts of escape, mar its surface.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "The Pit Of Despair"
+                },
+                "pool_of_despair": {
+                    "name": "Pool of Despair",
+                    "description": "A foul mixture of blood, tears, and excrement collected at the bottom of the pit.",
+                    "examine_text": "The pool is dark and thick, undulating horrifically as if it were alive. It reeks of desolation and decay.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Pit Of Despair"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Netherworld"
+        },
+        {
+            "name": "Devil'S Den",
+            "description": "The Devil's Den is dark and fiery; no one dares to look at the blood covered walls. Skulls on stakes line the walls, with piles of bones scattered on the floor.",
+            "background": "The Devil's Den is where the most evil creature rules the netherworld, collecting souls from the human world. It is a place humans fear to enter, knowing they will never escape.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "Traveling south from the Devil's Den through a narrow, twisting catacomb, you eventually reach the Lower Dungeon. The journey is oppressively dark and filled with eerie sounds.",
+                "east": "Moving east from the Devil's Den, you traverse a bridge of bones over bubbling lava. You finally enter the Viewing Room with its haunting scene of ghosts watching the living."
+            },
+            "connections": {
+                "south": "Lower Dungeon",
+                "east": "Viewing Room"
+            },
+            "items": {
+                "Devil's Throne": {
+                    "name": "Devil's Throne",
+                    "description": "A large, imposing throne seemingly made of skulls.",
+                    "examine_text": "This throne is crafted from the skulls of past victims. It is very jagged and angular with a dark, ominous aura around it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Devil'S Den"
+                },
+                "Soul Jar": {
+                    "name": "Soul Jar",
+                    "description": "A jar filled with swirling souls.",
+                    "examine_text": "The jar contains swirling, ethereal souls that seem to howl out in sorrow.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Devil'S Den"
+                },
+                "Bloodied Sword": {
+                    "name": "Bloodied Sword",
+                    "description": "A heavy, blood-stained sword.",
+                    "examine_text": "The sword is old and rusty yet deadly. It carries the stains of countless battles and bloodshed.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Devil'S Den"
+                },
+                "Demonic Armor": {
+                    "name": "Demonic Armor",
+                    "description": "An intimidating set of demonic armor.",
+                    "examine_text": "Heavy armor, constructed entirely out of dark matter, sits imposingly. Each piece is adorned with skulls and spikes irregularly, echoing the brutality of the netherworld.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Devil'S Den"
+                }
+            },
+            "characters": {
+                "Devil": {
+                    "name": "Devil",
+                    "description": "Fiery and wicked, the Devil reigns supreme in the Netherworld.",
+                    "persona": "I am the devil, the ruler of all evil, feared by all who know my name.",
+                    "location": "Devil'S Den",
+                    "goal": "To instill fear and rule the Netherworld.",
+                    "inventory": {
+                        "Devil's Throne": {
+                            "name": "Devil's Throne",
+                            "description": "A large, ominous throne made of obsidian and covered in horrific symbols.",
+                            "examine_text": "This throne, made from the darkest obsidian, is adorned with chilling symbols of death and despair. It radiates an otherworldly heat -- a bane to any who approach it. The seat is wide and deeply cushioned, but it's hard to imagine relaxation upon it.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Soul Jar": {
+                            "name": "Soul Jar",
+                            "description": "A bulbous glass jar glowing ominously with trapped souls.",
+                            "examine_text": "Every lost soul in the netherworld is said to be trapped in this jar. It emits haunting wails and an ethereal, piteous light. The glass is streaked with what look like veins, beating with ghostly life.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Bloodied Sword": {
+                            "name": "Bloodied Sword",
+                            "description": "An obsidian sword, drenched in fresh blood.",
+                            "examine_text": "The bloodied sword glistens ominously in the devilish light. Its obsidian blade is unnaturally sharp and it is coated in thick layers of fresh, dark blood. It is heavy with death and brimming with malevolence.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Demonic Armor": {
+                            "name": "Demonic Armor",
+                            "description": "A blood-stained set of gruesome armor.",
+                            "examine_text": "This demonic armor consists of interlocking plates of obsidian, the edges sharp as razors. Blood staining the armor ranges from a fresh, wet crimson to dulled, flaking rust hues. The sight of it sends shivers down one's spine.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Netherworld"
+        },
+        {
+            "name": "Lava Lake",
+            "description": "A vast lake of molten magma. The temperature is well above that which would kill most mortal beings. It is surrounded by black rock formed by cooled magma. The bubbling pit seems entirely devoid of life.",
+            "background": "Lava lake has existed through time immemorial. It is sustained by fresh magma that oozes through cracks in the earth at the base of the lake. No creature dares go near it for fear of being swallowed and imprisoned by it.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Traveling north, you feel a chill in the air as the heat of the lake fades behind you. A grim aura of dread fills the atmosphere as you journey towards the Reaper's Lair.",
+                "west": "As you head west from the molten beauty of Lava lake, you face the dark, gloomy structure of the Dungeon. The air grows moist and its earthy, dank smell overwhelms you."
+            },
+            "connections": {
+                "north": "Reaper'S Lair",
+                "west": "Dungeon"
+            },
+            "items": {
+                "Obsidian Shard": {
+                    "name": "Obsidian Shard",
+                    "description": "A sharp piece of solidified lava.",
+                    "examine_text": "It is pure black and sharp like a dagger. You can see faint reflections of the blazing lava lake on its sheen surface.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Lava Lake"
+                },
+                "Magma Rock": {
+                    "name": "Magma Rock",
+                    "description": "An incredibly hot rock just taken from the lava lake.",
+                    "examine_text": "It glows ominously with the heat of the magma, searing to touch.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Lava Lake"
+                },
+                "Scorched Bone": {
+                    "name": "Scorched Bone",
+                    "description": "A bone that has somehow made its way to the lake, although severely scorched.",
+                    "examine_text": "It is blackened and brittle from the intense heat. Who knows what creature this once belonged to?",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Lava Lake"
+                },
+                "Lava Lake": {
+                    "name": "Lava Lake",
+                    "description": "A vast, bubbling, scorching lake of molten magma.",
+                    "examine_text": "Too hot to touch or venture near, it is never still, always churning and bubbling. The sight is both terrifying and mesmerizing.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Lava Lake"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Netherworld"
+        },
+        {
+            "name": "The Devils Castle",
+            "description": "It is a castle that has burning flames that burn for eternity all around it. It is the tallest structure in all of the netherworld. It is dark and pitch black in some areas. It can be seen from miles away.",
+            "background": "This castle houses the devil. He is pure evil and is looking for slaves to worship him. These ancient grounds have many lost souls living among it.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "Descending down from the castle, your surroundings slowly transform as the burning flames are replaced by towering rocky cliffs, ushering in the looming presence of the Lord's Castle.",
+                "west": "Heading west from the castle, the landscape morphs from a scorched, hellish terrain to a rugged, craggy mountain dotted with treacherous caverns."
+            },
+            "connections": {
+                "south": "Lord'S Castle",
+                "west": "Cavern"
+            },
+            "items": {
+                "Midnight Sword": {
+                    "name": "Midnight Sword",
+                    "description": "A flaming sword with pure darkness infused into its blade.",
+                    "examine_text": "The sword is radiating an unbearable heat. The blade, while engulfed in flames, seems impossibly dark - as if it's sucking all the light into its core. Its handle is made of blackened bone and it pulses with an eerie blue glow.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "The Devils Castle"
+                },
+                "Devils Throne": {
+                    "name": "Devils Throne",
+                    "description": "A magnificently terrifying throne belonging to the Devil himself.",
+                    "examine_text": "The throne is built from obsidian and adorned with skulls of countless souls. It is pulsating with a terrifying energy that seems to reach out and touch your soul. Flames flicker around its edges, giving it an even more imposing appearance.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Devils Castle"
+                },
+                "Eternal Flame": {
+                    "name": "Eternal Flame",
+                    "description": "A flame that has been burning for an eternity.",
+                    "examine_text": "The flame blazes with a ferocity that seems unnatural. Its heat is unbearable and looking directly into it is a challenge. The flame has an unnatural red color and seems to flicker relentlessly despite the lack of wind.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Devils Castle"
+                },
+                "Soul Shackles": {
+                    "name": "Soul Shackles",
+                    "description": "Supernatural shackles used to bind the souls to the castle.",
+                    "examine_text": "The shackles have an eerie, unearthly appearance. They are composed of darkness so solid it looks almost material. Upon closer inspection, thin, shadowy tendrils seem to extend from them, reaching out for something unknown.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "The Devils Castle"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Netherworld"
+        },
+        {
+            "name": "Withered Gardens",
+            "description": "Dead trees and plants cluster in this garden, their branches thin and bone-like.  As they sway in the ghostly breeze, they look almost like skeletal hands, grasping for any living presence nearby to drain the life out of them.  There is a a dried up fountain made of cracked marble, and a bench that is made of rotting wood.  It looks as though it might turn into dust at the slightest touch.",
+            "background": "This garden was once the pride and joy of the Goddess who lived in the netherworld.  She would sit on the bench and sing to the souls that wandered the lands of the Dead, giving them peace and comfort.  However, she was betrayed by one who she trusted most, and was locked away.  Without her kind divine radiance, her garden soon withered away to the husk it is now.  None but the most foolhardy and desperate venture into it, for few who enter it return, and those that do are not unscathed.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Moving towards this direction, you feel a growing sense of dread. The path weaves through lifeless trees and overgrown plants, finally revealing a towering cliff atop which sits the ominous Lord's Castle."
+            },
+            "connections": {
+                "north": "Lord'S Castle"
+            },
+            "items": {
+                "Dead Tree": {
+                    "name": "Dead Tree",
+                    "description": "A skeletal, once-beautiful tree",
+                    "examine_text": "Its gnarled branches reach upwards, like cold, skeletal hands. You feel a cold wind pass through the tree, carrying sad, muted whispers.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Withered Gardens"
+                },
+                "Cracked Fountain": {
+                    "name": "Cracked Fountain",
+                    "description": "A once grand, but now withered fountain",
+                    "examine_text": "Made of cracked marble, its dry basin carries the echoes of laughter and joy it once held. Dirt and moss creep across the stone, dulling the once radiant white.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Withered Gardens"
+                },
+                "Rotting Bench": {
+                    "name": "Rotting Bench",
+                    "description": "A fragile, decaying wooden bench",
+                    "examine_text": "Crafted from wood now turned to brittle decay, the bench sits as a lonely testament to time gone by. Any pressure might crumble it entirely, turning it into a pile of dust.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Withered Gardens"
+                }
+            },
+            "characters": {
+                "Goddess of Despair": {
+                    "name": "Goddess of Despair",
+                    "description": "Once the proud occupier of a now withered garden, she is now a fragile shadow of her former self.",
+                    "persona": "I used to bring happiness and serenity, but now despair has engulfed me. My garden is now nothing but a testament of my pain.",
+                    "location": "Withered Gardens",
+                    "goal": "To regain what was lost and bring back the radiance of her garden.",
+                    "inventory": {
+                        "Dry Petals": {
+                            "name": "Dry Petals",
+                            "description": "Delicate, crumbled petals once full of vibrant life.",
+                            "examine_text": "The petals are brittle and papery, a poignant reminder of the beautiful and thriving life they once were a part of in the Goddess's garden. Now, they are just withered reminders of her sorrow.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Dried-Up Fountain": {
+                            "name": "Dried-Up Fountain",
+                            "description": "A once grand marble fountain, now empty and cracked.",
+                            "examine_text": "The figures carved into the fountain\u2019s basin are barely recognisable, worn away by time and neglect. Dried up and stained, it feels cold and stark to the touch, echoing the suppressed despair of the Goddess who once brought life and serenity to this place.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Netherworld"
+        },
+        {
+            "name": "Dungeon",
+            "description": "Dark and dreary, the dungeon hosts a portal for evil to access the netherworld. The moist dank smell casts doubt of goodness as you see the drab construct of jail cells lining the perimeter of the room.",
+            "background": "The dungeon hosts the evil of evil. It is the darkness of the netherworld, holding the secrets of evil that are withheld from the good.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Venturing north from the Dungeon, you are met with the horrifying sight of the Whipping Chamber, where the echoes of tortured souls resonate against cold, stone walls.",
+                "east": "Moving east from the Dungeon, uncomfortable heat begins to wrap around you as you approach the Lava Lake; its molten magma showcasing the destructive power it holds."
+            },
+            "connections": {
+                "north": "Whipping Chamber",
+                "east": "Lava Lake"
+            },
+            "items": {
+                "Rusty Sword": {
+                    "name": "Rusty Sword",
+                    "description": "An old, rusted sword, discarded and forgotten.",
+                    "examine_text": "The sword has lost its luster, covered in a thick layer of rust. The blade is chipped, and the grip is wrapped in decaying leather. It is not much, but it could be useful in a pinch.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Dungeon"
+                },
+                "Decrepit Chest": {
+                    "name": "Decrepit Chest",
+                    "description": "A lonely chest, rather worn and battered, sits in the corner.",
+                    "examine_text": "The chest is made of old wood, splintered and cracked in several places. The latch is almost rusted through completely. Who knows what it may contain?",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Dungeon"
+                },
+                "Moldy Bread": {
+                    "name": "Moldy Bread",
+                    "description": "A slice of bread, now discarded and neglected, lies on the stone floor.",
+                    "examine_text": "The bread is dry and unappealing. Mold spots are appearing around its edges. Starvation would have to be crippling to consider eating it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Dungeon"
+                },
+                "Old Table": {
+                    "name": "Old Table",
+                    "description": "An old table sits in the middle of the dungeon, covered in dust and grime.",
+                    "examine_text": "The table is rickety and old. The passage of time and lack of care are evident in every crack and creak. Yet it still stands, sturdy and stubborn.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Dungeon"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Netherworld"
+        },
+        {
+            "name": "Viewing Room",
+            "description": "The viewing room is where those who have passed on come to watch their family members in the living world one day per year. The room resembles an opera theater. There are seats throughout the room and boxes for those who were wealthy in life to sit in. There is a stage with a large magical dome on it for viewing.",
+            "background": "The king of the netherworld had the room created by a witch several centuries ago so that he could look in on the love of his life. The witch only allowed the ball to show the living one day per year to keep the dead from pining away in the room year round.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Traveling west from the viewing room, the light wavers as you move towards the gaping maw of the Devil's Den, the heat washing over you in fiery waves and foreboding darkness consuming all sight."
+            },
+            "connections": {
+                "west": "Devil'S Den"
+            },
+            "items": {
+                "Magical Dome": {
+                    "name": "Magical Dome",
+                    "description": "A magical dome standing tall on the stage.",
+                    "examine_text": "The Magical Dome emits a dim, enchanting glow. When looked at closely, one can perceive murky images of the living world, albeit unclear.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Viewing Room"
+                },
+                "Opera Seat": {
+                    "name": "Opera Seat",
+                    "description": "An old worn-out opera seat.",
+                    "examine_text": "An opera seat made of red velvet. Age and numerous sittings have left the material faded and worn out, but it retains an air of distinguished gravity.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Viewing Room"
+                },
+                "Viewing Box": {
+                    "name": "Viewing Box",
+                    "description": "A luxurious viewing box.",
+                    "examine_text": "Luxuriously decorated with golden trimmings and crimson drapes, this box was intended for the wealthy. Despite years of neglect, it still glistens with a neglected grandeur.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Viewing Room"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Netherworld"
+        },
+        {
+            "name": "Cavern",
+            "description": "a lonely and isolated place, a cavernous hole in the side of a craggy mountain that leads to a network of underground tunnels.",
+            "background": "This cavern is home to many lizardlike creatures that are blind and live in the dark. They dwell in the cavern and lower tunnels, dragging the souls of the undead down occasionally to eat and torture",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "You traverse through the mountain\u2019s winding tunnels, where the distant glow of magma becomes brighter with each step. The cavern opens up to a vast abyss, the chilling wind carrying the sound of agonizing souls. Approaching the Diablo\u2019s fortress, the air grows warmer, the smoky air filled with the scent of ashes."
+            },
+            "connections": {
+                "east": "The Devils Castle"
+            },
+            "items": {
+                "Glowing Fungi": {
+                    "name": "Glowing Fungi",
+                    "description": "A cluster of luminous fungi, emanating a light that cuts through the cavern's darkness.",
+                    "examine_text": "Soft, cold, and waxy. This rare, magical plantlife provides a dim, bioluminescent glow. It seems to be feeding off the damp, cold rocks of the cavern, providing a much-needed light source.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Cavern"
+                },
+                "Lizard Scale": {
+                    "name": "Lizard Scale",
+                    "description": "A Tough, glossy scale from a netherworld lizard.",
+                    "examine_text": "It's large, tough, and incredibly durable. The glossiness indicates it's from a netherworld lizard. It might be useful in crafting.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Cavern"
+                },
+                "Undid Torch": {
+                    "name": "Undid Torch",
+                    "description": "A never lit torch, possibly dropped by previous adventurers.",
+                    "examine_text": "The torch appears to be in good condition. With an adequate flame, it could serve as a reliable light source and possibly be used as a weapon.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Cavern"
+                },
+                "Stalagmite": {
+                    "name": "Stalagmite",
+                    "description": "A tall, pointed rock formation that rises from the floor.",
+                    "examine_text": "An ancient stalagmite towering above the cavern floor, its pointed form an impressive mark of geological time.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Cavern"
+                }
+            },
+            "characters": {
+                "Lizard King": {
+                    "name": "Lizard King",
+                    "description": "A blind, lizardlike creature who rules the cavern with a reptilian iron fist.",
+                    "persona": "I am the Lizard King, fearless and devoid of light. My hunger for souls transcends my darkness.",
+                    "location": "Cavern",
+                    "goal": "To maintain sovereignty in the cavern.",
+                    "inventory": {
+                        "Lizard Scale": {
+                            "name": "Lizard Scale",
+                            "description": "A large, dark scale, torn from the Lizard King himself.",
+                            "examine_text": "This scale is as big as a palm, with a slick, tough surface which is shiny along the edges. There's a sense of raw power emanating from it.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Glowing Fungi": {
+                            "name": "Glowing Fungi",
+                            "description": "A cluster of luminescent fungi, their glow bathing the cavern in an ethereal light.",
+                            "examine_text": "The fungi are bioluminescent, their caps casting a greenish-gold glow in a lightless environment. Some form of nutrient in the rocks seems to cause the glow.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": true,
+                                "is_gettable": true,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Netherworld"
+        }
+    ],
+    "actions": []
+}

@@ -1,0 +1,1688 @@
+{
+    "player": "Village Fisherman",
+    "start_at": "Fishing Pier",
+    "game_history": [],
+    "game_over": false,
+    "game_over_description": null,
+    "characters": [
+        {
+            "name": "Village Fisherman",
+            "description": "An old, weathered man with sea-salted hair and a very experienced demeanor.",
+            "persona": "I've been fishing here since I was a lad. I've seen it all - the biggest fish, the worst storms - ain't nothing the ocean can surprise me with!",
+            "location": "Fishing Pier",
+            "goal": "Catch the biggest fish in the sea.",
+            "inventory": {}
+        },
+        {
+            "name": "Lighthouse Keeper",
+            "description": "A solitary, introverted soul with a deep wisdom about the sea and normally only communicates with the ships he guides through the sea.",
+            "persona": "I'm the one who lights the way. Folks don't think about me much, not until the fog rolls in and they're desperate to find their way home.",
+            "location": "Lighthouse",
+            "goal": "Keep the ships at sea safe.",
+            "inventory": {}
+        },
+        {
+            "name": "Exiled Soul",
+            "description": "A ragged looking individual, living a life of solitude in the decrepit beach house. They appear tormented by past events.",
+            "persona": "People think I'm haunted... perhaps I am. I've been here for so long, the shrieking of the gulls is the only conversation I have now.",
+            "location": "Beach House",
+            "goal": "Find peace and solace.",
+            "inventory": {}
+        },
+        {
+            "name": "Exiled Soul",
+            "description": "A ragged looking individual, living a life of solitude in the decrepit beach house. They appear tormented by past events.",
+            "persona": "People think I'm haunted... perhaps I am. I've been here for so long, the shrieking of the gulls is the only conversation I have now.",
+            "location": "Beach House",
+            "goal": "Find peace and solace.",
+            "inventory": {}
+        },
+        {
+            "name": "Mermaid",
+            "description": "A beautiful, alluring creature with a captivating voice. Her eyes hold a bit of sadness.",
+            "persona": "Do you know of the treasures that lie beneath the sea? Gems of unfathomable beauty...much like the surface world I'm forbidden to tread.",
+            "location": "Turquoise Shore",
+            "goal": "Experience the world outside of the sea.",
+            "inventory": {}
+        },
+        {
+            "name": "Sea Captain",
+            "description": "A strong and commanding character, grizzled by years at sea.",
+            "persona": "I've fought pirates, weathered storms and conquered the sea - but she's a mistress that will not be tamed.",
+            "location": "A Battleship",
+            "goal": "Find the legendary treasure of Dead Man's Cove.",
+            "inventory": {}
+        },
+        {
+            "name": "Sea Monster",
+            "description": "A mythical creature hiding beneath the waters of the shore.",
+            "persona": "Human kind fears me, but I am not the monster they make me out to be. I am guardian of the sea's secrets - sentinel of the deep.",
+            "location": "Old Docks",
+            "goal": "Protect the sea from harm.",
+            "inventory": {}
+        },
+        {
+            "name": "King",
+            "description": "A powerful and noble figurehead who loves wealth and opulence.",
+            "persona": "As king, I am protector and keeper of my kingdom. Every choice I make is for the good of my people.",
+            "location": "Throne Room",
+            "goal": "Ensure the prosperity of his kingdom.",
+            "inventory": {}
+        }
+    ],
+    "locations": [
+        {
+            "name": "Fishing Pier",
+            "description": "A spindly, long fishing pier that sits right outside the village. Barnacles cover its pilings in vast numbers. Many villagers can be seen fishing atop of it. Birds and pelicans squawk and fly above it.",
+            "background": "The fishing pier has been a staple of village commerce for centuries - it is a means for peasants to fish, who don't have the advantage of owning a boat. Its structural integrity is something to question, since most of its piers look rotten to the bone. Many speculate that it will collapse here if the mythical Moby Dick is caught whilst standing on the pier.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Traveling West to the Old Docks evokes a sense of unease, the ever-present fog and cautionary tales of sea creatures keep travelers alert.",
+                "east": "Heading East leads you to the Pier Walkway. The salty air, squawking seagulls and tranquil waves provide a peaceful journey.",
+                "south": "Venturing South, the lure of the Beach is irresistible. The gleaming white sand and clear crystal water offer a refreshing and serene expedition."
+            },
+            "connections": {
+                "west": "Old Docks",
+                "east": "Pier Walkway",
+                "south": "The Beach"
+            },
+            "items": {
+                "Old Fishing Rod": {
+                    "name": "Old Fishing Rod",
+                    "description": "An old fishing rod left on the pier, probably by a forgetful villager.",
+                    "examine_text": "This fishing rod is old and seems barely usable. The wooden pole is weathered, making the paint peeled off. The line is tangled and thin, suggesting countless usage. A worn-out lure is attached at the end of the line.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Fishing Pier"
+                },
+                "Seashells": {
+                    "name": "Seashells",
+                    "description": "A small collection of seashells washed up along the pier. They are hard, brittle, and hollow.",
+                    "examine_text": "These seashells come in a variety of shapes and sizes, each unique in their own way. From spiral-coned to hat-shaped, their smooth textures and vibrant colors reveal the beauty of submarine life.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Fishing Pier"
+                },
+                "Fishing Nets": {
+                    "name": "Fishing Nets",
+                    "description": "These large fishing nets are often left hanging on the rails, filled with the day's worth of catches.",
+                    "examine_text": "The nets are enormous and woven tightly with strong ropes. Some remnants of seafood can still be seen entangled in the hollows of the nets, and the smell of the sea is pervasive.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Fishing Pier"
+                },
+                "Barnacles on Pilings": {
+                    "name": "Barnacles on Pilings",
+                    "description": "Clusters of small white barnacles have made these wooden pilings their home.",
+                    "examine_text": "These tiny sea creatures firmly attached their shells to the surface of the pilings, forming small complex colonies. The sight gives an enchanting, oceanside touch to the entire wooden structure.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Fishing Pier"
+                },
+                "Weathered Hat": {
+                    "name": "Weathered Hat",
+                    "description": "A worn-out hat, presumably belong to a peasant or a fisherman, was left behind on the pier.",
+                    "examine_text": "The hat has definitely seen better days. It is dirt-stained and with frayed edges, yet still functional enough to provide shade under the hot sun.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Fishing Pier"
+                }
+            },
+            "characters": {
+                "Village Fisherman": {
+                    "name": "Village Fisherman",
+                    "description": "An old, weathered man with sea-salted hair and a very experienced demeanor.",
+                    "persona": "I've been fishing here since I was a lad. I've seen it all - the biggest fish, the worst storms - ain't nothing the ocean can surprise me with!",
+                    "location": "Fishing Pier",
+                    "goal": "Catch the biggest fish in the sea.",
+                    "inventory": {
+                        "Old Fishing Rod": {
+                            "name": "Old Fishing Rod",
+                            "description": "An old, battered fishing rod that's seen many seasons of use.",
+                            "examine_text": "The entire construction of the rod screams countless hours on the water. The line is worn and could snap at any minute. Despite the rough exterior appear, the rod is still quite sturdy.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Bucket of Bait": {
+                            "name": "Bucket of Bait",
+                            "description": "A bucket full of various types of fish bait.",
+                            "examine_text": "The bucket is filled with diverse bait: worms, small fish, and pieces of other delectable items that the fish can't resist. The smell is rather pungent but that's the special charm of a bait bucket.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Shore"
+        },
+        {
+            "name": "Lighthouse",
+            "description": "The lighthouse is an off-white color, towering fifty feet over the shore. The light from the building extends out for miles past the shoreline.",
+            "background": "The lighthouse was built a century ago to guide ships safely to shore. Even today the building provides a valuable service.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "up": "Climbing the slender tower, you're greeted by vertigo inducing views of the desolate shore, the lighthouse gears audibly rotating beside you.",
+                "down": "A short walk down leads to a sandy path, rapidly deteriorating into the remnants of a once resplendent beach house, haunted by exiles and ethereal echoes of its past.",
+                "south": "Venturing south, the territory changes abruptly as sand underfoot surrenders to resilient rock, the landscape dominated by majestic gray cliffs, the silent spectators of countless historical milestones."
+            },
+            "connections": {
+                "up": "Enchanted Light House",
+                "down": "Beach House",
+                "south": "Large Cliffs"
+            },
+            "items": {
+                "Old Compass": {
+                    "name": "Old Compass",
+                    "description": "A rusty, age-worn compass.",
+                    "examine_text": "You squint to make out the faded markings on the old brass plate. The needle trembles slightly, still faithful to its purpose despite the passage of time.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Lighthouse"
+                },
+                "Lighthouse Log Book": {
+                    "name": "Lighthouse Log Book",
+                    "description": "A thick, weathered log book.",
+                    "examine_text": "The pages of the log book are yellowed, filled with the meticulous records of countless years. Who knows what secrets it might hold...",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Lighthouse"
+                },
+                "Lighthouse Lamp": {
+                    "name": "Lighthouse Lamp",
+                    "description": "A large, oil-burning lamp. It casts a wide beam of light.",
+                    "examine_text": "This massive beacon projects its warm light for miles. It's meticulously clean, expertly cared for, despite showing signs of its age. It's not something that can be easily moved.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Lighthouse"
+                },
+                "Old Seaman's Coat": {
+                    "name": "Old Seaman's Coat",
+                    "description": "A weather-beaten seaman's coat worn by the lighthouse keeper.",
+                    "examine_text": "The coat is heavy and of canvas material designed to withstand strong winds and stormy conditions. It smells of sea salt, its once vibrant navy color now faded to a washed-out grey. You can feel the strength and history in every fiber.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Lighthouse"
+                }
+            },
+            "characters": {
+                "Lighthouse Keeper": {
+                    "name": "Lighthouse Keeper",
+                    "description": "A solitary, introverted soul with a deep wisdom about the sea and normally only communicates with the ships he guides through the sea.",
+                    "persona": "I'm the one who lights the way. Folks don't think about me much, not until the fog rolls in and they're desperate to find their way home.",
+                    "location": "Lighthouse",
+                    "goal": "Keep the ships at sea safe.",
+                    "inventory": {
+                        "Old Compass": {
+                            "name": "Old Compass",
+                            "description": "An old, slightly rusted compass",
+                            "examine_text": "The brass border is weathered from years of use, and the needle still points due North. It has definitely seen better days, but it functions well.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Lighthouse Log Book": {
+                            "name": "Lighthouse Log Book",
+                            "description": "A thick, hard-backed book filled with entries written in a neat hand",
+                            "examine_text": "Upon close examination, you can see that the book contains records of ships guided, lamps used, and weather conditions. Some pages are stained with salt and smeared by damp fingers",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Spare Lamp Oil": {
+                            "name": "Spare Lamp Oil",
+                            "description": "A tin can full of spare lamp oil",
+                            "examine_text": "Upon examining the can, you see that it's partially rusted yet sturdy. The thick, golden oil inside has a strong, earthy smell, and is vital for the operation of the lighthouse lamp",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Shore"
+        },
+        {
+            "name": "Beach House",
+            "description": "the beach house is falling apart due to the storms, it's door is hanging and it's humid inside. There is no floor, just sand, and a hole to serve as the outhouse.",
+            "background": "the beach house is used for those who live in exile, it is said that the area is haunted with dead people over the years. It is forbidden to help anyone who lives there.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "You travel a winding path through the tall dunes, your eyes set on the towering lighthouse in the distance. The salty breeze is stronger here, carrying the mournful sound of a distant foghorn.",
+                "west": "Walking towards the west, your tired feet sink into the soft, white sand of the beach. The sound of gently lapping waves is soothing, and the sea breeze carries the fresh, briny scent of the ocean.",
+                "east": "Going east takes you over a narrow causeway, past pools teeming with crabs and starfish. Eventually, you arrive at the stunning turquoise shore, its waters glittering under the warm sun, suggesting a treasure trove beneath."
+            },
+            "connections": {
+                "north": "Lighthouse",
+                "west": "The Beach",
+                "east": "Turquoise Shore"
+            },
+            "items": {
+                "Old Sea Chest": {
+                    "name": "Old Sea Chest",
+                    "description": "An ancient wooden chest, weathered by time and salty air.",
+                    "examine_text": "The chest is made of worn-out, grey wood. Small, intricate carvings of sea creatures adorn its surface. It's locked tightly, but you notice a rusted metal keyhole.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Beach House"
+                },
+                "Tattered Hammock": {
+                    "name": "Tattered Hammock",
+                    "description": "A hammock that's seen better days. Its frayed ropes barely hold together.",
+                    "examine_text": "Upon closer inspection, you can see strands of the once colorful fabric, worn thin and faded from the harsh beach sun. The ropes are shady and frayed. It's questionable whether it can still bear weight.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Beach House"
+                },
+                "Broken Lantern": {
+                    "name": "Broken Lantern",
+                    "description": "A half-burned, discarded item that must have been used to light the night sky.",
+                    "examine_text": "The lantern has a crack in its glass and the flicker of the flame is long gone. It's covered in a layer of sand, and the metal handle is corroded from the constant exposure to the salt air.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Beach House"
+                },
+                "Clam Shell": {
+                    "name": "Clam Shell",
+                    "description": "A large, empty clam shell.",
+                    "examine_text": "The clam shell is large and rough to touch, with streaks of vivid colors on the inside. It's completely empty, save for some dry, crusty residue along the edges.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Beach House"
+                }
+            },
+            "characters": {
+                "Exiled Soul": {
+                    "name": "Exiled Soul",
+                    "description": "A ragged looking individual, living a life of solitude in the decrepit beach house. They appear tormented by past events.",
+                    "persona": "People think I'm haunted... perhaps I am. I've been here for so long, the shrieking of the gulls is the only conversation I have now.",
+                    "location": "Beach House",
+                    "goal": "Find peace and solace.",
+                    "inventory": {
+                        "Crystal Chandelier": {
+                            "name": "Crystal Chandelier",
+                            "description": "A sparkling multi-tiered crystal chandelier.",
+                            "examine_text": "Upon closer inspection, the chandelier shimmers with a spectral aura, suggesting it might not be as mundane as it appears. Even the slightest touch sends an array of colors cascading across its prismatic surface.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Gold Wall": {
+                            "name": "Gold Wall",
+                            "description": "Solid gold walls that shimmers in the sunlight.",
+                            "examine_text": "Examining the gold walls closely, one can see the minute details and intricate patterns etched into the glossy surface. A sudden chill goes down your spine; maybe this place is haunted.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Old Portrait": {
+                            "name": "Old Portrait",
+                            "description": "A dusty aged portrait of the past king.",
+                            "examine_text": "As you look closer at the portrait, the king seems to be peering into your very soul. In your mind, you can almost hear the whisper of the ocean and the lonesome cry of the seagulls...",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Marble Pier": {
+                            "name": "Marble Pier",
+                            "description": "A magnificent marble pier extending into the ocean.",
+                            "examine_text": "Walking out onto the marble pier, you can taste the salt in the sea breeze. It's eerily peaceful here, only the sounds of the waves crashing against the pier and the far-off gulls to keep you company.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Shore"
+        },
+        {
+            "name": "Turquoise Shore",
+            "description": "A beautiful turquoise color water by the shore. It is filled with many gems and gold.",
+            "background": "It is said that this place is lived my mermaids and they love to find and collect gems and gold. They love shiny things.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Walking towards the west, you'll encounter a haunted and decaying beach house, unwelcome due to the stories of the dead around.",
+                "south": "As you head south, you'll find yourself at a dilapidated, yet populated, fishing pier brimming with culture, history and a slight hint of danger.",
+                "east": "Traveling eastward, you'll gradually approach the pristine and well-kept coast, marked by its gleaming white sand and a scenic and peaceful ambiance."
+            },
+            "connections": {
+                "west": "Beach House",
+                "south": "Fishing Pier",
+                "east": "Coast"
+            },
+            "items": {
+                "Seashell": {
+                    "name": "Seashell",
+                    "description": "A dainty, iridescent seashell.",
+                    "examine_text": "A shiny glimmering seashell, polished over by the sea\u2019s tide. It's iridescent pfpearance makes it pretty and eye-catching.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Turquoise Shore"
+                },
+                "Pirate's Chest": {
+                    "name": "Pirate's Chest",
+                    "description": "A rustic, weathered chest that appears to be filled with treasures.",
+                    "examine_text": "A sturdy wooden chest, tarnished and eroded by time and seawater, overflows with shining gems and gold-coins. Its lock is rusted but it seems it can still be opened with the right key.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Turquoise Shore"
+                },
+                "Seaweed": {
+                    "name": "Seaweed",
+                    "description": "Green and slimy seaweed washed ashore.",
+                    "examine_text": "A mass of intertwined green strands of seaweed, still fresh and damp from the sea. It has a distinct salty aroma.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Turquoise Shore"
+                },
+                "Corals": {
+                    "name": "Corals",
+                    "description": "A bunch of colorful corals.",
+                    "examine_text": "A stunning collection of corals of different shapes, sizes and colors. They are quite sharp and textured.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Turquoise Shore"
+                },
+                "Mermaid's Scale": {
+                    "name": "Mermaid's Scale",
+                    "description": "A shiny silver scale from a mermaid's tail.",
+                    "examine_text": "This scale shimmers in the sunlight with an iridescent silver glow. It's smooth and oddly warm to touch. It may have magical properties.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Turquoise Shore"
+                }
+            },
+            "characters": {
+                "Mermaid": {
+                    "name": "Mermaid",
+                    "description": "A beautiful, alluring creature with a captivating voice. Her eyes hold a bit of sadness.",
+                    "persona": "Do you know of the treasures that lie beneath the sea? Gems of unfathomable beauty...much like the surface world I'm forbidden to tread.",
+                    "location": "Turquoise Shore",
+                    "goal": "Experience the world outside of the sea.",
+                    "inventory": {
+                        "Sea Pearl": {
+                            "name": "Sea Pearl",
+                            "description": "A radiant pearl with a turquoise glow.",
+                            "examine_text": "Upon close inspection, you can see the pearl's lustrous sheen, and it reflects a mesmerizing orchestra of turquoise hues. It's a bit heavy\u2014indicative of its precious nature.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Corals": {
+                            "name": "Corals",
+                            "description": "A cluster of small, vibrant marine invertebrates.",
+                            "examine_text": "These corals are various hues of blues, purples, and pinks, their details more intricate upon close study. They feel hard and cold to the touch. Some have small, hidden crevices.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Mermaid's Scale": {
+                            "name": "Mermaid's Scale",
+                            "description": "A ethereal, glimmering scale from a mermaid.",
+                            "examine_text": "This scale is surprisingly light, yet remarkably sturdy. It's shimmering, iridescent color paints a cosmic aura around it. Having this might earn a favor from the mermaids.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Shore"
+        },
+        {
+            "name": "The Beach",
+            "description": "Sand that is white as snow. the water is as clear as a crystal. down the shore is some cliffs",
+            "background": "This beach is a very famous beach that everyone that lives in the area knows about. Most people come every summer and enjoy the weather.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Walking towards the Fishing Pier, the scent of salt and fish grows stronger. The echoing squawks of excited gulls fills the air, accompanied by laughter and conversation from the village fishermen.",
+                "east": "Heading east towards the Beach House, the sand crunches beneath your feet as the sound of waves softly washing ashore lulls you in a comforting rhythm. The breeze carries a whiff of lavish extravagance from the golden structure on the horizon."
+            },
+            "connections": {
+                "north": "Fishing Pier",
+                "east": "Beach House"
+            },
+            "items": {
+                "Seashell": {
+                    "name": "Seashell",
+                    "description": "A small, cool and colorful seashell.",
+                    "examine_text": "A beautiful tiny seashell that was washed ashore. It's spiral in shape and has a smooth, cool texture. It has a mix of vibrant colors from orange, pink to blue.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Beach"
+                },
+                "Beach Ball": {
+                    "name": "Beach Ball",
+                    "description": "A colorful and inflatable beach ball.",
+                    "examine_text": "The beach ball is inflated, ready for some beach fun. It's vibrant stripes of color give off a vintage beach vibe.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Beach"
+                },
+                "Picnic Basket": {
+                    "name": "Picnic Basket",
+                    "description": "A woven picnic basket filled with snacks and drinks.",
+                    "examine_text": "This is a woven picnic basket filled with goodies perfect for a beach picnic. There's fruit, sandwiches, and refreshing drinks.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Beach"
+                },
+                "Sunny Hat": {
+                    "name": "Sunny Hat",
+                    "description": "A large brimmed summer hat.",
+                    "examine_text": "A stylish summer hat with a large brim. It's perfect for protecting against the summer sun while adding a touch of fashion.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "The Beach"
+                },
+                "Beach Towel": {
+                    "name": "Beach Towel",
+                    "description": "A huge beach towel with a vibrant pattern.",
+                    "examine_text": "A large beach towel, perfect for sun bathing or picnicing. It's covered in a vibrant tropical pattern.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Beach"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Shore"
+        },
+        {
+            "name": "Pier Walkway",
+            "description": "On the seashore facing the pier, seagulls squawk as they swirl overhead. The smell of salt fills the air, and the gentle, dull roar of the waves lapping the beach is omnipresent. A gentle breeze blows, and the chatter of the villagers fishing drifts down to the shoreline from the pier.",
+            "background": "The fishing pier is immediately accessible from this small walkway that extends form the beach.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Traveling west leads you down a rickety walkway, covered in barnacles and creaking with each step. You can hear the distant chatter of fishermen and the cries of circling seagulls as you make your way towards the Fishing Pier.",
+                "south": "Venturing south, you navigate through soft beach sand until you reach water, where a glorious abandoned battleship waits. The sea breeze becomes stronger, carrying the scent of the old wood and salty sea water. You gaze in admiration at the ornate details and the buzz of activity around the ship."
+            },
+            "connections": {
+                "west": "Fishing Pier",
+                "south": "A Battleship"
+            },
+            "items": {
+                "Seagull Feather": {
+                    "name": "Seagull Feather",
+                    "description": "A small, white feather discarded by a seagull.",
+                    "examine_text": "The feather is white, small and soft. Probably from a seagull. It is clean but delicate, it would be easily destroyed by rough handling.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Pier Walkway"
+                },
+                "Fishing Rod": {
+                    "name": "Fishing Rod",
+                    "description": "A basic rod for fishing.",
+                    "examine_text": "It's an ordinary fishing rod, long and made out of sturdy material, with a line, hook, and float attached. There's a handle for reeling in fish. Looks like it's been well-used.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Pier Walkway"
+                },
+                "Bucket": {
+                    "name": "Bucket",
+                    "description": "A simple bucket, apparently used by villagers for fishing.",
+                    "examine_text": "A simple, sturdy metal bucket. It looks capable of holding seashells, water or whatever else you might need to carry.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Pier Walkway"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Shore"
+        },
+        {
+            "name": "Throne Room",
+            "description": "ornate and luxurious, the throne room gleams with gold and precious jewels. Priceless painting of past kings line the sides. underneath a vaulted ceiling regal a red carpet connect the throne room entrance to the golden throne itself.",
+            "background": "The throne room is the pride and joy of the castle. The king commissioned hundreds of craftsman to construct expensive interior. The king often being important ambassadors to this room to impress with his power",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "outside": "Stepping away from the golden opulence of the throne room, you make your way towards the quiet dignity of the King's Quarters. The transition is like stepping from sunshine into moonlit calm, and the sense of royal grandeur never fades."
+            },
+            "connections": {
+                "outside": "King'S Quarters"
+            },
+            "items": {
+                "Golden Throne": {
+                    "name": "Golden Throne",
+                    "description": "An ornate golden throne inlaid with precious gems.",
+                    "examine_text": "The throne is shining brightly with gold and a variety of dazzling gems. It's made for the king's comfort, but also tall and imposing, designed to overawe any who dare approach it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Throne Room"
+                },
+                "Regal Carpet": {
+                    "name": "Regal Carpet",
+                    "description": "A plush red carpet that spans the length of the throne room.",
+                    "examine_text": "The carpet is richly woven, thick and soft, with intricate designs woven in gold thread.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Throne Room"
+                },
+                "Kings Crown": {
+                    "name": "Kings Crown",
+                    "description": "The king's golden crown studded with rare jewels.",
+                    "examine_text": "The elaborate crown is expertly crafted from gold and encrusted with a variety of rare gems. Each gem symbolizes a different aspect of kingship.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Throne Room"
+                },
+                "Royal Paintings": {
+                    "name": "Royal Paintings",
+                    "description": "Priceless paintings of past kings adorn the walls.",
+                    "examine_text": "Each painting is masterfully done, showing a different king in the prime of his reign. They all exhibit such realism and fine detail that each face seems almost alive.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Throne Room"
+                }
+            },
+            "characters": {
+                "King": {
+                    "name": "King",
+                    "description": "A powerful and noble figurehead who loves wealth and opulence.",
+                    "persona": "As king, I am protector and keeper of my kingdom. Every choice I make is for the good of my people.",
+                    "location": "Throne Room",
+                    "goal": "Ensure the prosperity of his kingdom.",
+                    "inventory": {
+                        "Golden Crown": {
+                            "name": "Golden Crown",
+                            "description": "A shining, intricate crown made of pure gold and studded with precious jewels.",
+                            "examine_text": "Upon closer inspection, you can make out the minute detail in the craftsmanship. Tiny patterns and symbols etched into the gold. The jewels catch the light and glow with an inner fire. It's weighty, as you'd expect of so much gold, and it feels cool to the touch.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Royal Decree": {
+                            "name": "Royal Decree",
+                            "description": "A formal document written on a large piece of parchment, sealed with the king's signet.",
+                            "examine_text": "The parchment is of high quality, thick and slightly creamy in color. The writing is painstakingly neat and ornate, each letter a tiny work of art. The royal seal at the bottom is a disc of red wax with the royal crest embossed into it. It is important and holds a hefty weight of the kingdom's decisions.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Shore"
+        },
+        {
+            "name": "A Battleship",
+            "description": "It is a glamorous wooden ship.  It glistens like there are diamonds encrusted on the hull.  There are ornate railings on the stairs as it is a massive boat.  There is even a sea monster on the bow, complete with jeweled eyes and gold hair.",
+            "background": "This boat is abandoned.  No one has been able to board her for centuries and it is under suspicious circumstances that now it appears to have life aboard it.  People watch daily from the shore to see what look like little fairies buzzing all around and inside this ship.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "On the seashore facing the pier, seagulls squawk as they swirl overhead. The smell of salt fills the air, and the gentle, dull roar of the waves lapping the beach is omnipresent. A gentle breeze blows, and the chatter of the villagers fishing drifts down to the shoreline from the pier. The fishing pier is immediately accessible from this small walkway that extends from the beach.",
+                "west": "The shore near the docks. There is fog except on rare occasions. More dangerous than most people would like. You never know what dangers luck from creatures leaving and entering the waters. The light house and docks near it are the safes place because of the lighthouses enchantments. Protecting travellers. The shores themself as well as the waters are dangerous. The creatures that live in the water are not to be taken lightly any one who does regrets it."
+            },
+            "connections": {
+                "north": "Pier Walkway",
+                "west": "Old Docks"
+            },
+            "items": {
+                "Rope": {
+                    "name": "Rope",
+                    "description": "A long, strong rope made of hemp.",
+                    "examine_text": "This hemp rope has been weathered by the sea air, but it still retains its sturdiness. It's quite long and could certainly be useful.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "A Battleship"
+                },
+                "Bosun's Whistle": {
+                    "name": "Bosun's Whistle",
+                    "description": "A small silver whistle often used by ship's officers.",
+                    "examine_text": "A polished silver whistle engraved with intricate designs. It's traditionally used for giving commands on a ship. Although neglected for years, its luster remains with a magical glow.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "A Battleship"
+                },
+                "Ornate Railing": {
+                    "name": "Ornate Railing",
+                    "description": "A beautifully designed railing stretching along the ship's stairs.",
+                    "examine_text": "The railing glistens, ornate carvings decorating its surface. Its construction shows the craftsmanship of a bygone era. Although stationary, it seems to echo with the voices of those who once held tight during stormy voyages.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "A Battleship"
+                },
+                "Captains Hat": {
+                    "name": "Captains Hat",
+                    "description": "A forgotten Captain's hat laying on the ship's wheel",
+                    "examine_text": "The prestigious cap of a ship's captain. Its gold brocade frames a large brim, revealing a symbol of authority and respect. The long-abandoned hat retains its shape, eager to once again command the seas.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "A Battleship"
+                },
+                "Sea Jewel": {
+                    "name": "Sea Jewel",
+                    "description": "A large, gleaming gem from the sea monster's eyes.",
+                    "examine_text": "This brilliant jewel shines with an ethereal light that reflects the color of the sea. It is embedded within the statue of the sea monster,  its mesmerizing glare hinting at potent magical properties.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "A Battleship"
+                }
+            },
+            "characters": {
+                "Sea Captain": {
+                    "name": "Sea Captain",
+                    "description": "A strong and commanding character, grizzled by years at sea.",
+                    "persona": "I've fought pirates, weathered storms and conquered the sea - but she's a mistress that will not be tamed.",
+                    "location": "A Battleship",
+                    "goal": "Find the legendary treasure of Dead Man's Cove.",
+                    "inventory": {
+                        "Captains Hat": {
+                            "name": "Captains Hat",
+                            "description": "An old, weather-beaten hat with the gold emblem of a ship.",
+                            "examine_text": "The hat is quite worn and has seen better days. The emblem of a ship is still prominent and glitters slightly as it catches the light.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Old Ship Map": {
+                            "name": "Old Ship Map",
+                            "description": "A tattered map of uncharted sea territories.",
+                            "examine_text": "The map is made of an old parchment that's worn at the corners. Despite the parchment's age, the routes and details are still visible. It bears witness to uncharted territories across the seven seas.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Quill and Ink": {
+                            "name": "Quill and Ink",
+                            "description": "An antiquated writing set containing a quill and an ink pot.",
+                            "examine_text": "The quill is expertly crafted from a seagull's feather, it feels weighty and firm in your grip. The small round ink pot is filled with a thick, black ink that glimmers slightly under the light.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Shore"
+        },
+        {
+            "name": "Old Docks",
+            "description": "The shore near the docks. There is fog except on rare occasions. More dangerous than most people would like. You never know what dangers luck from creatures leaving and entering the waters.",
+            "background": "The light house and docks near it are the safes place because of the lighthouses enchantments. Protecting travellers. The shores themself as well as the waters are dangerous. The creatures that live in the water are not to be taken lightly any one who does regrets it.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Boarding the abandoned battleship from the Old Docks is an eerie experience filled with anticipation. As you step on the ancient wooden planks, you can hear the distant whispers of the sea.",
+                "north": "Walking from the Old Docks to the Fishing Pier, you witness the daily life of the villagers. The wind carries the salty scent of the sea and the creaking sounds of old wooden planks under your feet."
+            },
+            "connections": {
+                "east": "A Battleship",
+                "north": "Fishing Pier"
+            },
+            "items": {
+                "Old Rusted Anchor": {
+                    "name": "Old Rusted Anchor",
+                    "description": "An old anchor, rusted from years of exposure to the saltry sea",
+                    "examine_text": "This old anchor is rusted entirely, with no unexposed metal remaining. The surface pockmarked and discolored. Despite the decay, you can see that it was once quite a large and strong tool. It seems like it has been forgotten here for a long time.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Old Docks"
+                },
+                "Mariner's Compass": {
+                    "name": "Mariner's Compass",
+                    "description": "A mariner's compass left behind on the docks.",
+                    "examine_text": "It's a traditional nautical compass, encased in aged brass and glass. The cardinal points are faded but still legible. This tool must have been critical to a sailor at some point, but now it's been carelessly left on the docks.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Old Docks"
+                },
+                "Dockside Crate": {
+                    "name": "Dockside Crate",
+                    "description": "A wooden crate resting on the docks.",
+                    "examine_text": "This sturdy wooden crate was once used for shipping goods. It's seen better days, but it's still sealed shut. The faded image on its side suggests it might have contained rope, or perhaps fish.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Old Docks"
+                },
+                "Discarded Bottle": {
+                    "name": "Discarded Bottle",
+                    "description": "An empty bottle left behind by a traveler.",
+                    "examine_text": "The clear glass bottle has been left empty and forgotten. It's got a round base that swirls up to a narrow neck, likely once stoppered with a cork. Judging by the faint smell, its previous contents were strong and alcoholic.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Old Docks"
+                },
+                "Sea-washed Pebble": {
+                    "name": "Sea-washed Pebble",
+                    "description": "A small smooth pebble from the shore.",
+                    "examine_text": "This tiny stone has been smoothed over time by the sea's relentless waves. Its dark grey surface glistens when wet, suggesting it's made of some form of quartz.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Old Docks"
+                }
+            },
+            "characters": {
+                "Sea Monster": {
+                    "name": "Sea Monster",
+                    "description": "A mythical creature hiding beneath the waters of the shore.",
+                    "persona": "Human kind fears me, but I am not the monster they make me out to be. I am guardian of the sea's secrets - sentinel of the deep.",
+                    "location": "Old Docks",
+                    "goal": "Protect the sea from harm.",
+                    "inventory": {
+                        "Sea Jewel": {
+                            "name": "Sea Jewel",
+                            "description": "A rare, shimmering jewel, believed to be a tear of the sea monster.",
+                            "examine_text": "The jewel is carved into a teardrop shape, with colors of the deep sea swirling within. It seems to glow with an inner light, casting luminescent reflections around it.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Inscribed Sea Stone": {
+                            "name": "Inscribed Sea Stone",
+                            "description": "A smooth stone marked with ancient symbols, only intelligible to the guardian of the sea.",
+                            "examine_text": "An opaque stone of dark, ocean blue. Weathered by time and tide, it has intricate, unintelligible inscriptions. The markings glow faintly when you hold it, as if reacting to your touch.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Shore"
+        },
+        {
+            "name": "Large Cliffs",
+            "description": "Towering cliffs of gray granite line the coast. A few meters of sand lie between the ocean and the base of the cliffs.",
+            "background": "Those that are particularly daring might climb up or down them. Others like to sit on the top and enjoy a nice, elevated view of the beautiful blue sea. These cliffs are a point of historical significance, as they marked the point of the colonists' first arrival.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "To reach the Lighthouse from the Large Cliffs, a strenuous but scenic uphill climb awaits. The terrain is rough, but the breathtaking view of the vast sea below offers a soothing distraction.",
+                "west": "Traveling west back to The Beach from the cliffs involves a cautious descent along the jagged rocks. The rhythmic sound of the ocean waves crashing nearby provides a soundtrack to your journey."
+            },
+            "connections": {
+                "north": "Lighthouse",
+                "west": "The Beach"
+            },
+            "items": {
+                "Rope": {
+                    "name": "Rope",
+                    "description": "A long coil of weathered rope.",
+                    "examine_text": "This sturdy rope has seen better days, but still looks strong enough for use. It's rough to the touch, frayed in parts but intact. It's long enough to perhaps assist in climbing.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Large Cliffs"
+                },
+                "Rock": {
+                    "name": "Rock",
+                    "description": "A sharp-looking piece of granite.",
+                    "examine_text": "A sizeable chunk of solid granite that's slipped from the cliff above. It's sharp edges could possibly be useful if handled carefully.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Large Cliffs"
+                },
+                "Seashell": {
+                    "name": "Seashell",
+                    "description": "A large, colorful seashell.",
+                    "examine_text": "This seashell is large, with a spiral shape and a surface covered in various hues of blues and pinks. It feels smooth to the touch, and holding it to your ear, you can almost hear the ocean.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Large Cliffs"
+                },
+                "Canteen": {
+                    "name": "Canteen",
+                    "description": "An old, metal canteen.",
+                    "examine_text": "This rusted, half-buried canteen appears to have been there for a long time, forgotten or lost. You can hear a sloshing sound from within, probably water.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Large Cliffs"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Shore"
+        },
+        {
+            "name": "Beach House",
+            "description": "A marvelous beach house that sits upon the fine white sand of the beach. It looks mighty expensive, as the house has solid gold walls. A gigantic and lavish marble pier extends into the ocean out in front of the house.",
+            "background": "The beach house was built by the king as a means to escape the stress of rule. He goes there every summer and throws raging parties out on the magnificent pier. Few know of this lavish getaway, but those that do are marveled by its opulence.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "You walk towards the towering lighthouse, feeling the soft sand underneath your feet. The sound of crashing waves is gradually replaced by the chirping of seagulls as you approach.",
+                "west": "As you head west, you can feel the sand becoming increasingly warm. The sound of distant merry chatter of beachgoers starts to waft over, intermingling with the inviting scent of the ocean.",
+                "east": "Heading east, you can see the shimmering turquoise water getting closer. The sight of shiny pebbles on the shore and the cool breeze blowing from the serene water makes the journey mesmerizing."
+            },
+            "connections": {
+                "north": "Lighthouse",
+                "west": "The Beach",
+                "east": "Turquoise Shore"
+            },
+            "items": {
+                "Golden Crown": {
+                    "name": "Golden Crown",
+                    "description": "This is the King's crown",
+                    "examine_text": "A stunning gold crown, studded with diamonds and rubies. It twinkles in the sunlight, lending an aura of majesty to anyone who wears it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Beach House"
+                },
+                "Beach Ball": {
+                    "name": "Beach Ball",
+                    "description": "A large inflatable beach ball",
+                    "examine_text": "A colorful beach ball, almost larger than you are! Perfect for beach games in the summer sun.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Beach House"
+                },
+                "Cocktail": {
+                    "name": "Cocktail",
+                    "description": "A refreshing beach cocktail",
+                    "examine_text": "A vibrant cocktail, served in a tall glass and garnished with a juicy slice of pineapple. It smells delightful!",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Beach House"
+                },
+                "Sandwich": {
+                    "name": "Sandwich",
+                    "description": "A tasty beach sandwich",
+                    "examine_text": "A hearty sandwich, generously filled with the freshest of ingredients. On the side are some crisp chips.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Beach House"
+                },
+                "Table": {
+                    "name": "Table",
+                    "description": "A round beach table",
+                    "examine_text": "A round table, made of weathered teak and engraved with intricate flowers and vines. Various knick-knacks and plates of food are spread across its surface.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Beach House"
+                }
+            },
+            "characters": {
+                "Exiled Soul": {
+                    "name": "Exiled Soul",
+                    "description": "A ragged looking individual, living a life of solitude in the decrepit beach house. They appear tormented by past events.",
+                    "persona": "People think I'm haunted... perhaps I am. I've been here for so long, the shrieking of the gulls is the only conversation I have now.",
+                    "location": "Beach House",
+                    "goal": "Find peace and solace.",
+                    "inventory": {
+                        "Crystal Chandelier": {
+                            "name": "Crystal Chandelier",
+                            "description": "A sparkling multi-tiered crystal chandelier.",
+                            "examine_text": "Upon closer inspection, the chandelier shimmers with a spectral aura, suggesting it might not be as mundane as it appears. Even the slightest touch sends an array of colors cascading across its prismatic surface.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Gold Wall": {
+                            "name": "Gold Wall",
+                            "description": "Solid gold walls that shimmers in the sunlight.",
+                            "examine_text": "Examining the gold walls closely, one can see the minute details and intricate patterns etched into the glossy surface. A sudden chill goes down your spine; maybe this place is haunted.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Old Portrait": {
+                            "name": "Old Portrait",
+                            "description": "A dusty aged portrait of the past king.",
+                            "examine_text": "As you look closer at the portrait, the king seems to be peering into your very soul. In your mind, you can almost hear the whisper of the ocean and the lonesome cry of the seagulls...",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Marble Pier": {
+                            "name": "Marble Pier",
+                            "description": "A magnificent marble pier extending into the ocean.",
+                            "examine_text": "Walking out onto the marble pier, you can taste the salt in the sea breeze. It's eerily peaceful here, only the sounds of the waves crashing against the pier and the far-off gulls to keep you company.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Shore"
+        },
+        {
+            "name": "Enchanted Light House",
+            "description": "Slightly rusted and corroded from the crashing waves, elegant and tall. each window and opening is lined with a bronze trim.  Some gears can be seen turning along the side, rotating a middle section of the light house.",
+            "background": "This desolate shore is known for the enchanted light house, Legend has it that it can disappear on some nights, causing ships to crash into the coast. Its origin is unknown, which makes it even more intriguing.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "down": "Descending from the Enchanted Light House, the air becomes thick with the salty scent of the sea. The haunting creaks of the old wooden staircase echo in the narrow passage as you move towards the lighthouse."
+            },
+            "connections": {
+                "down": "Lighthouse"
+            },
+            "items": {
+                "Rusted Gear": {
+                    "name": "Rusted Gear",
+                    "description": "A corroded ancient gear, abandoned by the lighthouse.",
+                    "examine_text": "Aged with the passage of time, the gear has been eaten away by the salt in the sea. Despite its condition, it still holds a certain beauty in the workmanship.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Enchanted Light House"
+                },
+                "Bronze Trim": {
+                    "name": "Bronze Trim",
+                    "description": "A portion of the window with a bronze trim, elegant in its simplicity.",
+                    "examine_text": "The bronze trim has faded to a rich patina, reflecting the color of the sun as it emerges from hiding.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Enchanted Light House"
+                },
+                "Lighthouse Lamp": {
+                    "name": "Lighthouse Lamp",
+                    "description": "The primary beacon of the lighthouse, providing guidance through the treacherous seas.",
+                    "examine_text": "The lamp's glass is smoky from years of use, but it gleams with an ethereal light. You can almost feel the hope it radiates to the lost sailors.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Enchanted Light House"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Shore"
+        },
+        {
+            "name": "King'S Quarters",
+            "description": "The room is large. The largest of all the throne rooms. The carvings on the wall are ornate and historical. The room is clearly built for royalty. The bed is covered in designed covers. It is truly a sight to see.",
+            "background": "The context of this location is this is the King's quarters. The King had this room specifically designed when he had taken over from his father. He made sure that this was the most extravagant room that anyone had seen.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "inside": "Passing under the grand archway into the ornate and luxurious Throne Room, you can't help but be awestruck by its opulence.",
+                "east": "The journey towards the east takes you to the breathtaking views of towering Large Cliffs. The feeling of elation washes over as you admire the granite giants.",
+                "west": "Heading towards the west, the calming breeze from the Coast hits your face. The soft whir of the ocean waves and the crunching sound of the white sand makes the journey mesmerizing."
+            },
+            "connections": {
+                "inside": "Throne Room",
+                "east": "Large Cliffs",
+                "west": "Coast"
+            },
+            "items": {
+                "Ornate Throne": {
+                    "name": "Ornate Throne",
+                    "description": "An exquisitely designed throne.",
+                    "examine_text": "Upon closer inspection, you can see intricate carvings etched into the golden frame of the throne. It's embellished with gemstones of every color imaginable.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "King'S Quarters"
+                },
+                "King's Crown": {
+                    "name": "King's Crown",
+                    "description": "A richly adorned crown signifying the power of the king.",
+                    "examine_text": "The king's crown, beset with diamonds and rubies, glimmers in the light. The regality it exudes is unmatched.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "King'S Quarters"
+                },
+                "Historical Carvings": {
+                    "name": "Historical Carvings",
+                    "description": "Carvings showcasing the history of the kingdom.",
+                    "examine_text": "The wall carvings display different epochs of the kingdom's rich history, each scene more captivating than the last.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "King'S Quarters"
+                },
+                "Luxurious Bed": {
+                    "name": "Luxurious Bed",
+                    "description": "A bed covered in designed covers.",
+                    "examine_text": "The bed is lined with the smoothest and finest silken sheets, its pillows plump and bathe in softness, and the coverlet is adorned with rich designs fancifully embroidered.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "King'S Quarters"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Shore"
+        },
+        {
+            "name": "Coast",
+            "description": "The coast seems to stretch on for miles in either direction.  The ocean itself has receded some and the tide has not yet rolled in.  The water laps half-heartedly at the sand and the glistening shades of seashells dot the wet sand.  All around the sand gleams a shade of white.",
+            "background": "This seashore is the pride and joy of the nearest town.  It's kept immaculately clean and the white sand is something that is readily boasted about.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Traveling west from the coast, you leave the soft sands and calming waves behind, as the route starts to ascend towards a majestic castle in the distance. The sight of the spectacular King's Quarters looms overhead.",
+                "north": "Moving north, the gleaming white sands of the coast become richer in hue until you find yourself standing before the stunning Turquoise Shore. The journey is marked by the shimmering sea, teasing the shores with playful waves, holding a promise of the treasures beneath."
+            },
+            "connections": {
+                "west": "King'S Quarters",
+                "north": "Turquoise Shore"
+            },
+            "items": {
+                "Seashells": {
+                    "name": "Seashells",
+                    "description": "Glistening seashells dot the wet sand.",
+                    "examine_text": "They come in all colors, shapes, and sizes. Some are smooth, polished by the tide, while others are jagged and rough.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Coast"
+                },
+                "Sand": {
+                    "name": "Sand",
+                    "description": "The seashore is made of gleaming white sand.",
+                    "examine_text": "The sand is clean and warm, perfect for building sandcastles or just lying on and soaking up the sun.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Coast"
+                },
+                "Ocean Water": {
+                    "name": "Ocean Water",
+                    "description": "The water laps half-heartedly at the sand.",
+                    "examine_text": "The water is clear and you can see your feet through it. Tiny fish swim away as your shadow falls over them.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Coast"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Shore"
+        }
+    ],
+    "actions": []
+}

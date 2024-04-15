@@ -1,0 +1,1103 @@
+{
+    "player": "Grimm the Troll",
+    "start_at": "Troll'S Bridge",
+    "game_history": [],
+    "game_over": false,
+    "game_over_description": null,
+    "characters": [
+        {
+            "name": "Grimm the Troll",
+            "description": "Grimm is an old and hideous troll, who guards the Troll\u2019s Bridge. He is some twelve feet tall with a body covered in warts and blisters.",
+            "persona": "I am Grimm the Troll, guardian of Troll\u2019s Bridge. Dare to cross, and you must first pay my toll.",
+            "location": "Troll'S Bridge",
+            "goal": "To collect more tolls from unsuspecting travelers.",
+            "inventory": {}
+        },
+        {
+            "name": "Captain Marsh",
+            "description": "Captain Marsh is the leader of the soldiers camp. He is a stern, disciplined soldier, trained to resist and combat any attack from the swamp creatures.",
+            "persona": "I am Captain Marsh, the protector of my brigade. I sleep with one eye open, prepared to safeguard my soldiers from the lurking dangers of the swamp.",
+            "location": "Soldiers Camp",
+            "goal": "To secure the camp and take out the swamp's dangerous creature.",
+            "inventory": {}
+        },
+        {
+            "name": "Hoakbera monster",
+            "description": "Hoakbera is a legendary swamp monster, hard to detect, and rumored to possess great strength. It's known to destroy lands and life alike.",
+            "persona": "I am Hoakbera, terror of the swamp. I haunt the deepest parts of the swamp and revel in the fear of the creatures arround me.",
+            "location": "Darkest Part Of The Swamp",
+            "goal": "To maintain its reign of terror over the swamp.",
+            "inventory": {}
+        },
+        {
+            "name": "The Swamp Witch",
+            "description": "The Swamp Witch is a feared inhabitant of the swamp, using her dark magic to bend the marshland to her will. She is known for her crooked nose and broomstick.",
+            "persona": "I'm The Swamp Witch. This swamp is my kingdom, and its creatures my subjects. Those who defy me shall feel my wrath.",
+            "location": "Witch'S House",
+            "goal": "To increase her dark magic and regain her power.",
+            "inventory": {}
+        },
+        {
+            "name": "Ghost of Echo Swamp",
+            "description": "The Ghost of Echo Swamp is a spectral figure, born from tragic stories of the swamp's past. It's Invisible to the human eyes, and can only be detected when the fog is thick and the eerie silence persists.",
+            "persona": "I am the echo of long gone misery. I wander in this swamp searching for my eternal rest.",
+            "location": "Haunted Swamp",
+            "goal": "Searching for peace and its freedom from the eternal haunting.",
+            "inventory": {}
+        }
+    ],
+    "locations": [
+        {
+            "name": "Boathouse",
+            "description": "The boathouse is a very small building with peeling paint. It is made out of wood, with one half planted in the water on stilts. Inside, there are boats floating in the water. There are hinged doors which can be opened to allow boats to come in and out. There are some ropes and other tools a boater may need stored in the boathouse.",
+            "background": "The boathouse was built on the small lake when the king found it while exploring as a child. His father was proud of his adventurous son's discovery and built the boathouse as a reward. The boy spent many days in there, reading or relaxing, or boating on the lake.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "The journey to the Soldiers Camp involves a trek through dense undergrowth, where the air starts to fill with the subdued energy of a hidden military encampment.",
+                "east": "The path from the boathouse to the Bog is filled with sticky mud and tall reeds, the croaking of frogs growing louder with each step."
+            },
+            "connections": {
+                "north": "Soldiers Camp",
+                "east": "Bog"
+            },
+            "items": {},
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Swamp"
+        },
+        {
+            "name": "Soldiers Camp",
+            "description": "The camp is hidden away in a light forest of trees and brush that might be hard to find if there had not been a symbol on the trees leading up to it. You can feel the anxiety of the soldiers here, as this camp is not well fortified by any conventional means, but instead is supposed to be hidden and camouflaged to throw off anyone that might pursue. The camp is nothing more than a fire and some barracks. Nothing fancy to see.",
+            "background": "This soldiers camp was created as there was need for a training and resting area for the soldiers of the king's royal army. The location is ideal as they have water and material. The king himself was excited by this spot.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "Travelling south from Soldier's Camp, you traverse through dense thicket before reaching a serene lake. The boathouse lies ahead, its wooden structure a comforting sight amidst the quiet rustling of the lake waters.",
+                "east": "Heading eastward from the camp, one must wade through the muddy swamp, its pungent smell permeating the air. Through the damp foliage emerges the intimidating structure of the military outpost, a constancy in the changing swamp.",
+                "north": "As you trek north, the ground underfoot hardens to a cobblestone pathway leading to a mysterious bridge. The troll's bridge, notorious in every traveler's tales, looms ahead."
+            },
+            "connections": {
+                "south": "Boathouse",
+                "east": "A Military Outpost At The Heart Of The Swamp",
+                "north": "Troll'S Bridge"
+            },
+            "items": {
+                "Old flask": {
+                    "name": "Old flask",
+                    "description": "An old, battered flask filled with unknown liquid.",
+                    "examine_text": "The flask is dented and aged, suggesting it's been used numerous times.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Soldiers Camp"
+                },
+                "Rusty sword": {
+                    "name": "Rusty sword",
+                    "description": "A weathered and rusted sword, likely abandoned by a former soldier.",
+                    "examine_text": "The sword holds a sense of age and abandonment, its blade corroded with patches of red-brown rust. Despite its appearance, it appears to be still sturdy.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Soldiers Camp"
+                },
+                "Camouflage net": {
+                    "name": "Camouflage net",
+                    "description": "A net extensively used to conceal things, its colours matched to the swamp environment.",
+                    "examine_text": "Green and brown threads in a mixture create a dense web meant to blend in with the swamp surroundings.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Soldiers Camp"
+                },
+                "Rations pack": {
+                    "name": "Rations pack",
+                    "description": "Sealed packs containing food sufficient for one soldier for one day.",
+                    "examine_text": "The pack is tightly sealed, containing dry food, and easy to carry around.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Soldiers Camp"
+                }
+            },
+            "characters": {
+                "Captain Marsh": {
+                    "name": "Captain Marsh",
+                    "description": "Captain Marsh is the leader of the soldiers camp. He is a stern, disciplined soldier, trained to resist and combat any attack from the swamp creatures.",
+                    "persona": "I am Captain Marsh, the protector of my brigade. I sleep with one eye open, prepared to safeguard my soldiers from the lurking dangers of the swamp.",
+                    "location": "Soldiers Camp",
+                    "goal": "To secure the camp and take out the swamp's dangerous creature.",
+                    "inventory": {
+                        "Old Flask": {
+                            "name": "Old Flask",
+                            "description": "A well-worn, leather flask.",
+                            "examine_text": "The flask is made of weathered and worn leather, the areas where fingers held it often slightly darker than the rest. It's filled with a murky-looking liquid. The leather is so worn you can see the stitches keeping it together in some places on the flask.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": true,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Rusty Sword": {
+                            "name": "Rusty Sword",
+                            "description": "A timeworn, rusty sword.",
+                            "examine_text": "This is a rusty old sword, likely left out in the damp for too long. Despite the rust, it looks like it has been used recently, the blade is still sharp. The hilt seems to have been well cared for, suggesting that this weapon may once have belonged to a master swordsman.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Swamp"
+        },
+        {
+            "name": "Murky Water",
+            "description": "The water is murky and dark. There are unknown dangers lurking in it, such as alligators and poisonous snakes. Plants and trees hide more dangerous animals. It is cold.",
+            "background": "The swamp is a place where people go to tell scary stories. Brave children will sometimes venture there before their parents pull them back. Healers will sometimes look for plants that can have medicinal qualities in the murky depths.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Trudging through the cold, murky water, one makes their way towards visible buildings on stilts - the Boathouse.",
+                "west": "Venturing west, the cover of trees grows denser, leading into the darkest part of the swamp, where creepy shadows lurk and the sounds of unknown creatures echo."
+            },
+            "connections": {
+                "east": "Boathouse",
+                "west": "Darkest Part Of The Swamp"
+            },
+            "items": {
+                "Old Boat": {
+                    "name": "Old Boat",
+                    "description": "A large, rusty old boat.",
+                    "examine_text": "Though suffering from years of neglect, the old boat is sturdy. It is made of wood and held together with iron nails. It creaks eerily in the wind but might still be usable for crossing the swamp.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Murky Water"
+                },
+                "Water lily": {
+                    "name": "Water lily",
+                    "description": "A beautiful water lily.",
+                    "examine_text": "The water lily is serene. Its petals are a soft white and seem to glow in the murky water. Although beautiful to look at, the water lily also serves as a reminder of the swamp\u2019s hidden beauty.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Murky Water"
+                },
+                "Old Fishing Rod": {
+                    "name": "Old Fishing Rod",
+                    "description": "A old discarded fishing rod with a broken reel.",
+                    "examine_text": "The fishing rod has seen better days. The line is frayed and tangled, and the reel doesn't turn. Perhaps it could be fixed.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Murky Water"
+                },
+                "Muddy Water": {
+                    "name": "Muddy Water",
+                    "description": "A bottle of muddy swamp water.",
+                    "examine_text": "The water is murky and dirty. It could be boiled to potentially make it safe to drink, but as it is, it's better used for non-drinking purposes.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Murky Water"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Swamp"
+        },
+        {
+            "name": "A Military Outpost At The Heart Of The Swamp",
+            "description": "Moist, and murky the bog remained. As you reach the outpost that description doesn't change seeing the bog gobbers swimming through the thick water, and fermenting goblins perched atop the outpost's walls.",
+            "background": "This outpost was set up to ward off the evil swamp monster Hoakbera from the Gumerian goblin clan. Ever since the year 193 the monster has been running amok in the swamp and nearby lands destroying livelihoods of goblins and moblins alike.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "The path towards the Soldiers Camp is filled with the strife and tension of the military life, heightened by the camouflage and hidden nature of the area.",
+                "south": "Heading south towards the Bog, one is confronted with the cacophony of croaking frogs and the need for careful footing on the few dry spots.",
+                "east": "The journey east towards the Haunted Swamp brings about a sense of fear and uneasiness, as one traverse the misty and smelly path into an area rumored to be cursed."
+            },
+            "connections": {
+                "west": "Soldiers Camp",
+                "south": "Bog",
+                "east": "Haunted Swamp"
+            },
+            "items": {
+                "Bog-swamp armorsuit": {
+                    "name": "Bog-swamp armorsuit",
+                    "description": "A special suit made by Gumerian goblins for traversing the swamp more efficiently",
+                    "examine_text": "This armorsuit seems to be made of natural components of the swamp to camouflage in the murky water. Can be put on to improve swamp maneuverability.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "A Military Outpost At The Heart Of The Swamp"
+                },
+                "Marsh Gun": {
+                    "name": "Marsh Gun",
+                    "description": "An oddly shaped firearm, designed specifically for swamp combat",
+                    "examine_text": "The gun appears to have been modified to shoot hydro-energy bullets, particularly effective against swamp creatures. Could be powerful against Hoakbera!",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "A Military Outpost At The Heart Of The Swamp"
+                },
+                "Bog Mushroom": {
+                    "name": "Bog Mushroom",
+                    "description": "A large, grotesque, purple swamp mushroom mostly found stuck on outpost walls",
+                    "examine_text": "Upon closer inspection, it emits a strange yet sweet aroma. It's used as a food source by goblins.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "A Military Outpost At The Heart Of The Swamp"
+                },
+                "Outpost Map": {
+                    "name": "Outpost Map",
+                    "description": "A dirty piece of parchment showing the layout of the outpost",
+                    "examine_text": "Studying the map reveals hidden routes around the outpost and potential escape routes.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "A Military Outpost At The Heart Of The Swamp"
+                },
+                "About Hoakbera": {
+                    "name": "About Hoakbera",
+                    "description": "A small bird's eye dangling from a string. Singing into it reveals information about the swamp monster Hoakbera.",
+                    "examine_text": "You, with a fruitful voice, unleash a melody towards the eye. The voice from within speaks of the horrible swamp monster Hoakbera.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "A Military Outpost At The Heart Of The Swamp"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Swamp"
+        },
+        {
+            "name": "Bog",
+            "description": "Frogs croak in the reeds that surround the bog. The water is very murky and underneath the surface tadpoles dart around. There are minimal places to stand to stay dry.",
+            "background": "The frogs have made a home in the murky waters of the bog because they are able to hide from predators more easily. The seldom need to be on dry ground and there are a surplus of bugs for them to consume. The reeds are so tall that when birds land on them the frogs can see them and swim quickly away.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Navigating through the murky bog with tadpoles skirting away as you approach, you find the damp and dank military outpost rising in the heart of the swamp.",
+                "west": "Tromping across the bog, observing leaping frogs and buzzing insects, the sight of a quaint boathouse on stilts paints a serene picture against the swampy backdrop.",
+                "east": "Trudging through the sludgy bog under the echo of croaking frogs, the ominous visage of the witch\u2019s house looms ahead, seemingly resisting the pull of the swamp."
+            },
+            "connections": {
+                "north": "A Military Outpost At The Heart Of The Swamp",
+                "west": "Boathouse",
+                "east": "Witch'S House"
+            },
+            "items": {
+                "Dead Log": {
+                    "name": "Dead Log",
+                    "description": "An old, hollow log lying on the muddy ground.",
+                    "examine_text": "You see a rotten, hollow log fallen by the side of the bog. If you look closely, you can see something shiny lodged inside.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Bog"
+                },
+                "Murky Water": {
+                    "name": "Murky Water",
+                    "description": "Dark, murky water with hint of movement below the surface.",
+                    "examine_text": "Upon closer look, the water is teeming with life; you could almost make out tiny tadpoles and minuscule bugs swimming around.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Bog"
+                },
+                "Reeds": {
+                    "name": "Reeds",
+                    "description": "Tall, green reeds jutting out of the water.",
+                    "examine_text": "The reeds are tall and slender. They blend well with the environment, making a perfect hiding space for the swamp creatures.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Bog"
+                },
+                "Swamp Bugs": {
+                    "name": "Swamp Bugs",
+                    "description": "A swarm of bugs buzzing around the swamp.",
+                    "examine_text": "A closer look reveals these bugs to be rather large in size, probably full from feasting on the abundant plant life in the swamp.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Bog"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Swamp"
+        },
+        {
+            "name": "Troll'S Bridge",
+            "description": "Muddy and murky waters lie under a bridge that seems to go nowhere. It is made of cobblestone and just as long as it is wide. Beneath it live a hideous troll that makes people pay to cross.",
+            "background": "The troll has lived there for ages. It is a myth that he was cast there by a witch. Other's believe he so ugly that he was thrown away by his parents and he learned magic that gave him eternal life. He guards the cobblestone bridge and terrorizes people",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "A rugged path leading through dense forest to Soldiers Camp; the nervous energy of the soldiers can be felt from a distance.",
+                "east": "A narrow footpath towards Haunted Swamp; the chilling fog and eerie silence create a sense of unease."
+            },
+            "connections": {
+                "south": "Soldiers Camp",
+                "east": "Haunted Swamp"
+            },
+            "items": {
+                "Rusty Sword": {
+                    "name": "Rusty Sword",
+                    "description": "A rusty, aged sword.",
+                    "examine_text": "The sword looks as though it hasn't seen combat in centuries. Patches of brown rust speckle the blade, rendering it dull and unwieldy.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Troll'S Bridge"
+                },
+                "Cobblestone": {
+                    "name": "Cobblestone",
+                    "description": "A block of rough cobblestone.",
+                    "examine_text": "This grey cobblestone, one of many that creates the path across the bridge, is unnaturally cold to the touch.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Troll'S Bridge"
+                },
+                "Mossy Log": {
+                    "name": "Mossy Log",
+                    "description": "A fallen log overtaken by verdant moss.",
+                    "examine_text": "The fallen log is teeming with life, blanketed in a carpet of brightly-colored moss and lichen, creating a small ecosystem in itself.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Troll'S Bridge"
+                },
+                "Swamp Water": {
+                    "name": "Swamp Water",
+                    "description": "Murky water from the swamp.",
+                    "examine_text": "The smelly brackish water looks unappetizing and potentially harmful. It is probably best to leave it where its.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Troll'S Bridge"
+                },
+                "Leather Pouch": {
+                    "name": "Leather Pouch",
+                    "description": "A weathered leather pouch.",
+                    "examine_text": "The pouch is crafted of supple leather, worn smooth over time. It's sealed with a sturdy drawstring.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Troll'S Bridge"
+                }
+            },
+            "characters": {
+                "Grimm the Troll": {
+                    "name": "Grimm the Troll",
+                    "description": "Grimm is an old and hideous troll, who guards the Troll\u2019s Bridge. He is some twelve feet tall with a body covered in warts and blisters.",
+                    "persona": "I am Grimm the Troll, guardian of Troll\u2019s Bridge. Dare to cross, and you must first pay my toll.",
+                    "location": "Troll'S Bridge",
+                    "goal": "To collect more tolls from unsuspecting travelers.",
+                    "inventory": {
+                        "Troll Hammer": {
+                            "name": "Troll Hammer",
+                            "description": "A heavy, crude hammer. The handle is long, and the head is made of stone, with symbols inscribed on it",
+                            "examine_text": "This is Grimm\u2019s Hammer. The stone head of the hammer is etched with mystical symbols of troll lore. The handle is made from the gnarled branch of an ancient swamp oak. You can see signs of wear and tear at the end of the handle.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Jar of Warts": {
+                            "name": "Jar of Warts",
+                            "description": "A glass jar filled with what appear to be warts",
+                            "examine_text": "The small glass jar contains dozens of troll warts preserved in a greenish liquid. Each wart is rough and bulbous, making you feel a kind of disgust as you realize these came from Grimm himself.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Bag of Silver": {
+                            "name": "Bag of Silver",
+                            "description": "A small leather bag filled with silver coins",
+                            "examine_text": "The worn leather bag is filled with small silver coins of various sizes and clearly different cultures. These are the payments from those who dared to cross Grimm\u2019s bridge.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Swamp"
+        },
+        {
+            "name": "Darkest Part Of The Swamp",
+            "description": "The light doesn't pierce the heavy overhanging trees in this near pitch black area of the swamp.  The water is extremely murky and there are occasional fins poking up from the water belonging to some kind of creature.  The air is thick and heavy and insects constantly buzz about.",
+            "background": "Creatures come back here to rest and feast on what they've captured from the main areas of the swamp.  This is an extremely isolated area that few humans ever come to willingly.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Traveling east, the heavy foliage begins to thin, allowing more light to filter through. The ground becomes increasingly soggy, and the air smells strongly of algae and decomposing vegetation, leading to the Murky Water.",
+                "north": "Moving north, the swamp becomes more treacherous. Solid ground gives way to a sea of mud that sucks at your boots, and the trees grow close together, obscuring the sky. The chorus of insects fades, replaced by an eerie silence as you approach the Quicksand Pit."
+            },
+            "connections": {
+                "east": "Murky Water",
+                "north": "Quicksand Pit"
+            },
+            "items": {
+                "Fishing Net": {
+                    "name": "Fishing Net",
+                    "description": "An old tattered fishing net, possibly left by some unfortunate adventurers.",
+                    "examine_text": "The fishing net lies discarded on the muddy ground, its weave is intricately designed but has suffered some tear and wear. Some small fish and bugs are squirming in the holes.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Darkest Part Of The Swamp"
+                },
+                "Murky Water": {
+                    "name": "Murky Water",
+                    "description": "A patch of particularly opaque and muddy water.",
+                    "examine_text": "The water is almost black and moving it only makes the dirt particles spread out even more. The smell is absolutely awful.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Darkest Part Of The Swamp"
+                },
+                "Insect Swarm": {
+                    "name": "Insect Swarm",
+                    "description": "A cloud of buzzing, biting insects.",
+                    "examine_text": "Upon closer observation, the swarm is a mix of mosquitoes, flies and various unknown bugs. Their incessant humming buzzes in your ears.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Darkest Part Of The Swamp"
+                },
+                "Creature Tracks": {
+                    "name": "Creature Tracks",
+                    "description": "Unusual patterns imprinted in the mud",
+                    "examine_text": "The tracks belong to a large creature and lead deeper into the swamp. The path is interrupted by the occasional snapped branch.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Darkest Part Of The Swamp"
+                }
+            },
+            "characters": {
+                "Hoakbera monster": {
+                    "name": "Hoakbera monster",
+                    "description": "Hoakbera is a legendary swamp monster, hard to detect, and rumored to possess great strength. It's known to destroy lands and life alike.",
+                    "persona": "I am Hoakbera, terror of the swamp. I haunt the deepest parts of the swamp and revel in the fear of the creatures arround me.",
+                    "location": "Darkest Part Of The Swamp",
+                    "goal": "To maintain its reign of terror over the swamp.",
+                    "inventory": {
+                        "Marsh Skull": {
+                            "name": "Marsh Skull",
+                            "description": "A weathered skull from an unknown creature of the swamp.",
+                            "examine_text": "The skull is old with cracks along the surface. Moss and grime cover the exterior, blurring the details of its original form. Despite the wear, the skull exudes a terrifying aura that seems to breathe out a malevolent whisper.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Torn Garment": {
+                            "name": "Torn Garment",
+                            "description": "A piece of fabric torn and embedded with swamp muck.",
+                            "examine_text": "The fabric is hard and brittle, the result of prolonged exposure to the swamp. Despite the muck, you can see faded patterns, giving the impression that this article of clothing once belonged to someone of importance. It's edge is sharp and could be used as a makeshift weapon or tool.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Swamp"
+        },
+        {
+            "name": "Witch'S House",
+            "description": "Old and worn by the time that has passed and the environment where it was built, the wood rotted and worn by the swamp. It should have sunk years ago into the swamp but somehow it remains standing despite the ever sinking earth around it.",
+            "background": "This building was created by a coven of witches that used to roam the swamp, taking the children of the local village on its edge for use in their dark rituals. That is until the day a group of witch hunters tracked each of them down and strung them to the pyre. Now it sits as a reminder to those who use the swamp for their dark means that not even the mires are safe.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Wandering towards the west, you trudge through dense reeds, the croaking of frogs echoing around you as you navigate the murky waters.",
+                "north": "Heading north, a cold chill runs down your spine, the air grows heavy, and the smell of decay fills your nostrils as you enter the dreaded Haunted Swamp."
+            },
+            "connections": {
+                "west": "Bog",
+                "north": "Haunted Swamp"
+            },
+            "items": {
+                "Rotting Wood Pieces": {
+                    "name": "Rotting Wood Pieces",
+                    "description": "Pieces of decaying wood, perhaps once part of the house's structure.",
+                    "examine_text": "This wood is rotten and damp, completely fallen under the influence of the swamp. It crumbles under pressure, leaving behind a pungent smell.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Witch'S House"
+                },
+                "Ancient Grimoire": {
+                    "name": "Ancient Grimoire",
+                    "description": "Old witches' book of spells with a leather cover darkened by time.",
+                    "examine_text": "This book has eerie symbols on the cover and is filled with handwritten spells in an ancient language. Some pages are blood-stained, adding to the dark aura around it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Witch'S House"
+                },
+                "Leaky Witch's Cauldron": {
+                    "name": "Leaky Witch's Cauldron",
+                    "description": "A cast iron cauldron with a small hole at the bottom, dripping out an unknown fluid.",
+                    "examine_text": "The cauldron is charred from years of fire usage. There is a small hole where it's starting to lose its contents. The fluid it leaks has a potent, magical aroma.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Witch'S House"
+                }
+            },
+            "characters": {
+                "The Swamp Witch": {
+                    "name": "The Swamp Witch",
+                    "description": "The Swamp Witch is a feared inhabitant of the swamp, using her dark magic to bend the marshland to her will. She is known for her crooked nose and broomstick.",
+                    "persona": "I'm The Swamp Witch. This swamp is my kingdom, and its creatures my subjects. Those who defy me shall feel my wrath.",
+                    "location": "Witch'S House",
+                    "goal": "To increase her dark magic and regain her power.",
+                    "inventory": {
+                        "Ancient Grimoire": {
+                            "name": "Ancient Grimoire",
+                            "description": "A large and weather-beaten tome filled with formulas and incantations of old.",
+                            "examine_text": "Upon closer inspection, the book\u2019s pages are covered in archaic symbols and diagrams. Each page seems to radiate a dim and eerie glow.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Witch\u2019s Broom": {
+                            "name": "Witch\u2019s Broom",
+                            "description": "An old, rustic broom made of swamp willow, surprisingly light to the touch.",
+                            "examine_text": "Looking closer, you realize the broom is not made of regular wood, but dense, gnarled swamp willow. Its bristles seem to shimmer and dance on their own.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Leaky Witch\u2019s Cauldron": {
+                            "name": "Leaky Witch\u2019s Cauldron",
+                            "description": "A monstrous, iron cauldron, with an obvious leak marring its surface.",
+                            "examine_text": "The massive pot gives off a sense of foreboding. There\u2019s a suspicious stain underneath it, and an acrid smell hangs in the air.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Swamp"
+        },
+        {
+            "name": "Haunted Swamp",
+            "description": "A misty, foggy area with the swamp. It is dirty and smelly.",
+            "background": "This is a place that no one dares to go to. It is said to be haunted with many ghosts. Many people who have came here never returned home.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Navigating through the murkiness, you notice goblin-like creatures moving about. The oppressive humidity and the peculiar noises make you aware that you're nearing the swampy outpost.",
+                "south": "As you head south, the damp earth gives way to a more foreboding scene. A scent of rot and decay wafts through the air as the dilapidated Witch's House comes into view.",
+                "north": "Moving north, you traverse a path mired in puddles and overgrown. An enduring feeling of unease prevails as the silhouette of a cobblestone bridge under watch by an ominous figure looms ahead."
+            },
+            "connections": {
+                "west": "A Military Outpost At The Heart Of The Swamp",
+                "south": "Witch'S House",
+                "north": "Troll'S Bridge"
+            },
+            "items": {
+                "Rusty Sword": {
+                    "name": "Rusty Sword",
+                    "description": "An old, rusty sword partially embedded in the muck.",
+                    "examine_text": "The sword's ornate hilt pokes out of the mud, covered in time's rust and swamp gunk. Despite the grime, it feels solid and unexpectedly well-balanced. It has probably been here for many years, lost by some unfortunate adventurer.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Haunted Swamp"
+                },
+                "Ghostly Lantern": {
+                    "name": "Ghostly Lantern",
+                    "description": "A ghostly lantern flickering with an eerie blue flame.",
+                    "examine_text": "The lantern, seemingly held aloft by some spectral force, emits a haunting blue light that dances in the swamp mist. As eerily beautiful as it is, it's utterly intangible.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Haunted Swamp"
+                },
+                "Mossy Log": {
+                    "name": "Mossy Log",
+                    "description": "A large, partially-submerged log covered in moss.",
+                    "examine_text": "The log is old and waterlogged, a layer of damp moss clinging to its surface. It's firm enough to sit on, or perhaps something might be hiding in its hollow center.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Haunted Swamp"
+                }
+            },
+            "characters": {
+                "Ghost of Echo Swamp": {
+                    "name": "Ghost of Echo Swamp",
+                    "description": "The Ghost of Echo Swamp is a spectral figure, born from tragic stories of the swamp's past. It's Invisible to the human eyes, and can only be detected when the fog is thick and the eerie silence persists.",
+                    "persona": "I am the echo of long gone misery. I wander in this swamp searching for my eternal rest.",
+                    "location": "Haunted Swamp",
+                    "goal": "Searching for peace and its freedom from the eternal haunting.",
+                    "inventory": {
+                        "Ghostly Lantern": {
+                            "name": "Ghostly Lantern",
+                            "description": "A floating light source flickering with a strange ethereal glow.",
+                            "examine_text": "The lantern is a rustic old contraption, floating in mid-air. It emits a soft, ghostly light that seems to bend and warp around it, casting eerie shadows on the swamp. Despite the strange ethereal glow, the light is actually quite warm, as if it contains a flame that refuses to go out.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Swamp"
+        },
+        {
+            "name": "Quicksand Pit",
+            "description": "A large, gurgling pit of quicksand. Many adventurers and poor critters lie at the bottom of the pit. The pit is surrounded by an extensive swampland and is shielded by the many trees and shrubs that surround it.",
+            "background": "The quicksand pit is relatively unknown by villagers because those that fall victim to the pit never make it out to tell its location. The pit swallows up 100 villagers a year on average. The villagers chalk up this statistic to a monster known as Bigfoot, snatching and eating people up while they sleep.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "As you journey south, the greenery in the Quicksand Pit gives way to the darkness and serenity of the swamp. There's an eerie silence, broken only by strange rustling noises.",
+                "west": "Leaving the quicksand behind, you move west over slippery moss-covered rocks. The air lightens as you approach the grassy bank, lively with the chatter of critters."
+            },
+            "connections": {
+                "south": "Darkest Part Of The Swamp",
+                "west": "Bank"
+            },
+            "items": {
+                "Tattered Hat": {
+                    "name": "Tattered Hat",
+                    "description": "A worn-out hat probably belonging to a previous adventurer.",
+                    "examine_text": "The hat is tattered, faded, and appears to have been soaked in murky waters. It is stained in brown and green nearly camouflaging with the surroundings. A hat band, once shining and golden, has lost its shine and now houses patches of rust.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Quicksand Pit"
+                },
+                "Rusty Sword": {
+                    "name": "Rusty Sword",
+                    "description": "An old, rusty sword sticking out from the quicksand.",
+                    "examine_text": "The sword is rusty and weathered with a hilt wrapped in rotted leather. Though old, it still retains a dull edge. Years of submersion in the quicksand has given it an eerie, ancient appearance.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Quicksand Pit"
+                },
+                "Glowing Mushroom": {
+                    "name": "Glowing Mushroom",
+                    "description": "A mysterious mushroom glowing with iridescent colors.",
+                    "examine_text": "This mushroom grows in the marshy soil surrounding the pit, emitting a soft, mesmerizing glow. Its cap is large and domed, covered in slimy speckles that radiate an iridescent light.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Quicksand Pit"
+                },
+                "Swamp Stone": {
+                    "name": "Swamp Stone",
+                    "description": "A flat, smooth stone, oddly dry and clean amidst the swampy area.",
+                    "examine_text": "The stone is nearly circular in shape, and cool to the touch. Its surface is smooth and sleek, seeming out of place in the swamp. It seems ordinary, until you notice the strange, cryptic symbols etched into its surface.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Quicksand Pit"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Swamp"
+        },
+        {
+            "name": "Bank",
+            "description": "This is a grassy area that surrounds much of the swamp.  It's a plain field with some trees nearby along with some rocks.",
+            "background": "The bank is where you will often see turtles sunbathing and various other wildlife resting before the waters of the swamp. You will also see peasants going out to fish in this spot",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Venturing east from the bank, the ground turns from solid to muddy the closer you get to the Quicksand Pit. The air becomes heavy and damp, the smell of decayed foliage permeating the atmosphere as the taste of fear lingers at the back of your throat."
+            },
+            "connections": {
+                "east": "Quicksand Pit"
+            },
+            "items": {
+                "Fishing Net": {
+                    "name": "Fishing Net",
+                    "description": "A sturdy fishing net left by the peasants.",
+                    "examine_text": "The net is made of tough, tightly woven fiber. It's frayed around the edges, suggesting it has seen years of heavy use. Despite its age, the net seems to still be in good condition.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Bank"
+                },
+                "Stone": {
+                    "name": "Stone",
+                    "description": "A typical grey stone found on the bank.",
+                    "examine_text": "It's a smooth, oval stone with a weighty feel to it. On one side, the stone is covered with moss, a sign of the damp surroundings of the swamp.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Bank"
+                },
+                "Apple": {
+                    "name": "Apple",
+                    "description": "A ripe apple fallen from one of the nearby trees.",
+                    "examine_text": "The apple is a vibrant red with a slight shine to it. It's perfectly ripe with a crisp texture and sweet aroma.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Bank"
+                },
+                "Fishing Rod": {
+                    "name": "Fishing Rod",
+                    "description": "A simple fishing rod, seemingly forgotten by a fisherman.",
+                    "examine_text": "The rod is fairly long and made with a flexible yet strong material. Its line ends in a hook for bait.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Bank"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Swamp"
+        }
+    ],
+    "actions": []
+}

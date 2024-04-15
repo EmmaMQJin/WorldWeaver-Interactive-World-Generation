@@ -1,0 +1,1447 @@
+{
+    "player": "The Lake Dweller",
+    "start_at": "Northern Shore",
+    "game_history": [],
+    "game_over": false,
+    "game_over_description": null,
+    "characters": [
+        {
+            "name": "The Lake Dweller",
+            "description": "An old man who has lived in a small hut by the lake for decades.",
+            "persona": "Everyone calls me the Lake Dweller. I've been living here for so long, the fish know me by name.",
+            "location": "Northern Shore",
+            "goal": "I want to catch the lake's mythical giant fish.",
+            "inventory": {}
+        },
+        {
+            "name": "The Sacred Maiden",
+            "description": "A young woman who comes to the Northern Shore to pay tribute to the water gods.",
+            "persona": "I am the maiden of the lake, a servant of the water gods. I come here every day to bestow them with gifts.",
+            "location": "Northern Shore",
+            "goal": "To please the water gods and attain their blessings.",
+            "inventory": {}
+        },
+        {
+            "name": "The Old Fisherman",
+            "description": "An elderly man who is usually found on the dock. He has a wealth of knowledge about the lake and its creatures.",
+            "persona": "The lake is in my blood, I've spent my whole life on her shores fishing and observing her beauty.",
+            "location": "Dock",
+            "goal": "Looking to catch the biggest fish in the lake before I die.",
+            "inventory": {}
+        },
+        {
+            "name": "The Curious Traveller",
+            "description": "A traveller from different parts, drawn to the mysteries surrounding the Drinking Water Lake.",
+            "persona": "I am a wanderer, always in search of the unknown. The rumors of this lake's divine water have brought me here.",
+            "location": "Drinking Water Lake",
+            "goal": "To find the truth behind the mystical qualities of the lake.",
+            "inventory": {}
+        },
+        {
+            "name": "Knight of the Lakeside",
+            "description": "A humble knight who stays in the Lakeside House, often seen frolicking in the Lake.",
+            "persona": "After a life full of battles, I've retired to this lake house. This panorama, fish to catch and grand feasts, this is my realm.",
+            "location": "Lakeside House",
+            "goal": "To live out the rest of his days in calmness and tranquillity.",
+            "inventory": {}
+        },
+        {
+            "name": "The Lagoon Witch",
+            "description": "Shrouded in mystery, the Lagoon Witch is said to carry out mystical rituals during the night.",
+            "persona": "I know most are afraid of me and the secrets of the lagoon, yet my magic is all that protects this village.",
+            "location": "The Lagoon",
+            "goal": "Maintain the mystic balance of the lake.",
+            "inventory": {}
+        },
+        {
+            "name": "Lake Banshee",
+            "description": "A mythical creature said to emerge from the depths of the Swimming Hole.",
+            "persona": "Invisible by daylight, I only appear in moonlight, through ripples they hear my weeping.",
+            "location": "The Swimming Hole",
+            "goal": "Forewarn about potential mishaps near the lake.",
+            "inventory": {}
+        }
+    ],
+    "locations": [
+        {
+            "name": "Northern Shore",
+            "description": "The lake gives way to a slightly sandy and rocky shore. It is dotted with small shrubs and a few trees, but mostly it is a fairly open expanse. It is covered in places by a green short grass. The lake level falls away swiftly from the beach going from a few feet to well over ten feet in a short span.",
+            "background": "The northern shore is a common place for locals to come cool off on warm days. It also serves as a place where women will wash their clothes and any other dirty linens they may have. This is somewhat of a sacred place for a few, mainly those who worship the water gods, as they have erected a small alter to them just off the water.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "You leave the rocky shore, descending into the refreshing, clear lake. Cool water splashes around your ankles, growing deeper as you venture further. The sun glistens off the crystal clear water, creating a beautiful reflective surface. Fishes dart beneath the surface, their scales catching the sunlight as they move."
+            },
+            "connections": {
+                "south": "Lake"
+            },
+            "items": {
+                "Old Driftwood": {
+                    "name": "Old Driftwood",
+                    "description": "An old weathered piece of driftwood, covered in a few spots of moss.",
+                    "examine_text": "An aged piece of driftwood has been washed ashore, its once vibrant color dulled by time and water. It has become rough and jagged in places, obviously worn down by the constant lashing of the waves. A layer of green moss has begun to creep along its side, indicating it has been here a while.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Northern Shore"
+                },
+                "Water Jug": {
+                    "name": "Water Jug",
+                    "description": "A ceramic jug used by the locals to fetch water.",
+                    "examine_text": "This jug looks fragile but strong. Its surface is mottled with a patchwork of varying shades of brown from years of use. Despite its appearance, it is actually quite sturdy and perfect for transporting water from the lake to the village. It's currently empty.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Northern Shore"
+                },
+                "Shrub Berry": {
+                    "name": "Shrub Berry",
+                    "description": "A small round red berry found on the shrubs nearby, a common food source.",
+                    "examine_text": "Upon closer examination, the berry is a deep, juicy red. It is perfectly round and fits snugly in the palm of your hand. As you squeeze it gently, you find it firm yet yielding to pressure indicating it is ripe and ready for consumption.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Northern Shore"
+                },
+                "Water God's Alter": {
+                    "name": "Water God's Alter",
+                    "description": "A small stone alter that has been dedicated to the water gods. It is covered in various offerings and symbols.",
+                    "examine_text": "The alter is low and made up of stacked flat rocks. Carvings on the rocks depict sacred symbols of water, and small offerings, such as shells and pebbles, are spread out on its surface. Despite the seemingly ordinary appearance, a sense of reverence hangs around it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Northern Shore"
+                }
+            },
+            "characters": {
+                "The Lake Dweller": {
+                    "name": "The Lake Dweller",
+                    "description": "An old man who has lived in a small hut by the lake for decades.",
+                    "persona": "Everyone calls me the Lake Dweller. I've been living here for so long, the fish know me by name.",
+                    "location": "Northern Shore",
+                    "goal": "I want to catch the lake's mythical giant fish.",
+                    "inventory": {
+                        "Fishing Rod": {
+                            "name": "Fishing Rod",
+                            "description": "A simple, yet sturdy fishing rod. It has seen better days, but it's still useful.",
+                            "examine_text": "The fishing rod has a long, thin steel shaft, bent with age and use. The handle is wrapped tightly with patches of worn-out leather and a threadbare string. The reel appears antiquated, but it spins without a hitch. A line extends down from the pole, ending in an old, still-sharp hook.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Old Coin": {
+                            "name": "Old Coin",
+                            "description": "An ancient coin, perhaps valuable to the right collector.",
+                            "examine_text": "The coin feels heavy and worn. Its surface is tarnished with verdigris, obscuring the intricate engravings that once shimmered brightly. Despite its age, the faint outline of an unfamiliar emblem - perhaps the mark of a long-forgotten kingdom - can be made out.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Shiny Pebble": {
+                            "name": "Shiny Pebble",
+                            "description": "A small pebble, it's somewhat shiny surface catching your eye.",
+                            "examine_text": "The pebble is oblong-shaped and fits comfortably in your palm. It's smooth, lightly speckled surface refracting the sunlight into a dazzling array of colours. It feels unusually warm in your grasp, as if it retains the heat from the sun itself.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "The Sacred Maiden": {
+                    "name": "The Sacred Maiden",
+                    "description": "A young woman who comes to the Northern Shore to pay tribute to the water gods.",
+                    "persona": "I am the maiden of the lake, a servant of the water gods. I come here every day to bestow them with gifts.",
+                    "location": "Northern Shore",
+                    "goal": "To please the water gods and attain their blessings.",
+                    "inventory": {
+                        "Water Jug": {
+                            "name": "Water Jug",
+                            "description": "A jug made from earthen clay, filled with clear lake water.",
+                            "examine_text": "The jug is a beautiful work of simple craftsmanship. It has a soft, rounded body, a short stout, and a handle for easy carrying. Upon closer examination, you can see that the jug is filled with clear lake water, the liquid of life bestowed by the water gods.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": true,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Shrub Berry": {
+                            "name": "Shrub Berry",
+                            "description": "A single berry picked from a nearby shrub.",
+                            "examine_text": "The berry is small, but firm, with a deep purple color against the contrast of your hand. It looks tempting, though you know not all berries are safe to consume without proper preparation.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Lake"
+        },
+        {
+            "name": "Lake",
+            "description": "The beautiful lake glistens in the sun as water can be seen in all directions. you can see several feet beneath the water because it is so clear.",
+            "background": "The lake is not only beautiful, but gives life to the surrounding area. With fish and shell fish this lake provides a whole eco system unique to its own.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "To reach the Northern Shore, one must cross the lake, relishing the serene ambience as the water gently laps against the boat.",
+                "south": "Journey to the Drinking Water Lake is through a path lined with rich and vibrant flora that seem to dance in the gentle breeze.",
+                "east": "Navigating towards the Dock requires maneuvering the boat skillfully amidst the sprawling lake, under the watchful eyes of the local fishermen."
+            },
+            "connections": {
+                "north": "Northern Shore",
+                "south": "Drinking Water Lake",
+                "east": "Dock"
+            },
+            "items": {
+                "fishing_rod": {
+                    "name": "Fishing Rod",
+                    "description": "A regular fishing rod with a reel and a line",
+                    "examine_text": "The fishing rod is light and flexible with a reel that looks well used. It's the perfect tool for fishermen.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Lake"
+                },
+                "boat": {
+                    "name": "Boat",
+                    "description": "A small wooden boat floating gently on the lake",
+                    "examine_text": "Upon closer inspection, the boat seems sturdy and well-built. It has two oars inside and it can carry up to two people.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Lake"
+                },
+                "shellfish": {
+                    "name": "Shellfish",
+                    "description": "A cute little shellfish partially buried in the sand",
+                    "examine_text": "This shellfish has a shiny and colorful shell, protecting its soft and edible body inside.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Lake"
+                },
+                "fish": {
+                    "name": "Fish",
+                    "description": "A lively fish swimming happily in the clear waters of the lake",
+                    "examine_text": "When you look closer, you see it's a trout with beautiful, shining scales reflecting the sunlight.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Lake"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Lake"
+        },
+        {
+            "name": "Drinking Water Lake",
+            "description": "Surrounded by skittering chipmunks and chirping crickets, the drinking lake teems with life. Flora and fauna both thrive near the pristine waters. Tall thick plant life surrounds the lake, with strong roots and stems protruding from the nutrient rich soil. The lake water shimmers in the sun, so clear and clean that one can see the rock lake floor many feet below.",
+            "background": "Rumored by local peasantry to be blessed by the gods, the drinking water lake is a source of clean drinking water for local townspeople. While slightly farther for most villagers than the local river, the water is highly prized for its cleanliness and perceived mystical qualities. Some believe that the entire forest surrounding the lake owes its growth to the divine properties in the water.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "The journey north to the Lake is a progress through dense woodland, the air growing fresher with each step as the scent of the lake greets you.",
+                "west": "To traverse west to Brim Canal, you have to tread across uneven terrain, filled with sounds of active wildlife, before the serene flow of the canal comes into sight.",
+                "east": "Heading east to The Swimming Hole involves strolling along a tranquil forest trail, the chatter of birds and cicadas leading the way to the sounds of playful splashing."
+            },
+            "connections": {
+                "north": "Lake",
+                "west": "Brim Canal",
+                "east": "The Swimming Hole"
+            },
+            "items": {
+                "Blessed Water": {
+                    "name": "Blessed Water",
+                    "description": "Crystal clear water believed to be blessed by the gods.",
+                    "examine_text": "The water sparkles in your hand, mesmerizing you with its beauty. Drinking it feels cold, refreshing, and oddly empowering.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Drinking Water Lake"
+                },
+                "Heavy Stone Jug": {
+                    "name": "Heavy Stone Jug",
+                    "description": "A jug made of stone used by villagers to carry water.",
+                    "examine_text": "The jug is heavy and sturdy. Clearly built to last, it has a large handle for carrying and a narrow neck to be stoppered closed to prevent spilling.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Drinking Water Lake"
+                },
+                "Rivetswood Staff": {
+                    "name": "Rivetswood Staff",
+                    "description": "A sturdy wooden staff left leaning against a tree.",
+                    "examine_text": "The staff is as tall as you are and feels balanced in your hand. It is made from darkly hued Rivetswood with small knots giving it character but not affecting its strength.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Drinking Water Lake"
+                },
+                "Ancient Tree": {
+                    "name": "Ancient Tree",
+                    "description": "One of the oldest trees near the lake, sturdy with a huge trunk.",
+                    "examine_text": "This tree is toweringly tall with an impressively wide trunk covered in rough, time-worn bark. Its gnarled branches are home to a vibrant ecosystem of mosses, lichens, insects, and chirping birds.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Drinking Water Lake"
+                }
+            },
+            "characters": {
+                "The Curious Traveller": {
+                    "name": "The Curious Traveller",
+                    "description": "A traveller from different parts, drawn to the mysteries surrounding the Drinking Water Lake.",
+                    "persona": "I am a wanderer, always in search of the unknown. The rumors of this lake's divine water have brought me here.",
+                    "location": "Drinking Water Lake",
+                    "goal": "To find the truth behind the mystical qualities of the lake.",
+                    "inventory": {
+                        "Heavy Stone Jug": {
+                            "name": "Heavy Stone Jug",
+                            "description": "A sturdy, solid jug made from roughhewn stone.",
+                            "examine_text": "Carved from rock, this jug feels incredibly secure and substantial. It's perfectly fit for holding a large quantity of liquid.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Ancient Artifact": {
+                            "name": "Ancient Artifact",
+                            "description": "A tarnished and time-worn artifact, adorned with intricate carvings.",
+                            "examine_text": "Upon closer inspection, you see the artifact is made from a metal of unknown composition. Its surface, though tarnished with age, shines with a faint mystical glow. The carvings suggest an ancient language, filled with symbols of water and divine beings.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Lake"
+        },
+        {
+            "name": "Dock",
+            "description": "The wood used to make the dock is of highest quality, commissioned from trees that stand towering in the local forests. Despite time having passed it has been taken care of to the point where even a hint of warping from the water beneath will have a plank torn and replaced within a night.",
+            "background": "The dock was first built to help with trade from a village across its expanse, making it easier to go through rather then around. However it also made a convenient launching points for fishermen who could bring in a number of odd fish from the lake's center most expanse.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Traversing the wooden dock, you approach the vast, tranquil lake. Your journey is filled with the eerie calm of the water's surface, and the shimmering reflection of the sun is an enchanting sight to behold.",
+                "south": "Heading south from the dock, you encounter the slow, meandering Brim Canal. The sight of different fish species swimming lazily and the beautifully lined rocks at its edges makes the walk an invigorating experience."
+            },
+            "connections": {
+                "west": "Lake",
+                "south": "Brim Canal"
+            },
+            "items": {
+                "Old Fishing Rod": {
+                    "name": "Old Fishing Rod",
+                    "description": "A worn yet still usable fishing rod left behind by fishermen",
+                    "examine_text": "A sturdy rod with a faded wooden handle. Despite its neglected appearance, the line is taut and functional. It has seen a lot of use but it can still reel in a worthy catch.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Dock"
+                },
+                "Wooden Bucket": {
+                    "name": "Wooden Bucket",
+                    "description": "A simple wooden bucket used by the local fishermen",
+                    "examine_text": "Made from a high-grade wood, this bucket has seen years of use. It\u2019s encrusted with barnacles on its external surface from constantly being submerged in the lake waters, but it's reliable and holds water without any leaks.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Dock"
+                },
+                "Worn Hat": {
+                    "name": "Worn Hat",
+                    "description": "A faded hat perhaps forgotten by a fisherman",
+                    "examine_text": "A weather-beaten hat made of coarse straw. Despite its appearance, it seems to still serve its purpose in keeping the sun at bay.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Dock"
+                }
+            },
+            "characters": {
+                "The Old Fisherman": {
+                    "name": "The Old Fisherman",
+                    "description": "An elderly man who is usually found on the dock. He has a wealth of knowledge about the lake and its creatures.",
+                    "persona": "The lake is in my blood, I've spent my whole life on her shores fishing and observing her beauty.",
+                    "location": "Dock",
+                    "goal": "Looking to catch the biggest fish in the lake before I die.",
+                    "inventory": {
+                        "Fishing Rod": {
+                            "name": "Fishing Rod",
+                            "description": "An old, trustworthy fishing rod. Seen many days under the sun, but still capable.",
+                            "examine_text": "This fishing rod, though visibly weathered and aged, barely wobbles under your grip. It has a soft yet strong line and an old rusted hook at the end. Despite its vintage, it still stands robust with a certain charm and richness.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Worn Hat": {
+                            "name": "Worn Hat",
+                            "description": "A faded hat, it is clear it has seen better days.",
+                            "examine_text": "The hat is sun-bleached and battered by years of exposure. This hat has witnessed countless sunrises and sunsets on the lake. Wearing it not only shades your eyes but seems to provide a sense of calm comfort.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Lake"
+        },
+        {
+            "name": "Brim Canal",
+            "description": "Slow flowing branching from the large lake, is the brim canal where dozens and dozens of brim fish call it home. The edges are lined with irregular rocks and lush green vegetation. Tall pine trees overlook the canal and lake making it a peaceful place to just go sick and watch the brim swim by.",
+            "background": "The canal has been the preferred spot for the few local folk to come and gather water, wash some clothes, catch fish, and go swimming. In the canal there is no current like there is out in the main lake and there is shade by the trees on either side of the canal. The canal was formed thousands of years ago when a major earthquake made a rocky edge of the lake crack, allowing water to flow in and eventually separate the two sides even wider.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Traveling north from Brim Canal, you pass by rich forests as you head towards the Dock. The smell of fresh pine and lake water is invigorating.",
+                "east": "Heading east from Brim Canal to Drinking Water Lake, the change in environment is noticeable. The sounds of skittering wildlife increase, and the air becomes clearer and more refreshing."
+            },
+            "connections": {
+                "north": "Dock",
+                "east": "Drinking Water Lake"
+            },
+            "items": {
+                "Wooden Bucket": {
+                    "name": "Wooden Bucket",
+                    "description": "A simple wooden bucket with a strong rope attached to the handle.",
+                    "examine_text": "The wooden bucket is worn out from years of use. It's delicately crafted from oak wood, secured by iron rings around the body. A thick, sturdy rope is tied to its handle, allowing it to be easily lowered into the water.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Brim Canal"
+                },
+                "Fishing Net": {
+                    "name": "Fishing Net",
+                    "description": "A fishing net made from sturdy twine fibers.",
+                    "examine_text": "The fishing net is designed for catching small fish and would not withstand the pull of larger aquatic life. Its fibers are tightly woven into a mesh pattern, creating numerous small loops for trapping fish.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Brim Canal"
+                },
+                "Cluster of Berries": {
+                    "name": "Cluster of Berries",
+                    "description": "A small cluster of juicy red berries.",
+                    "examine_text": "There's a mixture of ripe and unripe huckleberries in this cluster. They have a sweet, tart taste and are a favorite among the local folks.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Brim Canal"
+                },
+                "Rocks": {
+                    "name": "Rocks",
+                    "description": "A group of irregular shaped rocks.",
+                    "examine_text": "The rocks are rough to the touch and have a distinct grayish hue. Over the years, the elements have shaped them into irregular forms, making each one unique.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Brim Canal"
+                },
+                "Laundry Clothing": {
+                    "name": "Laundry Clothing",
+                    "description": "A set of clothes left to be washed.",
+                    "examine_text": "They are simple clothes, worn by the locals. Stains and signs of wear tell tales of hard work and simple living.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Brim Canal"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Lake"
+        },
+        {
+            "name": "The Swimming Hole",
+            "description": "The swimming hole is calm and clear.  The sun sparkles off the ripples that form on the surface of the water.  Fish occasionally jump from the water and splash back in.",
+            "background": "The swimming hole is a favorite place of the young lads.  It is a cool, refreshing place to relax.  On a normal day, you can hear the screams and laughter of the children and young men as they swim and frollick.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Traveling west towards Drinking Water Lake, the path leads through a dense forest filled with the sounds of wildlife. There's a refreshing smell of the lake in the distance which intensifies as you get closer.",
+                "south": "Moving south towards the Island, you paddle across a calm lake. The wind whispers through the trees on the shores while water splashes gently against your boat.",
+                "east": "Heading east to Lakeside House, you follow a well-trodden path. The wilderness gives way to meticulously kept grounds and the peaceful quiet of the lake area is softly replaced by faint sounds of serenades from the house."
+            },
+            "connections": {
+                "west": "Drinking Water Lake",
+                "south": "Island",
+                "east": "Lakeside House"
+            },
+            "items": {
+                "Old Canoe": {
+                    "name": "Old Canoe",
+                    "description": "A worn out wooden canoe that has seen better days.",
+                    "examine_text": "The canoe is weathered and worn, with a patina of algae on the underside. Despite its obvious age, it remains sturdy and seaworthy, a testament to the craftsmanship of its maker.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Swimming Hole"
+                },
+                "Fishing Rod": {
+                    "name": "Fishing Rod",
+                    "description": "An unattended fishing rod propped up on a stand beside the swimming hole.",
+                    "examine_text": "The fishing rod, with its line cast into the water, hums quietly with tension. Its reel is intricately carved and the pole, made from a sturdy oak, tells a story of a seasoned fisherman.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "The Swimming Hole"
+                },
+                "Picnic Basket": {
+                    "name": "Picnic Basket",
+                    "description": "A picnic basket abandoned in the rush to the water.",
+                    "examine_text": "The basket, made from woven reeds, is filled with delicious food. You see sandwiches, apples, and a bottle of red wine nested among a neatly folded gingham towel.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Swimming Hole"
+                },
+                "Swim Trunks": {
+                    "name": "Swim Trunks",
+                    "description": "A pair of neon swim trunks left on the shoreline.",
+                    "examine_text": "The swim trunks are fluorescents yellow in color and wet as if just taken off. They look ordinary, except for the old school video game character print on them.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "The Swimming Hole"
+                },
+                "Skipping Stone": {
+                    "name": "Skipping Stone",
+                    "description": "A perfect skipping stone lying on the water's edge.",
+                    "examine_text": "Examining the stone, you find its edges are smooth and rounded, ideal for skipping. It's cold to the touch and light enough to carry.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "The Swimming Hole"
+                }
+            },
+            "characters": {
+                "Lake Banshee": {
+                    "name": "Lake Banshee",
+                    "description": "A mythical creature said to emerge from the depths of the Swimming Hole.",
+                    "persona": "Invisible by daylight, I only appear in moonlight, through ripples they hear my weeping.",
+                    "location": "The Swimming Hole",
+                    "goal": "Forewarn about potential mishaps near the lake.",
+                    "inventory": {
+                        "Pearl Necklace": {
+                            "name": "Pearl Necklace",
+                            "description": "A shimmering necklace made of the finest pearls.",
+                            "examine_text": "Looking closely, you can see the intricate way in which each pearl has been threaded through the delicate string. Despite being under the water for so long, the pearls are still lustrous and beautiful, sparkling softly when hit by light. It's a remarkable find in such an ordinary swimming hole. Could it belong to the Lake Banshee?",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Lake"
+        },
+        {
+            "name": "Island",
+            "description": "This island is located in the center of a lake. It is smaller than a ship and covered in moss.",
+            "background": "This island is an emergency refuge for those on the run or whose boats have capsized.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "You wade through the cold and refreshing water, the gentle waves lapping at your thighs as you head towards the Swimming Hole. The joyful splash and laughter from children echo in the distance.",
+                "west": "You mount on the abandoned raft, gently paddling towards the Lakeside House. The scenic beauty of lush greenery surrounding the vibrant white house soothes your senses as you approach it."
+            },
+            "connections": {
+                "north": "The Swimming Hole",
+                "west": "Lakeside House"
+            },
+            "items": {
+                "Mossy Rock": {
+                    "name": "Mossy Rock",
+                    "description": "A large boulder covered in green moss.",
+                    "examine_text": "The moss on the rock has a vibrant green color. It feels soft and spongy to the touch. There may be critters hiding underneath.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Island"
+                },
+                "Driftwood": {
+                    "name": "Driftwood",
+                    "description": "A piece of wood that has drifted ashore.",
+                    "examine_text": "This piece of driftwood is smooth from the weathering of the water. It seems sturdy and could be used for purposes other than burning.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Island"
+                },
+                "Fruit Tree": {
+                    "name": "Fruit Tree",
+                    "description": "A short tree bearing small fruits.",
+                    "examine_text": "Upon closer examination, the fruits on the tree are ripe, with a sweet scent wafting in the air. If you are hungry, they would make a good meal.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Island"
+                },
+                "Fresh Water": {
+                    "name": "Fresh Water",
+                    "description": "A small, clean puddle of fresh water.",
+                    "examine_text": "The water is clear and refreshing to the taste, without any impurities visible to the naked eye. It is safe to drink.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Island"
+                },
+                "Abandoned Raft": {
+                    "name": "Abandoned Raft",
+                    "description": "A makeshift raft abandoned on the shore.",
+                    "examine_text": "The raft seems to be made from logs tied together. It might not be the most comfortable ride, but it is seaworthy and could carry you across the water if needed.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Island"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Lake"
+        },
+        {
+            "name": "Lakeside House",
+            "description": "Its white and vibrant, certainly a location for some lord, It has 3 floors, and fine gardening surround the house. Its open and breezy this place is calm and peaceful.",
+            "background": "The vacation home of a humble knight. He returns here after long journeys to recoup and introspect. he sometimes throws extravagant parties for his trusted friends.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "To reach the Swimming Hole from the Lakeside House, you must take a leisurely walk along the tree-lined path that's filled with the sweet scent of spring flowers. The journey is peaceful with the soft sway of oak and willow branches echoing the tranquillity.",
+                "south": "Traveling south from the Lakeside House, you will tread the cobblestone track that stretches up to the Launching Point. You can feel the excitement growing in the air as you approach the bustling site of seafarers and freshly built vessels ready to embark on their voyage."
+            },
+            "connections": {
+                "west": "The Swimming Hole",
+                "south": "Launching Point"
+            },
+            "items": {
+                "Humble Knight's Sword": {
+                    "name": "Humble Knight's Sword",
+                    "description": "A decorated metal sword.",
+                    "examine_text": "It's a knight's regal sword, beautifully decorated with gold and silver. The hilt is adorned with a dragon motif, reflecting bravery.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Lakeside House"
+                },
+                "Lord's Crown": {
+                    "name": "Lord's Crown",
+                    "description": "A shimmering golden crown",
+                    "examine_text": "This is a dazzling golden crown embedded with sparkling gemstones, symbolizing the Lord's power and wealth.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Lakeside House"
+                },
+                "Goblet of Wine": {
+                    "name": "Goblet of Wine",
+                    "description": "A shiny silver goblet filled with red wine",
+                    "examine_text": "An exquisite goblet crafted with intricate designs, filled to the brim with the finest red wine.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Lakeside House"
+                },
+                "Banquet Table": {
+                    "name": "Banquet Table",
+                    "description": "A large wooden table",
+                    "examine_text": "This sturdy wooden table is capacious enough to hold a royal banquet. Its surface is polished, reflecting the grandeur of the room.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Lakeside House"
+                },
+                "Roast Venison": {
+                    "name": "Roast Venison",
+                    "description": "A savoury dish of roast venison",
+                    "examine_text": "This is a large, succulent piece of venison roast, smelling tantalizing. The aromas fills the air, making your mouth water.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Lakeside House"
+                }
+            },
+            "characters": {
+                "Knight of the Lakeside": {
+                    "name": "Knight of the Lakeside",
+                    "description": "A humble knight who stays in the Lakeside House, often seen frolicking in the Lake.",
+                    "persona": "After a life full of battles, I've retired to this lake house. This panorama, fish to catch and grand feasts, this is my realm.",
+                    "location": "Lakeside House",
+                    "goal": "To live out the rest of his days in calmness and tranquillity.",
+                    "inventory": {
+                        "Humble Knight's Sword": {
+                            "name": "Humble Knight's Sword",
+                            "description": "A finely forged sword of a humble knight.",
+                            "examine_text": "The sword gleams even in the faintest light, and the craftsmanship is impeccable. You can see the aura of countless battles and victories this sword has seen.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Roast Venison": {
+                            "name": "Roast Venison",
+                            "description": "A roasted deer meat, a favourite feast of the knight.",
+                            "examine_text": "The roasted venison smells enticing, and is marinated with herbs and spices. From its look, it seems to be cooked to perfection. The aroma it emits makes your mouth water.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": true,
+                                "is_gettable": true,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Lake"
+        },
+        {
+            "name": "Launching Point",
+            "description": "The Launching point features a number of large wooden planks sitting at a downward slope going straight into the water.  On each side of the launching point there sits a large, ornate bronze figure of a light house that is used to tether the ships to the dock and keep them from casting away while the sailors prepare to board the ship. The launching point is very narrow, with large stone braces on either side of the dock.",
+            "background": "The Launching point is where newly constructed ships are cast out to see. The wooden slide is used to help catapult the ships into water, and it's narrow design keeps them from tipping when the force of the ship hits the water.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "The journey north to the Lakeside House is scenic, with a trail that meanders through fields of vivid wildflowers and the occasional grove of towering evergreens. The air becomes fresher and cooler as you approach the house.",
+                "west": "Travelling west to the Clean Water Lake, the path winds through a lush forest. The sounds of chirping birds and rustling leaves accompany you as the path slopes gently downwards towards the tranquil waters of the lake."
+            },
+            "connections": {
+                "north": "Lakeside House",
+                "west": "Clean Water Lake"
+            },
+            "items": {
+                "Wooden Planks": {
+                    "name": "Wooden Planks",
+                    "description": "Large wooden planks sitting on a downward slope.",
+                    "examine_text": "Scratches can be seen on the planks from many launches. Due to moist air, they're covered with a thin film of algae.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Launching Point"
+                },
+                "Bronze Lighthouse": {
+                    "name": "Bronze Lighthouse",
+                    "description": "Large, ornate bronze figure of a lighthouse on the sides.",
+                    "examine_text": "The lighthouse figure is well crafted, with meticulous details and it shows signs of extensive oxidation.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Launching Point"
+                },
+                "Stone Braces": {
+                    "name": "Stone Braces",
+                    "description": "Large stone braces on either side of the dock.",
+                    "examine_text": "Large boulders that are covered with moss and used for structural support. They\u2019re cold to the touch and slightly damp.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Launching Point"
+                },
+                "Tethering Rope": {
+                    "name": "Tethering Rope",
+                    "description": "A thick, sturdy rope used to anchor the ships.",
+                    "examine_text": "A thick rope made of braided hemp, frayed from use but still reliable. It has a distinct salty smell of the sea.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Launching Point"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Lake"
+        },
+        {
+            "name": "Clean Water Lake",
+            "description": "The lake is crystal clear, lined with trees, to the far back of the lake there's a small formation of rocks almost like a small waterfall allowing water to flow into the lake. It's quite beautiful, the sun bathing the surrounding area in a warmth so comforting you could easily fall asleep on the shore. There's an old wooden bath, for its age it seems to look like almost new, and rarely used. There are no animals nearby except for birds softly chirping in the trees.",
+            "background": "The area was first found by an old couple that used to live by, on a now abandoned homestead. They set up a bath tub so that they could boil water and take a nice bath together overlooking the surrounding area. They offered it to travelers as a way to relax if they so happened to travel by their home.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Traversing to the east through lush trees and over a small hill, one finds themselves at the famed Launching Point, an exciting spectacle of human ingenuity.",
+                "south": "Heading south takes you through a half mile of dense, dark woods before you see a slight glimmer of water in the distance - you have reached the enigmatic Lagoon."
+            },
+            "connections": {
+                "east": "Launching Point",
+                "south": "The Lagoon"
+            },
+            "items": {
+                "Old Wooden Bathtub": {
+                    "name": "Old Wooden Bathtub",
+                    "description": "An old luxury, this large wooden tub is surprisingly well preserved.",
+                    "examine_text": "The tub is old, but very sturdy. You notice a faint glow around it, perhaps the charm of those who have used it before. It's large enough to accommodate two people comfortably. A network of small pipes and tubes are found underneath the tub, suggesting a system was set up for heating the water.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Clean Water Lake"
+                },
+                "Clear Lake Water": {
+                    "name": "Clear Lake Water",
+                    "description": "A large body of water so pure it mirrors its surroundings.",
+                    "examine_text": "Taking a closer look, you see the water is crystal clear. You can see small fish darting underneath and occasional pebbles lining the waterbed. It seems quite deep, and you would probably not touch the bottom if you ventured out",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Clean Water Lake"
+                },
+                "Abandoned Homestead": {
+                    "name": "Abandoned Homestead",
+                    "description": "An old abandoned house overlooking the lake.",
+                    "examine_text": "The house, though slightly crooked, stands firmly in its ground, as if waiting to welcome the couple back to their humble home. Paint peeled off from its wooden frames reveals a lifetime of stories. A silent witness to the years gone by, it's a quaint little residence that now serves as a monument to the past.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Clean Water Lake"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Lake"
+        },
+        {
+            "name": "The Lagoon",
+            "description": "The Lagoon is a dark and mysterious place during the night hours.  A lot of moss and lily pads surround the shore.  The water is very murky.",
+            "background": "The Lagoon has been a place of a lot of mystery, a lot of rumors surround it.  Many say it is the scene of a lot of mystical miracles and also at the same time where a lot of townsfolk go missing.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "It's a calming journey as you traverse through the greenery encasing the route towards the Clean Water Lake. The squelch of the damp land beneath your feet is a pleasant contrast to the eerie Lagoon.",
+                "west": "Traveling west, the path narrows into a winding trail. The sounds of water slapping on wooden hulls and distant chatter become gradually louder, signifying your approach to the Fishing Shack."
+            },
+            "connections": {
+                "north": "Clean Water Lake",
+                "west": "Fishing Shack"
+            },
+            "items": {
+                "Old Rowboat": {
+                    "name": "Old Rowboat",
+                    "description": "A lonely old rowboat, seemingly abandoned by the shore",
+                    "examine_text": "Upon closer inspection, the rowboat appears very worn and damp. Moss patches have formed at the bottom and tiny holes are visible.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Lagoon"
+                },
+                "Lily Pad": {
+                    "name": "Lily Pad",
+                    "description": "A large green lily pad floating on the surface of the water",
+                    "examine_text": "The lily pad appears large and firm. Occasionally, a small frog hops onto it for a rest.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Lagoon"
+                },
+                "Moss": {
+                    "name": "Moss",
+                    "description": "A patch of moss growing on a rock by the shore",
+                    "examine_text": "The moss is soft and spongy, damp with dew. It exudes a faint, earthy fragrance.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Lagoon"
+                },
+                "Murky Water": {
+                    "name": "Murky Water",
+                    "description": "Dark and uninviting water of the Lagoon",
+                    "examine_text": "Looking closely, you can see that the water is so dark you can barely make out the bottom. Little eddies and currents cause it to shimmer slightly.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Lagoon"
+                }
+            },
+            "characters": {
+                "The Lagoon Witch": {
+                    "name": "The Lagoon Witch",
+                    "description": "Shrouded in mystery, the Lagoon Witch is said to carry out mystical rituals during the night.",
+                    "persona": "I know most are afraid of me and the secrets of the lagoon, yet my magic is all that protects this village.",
+                    "location": "The Lagoon",
+                    "goal": "Maintain the mystic balance of the lake.",
+                    "inventory": {
+                        "Old Rowboat": {
+                            "name": "Old Rowboat",
+                            "description": "A rickety old rowboat that's seen better days.",
+                            "examine_text": "On closer inspection, the rowboat seems sturdy enough for travel, despite its battered appearance. There's a scent of damp wood and old age around it.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Magic Herbs": {
+                            "name": "Magic Herbs",
+                            "description": "A bundle of glowing herbs, known to have magical properties.",
+                            "examine_text": "These magical herbs emit a gentle glow in the murky darkness of the lagoon. The aroma is otherworldly, resonating with an unseen power that seems to calm the area around.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Lake"
+        },
+        {
+            "name": "Fishing Shack",
+            "description": "The fishing shack is a small wooden structure that is crudely built and is surrounded by boats. The wood flooring around the shack is well weathered and often used.",
+            "background": "The fishing shack is a popular place for the village people to gather. Early in the morning, one can find many people standing by with their fishing poles  trying to catch the day's food.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Moving east from the shack, you feel the ground become softer and squishier as the earth gives way to the silty shores of The Lagoon. As you approach, a chilling mist rises from its surface, creating an air of mystique and danger.",
+                "south": "Heading south, you follow a well-worn trail created by the footsteps of seasoned fishermen. The soft, rhythmic lapping of water grows stronger as you approach the deceptive calmness of the Fishing Dock."
+            },
+            "connections": {
+                "east": "The Lagoon",
+                "south": "Fishing Dock"
+            },
+            "items": {
+                "Fishing Rod": {
+                    "name": "Fishing Rod",
+                    "description": "A sturdy fishing rod leaning against the shack wall.",
+                    "examine_text": "Examining the fishing rod closely, you find it's made of a well-worn but strong bamboo rod, neatly coiled fishing line, and a sharp metal hook.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Fishing Shack"
+                },
+                "Old Wooden Bucket": {
+                    "name": "Old Wooden Bucket",
+                    "description": "An old, splintered wooden bucket lies by the doorway.",
+                    "examine_text": "It\u2019s a bit ragged around the edges but still sturdy. It smells slightly of fish and saltwater. It is usually used to carry fish or bait.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Fishing Shack"
+                },
+                "Weathered Boat": {
+                    "name": "Weathered Boat",
+                    "description": "A weathered boat that has seen better days is tethered nearby.",
+                    "examine_text": "The boat's paint is peeling and it creaks a bit, but it seems stable. A couple of old fishing nets lay tangled at the bottom of it.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Fishing Shack"
+                },
+                "Fishing Net": {
+                    "name": "Fishing Net",
+                    "description": "A sturdy fishing net with a long wooden handle.",
+                    "examine_text": "This net is woven from strong cordage and is designed for catching fish. The wooden handle is long and finely crafted.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Fishing Shack"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Lake"
+        },
+        {
+            "name": "Fishing Dock",
+            "description": "Folks call the area a Lake, but it's more like a pond.  Small and unimportant looking, yet peaceful.  The dock is no prize winner either.  Narrow in width, boards broken with several down right missing all together!  No tree nearby, no canopy, nothing to shade oneself on a hot day while fishing.  The watering hole may look small in size, but it deceives the eyes.  The water is as deep as the heavens.  No man knows what lurks beyond the light in this Lake.",
+            "background": "Once used as a swimming hole by a nearby village, the lake has been scrubbed from history.  Many tales of children and entire families going missing from the lake.  Some travelers even insist they saw creatures coming out of the lake from within the depths.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Walking from the dock up to the fishing shack, you tread across old wooden planks, weathered from winds and waves. Hear the rhythm of lapping water become gradually replaced by the chatter of villagers, their silhouettes appearing ahead in the shack."
+            },
+            "connections": {
+                "north": "Fishing Shack"
+            },
+            "items": {
+                "Fishing Rod": {
+                    "name": "Fishing Rod",
+                    "description": "A reliable tool used for fishing.",
+                    "examine_text": "An ordinary looking wooden fishing rod, marred with several notches signifying past catches. It looks old but still sturdy.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Fishing Dock"
+                },
+                "Wooden Crate": {
+                    "name": "Wooden Crate",
+                    "description": "An old, fragile-looking wooden crate.",
+                    "examine_text": "This aging wooden crate is weathered and beaten up from time and elements, but appears to be holding itself together for now. Hints of a cargo label can be seen faintly.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Fishing Dock"
+                },
+                "Silver Flask": {
+                    "name": "Silver Flask",
+                    "description": "An old flask possibly containing some drink",
+                    "examine_text": "This is a small, curved hip flask made from sliver. It is cool to the touch, and feels like it contains liquid inside",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Fishing Dock"
+                },
+                "Wooden Stool": {
+                    "name": "Wooden Stool",
+                    "description": "A small, basic piece of furniture",
+                    "examine_text": "A basic wooden stool, it is uneven, but sturdy enough to sit on. It's weathered from exposure.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Fishing Dock"
+                },
+                "Floppy Straw Hat": {
+                    "name": "Floppy Straw Hat",
+                    "description": "A worn out hat made of straw",
+                    "examine_text": "Time and wear has faded its original color, leaving it a vague beige. The hat appears to have been abandoned and forgotten.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Fishing Dock"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Lake"
+        }
+    ],
+    "actions": []
+}
