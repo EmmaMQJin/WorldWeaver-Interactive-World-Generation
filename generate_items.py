@@ -36,7 +36,7 @@ def extract_items(directory):
 directory = ''  # Adjust the path to the directory of your JSON files
 output_filename = 'extracted_items.json'  # The filename for the output JSON
 
-# Extract character data
+# Extract Item data
 extracted_items = extract_items(directory)
 
 # Save the extracted data to a new JSON file in the same directory as this script
