@@ -48,7 +48,7 @@ extracted_characters = extract_characters(directory)
 #few shot GPT-4
 def promptGPT(directory):
     if 'HELICONE_API_KEY' not in os.environ:
-        os.environ['HELICONE_API_KEY'] = 'sk-helicone-cp-spr2h6y-tdie7wq-whq5thq-oq33ugy'
+        os.environ['HELICONE_API_KEY'] = ''
 
 
     client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
