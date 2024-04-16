@@ -1,7 +1,7 @@
 [
     {
-        "name": "The Orbital Observatory",
-        "description": "Located in the skies of the Neon Nexus, this futuristic observatory is not only for star-gazing but also provides a vantage point to monitor the activities of the populated city below. It's a blueprint of advanced technology where celestial and urban surveillance integrate, with AI-guided telescopes projecting holographic maps and real-time data. The floor illuminates with soft electroluminescent lights, drawing attention to the constellation patterns etched into the polished steel deck.",
+        "name": "Scrapyard Quarters",
+        "description": "A network of makeshift dwellings intertwined among heaps and mountains of discarded tech. The air is thick with the sharp tang of metal and burning circuits. Amid the wheeling drones and agile scavenger children, listen for the tapping of hammers and the whirring of ancient generators. The Scrapyard Quarters never sleep, pulsating with a startling resilience and vibrancy despite its grim exterior.",
         "connections": {},
         "travel_descriptions": {},
         "blocks": {},
@@ -12,8 +12,8 @@
         "properties": {}
     },
     {
-        "name": "The Parallax Pinnacle",
-        "description": "Perched on the border of the stratosphere, the Parallax Pinnacle is the nexus between the terrestrial and extraterrestrial. It boasts a blend of structural audacity and technological elegance, serving as a launchpad for nano-satellites and a teleport station for interstellar diplomats. Its dichroic glass panels give an ever-shifting reflection of the city and the cosmos, portraying a symbiosis between nature's vast creativity and humankind's boundless innovation.",
+        "name": "Cyberpunk Bazaar",
+        "description": "A sprawling marketplace of glowing signs, shadowy stalls, and whirling holograms, selling everything the dystopian future has to offer. Amid shards of neon lights and the drone of incomprehensible trade languages, haggling and trading is fierce in the bustling Cyberpunk Bazaar, where the unusual is commonsplace and the dangerous is routine.",
         "connections": {},
         "travel_descriptions": {},
         "blocks": {},

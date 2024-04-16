@@ -13,23 +13,6 @@
     "has_been_visited": false,
     "commands": [],
     "properties": {}
-
-},
-{
-    "name": "Lake",
-    "description": "The beautiful lake glistens in the sun as water can be seen in all directions. you can see several feet beneath the water because it is so clear.",
-    "connections": {
-    },
-    "travel_descriptions": {
-    },
-    "blocks": {
-    },
-    "items": {},
-    "characters": {
-    },
-    "has_been_visited": false,
-    "commands": [],
-    "properties": {}
 },
 {
     "name": "Dock",
@@ -94,4 +77,5 @@
     "has_been_visited": false,
     "commands": [],
     "properties": {}
-}]
+}
+]
