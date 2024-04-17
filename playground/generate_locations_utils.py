@@ -204,7 +204,7 @@ def main():
     num_locs = randint(3, 7)
     print("Number of neighboring locations: ", num_locs)
     neib_locs = generate_neighboring_locations(
-        loc_center, num_locs, loc_center, story_cyberpunk, neib_locs_shots)
+        [loc_center], num_locs, loc_center, story_cyberpunk, neib_locs_shots)
 
     # Generate connections for first-round of neighbors
     directions = ["east", "west", "north", "south", "up", "down", "in", "out"]
