@@ -1,8 +1,8 @@
 [
     {
-        "name": "Moonstone Pendant",
-        "description": "A beautiful moonstone pendant with a silvery chain.",
-        "examine_text": "The pendant features a moonstone at its center, surrounded by an intricate design inlaid in the silver. Despite its age, the lustrous sheen of the moonstone contrasts beautifully against the tarnished silver chain.",
+        "name": "Moonfire Pendant",
+        "description": "A silver pendant adorned with a milky-white stone, rumored to be blessed by the Goddess of Moon.",
+        "examine_text": "The pendant shimmers softly under light, the silver chain wound intricately around its milky-white stone. The stone is cold to touch yet feels strangely reassuring, akin to the gentle glow of moonlight on a starry night. An engraving on the back reads: Blessed by the Moon.",
         "properties": {
             "is_container": false,
             "is_drink": false,
@@ -11,43 +11,12 @@
             "is_surface": false,
             "is_weapon": false,
             "is_wearable": true
-        },
-        "location": {}
+        }
     },
     {
-        "name": "Old Scroll",
-        "description": "An ancient scroll with unknown inscriptions.",
-        "examine_text": "Unrolled, the scroll reveals rows of inscriptions that look extremely ancient. The characters are unfamiliar and are possibly of a language long forgotten. Despite being worn at the edges, the inscriptions have remained surprisingly well preserved.",
-        "properties": {
-            "is_container": false,
-            "is_drink": false,
-            "is_food": false,
-            "is_gettable": true,
-            "is_surface": false,
-            "is_weapon": false,
-            "is_wearable": false
-        },
-        "location": {}
-    },
-    {
-        "name": "Iron Casket",
-        "description": "A tiny iron casket, it seems to be very old.",
-        "examine_text": "Made entirely of iron, the small casket has an ornate design on its surface that's now partially obscured by rust. It has a sturdy lock, but the key is missing. You wonder what it might hold inside.",
-        "properties": {
-            "is_container": true,
-            "is_drink": false,
-            "is_food": false,
-            "is_gettable": true,
-            "is_surface": false,
-            "is_weapon": false,
-            "is_wearable": false
-        },
-        "location": {}
-    },
-    {
-        "name": "Ancient Sword",
-        "description": "An ancient sword with a rusted iron blade and a hilt wrapped in worn leather.",
-        "examine_text": "Despite the rust and wear, the sword retains a certain aura of dignity and power. The blade is still sharp, and the hilt, though worn, sits comfortably in your grip. An unknown emblem etched into the blade, perhaps a clue to its previous owner.",
+        "name": "Leviathan Fang",
+        "description": "A gargantuan fang extracted from a Leviathan. Often used as a decoration or a weapon by the ocean tribes.",
+        "examine_text": "A monstrous fang that must have belonged to a creature of immense size. Sharper than any blade, tougher than any shield, and endowed with a lustrous pearl tint, it just screams danger. But it also exudes an otherworldly beauty that stirs up a sense of awe.",
         "properties": {
             "is_container": false,
             "is_drink": false,
@@ -56,69 +25,20 @@
             "is_surface": false,
             "is_weapon": true,
             "is_wearable": false
-        },
-        "location": {}
-    }
-],
-[
-    {
-        "name": "Leather Wallet",
-        "description": "A worn out leather wallet, filled with a couple of notes and a driver's license.",
-        "examine_text": "This creation is a perfect example of how classic items fade over time; with its dull brown colour and fraying at the edges, it definitely has seen better days. Despite its worn out look, you can find some cash and a driver's license inside.",
-        "properties": {
-            "is_container": true,
-            "is_drink": false,
-            "is_food": false,
-            "is_gettable": true,
-            "is_surface": false,
-            "is_weapon": false,
-            "is_wearable": false
-        },
-        "location": {}
+        }
     },
     {
-        "name": "Coconut shell",
-        "description": "A coconut shell, half of it, has a high potential of being used as a drinking source.",
-        "examine_text": "This is the half-shelled byproduct of a once fresh coconut. Its vibrant brown color and hardy exterior makes it look more welcoming. And with some water, it could be used as a drinking source.",
+        "name": "Star Blossom Tea",
+        "description": "A fragrant tea made from the leaves of the rare Star Blossom plant. Renowned for its soothing properties.",
+        "examine_text": "Aren't you fortunate! You see before you renowned Star Blossom Tea - purportedly as ethereal as the stars itself. Gently brewed petals produce a warm liquid whose color mirrors the dawn sky. Its soothing fragrance of freesia lingers, while consuming this tea is said to heal, rejuvenate, and clarify one's mind.",
         "properties": {
-            "is_container": true,
+            "is_container": false,
             "is_drink": true,
-            "is_food": true,
-            "is_gettable": true,
-            "is_surface": false,
-            "is_weapon": false,
-            "is_wearable": false
-        },
-        "location": {}
-    },
-    {
-        "name": "Vintage Hat",
-        "description": "An old wartime hat, that reflects the fashion of a bygone era.",
-        "examine_text": "This hat brings back memories of the war era. With its large rim and deep brown color, it represents a time when men were gentlemen. Despite the obvious wear and tear, the hat's attractiveness is undiminished.",
-        "properties": {
-            "is_container": false,
-            "is_drink": false,
-            "is_food": false,
-            "is_gettable": true,
-            "is_surface": false,
-            "is_weapon": false,
-            "is_wearable": true
-        },
-        "location": {}
-    },
-    {
-        "name": "Ancient Tablet",
-        "description": "An ancient stone tablet engraved with markings and symbols from an old civilization.",
-        "examine_text": "The tablet is heavy and cool to the touch. It's covered in ancient symbols and scratches that reveal a bit about the civilization it comes from. It's worn with time, but the carvings are still clear enough to be studied.",
-        "properties": {
-            "is_container": false,
-            "is_drink": false,
             "is_food": false,
             "is_gettable": true,
             "is_surface": false,
             "is_weapon": false,
             "is_wearable": false
-        },
-        "location": {}
+        }
     }
 ]

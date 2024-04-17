@@ -34,21 +34,21 @@ def extract_items(directory):
     return items
 
 # Set the directory containing the JSON files
-directory = ''  # Adjust the path to the directory of your JSON files
+directory = '/Users/hardikjain/Documents/Spring 24/CIS-7000-Project/WorldWeaver-Interactive-World-Generation/games'  # Adjust the path to the directory of your JSON files
 output_filename = 'extracted_items.json'  # The filename for the output JSON
 
 # Extract Item data
 extracted_items = extract_items(directory)
 
 # Save the extracted data to a new JSON file in the same directory as this script
-save_json(extracted_items, output_filename)
-print(f"Data extracted and saved to {output_filename}")
+# save_json(extracted_items, output_filename)
+# print(f"Data extracted and saved to {output_filename}")
 
 # ####################
 # #few shot GPT-4
 def promptGPT(directory):
     if 'HELICONE_API_KEY' not in os.environ:
-        os.environ['HELICONE_API_KEY'] = ' '
+        os.environ['HELICONE_API_KEY'] = 'sk-helicone-cp-nuxlzea-i3cuq6q-xpvlrga-pgbu4si'
 
 
     client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
@@ -57,12 +57,21 @@ def promptGPT(directory):
     
     with open("extracted_items.json", 'r') as file:
         objects = json.load(file)
+
+     # Prompt user for the number of new objects to create
+    num_items = input("Enter the number of new items you want to generate: ")
+        
+    # objects selected for few-shot learning
+    sample_items = json.dumps(objects[:5], indent=4) 
  
-    prompt = "Based on the given example create new item with all the key value pairs. Do not generate any item more than once."
+    # Create a detailed prompt with a few-shot example and define roles
     messages = [
-        {'role': 'system', 'content': prompt},
-        {'role': 'user', 'content': f"{json.dumps(objects[:4], indent=4)}"}
+        {'role': 'system', 'content': 'Generate a new item for a mystical game world. Include all necessary attributes such as name, description, examine text, and properties. Follow the style and depth of the given examples.'},
+        {'role': 'user', 'content': 'Here are some examples of items:'},
+        {'role': 'assistant', 'content': sample_items},
+        {'role': 'user', 'content': f'Can you create {num_items} new items based on these examples?'}
     ]
+
     response = client.chat.completions.create(
         model='gpt-4',
         messages=messages,
@@ -74,13 +83,8 @@ def promptGPT(directory):
     )
     gpt_response = response.choices[0].message.content
     filename = "analysis_items.json"
-    with open(filename, 'r+') as file:
-        file.seek(0, 2)  # Move the file pointer to the end of the file
-        if file.tell()!=0:
-            file.seek(file.tell() - 1, 0)  
-            file.write(',\n' + json.dumps(json.loads(gpt_response), indent=4) + '\n')
-        else:
-            file.seek(0, 0)
-            file.write(json.dumps(json.loads(gpt_response), indent=4) + '\n')
+
+    with open(filename, 'w') as file:
+        json.dump(json.loads(gpt_response), file, indent=4)
 
 promptGPT(directory)
