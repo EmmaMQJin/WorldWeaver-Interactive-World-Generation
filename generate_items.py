@@ -24,7 +24,8 @@ def extract_items(directory):
                     for location in json_data['locations']:
                         if 'items' in location:
                             for item in location['items'].values():
-                                item['location'] = {}
+                                if 'location' in item:
+                                    del item['location']
                             items.extend(location['items'].values())
             except json.JSONDecodeError:
                 print(f"Error decoding JSON from file {filename}")
@@ -40,14 +41,14 @@ output_filename = 'extracted_items.json'  # The filename for the output JSON
 extracted_items = extract_items(directory)
 
 # Save the extracted data to a new JSON file in the same directory as this script
-# save_json(extracted_items, output_filename)
-# print(f"Data extracted and saved to {output_filename}")
+save_json(extracted_items, output_filename)
+print(f"Data extracted and saved to {output_filename}")
 
-####################
-#few shot GPT-4
+# ####################
+# #few shot GPT-4
 def promptGPT(directory):
     if 'HELICONE_API_KEY' not in os.environ:
-        os.environ['HELICONE_API_KEY'] = 'sk-helicone-cp-nuxlzea-i3cuq6q-xpvlrga-pgbu4si '
+        os.environ['HELICONE_API_KEY'] = ' '
 
 
     client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
