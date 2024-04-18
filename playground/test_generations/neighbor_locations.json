@@ -1,7 +1,7 @@
 [
     {
-        "name": "Cyberspace Hub",
-        "description": "The hub is a buzzing hive of activity, where hackers, corporate spies, and rogue AI entities congregate. The air crackles with the energy of countless data streams flowing through augmented reality interfaces. Amidst the chaos, alliances are forged, deals are made, and virtual battles are waged in the neon-illuminated shadows of the cybernetic domain.",
+        "name": "Undernet",
+        "description": "The Undernet is a vast digital underworld pulsating beneath Neonopolis. A labyrinthine network of illicit data streams and forbidden knowledge, it is the domain of hackers and AI constructs, where human consciousness merges with digital realities. Walls of code flicker in a dizzying cascade of cryptic symbols and holographic interfaces, stretching into the digital void. The air buzzes with virtual static, and the hum of data rivers flow through neon light veins. In this synthetic dimension, virtual landscapes respond to thought, bend the laws of physics, and defy the notion of time.",
         "connections": {},
         "travel_descriptions": {},
         "blocks": {},
@@ -12,32 +12,8 @@
         "properties": {}
     },
     {
-        "name": "Retro Diner",
-        "description": "In stark contrast to the high-tech surroundings, the retro diner is a charming throwback to simpler times. The neon sign displays a dancing hamburger, and the checkered floor lends a certain vintage charm. Although the food is all synthetically created, the flavors offer the comforting illusion of natural ingredients.",
-        "connections": {},
-        "travel_descriptions": {},
-        "blocks": {},
-        "items": {},
-        "characters": {},
-        "has_been_visited": false,
-        "commands": [],
-        "properties": {}
-    },
-    {
-        "name": "Underground Market",
-        "description": "Deep beneath the towering structures of Neon City lies the sprawling maze of the Underground Market. Here, in this lawless den cloaked in neon shadows, the hottest commodities aren't food or clothing - they're tech relics, information, and cybernetic enhancements. For the right price, one can procure almost anything here.",
-        "connections": {},
-        "travel_descriptions": {},
-        "blocks": {},
-        "items": {},
-        "characters": {},
-        "has_been_visited": false,
-        "commands": [],
-        "properties": {}
-    },
-    {
-        "name": "Corporate Overlook",
-        "description": "High above the chaotic streets of Neon City stands the Corporate Overlook, a towering fortress of glass and steel. It is a symbol of power for those who rule the city, a perch from which they can watch the city they manipulate so heavily. The panoramic view offers a breathtaking vista of neon-drenched cityscape.",
+        "name": "Corporation Heights",
+        "description": "Towering above Neonopolis, Corporation Heights is the opulent bastion of the mega-corporations that rule the city. Soaring skyscrapers pierce the gloomy urban skyline, each a fortress of glass, steel and shining neon. The streets here are immaculate, the air crisp yet sterile, and the silence an eerie contrast to the city's ubiquitous hum. It is a playground for the wealthy, where power dresses in sharp suits, and the future is shaped behind closed doors. The bright glows of digital billboards play endless streams of gated communities, luxury services, and the dream of an AI-assisted utopia.",
         "connections": {},
         "travel_descriptions": {},
         "blocks": {},
