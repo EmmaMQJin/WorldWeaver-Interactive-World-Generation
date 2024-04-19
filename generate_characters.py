@@ -46,23 +46,26 @@ output_filename = 'extracted_characters.json'  # The filename for the output JSO
 
 ####################
 #few shot GPT-4
-def promptGPT(story, directory):
+def promptGPT(stories, directory):
     if 'HELICONE_API_KEY' not in os.environ:
         os.environ['HELICONE_API_KEY'] = 'sk-helicone-cp-spr2h6y-tdie7wq-whq5thq-oq33ugy'
 
 
     client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
 
-    output = {}
+    with open(directory + "data/few-shot-examples/example-character.json", 'r') as file:
+        examples = json.load(file)
+    
+    with open(directory+"data/approved_characters.json", "r") as file:
+        generated = file.read()
 
-    with open("/Users/shriyaram/Documents/Spring24/txtgen/CIS-7000/Project/playground/data/few-shot-examples/example-character.json", 'r') as file:
-        output = json.load(file)
- 
-    prompt = f"You are a helpful character generator for building a text adventure game. Given the background story of the game from the user, generate one character in a JSON, formatted like the examples below:"
+    prompt = "You are a helpful main character generator for building a text adventure game for the following story:{story}. Generate one main character from this story in a JSON format. Character's inventory should be empty so remember to leave the values to the location and inventory keys empty. The JSON should be in the following JSON format:{form}. Do not generate any previously generated character.Generate a character you have never generated before. No value of any of the keys of the character should match any of the previously generated characters' values. None of the characters should match any character or share any value with any character from {gen}".format(story=stories[0],form=examples[0],gen = generated)
     messages = [
         {'role': 'system', 'content': prompt},
-        {'role': 'user', 'content': "Background story: f{story} Location to generate neighboring locations for:".format(story=story)},
-        {"role": "assistant", "content": json.dumps(output)}
+        {'role': 'user', 'content': "The example story 1 is : {story}".format(story=stories[1])},
+        {"role": "assistant", "content": json.dumps(examples[0])},
+        {'role': 'user', 'content': "The example story 2 is : {story}".format(story=stories[2])},
+        {"role": "assistant", "content": json.dumps(examples[1])}
     ]
     response = client.chat.completions.create(
         model='gpt-4',
@@ -74,13 +77,4 @@ def promptGPT(story, directory):
         presence_penalty=0
     )
     gpt_response = response.choices[0].message.content
-    # filename = "analysis.json"
-    # with open(filename, 'r+') as file:
-    #     file.seek(0, 2)  # Move the file pointer to the end of the file
-    #     if file.tell()!=0:
-    #         file.seek(file.tell() - 1, 0)  # Move the file pointer to just before the last character
-    #         file.write(',\n' + json.dumps(json.loads(gpt_response), indent=4) + '\n]')
-    #     else:
-    #         file.seek(0, 0)
-    #         file.write(json.dumps(json.loads(gpt_response), indent=4) + '\n]')
     return json.loads(gpt_response)
