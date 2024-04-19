@@ -72,7 +72,7 @@ def human_in_loop_interaction(story, directory):
             break
 
 # Usage
-directory = '/Users/shriyaram/Documents/Spring24/txtgen/CIS-7000/Project/playground/'  # 
+directory = ''  # 
 stories = []
 stories.append(read_file_to_str(directory+"data/story-rapunzel.txt"))
 stories.append(read_file_to_str(directory+"data/story-cyberpunk.txt"))
