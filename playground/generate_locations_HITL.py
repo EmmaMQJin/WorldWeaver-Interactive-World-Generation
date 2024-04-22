@@ -83,7 +83,7 @@ def generate_neighbor_locs_HITL(all_locs, num_neib_locs, orig_loc_dict, story, n
         print("all locs 1: ", all_locs)
         prev_layer = temp_layer[:]
     print("all locs 2: ", all_locs)
-    list_to_json_file(all_locs, "test_generations/all_locations.json")
+    list_to_json_file(all_locs, "test_generations/all_the_locations.json")
 
 
 def main():
@@ -138,9 +138,6 @@ def main():
         # generate neighboring locations
         num_locs = int(input("How many locations would you like to have in the game?\n"))
         generate_neighbor_locs_HITL([central_loc], num_locs-1, central_loc, story_cyberpunk, neib_locs_shots, connections_shots)
-        neib_locs = read_json_examples("test_generations/neighboring_locations.json")
-        all_locs = [central_loc] + neib_locs
-        dict_to_json_file(all_locs, "test_generations/all_locations.json")
         # generate connections
 
 
