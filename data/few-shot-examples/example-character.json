@@ -1,8 +1,21 @@
-{
-    "name": "Vox Mirage",
-    "description": "A notorious hacker known in the cybernetic subcultures for her ability to traverse and manipulate digital landscapes. With a background shrouded in mystery, she is feared by mega-corporations and revered by digital rebels.",
-    "persona": "They call me Vox Mirage. In the neon glow of the city, I am both nowhere and everywhere—my true self hidden behind layers of code and digital veils. My fingers dance across keyboards as I orchestrate revolutions in silence.",
-    "location": {},
-    "goal": "To decode the secrets of the ancient device and leverage its capabilities to dismantle the mega-corporations, freeing humanity from digital tyranny.",
-    "inventory": {}
-}
+[
+    {
+        "name": "Vox Mirage",
+        "description": "A notorious hacker known in the cybernetic subcultures for her ability to traverse and manipulate digital landscapes. With a background shrouded in mystery, she is feared by mega-corporations and revered by digital rebels.",
+        "persona": "They call me Vox Mirage. In the neon glow of the city, I am both nowhere and everywhere—my true self hidden behind layers of code and digital veils. My fingers dance across keyboards as I orchestrate revolutions in silence.",
+        "location": {},
+        "goal": "To decode the secrets of the ancient device and leverage its capabilities to dismantle the mega-corporations, freeing humanity from digital tyranny.",
+        "inventory": {}
+    },
+    {
+        "name": "Ancient Sentinel",
+        "description": "In the depths of the Royal Tomb, an ancient, towering stone golem stands as the last sentinel of a long-forgotten dynasty. With eyes that cast an eerie glow in the shadowy corridors, this guardian has weathered centuries, its form etched with the passage of time yet imposing enough to deter the bravest of hearts.",
+        "persona": "It speaks with the authority of ages past, offering safe passage to those who mean no harm to the sacred grounds it protects. Entrusted with the solemn duty to guard the treasures within, it remains ever vigilant, a testament to the grandeur and mystery of the royal lineage it serves.",
+        "location": {
+            "name": "Royal Tomb",
+            "description": "A shadowy, ancient burial site of a long-forgotten dynasty, filled with relics and protected by the Ancient Sentinel."
+        },
+        "goal": "To protect the treasures and secrets of the Royal Tomb from intruders, allowing only those who pose no threat to enter.",
+        "inventory": {}
+    }
+]
