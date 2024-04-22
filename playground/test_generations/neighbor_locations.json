@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Undernet",
+        "description": "The Undernet is a vast digital underworld pulsating beneath Neonopolis. A labyrinthine network of illicit data streams and forbidden knowledge, it is the domain of hackers and AI constructs, where human consciousness merges with digital realities. Walls of code flicker in a dizzying cascade of cryptic symbols and holographic interfaces, stretching into the digital void. The air buzzes with virtual static, and the hum of data rivers flow through neon light veins. In this synthetic dimension, virtual landscapes respond to thought, bend the laws of physics, and defy the notion of time.",
+        "connections": {},
+        "travel_descriptions": {},
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Corporation Heights",
+        "description": "Towering above Neonopolis, Corporation Heights is the opulent bastion of the mega-corporations that rule the city. Soaring skyscrapers pierce the gloomy urban skyline, each a fortress of glass, steel and shining neon. The streets here are immaculate, the air crisp yet sterile, and the silence an eerie contrast to the city's ubiquitous hum. It is a playground for the wealthy, where power dresses in sharp suits, and the future is shaped behind closed doors. The bright glows of digital billboards play endless streams of gated communities, luxury services, and the dream of an AI-assisted utopia.",
+        "connections": {},
+        "travel_descriptions": {},
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    }
+]

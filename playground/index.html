@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chat Interface</title>
+</head>
+<body>
+<input type="text" id="message" placeholder="Type your message...">
+<button onclick="sendMessage()">Send</button>
+<div id="chat-box"></div>
+
+<script>
+const ws = new WebSocket("ws://localhost:8000/ws");
+ws.onopen = function(event) {
+console.log("WebSocket connection established");
+};
+
+ws.onmessage = function(event) {
+const message = event.data;
+appendMessage('Bot', message);
+};
+
+function sendMessage() {
+const messageInput = document.getElementById('message');
+const message = messageInput.value.trim();
+if (message !== '') {
+appendMessage('You', message);
+ws.send(message);
+messageInput.value = '';
+}
+}
+
+function appendMessage(sender, message) {
+const chatBox = document.getElementById('chat-box');
+const messageElement = document.createElement('div');
+messageElement.textContent = `${sender}: ${message}`;
+chatBox.appendChild(messageElement);
+chatBox.scrollTop = chatBox.scrollHeight;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+[
+    [
+        {
+            "name": "The Cyber Bazaar",
+            "description": "In the heart of the Neon City, where the cryptic hum of cybernetic commerce meets the pulsating glow of a million neon hues, lies the Cyber Bazaar. Here, rogue hackers and cyborg merchants peddle everything from rare hardware to illicit software. Bits and bytes exchange hands in the blink of an eye, transactions hidden beneath layers of complex encryptions.",
+            "connections": {},
+            "travel_descriptions": {},
+            "blocks": {},
+            "items": {},
+            "characters": {},
+            "has_been_visited": false,
+            "commands": [],
+            "properties": {}
+        },
+        {
+            "name": "The ShadowHub",
+            "description": "Beneath the shimmering skyline of Neon city lies its grim underbelly - The ShadowHub. A tangled maze of narrow alleyways and dimly lit tunnels, it serves as the hideout for hackers seeking refuge, cyborgs running from their past and AI entities lurking in the corners. The sounds of Neon City above are but a faint hum here, drowned by the whispers of secret plots and silent screams of digital ghosts.",
+            "connections": {},
+            "travel_descriptions": {},
+            "blocks": {},
+            "items": {},
+            "characters": {},
+            "has_been_visited": false,
+            "commands": [],
+            "properties": {}
+        }
+    ],
+    [
+        {
+            "name": "Cyber Lounge",
+            "description": "Located in a nondescript skyscraper, the Cyber Lounge is a meeting place for hackers, freelancers, and other fringe dwellers of the digital world. With rows of high-end terminals and private VR booths, the lounge is always alive with the hum of electrical current and the flicker of countless screens. The air is filled with the smell of burnt espresso and the whisper of whispered deals.",
+            "connections": {},
+            "travel_descriptions": {},
+            "blocks": {},
+            "items": {},
+            "characters": {},
+            "has_been_visited": false,
+            "commands": [],
+            "properties": {}
+        },
+        {
+            "name": "Corporate Enclave",
+            "description": "The Corporate Enclave is a shiny bubble of luxury and excess in the grimy sprawl of Neon City. Beneath monolithic towers of glass and steel, the corporate elite conduct their affairs with ruthless efficiency. Here, business meetings are as likely to be fraught with intrigue and sabotage as they are with the cut and thrust of capitalist competition.",
+            "connections": {},
+            "travel_descriptions": {},
+            "blocks": {},
+            "items": {},
+            "characters": {},
+            "has_been_visited": false,
+            "commands": [],
+            "properties": {}
+        },
+        {
+            "name": "Undermarket",
+            "description": "Hidden within the maze of subterranean tunnels beneath Neon City lies the Undermarket, a bustling bazaar of illicit trade. From illicit software to contraband cybernetics, anything can be bought - or sold - for the right price here. The air buzzes with the chatter of deals being made, while augmented patrons cast wary, neon-drenched stares from beneath the brims of their worn-out caps.",
+            "connections": {},
+            "travel_descriptions": {},
+            "blocks": {},
+            "items": {},
+            "characters": {},
+            "has_been_visited": false,
+            "commands": [],
+            "properties": {}
+        }
+    ],
+    [
+        {
+            "name": "Cyberspace Hub",
+            "description": "The hub is a buzzing hive of activity, where hackers, corporate spies, and rogue AI entities congregate. The air crackles with the energy of countless data streams flowing through augmented reality interfaces. Amidst the chaos, alliances are forged, deals are made, and virtual battles are waged in the neon-illuminated shadows of the cybernetic domain.",
+            "connections": {},
+            "travel_descriptions": {},
+            "blocks": {},
+            "items": {},
+            "characters": {},
+            "has_been_visited": false,
+            "commands": [],
+            "properties": {}
+        },
+        {
+            "name": "Retro Diner",
+            "description": "In stark contrast to the high-tech surroundings, the retro diner is a charming throwback to simpler times. The neon sign displays a dancing hamburger, and the checkered floor lends a certain vintage charm. Although the food is all synthetically created, the flavors offer the comforting illusion of natural ingredients.",
+            "connections": {},
+            "travel_descriptions": {},
+            "blocks": {},
+            "items": {},
+            "characters": {},
+            "has_been_visited": false,
+            "commands": [],
+            "properties": {}
+        },
+        {
+            "name": "Underground Market",
+            "description": "Deep beneath the towering structures of Neon City lies the sprawling maze of the Underground Market. Here, in this lawless den cloaked in neon shadows, the hottest commodities aren't food or clothing - they're tech relics, information, and cybernetic enhancements. For the right price, one can procure almost anything here.",
+            "connections": {},
+            "travel_descriptions": {},
+            "blocks": {},
+            "items": {},
+            "characters": {},
+            "has_been_visited": false,
+            "commands": [],
+            "properties": {}
+        },
+        {
+            "name": "Corporate Overlook",
+            "description": "High above the chaotic streets of Neon City stands the Corporate Overlook, a towering fortress of glass and steel. It is a symbol of power for those who rule the city, a perch from which they can watch the city they manipulate so heavily. The panoramic view offers a breathtaking vista of neon-drenched cityscape.",
+            "connections": {},
+            "travel_descriptions": {},
+            "blocks": {},
+            "items": {},
+            "characters": {},
+            "has_been_visited": false,
+            "commands": [],
+            "properties": {}
+        }
+    ]
+]

@@ -1,0 +1,282 @@
+[
+    {
+        "name": "Cybernetic Bazaar",
+        "description": "The Cybernetic Bazaar is a bustling market teeming with vendors selling the latest in cybernetic enhancements and tech gadgets. A maze of neon lights and recycled steel, this is a place where hackers and tech junkies rub shoulders with thrill-seekers eager to upgrade their bodies for a price.",
+        "connections": {
+            "north": "Colossus Corp",
+            "east": "Neural Net Lounge",
+            "west": "Silicon Street"
+        },
+        "travel_descriptions": {
+            "north": "Exiting the mesmerizing chaos of the Cybernetic Bazaar, you head north towards the looming structure of Colossus Corp. As you navigate through the bustling city streets, the chaotic lights of the Bazaar start to diminish, replaced by the intimidating silhouette of Colossus Corp imposing itself on the city's skyline.",
+            "east": "Leaving the clamor of the Cybernetic Bazaar behind you, head east towards the Neural Net Lounge. The churning marketplace of technology and transactions gradually becomes replaced by a seedy tranquility. Navigating through narrow alleyways, you finally arrive at the dimly lit entrance of the Neural Net Lounge, a common hangout for virtual voyagers.",
+            "west": "Leaving behind the blinding neon lights of the Cybernetic Bazaar, you head west towards Silicon Street. As you traverse the city streets, the crowd of augmented shoppers fades into the background, replaced by the quiet hum of abandoned tech, with the shadows of derelict buildings rising around you."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Spire Heights",
+        "description": "This district is where the monolithic mega-corporation spires claw at the neon sky as a symbol of their dominance over the city. Rich and privileged dwell within these fortified towers, their views of the city blotted out by digital screens depicting artificial environs.",
+        "connections": {
+            "south": "Neon Nexus",
+            "east": "Technotower Plaza",
+            "in": "Quartz Commons",
+            "out": "Trance Club Epiphany"
+        },
+        "travel_descriptions": {
+            "south": "Leaving the monolithic spires of Spire Heights behind, you journey southwards, descending to the vibrant chaos of Neon Nexus. The curtain of corporate dominance part to welcome the multicoloured glow of a city thriving under the artificial lights. The hum of electricity grows more intense, the sounds of life return, and you are once again enveloped in the neon embrace of the urban jungle.",
+            "east": "From Spire Heights, you make your way east, passing over skybridges that connect to the towering edifices. Beneath you, the pristine Technotower Plaza unfolds, with the shiny storefronts of elite tech vendors sparkling in the neon radiance.",
+            "in": "From the corporate dominance of the Spire Heights, you move inwards into the heart of the locale, trading the sight of monolithic towers for upscale residences. As you step within the boundaries of Quartz Commons, the aura of the place undergoes a drastic transformation. The harsh neon lights give way to the mellow hues reflecting off the prismatic quartz structures. Digitialized parks dot the landscape, high-tech homesteads cradled amidst them create a soothing contrast to the corporate battleground you left behind.",
+            "out": "Leaving the buzz and hum of Spire Heights, you journey into the city, descending down into the depths of the former corporate complex. The unassuming infrastructure hides the throbbing pulse of Trance Club Epiphany, a clandestine sanctuary for those who seek a release from the dystopian reality in the embrace of psychedelic nightlife."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Neon Slums",
+        "description": "The Neon Slums percolate on the outskirts of the city stands, a dystopian labyrinth awash with neon graffiti and grime. Here, the rejected and disenfranchised strive to survive under the corporate shadow.",
+        "connections": {
+            "east": "Cyberpunk Bazaar",
+            "west": "Scrapyard Quarters"
+        },
+        "travel_descriptions": {
+            "east": "From the Neon Slums, you journey eastward towards the Cyberpunk Bazaar. The slums' grimy labyrinth gives way to an expansive marketplace, as the subdued neon graffiti replaced by a riot of glowing signs and whirling holograms. The downtrodden air of the slums gradually succumbs to the bustling vibrancy of the market, trading despair for an exciting sense of opportunity.",
+            "west": "Leaving the Neon Slums, you venture into the labyrinthine network of the Scrapyard Quarters. As you step away from the unsettling glow of the neon lights, the sense of order and regulation give way to an environment of charming chaos. The industrial scent of the slums is replaced by a raw, sharp tang of discarded tech and burning circuits. Each step away from the neon-illuminated cityscape, gets deeper into a world living by its own rules and realities."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Monarch's Playground",
+        "description": "An adult amusement district where corporates unwind with risque entertainment, engrossed in pleasure pods or sampling exotic artificial cuisines. A place where anything is possible, for a price.",
+        "connections": {
+            "west": "Neon Nexus"
+        },
+        "travel_descriptions": {
+            "west": "Leaving the libertine Monarch's Playground, you head west towards the buzzing techno-centric world of Neon Nexus. The pulsating pleasure district eventually recedes, replaced by towering glowing skyscrapers and the distinct hum of futuristic city life."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "The Grid",
+        "description": "A complex network of digital landscapes, the Grid is the internet come to life in sprawling 3D environments. It ebbs with the flow of data, playing host to hackers, virtual entities, and synthetic adventures.",
+        "connections": {
+            "out": "Neon Nexus"
+        },
+        "travel_descriptions": {
+            "out": "Extracting yourself from the immersive landscapes of the Grid, you disconnect and resurface in the Neon Nexus. The hum of flowing data fades away, making room for the bustling sounds of the city and the vibrant glow of neon lights. You're back in the physical world, amidst skyscrapers and hovercars."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Scraphaven",
+        "description": "Scraphaven is a vast electronic junkyard full of discarded and ancient tech, a testament to consumerism. It's a playground for tech scavengers and home to those cast out from city limits.",
+        "connections": {
+            "in": "Neon Nexus"
+        },
+        "travel_descriptions": {
+            "in": "Heading back in from the desolate vestige of Scraphaven, the grasslands of discarded tech give way to the looming skyscrapers and vibrating life of the Neon Nexus. The silence of the scrapped technology replaced by the constant hum of the city, every inch buzzing with electricity, every second coloured by the neon glow of the urban sprawl."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Sky Lanes",
+        "description": "The Sky Lanes is where the majority of transportation happens above ground. These lanes buzz with drones and hovercars, streaking through the air in their respective lanes, outlined by neon traffic lines.",
+        "connections": {
+            "down": "Neon Nexus"
+        },
+        "travel_descriptions": {
+            "down": "From the Sky Lanes, you take a descent elevator down to the Neon Nexus, leaving behind the humming drone of hovercars to immerse yourself once again in the multi-colored urban jungle teeming with lights and city life."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Neon Nexus",
+        "description": "The Neon Nexus is a dense, sprawling urban jungle teeming with life and artificial lights at all hours of the day. Towering skyscrapers glow with advertisements and billboards, casting vibrant colors in all directions. Drones buzz through the air and hovercars zip through sky-lanes. On the crowded streets below, people from all walks of life rub shoulders, from corporate businessmen with virtual reality glasses to street vendors peddling artificial food. Cybernetic enhancements are commonplace, and the hum of electricity is ever present, serving as a constant reminder of the techno-centric world that they live in.",
+        "connections": {
+            "south": "Cybernetic Bazaar",
+            "north": "Spire Heights",
+            "west": "Neon Slums",
+            "east": "Monarch's Playground",
+            "in": "The Grid",
+            "out": "Scraphaven",
+            "up": "Sky Lanes"
+        },
+        "travel_descriptions": {
+            "south": "Venturing south from the Neon Nexus, you maneuver your way through the ever-lit urban jungle, following the hum of electricity towards the vibrant allure of the Cybernetic Bazaar. The city sounds gradually shift into lively haggling, the clamor of vendors showcasing their tech, and the intermittent sound of machinery working on cybernetic enhancements.",
+            "north": "Winding your way through the technicolor jungle of Neon Nexus, you head towards the looming corporate towers of Spire Heights. As you journey north, the bustling market streets give way to the shadowy might of the mega-corporations. The ambient hum of city life turns into a ranging composition of power and influence, and the glowing colours are replaced by silhouettes of formidable skyscrapers.",
+            "west": "You exit the bustling heart of the Neon Nexus, making your way towards its outskirts. The towering skyscrapers gradually give way to run-down buildings, the brilliant lights fade into faint neon glows, and the hum of electricity is replaced with a subdued drone. The air changes too, carrying an undercurrent of resilience and desperation, as you move into the neon-lit labyrinth of the Slums.",
+            "east": "From the Neon Nexus, you veer east, leaving behind the vibrant urban chaos. The atmosphere gradually shifts as the high-tech metropolis gives way to the hedonistic allure of the Monarch's Playground. The constant electric hum segues into the pulsing rhythm of pleasure and excess that fuels the adult amusement district.",
+            "in": "Leaving the glowing chaos of the Neon Nexus, you plug into a digital interface and dive inwards. Your senses blur as you transition from the physical realm into the complex landscapes of the Grid. The bustle of the cityscape diminishes, replaced by the hum of flowing data and flickers of virtual life.",
+            "out": "Venturing outwards from the Neon Nexus, beyond the towering skyscrapers and buzzing drones, you find yourself heading towards Scraphaven. The vibrant, artificial lights gradually decrease, replaced by the rustic glow of discarded tech and salvaged parts. It's a stark contrast to the pulsing energy of Nexus, with only the remnants of past innovations and the whispers of techno scavengers as company.",
+            "up": "Taking an elevator at a skyscraper's base, you travel up from the street level of Neon Nexus into the Sky Lanes. The cityscape shrinks beneath you as hovercars and drones become your traffic. The neon glow of the metropolis dissipates, replaced by the illuminating streaks of sky traffic."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Neural Net Lounge",
+        "description": "The Neural Net Lounge may look like a typical, albeit seedy, hole-in-the-wall bar, but its real allure is the state-of-the-art neural Internet connection it provides to its customers. Frequented by hackers and corporate spies, this is a place where you can step out of your physical body and surf the digital realm.",
+        "connections": {
+            "west": "Cybernetic Bazaar"
+        },
+        "travel_descriptions": {
+            "west": "Leaving the digital resonances of the Neural Net Lounge behind, you head westwards, back towards the Cybernetic Bazaar. As you step into the alleyways, the hum of neural nets fades, replaced by the enticing glow of the market area. The neon lights of vendors selling the futuristic blends of technology get increasingly noticeable as you approach the Cybernetic Bazaar."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Silicon Street",
+        "description": "Packed with towering skyscrapers seemingly on the brink of collapse, venture down Silicon Street at your own risk. This zone of anarchic decomposing tech seems a monument to a bygone era. Despite the danger, tech junkies flock here for the myriad of dataports, decommissioned cyberslots, and a chance to find a forgotten gem.",
+        "connections": {
+            "east": "Cybernetic Bazaar"
+        },
+        "travel_descriptions": {
+            "east": "Departing from the ghostly solitude of Silicon Street, head east back towards the lively energy of the Cybernetic Bazaar. The echoing silence of the abandoned tech maze gradually fills with the cacophony of the bustling cybernetic market, as the glow of neon lights grows brighter with every step."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Colossus Corp",
+        "description": "Colossus Corp, one of the mega-corporations that control this dystopian future, stands towering above the other buildings in the area. Its ominous presence dominates the skyline, reminding the city's inhabitants of who holds the real power. With its fortified structures, deftly hidden servers, and a private army of enforcers, Colossus Corp remains a formidable fortress of information and influence.",
+        "connections": {
+            "south": "Cybernetic Bazaar"
+        },
+        "travel_descriptions": {
+            "south": "Departing from the ominously towering Colossus Corp, you journey south, maneuvering through the sterile corporate district and descending into the vibrant maze of the Cybernetic Bazaar. As you draw closer, the city\u2019s pulse quickens, and the electric colors of the market's neon lights replace the cold steel of the corporation's fortress."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Technotower Plaza",
+        "description": "Serviced by automated drones and AI custodians, this sprawling plaza represents the manicured fa\u00e7ade of corporate power, lined with glossy storefronts of elite tech vendors. Skybridges connect the surrounding spires, weaving a web of steel and glass high above street level.",
+        "connections": {
+            "west": "Spire Heights"
+        },
+        "travel_descriptions": {
+            "west": "Leaving the Technotower Plaza behind, you travel west, retracing your path over the skybridges. The gleaming lights of the plaza gradually fade as the towering spires of Spire Heights come into view, serving as a constant reminder of the untouchable corporate power dictating life in the city."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Quartz Commons",
+        "description": "This upscale living area is nestled amidst the spires, home to the city's techno-elite. Pets roam in digitized parks and residents enjoy an unparalleled view of the neon cityscape from the safety of their bespoke habitats.",
+        "connections": {
+            "out": "Spire Heights"
+        },
+        "travel_descriptions": {
+            "out": "Exiting Quartz Commons, you step back out into the throbbing pulse of Spire Heights. The tranquility of digitized parks and upscale residences recede behind you, the dominating shadow of monolithic corporate towers clawing at the neon sky once again command your attention. The view of the neon cityscape dissolves back into the cold, artificial ambience of the business district."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Trance Club Epiphany",
+        "description": "Hidden within a former corporate complex, this secretive establishment exists as a hub for the rebellious rich to indulge in the hedonistic debauchery of cyber-drenched nightlife, complete with mind-bending electronic performances and futuristic libations.",
+        "connections": {
+            "in": "Spire Heights"
+        },
+        "travel_descriptions": {
+            "in": "Emerging from the intoxicating depths of Trance Club Epiphany, you ascend back into the looming spires of the city. Embracing the neon-soaked lights of Spire Heights, the pulsing music and disorienting lights of the club are replaced by the steady hum of the technocracy, resuming their unending symphony."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Scrapyard Quarters",
+        "description": "A network of makeshift dwellings intertwined among heaps and mountains of discarded tech. The air is thick with the sharp tang of metal and burning circuits. Amid the wheeling drones and agile scavenger children, listen for the tapping of hammers and the whirring of ancient generators. The Scrapyard Quarters never sleep, pulsating with a startling resilience and vibrancy despite its grim exterior.",
+        "connections": {
+            "east": "Neon Slums"
+        },
+        "travel_descriptions": {
+            "east": "Leaving behind the pulsating life of the Scrapyard Quarters, you make your way towards the Neon Slums. The cacophony of the Scrapyard fades into the background, replaced with the steady hum of the city outskirts. The environment shifts from raw, improvised dwellings to organized, regulated structures, lit in stark contrast by the bright neon lights. Every step brings you closer to a world that is, in many ways, familiar yet fundamentally different."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Cyberpunk Bazaar",
+        "description": "A sprawling marketplace of glowing signs, shadowy stalls, and whirling holograms, selling everything the dystopian future has to offer. Amid shards of neon lights and the drone of incomprehensible trade languages, haggling and trading is fierce in the bustling Cyberpunk Bazaar, where the unusual is commonsplace and the dangerous is routine.",
+        "connections": {
+            "west": "Neon Slums"
+        },
+        "travel_descriptions": {
+            "west": "Leaving the bustling Cyberpunk Bazaar, you make your journey to the west, returning to the Neon Slums. The captivating chaos of the bazaar gradually dissolves into the grimy labyrinth of the slums, as the dazzling glow of neon signs and holograms are replaced by dim, grungy neon graffiti. The haggling voices and bustling life give way to a quieter, more somber environment, reminding of harsh survival under the city's formidable shadow."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    }
+]

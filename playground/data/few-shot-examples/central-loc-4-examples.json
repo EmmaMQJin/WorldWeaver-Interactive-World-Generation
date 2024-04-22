@@ -1,0 +1,65 @@
+[{
+    "name": "The Show Room Inside The Castle",
+    "description": "The Show Room Inside the Castle is meant to impress as well as cause fear to whomever enters the room.  The Duke who lives here is a hunter and keeps his captures here.  Some of the thinks preserved and shown on his wall are shocking.  The preserved eyes stare back and let you know the Duke knows no mercy, be careful what you say in this room.  The floor is white like ivory and the walls are also white, but the ceiling is painted and tells a story of the Duke's conquest.",    
+    "connections": {
+    },
+    "travel_descriptions": {
+    },
+    "blocks": {
+    },
+    "items": {},
+    "characters": {
+    },
+    "has_been_visited": false,
+    "commands": [],
+    "properties": {}
+},
+{
+    "name": "Royal Tomb",
+    "description": "This is a large room in the center of the Temple with really high ceilings and there are tombs for every empress and emperor of which are decorated with jewels and treasures and precious stones.",    
+    "connections": {
+    },
+    "travel_descriptions": {
+    },
+    "blocks": {
+    },
+    "items": {},
+    "characters": {
+    },
+    "has_been_visited": false,
+    "commands": [],
+    "properties": {}
+},
+{
+    "name": "The Hall Of The Goddess",
+    "description": "An 80-foot tall bronze statue of a 8 legged Goddess is the centerpiece for this Hall.  On four certain Holy Days in the Calendar, people from across the Continent come to worship at her feet and lay money, flowers, and wishes written on paper at her altar.",    
+    "connections": {
+    },
+    "travel_descriptions": {
+    },
+    "blocks": {
+    },
+    "items": {},
+    "characters": {
+    },
+    "has_been_visited": false,
+    "commands": [],
+    "properties": {}
+},
+{
+    "name": "Temple Foyer",
+    "description": "The temple foyer is a grand entrance with a soaring ceiling painted with the richest cobalt blue and ruby red paints in the entire land. Gold statues welcome the weary traveler with gods depicted in various states of repose. There are windows near the soaring ceilings that let in afternoon light from the east and the west and the floor is inlaid with the finest marble in all the land. A calm water fountain trickles peacefully in the center of the foyer.",
+    "connections": {
+    },
+    "travel_descriptions": {
+    },
+    "blocks": {
+    },
+    "items": {},
+    "characters": {
+    },
+    "has_been_visited": false,
+    "commands": [],
+    "properties": {}
+}
+]
