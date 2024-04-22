@@ -33,7 +33,7 @@ def extract_characters(directory):
     return characters
 
 # Set the directory containing the JSON files
-directory = '/Users/manvikaul/Documents/Classwork/CIS-7000/project/shriyamanvi/WorldWeaver-Interactive-World-Generation/'  # Adjust the path to the directory of your JSON files
+directory = ''  # Adjust the path to the directory of your JSON files
 output_filename = 'extracted_characters.json'  # The filename for the output JSON
 
 # Extract character data
@@ -48,7 +48,7 @@ output_filename = 'extracted_characters.json'  # The filename for the output JSO
 #few shot GPT-4
 def promptGPT(stories, directory):
     if 'HELICONE_API_KEY' not in os.environ:
-        os.environ['HELICONE_API_KEY'] = 'sk-helicone-cp-nivtfgy-pyhuewy-tzhkqva-vuhszwy'
+        os.environ['HELICONE_API_KEY'] = ''
 
 
     client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
@@ -60,15 +60,11 @@ def promptGPT(stories, directory):
         generated = file.read()
 
     prompt = "You are a helpful main character generator for building a text adventure game for the following story:{story}. Generate one main character from this story in a JSON format. Character's inventory should be empty so remember to leave the values to the location and inventory keys empty. The JSON should be in the following JSON format:{form}. Do not generate any previously generated character.Generate a character you have never generated before. No value of any of the keys of the character should match any of the previously generated characters' values. None of the characters should match any character or share any value with any character from {gen}".format(story=stories[0],form=examples[0],gen = generated)
-
-    with open("/Users/manvikaul/Documents/Classwork/CIS-7000/project/shriyamanvi/WorldWeaver-Interactive-World-Generation/data/few-shot-examples/example-character.json", 'r') as file:
-        output = json.load(file)
- 
     messages = [
         {'role': 'system', 'content': prompt},
-        {'role': 'user', 'content': "The example story 1 is : {story}".format(story=stories[0])},
+        {'role': 'user', 'content': "The example story 1 is : {story}".format(story=stories[1])},
         {"role": "assistant", "content": json.dumps(examples[0])},
-        {'role': 'user', 'content': "The example story 2 is : {story}".format(story=stories[1])},
+        {'role': 'user', 'content': "The example story 2 is : {story}".format(story=stories[2])},
         {"role": "assistant", "content": json.dumps(examples[1])}
     ]
     response = client.chat.completions.create(
@@ -81,20 +77,7 @@ def promptGPT(stories, directory):
         presence_penalty=0
     )
     gpt_response = response.choices[0].message.content
-
-    # filename = "analysis.json"
-    # with open(filename, 'r+') as file:
-    #     file.seek(0, 2)  # Move the file pointer to the end of the file
-    #     if file.tell()!=0:
-    #         file.seek(file.tell() - 1, 0)  # Move the file pointer to just before the last character
-    #         file.write(',\n' + json.dumps(json.loads(gpt_response), indent=4) + '\n]')
-    #     else:
-    #         file.seek(0, 0)
-    #         file.write(json.dumps(json.loads(gpt_response), indent=4) + '\n]')
-
-
     return json.loads(gpt_response)
-
 
 def generate_npc(stories, directory):
     print("here in npc")
@@ -113,7 +96,7 @@ def generate_npc(stories, directory):
     client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
 
     try:
-        with open("/Users/manvikaul/Documents/Classwork/CIS-7000/project/shriyamanvi/WorldWeaver-Interactive-World-Generation//data/few-shot-examples/example-character.json", 'r') as file:
+        with open(directory + "data/few-shot-examples/example-character.json", 'r') as file:
             examples = json.load(file)
     except FileNotFoundError:
         print("File not found.")
@@ -123,23 +106,29 @@ def generate_npc(stories, directory):
     for num in range(num_npc):
         print("Generating NPC:", num + 1)
 
-        # Adjusting the index to avoid out of range errors
-        story_index = num % len(stories)  # Loop back to the first story if there are fewer stories than NPCs
-        example_index = num % len(examples)  # Similar wrap-around for examples
-        
         with open(directory+"data/approved_characters.json", "r") as file:
             generated = file.read()
 
+        with open(directory+"data/approved_NPC_characters.json", "r") as file:
+            generated_npc = file.read()
+
         prompt = ("You are a helpful character generator for building a text adventure game for the following story:{story}. Given the "
-                  "background story of the game from the user and the main character of the game, generate one single NPC character "
+                  "background story of the game from the user and the main character:{character} of the game, generate one single NPC character "
                   "in JSON, formatted like the the following JSON format:{form}. Make sure to leave the fields for location and inventory empty. "
                   "Do not generate any previously generated character, i.e. the the generated charecter should not match any character or "
-                  "share any value with any character from {gen}").format(story=stories[0],form=examples[0],gen = generated)
+                  "share any value with any character from {character} OR {NPC} "
+                  "The generated NPC should have the goal of either helping the main character achieve their goal or to prevent them from achieving their  goal."
+                  "The goal should be simple and easy to understand and very specific."
+                  "Do not generate any previously generated character that is in your current context or in any of the files passed to you."
+                  "If you dont see any extra characters in the story for NPC roles, create any character from your imagination that fits the story."
+                  "Generate a character you have never generated before."
+                  "No value of any of the keys of the character should match any of the previously generated characters' values."
+                  "None of the characters should match any character or share any value with any character from {character} OR {NPC}").format(story=stories[0],form=examples[0],NPC = generated_npc, character = generated)
         messages = [
             {'role': 'system', 'content': prompt},
-            {'role': 'user', 'content': "The example story 1 is : {story}".format(story=stories[0])},
+            {'role': 'user', 'content': "The example story 1 is : {story}".format(story=stories[1])},
             {"role": "assistant", "content": json.dumps(examples[0])},
-            {'role': 'user', 'content': "The example story 2 is : {story}".format(story=stories[1])},
+            {'role': 'user', 'content': "The example story 2 is : {story}".format(story=stories[2])},
             {"role": "assistant", "content": json.dumps(examples[1])}
         ]
 
@@ -162,59 +151,3 @@ def generate_npc(stories, directory):
             npc_dict[str(num)] = {"error": "Invalid JSON received"}
 
     return npc_dict
-
-
-
-# def generate_npc(stories, directory):
-#     print("here in npc")
-#     num_npc = 4
-#     num_npc = input("How many NPC charecters do you want to generate? CHoose a number between 0-10 (Default value is 4)")
-#     print("num npc: ", num_npc)
-
-#     client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
-
-#     output = {}
-
-#     with open("/Users/manvikaul/Documents/Classwork/CIS-7000/project/shriyamanvi/WorldWeaver-Interactive-World-Generation/data/few-shot-examples/example-character.json", 'r') as file:
-#         output = json.load(file)
-
-#     with open("/Users/manvikaul/Documents/Classwork/CIS-7000/project/shriyamanvi/WorldWeaver-Interactive-World-Generation//data/few-shot-examples/example-character.json", 'r') as file:
-#         examples = json.load(file)
- 
-#     npc_list = "{"
-#     for num in range(int(num_npc)):
-#         print("iter: ", (num))
-
-#         prompt = "You are a helpful character generator for building a text adventure game. Given the background story of the game from the user and the main charecter of the game, generate one single NPC character in a JSON, formatted like the given examples. Make sure to leave the fields for location and inventory empty. "
-#         messages = [
-#             {'role': 'system', 'content': prompt},
-#             {'role': 'user', 'content': "The background story is : f{story}".format(story=stories[0])},
-#             {"role": "assistant", "content": json.dumps(examples[0])},
-#             {'role': 'user', 'content': "The background story is : f{story}".format(story=stories[1])},
-#             {"role": "assistant", "content": json.dumps(examples[1])}
-#         ]
-
-#         response = client.chat.completions.create(
-#             model='gpt-4',
-#             messages=messages,
-#             temperature=1,
-#             max_tokens=2048,
-#             top_p=1.0,
-#             frequency_penalty=0,
-#             presence_penalty=0
-#         )
-#         print(response.choices[0].message.content)
-
-#         npc_list += "\"{ind}\":".format(ind=num)
-#         npc_list += response.choices[0].message.content
-
-#         if num != int(num_npc)-1:
-#             npc_list += ","
-
-#     npc_list += "}" 
-#     print("npc list: ", npc_list)
-
-#     return json.loads(npc_list)
-
-
-

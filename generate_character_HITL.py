@@ -55,7 +55,7 @@ def human_in_loop_interaction(story, directory):
         
         # Open the new character in Vim for editing
         edited_character = edit_character_in_vim(new_character)
-
+        
         # Show the edited character and ask for approval
         print(json.dumps(edited_character, indent=4))
         user_input = input("Do you approve this character? (yes/no/stop): ").lower().strip()
@@ -70,36 +70,28 @@ def human_in_loop_interaction(story, directory):
         elif user_input == "stop":
             print("Process stopped by user.")
             break
-
-
+        
         new_npcs = generate_npc(story, directory)
-        edited_character = edit_character_in_vim(new_npcs)
-        print(json.dumps(new_npcs, indent=4))
-
+        edited_npc_character = edit_character_in_vim(new_npcs)
+        approved_npc_characters = []
         user_input = input("Do you approve these NPC characters? (yes/no/stop): ").lower().strip()
 
         if user_input == "yes":
-            approved_characters.append(edited_character)
+            approved_npc_characters.append(edited_npc_character)
             # Save immediately if approved
-            with open(directory+"data/approved_characters.json", "a" if os.path.exists(directory+"data/approved_characters.json") else "w") as file:
-                json.dump(approved_characters, file, indent=4)
+            with open(directory+"data/approved_NPC_characters.json", "a" if os.path.exists(directory+"data/approved_NPC_characters.json") else "w") as file:
+                json.dump(approved_npc_characters, file, indent=4)
                 file.write('\n')  # Ensure newline for JSON arrays on subsequent entries
-            print("Character approved and added.")
+            print("NPC Character approved and added.")
         elif user_input == "stop":
             print("Process stopped by user.")
             break
 
 
 # Usage
-
-directory = '/Users/manvikaul/Documents/Classwork/CIS-7000/project/shriyamanvi/WorldWeaver-Interactive-World-Generation/'  # 
+directory = ''  # 
 stories = []
-#stories.append(read_file_to_str(directory+"data/story-rapunzel.txt"))
+stories.append(read_file_to_str(directory+"data/story-rapunzel.txt"))
 stories.append(read_file_to_str(directory+"data/story-cyberpunk.txt"))
 stories.append(read_file_to_str(directory+"data/story-insidetemple.txt"))
 human_in_loop_interaction(stories, directory)
-
-# directory = '/Users/manvikaul/Documents/Classwork/CIS-7000/project/shriyamanvi/WorldWeaver-Interactive-World-Generation/data/extracted_characters.json'  # Adjust the path to the directory of your JSON files
-# story = read_file_to_str("/Users/manvikaul/Documents/Classwork/CIS-7000/project/shriyamanvi/WorldWeaver-Interactive-World-Generation/data/story-cyberpunk.txt")
-# human_in_loop_interaction(story, directory)
-

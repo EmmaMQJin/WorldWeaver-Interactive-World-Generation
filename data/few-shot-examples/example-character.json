@@ -11,10 +11,7 @@
         "name": "Ancient Sentinel",
         "description": "In the depths of the Royal Tomb, an ancient, towering stone golem stands as the last sentinel of a long-forgotten dynasty. With eyes that cast an eerie glow in the shadowy corridors, this guardian has weathered centuries, its form etched with the passage of time yet imposing enough to deter the bravest of hearts.",
         "persona": "It speaks with the authority of ages past, offering safe passage to those who mean no harm to the sacred grounds it protects. Entrusted with the solemn duty to guard the treasures within, it remains ever vigilant, a testament to the grandeur and mystery of the royal lineage it serves.",
-        "location": {
-            "name": "Royal Tomb",
-            "description": "A shadowy, ancient burial site of a long-forgotten dynasty, filled with relics and protected by the Ancient Sentinel."
-        },
+        "location": {},
         "goal": "To protect the treasures and secrets of the Royal Tomb from intruders, allowing only those who pose no threat to enter.",
         "inventory": {}
     }
