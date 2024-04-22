@@ -1,0 +1,2273 @@
+{
+    "player": "Pete the Fisherman",
+    "start_at": "Wharf",
+    "game_history": [],
+    "game_over": false,
+    "game_over_description": null,
+    "characters": [
+        {
+            "name": "Pete the Fisherman",
+            "description": "A seasoned fisherman with a deep tan and gnarled hands from years of casting nets.",
+            "persona": "Aye, it's a tough life, but there's nothin' like it. To be out on the sea, feelin' the tug of a heavy net full of fish.",
+            "location": "Wharf",
+            "goal": "Catch the most elusive fish in the sea.",
+            "inventory": {}
+        },
+        {
+            "name": "Karin the Bartender",
+            "description": "An easy-going, chatty woman with a knack for remembering faces.",
+            "persona": "The best part of my job? The stories. You wouldn't believe what sailors will spill after a few drinks.",
+            "location": "Port Tavern",
+            "goal": "Overhear enough sailor stories to write her own book.",
+            "inventory": {}
+        },
+        {
+            "name": "Marco the Merchant",
+            "description": "A charming and wise man, always eager to strike a good deal.",
+            "persona": "Every good bargain's a story just waiting to unfold. That's why I do it, you see.",
+            "location": "Marketplace",
+            "goal": "Find hidden treasures to sell.",
+            "inventory": {}
+        },
+        {
+            "name": "Stella the Seagull",
+            "description": "A curious and clever seagull always on the hunt for food.",
+            "persona": "Sometimes I think I've got it too good here. Plenty of fish and lots of shiny things to collect.",
+            "location": "Port Skyline",
+            "goal": "Collect shiny objects.",
+            "inventory": {}
+        },
+        {
+            "name": "Captain Barnaby",
+            "description": "A fearsome, grizzled pirate with a booming laugh and a taste for adventure.",
+            "persona": "Life at sea is all I know, and all I ever want to know. There's nothin' a stiff breeze and a sturdy ship can't fix.",
+            "location": "Pirate Ship",
+            "goal": "Find the legendary treasure of the Ocean Queen.",
+            "inventory": {}
+        },
+        {
+            "name": "Clay the Warehouse Manager",
+            "description": "An anxious, keen-eyed man whose life revolves around his work.",
+            "persona": "Stress? Sure. But seeing unit in perfect condition on these shelves? More than worth it.",
+            "location": "Warehouses",
+            "goal": "Ensure accuracy of inventory.",
+            "inventory": {}
+        }
+    ],
+    "locations": [
+        {
+            "name": "Port Skyline",
+            "description": "The local port sits an a majestic inlet of the ocean. The countless docks are constantly bustling with new arrivals and departures. People of all kinds come here for business or leisure. On the shore sits a skyline of many buildings packed with residents going about their day. The smell of salt and seafood fills the air.",
+            "background": "This port has historical roots, as it was the first city founded in the kingdom. It was here that colonizers first landed hundreds of years ago. Now, the city is a hub of the kingdom, where hundreds of thousands live out their lives. The city is a center for the latest technologies of the time and beautiful works of art, literature, and music.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "Travelling south from the port, you pass several bustling market stands, selling a bounty from the sea, before reaching the quiet and scenic Wharf.",
+                "east": "Heading east, you follow a rough cobblestone path until the noise of construction hits your ears; the Royal Shipyard is just up ahead, working vigorously to keep the fleet in top shape."
+            },
+            "connections": {
+                "south": "Wharf",
+                "east": "Royal Shipyard"
+            },
+            "items": {
+                "Old wooden barrel": {
+                    "name": "Old wooden barrel",
+                    "description": "An old weathered wooden barrel looks like it has been here for a while.",
+                    "examine_text": "Looking closer, you can see the barrel is made of oak. To your surprise, it is also half filled with murky water.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Port Skyline"
+                },
+                "Fisherman's net": {
+                    "name": "Fisherman's net",
+                    "description": "A discarded fisherman's net lying by the side of the dock.",
+                    "examine_text": "The net seems neglected and abandoned but still appears sturdy and functional. It's made of durable hemp ropes and intertwined with floats and weights.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Port Skyline"
+                },
+                "Bottle of rum": {
+                    "name": "Bottle of rum",
+                    "description": "A bottle of high-quality rum left on a wooden table.",
+                    "examine_text": "The bottle is half-full and still sealed. The vintage-looking label claims it to be an exotic rum brewed in a distant island.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Port Skyline"
+                },
+                "Seagull": {
+                    "name": "Seagull",
+                    "description": "A fearless seagull is perched on a dock post, eyeing you suspiciously.",
+                    "examine_text": "Upon closer look, this opportunistic bird looks well-fed and healthy. It seems to be accustomed to humans and waits patiently for scraps of food.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Port Skyline"
+                },
+                "Sailor's Hat": {
+                    "name": "Sailor's Hat",
+                    "description": "A pure white sailor's hat lays discarded on the dock.",
+                    "examine_text": "The hat is a bit worn, but still seems to be in good shape. It has the name 'Captain R. Jones' inscribed on the inside.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Port Skyline"
+                }
+            },
+            "characters": {
+                "Stella the Seagull": {
+                    "name": "Stella the Seagull",
+                    "description": "A curious and clever seagull always on the hunt for food.",
+                    "persona": "Sometimes I think I've got it too good here. Plenty of fish and lots of shiny things to collect.",
+                    "location": "Port Skyline",
+                    "goal": "Collect shiny objects.",
+                    "inventory": {
+                        "Scraps of Fish": {
+                            "name": "Scraps of Fish",
+                            "description": "A small pile of fish scraps, leftovers from a fisherman's catch.",
+                            "examine_text": "Upon closer examination, the scraps of fish smell very fresh. The shimmering silver scales contrast against the wriggling pink flesh. It's a meal fit for a gull.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": true,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Shiny Bottle Cap": {
+                            "name": "Shiny Bottle Cap",
+                            "description": "A shiny bottle cap, cast away by some careless human. It gleams under the sun's rays.",
+                            "examine_text": "The shiny bottle cap is made out of tough, yet lightweight metal. Its metallic surface is smooth and clean, reflecting the sunlight beautifully. Even though it's garbage, to someone like Stella, it's a treasure.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Port"
+        },
+        {
+            "name": "Wharf",
+            "description": "The waves lash gently against the wooden posts, the water here has always been calm and passive, it seems to represent the people of this small town. The fishermen here are not boisterous, they are quiet, at least when it comes to sound. They'll talk your ear off if you let them, they have lots of stories to tell. The pier here is long, it extends at least forty feet into the ocean, many ships are anchored to it, many people traverse down it buying and selling their local catches.",
+            "background": "The port is just like any other port. Busy with the bustle and hustle of people buying and selling whatever they can. A connection to the rest of the world, so you'll see people who look like they belong and you'll see people new here as well. You'll also run into a few people who can't afford to buy and will take things from those who may not be paying full attention.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Journeying north to Port Skyline, the hum of the city grows louder as it comes into view, replacing the tranquil sound of water lapping against the pier with the hustle and bustle of a city alive.",
+                "east": "Heading east towards the Loading Dock, the air thickens with the scent of seaweed and salt, intermixed with the heavy smell of cargo and fresh timber.",
+                "south": "Making your way south to the Fish Market, the calls of merchants and the splash of fish hitting ice fill the air, while the salty sea breeze intertwines with the scent of freshly-caught seafood."
+            },
+            "connections": {
+                "north": "Port Skyline",
+                "east": "Loading Dock",
+                "south": "Fish Market"
+            },
+            "items": {
+                "Old Fishing Net": {
+                    "name": "Old Fishing Net",
+                    "description": "A weather-beaten fishing net with traces of sea salt and algae.",
+                    "examine_text": "Upon a closer look, you can see the faded color and fraying threads of the old fishing net. It has seen better days, worn by countless fishing trips and seasoned by the relentless ocean winds.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Wharf"
+                },
+                "Sailor's Hat": {
+                    "name": "Sailor's Hat",
+                    "description": "A sturdy, white sailor hat with blue rimming.",
+                    "examine_text": "Gazing at the sailor's hat, you can feel the culture behind it. There are salt stains and a clear sign of sun fading on it. The fabric is thick and made to last in the harsh marine environment.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Wharf"
+                },
+                "Fresh Fish": {
+                    "name": "Fresh Fish",
+                    "description": "A recently caught and cleaned fish, ready for cooking.",
+                    "examine_text": "Examining the fish, it's glistening and healthy, with eyes clear and bulging. The scent is relatively mild and the flesh firm, clear signs it was recently caught and cleaned.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Wharf"
+                },
+                "Fishing Rod": {
+                    "name": "Fishing Rod",
+                    "description": "A long, flexible rod used for fishing.",
+                    "examine_text": "As you examine the fishing rod, you can see the well-worn handle from years of use. The line seems sturdy and the hook sharp enough to snag any fish.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Wharf"
+                },
+                "Shipping Crate": {
+                    "name": "Shipping Crate",
+                    "description": "A large wooden crate used for shipping goods.",
+                    "examine_text": "Taking a closer look at the shipping crate, you can see the tough wooden panels and hefty iron clasps that hold it together. The crate is filled with an assortment of goods, ready for transport.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Wharf"
+                }
+            },
+            "characters": {
+                "Pete the Fisherman": {
+                    "name": "Pete the Fisherman",
+                    "description": "A seasoned fisherman with a deep tan and gnarled hands from years of casting nets.",
+                    "persona": "Aye, it's a tough life, but there's nothin' like it. To be out on the sea, feelin' the tug of a heavy net full of fish.",
+                    "location": "Wharf",
+                    "goal": "Catch the most elusive fish in the sea.",
+                    "inventory": {
+                        "Old Fishing Rod": {
+                            "name": "Old Fishing Rod",
+                            "description": "An aged, yet reliable fish-catching device owned by Pete the Fisherman.",
+                            "examine_text": "A sturdy rod made of old and polished oak. Its line, although thin and almost invisible, is made from a super-strong, modern fishing wire. The reel, rusted over time, still turns smoothly, and the cork handle is worn down from Pete's persistent grip. This rod might be old, but the stories it could tell would draw the envy of many.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Fish": {
+                            "name": "Fish",
+                            "description": "A silvery, shiny fish caught by Pete the Fisherman.",
+                            "examine_text": "Gleaming scales catch the light, giving the fresh catch a brilliant shine. It's a medium-sized fish, a common sight in the catches made by Pete. Lifelike eyes stare blankly, testament to how recently it was pulled from the ocean's depths. Beneath the smell of the sea, there's a richness--an aroma that promises a delicious meal.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": true,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Hardtack": {
+                            "name": "Hardtack",
+                            "description": "A hard slab of simple biscuit, common food for sailors.",
+                            "examine_text": "The hardtack is essentially a slab of hard, baked flour. It's not the most appetising of Pete's meals, but it serves well enough when there's nary a nibble on the rod. The bread's surface is dry and covered with small holes, likely made to help baking. Despite its simplistic look, this hardtack could very well save you from hunger in a pinch.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": true,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Port"
+        },
+        {
+            "name": "Loading Dock",
+            "description": "The loading dock is filled with life and movement. Many trucks back up into the",
+            "background": "This old loading dock has been used for centuries since the founding of the colony. It has been raided many times in the past by pirates looking to get rich off of its cargo. Without the continued maintenance of this important section of the port, the port itself and the island would not have been able to sustain itself.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Walking from the Loading Dock to the Wharf, you can smell the tang of the sea and hear the cries of the gulls. The wooden planks creak underfoot and you feel at the heart of the town's bustling trade.",
+                "east": "Traveling from the Loading Dock to the Boat House, the smells transition from fresh sea breeze to the musty odors of wood and old beer. The sound of lively chatter grows louder as you get closer, mixing with the occasional scrape of chairs and clink of glass."
+            },
+            "connections": {
+                "west": "Wharf",
+                "east": "Boat House"
+            },
+            "items": {
+                "Crates": {
+                    "name": "Crates",
+                    "description": "Wooden crates stacked haphazardly.",
+                    "examine_text": "The crates, weathered and beaten, hold an array of goods. You can see some marked with symbols and labels in different languages, revealing their diverse origins.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Loading Dock"
+                },
+                "Hook": {
+                    "name": "Hook",
+                    "description": "A large iron hook used for lifting heavy cargo.",
+                    "examine_text": "The hook is big and heavy with a sharp point, it's chunky chain links attached to a large pulley system.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Loading Dock"
+                },
+                "Barrel": {
+                    "name": "Barrel",
+                    "description": "Large wooden barrel.",
+                    "examine_text": "This barrel looks like it has been there for a while. It's wooden slates are beginning to warp, and it's tightly secured with rusty iron bands.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Loading Dock"
+                },
+                "Pirate Hat": {
+                    "name": "Pirate Hat",
+                    "description": "A distinctive, triangular hat.",
+                    "examine_text": "The hat, made of worn leather and adorned with faded gold braiding, has seen better days. The feather that was probably once grand now looks bedraggled.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Loading Dock"
+                },
+                "Sack of Grain": {
+                    "name": "Sack of Grain",
+                    "description": "A heavy sack filled with grain.",
+                    "examine_text": "The sack, made of rough, brown burlap, is full to the brim with golden grains. It's tied tightly with a piece of old, frayed rope.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Loading Dock"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Port"
+        },
+        {
+            "name": "Fish Market",
+            "description": "The port is filled with many different small shops that sell fishes caught throughout the day. It is incredibly loud and busy with many customers and fisherman walking around and haggling for a good price on the fishes. There are tons of boxes sitting on the floors everywhere filled with ice, fish, and the fishermen's belongings.",
+            "background": "The port is right near the ocean and is a place where fisherman come to sell the fishes they caught throughout the early morning. It is a place of business where they sell more than just fish.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "The bustle of the fish market fades into the gentle lapping of waves against the wharf.  Fishermen are quiet, unloading their catches and trading stories.",
+                "east": "Heading east from the fish market, the port becomes quiet and somewhat mysterious. A broken, trash-covered dock suggests caution."
+            },
+            "connections": {
+                "north": "Wharf",
+                "east": "Dock At The Port"
+            },
+            "items": {
+                "Fish Box": {
+                    "name": "Fish Box",
+                    "description": "A sturdy wooden box filled with ice and fresh fishes.",
+                    "examine_text": "This is a solidly built wooden box. It's half filled with small iceberg like pieces of ice and below that, a variety of freshly caught fishes, some still flapping.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Fish Market"
+                },
+                "Fisherman's Net": {
+                    "name": "Fisherman's Net",
+                    "description": "A strong net with rope handles, used by fishermen to catch fish.",
+                    "examine_text": "This is a large meshed net with sturdy rope handles. You see bits of seaweed caught in it and some shiny fish scales reflecting the sun.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Fish Market"
+                },
+                "Fisherman's Hat": {
+                    "name": "Fisherman's Hat",
+                    "description": "A broad-brimmed hat, typically worn by fishermen to protect them from the sun.",
+                    "examine_text": "This hat is made of canvas and has a wide brim to keep the sun off the face. Its well worn, with salt stains and a few fish scales stuck to it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Fish Market"
+                },
+                "Seashells": {
+                    "name": "Seashells",
+                    "description": "Various types of seashells scattered on the ground.",
+                    "examine_text": "There are dozens of different types of seashells scattered across the ground. Some are small and delicate, while others are large and rough.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Fish Market"
+                },
+                "Bottle of Water": {
+                    "name": "Bottle of Water",
+                    "description": "A clear plastic bottle full of water.",
+                    "examine_text": "It's a clear, plastic water bottle. It's sweating a little from the heat, but the water inside looks refreshingly cool.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Fish Market"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Port"
+        },
+        {
+            "name": "Royal Shipyard",
+            "description": "A massive shipyard with different Five dry docks. each dry dock has several wooden cranes and rope works. The dry docks are made of stone and the water gate is all harden wood.",
+            "background": "The birth of a royal navy ship begins in these shipyards. For 200 years master craftsmen and the royal shipwrights make repairs and create more master pieces for the kingdom.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Traveling west leads you through the busy shipyard, where craftsmen continuously work on constructing new ships and repairing old ones. The scent of woodwork and sea salt brings a unique experience.",
+                "south": "Heading south, you leave behind the royal splendor of the shipyard and head towards a less maintained dock. The worn-out path leading to it suggests isolation and some level of secrecy.",
+                "east": "Eastbound takes you through a lively scenario, with bustling crowds and chatter filling the air as people constantly arrive at or depart from the Ferry Terminal."
+            },
+            "connections": {
+                "west": "Port Skyline",
+                "south": "Dock At The Port",
+                "east": "Ferry Terminal"
+            },
+            "items": {
+                "Cranes": {
+                    "name": "Wooden Cranes",
+                    "description": "Massive wooden cranes used for lifting heavy objects.",
+                    "examine_text": "These enormous wooden cranes tower above you, their gears and ropes looking old yet sturdy. They're used for lifting the massive beams of wood that go into constructing the royal ships.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Royal Shipyard"
+                },
+                "Dry Docks": {
+                    "name": "Stone Dry Docks",
+                    "description": "Immense stone structures where ships are built and repaired.",
+                    "examine_text": "The dry docks are magnificent structures, each one carved from stone and filled with equipment and partially constructed ships. This is where the kingdom's marine arts come to life.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Royal Shipyard"
+                },
+                "Water Gate": {
+                    "name": "Hardened Wood Water Gate",
+                    "description": "A large gate made of hardened wood that controls the water entry and exit.",
+                    "examine_text": "The water gate is a massive wooden barrier designed to control the water level in the dry docks. It's made of hardened wood, and you can see the grooves and marks left by countless tide cycles.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Royal Shipyard"
+                },
+                "Shipwrights Tools": {
+                    "name": "Shipwrights Tools",
+                    "description": "Assorted tools used by the royal shipwrights",
+                    "examine_text": "Clutters of hammers, chisels, adzes, saws, and drills, all made with stunning craftsmanship. These tools are used by the skilled shipwrights to create the finest ships in the kingdom.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Royal Shipyard"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Port"
+        },
+        {
+            "name": "Dock At The Port",
+            "description": "This dock has seen better days.  It is wobbly and broken in areas.  There are holes through to the ocean below if you are not careful.  It is covered with every means of trash.",
+            "background": "This dock is used to offload the high sorceress' supplies.  It is only allowed to be used by her and this port is somewhat mysterious as well.  She receives her goods at night and has guards that hover around her at the port.  No one really knows what kind of supplies she is receiving, but most do not want to know.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Traveling north, you make your way through a maze of towering, formidable ships in varying stages of construction within the shipyard, their wooden hulls gleaming under the command of master craftsmen.",
+                "east": "Heading east, the scent of the sea intensifies as the loud cacophony of haggling voices and fishmongers advertising their freshest catches welcomes you to the busy fish market."
+            },
+            "connections": {
+                "north": "Royal Shipyard",
+                "east": "Fish Market"
+            },
+            "items": {
+                "Old Wooden Crate": {
+                    "name": "Old Wooden Crate",
+                    "description": "A weathered wooden crate. It appears to have been here for some time.",
+                    "examine_text": "This crate is considerably damaged by the environmental elements. The wood is rotting, and you can see faded letters. You notice it is sealed with an ancient seal.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Dock At The Port"
+                },
+                "Guard's Shield": {
+                    "name": "Guard's Shield",
+                    "description": "The shiny shield of the sorceress' guard. It appears to be robust and heavy.",
+                    "examine_text": "It's an impressively sturdy piece of work with its metallic surface gleaming. There's a symbol engraved on it - probably a symbol of the sorceress.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": true
+                    },
+                    "location": "Dock At The Port"
+                },
+                "Mysterious Parcel": {
+                    "name": "Mysterious Parcel",
+                    "description": "A small, unopened parcel. It's bound tightly with twine.",
+                    "examine_text": "This package is not big, but it's very intriguing. Dark, thick paper is slightly shiny. It's incredibly neat, and the edges are sealed securely.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Dock At The Port"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Port"
+        },
+        {
+            "name": "Fishmonger'S Stall",
+            "description": "A small booth near the edge of the port, it's protected by a piece of old, sun-bleached sailcloth. Baskets of freshly-caught fish, bivalves, and eels sit in the shade in stained wooden troughs of water. A small, aggressive-looking dog is chained to one table, presumably to keep cats away. The stall is redolent with the aroma of fish.",
+            "background": "Where there's water, there are fish, and where there are fish, there are stories about \"the one that got away\", and of course fishermen. As they can be unpleasantly salty characters unfit for the company of the more genteel sorts of ladyfolk, enterprising individuals act as middlemen, buying fresh-caught seafood from these disreputable sorts and selling them on. This is one such enterprise, which has clearly both been here a while, and not been entirely prosperous.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {},
+            "connections": {},
+            "items": {
+                "Baskets of Fish": {
+                    "name": "Baskets of Fish",
+                    "description": "A variety of freshly-caught fish, glistening in the heat.",
+                    "examine_text": "The fish have been tossed unceremoniously into well-worn wicker baskets. Their scales glint in the sunlight, and their dead eyes stare unfocused at passersby. Despite the heat, the fish smell fresh and salty, a testament to their recent arrival from the sea.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Fishmonger'S Stall"
+                },
+                "Wooden Troughs of Water": {
+                    "name": "Wooden Troughs of Water",
+                    "description": "Sturdy wooden troughs filled with clear sea water, in which various seafood creatures are kept alive.",
+                    "examine_text": "The troughs are crafted from solid oak wood, weathered and stained by salt and time. Inside, water sloshes gently with the movement of the living creatures, refracting the sunlight into bright flashes. Several crabs and bivalves scuttle across the sandy bottom, while eels lurk in shadowy corners.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Fishmonger'S Stall"
+                },
+                "Aggressive-Looking Dog": {
+                    "name": "Aggressive-Looking Dog",
+                    "description": "A wiry, scrappy dog, chained to a table leg and looking for all the world like he would like to bite the nearest hand.",
+                    "examine_text": "The dog\u2019s coat is a ragged blend of gray and brown, its fur missing in places from a life of hard living. Despite his small size, his eyes are defiant, and he bears his teeth at anyone who comes too close. He has a bristled tail which he holds erect, a clear sign of his unfriendly intentions.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Fishmonger'S Stall"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Port"
+        },
+        {
+            "name": "Boat House",
+            "description": "A small house type establishment that serves as a hang out for people about to board the boats.  There is nautical themed decor everywhere.  Life Buoys, mounted fish, replica boats.  It's all wood inside with a bar as well.  A lot of creaky looking wood too, probably weathered a good bit as the house is old itself.",
+            "background": "The boat house has been around for a long time, and it looks like it.  Fishermen consider it a tradition to get plastered here before they head out to sea.  There's also a lot of grungy and depressed looking men in here.  They basically are either at sea fishing, or hanging out in the boat house.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Pacing towards the west, you can sense the industrial hustle and bustle getting louder, as you approach the robust activity of the loading dock.",
+                "south": "Heading south, the smell of bait and fresh sea water grows stronger as you approach the quaint, brimming store of the local fishermen."
+            },
+            "connections": {
+                "west": "Loading Dock",
+                "south": "Fishing Store"
+            },
+            "items": {
+                "Pint of Ale": {
+                    "name": "Pint of Ale",
+                    "description": "A frothy pint of local ale, served in a weathered glass mug.",
+                    "examine_text": "A first glance at a pint of ale would reveal a dark amber color brew with light, effervescent foam bubbling at the top. The glass mug looks faded and weary, having been filled and emptied more times than anyone could count. A faint aroma of hops wafts up from the liquid.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Boat House"
+                },
+                "Life Buoy": {
+                    "name": "Life Buoy",
+                    "description": "A circular life preserver, typically bright orange or red in color.",
+                    "examine_text": "Upon closer inspection, you notice that the life buoy is slightly deflated and frayed around the edges. Despite its worn appearance, the buoy is still a vivid color which would contrast sharply against the water.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Boat House"
+                },
+                "Old Fishing Rod": {
+                    "name": "Old Fishing Rod",
+                    "description": "An old, weathered fishing rod that looks like it has seen better days.",
+                    "examine_text": "Upon carefully examining the fishing rod, you notice its wooden handle is heavily worn and smoothed by countless hands. The reel mechanism is stiff and creaky but still functional. Despite its age, the line still has strength and the hook seems sharp.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Boat House"
+                },
+                "Oak Bar Table": {
+                    "name": "Oak Bar Table",
+                    "description": "A sturdy, weathered oak bar table stained with countless beer rings.",
+                    "examine_text": "Looking closely at the table, you see the grain of the wood worn smooth from years of use and abuse. The oak bar table is filled with etchings, burn marks, and countless beer rings - each telling a different story.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Boat House"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Port"
+        },
+        {
+            "name": "Dock",
+            "description": "There are creaky wooden walkways with empty sections where boats can rest.  There are a few buildings surrounding this area that sell supplies to sailors.",
+            "background": "Sailors come here to dock their boats and get the supplies they need.  They also come to exchange tall tales about the sea.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "As you approach the Pirate Ship, mischievous laughter of pirates fills the air. You acutely sense the danger and excitement that comes with being near such a notorious vessel.",
+                "east": "Stepping aboard the Large Galleon brings on a wave of awe. One can feel the residual energy of the secrets and battles this renowned ship has experienced."
+            },
+            "connections": {
+                "west": "Pirate Ship",
+                "east": "Large Galleon"
+            },
+            "items": {
+                "Old Rope": {
+                    "name": "Old Rope",
+                    "description": "A worn out rope lying on the dock",
+                    "examine_text": "The rope is frayed and stained but is still sturdy. There are signs of saltwater damage and its original color is barely recognizable.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Dock"
+                },
+                "Wooden Crate": {
+                    "name": "Wooden Crate",
+                    "description": "A wooden crate is sitting near one of the buildings.",
+                    "examine_text": "The crate is well-constructed and sturdily shut. It's clearly been used for transporting some sort of goods.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Dock"
+                },
+                "Fisherman's Hat": {
+                    "name": "Fisherman's Hat",
+                    "description": "An old, weather-beaten fisherman's hat has been left on a bench.",
+                    "examine_text": "The hat is faded to a pale shade of its original color. There's a hook stuck on the brim, presumably for holding fishing bait.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Dock"
+                },
+                "Broken Bottle": {
+                    "name": "Broken Bottle",
+                    "description": "Pieces of a broken bottle lie scattered on the dock.",
+                    "examine_text": "The bottle must have shattered on impact, leaving a sharp and potentially dangerous mess.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Dock"
+                },
+                "Torn Sail": {
+                    "name": "Torn Sail",
+                    "description": "A sail is lying on the dock, ripped and tattered",
+                    "examine_text": "The sail is torn beyond repair. It looks like it's seen many storms and has become threadbare from intense usage.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Dock"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Port"
+        },
+        {
+            "name": "Ferry Terminal",
+            "description": "A huge terminal with a lot of traffic. The Ferry Terminal has a warm and positive vibe that welcomes all travelers across the land. It has an open space with a lot of illumination during the night.",
+            "background": "The ferry terminal is the heart of the land. Many travelers have come and departed though this point, always telling new stories about other lands adventures that become live once retold.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Traveling west towards the Royal shipyard involves a scenic walk along the shoreline, where you can view the magnificent ships being built.",
+                "south": "Heading south towards The Docks takes you away from the liveliness of the terminal, and into a more rough and rugged environment, filled with mystery."
+            },
+            "connections": {
+                "west": "Royal Shipyard",
+                "south": "The Docks"
+            },
+            "items": {
+                "Ferry Ticket": {
+                    "name": "Ferry Ticket",
+                    "description": "A small and thin piece of paper indicating passage on the ferry.",
+                    "examine_text": "On closer examination, the paper is durable and water-resistant, with journey details and bar-coding.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Ferry Terminal"
+                },
+                "Traveler's Backpack": {
+                    "name": "Traveler's Backpack",
+                    "description": "A traveler's backpack sits forgotten on a bench.",
+                    "examine_text": "The backpack, although worn and dirty, is clearly made of sturdy material. It's bulging with goods and equipment needed for long journeys.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Ferry Terminal"
+                },
+                "Lunchbox": {
+                    "name": "Lunchbox",
+                    "description": "A bright red lunchbox left sitting on a seat.",
+                    "examine_text": "The lunchbox is plastic, with various food items visible through its transparent lid. The contents appear fresh.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Ferry Terminal"
+                },
+                "Bench": {
+                    "name": "Bench",
+                    "description": "A long wooden bench where travelers wait for their ferries.",
+                    "examine_text": "The bench is well polished with a few scratches and carvings. It looks sturdy enough to sit on.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Ferry Terminal"
+                },
+                "Old Newspaper": {
+                    "name": "Old Newspaper",
+                    "description": "An old newspaper discarded on the floor.",
+                    "examine_text": "The newspaper is dated a few days back. It contains news from across the land.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Ferry Terminal"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Port"
+        },
+        {
+            "name": "Fishing Store",
+            "description": "This store is a small one room stone building with wares laid about on tables.  One can see fishing poles, wooden buckets with dirt and bait inside, along with some mounted trophies.",
+            "background": "Fisherman and sailors alike come here to replenish their supplies.  They also exchange tall tales of mermaids and other extraordinary creatures spotted as sea.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Moving from the Fishing Store to the Boat House, one can feel the air grow thicker with the smell of salt and hear the distant sound of waves. The cobblestone pathway gently slopes downward, leading to the old yet charming wooden establishment known for its harboring fishermen and sailors.",
+                "west": "Walking from the Fishing Store to the Marketplace, the smell of fresh fish gives way to a whirl of different scents. The clamor of people haggling, merchant calls and chatters start to get louder as you navigate through the crowded and vibrant streets.",
+                "east": "Journeying from the Fishing Store to the Port Tavern, the narrow alleys wind through the heart of the port city. The air hums with whispered rumors and soft murmurs as the faint strumming of a lute gets louder, and the tangy scent of ale begins to waft through the salty air."
+            },
+            "connections": {
+                "north": "Boat House",
+                "west": "Marketplace",
+                "east": "Port Tavern"
+            },
+            "items": {
+                "Fishing Pole": {
+                    "name": "Fishing Pole",
+                    "description": "A sturdy fishing pole with a simple manual reel.",
+                    "examine_text": "This fishing pole is well worn, indicating it's been used for a considerable amount of time. The grip is wrapped in worn leather and the hook is sharp.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Fishing Store"
+                },
+                "Wooden Bucket": {
+                    "name": "Wooden Bucket",
+                    "description": "An old wooden bucket filled with dirt and bait.",
+                    "examine_text": "On closer inspection, you can see the bucket is filled with earth and crawling with live worms - perfect bait for fishing.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Fishing Store"
+                },
+                "Mounted Trophies": {
+                    "name": "Mounted Trophies",
+                    "description": "Stunning trophies of large fishes, displayed with pride",
+                    "examine_text": "These trophies are impressive to behold. The mounts hold various types of fish, frozen in a moment of victory.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Fishing Store"
+                },
+                "Fisherman Tales": {
+                    "name": "Fisherman Tales",
+                    "description": "A collection of outrageous and fascinating stories exchanged by fisherman.",
+                    "examine_text": "As you listen to the tales, you're struck by the wild imagination of seafarers; stories of vicious battles with sea monsters, mermaids serenading sailors, and hidden treasures at the bottom of the ocean.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Fishing Store"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Port"
+        },
+        {
+            "name": "Marketplace",
+            "description": "Merchants call out their wares and try desperately to get the attention of the wealthier passerby. People from all over the world hustle to and fro, some keenly eyeing the many tapestries, spices, tools and foods, others openly staring in wonder. Still others hurry along, heads down and avoiding eye contact. Colors, smells and sounds assault the senses. The cries of the gulls can hardly be deciphered from the chatter of the crowds, the ringing of the blacksmith's hammer, the bells of the nearby shipyard, and the hollers of the merchants.",
+            "background": "The marketplace began with the founding of the port town. Gradually as more and more ships rolled in, more products were available, until the marketplace became fundamental to the success and well-being of the town. When the marketplace thrives, the town thrives.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Walking east from the marketplace, colorful stalls and chattering crowds give way to quieter stone buildings. The pungent smell of fish fills the air as you near the Fishing Store, indicating a fresh shipment has just arrived.",
+                "south": "Navigating through the bustling crowd, you head south from the marketplace. The commotion of the marketplace slowly fades into the murmur of sailors and port workers discussing their needs. The wooden sign of the Supply Store comes into view, offering a one-stop solution to their demands."
+            },
+            "connections": {
+                "east": "Fishing Store",
+                "south": "Supply Store"
+            },
+            "items": {
+                "Spices": {
+                    "name": "Spices",
+                    "description": "Small bags of fragrant spices.",
+                    "examine_text": "Each bag contains spices imported from various corners of the world. Each spice has a unique scent and color, ranging from the vibrant red of cayenne pepper to the muted brown of cinnamon.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Marketplace"
+                },
+                "Tapestries": {
+                    "name": "Tapestries",
+                    "description": "Vividly colored tapestries with intricate designs.",
+                    "examine_text": "The tapestries depict various scenes, such as ships sailing the open seas and mythical creatures battling brave heroes. They are carefully woven from delicate threads, and display a wide palette of vibrant colors.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Marketplace"
+                },
+                "Blacksmith tools": {
+                    "name": "Blacksmith tools",
+                    "description": "An assortment of blacksmithing tools",
+                    "examine_text": "The tools on display are well-crafted and sturdy, from hammers and tongs to a variety of chisels. Each tool is black from use but still strong, ready to beat metal into all forms of useful merchandise.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Marketplace"
+                },
+                "Merchant clothes": {
+                    "name": "Merchant clothes",
+                    "description": "Colorful attire typical of a merchant.",
+                    "examine_text": "The clothes, while not overly luxurious, are richly colored and well-kept. It is a mix of vest and breeches, topped with a wide-brimmed hat, the wear of it indicates a merchant of some successful business.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Marketplace"
+                }
+            },
+            "characters": {
+                "Marco the Merchant": {
+                    "name": "Marco the Merchant",
+                    "description": "A charming and wise man, always eager to strike a good deal.",
+                    "persona": "Every good bargain's a story just waiting to unfold. That's why I do it, you see.",
+                    "location": "Marketplace",
+                    "goal": "Find hidden treasures to sell.",
+                    "inventory": {
+                        "Spices": {
+                            "name": "Spices",
+                            "description": "A mix of different exotic spices",
+                            "examine_text": "These aren't the sort of spices you'd find back at home. They\u2019re colorful and fragrant, from far-off lands. Marco proudly tells you that a pinch of these exotic blends can turn a bland dish into a divine feast.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": true,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Silk Fabric": {
+                            "name": "Silk Fabric",
+                            "description": "A roll of fine silk fabric",
+                            "examine_text": "Marco holds out a lustrous, pure roll of silk fabric. It\u2019s smooth to the touch, woven with great care and precision. You notice it\u2019s light, yet sturdy- the sign of true, high-quality silk. Marco claims it was spun in the fabled cities of the east, making it a product of high demand.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Gold Coins": {
+                            "name": "Gold Coins",
+                            "description": "Sparkling gold coins",
+                            "examine_text": "Marco shows you a handful of gold coins with an unusual mint mark. They reflect light beautifully, truly exhibiting their value. Marco explains that these are the currency this port town accepts, and one should always have a few on hand.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Port"
+        },
+        {
+            "name": "Port Tavern",
+            "description": "The port tavern is the shadiest of all the shady bars in the city. Every night, on its grimy stools at the wooden bar, you can find some of the slimiest sailors in the world. The walls are of peeling blue paint and are always dripping with condensation. Women of ill-repute line one wall, old men on the verge of passing out line another. The floor is littered with trash, barnacles, and bodily fluids. Tending the bar is a small, round man with a bushy mustache.",
+            "background": "The port tavern used to be a private domicile. It belonged to a wealthy merchant who lived there with his beautiful wife and daughters. This merchant was intelligent, charming, well-respected, and was addicted to gambling. Luck had been on his side for his entire life, until one night when he was playing cards against local merchants. Out of cash and overconfident, he bet his house to a small, round man with a bushy mustache and a questionable past.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "You walk down the bustling, salt-scented docks, towards a small, stone building that stands apart from the rest, the Fishing Store. You hear tales of far seas being exchanged amongst customers.",
+                "south": "With a brisk sea breeze at your back, you head towards the beckoning mast of the famed \"Purple Pear\". Pirates around you are engaged in a merriment-filled shuffle, dancing to an unseen rhythm."
+            },
+            "connections": {
+                "west": "Fishing Store",
+                "south": "Pirate Ship"
+            },
+            "items": {
+                "Old Barrel": {
+                    "name": "Old Barrel",
+                    "description": "A large weathered barrel stands in the corner.",
+                    "examine_text": "The wooden staves of the barrel are darkened by years of moisture and salt, with few barnacles clinging on. It smells faintly of vinegar and ale.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Port Tavern"
+                },
+                "Rusty Cutlass": {
+                    "name": "Rusty Cutlass",
+                    "description": "An old rusty cutlass hangs on the wall.",
+                    "examine_text": "A single edge curved sword with a pitted and rust-covered blade. The hilt is tarnished brass, wrapped in frayed and discolored leather. Someone clearly hasn't cared for this weapon.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Port Tavern"
+                },
+                "Worn-out Stool": {
+                    "name": "Worn-out Stool",
+                    "description": "A stool that's seen better days sits porously by the counter.",
+                    "examine_text": "The stool's dented cushion and scratched wooden legs tell a story of countless patrons who've shared stories and drinks upon it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Port Tavern"
+                },
+                "Bartender's Apron": {
+                    "name": "Bartender's Apron",
+                    "description": "An apron is hung behind the counter.",
+                    "examine_text": "A leather apron, well-worn and dirty with layers of spilled drinks and food. A few pockets are notable, presumably for extra tips, corks, or small tools.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Port Tavern"
+                },
+                "Unmarked Bottle": {
+                    "name": "Unmarked Bottle",
+                    "description": "A strange unlabeled bottle sitting on a shelf.",
+                    "examine_text": "A glass bottle, filled with a clear liquid. It doesn't advertise what's inside, leaving you to wonder if it's worth a gamble.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Port Tavern"
+                }
+            },
+            "characters": {
+                "Karin the Bartender": {
+                    "name": "Karin the Bartender",
+                    "description": "An easy-going, chatty woman with a knack for remembering faces.",
+                    "persona": "The best part of my job? The stories. You wouldn't believe what sailors will spill after a few drinks.",
+                    "location": "Port Tavern",
+                    "goal": "Overhear enough sailor stories to write her own book.",
+                    "inventory": {
+                        "Pint Glass": {
+                            "name": "Pint Glass",
+                            "description": "A frosty glass that bartender Karin uses to serve her patrons.",
+                            "examine_text": "A simple pint glass, misted over with condensation. It's seen better days, the glass has several minor chips around the edges. It seems to have almost a shroud of mystery, likely having seen countless tales of the sea and the sailors who heeded its call.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Bottle of Rum": {
+                            "name": "Bottle of Rum",
+                            "description": "A large bottle of rum that Karin keeps behind the counter for special occasions.",
+                            "examine_text": "A bottle of dark rum, glowing with a warm amber hue. The label is slightly tattered and faded, suggesting its age and perhaps a bit of its history. The cork stopper on top tightly seals in the potent aroma of spices and alcohol.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": true,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Worn-out Rag": {
+                            "name": "Worn-out Rag",
+                            "description": "A rag that Karin uses to clean the bar and wipe away the grime.",
+                            "examine_text": "An overly used, ragged piece of cloth that has cleaned up countless spills and been wrung out many times. It's tinted with stains from diverse alcoholic beverages and carries a somewhat pungent odor.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Port"
+        },
+        {
+            "name": "Supply Store",
+            "description": "With so many ships docked at the port, sailor from all the ships crowd the bazaar. The supply store is filled with buyers today. The inside is plain and unadorned. Sturdy shelves hold common supplies. Along the walls are the larger items for sale.",
+            "background": "The supply store is run by small family of people who lived in the area before the port was constructed. As sailors needed goods, the family was happy to accommodate them for a price.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Navigating through the huddling masses of merchants and traders, you make your way to the animated marketplace, an explosion of color and liveliness.",
+                "east": "Making your way towards the docks, the salty breeze strokes your face as the looming silhouette of the infamous pirate ship comes into view.",
+                "south": "Skirting around roaming seagulls and seamen hauling crates, your path leads you to the bustling port city of Tamerak, a spirited commotion of sea life."
+            },
+            "connections": {
+                "north": "Marketplace",
+                "east": "Pirate Ship",
+                "south": "The Village Of Tamerak"
+            },
+            "items": {
+                "Wooden Barrel": {
+                    "name": "Wooden Barrel",
+                    "description": "A large wooden barrel stands near the entrance.",
+                    "examine_text": "The barrel is sleek and polished with metal braces, well constructed and sturdy. The smell of aged wood and the sea fills your senses.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Supply Store"
+                },
+                "Nautical Map": {
+                    "name": "Nautical Map",
+                    "description": "A nautical map hangs on the wall behind the counter.",
+                    "examine_text": "A detailed chart, filled with sketches of various coastlines and dotted with extensive notation. It's been well handled and even better loved. The smell of old parchment mixes with the rich aroma of ink.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Supply Store"
+                },
+                "Oil Lamp": {
+                    "name": "Oil Lamp",
+                    "description": "An antique oil lamp flickers on the front counter.",
+                    "examine_text": "The lamp, carefully crafted of brass, gives off a warm, gentle light. It's half filled with oil, the hint of kerosene barely noticeable.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Supply Store"
+                },
+                "Sailor's Knife": {
+                    "name": "Sailor's Knife",
+                    "description": "There's a sailor's knife displayed in a glass case.",
+                    "examine_text": "The knife has a slightly curved blade honed to a sharp edge. Its handle is carved from whale bone with intricate designs. A true sailor's tool.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Supply Store"
+                },
+                "Fisherman's Net": {
+                    "name": "Fisherman's Net",
+                    "description": "A fisherman's net hangs against the wall with other fishing supplies.",
+                    "examine_text": "The net is large, woven from thick rope. Its knots are tight and its weave is strong, perfect for catching fish.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Supply Store"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Port"
+        },
+        {
+            "name": "Pirate Ship",
+            "description": "A majestic, shimmering, black pirate ship sits upon the water. Its numerous cannons give it a menacing look. Tons of pirates hop upon its decks in a furious jig. The lone captain plods around in his cabin, plotting on where to seize his treasure next.",
+            "background": "The pirate ship is called \"The Purple Pear\". It is a ship known to be filled with the rankest of scalawags. It has traversed the Golden Coast dozen of times, seeking defenseless merchants to plunder. Many mariners try to avoid and many authorities try to bring her to justice.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "You disembark the ship, leaving the sea underfoot for the feeling of muddy ground as you step onto the busy pier leading you to the Port Tavern.",
+                "west": "Walking along the bustling towered pier, you follow the scent of salt mixed with packed goods, leading you to the Supply Store.",
+                "east": "Leaving the comfort of your ship, you wander down the wooden planks, the distant loud barter of sailors at the Dock drawing you in."
+            },
+            "connections": {
+                "north": "Port Tavern",
+                "west": "Supply Store",
+                "east": "Dock"
+            },
+            "items": {
+                "Cannon": {
+                    "name": "Cannon",
+                    "description": "A menacing, black cannon.",
+                    "examine_text": "This black cannon is mounted on the side of the pirate ship. You can see its massive bore, awaiting a deadly cannonball. It looks heavily used, with dark residue coating the insides.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Pirate Ship"
+                },
+                "Pirate Hat": {
+                    "name": "Pirate Hat",
+                    "description": "A hat studded with jewels and gold.",
+                    "examine_text": "This Pirate Hat is quite flashy, with gold brims and a big, white feather stuck in it. It is studded with assorted precious gems and a skull and crossbones emblem fills you with dread.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Pirate Ship"
+                },
+                "Treasure Chest": {
+                    "name": "Treasure Chest",
+                    "description": "An old, wooden chest filled with riches.",
+                    "examine_text": "This old chest, battered by time and sea, is overflowing with gold coins, opulent jewelry, and precious gems. It's locked with a hefty metallic lock.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Pirate Ship"
+                },
+                "Bottle of Rum": {
+                    "name": "Bottle of Rum",
+                    "description": "A bottle filled with intoxicating rum.",
+                    "examine_text": "The bottle exudes a soothing aroma that reminds you of spices and caramel. It is filled with a dark, molasses-colored liquid that has a strong, captivating pull.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Pirate Ship"
+                },
+                "Pirate Parrot": {
+                    "name": "Pirate Parrot",
+                    "description": "A colorful parrot, possibly the captain\u2019s pet.",
+                    "examine_text": "This is a color riot, with bright red and green feathers, a pointed orange beak, and observant round eyes. The parrot, says 'Arr', squawks loudly, and fluffs up its feathers.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Pirate Ship"
+                }
+            },
+            "characters": {
+                "Captain Barnaby": {
+                    "name": "Captain Barnaby",
+                    "description": "A fearsome, grizzled pirate with a booming laugh and a taste for adventure.",
+                    "persona": "Life at sea is all I know, and all I ever want to know. There's nothin' a stiff breeze and a sturdy ship can't fix.",
+                    "location": "Pirate Ship",
+                    "goal": "Find the legendary treasure of the Ocean Queen.",
+                    "inventory": {
+                        "Captain Hat": {
+                            "name": "Captain Hat",
+                            "description": "A large black hat with a ruffled feather, marking the position of the ship's captain.",
+                            "examine_text": "The hat, though well-worn, commands respect. The broad brim and the large, flamboyant feather indicate it belongs to someone of authority. A silver skull and crossbones insignia is pinned to the side.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Cutlass": {
+                            "name": "Cutlass",
+                            "description": "An intimidating steel cutlass bearing the marks of countless battles.",
+                            "examine_text": "The cutlass oozes menace, with a curved silver blade that shines dangerously. The handle is wrapped in worn black leather, affording a good grip. Notches along its edge tell tales of epic battles fought and won.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Treasure Map": {
+                            "name": "Treasure Map",
+                            "description": "A faded, yet detailed map leading to a mysterious treasure.",
+                            "examine_text": "On closer inspection, the map reveals several intricate details. Pencil strokes mark the path to the undeclared treasure, winding through several notable landmarks like the Skull Island and the Diamond Shoals. You can almost smell the gold coins and jeweleries through the map.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Port"
+        },
+        {
+            "name": "The Docks",
+            "description": "The docks are a rough place with a lot of rough group of individuals who hang out there.  It is where the ships port and deport, only few know what really goes on there.",
+            "background": "A lot of known criminals like to hang around those parts at night, no body dare say why.  During the day it's where a lot of local fisherman deliver their product.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Traveling north towards the Ferry Terminal, you navigate through the bustling crowd of fishermen, dock workers, and sailors. You can hear the chiming horns of the incoming ferries as you approach.",
+                "east": "Heading east to the Warehouses, you tread carefully along the narrow cobblestone paths, flanked on both sides by towering stacks of crates and boxes filled with goods from lands unknown."
+            },
+            "connections": {
+                "north": "Ferry Terminal",
+                "east": "Warehouses"
+            },
+            "items": {
+                "Fishing Net": {
+                    "name": "Fishing Net",
+                    "description": "A hefty fishing net with thick, tangled ropes.",
+                    "examine_text": "An ordinary but heavy-duty fishing net, it shows signs of regular use. Fish scales are stuck to the rope and it has a distinct, sea-like smell. It's well-knotted and sturdy.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Docks"
+                },
+                "Crate": {
+                    "name": "Crate",
+                    "description": "A large, wooden crate marked with mysterious symbols.",
+                    "examine_text": "The crate is crudely made, with raw wooden planks haphazardly nailed together. Despite its shabby appearance, it seems to be very strong. The symbols on the surface are foreign and enigmatic.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Docks"
+                },
+                "Old Bottle": {
+                    "name": "Old Bottle",
+                    "description": "An old bottle, seems to contain some sort of liquid.",
+                    "examine_text": "An ancient-looking blue glass bottle sealed with a worn-out cork. The liquid inside has a murky brown color, and it smells strongly of alcohol.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Docks"
+                },
+                "Sea Shell": {
+                    "name": "Sea Shell",
+                    "description": "A small, colorful seashell with intricate patterns.",
+                    "examine_text": "This seashell is a rainbow of colors, and it's remarkably smooth to the touch. Its patterns are intricate and they seem to shift as you move the shell under the light.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "The Docks"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Port"
+        },
+        {
+            "name": "Crew Berthing",
+            "description": "The main quarters for the crew of the vessel. Its dirty, smelly and not a place where anyone but a pirate would want to stay. There are bunks stacked on bunks the place is cramped and no one goes there for any reason besides sleeping.",
+            "background": "The room was designed when the ship was built and an entrance to the captains quarters. A small area that was re-purposed so there is more storage on the ship in the old quarters for the loot of the pirates.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "outside": "Exiting the cramped, suffocating quarters of the crew berthing, you step onto the lively decks of the ominous 'Purple Pear'. The air instantly fills with salty sea breeze mingling with the smell of gunpowder."
+            },
+            "connections": {
+                "outside": "Pirate Ship"
+            },
+            "items": {
+                "Bunk": {
+                    "name": "Bunk",
+                    "description": "A cramped, uncomfortable sleeping area.",
+                    "examine_text": "Several rough bunks stacked upon one another, each filled with straw and worn, grimy blankets.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Crew Berthing"
+                },
+                "Rum Bottle": {
+                    "name": "Rum Bottle",
+                    "description": "A half-empty bottle of pirate's rum.",
+                    "examine_text": "A glass bottle filled with a dark, amber liquid. The aroma is strong and hints of notes of spice and molasses.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Crew Berthing"
+                },
+                "Cutlass": {
+                    "name": "Cutlass",
+                    "description": "A worn pirate's cutlass.",
+                    "examine_text": "A long, curved blade with a single edge. Despite its rough appearance, the blade is sharp and rustic. The hilt is wrapped with hardened leather.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Crew Berthing"
+                },
+                "Dirty Clothes": {
+                    "name": "Dirty Clothes",
+                    "description": "A pile of dirty pirate's clothes.",
+                    "examine_text": "These clothes have seen better days. They are stained with sweat, blood, and grime from countless battles and journeys.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Crew Berthing"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Port"
+        },
+        {
+            "name": "Warehouses",
+            "description": "The warehouses are the largest structures in the port, rising well above the adjoining buildings. Constructed from virgin timber, the beams overhead support lofts that are filled to capacity with boxes, crates, and barrels full of goods from all over the world. Carefully checking each parcel that crosses the doorway, the warehouse manager knows exactly where everything belongs inside.",
+            "background": "The warehouse manager wasn't always an anxious man, but last year, some foreign sailors raided the warehouse and stole twelve casks of the finest rum. The owner of the warehouse threatened to send him away on the next ship if anything went missing again. He watches with a keen eye, now, fearful of losing his livelihood, or even his life.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "A short walk down the bustling street takes you from the organised chaos of the warehouse to the unruly anarchy of the docks, where sea-salt air fills your nose and the crescendo of waves crashing against the shore fills your ears.",
+                "north": "Making your way northward, you climb aboard the formidable galleon. The ship creaks in the sea breeze as you feel the sturdy planks under your feet, embracing the promise of grand maritime adventures."
+            },
+            "connections": {
+                "west": "The Docks",
+                "north": "Large Galleon"
+            },
+            "items": {
+                "Crates": {
+                    "name": "Crates",
+                    "description": "Large wooden crates filled with various goods.",
+                    "examine_text": "Crates of sturdy hardwood construction, bearing various different markings and crests denoting their wares and points of origin. Some appear heavy and packed tightly with commodities from distant lands.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Warehouses"
+                },
+                "Warehouse Manager's Ledger": {
+                    "name": "Warehouse Manager's Ledger",
+                    "description": "A hefty ledger containing records of all transactions and stock.",
+                    "examine_text": "This hefty book is filled with pages of hastily scrawled notes and figures, tracking the contents of the warehouse and the transactions made. The lines under the rum section looks significantly more frayed and marked out than the others.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Warehouses"
+                },
+                "Barrels of Rum": {
+                    "name": "Barrels of Rum",
+                    "description": "Large barrels filled with the finest rum.",
+                    "examine_text": "These massive barrels are made with strong oak, bound by iron hoops. An aromatic smell of strong rum wafts from the bungs. The barrels are marked by intricate carvings, indicating the high quality of the liquid inside.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Warehouses"
+                },
+                "Warehousing tools": {
+                    "name": "Warehousing tools",
+                    "description": "Tools used for handling goods, including hooks and robust leather gloves.",
+                    "examine_text": "These are standard tools of the trade for a warehouse worker. The gloves are worn but well-maintained, suggesting frequent use. The hooks are sharp and strong, suited to lifting heavy loads.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": true
+                    },
+                    "location": "Warehouses"
+                }
+            },
+            "characters": {
+                "Clay the Warehouse Manager": {
+                    "name": "Clay the Warehouse Manager",
+                    "description": "An anxious, keen-eyed man whose life revolves around his work.",
+                    "persona": "Stress? Sure. But seeing unit in perfect condition on these shelves? More than worth it.",
+                    "location": "Warehouses",
+                    "goal": "Ensure accuracy of inventory.",
+                    "inventory": {
+                        "Warehouse Key": {
+                            "name": "Warehouse Key",
+                            "description": "A large, sturdy key that feels heavy in your hand.",
+                            "examine_text": "The key is old and tarnished, with intricate patterns etched into the metal. The end of the key is surprisingly sharp.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Clipboard": {
+                            "name": "Clipboard",
+                            "description": "A sturdy wooden clipboard covered in lists.",
+                            "examine_text": "The clipboard holds several thick sheets of paper filled with the handwriting of Clay, the warehouse manager. There's a detailed list of the contents of each box, barrel, and crate in the warehouse, along with their exact locations.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Cup of Coffee": {
+                            "name": "Cup of Coffee",
+                            "description": "A steaming mug of potent coffee.",
+                            "examine_text": "The aroma is strong and rich, promising the kick of caffeine that Clay the warehouse manager needs to get through the day. The coffee is dark black, with no cream or sugar to dilute its potency.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": true,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Port"
+        },
+        {
+            "name": "Large Galleon",
+            "description": "The deck of this rather large ship is strong and freshly swapped with tar. Its mast reaches far into the sky like gleaming pillar of hope and freedom. Its sturdy ship made for long voyages with thick planks and strong rails.",
+            "background": "The ships name is Turk, known for its battle prowess, and seemingly impenetrable hull. It is currently docked in he nearby port, resupplying for the next voyage.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "Descending the gangplank from the Large Galleon, the scent of timber and various goods waft from the monstrous Warehouses nearby.",
+                "west": "Walking towards the west, the creak of wooden planks underfoot grows louder as you approach the Dock, with its hustle and bustle of sailors and traders."
+            },
+            "connections": {
+                "south": "Warehouses",
+                "west": "Dock"
+            },
+            "items": {
+                "Ship's Wheel": {
+                    "name": "Ship's Wheel",
+                    "description": "A large, well-worn ship's wheel used to steer the galleon.",
+                    "examine_text": "The wheel is large and intimidating, clearly showing signs of age and heavy use. The Redwood wood of which it's made from is polished smooth from years of hands gripping and turning it. It's firmly connected to the bulky steering mechanism below deck.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Large Galleon"
+                },
+                "Cannon": {
+                    "name": "Cannon",
+                    "description": "A large, ominous-looking naval cannon.",
+                    "examine_text": "This black iron cannon is securely fixed to the deck. It's exceedingly heavy and it's obvious that it has been used recently. The cannonball and powder are stored separately, to prevent accidental firing.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Large Galleon"
+                },
+                "Rum Barrel": {
+                    "name": "Rum Barrel",
+                    "description": "A robust barrel filled with rum.",
+                    "examine_text": "The barrel is made from solid oak, sturdily built and designed for transport. The pirate's favorite, rum, sloshes around inside. The smell permeating from the barrel is unmistakably that of spiced rum.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Large Galleon"
+                },
+                "Ship's Anchor": {
+                    "name": "Ship's Anchor",
+                    "description": "A heavy, rusted ship's anchor.",
+                    "examine_text": "This anchor is of immense size and heavily encrusted with rust. Though tarnished by the elements, it remains exceedingly sturdy and reliable. It's attached to a thick chain, leading deep into the ship's hull.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Large Galleon"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Port"
+        },
+        {
+            "name": "The Village Of Tamerak",
+            "description": "A thriving sea port filled with merchants, foods, women, and gold.  Hundreds of boats fill the shores, fisherman pushing out to sea and pulling into dock.  Seagulls hover silently above the merchants selling fish.  Pirates can be seen causing trouble with the locals.  Brothels and bars are in abundance, as well as the smell of fish.",
+            "background": "Once a quiet small town near the coast.  This port quickly grew into fame due to a sea monster sighting many years ago.  The monster was said to have eaten a ship whole!  Alas, this was never proven, but it did not stop travelers from embarking to hunt, catch, or see this beast with their own eyes!  The port quickly grew into a city and begot the name after that legendary sea monster, Tamerak.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Wandering north through bustling crowds, between the stalls of shouting merchants and busy trade, the familiar signs of a well-stocked supply store greet your eye.",
+                "west": "Heading west, the scent of briny seawater intensifies with each step as you move towards the creaking wooden docks laden with sailors and their tales.",
+                "east": "To the east, the pulse of the port can be felt in the Quay, alive with longshoremen going about their work by day and intriguing, shadowy individuals by night."
+            },
+            "connections": {
+                "north": "Supply Store",
+                "west": "Dock",
+                "east": "Quay"
+            },
+            "items": {
+                "Old Fishing Net": {
+                    "name": "Old Fishing Net",
+                    "description": "An abandoned net, filled with old fish.",
+                    "examine_text": "Upon closer inspection, the net seems to have been left for ages. Caught in its web are a few dried up and rotten fish.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Village Of Tamerak"
+                },
+                "Pirate's Dagger": {
+                    "name": "Pirate's Dagger",
+                    "description": "A small, sharp blade, belonging to a rugged pirate.",
+                    "examine_text": "The hilt of the dagger is decorated with intricate motifs, clearly indicating that it belongs to a pirate of high rank. The blade, although small, looks sharp and deadly.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "The Village Of Tamerak"
+                },
+                "Lantern": {
+                    "name": "Lantern",
+                    "description": "A rustic lantern that appears to be still burning with a gentle glow.",
+                    "examine_text": "The lantern is hanging from a wooden post, its light flickering gently in the gusts of sea breeze. It looks old yet seems to be well-maintained.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Village Of Tamerak"
+                },
+                "Barrel of Rum": {
+                    "name": "Barrel of Rum",
+                    "description": "A barrel full of rum, left unattended.",
+                    "examine_text": "The smell of rum is strong around you and the barrel is bound together with rusty iron rings. It looks like it was left by pirates.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Village Of Tamerak"
+                },
+                "Tattered Scarf": {
+                    "name": "Tattered Scarf",
+                    "description": "A ripped scarf, blowing in the breeze.",
+                    "examine_text": "A colourful piece of cloth, torn at both ends, is fluttering in the sea breeze. Possibly a lost item, it has probably seen better days.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "The Village Of Tamerak"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Port"
+        },
+        {
+            "name": "Captain'S Cabin",
+            "description": "The captain's cabin is a complete mess. There are multiple maps on the wall, pinned over one another, each with messy writing scrawled over it and multiple X marks in random places. Papers overflow off the desk and across the floor in waves, impeding the captain as he paces, muttering angrily. The bed is messy and unmade, giving the impression that the captain has spent the night tossing and turning. Random objects have been thrown about the room.",
+            "background": "This room is where the captain lets his guard down. He must appear strong and confident for his men, to keep up his reputation and prevent capture, but he is beginning to feel the pressure. Every year there are more and more authorities looking for them, and it is becoming harder and harder to evade them. With the mariners avoiding them it is getting harder  to steal from other ships, and they haven't had any luck finding any treasure for the last two years. Now the captain is exhausted and furious, leading to the disarray of the room.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {},
+            "connections": {},
+            "items": {
+                "Desk": {
+                    "name": "Desk",
+                    "description": "A worn, mahogany desk, covered with papers and old dusty maps.",
+                    "examine_text": "The desk has seen its fair share of use. Deep grooves mark the places where the captain has struck it in his frustration. Among the clutter, you see a compass, yesterday\u2019s half-eaten lunch, and bottles of rum.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Captain'S Cabin"
+                },
+                "Map": {
+                    "name": "Map",
+                    "description": "A pirates' treasure map with cryptic instructions and X marks.",
+                    "examine_text": "It's a worn and faded map with various notes jotted around. You can see multiple X's scattered across the paper, evidently signifying potential treasure locations.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Captain'S Cabin"
+                },
+                "Bottle of Rum": {
+                    "name": "Bottle of Rum",
+                    "description": "A half-filled bottle of aged pirate's rum.",
+                    "examine_text": "The rum is the color of amber, and its strong scent fills your nostrils as you take a closer look. A label on the bottle indicates it's been aged for decades.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Captain'S Cabin"
+                },
+                "Unmade Bed": {
+                    "name": "Unmade Bed",
+                    "description": "A messy, unmade bed.",
+                    "examine_text": "The captain's bed looks as weary as the man himself. The sheets are crumpled and askew, the pillow flattened from countless sleepless nights.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Captain'S Cabin"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Port"
+        },
+        {
+            "name": "Quay",
+            "description": "During the day, the quay is bustling with typical activity of a port: burly longshoremen carry crates and roll barrels away from ships for storage and sailors who still have their sea-legs saunter past on their way to drink and more adventures. By night, the quay is teeming with unsavory characters: men who are hardly men any more after losing their way through drink and gambling hunker amongst coils of rope stiffened by the salt water while rats scramble from box to box gnawing their way into the goods contained inside.",
+            "background": "The quay started as a small platform, but over the years, the port master has extended it, slowly but surely, using bits of old wood from busted ships. Now, it extends far along the water's edge, loaded with fine goods from all over the world.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Travel from the Quay to the Village of Tamerak is a captivating journey. You first navigate through the bustling quay, filled with a variety of traders and mariners. Then, you venture onto a winding path that leads through emerald green hills and overlooks the endless panoramic view of the ocean. Savor the salt-marinated air as you travel west towards a destination filled with exciting tales of the legendary sea monster, Tamerak."
+            },
+            "connections": {
+                "west": "The Village Of Tamerak"
+            },
+            "items": {
+                "Old Wood Plank": {
+                    "name": "Old Wood Plank",
+                    "description": "A piece of wood repurposed from a ship's wreckage. Now, it forms part of the port's extensive quay.",
+                    "examine_text": "This old, rugged plank is surprisingly sturdy despite years of tormented weather and harsh sea breeze. Scratches, dents and hints of mossy green patches are a testament to its age and history. It might not look like much, but the planks hold a piece of maritime history.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Quay"
+                },
+                "Barrel": {
+                    "name": "Barrel",
+                    "description": "An aged wooden barrel, heavily grooved and secured with reinforced iron rings.",
+                    "examine_text": "The barrel looks like a sturdy wooden keg, constructed with bands and staves. It has a distinctive smell of seaweed and timber. On closer inspection, one might notice it reeks of rum or other exotic substances it was once used to carry.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Quay"
+                },
+                "Coil of Rope": {
+                    "name": "Coil of Rope",
+                    "description": "A utilitarian coil of rough hemp rope, stiff from salt saturation.",
+                    "examine_text": "This is a thick, harsh, fibers twisted into a massive coil. Its texture feels undeniably rough, stiffened by countless absorbing and drying cycles of the salty sea water. Untying it reveals its length, enough to moor even the largest of vessels.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Quay"
+                },
+                "Rat": {
+                    "name": "Rat",
+                    "description": "A large, scurrying rat with a gnawed tail and beady eyes.",
+                    "examine_text": "The rat is oversized, possibly due to abundant food from the docking ships. With gnawed tail, sharp claws, twitching whiskers, and beady eyes that reflect the fear of a hunted creature, this rat is a testament to the unsanitary conditions of the port.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Quay"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Port"
+        }
+    ],
+    "actions": []
+}

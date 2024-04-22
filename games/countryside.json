@@ -1,0 +1,2000 @@
+{
+    "player": "Frederick Higgins",
+    "start_at": "Hillside Manor",
+    "game_history": [],
+    "game_over": false,
+    "game_over_description": null,
+    "characters": [
+        {
+            "name": "Frederick Higgins",
+            "description": "A wealthy bookshop owner with a large family.",
+            "persona": "I've always loved books, and my love allowed me to build this manor. I do hope all my children get the chance to live prosperously just like I did.",
+            "location": "Hillside Manor",
+            "goal": "My goal is to ensure my children grow to be successful and happy.",
+            "inventory": {}
+        },
+        {
+            "name": "Maiden",
+            "description": "A woman who values her freedom and lives in the countryside with the animals she has befriended.",
+            "persona": "After escaping a life of servitude, I have finally found peace amidst these rolling hills and friendly animals.",
+            "location": "Maidens Cottage",
+            "goal": "I wish to live my life in peace and tranquility.",
+            "inventory": {}
+        },
+        {
+            "name": "Enchantress",
+            "description": "A powerful woman who resides in a plain but magical cabin in the countryside.",
+            "persona": "Living in this humble abode gives me the serenity I need to focus on my magical studies.",
+            "location": "A Cabin",
+            "goal": "I am trying to keep my identity a secret and live here in peace.",
+            "inventory": {}
+        },
+        {
+            "name": "Traveler",
+            "description": "An adventurer who has seen many places and met many people, and has numerous stories to share.",
+            "persona": "Everywhere I go, I make sure to share the adventures and lessons I have picked up along the way.",
+            "location": "Countryside",
+            "goal": "My goal is to share my experiences with as many people as possible.",
+            "inventory": {}
+        },
+        {
+            "name": "Ghost Knight",
+            "description": "The spirit of a fallen knight who had perished in the ancient battle that took place in the Meadow.",
+            "persona": "I was once a proud knight but fate had a different path for me. Now, I roam these lands - trapped between two worlds.",
+            "location": "Meadow",
+            "goal": "To find eternal rest, I must make amends for my past actions.",
+            "inventory": {}
+        },
+        {
+            "name": "Ghost Knight",
+            "description": "The spirit of a fallen knight who had perished in the ancient battle that took place in the Meadow.",
+            "persona": "I was once a proud knight but fate had a different path for me. Now, I roam these lands - trapped between two worlds.",
+            "location": "Meadow",
+            "goal": "To find eternal rest, I must make amends for my past actions.",
+            "inventory": {}
+        },
+        {
+            "name": "Mysterious Stranger",
+            "description": "A stranger who roams the forest, known by no one in the local lands.",
+            "persona": "I keep to the forest, the wilderness is my home. I do not wish to meddle in the affairs of the locals.",
+            "location": "The Forest",
+            "goal": "All I seek is solitude.",
+            "inventory": {}
+        },
+        {
+            "name": "Farmer Bob",
+            "description": "A hard-working farmer who caters to the village's demand for bacon.",
+            "persona": "It isn't a glamorous job, but it's a necessary one. Plus, I like my pigs.",
+            "location": "Pig Pen",
+            "goal": "My aim is to provide for my family and serve the village.",
+            "inventory": {}
+        }
+    ],
+    "locations": [
+        {
+            "name": "Countryside",
+            "description": "The countryside is quite nice, it's not filled with a lot of people but with travelers here and there. Some in small groups some on their own. They are hosting a campfire where everyone has some to sit and is telling stories about their adventures. Someone is showing local children how to wield some weapons. Another is offering lodge, and stable for travelers and their animals.",
+            "background": "The countryside outside the bazaar has always been well known for being a place for people to relax. As they travel back and forth they can stop by campfires and share stories. It was first started by their king. A lovely man who wanted everyone to try and get to know each other and help each other. When he died his villagers wanted to continue his acts of kindness by offering help to those who passed by.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "The journey to the cabin is a leisurely stroll across the countryside, with wildflowers swaying in the wind all around.",
+                "east": "Traveling east to the Meadows, you meander through green, rolling hills interspersed with colorful spots of flowers.",
+                "south": "The trip to the Small Dirt Road offers a mix of tranquility and vigilance, with serene forests giving way to signs of past confrontations.",
+                "west": "Heading west to the Cottage, the path takes you through cozy landscapes, whispering tales of a time etched in simplicity and togetherness."
+            },
+            "connections": {
+                "north": "A Cabin",
+                "east": "Meadow",
+                "south": "The Small Dirt Road",
+                "west": "Cottage"
+            },
+            "items": {
+                "Campfire": {
+                    "name": "Campfire",
+                    "description": "A blazing campfire in the middle of the countryside",
+                    "examine_text": "The campfire glows with an inviting warmth. Around it, scattered stones provide places to sit. The crackling flames dance on the logs, throwing dynamic shadows on the surrounding environment. Soot coats some of the more charred logs, and leftover firewood sits nearby.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Countryside"
+                },
+                "Traveler's Backpack": {
+                    "name": "Traveler's Backpack",
+                    "description": "A sturdy backpack belonging to one of the travelers",
+                    "examine_text": "The backpack is weathered and bears many patches, each likely telling a story of their own. It is plump with necessities, such as dried food, a water bottle, a compass, a map, and even a small first aid kit. There's also a bedroll neatly tied to the bottom.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Countryside"
+                },
+                "Stick": {
+                    "name": "Stick",
+                    "description": "A wooden stick being used for training by the local children",
+                    "examine_text": "The stick is about a meter long, rather straight, and surprisingly sturdy. It appears to have been striped of its bark and treated to avoid any splinters. Its ends are blunt, making it safe for children.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Countryside"
+                },
+                "Traveler's Coat": {
+                    "name": "Traveler's Coat",
+                    "description": "A heavy woolen coat stowed away by one of the travelers",
+                    "examine_text": "The rugged coat is coated in a layer of dust, but appears to be of high-quality make. It has several deep pockets, a high collar, and sturdy buttons. The inner layer might even be lined with hide for added warmth.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Countryside"
+                }
+            },
+            "characters": {
+                "Traveler": {
+                    "name": "Traveler",
+                    "description": "An adventurer who has seen many places and met many people, and has numerous stories to share.",
+                    "persona": "Everywhere I go, I make sure to share the adventures and lessons I have picked up along the way.",
+                    "location": "Countryside",
+                    "goal": "My goal is to share my experiences with as many people as possible.",
+                    "inventory": {
+                        "Campfire": {
+                            "name": "Campfire",
+                            "description": "A warm, welcoming campfire providing light and warmth.",
+                            "examine_text": "The campfire is crackling invitingly, the flames dancing and weaving in the slight breeze. The heat of the fire is comforting and it provides a source of light in the dusk. You can see bits of wood and charred remnants of logs at the base of the flames.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Traveler's Backpack": {
+                            "name": "Traveler's Backpack",
+                            "description": "A heavy-duty leather backpack belonging to the Traveler.",
+                            "examine_text": "This is a sturdy, leather backpack. It's patched and worn and you can tell it has traveled far and wide. It's filled with essential travel items like a water bottle, a knife, a map, and a diary. The water bottle is half full, and the diary has pages filled with the Traveler's experiences and lessons",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Countryside"
+        },
+        {
+            "name": "Meadow",
+            "description": "This meadow is composed of green, luscious, rolling hills. Flowers dot the expanse. In the evening, one may stand from the hills of this meadow and see the sun set beneath the horizon off in the distance.",
+            "background": "The meadow is the favorite haunt of children, particularly of the nobility. On a cool summer's eve, the children gather here to play their favorite sports.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Walking north from the Meadow, the scent of blooming flowers intensifies as you approach the Flower Field, a spectacular spectacle of vibrant colors that sway gently with the wind, welcoming you with their beautiful display.",
+                "east": "Heading east, the cheerful chirping of birds gets replaced by a deafening silence. The air grows colder as you near the ominous Valley of Doom, its eerie calmness heaving with concealed wickedness that sends a shiver down your spine.",
+                "south": "As you travel south towards the Horse Field, the landscape transitions from grassy terrain to sprawling open fields. The smell of horse musk grows stronger, and you can hear the faint sound of hearty nickers ringing in the air.",
+                "west": "Moving westward to the Countryside, a warm and inviting feel fills the air. You can hear the crackle of lively campfires intertwined with stories of exciting adventures. The sight of travelers leisurely making their way around the bazaar fills your heart with a homely familiarity."
+            },
+            "connections": {
+                "north": "Flower Field",
+                "east": "Valley Of Doom",
+                "south": "Horse Field",
+                "west": "Countryside"
+            },
+            "items": {
+                "Kite": {
+                    "name": "Kite",
+                    "description": "A colorful kite lying on the grass.",
+                    "examine_text": "A vibrant colored kite made of thin, lightweight material. It's surprisingly light given its size. It's ideal for windy days, which is perhaps why it's out here in the vast openness of the meadow.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Meadow"
+                },
+                "Picnic Basket": {
+                    "name": "Picnic Basket",
+                    "description": "A full picnic basket sitting under a lonesome tree.",
+                    "examine_text": "A wicker picnic basket with intricate pattern weaving. It appears to be filled with a delightful assortment of food and drinks \u2014 perfect for a day out in the meadow.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Meadow"
+                },
+                "Flower": {
+                    "name": "Flower",
+                    "description": "A beautiful wildflower growing in the meadow.",
+                    "examine_text": "The flower has beautiful petals - vibrant and full of life, in colours you have never seen before. It's a symbol of the beautiful, untouched nature of this meadow.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Meadow"
+                },
+                "Baseball Bat": {
+                    "name": "Baseball Bat",
+                    "description": "An abandoned baseball bat near a makeshift diamond.",
+                    "examine_text": "The baseball bat has seen some rough games. Even with the scars and dents of many a swing, it still feels strong. It's evidence of the kids' passion for the game.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Meadow"
+                }
+            },
+            "characters": {
+                "Ghost Knight": {
+                    "name": "Ghost Knight",
+                    "description": "The spirit of a fallen knight who had perished in the ancient battle that took place in the Meadow.",
+                    "persona": "I was once a proud knight but fate had a different path for me. Now, I roam these lands - trapped between two worlds.",
+                    "location": "Meadow",
+                    "goal": "To find eternal rest, I must make amends for my past actions.",
+                    "inventory": {
+                        "Ghostly Armor": {
+                            "name": "Ghostly Armor",
+                            "description": "A near-transparent armor radiating with mystic energy.",
+                            "examine_text": "Upon closer inspection, the ghostly armor seems to be made of spectral energies and battle worn. It's as ethereal as the Ghost Knight himself and carries the age-old mark of the knight's crest.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Forgotten Sword": {
+                            "name": "Forgotten Sword",
+                            "description": "A chilly spectral sword, the weapon of the Ghost Knight.",
+                            "examine_text": "It\u2019s not solid, yet not completely ethereal, much like the ghost knight. A once mighty blade is now a spectral weapon manifesting lost bravery and fallen honor. The runes of ancient knightly oath still glow dimly on its surface.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Knight\u2019s Shield": {
+                            "name": "Knight\u2019s Shield",
+                            "description": "A translucent shield bearing the scars of numerous battles.",
+                            "examine_text": "The shield, in its spectral form, carries the imprint of many skirmishes it had to endure. It once was the knight's steadfast defense, and now floats alongside him, bearing ghostly marks and old knight's crest.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Silver Lock Pendant": {
+                            "name": "Silver Lock Pendant",
+                            "description": "An eroding silver pendant resembling a lock \u2013 the key to the knight's living past.",
+                            "examine_text": "Its surface though eroding, shines in an ethereal, ghostly glow. It hangs around the Ghost Knight's neck as if holding onto a memory, whispering tales of love, hope & anguish at the sight of its lost key.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Countryside"
+        },
+        {
+            "name": "Valley Of Doom",
+            "description": "The Valley of Doom is overrun by dead trees and grasses.  Eerie looking animals peer at you through the brushes.  It is a dark and wicked place.",
+            "background": "The Valley of Doom is home to witches and goblins in the region.  People rarely try to pass here because they all know that the evil is afoot.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "up": "You ascend a steep uphill path that leads to a grand manor. The path is adorned with stone statues and vibrant gardens that create an imposing yet majestic atmosphere.",
+                "down": "Making your way down leads you through a lush forest filled with all shades of green and brown. The sounds of chriping birds and rustling leaves surround you as plants grow and flourish.",
+                "outside": "As you journey outside, you encounter a vast, mystic meadow. The emerald green grass dances in the wind and clusters of blue and white flowers are in bloom, adding a touch of enchantment to your journey."
+            },
+            "connections": {
+                "up": "Path To The Manor",
+                "down": "The Forest",
+                "outside": "Meadow"
+            },
+            "items": {
+                "Dead Tree": {
+                    "name": "Dead Tree",
+                    "description": "A dark, crumbling tree. It's leaves are long gone.",
+                    "examine_text": "On closer inspection, the tree looks like it has been dead for a while. The bark is rough and broken in places.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Valley Of Doom"
+                },
+                "Witch Hat": {
+                    "name": "Witch Hat",
+                    "description": "A pointy, black hat often associated with witches.",
+                    "examine_text": "This hat is made of black felt with a wide brim. It's pointy and tall, the cliche hat of witches.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Valley Of Doom"
+                },
+                "Eerie Animal": {
+                    "name": "Eerie Animal",
+                    "description": "An oddly-shaped, dark creature peeking through the bushes.",
+                    "examine_text": "The creature has large, glinting eyes and sharp teeth. It's fur looks coarse and unkempt.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Valley Of Doom"
+                },
+                "Goblin Club": {
+                    "name": "Goblin Club",
+                    "description": "A rudimentary, worn out weapon used by goblins.",
+                    "examine_text": "A crude wooden club, with gnarled handles, and probably used by a goblin. It's quite heavy and blunt.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Valley Of Doom"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Countryside"
+        },
+        {
+            "name": "A Cabin",
+            "description": "Plain, pretty basic wooden cabin.  In a field of wildflowers, there is also a pen for the chickens, a clothes line.",
+            "background": "This cabin, although plain, houses a very powerful enchantress.  The home was given to her by a magical frog who told her that if she lived  here, and lived a basic life, she would live forever.  But now there are people looking for her.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "The journey south is peaceful, with open fields and a serene landscape that eases the mind. The nostalgia of the humble countryside dawns on you as chirping birds fill the silence.",
+                "east": "Traversing eastwards, one realizes the refreshing breath of the wind sweeping over the green expanses. The sight of the quaint Maiden's Cottage in the horizon brings a sense of anticipation and homeliness."
+            },
+            "connections": {
+                "south": "Countryside",
+                "east": "Maidens Cottage"
+            },
+            "items": {
+                "Wooden Table": {
+                    "name": "Wooden Table",
+                    "description": "A sturdy, rough-cut wooden table, cluttered with tools and vials.",
+                    "examine_text": "A sizable table made from a mahogany, which obviously has seen countless seasons. An array of items lie scattered on its surface like tools, vials, a dusty grimoire and an ornate silver knife.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "A Cabin"
+                },
+                "Cooking Pot": {
+                    "name": "Cooking Pot",
+                    "description": "A pot hanging above a cold hearth, residues of its last uses can still be seen.",
+                    "examine_text": "A large, circular iron pot, blackened by countless uses. You can distinguish a dried, crusty outer layer that seems to have been food once.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "A Cabin"
+                },
+                "Enchanted Amulet": {
+                    "name": "Enchanted Amulet",
+                    "description": "A small, green amulet made of jade on the windowsill flickers under the sun.",
+                    "examine_text": "The amulet is surprisingly warm to the touch, vibrating with an unseen power. The jade is smooth and reflects the light in an ethereal glow. Runes are intricately carved into the jade's surface.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "A Cabin"
+                },
+                "Chamber Pot": {
+                    "name": "Chamber Pot",
+                    "description": "A simple chamber pot hides under the wooden bed.",
+                    "examine_text": "A shallow pot made of dull pewter sits in stark contrast to the surrounding items. Blessed with simplicity, it carries out its duty impeccably that is, if it is ever needed.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "A Cabin"
+                }
+            },
+            "characters": {
+                "Enchantress": {
+                    "name": "Enchantress",
+                    "description": "A powerful woman who resides in a plain but magical cabin in the countryside.",
+                    "persona": "Living in this humble abode gives me the serenity I need to focus on my magical studies.",
+                    "location": "A Cabin",
+                    "goal": "I am trying to keep my identity a secret and live here in peace.",
+                    "inventory": {
+                        "Enchanted Amulet": {
+                            "name": "Enchanted Amulet",
+                            "description": "A shiny, mystical amulet belonging to Enchantress",
+                            "examine_text": "Upon close inspection, you notice the gem in the center gleams in different colors depending on the angle. The metal part looks old, but powerful with strange inscriptions.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Book of Enchantments": {
+                            "name": "Book of Enchantments",
+                            "description": "A thick, old book filled with Enchantress's spells and enchantments.",
+                            "examine_text": "The book is bound in leather and looks very old. Pages seem to be made from a kind of parchment. As you flip through the pages, you see beautiful, intricate illustrations accompanying text in a language you don't understand.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Countryside"
+        },
+        {
+            "name": "Cottage",
+            "description": "The small cottage was white with two, shuttered windows. It was in the unique shape of a circle and was built of plaster. Smoke billowed from the chimney.",
+            "background": "The man that lived in the cottage had built it with his own two hands so long ago that nobody could remember a time he didn't live there. He hosted many dinner parties in the home, although it seemed small it could fit many people.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "inside": "As you leave the comfort of the cottage, the lingering warmth slowly fades replaced by the ear-piercing squeals of the pigs. The scent of the pen overpowers you as you approach it.",
+                "outside": "Walking out from the cottage, you are greeted by the fresh air of the countryside. The chirping birds and distant sounds of laughter from travellers around a campfire hint at the friendliness of the place."
+            },
+            "connections": {
+                "inside": "Pig Pen",
+                "outside": "Countryside"
+            },
+            "items": {
+                "Wooden Table": {
+                    "name": "Wooden Table",
+                    "description": "A sturdy, old-fashioned table made of wood.",
+                    "examine_text": "The wooden table is worn but solid, testifying to many years of use. Its surface is full of marks and stains from countless meals and gatherings. Passed down through generations, this table anchors the cottage's primary function as a hub of dining and conversation.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Cottage"
+                },
+                "Vintage Chair": {
+                    "name": "Vintage Chair",
+                    "description": "An old, vintage chair with a well-worn cushion.",
+                    "examine_text": "This vintage chair, with its worn-out cushion, tells tales of years gone by. Though it looks timeworn, sitting in it you can feel its comfortable embrace. Sitting on it, you might let your eyes wander over its years of faithful service in the small cottage.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Cottage"
+                },
+                "Firewood": {
+                    "name": "Firewood",
+                    "description": "Firewood for the fireplace.",
+                    "examine_text": "The firewood is chopped into regular-sized pieces and stacked neatly in a corner. It's dry, and perfectly suited for feeding the warmth of the fireplace on chilly nights.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Cottage"
+                },
+                "Cooking Pot": {
+                    "name": "Cooking Pot",
+                    "description": "A large, old cooking pot.",
+                    "examine_text": "The pot, burnished with age, still shines with a light of its own. It is large enough to prepare hearty meals for groups of people. It carries the mellow scent of countless dishes cooked in it.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Cottage"
+                },
+                "Candlestick": {
+                    "name": "Candlestick",
+                    "description": "A brass candlestick holder.",
+                    "examine_text": "This brass candlestick holder gives an illusion of antiquity. The golden gleam, slightly tarnished by time, dances and reflects soft, warm light during dinner parties.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Cottage"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Countryside"
+        },
+        {
+            "name": "The Small Dirt Road",
+            "description": "This small dirt road is flanked by a lush green forest on each side with birds chirping and the occasional deer running about.  Sometimes, you can find broken down wooden wagons left behind from ambushes carried out by bandits.",
+            "background": "This dirt path is frequently used by peasants and military conveys on their way to local engagements.  If one is not carefully, they can be ambushed by thieves.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "As you move northwards, the cacophony of the bustling bazaar retreats, replaced by the tranquil ambiance of the countryside. Campfire tales of astounding adventures fill the air, forging a sense of escapade.",
+                "east": "Turning east onto the nearby road, you'll find your path flanked by a diversified view of fenced fields and grassy meadows. After dusk, an eerie quietude descends due to the spirit-infested locality."
+            },
+            "connections": {
+                "north": "Countryside",
+                "east": "Nearby Road"
+            },
+            "items": {
+                "Broken Wooden Wagon": {
+                    "name": "Broken Wooden Wagon",
+                    "description": "An old wooden wagon, left in ruins",
+                    "examine_text": "The wood, brittle and weathered, has signs of degradation. It's been lying here for a while, shell of a wagon abandoned after probably being attacked by the bandits. Perhaps you might find something useful if you search carefully.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Small Dirt Road"
+                },
+                "Walking Stick": {
+                    "name": "Walking Stick",
+                    "description": "A rough cut walking stick",
+                    "examine_text": "A sturdy wooden walking stick that a traveler must have lost. It's slightly taller than your waist and quite sturdy, indicating a natural woodcraft. It might be useful for walking or as a self-defense tool.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "The Small Dirt Road"
+                },
+                "Apple": {
+                    "name": "Apple",
+                    "description": "A ripe apple",
+                    "examine_text": "A juicy red apple, probably fallen from a nearby tree. It looks fresh enough to be eaten.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Small Dirt Road"
+                },
+                "Leather Cuirass": {
+                    "name": "Leather Cuirass",
+                    "description": "A tattered leather cuirass",
+                    "examine_text": "Despite its weathered appearance, this leather cuirass holds a certain rustic charm. It might not be the best protection against a steel blade, but it's better than nothing.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "The Small Dirt Road"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Countryside"
+        },
+        {
+            "name": "The Forest",
+            "description": "The forest has many trees. It has other plants too. There are animals and many livings things. The forest is very much full of life. When you look at it you might only see plants that are green and different shades of brown but there are many other living things in there too.",
+            "background": "The forest started out as a small amount of plants and then the plants kept growing and growing until they were vast. After the plants were very grown the animals and all the small livings things decided to make some houses in the plants.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "outside": "Venturing outwards, you traverse through entangled vines and towering trees leading into a gloomy atmosphere. The cries of unknown creatures echo around you as the Forest reluctantly releases you into the Valley Of Doom.",
+                "inside": "Venturing inwards, the shadowy forest opens up revealing a sunlight-sprinkled meadow. The stench of damp earth and foliage slowly shift to a fragrant, heady mix of wildflowers and fresh grass. Welcome to the blissful Lush Meadow in the Country Side."
+            },
+            "connections": {
+                "outside": "Valley Of Doom",
+                "inside": "Lush Meadow In The Country Side"
+            },
+            "items": {
+                "Wooden Stick": {
+                    "name": "Wooden Stick",
+                    "description": "A long and sturdy stick from one of the forest trees.",
+                    "examine_text": "The stick is straight and unbroken, with a slightly rough texture. Small notches and scars on its surface indicate it may have been gnawed on by forest critters.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "The Forest"
+                },
+                "Leaf Pile": {
+                    "name": "Leaf Pile",
+                    "description": "A pile of fallen leaves, resplendent in their autumnal hues.",
+                    "examine_text": "The leaves are crunchy and dry, and their edges have curled up. Their colors are a splendid mix of red, orange, yellow, and brown. It looks like they\u2019ve served as a bed and hiding place for small insects.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Forest"
+                },
+                "Mushrooms": {
+                    "name": "Mushrooms",
+                    "description": "A cluster of plump mushrooms sprouting from the base of a tree.",
+                    "examine_text": "The mushrooms are a creamy white with a smooth, shiny surface. They're firm to the touch and their earthy aroma fills the air. It's hard to tell if they're edible without proper knowledge.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Forest"
+                },
+                "Berry Bush": {
+                    "name": "Berry Bush",
+                    "description": "A bush bearing clusters of wild berries.",
+                    "examine_text": "The berries are small, ripe and delightfully coloured. Their sweet-sour aroma is noticeable from some distance. As tempting as it may seem to a wanderer, it's crucial to identify them correctly before consumption.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Forest"
+                }
+            },
+            "characters": {
+                "Mysterious Stranger": {
+                    "name": "Mysterious Stranger",
+                    "description": "A stranger who roams the forest, known by no one in the local lands.",
+                    "persona": "I keep to the forest, the wilderness is my home. I do not wish to meddle in the affairs of the locals.",
+                    "location": "The Forest",
+                    "goal": "All I seek is solitude.",
+                    "inventory": {
+                        "Wooden Stick": {
+                            "name": "Wooden Stick",
+                            "description": "A simple wooden stick found on the forest floor.",
+                            "examine_text": "This stick appears to be a broken branch from a nearby tree. It is dry, rough and sturdy. A decent tool for a traveler through the forest.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Apple": {
+                            "name": "Apple",
+                            "description": "A fresh, ripe apple. These grow wildly throughout this forest.",
+                            "examine_text": "The apple has a bright-red hue, indicating it's perfectly ripe. It feels slightly cool to touch and has an inviting scent. A few leaves still hang onto the stem.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": true,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Countryside"
+        },
+        {
+            "name": "Path To The Manor",
+            "description": "The outside of the manor is rather imposing with a large stone building and two immense guardian sculptures on the outside depicting mythical beasts. There are also small gardens to the left and right.  The main path itself is a cobbled one that only beckons visitors if they are worthy enough.",
+            "background": "A wealthy lord lives here and he comes back at the end of a long day directing peasants on their daily duties.  Few are allowed inside except for the lord's family, servants, and invited guests.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "down": "Descending towards the Valley of Doom, the atmosphere grows colder and darker, filling with an eerie sense of foreboding as the stark landscape of dead trees and withered grass spreads out around.",
+                "north": "Heading north towards the Main Gate, the path becomes straighter and the surroundings more orderly. The towering gate, flanked by watchtowers, stands as an unwavering sign of strength and security."
+            },
+            "connections": {
+                "down": "Valley Of Doom",
+                "north": "Main Gate"
+            },
+            "items": {
+                "Cobbled Path": {
+                    "name": "Cobbled Path",
+                    "description": "A robust and ancient pathway leading to the majestic manor.",
+                    "examine_text": "Years of countless feet pounding upon the path have worn the stones smooth. Some stones bear intricate patterns from an age long past.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Path To The Manor"
+                },
+                "Guardian Sculptures": {
+                    "name": "Guardian Sculptures",
+                    "description": "Two immense statues depicting mythical beasts, stands guard at the entrance of the manor.",
+                    "examine_text": "These beasts are carved from stone and show a level of craftsmanship that is hard to fathom. They exude an aura of majesty and protection.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Path To The Manor"
+                },
+                "Manor Gardens": {
+                    "name": "Manor Gardens",
+                    "description": "Small, well-kept gardens flanking both sides of the path.",
+                    "examine_text": "Filled with varying species of vibrant flowers, the gardens bloom with colours. The air is fresh and sweet with their fragrance.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Path To The Manor"
+                },
+                "Carriage": {
+                    "name": "Carriage",
+                    "description": "A stately carriage parked in front of the path.",
+                    "examine_text": "The carriage is made of polished dark wood, with wheels and fixtures of pristine brass. Its interior is richly furnished, indicating the wealth and status of its owner.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Path To The Manor"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Countryside"
+        },
+        {
+            "name": "Pig Pen",
+            "description": "A filthy pen where tons of squalling pigs rut and throw a ruckus, Their snorts and farts can be heard from any passerby miles before getting to the pen. The pig pen is a few feet from Farmer Bob's cottage. The pigs never sleep and are always eating and playing in the mud.",
+            "background": "The pig pen is where the village gets its bacon from Farmer Bob. Although no one likes going past the place, everyone knows it is a necessity for good bacon.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "outside": "Travelling from the Pig Pen towards the cottage outside, the smell of pigs decreases and is replaced by the comforting scent of a warm home. The clanking sound of the cooking utensils in the kitchen gets louder as you get closer."
+            },
+            "connections": {
+                "outside": "Cottage"
+            },
+            "items": {
+                "Bristly Pig": {
+                    "name": "Bristly Pig",
+                    "description": "A big, bulbous pig with bristles like needles sticking out of its round body.",
+                    "examine_text": "This pig is huge, probably the biggest in the pen. Its bristles are sharp and thick. It snorts loudly and wobbles around, looking for more food to eat. Its body is caked in a mix of mud and pig droppings.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Pig Pen"
+                },
+                "Farmer Bob's Pitchfork": {
+                    "name": "Farmer Bob's Pitchfork",
+                    "description": "A rustic wrought iron pitchfork.",
+                    "examine_text": "The pitchfork is covered in rust and patches of dried mud. The handle is a hand-hewn from a piece of hardwood, though it shows signs of significant wear. It's dirty but sturdy.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Pig Pen"
+                },
+                "Feeding Trough": {
+                    "name": "Feeding Trough",
+                    "description": "A large wooden trough filled with pig feed.",
+                    "examine_text": "The feeding trough is large, and bolted onto the posts of the pig pen. It's filled with a mixture of corn, oats, and other grains.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Pig Pen"
+                },
+                "Pig Slop": {
+                    "name": "Pig Slop",
+                    "description": "A bowl containing the leftovers that the pigs are fed.",
+                    "examine_text": "The bowl is filled with a bunch of leftovers, ranging from stale bread to moldy vegetables. A very unappetizing, foul smell emanates from it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Pig Pen"
+                }
+            },
+            "characters": {
+                "Farmer Bob": {
+                    "name": "Farmer Bob",
+                    "description": "A hard-working farmer who caters to the village's demand for bacon.",
+                    "persona": "It isn't a glamorous job, but it's a necessary one. Plus, I like my pigs.",
+                    "location": "Pig Pen",
+                    "goal": "My aim is to provide for my family and serve the village.",
+                    "inventory": {
+                        "Farmers Bob's Pitchfork": {
+                            "name": "Farmers Bob's Pitchfork",
+                            "description": "A sturdy, well-used pitchfork with a wooden handle.",
+                            "examine_text": "This pitchfork is well-used, with clear signs of wear and tear. Despite this, it's kept in good condition. The tines are still sharp and the handle is sturdy, though the wood is weathered. The initials 'B.B.' are carved into the handle.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Bristly Pig": {
+                            "name": "Bristly Pig",
+                            "description": "A large, bristly pig mucking about in the mud.",
+                            "examine_text": "This pig is massive, and probably among the older pigs in the pen. Its hide is pockmarked with coarse, bristly hair, giving it a rough texture. Despite its size, it seems friendly and quite happy in its muddy home. You can't help but notice it is also incredibly well-fed.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": true,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Countryside"
+        },
+        {
+            "name": "Meadow",
+            "description": "Large clear outdoor meadow. Flowers of blue and white appearing in bunches here and there. The grass glows with a green light. Not much can be said about its appearance, however there is a mystical allure associated with the place as if a meadow for spirits instead of livestock.",
+            "background": "A great battle once held here. The battle was not between Soldiers and knights. But by wizards and strange ones. It is said to be haunted for the most part, but tales have been told that men have received great visions of wisdom while walking the meadow.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Traveling north from the Meadow, your path leads you through a shifting array of colourful wildflowers. The sweet scent of the blossoms fills the air as you approach the Flower Field.",
+                "east": "Heading east, the lush, verdant grasses of the Meadow transition into a barren landscape, brittle under the scorching sun. The oppressive air grows heavy with foreboding as you near the Valley of Doom.",
+                "south": "Making your way south, you leave the spectral serenity of the Meadow behind. The ground underfoot turns gritty and hard, as the distant rhythm of galloping horses accompanies your journey towards the Horse Field.",
+                "west": "To the west, the open expanse of the Meadow narrows into winding paths bordered by lush vegetation. The murmuring of storytelling travelers grows louder as you approach the Countryside."
+            },
+            "connections": {
+                "north": "Flower Field",
+                "east": "Valley Of Doom",
+                "south": "Horse Field",
+                "west": "Countryside"
+            },
+            "items": {
+                "Ancient Sword": {
+                    "name": "Ancient Sword",
+                    "description": "An ancient rusty sword, discarded and forgotten.",
+                    "examine_text": "The sword is rusted over, but chants from the past battles it witnessed still echo around it. You feel a strange chill when you get too close.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Meadow"
+                },
+                "Mystic Flowers": {
+                    "name": "Mystic Flowers",
+                    "description": "A bunch of blue and white flowers, radiating with a mystical energy.",
+                    "examine_text": "The flowers seem out of this world, each petal carrying a separate aura which shimmers in the daylight. You feel a magnetic pull towards them.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Meadow"
+                },
+                "Glowing Grass": {
+                    "name": "Glowing Grass",
+                    "description": "The meadow's grass, glowing with a strange phosphorescent light.",
+                    "examine_text": "Upon close inspection, the grass is warm and carrying light. It hums with an unknown energy.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Meadow"
+                }
+            },
+            "characters": {
+                "Ghost Knight": {
+                    "name": "Ghost Knight",
+                    "description": "The spirit of a fallen knight who had perished in the ancient battle that took place in the Meadow.",
+                    "persona": "I was once a proud knight but fate had a different path for me. Now, I roam these lands - trapped between two worlds.",
+                    "location": "Meadow",
+                    "goal": "To find eternal rest, I must make amends for my past actions.",
+                    "inventory": {
+                        "Ghostly Armor": {
+                            "name": "Ghostly Armor",
+                            "description": "A near-transparent armor radiating with mystic energy.",
+                            "examine_text": "Upon closer inspection, the ghostly armor seems to be made of spectral energies and battle worn. It's as ethereal as the Ghost Knight himself and carries the age-old mark of the knight's crest.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Forgotten Sword": {
+                            "name": "Forgotten Sword",
+                            "description": "A chilly spectral sword, the weapon of the Ghost Knight.",
+                            "examine_text": "It\u2019s not solid, yet not completely ethereal, much like the ghost knight. A once mighty blade is now a spectral weapon manifesting lost bravery and fallen honor. The runes of ancient knightly oath still glow dimly on its surface.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Knight\u2019s Shield": {
+                            "name": "Knight\u2019s Shield",
+                            "description": "A translucent shield bearing the scars of numerous battles.",
+                            "examine_text": "The shield, in its spectral form, carries the imprint of many skirmishes it had to endure. It once was the knight's steadfast defense, and now floats alongside him, bearing ghostly marks and old knight's crest.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Silver Lock Pendant": {
+                            "name": "Silver Lock Pendant",
+                            "description": "An eroding silver pendant resembling a lock \u2013 the key to the knight's living past.",
+                            "examine_text": "Its surface though eroding, shines in an ethereal, ghostly glow. It hangs around the Ghost Knight's neck as if holding onto a memory, whispering tales of love, hope & anguish at the sight of its lost key.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Countryside"
+        },
+        {
+            "name": "Peasant'S Cottage",
+            "description": "The peasant's cottage is a fairly simple wood building with a straw thatched roof.  Inside, you have a fireplace and large pot for cooking, a long wooden dinner table, and some hay filled beds lying on the floor.  There are two chests lying inside with personal belongings such as clothes and family heirlooms.",
+            "background": "The peasants come here to enjoy a meal and rest at the end of a long day.  There are also some celebrations to be had here.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "inside": "The journey from the cottage to the chicken pen is a short and familiar one, passing by rows of crops and the soft clucking of hens nearby.",
+                "outside": "Traveling to Hillside Manor from the cottage involves a gradual ascent up a scenic pathway, where the sights of the rolling hills and beautiful countryside can be appreciated."
+            },
+            "connections": {
+                "inside": "Chicken Pen",
+                "outside": "Hillside Manor"
+            },
+            "items": {
+                "Pot": {
+                    "name": "Pot",
+                    "description": "A large cooking pot.",
+                    "examine_text": "A large and sooty pot hangs above the centrally positioned fire. It's iron surface blackened from countless meals prepared over an open flame. It seems sizable enough to prepare a meal for a good number of people.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Peasant'S Cottage"
+                },
+                "Wooden Table": {
+                    "name": "Wooden table",
+                    "description": "A long, solid wooden table",
+                    "examine_text": "Worn yet solid, the wooden table spans majority of the room. It has seen years of meals and has numerous dents and marks to prove it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Peasant'S Cottage"
+                },
+                "Hay Bed": {
+                    "name": "Hay Bed",
+                    "description": "Rough hay-filled bed for sleeping",
+                    "examine_text": "Filled with hay and covered with a simple cloth, the bed offers a simple yet occasionally prickly place of rest.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Peasant'S Cottage"
+                },
+                "Chest": {
+                    "name": "Chest",
+                    "description": "Wooden chest for storing belongings",
+                    "examine_text": "Carved with simple designs, the wooden chest lies at the end of the bed. The lock seems to be crudely fashioned but effective in its job. It's likely hiding some valuable belongings",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Peasant'S Cottage"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Countryside"
+        },
+        {
+            "name": "Flower Field",
+            "description": "The flower field contains acres of wild growing flowers that are a bright pink when they are in bloom. There are woods surrounding it, but no trees in the field, only flowers. There are paths that work their way through the field.",
+            "background": "In the springtime you can often find women out picking flowers and children playing. People often wander the paths to clear their heads.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "Heading southward from the flower field will lead you into the meadow. As you step on the soft grass, the scent of flowers and dew fills the air. The tranquil sound of the wind swaying through the grasslands blends perfectly with the chirping of nearby crickets, making for a peaceful journey."
+            },
+            "connections": {
+                "south": "Meadow"
+            },
+            "items": {
+                "Picnic Basket": {
+                    "name": "Picnic Basket",
+                    "description": "A charming, wicker picnic basket with a blue checked cloth.",
+                    "examine_text": "The picnic basket is a classic wicker style, with a blue checked cloth peaking out from under the lid. A small lock secures the contents from nosy critters.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Flower Field"
+                },
+                "Pink Flowers": {
+                    "name": "Pink Flowers",
+                    "description": "Dazzling, pink wildflowers sway in the gentle breeze.",
+                    "examine_text": "The pink wildflowers, sprawling across the field, bloom vibrantly under the warm sun. Their sweet aroma rides on the breeze, enchanting any passersby.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Flower Field"
+                },
+                "Butterfly Net": {
+                    "name": "Butterfly Net",
+                    "description": "A lightweight net for catching small creatures.",
+                    "examine_text": "The butterfly net has a long, wooden handle and a deep, carefully woven net at the end, perfect for snagging fluttering butterflies on sunny days.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Flower Field"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Countryside"
+        },
+        {
+            "name": "Nearby Road",
+            "description": "The road cuts through the countryside. It is a dirt road, with a fence lining the eastern side and a grassy meadow to the west.",
+            "background": "During the ancient battle, the road was used to carry supplies to the wizards army. The strange ones lived in the wilderness, so they didn't use roads. Since the battle ended, the road has been used as a passageway between towns for merchants and travelers. It isn't used after dark, however, due to the spirits that tend to haunt the area.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Walking westward, you embark on a small dirt road flanked by a lush forest. Occasionally, you catch sight of a deer flickering through the trees and hear birds chirping in the distance.",
+                "east": "To the east, a grand villa on the hilltop becomes visible as you approach the Hillside Mansion. The journey is a spectacle itself, offering a picturesque view of the verdant countryside."
+            },
+            "connections": {
+                "west": "The Small Dirt Road",
+                "east": "Hillside Mansion"
+            },
+            "items": {
+                "Old Fence": {
+                    "name": "Old Fence",
+                    "description": "An age-worn wooden fence lining the eastern side of the road.",
+                    "examine_text": "Upon closer examination, you notice the wood has worn thin and some sections rotting. Inscriptions in an old language are carved into some of the planks, possibly warnings or charms.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Nearby Road"
+                },
+                "Dirt Road": {
+                    "name": "Dirt Road",
+                    "description": "Well-worn passageway that cuts through the countryside.",
+                    "examine_text": "You feel the crunch of dirt and small pebbles beneath your feet. The road has countless signs of passage: shoe prints of travelers, wheel tracks of merchant carts, and perhaps even the faint trace of an old battle.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Nearby Road"
+                },
+                "Merchant Cart": {
+                    "name": "Merchant Cart",
+                    "description": "Merchant cart filled with goods for trading.",
+                    "examine_text": "The cart is big and sturdy, filled with goods of different kinds: fruits, spices, woven cloths, pottery.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Nearby Road"
+                },
+                "Spectral Orb": {
+                    "name": "Spectral Orb",
+                    "description": "A floating spectral orb, a sign of the spirits that haunt the area.",
+                    "examine_text": "The ghostly orb floats above the ground, casting an eerie glow. Despite its supernatural appearance, it seems benign, perhaps even guiding lost travelers.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Nearby Road"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Countryside"
+        },
+        {
+            "name": "Horse Field",
+            "description": "The horse field includes a huge plains for horses to ride. The fields are yellow and green. The place smells of musk and horse.",
+            "background": "The horse fields are respected for their beauty and plainness. They make a great location to train knights and peasants in the art of riding.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Traveling to the meadow from the horse field is a peaceful journey. The path gently slopes upwards through verdant valleys and you can watch as horses joyfully frolic alongside."
+            },
+            "connections": {
+                "north": "Meadow"
+            },
+            "items": {
+                "Riding Crop": {
+                    "name": "Riding Crop",
+                    "description": "A tool used to control horses",
+                    "examine_text": "This short, stout crop looks like it was made for a horse jockey. It is made of leather and has a small loop at the end.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Horse Field"
+                },
+                "Hay Bale": {
+                    "name": "Hay Bale",
+                    "description": "A large block of dried grass",
+                    "examine_text": "The hay bale is large and smells of summer. It's rough to touch, but animals would find this lush.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Horse Field"
+                },
+                "Horse Trough": {
+                    "name": "Horse Trough",
+                    "description": "A container for horse feed or water",
+                    "examine_text": "This long wooden trough is filled with water. It's large enough to accommodate multiple horses.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Horse Field"
+                },
+                "Training Sword": {
+                    "name": "Training Sword",
+                    "description": "A wooden sword used for training",
+                    "examine_text": "This sword is of good length and weight but is clearly only for training. It's tipped with a blunt point.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Horse Field"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Countryside"
+        },
+        {
+            "name": "Lush Meadow In The Country Side",
+            "description": "Green large trees surround the meadow that if filled with beautiful seasonal flowers. A deer is grazing in the far end of the field. A small dirt country road gentle crooks past on the outside of the road.",
+            "background": "This is gods country. No man could have anything this beautiful. The local government knew it and had this area set away as a protected area years ago.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "outside": "The journey from the lush meadow to the forest is a mesmerizing path. The sudden transition from blooming flowers to towering trees and the chirping of birds harmonizing with the rustling leaves creates an enchanting mood."
+            },
+            "connections": {
+                "outside": "The Forest"
+            },
+            "items": {
+                "Picnic Blanket": {
+                    "name": "Picnic Blanket",
+                    "description": "A large, plaid patterned picnic blanket spread out on the green turf",
+                    "examine_text": "A well worn and comfortable blanket with a red and black checkered pattern. It's large enough to accommodate a small group of people.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Lush Meadow In The Country Side"
+                },
+                "Woven Picnic Basket": {
+                    "name": "Woven Picnic Basket",
+                    "description": "A sturdy, woven picnic basket with a cluster of delicious food inside",
+                    "examine_text": "This picnic basket seems to have been made from cherry wood. It contains variety of food including bread, cheeses, fruits and a bottle of vintage wine.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Lush Meadow In The Country Side"
+                },
+                "Apple": {
+                    "name": "Apple",
+                    "description": "A shiny, red apple is in the picnic basket",
+                    "examine_text": "A bright red apple, freshly picked. So shiny you could almost see your reflection in it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Lush Meadow In The Country Side"
+                },
+                "Vintage Wine Bottle": {
+                    "name": "Vintage Wine Bottle",
+                    "description": "A bottle of vintage wine from 1967",
+                    "examine_text": "This wine comes from an old vineyard. The label suggests it was bottled in 1967; it must have been a good year.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Lush Meadow In The Country Side"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Countryside"
+        },
+        {
+            "name": "Maidens Cottage",
+            "description": "Free standing in the vast countryside, with gentle rolling hills and lush green grass and vegetation sits the cottage. There are a couple of Oak trees close to the cottage as the only tall trees around for miles. Colorful Dandelions, perennials, and daisies grow wildly and freely along the hills.",
+            "background": "After escaping from being a servant at a large plantation hundreds of miles north, a young maiden found her way to this vast countryside and built herself this cottage. She was able to herd some sheep, and find a few horses that she led to live in the hills around her cottage to keep her company. These animals keep the grasslands around the cottage neat from the feeding.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "The journey to the west leads you across the gently rolling hills, dotted with daisies and dandelions. The lush green pasture gives way to a slightly more dense woodland as you approach a quaint, wooden cabin."
+            },
+            "connections": {
+                "west": "A Cabin"
+            },
+            "items": {
+                "Washed Wooden Table": {
+                    "name": "Washed Wooden Table",
+                    "description": "A sturdy table made from white-washed oak.",
+                    "examine_text": "The table bears the signs of many meals and much activity, with several small scratches and stains marring the otherwise well kept surface. There's a warm, welcoming feel to it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Maidens Cottage"
+                },
+                "Ceramic Mug": {
+                    "name": "Ceramic Mug",
+                    "description": "A locally crafted ceramic mug.",
+                    "examine_text": "The mug is well used, chipped on the rim but still perfectly functional. There's the slight residue of a drink at the bottom.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Maidens Cottage"
+                },
+                "Sheep Wool Sweater": {
+                    "name": "Sheep Wool Sweater",
+                    "description": "A thick sweater made from the wool of the sheep.",
+                    "examine_text": "The sweater is thick and warm. It's been hand-knit, and you can see the love that went into every stitch.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Maidens Cottage"
+                },
+                "Woven Basket": {
+                    "name": "Woven Basket",
+                    "description": "A handmade basket woven with the branches of the oak trees.",
+                    "examine_text": "The basket is large and sturdy. It's been carefully woven, and the branches still retain some of their natural bend.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Maidens Cottage"
+                }
+            },
+            "characters": {
+                "Maiden": {
+                    "name": "Maiden",
+                    "description": "A woman who values her freedom and lives in the countryside with the animals she has befriended.",
+                    "persona": "After escaping a life of servitude, I have finally found peace amidst these rolling hills and friendly animals.",
+                    "location": "Maidens Cottage",
+                    "goal": "I wish to live my life in peace and tranquility.",
+                    "inventory": {
+                        "Sheep Wool Sweater": {
+                            "name": "Sheep Wool Sweater",
+                            "description": "A cozy, handmade sweater knitted with the wool from local sheep.",
+                            "examine_text": "The white wool seems weathered but still holds its integrity well. The knitting is intricate, showing the effort and time put in to create this. It's slightly prickly, yet extraordinarily warm.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Hay": {
+                            "name": "Hay",
+                            "description": "Clumps of dried grass, forming a pile of hay.",
+                            "examine_text": "Looking closely you notice the hay is slightly golden; it crinkles upon touch and leaves a dust residue. This hay has been well handled and freshly cut.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": true,
+                                "is_gettable": false,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Countryside"
+        },
+        {
+            "name": "Main Gate",
+            "description": "The main gate is tall and strong enough to protect the mansion from invaders, and has large wooden doors reinforced by planks and steel sheets. There are two towers on either side of the gate for the town's watchmen to use as their post.",
+            "background": "The mansion's main gate is built to be strong enough to protect the royalty inside the mansion from robbers and invaders alike, who might try to batter down the gate. The gate can only be opened by two of the mansion's servants.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "Journeying south, you're guided along the ornate, cobblestone path leading up to the grand manor. The imposing statues and flourishing gardens give an air of both foreboding and beauty.",
+                "inside": "Entering the Hillside Manor, one is met with a warm, lively atmosphere. The sound of cheerful chatter of Higgins' family can be heard echoing through the hallways."
+            },
+            "connections": {
+                "south": "Path To The Manor",
+                "inside": "Hillside Manor"
+            },
+            "items": {
+                "Tall Gate": {
+                    "name": "Tall Gate",
+                    "description": "A towering gate made of wood and steel.",
+                    "examine_text": "The gate stands tall and mighty, offering a formidable first line of defense. The edges of the gate are reinforced with steel, making it nearly impossible to breach. It shows signs of weathering, but still holds strong.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Main Gate"
+                },
+                "Watch Tower": {
+                    "name": "Watch Tower",
+                    "description": "Stone towers located either side of the gate.",
+                    "examine_text": "The stone towers are packed with gravel and show signs of aging. Iron bars protect the windows, and the towers serve as the watchman's lookout point. You spot a few instruments for signaling.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Main Gate"
+                },
+                "Watchman's Horn": {
+                    "name": "Watchman's Horn",
+                    "description": "A horn used by the watchmen for signaling.",
+                    "examine_text": "A long, brass horn with a flared opening. It's used by the watchmen for signaling any signs of danger. It\u2019s well polished and the light bounces off it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Main Gate"
+                },
+                "Iron Lantern": {
+                    "name": "Iron Lantern",
+                    "description": "A lantern hanging by the gate.",
+                    "examine_text": "The lantern is rusty and old. It takes up residence on a hook by the gate, casting a dim light around the area. It looks like it could be removed from its hook.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Main Gate"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Countryside"
+        },
+        {
+            "name": "Hillside Mansion",
+            "description": "I sweeping villa that rests on the grand hills. Everyone can see how grand it is when they approach from the country road. A tall, wrought-iron fence surround its grounds, which extends for miles.",
+            "background": "The grand villa was built there by the Red Baron two centuries ago. As not many people have been invited inside, no one really know what it looks like or what the Red Baron is up to. It is a mysterious dwelling, but one that brings great beauty to passersby.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "A serene walk down the hill, with the mansion soon shrinking behind, taking the countryside road towards the west. It's a travel filled with lush greenery, the calming chirping of birds, and an overarching sense of serenity."
+            },
+            "connections": {
+                "west": "Nearby Road"
+            },
+            "items": {},
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Countryside"
+        },
+        {
+            "name": "Chicken Pen",
+            "description": "The chicken pen has wire cages situated on three different levels, with hay at the bottom for the chicken's to sit in. There lie small holes in the cages for the eggs to fall through and be easily harvested by the farmers. The old wooden walls of the chicken pen are beginning to deteriorate and show signs of age.",
+            "background": "The chicken pen is used to provide eggs for the family living in the cabin to eat, and even sell if they have a surplus. The chicken in there are raised by the mother of the family while the father goes hunting.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "outside": "Walking from the chicken pen to the peasant's cottage involves navigating a small field, where one can hear the chickens clucking behind them. The grass crunches underfoot, and the humble wooden structure of the cottage slowly grows in the frame of vision."
+            },
+            "connections": {
+                "outside": "Peasant'S Cottage"
+            },
+            "items": {
+                "wire_cages": {
+                    "name": "Wire cages",
+                    "description": "Three-tier cages built from wires.",
+                    "examine_text": "Wire cages, stacked in three levels, a well thought design allowing eggs to fall through for easy collection. Each has hay at the bottom for the chickens to sit comfortably.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Chicken Pen"
+                },
+                "hay": {
+                    "name": "Hay",
+                    "description": "Dry, fluffy, yellow hay.",
+                    "examine_text": "Dry hay, usually found at the bottom of the cages meant for the chickens to nest in. Adds a rustic smell in the air.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Chicken Pen"
+                },
+                "chicken_eggs": {
+                    "name": "Chicken eggs",
+                    "description": "Fresh, round chicken eggs.",
+                    "examine_text": "White to pale, brown eggs laid by the resident chickens. A staple for the family's diet and means of income.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Chicken Pen"
+                },
+                "old_wooden_walls": {
+                    "name": "Old wooden walls",
+                    "description": "Deteriorated wooden walls",
+                    "examine_text": "The pen's wooden walls have seen better days. Weather and age had worn them down, but they still serve their purpose of enclosing the chickens.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Chicken Pen"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Countryside"
+        },
+        {
+            "name": "Hillside Manor",
+            "description": "A quaint manor that sits in the rolling hills. It is surrounded by a small stone fence and looks quite inviting to passersby. It looks like any other home that a well off business man would own.",
+            "background": "The manor is owned by Frederick Higgins, a wealthy bookshop owner. He built the manor 20 years ago, as his bookshop was doing quite well. He lives there with his 10 sons and daughters and loving wife. It is a noisy abode, but a lively one.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "outside": "Leaving the hillside manor, you walk down a gravel path flanked by a small stone fence until you reach the imposing sight of the Main Gate.",
+                "east": "Heading east from the manor, you stroll through verdant pastures, the fresh scent of grass and wildflowers accompanying you as you venture towards the humble Peasant'S Cottage."
+            },
+            "connections": {
+                "outside": "Main Gate",
+                "east": "Peasant'S Cottage"
+            },
+            "items": {
+                "Old Liquor Bottle": {
+                    "name": "Old Liquor Bottle",
+                    "description": "An old bottle of liquor, left unattended.",
+                    "examine_text": "An aged bottle of expensive brandy. It appears to have been opened but left mostly full. There are scuff-marks on the base suggesting it's been slid across the table frequently.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Hillside Manor"
+                },
+                "Leather-bound Book": {
+                    "name": "Leather-bound Book",
+                    "description": "A worn leather-bound book, left open on the table.",
+                    "examine_text": "An intricately decorated book, bound in soft leather. It's well-read and the gold leaf along the edge of the pages have been slightly scratched off from multiple readings. The book is written in archaic language, possibly Latin.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Hillside Manor"
+                },
+                "Hand-knitted Shawl": {
+                    "name": "Hand-knitted Shawl",
+                    "description": "A delicate, hand-knitted shawl, draped over the back of the couch.",
+                    "examine_text": "The shawl is soft and stitched with precision. It radiates warmth when held, despite being so thin and fine. It is clearly handmade and there's a small tag that reads 'Made by Mommy for Lily'.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Hillside Manor"
+                },
+                "Large Oak Table": {
+                    "name": "Large Oak Table",
+                    "description": "A large oak table that dominates the room.",
+                    "examine_text": "A grand table made from a single piece of oak, polished to a high shine. It provides an imposing presence in the room, decorated ominously with numerous nicks and scratches indicating the many years of dinners and discussions it has borne witness to.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Hillside Manor"
+                }
+            },
+            "characters": {
+                "Frederick Higgins": {
+                    "name": "Frederick Higgins",
+                    "description": "A wealthy bookshop owner with a large family.",
+                    "persona": "I've always loved books, and my love allowed me to build this manor. I do hope all my children get the chance to live prosperously just like I did.",
+                    "location": "Hillside Manor",
+                    "goal": "My goal is to ensure my children grow to be successful and happy.",
+                    "inventory": {
+                        "Leather-bound Book": {
+                            "name": "Leather-bound Book",
+                            "description": "A finely made book with a leather cover.",
+                            "examine_text": "The book\u2019s leather cover boasts a rich, earthy color. The pages are a warm, aged hue and, upon opening, exude the subtlest scent of cedar and old paper - invoking a sense of nostalgia. The text appears to be some sort of historical narrative, written in an elegant script.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Quill Pen": {
+                            "name": "Quill Pen",
+                            "description": "A beautifully crafted quill pen.",
+                            "examine_text": "The quill is made from the feather of a peacock, the vibrant colors glistening subtly in the light. The nib is crafted from gold, polished to a high shine. It rests within a delicate holder, filled with jet-black ink that seems to shimmer with an unseen depth.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Countryside"
+        }
+    ],
+    "actions": []
+}

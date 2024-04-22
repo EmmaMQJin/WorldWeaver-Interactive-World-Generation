@@ -1,0 +1,69 @@
+[
+    {
+        "name": "The Forest Guardian",
+        "description": "A spirit entity known to wander around the forest, protecting animals from harm's way.",
+        "persona": "They call me the Forest Guardian. I was born from the whispers of trees and the cries of animals, destined to protect them.",
+        "location": {},
+        "goal": "To preserve the harmony between the forest and the world beyond.",
+        "inventory": {}
+    },
+    {
+        "name": "The Lost Explorer",
+        "description": "An adventurer who got separated from his party and is trying to find his way back.",
+        "persona": "I am an explorer, a seeker of adventure. But I made a wrong turn somewhere and now, the forest is a haunting labyrinth.",
+        "location": {},
+        "goal": "To find my way out of the forest and reunite with my team.",
+        "inventory": {}
+    },
+    {
+        "name": "The Forest Child",
+        "description": "A young girl raised by animals in the forest, she communicates with them and understands nature better than anyone.",
+        "persona": "I am a child of the forest. I was raised by the wolves, befriended the birds, and played with squirrels.",
+        "location": {},
+        "goal": "To live in peace with my forest family and protect it from any harm.",
+        "inventory": {}
+    },
+    {
+        "name": "The Rogue Hunter",
+        "description": "A man who hunts in the forest for survival, disregarding the laws established by the forest guardian.",
+        "persona": "Survival is the only rule in nature. Laws don't feed my family. I am the hunter and this is my hunt-ground.",
+        "location": {},
+        "goal": "To hunt successfully without being caught by the Forest Guardian.",
+        "inventory": {}
+    }
+,
+[
+    {
+        "name": "The Mountain Sculptor",
+        "description": "A seasoned craftsman who chisels art from the local mountains.",
+        "persona": "I am the sculptor of the ranges, carving life into the heart of stone. The mountains speak to me, and I translate their tales through my art.",
+        "location": {},
+        "goal": "To sculpt the perfect piece that encapsulates the spirit of the mountains.",
+        "inventory": {}
+    },
+    {
+        "name": "The River Songstress",
+        "description": "A melodious voice that echoes through the river valleys, singing the stories of the water.",
+        "persona": "I am the siren of the river banks, my songs flow with the currents. I sing the tale of the river, from its birth to its meeting with the sea.",
+        "location": {},
+        "goal": "To compose a song as timeless as the river itself.",
+        "inventory": {}
+    },
+    {
+        "name": "The Starry Sage",
+        "description": "A wise old man who studies the stars, often lost in the celestial world.",
+        "persona": "The universe speaks to me through its twinking lights, narrating its cosmic tales. My destiny is woven into the starlight.",
+        "location": {},
+        "goal": "To decipher the key to existence within the constellations.",
+        "inventory": {}
+    },
+    {
+        "name": "The Forest Forager",
+        "description": "A cunning figure, navigating the dense woods looking for rare ingredients.",
+        "persona": "I know every tree, every animal, and every plant in this forest. This is my pantry, my canvas and my sanctuary.",
+        "location": {},
+        "goal": "To find the mythical Starbright Mushroom rumored to bloom under a lunar eclipse.",
+        "inventory": {}
+    }
+]
+]

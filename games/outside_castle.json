@@ -1,0 +1,1450 @@
+{
+    "player": "King Omako III",
+    "start_at": "Outside Castle",
+    "game_history": [],
+    "game_over": false,
+    "game_over_description": null,
+    "characters": [
+        {
+            "name": "King Omako III",
+            "description": "Old and wise, King Omako III is a striking figure with his deep blue robes, long white beard, and a crown that signifies his status.",
+            "persona": "I am the protector of the realm and my people's source of wisdom. My reign has been marked by prosperity and peace.",
+            "location": "Outside Castle",
+            "goal": "Maintaining peace and prosperity in his realm.",
+            "inventory": {}
+        },
+        {
+            "name": "War Officer",
+            "description": "Stout and robust, the War Officer is always seen wearing his red officer coat and golden buttons.",
+            "persona": "I ensure our kingdom's defenses remain impeccable, ready to protect our land from any threat.",
+            "location": "Beyond The Wall",
+            "goal": "Ensuring the castle remains secure and well protected.",
+            "inventory": {}
+        },
+        {
+            "name": "Stable Boy",
+            "description": "The stable boy is a young lad named Tom with dirt on his face and straw in his hair.",
+            "persona": "I'm Tom, the stable boy. It's my job to groom and look after the horses.",
+            "location": "Stable",
+            "goal": "Keep the horses happy and healthy.",
+            "inventory": {}
+        },
+        {
+            "name": "Fletcher",
+            "description": "An old man with silver hair, the Fletcher has a certain allure of knowledge and experience.",
+            "persona": "I'm skilled in the art of making bows and arrows, honing them for the master archers.",
+            "location": "Arrow House",
+            "goal": "Crafting the perfect bow and arrow.",
+            "inventory": {}
+        },
+        {
+            "name": "Castle Guard",
+            "description": "A tall, broad-shouldered man, guard Dan is charged with keeping the barracks in check.",
+            "persona": "I, Dan, am at the front of the line when danger calls, ready for action at any moment.",
+            "location": "The Barracks",
+            "goal": "Ensuring safety within the castle.",
+            "inventory": {}
+        },
+        {
+            "name": "Court Jester",
+            "description": "The jester is a lively character, always adorned in his multicolored costume and headpiece with bells, providing entertainment in the castle.",
+            "persona": "I bring laughter and joy to the castle with my jokes and jests.",
+            "location": "Entrance To Castle",
+            "goal": "Making the denizens of the castle laugh.",
+            "inventory": {}
+        },
+        {
+            "name": "Mysterious Ghost",
+            "description": "An apparition haunting the Acid Yard, it is said that the ghost was once a prisoner under the mad king.",
+            "persona": "I am bound to this place by the horrors of my past, forever lurking in the shadows.",
+            "location": "The Acid Yard",
+            "goal": "Finding peace after a lifetime of torment.",
+            "inventory": {}
+        }
+    ],
+    "locations": [
+        {
+            "name": "The Barracks",
+            "description": "Run down and smelly, the barracks houses a dozen of the king's guardsmen.  It's made of wooden slats nailed together somewhat hastily, and the brisk air from the outside whistles through some small cracks between the panels.  There are six beds in an open sleeping quarter, with a wooden chest at the end of the bed where the guardsmen store their personal belongings.",
+            "background": "The barracks mainly serves as the sleeping quarters for the guardsmen when they're off duty.  After a long day of keeping the castle exterior secure, the guardsmen need a place to lie down and rest, as well as eat and drink.  Guardsmen need be on call frequently, so the barracks is very close to the castle should a danger arise and the men need be called upon.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "The journey from the barracks to the stable consists of a short stroll across the courtyard. The sound of horses neighing grows louder as you approach.",
+                "north": "Heading north towards the archery zone, the clatter of practice arrows hitting targets grows increasingly closer as the lush green grass crunches beneath your feet.",
+                "west": "To reach the weapons storage room, you must traverse the castle grounds, passing by training soldiers and the occasional royal guard. The air grows denser with the scent of cold steel and well-oiled weaponry."
+            },
+            "connections": {
+                "east": "Stable",
+                "north": "Archery Zone",
+                "west": "The Weapons Storage Room"
+            },
+            "items": {
+                "Wooden Bed": {
+                    "name": "Wooden Bed",
+                    "description": "A simple, somewhat uncomfortable looking bed.",
+                    "examine_text": "The bed appears to be hastily constructed from rough wooden beams. It doesn't look particularly comfortable, but would provide a place to rest.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Barracks"
+                },
+                "Wooden Chest": {
+                    "name": "Wooden Chest",
+                    "description": "A sturdy wooden chest used to store personal belongings.",
+                    "examine_text": "The chest is made of strong oak, reinforced with iron bands. It's filled with personal items belonging to the guards.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Barracks"
+                },
+                "Od Bow": {
+                    "name": "Old Bow",
+                    "description": "An old, well-used longbow.",
+                    "examine_text": "The bow is well-worn and shows signs of frequent use. Despite its age, it still looks like it could shoot an arrow accurately.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "The Barracks"
+                },
+                "Guard's Uniform": {
+                    "name": "Guard's Uniform",
+                    "description": "A royal guard's uniform, neatly folded.",
+                    "examine_text": "The uniform is made of a strong cotton fabric. It's a deep green color with the royal coat of arms embroidered on the chest.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "The Barracks"
+                }
+            },
+            "characters": {
+                "Castle Guard": {
+                    "name": "Castle Guard",
+                    "description": "A tall, broad-shouldered man, guard Dan is charged with keeping the barracks in check.",
+                    "persona": "I, Dan, am at the front of the line when danger calls, ready for action at any moment.",
+                    "location": "The Barracks",
+                    "goal": "Ensuring safety within the castle.",
+                    "inventory": {
+                        "Guard's Uniform": {
+                            "name": "Guard's Uniform",
+                            "description": "A worn-out uniform, rustling with the echoes of countless battles.",
+                            "examine_text": "The guard's uniform is made of a heavy woolen fabric dyed a deep blue. It has clearly seen a lot of wear and tear. Blood stains, dirt, and indistinguishable grime are visible on the exterior, with patches of fabric visibly sewn together at ripped parts. The emblem of the castle is skilfully embroidered on the chest. Notably, it's designed to provide convenience for the wearer with a simple, one-layer design.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Old Bow": {
+                            "name": "Old Bow",
+                            "description": "An old yew bow, unstrung but still sturdy.",
+                            "examine_text": "The old bow is made from yew wood, shaped perfectly into an arc. It's unstrung but still strong and sturdy. Despite its age and wear, a bit of its initial shine still gleams through the scratches and dents. On closer examination, there are etchings on the grip possibly from past owner's marking their own significant kills or events. This item exudes a palpable aura of countless battles and a single, resolute purpose.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Castle"
+        },
+        {
+            "name": "Stable",
+            "description": "It's constructed from old mossy stone from the nearby river. The horse's stalls inside are wooden. There is hay scattered across a dirt floor. Along the walls there are rustic tools, such as rakes, pitch forks and tools created by the blacksmith. The grain for the horses is stored in clay pottery. Regal and majestic Thoroughbred horses occupy the stables.",
+            "background": "The stable houses all of the king's horses, so it is necessary to be very clean. The groomsmen make sure the horses are always clean, with the hooves properly shooed on the horses. The horses always have on the king's livery colors, displaying the kings crest and colors. Sometimes, you will find some of the stable workers sleeping in the loft, on a fresh stack of hay. It is a bit drafty and musty, but clean and dry. The king insists that it looks clean and presentable, as often the royal family will go riding or shooting.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Travelling north, the path is worn and covered with hay, a testament to the many horse trips made from the stables.",
+                "south": "Moving south, the smell of musty timber and the faint chattering of guardsmen can be heard as you approach the barracks.",
+                "west": "Heading west, the path is well-trodden, leading towards the looming silhouette of the sturdy main gate."
+            },
+            "connections": {
+                "north": "Horse Stables",
+                "south": "The Barracks",
+                "west": "Main Gate"
+            },
+            "items": {
+                "Hay Bale": {
+                    "name": "Hay Bale",
+                    "description": "A bundled stack of hay.",
+                    "examine_text": "It's surprisingly heavy and roughly square-shaped. When examined closely, you can see the individual strands of dry, golden grass bound tightly together with twine.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Stable"
+                },
+                "Pitch Fork": {
+                    "name": "Pitch Fork",
+                    "description": "A three-pronged farming tool.",
+                    "examine_text": "This is a robust tool made from sturdy wood. Its handle is well-worn from years of use and the prongs are slightly rusted but razor sharp.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Stable"
+                },
+                "Clay Pot": {
+                    "name": "Clay Pot",
+                    "description": "A container for storing grain.",
+                    "examine_text": "It's a well-crafted ceramic pot crafted from the local clay, quite big and of a smooth texture, with signs of regular use.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Stable"
+                },
+                "King's Livery": {
+                    "name": "King's Livery",
+                    "description": "A fine cloth bearing the king's crest.",
+                    "examine_text": "It's a fine cloth in the king's traditional colors and crest. It stands out as a symbol of loyalty and servitude to the kingdom.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Stable"
+                }
+            },
+            "characters": {
+                "Stable Boy": {
+                    "name": "Stable Boy",
+                    "description": "The stable boy is a young lad named Tom with dirt on his face and straw in his hair.",
+                    "persona": "I'm Tom, the stable boy. It's my job to groom and look after the horses.",
+                    "location": "Stable",
+                    "goal": "Keep the horses happy and healthy.",
+                    "inventory": {
+                        "Hay Bale": {
+                            "name": "Hay Bale",
+                            "description": "A large, tightly bound bale of hay.",
+                            "examine_text": "The bale is comprised of yellowish dried grasses, tightly bound with a course twine. The scent of dry hay fills the air as you approach it. It's used to feed the horses of the royal stables.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": true,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Pitch Fork": {
+                            "name": "Pitch Fork",
+                            "description": "A well-used but sturdy wooden pitch fork.",
+                            "examine_text": "The fork has a wooden handle that has seen years of use, the hands that have held it have worn away the varnish. At the end are three sharp, steel tines, slightly rusted but still good for life in the stables.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Castle"
+        },
+        {
+            "name": "Horse Stables",
+            "description": "It is dull to look at. The stable has hay laying everywhere, grey stones making the walls, and large heavy wooden beams hold up the ceiling. So, everything is brown or grey or other shades that bore. There are sections for horses made of wood but looks rickety.",
+            "background": "Not many people go to the stable because they have the stable hand bring the horses to the entrance of the castle. It leaks and is falling into disrepair. For the stable hand it is home. There is a sense of comfort in the drab old building with the gorgeous horses.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Moving east, you approach the Royal Stables across the sprawling castle lawns. The scent of fresh hay is more potent here, mixed with the rich aroma of healthy, well-kept horses.",
+                "south": "Heading south, the path towards the plain Stables is less glamorous but yet filled with anticipation. The sounds of horses neighing in the distance sketch a vivid picture in your mind.",
+                "west": "Traveling west, you can clearly see the Stable Hand's Quarters. A light haze of woodsmoke drifts from a small chimney, and the faint clatter of tools against stone hints at the diligent work happening within."
+            },
+            "connections": {
+                "east": "Royal Stables",
+                "south": "Stable",
+                "west": "Stable Hand'S Quarters"
+            },
+            "items": {
+                "Stable Shovel": {
+                    "name": "Stable Shovel",
+                    "description": "A Standard wooden shovel leaning against the wall.",
+                    "examine_text": "Upon closer inspection, the shovel is very old. There are cracks in the handle and the metal part of the shovel is rusty. The handle is smooth though from countless use. It's a simple, unassuming, yet indispensable tool.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Horse Stables"
+                },
+                "Hay Bale": {
+                    "name": "Hay Bale",
+                    "description": "A dry bale of hay lying on the side.",
+                    "examine_text": "The haystack is tightly packed and bound with twine. It's dry to the touch and has a distinctive sweet, earthy scent. It is fodder for the horses.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Horse Stables"
+                },
+                "Lantern": {
+                    "name": "Lantern",
+                    "description": "A small oil lantern hangs from a hook.",
+                    "examine_text": "The lantern is made of rusty iron and old glass. It contains a wick and a small reservoir of oil for light. It can be carried around.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Horse Stables"
+                },
+                "Water Bucket": {
+                    "name": "Water Bucket",
+                    "description": "A wooden bucket filled with clear water.",
+                    "examine_text": "The bucket is old and made of sturdy oak, bound with iron rings. It's filled with clear cool water. The horses drink from this.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Horse Stables"
+                },
+                "Saddle": {
+                    "name": "Saddle",
+                    "description": "A well-worn leather saddle hangs on a rack.",
+                    "examine_text": "The saddle is old but well cared for. It\u2019s made from dark brown leather and shows traces of constant use. Brass fittings add to the durability and looks of the saddle.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Horse Stables"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Castle"
+        },
+        {
+            "name": "Main Gate",
+            "description": "the main gate is new and guarded, it is not run down lie many parts of the area. it is meant to intimidate attackers by making them think the area is all new and not worn down.",
+            "background": "the gate being new was the idea of leaders, many resources were poured into the area, to the dismay of many members of the area",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "As you move towards the stable, the scent of hay and sounds of horses braying become stronger. You feel like you're stepping back in time, surrounded by rustic tools and the old stone construction of the stable.",
+                "west": "Heading west towards the entrance, the ambience shifts. The vibrant energy of the entrance, pulsing with faint whispers of magic, replaces the earthy scent of hay. Shimmers catch your eye as you get closer to the mossy, aged entrance.",
+                "outside": "Venturing outside the castle, you're struck by the beautiful tapestry of gems and artifacts adorning the castle walls. The sight of ancient stones and lush gardens is a visual treat, reflecting the castle's rich history."
+            },
+            "connections": {
+                "east": "Stable",
+                "west": "Entrance To Castle",
+                "outside": "Outside Castle"
+            },
+            "items": {
+                "Iron Portcullis": {
+                    "name": "Iron Portcullis",
+                    "description": "A sturdy iron gate that bars the entrance to the castle",
+                    "examine_text": "A closer look reveals an intricate design of menacing beasts etched into the bars of the gate. It appears unmovable and completely defends the castle's entrance.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Main Gate"
+                },
+                "Torch Sconces": {
+                    "name": "Torch Sconces",
+                    "description": "These hold the torches that illuminate the front gates",
+                    "examine_text": "Made of weathered iron, they hold flaming torches that cast a flickering light across the stone walls.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Main Gate"
+                },
+                "Flag of the Leaders": {
+                    "name": "Flag of the Leaders",
+                    "description": "A grand flag proudly displaying the emblem of the leaders",
+                    "examine_text": "On a closer look, you see it flaunts an elaborate emblem of a noble beast, embroidered with gold and silver threads. It represents the authority and power of the leaders.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Main Gate"
+                },
+                "Guard's Halberd": {
+                    "name": "Guard's Halberd",
+                    "description": "A sharp weapon wielded by the castle guard",
+                    "examine_text": "This pole weapon has a large axe head topped with a spike, mounted on a long shaft. It's much longer than a sword, designed for keeping attackers at bay.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Main Gate"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Castle"
+        },
+        {
+            "name": "Royal Stables",
+            "description": "The royal stables hold all of the horses of the noble people living in the castle. They are very well constructed, consisting of expert mason work and fixtures of some sort of heavy, forest-scented wood. Each horse has a large stall, lined with fresh hay replenished by stable hands daily. On the walls of stable, there are tools used to care for and groom the horses, hung on hooks. The stables are lit by lanterns hung throughout the stables.",
+            "background": "The stables were built when the castle was built. The king was particularly fond of horses and so he requested a very studious stable to fill with the highest quality horses. The horses who live there are all very healthy, strong and skilled.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Leaving the comforting warmth of the lantern-lit Royal Stables, you head west towards the dilapidated Horse Stables. The transition from the regal to the rustic is abrupt and stark with the path littered with loose hay and characterized by a foreboding quietness, save for the occasional nicker from the majestic creatures housed within."
+            },
+            "connections": {
+                "west": "Horse Stables"
+            },
+            "items": {
+                "Bridle": {
+                    "name": "Bridle",
+                    "description": "A soft leather horse bridle hung on the wall.",
+                    "examine_text": "This bridle, made from craft leather, is used for guiding the royal horses by the reins. It's been polished and is in excellent condition hinting the meticulous care taken in the stable.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Royal Stables"
+                },
+                "Hay Bales": {
+                    "name": "Hay Bales",
+                    "description": "Fresh, golden hay bales stacked in the corner.",
+                    "examine_text": "Upon closer inspection, you see dust particles dancing in the warm stable light as it hits the golden hay bales. They're dry and crunchy, perfect for horse's meal.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Royal Stables"
+                },
+                "Lantern": {
+                    "name": "Lantern",
+                    "description": "A well-polished, iron lantern hanging from the ceiling.",
+                    "examine_text": "On approaching you notice, this lantern floods the entire stable with its warm, welcoming glow. It appears to be very old, potentially as old as the castle, yet well-preserved, signaling at the stable's rich history.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Royal Stables"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Castle"
+        },
+        {
+            "name": "Archery Zone",
+            "description": "The archery zone is spacious and always bright with light. The field is green and the targets are bright red.",
+            "background": "The archery grounds are home to the skills and teachings of archers of all ages and classes. The master archers teach the younger ones about the art of the bow.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "You take a brief, brisk walk through a well-trodden dirt path, dense with the scent of pine and pungent earth, to find yourself in front of The Barracks.",
+                "east": "Walking east leads you down a winding pathway. The sound of gentle sand crunching under your feet resonates as you approach the humble Arrow House."
+            },
+            "connections": {
+                "south": "The Barracks",
+                "east": "Arrow House"
+            },
+            "items": {
+                "Bow": {
+                    "name": "Bow",
+                    "description": "A wooden bow with a string attached from end to end",
+                    "examine_text": "This is a long wooden bow, crafted with high precision. It seems a little worn, perhaps used by the master archers themselves for their daily practice. The string seems a bit loose, but should work fine",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Archery Zone"
+                },
+                "Quiver": {
+                    "name": "Quiver",
+                    "description": "A leather case for holding arrows",
+                    "examine_text": "Upon closer inspection, the leather quiver holds about a dozen arrows with iron tips. The craftsmanship is simple yet sturdy, the perfect companion for an aspiring archer. An essential tool at these training grounds.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Archery Zone"
+                },
+                "Arrows": {
+                    "name": "Arrows",
+                    "description": "A set of arrows with a sharp iron tip",
+                    "examine_text": "A closer look reveals that the arrows are made of solid oak, each with a sharp iron tip. The feathers attached to the end of the arrows are all from the same kind of bird, most likely for consistency during flight",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Archery Zone"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Castle"
+        },
+        {
+            "name": "Stable Hand'S Quarters",
+            "description": "The stable hand's quarters are very plainly decorated, with wooden torches situated in stone carvings in the wall. There are bunk beds with cheap hay and feather mattresses for the stable hands to rest in while not working. There are small sacks, as well as beaten and splintered wooden chests for them to keep their belongings in. One small window shines light into the very center of the room.",
+            "background": "The stable hand's quarters provide a place for the workers to rest and relax in while not at work. They are not too far from the stable so that at a moments notice the stable hands can respond to their call for work.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "A short walk leads from the quarters to the horse stables. The path is packed dirt, well-trodden by many stable hands going about their daily duties. As you get closer, the smell of horses and hay becomes more pronounced."
+            },
+            "connections": {
+                "east": "Horse Stables"
+            },
+            "items": {
+                "Torches": {
+                    "name": "Torches",
+                    "description": "Wooden torches secured to the stone walls.",
+                    "examine_text": "The torches are made of sturdy wood with a top dipped in a combustible substance. They are securely placed in stone carvings on the walls.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Stable Hand'S Quarters"
+                },
+                "Bunk Beds": {
+                    "name": "Bunk Beds",
+                    "description": "Cheap hay and feather mattresses piled upon wooden bunk beds.",
+                    "examine_text": "Simple wooden framework supporting bunks of hay and feather-stuffed mattresses. Ideal for a quick afternoon rest or an overnight sleep for the stable hands.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Stable Hand'S Quarters"
+                },
+                "Wooden Chests": {
+                    "name": "Wooden Chests",
+                    "description": "Wooden chests are scattered around the room; they are worn out from use.",
+                    "examine_text": "These are simple wooden chests, with signs of wear and tear. They contain personal belongings of the stable hands.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Stable Hand'S Quarters"
+                },
+                "Small sacks": {
+                    "name": "Small sacks",
+                    "description": "Small sacks lying beside the bunk beds.",
+                    "examine_text": "Small sacks made from rough cloth. They are mostly used by the workers to store personal items or food for later.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Stable Hand'S Quarters"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Castle"
+        },
+        {
+            "name": "The Acid Yard",
+            "description": "A yard in a shape of a circle is surrounded by sad, dried down trees, long ago have they died and give no sign of life. The ground in the middle is apparently not producing any fresh grass, all that can be found there is a bunch of rocks here and there. There is many barrels laying on the ground, all bearing signs of passed time on them, broken and useless. There is an  air of mystery surrounding the place and a smell so unpleasant no one dares to wander around this place.",
+            "background": "Acid yard being the least liked place in the entire castle grounds is by far, the most mysterious. Rumor has it long ago a mad king used it for torturing the enemies by pouring an acid down on every single one of them, bit by bit until they were screaming the answers to his questions. It has created a large yard contaminated by acid on which nothing but a few mosses will grow.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Moving north from the Acid Yard towards the Weapons Storage Room, the air changes from stinging vapours to the metallic tang of sharpened steel. The chilling atmosphere of the abandoned yard lessens and the ominous presence of numerous weapons welcomes you instead."
+            },
+            "connections": {
+                "north": "The Weapons Storage Room"
+            },
+            "items": {
+                "Damaged Barrels": {
+                    "name": "Damaged Barrels",
+                    "description": "Old, forlorn barrels lay scattered all around.",
+                    "examine_text": "Upon closer inspection, you make out the corroded marks and old etchings claiming that the barrels once stored acid.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Acid Yard"
+                },
+                "Dead Trees": {
+                    "name": "Dead Trees",
+                    "description": "Bare, stripped of their life essence, these trees stand like morose sentinels.",
+                    "examine_text": "These battled and scarred trees have been etched by acid rains. Their wood is so dry, it's turned almost to stone.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Acid Yard"
+                },
+                "Acidic Moss": {
+                    "name": "Acidic Moss",
+                    "description": "Brightly colored moss os the only vegetation present in the yard.",
+                    "examine_text": "The only plant resilient enough to survive the poisonous environment, its tacky texture and otherworldly glow suggest high acidity.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Acid Yard"
+                },
+                "Acid Contaminated Rocks": {
+                    "name": "Acid Contaminated Rocks",
+                    "description": "Scattered all over the perimeter are grey-black rocks.",
+                    "examine_text": "Closely examined, the rocks exhibit an odd gleam. The occasional hiss and sizzle suggest that the rocks might be contaminated by acid.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "The Acid Yard"
+                }
+            },
+            "characters": {
+                "Mysterious Ghost": {
+                    "name": "Mysterious Ghost",
+                    "description": "An apparition haunting the Acid Yard, it is said that the ghost was once a prisoner under the mad king.",
+                    "persona": "I am bound to this place by the horrors of my past, forever lurking in the shadows.",
+                    "location": "The Acid Yard",
+                    "goal": "Finding peace after a lifetime of torment.",
+                    "inventory": {
+                        "Tattered Robe": {
+                            "name": "Tattered Robe",
+                            "description": "A worn-out, ghostly robe draped around the ghost's body.",
+                            "examine_text": "Though mostly soupous, some parts retained a solid, fabric-like structure. A pattern, now almost silenced by the steady flow of time, hints at a former nobility.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Ghostly Chains": {
+                            "name": "Ghostly Chains",
+                            "description": "Long, chilling chains that float around the ghost, symbolic of his eternal bondage.",
+                            "examine_text": "They shimmer and fade, like the rest of the ghost's being, yet their weight is almost tangible. Each link represents a memory, a past regret, a chain from which the ghost cannot escape.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Dreadful Crown": {
+                            "name": "Dreadful Crown",
+                            "description": "A spectral crown sits atop the ghost's head, failing to hide the sadness in his eyes.",
+                            "examine_text": "The ethereal gemstones cast an eerie glow, and despite its ghostly nature, it carries a heavy air of authority and regret. You can almost see the reflection of the ghost's tragic past in it.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Wisps of Sorrow": {
+                            "name": "Wisps of Sorrow",
+                            "description": "Faint wisps of spectral energy that hover around the ghost.",
+                            "examine_text": "As you get closer, they pulse with a deep sadness, as if carrying the echoes of the ghost's pain and regret. They are cold to the touch, but seem to have no physical form.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Castle"
+        },
+        {
+            "name": "The Weapons Storage Room",
+            "description": "The weapons storage room is a large open room lines with all sorts of weapons mounted on the walls. Every sort of weapon imaginable is here, neatly organized and mounted in groups. The commonly used weapons, such as swords and spears are presents in such countless numbers as to require tall wooden chests on the ground to contain all of the extras. More rare weapons are simply grouped on the walls, as fewer warriors are capable of using them and the demand is lower. There are also some mysterious weapons whose use and user is yet undetermined.",
+            "background": "The weapons storage room serves a practical purpose, and is also used to provide a sense of glory and intimidate. It shows off the abundant weapons the kingdom possesses and the number available for use suggests a vast army also available for war. The mysterious weapons are weapons taken from vanquished enemies as a prize. They remind visitors of the victory, and provide a chance for a warrior to distinguish themselves by learning to use the weapon efficiently.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "A brisk walk through a narrow, chilly corridor leads you to the gloomy Acid Yard, a place fraught with eerie whispers of a time forgotten.",
+                "east": "Walking towards the east, the air grows thicker with the robust sense of duty and discipline exuded by the looming Barracks, a sanctuary built on the foundation of loyalty and service."
+            },
+            "connections": {
+                "south": "The Acid Yard",
+                "east": "The Barracks"
+            },
+            "items": {
+                "Iron Sword": {
+                    "name": "Iron Sword",
+                    "description": "An ordinary sword made of iron. It's well-balanced and sharp.",
+                    "examine_text": "This is a standard issue iron sword. It has a hard, sharp blade and a simple hilt. From the look of the blade, it has been well maintained and frequently sharpened.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "The Weapons Storage Room"
+                },
+                "Wooden Chest": {
+                    "name": "Wooden Chest",
+                    "description": "A large chest made of sturdy oak. It's filled with weapons.",
+                    "examine_text": "This large chest has been well-made with heavy, dark oak. It's filled with extra weapons, stacked neatly and kept in good condition.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Weapons Storage Room"
+                },
+                "Mysterious Weapon": {
+                    "name": "Mysterious Weapon",
+                    "description": "A peculiar weapon of unknown origin. It's unlike anything you've seen.",
+                    "examine_text": "This strange weapon has a bizarre design, unlike anything typically seen in this kingdom. Its origins and purpose remain a mystery to the warriors.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "The Weapons Storage Room"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Castle"
+        },
+        {
+            "name": "Arrow House",
+            "description": "A small shed with an earthen floor, holds two tables upon which rests neatly arrayed wooden boxes, each of which holds a score of newly made arrows. A third table holds several more large boxes, wherein spent and damaged arrows are placed, so any part still serviceable may be harvested. A few worn practice bows hang upon the walls and a small number tools, as well as replacement strings and polishing equipment rests in boxes under the shelves. Another set of neatly arranged boxes contains newly made parts, for the Fletcher to transform into viable arrows. A small wooden chair completes the furnishings.",
+            "background": "An old Fletcher carries out his duties, smiling dutifully and politely at the archers and other visitors to his arrow house. He is constantly working, though is known to entertain extended visits from specific masters and the court jester. A master of archery in his own right, it's commonly said that no one in all the land can out shoot him. In spite of challenges, taunts and pleas, he refuses to shoot an arrow, save for when testing bows or new types of arrows.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Traveling west to the Archery Zone, you take in the peaceful serenity of the green field and archers pursuing their craft, lit by the steady bright light.",
+                "up": "Heading up to the Battlements, the age-old structure of the castle looms with an aura of historic pride, cooled by a gentle breeze passing through the narrow slots and humming past the formidable cannons."
+            },
+            "connections": {
+                "west": "Archery Zone",
+                "up": "Battlements"
+            },
+            "items": {
+                "Neatly Arrayed Wooden Boxes": {
+                    "name": "Neatly Arrayed Wooden Boxes",
+                    "description": "Boxes filled with newly made arrows",
+                    "examine_text": "Upon examination, these are wooden boxes filled with neat rows of finely crafted arrows, each feathered and pointed precisely.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Arrow House"
+                },
+                "Worn Practice Bows": {
+                    "name": "Worn Practice Bows",
+                    "description": "Bows hung on the wall for practicing archery",
+                    "examine_text": "Old and well-used bows perfect for practice, await the next hand to draw their string.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Arrow House"
+                },
+                "Polishing Equipment": {
+                    "name": "Polishing Equipment",
+                    "description": "Professional tools for maintaining arrows and bows",
+                    "examine_text": "Everything required to keep your bow and arrows in peak condition. Abrasive paper for removing burrs from wooden shafts, oil for keeping bow strings flexible and more.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Arrow House"
+                },
+                "Small Wooden Chair": {
+                    "name": "Small Wooden Chair",
+                    "description": "A chair made of wood",
+                    "examine_text": "A simple wooden chair for the Fletcher to rest. It barely shows any sign of usage, probably because the old man is always up and working.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Arrow House"
+                }
+            },
+            "characters": {
+                "Fletcher": {
+                    "name": "Fletcher",
+                    "description": "An old man with silver hair, the Fletcher has a certain allure of knowledge and experience.",
+                    "persona": "I'm skilled in the art of making bows and arrows, honing them for the master archers.",
+                    "location": "Arrow House",
+                    "goal": "Crafting the perfect bow and arrow.",
+                    "inventory": {
+                        "Bow": {
+                            "name": "Bow",
+                            "description": "A masterfully crafted longbow, made from yew and strung with sturdy twine.",
+                            "examine_text": "This is no ordinary bow. The gloss of the yew-wood indicates years of careful use. The string, though appearing worn, has a firmness that betrays its quality.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Arrows": {
+                            "name": "Arrows",
+                            "description": "A bundle of arrows, each meticulously handcrafted by Fletcher.",
+                            "examine_text": "Each arrow is meticulously crafted. The feathers are symmetrically attached and the point has been sharpened to a deadly point. The shaft has been polished and treated, enabling steady flight.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Castle"
+        },
+        {
+            "name": "Battlements",
+            "description": "The battlements are on top of the castle, in between the towers. These walkways have raised walls to prevents soldiers from fall off them or being picked off by archers. The walkways have narrow slots carved out at regular intervals for archers to aim through with getting hit themselves. There are also wider slots at longer intervals with cannons stationed at them. Flush against the outside walls are short, long boxes for soldiers to place their extra weapons in when preparing for a seige.",
+            "background": "The battlements are very old, as this castle has not been breached before. They have somewhat recently been remodeled to create the larger slots for cannons, but the rest of the design is tradition instituted by highly respected and successful soldiers. The reason the battlements have worked so well is that the king asked his best generals to design the most efficient and effective battlements possible, and gave them all the resources to do so. Out of appreciation for their generous king, the soldiers have worked extra hard to defend the castle.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "down": "Descending down from the battlements, you traverse a narrow stairwell embedded in the castle's thick stone wall. The path is steep and winding, lit by a few torches flickering in iron sconces. Finally, you arrive at the Arrow house, the air becoming scented with fresh wood and the quiet, constant sounds of the diligent Fletcher at work."
+            },
+            "connections": {
+                "down": "Arrow House"
+            },
+            "items": {
+                "Old Cannon": {
+                    "name": "Old Cannon",
+                    "description": "A large, old-fashioned cannon situated in one of the wider slots of the battlements.",
+                    "examine_text": "This cannon is rusted from use and exposure to the elements, but still appears to be fully functional. The wheels and base are made from sturdy oak wood, and the cannon itself is cast from iron.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Battlements"
+                },
+                "Bow": {
+                    "name": "Bow",
+                    "description": "A simple long bow made of flexible hickory, lying within an armory box.",
+                    "examine_text": "The wood is polished smooth and decorated with intricate carvings. The string is taut and ready for use.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Battlements"
+                },
+                "Armory Box": {
+                    "name": "Armory Box",
+                    "description": "A small, long wooden box lined against the outside battlement wall, used for storing weapons.",
+                    "examine_text": "The wooden armory box is worn from years of service, signs of rain, snow, and sun damage on its surface. Despite its age, it still serves its purpose dutifully.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Battlements"
+                },
+                "Helmet": {
+                    "name": "Helmet",
+                    "description": "A worn iron helmet left on the battlements.",
+                    "examine_text": "The helmet carries dents and scratches from previous battles. Inside, a soft leather padding provides comfort.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Battlements"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Castle"
+        },
+        {
+            "name": "Entrance To Castle",
+            "description": "This entrance has seen better days.  The stones are a bit askew, and have lots of mosses growing on them.  But there is also a magical quality about this entrance.  It is not something you see, but rather feel.  And every now and then you can catch a shimmer out of the corner of your eye.",
+            "background": "This is the entrance to the castle of the King that is under a spell.  There are little fairy lights all around, but no one can catch them.  They hover around this entrance, making sure that no one enters, and no one leaves.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Walking towards the east, you approach the Main Gate. Its grandeur speaks volumes about the wealth of this kingdom; this is no ordinary gate.",
+                "inside": "Moving inside, you head towards The Barracks. The air grows chilly and filled with the musky scent of the guardsmen, telling tales of their brave endeavors.",
+                "outside": "Venturing outside takes you Beyond The Wall. The lush greenery and the grand houses belonging to the king's aides make this area a heartwarming sight."
+            },
+            "connections": {
+                "east": "Main Gate",
+                "inside": "The Barracks",
+                "outside": "Beyond The Wall"
+            },
+            "items": {
+                "Ancient Stones": {
+                    "name": "Ancient Stones",
+                    "description": "Stones that have been stacked carefully to form the entrance to the castle.",
+                    "examine_text": "Upon closer inspection, the stones are not just any ordinary stones. They have runes and symbols etched into them. They seem to emit a faint glow.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Entrance To Castle"
+                },
+                "Moss": {
+                    "name": "Moss",
+                    "description": "A rich green moss covering parts of the stone structure.",
+                    "examine_text": "A close examination reveals the moss to be soft, damp, and fragrant. It's unlike any ordinary moss you've ever seen.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Entrance To Castle"
+                },
+                "Fairy Lights": {
+                    "name": "Fairy Lights",
+                    "description": "Little lights that hover around the castle entrance.",
+                    "examine_text": "Upon close examination, they're not just lights but tiny fairies. They flutter around you taking interest.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Entrance To Castle"
+                }
+            },
+            "characters": {
+                "Court Jester": {
+                    "name": "Court Jester",
+                    "description": "The jester is a lively character, always adorned in his multicolored costume and headpiece with bells, providing entertainment in the castle.",
+                    "persona": "I bring laughter and joy to the castle with my jokes and jests.",
+                    "location": "Entrance To Castle",
+                    "goal": "Making the denizens of the castle laugh.",
+                    "inventory": {
+                        "Jester's Headpiece": {
+                            "name": "Jester's Headpiece",
+                            "description": "A colorful and quirky headpiece adorned with bells at each end.",
+                            "examine_text": "This is a classic jester's headpiece, bursting with every color of the rainbow. Bells dance at the end of every of its three points, ringing out with every movement, an essential tool for attracting the attention of a crowd.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Jester's Costume": {
+                            "name": "Jester's Costume",
+                            "description": "A vibrant, multicolored costume that bursts with the laughter and joy of a true entertainer.",
+                            "examine_text": "Made of velvety, luxurious fabric, this costume is in flamboyant shades of red, blue, and yellow, interspersed with sparkling sequins. The costume fits loosely, allowing for plenty of movement, and its baggy sleeves hide numerous pockets, perfect for a jester's various tricks and props.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Castle"
+        },
+        {
+            "name": "Outside Castle",
+            "description": "The outside castle is beautifully decorated with priceless gems and artifacts. The stone used is ancient and antique with a shiny gloss of silver. The gardens outside the castle are a beautiful green and have the most delightful flowers.",
+            "background": "The outside castle was constructed in ancient times before any other building. It's concrete was one of the first ever used, and the stones used on the entrance door date back to the prehistoric age.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "inside": "Passing from the outer antique castle walls, you approach the Main Gate. Unlike the rest of the building that holds a timeless charm, the Main Gate reveals the modern influences with its solid framework and intricate security. The contrast is startling but equally mesmerizing, a clear indication of a place that respects its past but doesn\u2019t shy from progress."
+            },
+            "connections": {
+                "inside": "Main Gate"
+            },
+            "items": {
+                "Antique Stone": {
+                    "name": "Antique Stone",
+                    "description": "A shiny, silver, ancient stone.",
+                    "examine_text": "The stone is incredibly shiny with a gloss of silver that reflects light brilliantly. It's incredibly hard and cool to touch, signifying its ancient origins.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Outside Castle"
+                },
+                "Castle Garden Flowers": {
+                    "name": "Castle Garden Flowers",
+                    "description": "Beautiful flowers from the castle gardens.",
+                    "examine_text": "The flowers show a vibrant array of colors, their petals are soft and yet firm to touch, and the sweet aroma they give off is truly mesmerizing.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Outside Castle"
+                },
+                "Prehistoric Door Stone": {
+                    "name": "Prehistoric Door Stone",
+                    "description": "This stone used on the entrance door dates back to the prehistoric age.",
+                    "examine_text": "This stone, even after so many years, still has a durability that is impressive. Its worn surface is testament to its age, and the weight is overwhelming.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Outside Castle"
+                }
+            },
+            "characters": {
+                "King Omako III": {
+                    "name": "King Omako III",
+                    "description": "Old and wise, King Omako III is a striking figure with his deep blue robes, long white beard, and a crown that signifies his status.",
+                    "persona": "I am the protector of the realm and my people's source of wisdom. My reign has been marked by prosperity and peace.",
+                    "location": "Outside Castle",
+                    "goal": "Maintaining peace and prosperity in his realm.",
+                    "inventory": {
+                        "King's Crown": {
+                            "name": "King's Crown",
+                            "description": "A shining golden crown adorned with precious gems.",
+                            "examine_text": "Upon closer examination, the crown is exquisitely made, with intricate designs twining around the band. Each gem is craftsman-cut and carefully set into the gold.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Old Blue Robes": {
+                            "name": "Old Blue Robes",
+                            "description": "Crisp, weighty royal blue robes, decorated with embroidery of gold threads.",
+                            "examine_text": "Upon observing the robes, they seem to be made of a high-quality fabric, probably silk. The golden embroidery signifies the power and affluence of King Omako III.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Castle"
+        },
+        {
+            "name": "Beyond The Wall",
+            "description": "This is the area beyond the Inner Castle. It consist of large green land, that sprawl all the way to the horizon, with a line of six luxury houses in the middle. It is home to some of the Kings immediate aides, such as War Officer, Military Commander, and Agricultural Advisor.",
+            "background": "This used to be a grassy meadow but as the Castle expanded with time, the King Omako III decide the King would need to find space for his closest aides so that they could always be a few minutes away if duty called. This Outside Castle was then renovated and luxury homes were built.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "inside": "Traveling from Beyond The Wall towards the Entrance To Castle, you can't help but feel a sense of apprehension. The six luxurious houses behind slowly give way to the expansive greenery, until finally, the majestic structure of the castle looms in the distance."
+            },
+            "connections": {
+                "inside": "Entrance To Castle"
+            },
+            "items": {
+                "Long Sword": {
+                    "name": "Long Sword",
+                    "description": "A shiny, metallic sword prone against one of the houses",
+                    "examine_text": "This is the trademark weapon of the War Officer. The sword is long and sturdy with a sharp point. The hilt is decorated with a rare gemstone, reflecting the Officer's prestige.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Beyond The Wall"
+                },
+                "Scroll of Agriculture": {
+                    "name": "Scroll of Agriculture",
+                    "description": "An ancient scroll with complex diagrams and text, resting on a table in the Agricultural Advisor's home",
+                    "examine_text": "The scroll is filled with complex diagrams and instructions describing the most effective agricultural techniques. The ink is faded but the parchment is well preserved, suggesting it has been treasured for many years.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Beyond The Wall"
+                },
+                "Officer's Robe": {
+                    "name": "Officer's Robe",
+                    "description": "A colorful robe hanging by the entrance of the Military Commander's house",
+                    "examine_text": "This robe is an intricate tapestry of colors and symbols that represent the Officer's rank and achievements in the King's army.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Beyond The Wall"
+                },
+                "Commander's Hammer": {
+                    "name": "Commander's Hammer",
+                    "description": "A heavy looking hammer propped up against the Military Commander's abode",
+                    "examine_text": "The hammer is large and exceptionally heavy with a polished wooden handle and a rough metallic head. It's a symbol of the Military Commander's strength and influence.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Beyond The Wall"
+                }
+            },
+            "characters": {
+                "War Officer": {
+                    "name": "War Officer",
+                    "description": "Stout and robust, the War Officer is always seen wearing his red officer coat and golden buttons.",
+                    "persona": "I ensure our kingdom's defenses remain impeccable, ready to protect our land from any threat.",
+                    "location": "Beyond The Wall",
+                    "goal": "Ensuring the castle remains secure and well protected.",
+                    "inventory": {
+                        "Long Sword": {
+                            "name": "Long Sword",
+                            "description": "A sharp, gleaming long sword made of finest steel.",
+                            "examine_text": "The sword is approximately 1.5 meters long, with intricate designs crafted onto the hilt. The blade is extremely sharp, capable of cutting through just about anything. It shines a brilliant silver and is impeccably maintained, reflecting the discipline and dedication of the War Officer.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Officer's Robe": {
+                            "name": "Officer's Robe",
+                            "description": "A finely tailored robe, adorned with the kingdom's emblem.",
+                            "examine_text": "The robe is dark blue, stitched with golden thread along the hem. The castle's emblem, a ferocious lion ensnared in a snake, sits proudly on the left chest portion. High-quality material and expert tailoring make it suitable for both function and ceremonial use.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Castle"
+        }
+    ],
+    "actions": []
+}

@@ -1,0 +1,1364 @@
+{
+    "player": "Witch",
+    "start_at": "The Witches Cottage",
+    "game_history": [],
+    "game_over": false,
+    "game_over_description": null,
+    "characters": [
+        {
+            "name": "Witch",
+            "description": "An eccentric looking woman with an overgrown hat and untamed hair. Her mismatched eyes and rune-covered outfit make her a sight to behold.",
+            "persona": "I am a spiritual woman who values the serenity of the woods. I derive my power from nature and seek to protect it from harm.",
+            "location": "The Witches Cottage",
+            "goal": "Her goal is to protect the woods from those who seek to destroy it.",
+            "inventory": {}
+        },
+        {
+            "name": "Hunter",
+            "description": "An rugged man dressed in furs, with a stern face and piercing eyes. His bow is always at hand.",
+            "persona": "I am a simple man who lives off the land. I hunt to provide for myself and my trusty hound.",
+            "location": "Front Of The Cottage",
+            "goal": "His goal is to provide for himself through hunting and selling furs.",
+            "inventory": {}
+        },
+        {
+            "name": "Ghost",
+            "description": "A spectral figure appearing as a faint glow in the darkness. Its exact appearance seems to waver and change every few seconds.",
+            "persona": "I am trapped here, left to wander the earth after my death. I yearn for peace.",
+            "location": "Small Graveyard",
+            "goal": "The Ghost seeks to move on and find tranquility.",
+            "inventory": {}
+        },
+        {
+            "name": "Dog",
+            "description": "A loyal, playful bloodhound. Its nose is powerful, and it is highly protective.",
+            "persona": "I am the guardian here, nothing gets past me without my master's permission.",
+            "location": "Front Of The Cottage",
+            "goal": "The Dog's goal is to protect the cottage from any intruders.",
+            "inventory": {}
+        },
+        {
+            "name": "The Scarecrow",
+            "description": "A constructed figure made from straw and old clothes. Its purpose is to keep birds away from the crops.",
+            "persona": "I am but a humble guardian of the field. I scare away the birds and watch over the crops.",
+            "location": "The Hay Field",
+            "goal": "The Scarecrow's goal is to protect the crops from the birds.",
+            "inventory": {}
+        },
+        {
+            "name": "Farmer",
+            "description": "A hardworking man sweating away at his chores. His clothes are covered in dirt and he has a kind, but tired smile.",
+            "persona": "I take pride in my work and my land. It may be tough, but it\u2019s honest and rewarding.",
+            "location": "Garden",
+            "goal": "His goal is to tend his farm and provide for his family.",
+            "inventory": {}
+        },
+        {
+            "name": "Knight",
+            "description": "A valiant figure in shining armor. He takes great care of his steed, and carries a noble aura around him.",
+            "persona": "I am a protector, a warrior. I fight for my kingdom's honor.",
+            "location": "Horse'S Stables",
+            "goal": "His goal is to serve and protect his kingdom.",
+            "inventory": {}
+        }
+    ],
+    "locations": [
+        {
+            "name": "Mushroom Hut",
+            "description": "An odd looking hut that sits outside that Witch's cottage. It is squat, mushy, and looks like a mushroom. It is be speckled with spots - black and white. The steam of the mushroom is beige. There is a small door that looks like it would fit a puppy through it.",
+            "background": "No one knows what the purpose of this mushroom is. The villagers claim that the witch houses trespassers in here when she turns them into smurfs. Others believe that the witch keeps her mangy mutt inside.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "outside": "Traveling from the Mushroom Hut to the Outside Gates, you pass through a winding path lined with curious flora, each more strange and whimsical than the last. The iron crest of the gates comes into view, hinting at the grandeur that sits beyond.",
+                "south": "Venturing south from the Mushroom Hut towards the Garden requires navigating a gently sloping trail. You are enveloped by the sight and scent of the towering oaks. Upon arrival, the well-tended vegetable patches and medicinal flowers signal the devotion of the garden's caretakers."
+            },
+            "connections": {
+                "outside": "Outside Gates",
+                "south": "Garden"
+            },
+            "items": {
+                "Mushroom Door": {
+                    "name": "Mushroom Door",
+                    "description": "A small door that's part of the mushroom hut.",
+                    "examine_text": "The door is small and looks sturdy. There's a small knob made of bone. Can hardly fit a puppy through it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Mushroom Hut"
+                },
+                "Mushroom Cap": {
+                    "name": "Mushroom Cap",
+                    "description": "The cap of the mushroom-shaped hut.",
+                    "examine_text": "The cap is larger than the stem and has black and white spots all around. It's mushy and damp to touch",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Mushroom Hut"
+                },
+                "Mushroom Stem": {
+                    "name": "Mushroom Stem",
+                    "description": "The stem of the mushroom-shaped hut.",
+                    "examine_text": "The stem is thick and beige in color, it offers support to the hut's structure.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Mushroom Hut"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Cottage"
+        },
+        {
+            "name": "Outside Gates",
+            "description": "These outside gates are made of iron and are somewhat decorative in design.  The tops are spiked and there's a family crest that hangs on both the left and right gate telling people who resides here.",
+            "background": "These gates prevent unauthorized people from entering.  They also serve to tell others which family lives here.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "inside": "You proceed along a winding path, dense with the fragrance of earth and foliage. The enigmatic Mushroom Hut appears, squatting curiously in a clearing.",
+                "east": "You feel the earthen crunch of the cobblestone underfoot as you make your way east. The sights and scents of the rustic Front Of The Cottage come into view, a charming scene of frontier living."
+            },
+            "connections": {
+                "inside": "Mushroom Hut",
+                "east": "Front Of The Cottage"
+            },
+            "items": {
+                "Iron Gates": {
+                    "name": "Iron Gates",
+                    "description": "A set of sturdy, ornamental gates made of iron, topped with spikes.",
+                    "examine_text": "Upon closer examination, you see intricately crafted designs etched into the ironwork and the spikes on top seem rather sharp. A crest with a family insignia is mounted on both the left and right gates.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Outside Gates"
+                },
+                "Family Crest": {
+                    "name": "Family Crest",
+                    "description": "A display of heraldry made from metal, hanging on the gates.",
+                    "examine_text": "It's masterfully crafted and shows the family's insignia with great precision. As you peer at it, you can glean some of the family's history and their lineage's standing in society.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Outside Gates"
+                },
+                "Cobblestone Pathway": {
+                    "name": "Cobblestone Pathway",
+                    "description": "A path made of cobblestones leading up to the gates.",
+                    "examine_text": "The cobblestones are weatherworn but solid, leading your gaze to the imposing gates. It's clearly frequently trammeled, judging by the well-worn stones.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Outside Gates"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Cottage"
+        },
+        {
+            "name": "Front Of The Cottage",
+            "description": "Furs hang out on racks to try and get ready for tanning. A dog lays in front of the door into the cottage. A little herb garden is on the opposite side of the cottage to the racks.",
+            "background": "A simple little cottage in the woods where a hunter has made his living. The cottage is but a simple place for a everyday man of the time. His blood hound companion guards the front door from intruders.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "As you move towards the west, the iron gates loom larger in front of you. Their decorative design reflects a rustic charm. The family crest glimmers under sunlight, welcoming you to what lies beyond.",
+                "back": "Walking towards the backyard, the vibrant green grass whispers under your feet. The smell of wet soil and fresh, ripe carrots fills the air. A glimpse of the grazing cows is a calming sight."
+            },
+            "connections": {
+                "west": "Outside Gates",
+                "back": "Backyard"
+            },
+            "items": {
+                "Rack of furs": {
+                    "name": "Rack of furs",
+                    "description": "A rack with various furs hanging out to dry.",
+                    "examine_text": "The furs are mostly from animals commonly found in the nearby woods, like deer and rabbit. They are cleanly skinned, and some have already started to darken from the drying process.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Front Of The Cottage"
+                },
+                "Dog": {
+                    "name": "Dog",
+                    "description": "The hunter's loyal bloodhound, guarding the entrance to the cottage.",
+                    "examine_text": "The dog is big and muscular, with a long, droopy face. It eyes you warily but doesn't make a move to attack, presumably because it recognizes you as a friend.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Front Of The Cottage"
+                },
+                "Herb garden": {
+                    "name": "Herb garden",
+                    "description": "A small patch of various herbs growing on the ground.",
+                    "examine_text": "The garden has several different types of herbs, all of them looking well-tended. Some of them you recognize as medicinal, while others are probably used for cooking. A few are just plain pretty to look at.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Front Of The Cottage"
+                }
+            },
+            "characters": {
+                "Hunter": {
+                    "name": "Hunter",
+                    "description": "An rugged man dressed in furs, with a stern face and piercing eyes. His bow is always at hand.",
+                    "persona": "I am a simple man who lives off the land. I hunt to provide for myself and my trusty hound.",
+                    "location": "Front Of The Cottage",
+                    "goal": "His goal is to provide for himself through hunting and selling furs.",
+                    "inventory": {
+                        "Bow and Arrow": {
+                            "name": "Bow and Arrow",
+                            "description": "A rudimentary hunting tool made from the flexible limbs of a yew tree and some tightly strung cord",
+                            "examine_text": "It's a well-used tool. Made from a single piece of wood, the bow is slightly curved. The arrows rest in a quiver, feathers at one end and carefully chiseled tips at the other. It seems like Hunter might have made this himself",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Rack of Furs": {
+                            "name": "Rack of Furs",
+                            "description": "Many animal skins are on this rack, being dried and prepared for use in clothing or other items",
+                            "examine_text": "The ranks are filled with animal skins, mostly deer with a few of bear. Each is stretched out tightly on a frame of wood, their insides facing the sun. Flies buzz around the still-wet parts",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Dog": {
+                    "name": "Dog",
+                    "description": "A loyal, playful bloodhound. Its nose is powerful, and it is highly protective.",
+                    "persona": "I am the guardian here, nothing gets past me without my master's permission.",
+                    "location": "Front Of The Cottage",
+                    "goal": "The Dog's goal is to protect the cottage from any intruders.",
+                    "inventory": {
+                        "dog_collar": {
+                            "name": "Dog Collar",
+                            "description": "A worn-out collar adorns the loyal hound.",
+                            "examine_text": "The collar looks old and well-worn. The name 'Buster' is scratched onto a little bronze plaque. It's clear this hound is well-loved and has been part of the family for some time.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "dog_bowl": {
+                            "name": "Dog Bowl",
+                            "description": "A metallic dog bowl lies next to the cottage door.",
+                            "examine_text": "The bowl is empty and a bit dusty. It looks like it's waited eagerly for its next filling. On the bottom, 'Buster' is inscribed in large, friendly letters.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "dog_bone": {
+                            "name": "Dog Bone",
+                            "description": "A bone half-chewed lies next to the snoozing hound.",
+                            "examine_text": "You can see teeth marks all over the bone. There's gnawing at both ends, clearly this hound likes to work for his treats.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": true,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Cottage"
+        },
+        {
+            "name": "Backyard",
+            "description": "Fresh Dark green grass covering the hill over the wet soil is the daily routine for a farmer. Beneath the grass are the freshly grow carrots. Addition to these beautiful living-hood are the two healthy black cows to gaze over the grass avoiding the carrot farm.",
+            "background": "These freshly grown carrots by the farmer gives food and living through out the year. The winters are relayed on the cows which can give calf and provide his living for that season.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "front": "Walking towards the front of the cottage, you pass by furs hung out on racks and an herb garden by the side. A dog looks up from its lounging position as you approach the front door.",
+                "south": "Moving south, you leave the comfort of the cottage's backyard and approach the smell of horses. Leaving the greenery behind, the landscape opens up into yellow and green plains where stables are maintained."
+            },
+            "connections": {
+                "front": "Front Of The Cottage",
+                "south": "Horse'S Stables"
+            },
+            "items": {
+                "Grass": {
+                    "name": "Grass",
+                    "description": "A covering of fresh, dark green grass.",
+                    "examine_text": "The grass is dense and lush, showing signs of regular care and attention. The blades are a deep, dark green, covering the backyard like a soft carpet.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Backyard"
+                },
+                "Carrots": {
+                    "name": "Carrots",
+                    "description": "Freshly grown carrots protruding from the wet soil.",
+                    "examine_text": "The carrots are robust and brightly colored, their tops vibrant against the surrounding earth. They look fresh and healthy.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Backyard"
+                },
+                "Cows": {
+                    "name": "Cows",
+                    "description": "Two healthy black cows grazing in the pasture.",
+                    "examine_text": "The cows are strong and healthy, their black coats gleaming in the sunlight. They seem content as they graze in the grassy backyard.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Backyard"
+                },
+                "Farmer's Hat": {
+                    "name": "Farmer's Hat",
+                    "description": "A worn hat, likely belonging to the farmer.",
+                    "examine_text": "The hat is well-worn and faded from the sun. It looks like it has seen many long days in the field.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Backyard"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Cottage"
+        },
+        {
+            "name": "Garden",
+            "description": "A wooden fenced in area with different sections depending on the type of vegetable or plant grown.  Surrounding this garden are some oak trees with low grass covering the floor.",
+            "background": "This is an area where peasants plant vegetables and flowers used for medicinal concoctions.  The area is carefully maintained by the residents.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Walking towards the north, you move away from the lush garden and notice an unusual and enchanting sight, a mushroom-shaped hut.",
+                "east": "As you head east, the fresh scent of blooming plants gives way to the distinct smell of horses, pointing you towards the stables."
+            },
+            "connections": {
+                "north": "Mushroom Hut",
+                "east": "Horse'S Stables"
+            },
+            "items": {
+                "Garden Hoe": {
+                    "name": "Garden Hoe",
+                    "description": "A well-worn garden hoe lays on the ground",
+                    "examine_text": "You see a garden hoe. It has a wooden handle and a metal blade. This tool seems used often for turning soil.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Garden"
+                },
+                "Vegetable Patch": {
+                    "name": "Vegetable Patch",
+                    "description": "A thriving vegetable patch busily tended by the local inhabitants",
+                    "examine_text": "You see multiple vegetables growing in the patch. It's a feast for anyone's eyes who appreciate nature's bounties",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Garden"
+                },
+                "Straw Hat": {
+                    "name": "Straw Hat",
+                    "description": "A straw hat is hanging on the fence.",
+                    "examine_text": "Upon closer inspection, the straw hat is well-woven and had a faded ribbon. It seems like something a farmer might wear.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Garden"
+                },
+                "Oak Tree": {
+                    "name": "Oak Tree",
+                    "description": "A majestic oak tree stands near the garden.",
+                    "examine_text": "The oak tree is tall and broad with a craggy bark. There are markings possibly made by the local fauna",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Garden"
+                },
+                "Wooden Fence": {
+                    "name": "Wooden Fence",
+                    "description": "Rustic wooden fence surrounds the garden.",
+                    "examine_text": "The wooden fence is roughly made but sturdy. There are chips and notches from years of use and weathering.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Garden"
+                }
+            },
+            "characters": {
+                "Farmer": {
+                    "name": "Farmer",
+                    "description": "A hardworking man sweating away at his chores. His clothes are covered in dirt and he has a kind, but tired smile.",
+                    "persona": "I take pride in my work and my land. It may be tough, but it\u2019s honest and rewarding.",
+                    "location": "Garden",
+                    "goal": "His goal is to tend his farm and provide for his family.",
+                    "inventory": {
+                        "Garden Hoe": {
+                            "name": "Garden Hoe",
+                            "description": "A sturdy, well-worn garden hoe with a polished wooden handle.",
+                            "examine_text": "Upon closer inspection, you see that the handle of the hoe is worn smooth from years of use. The metal blade gleams in the sunlight, a testament to the farmer's meticulous care.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Vegetable Patch": {
+                            "name": "Vegetable Patch",
+                            "description": "A patch of rich soil ripe with juicy vegetables ready for harvest.",
+                            "examine_text": "Vibrant green leaves and vegetables of all kinds can be seen poking out of the ground. Some vegetables are ripe and ready to be picked, ballooning out of the dark, rich soil.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": true,
+                                "is_gettable": true,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Cottage"
+        },
+        {
+            "name": "Horse'S Stables",
+            "description": "The stables smell terrible, and are riddled with brown feces on the ground. The horses are tame and magnificent brown. The open plains are yellow and green with grass.",
+            "background": "The horse stables are well kept and used in preparation of war. The most well trained knights are given horses for battle and travel. The horses stables are very well respected within the community.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "As you leave the stench of the stables and move north, the smell of fresh grass fills the air. The sound of stepping on the moist soil is comforting and the sight of a farmer tending his crops brings a sense of tranquility.",
+                "west": "Moving west takes you towards a neatly fenced wooden area. You can hear the rustling of the leaves of the oak trees surrounding the garden. The mixture scent of earth and different kinds of vegetables hits your nostrils, reminding you of simpler times.",
+                "south": "Heading south, you're welcomed by the sight of the extensive, green Hay Field. The chirping of birds and the distant sight of scattered tools reveal the hard work that goes into maintaining this fertile land. You can see far-off lands in the distance where the high-quality hay from this field would be sold."
+            },
+            "connections": {
+                "north": "Backyard",
+                "west": "Garden",
+                "south": "The Hay Field"
+            },
+            "items": {
+                "Horse Plough": {
+                    "name": "Horse Plough",
+                    "description": "A heavy-duty plough used for tilling the field.",
+                    "examine_text": "The plough is old, its rich brown wood worn thin in places from years of use. The metalwork is blackened with age and use, but still sharp in places.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Horse'S Stables"
+                },
+                "Hay Bale": {
+                    "name": "Hay Bale",
+                    "description": "A large compressed stack of dry grass.",
+                    "examine_text": "The hay bale is large and tightly bound, the grasses within are golden and dry. Bits of straw poke out, it's a bit prickly to the touch.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Horse'S Stables"
+                },
+                "Blacksmith's Hammer": {
+                    "name": "Blacksmith's Hammer",
+                    "description": "A hefty tool used by the local blacksmith to shape metal.",
+                    "examine_text": "Handling the hammer, you can feel the wear on the handle of the tool. The metal head appears robust and well-used. It\u2019s surprisingly heavy.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Horse'S Stables"
+                },
+                "Bridle and Saddle": {
+                    "name": "Bridle and Saddle",
+                    "description": "Leather gear used for riding horses.",
+                    "examine_text": "The leather bridle and saddle are well-worn but cared for. Bits of horsehair still cling to the saddle, which has intricate designs carved into the side.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Horse'S Stables"
+                },
+                "Wooden Bucket": {
+                    "name": "Wooden Bucket",
+                    "description": "A simple wooden bucket",
+                    "examine_text": "The bucket is made of planks of wood bound together with metal bands. It's old but sturdy, with a curved handle at the top.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Horse'S Stables"
+                }
+            },
+            "characters": {
+                "Knight": {
+                    "name": "Knight",
+                    "description": "A valiant figure in shining armor. He takes great care of his steed, and carries a noble aura around him.",
+                    "persona": "I am a protector, a warrior. I fight for my kingdom's honor.",
+                    "location": "Horse'S Stables",
+                    "goal": "His goal is to serve and protect his kingdom.",
+                    "inventory": {
+                        "Sword": {
+                            "name": "Sword",
+                            "description": "A sword resting against the stable wall, glinting in the sunlight.",
+                            "examine_text": "Upon closer inspection, the sword has a sharp, well-tempered blade and a finely crafted hilt. Its sharpness and balance suggests the highest craftmanship. It seems to be waiting for a worthy hand.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Bridle": {
+                            "name": "Bridle",
+                            "description": "A well-made bridle, hanging on a peg.",
+                            "examine_text": "The bridle is made of sturdy leather with polished brass buckles. It looks well-cared for and ready to equip a horse for a journey or battle.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Saddle": {
+                            "name": "Saddle",
+                            "description": "An elaborate saddle rests on a wooden stand, showcasing its fine craftsmanship.",
+                            "examine_text": "The saddle is made from high-quality leather and is adorned with polished metal embossing. Despite its embellishments, it's been designed for practicality and comfort during long rides and tough battles.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Cottage"
+        },
+        {
+            "name": "The Hay Field",
+            "description": "The Hay field is a beautiful and large place of crops stretching very far towards the horizon. Birds frequently come to sit and feed on them. The tools are scatter about here and there, as the field workers have put them down after a day of hard work. There is also a scare crow placed in the middle of the field, scaring away the birds that dare to come and feed, however it's not very effective. There are special hay carriages set on the hay field as well, ready to carry loads of crops.",
+            "background": "The hay is being sold to faraway lands, it's the best quality hay in the whole kingdom and therefore this field has many workers and lots of carriages set up to carry them to marketplaces all around the kingdom.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "To the north, across the bountiful field of hay, lies the Horse's Stables. The clear path meanders through the towering hay crops, kissed by the sunlight and peppered by gleeful chirps of roaming birds.",
+                "east": "Heading east from the field, the lush green vista transitions into a queer, enchanted forest, nestled in which is the solitary Witch's Cottage. The rough dirt path is sprinkled with a careful medley of curious herbs and magical blossoms unique to the witch's gathering."
+            },
+            "connections": {
+                "north": "Horse'S Stables",
+                "east": "The Witches Cottage"
+            },
+            "items": {
+                "Scarecrow": {
+                    "name": "Scarecrow",
+                    "description": "An old scarecrow that stands solitary in the middle of the field.",
+                    "examine_text": "The scarecrow is large and imposing, with tattered clothes and a painted face designed to scare away any birds. Unfortunately, it doesn't seem to be working very well.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Hay Field"
+                },
+                "Hay Bale": {
+                    "name": "Hay Bale",
+                    "description": "A large bale of top quality hay, ready to be shipped off to market.",
+                    "examine_text": "The hay is tightly bound into a rectangular shape, and it smells fresh and clean. It's truly top quality hay.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Hay Field"
+                },
+                "Field Tool": {
+                    "name": "Field Tool",
+                    "description": "A discarded field tool left behind by a hard-working farmer.",
+                    "examine_text": "The tool is a bit rusty but it's still sharp. It's designed to cut and gather hay efficiently.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "The Hay Field"
+                },
+                "Hay Carriage": {
+                    "name": "Hay Carriage",
+                    "description": "A large wooden carriage designed to transport bales of hay.",
+                    "examine_text": "The carriage has sturdy wooden wheels and a platform big enough to hold multiple bales of hay. It's clearly built to handle heavy loads.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Hay Field"
+                }
+            },
+            "characters": {
+                "The Scarecrow": {
+                    "name": "The Scarecrow",
+                    "description": "A constructed figure made from straw and old clothes. Its purpose is to keep birds away from the crops.",
+                    "persona": "I am but a humble guardian of the field. I scare away the birds and watch over the crops.",
+                    "location": "The Hay Field",
+                    "goal": "The Scarecrow's goal is to protect the crops from the birds.",
+                    "inventory": {
+                        "Scarecrow's Hat": {
+                            "name": "Scarecrow's Hat",
+                            "description": "A worn-out hat resting on the Scarecrow's head.",
+                            "examine_text": "Upon closer look, the hat is full of patches and stitches. It's made of straw, symbolizing solidarity with the crops it protects.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Scarecrow's Garb": {
+                            "name": "Scarecrow's Garb",
+                            "description": "An old, ragged garb worn by the Scarecrow.",
+                            "examine_text": "The garb is weather-beaten, reflecting its constant exposure to sun, wind, and rain. It smells of hay and gives you a faint sense of the hard work done in the field.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Scarecrow's Stick": {
+                            "name": "Scarecrow's Stick",
+                            "description": "A sturdy stick that supports the Scarecrow.",
+                            "examine_text": "The stick, driven deep into the ground, towers over you. Roughened by time and eroded by the elements, it stands as a faithful, immobile guardian of the fields.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Scarecrow's Pumpkin Head": {
+                            "name": "Scarecrow's Pumpkin Head",
+                            "description": "A hollowed-out pumpkin serves as the Scarecrow's head.",
+                            "examine_text": "The pumpkin is carved with a comical, grimacing face that is more likely to amuse than scare. Its empty insides echo the hollow reality of the Scarecrow's existence.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": true,
+                                "is_food": true,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Cottage"
+        },
+        {
+            "name": "The Witches Cottage",
+            "description": "The witches cottage has a huge cauldron in the middle of the cottage. There are shelves of glass jars that have things like spider legs, dragon toe nails, and fairy wings.  The floor is a dirt floor and the roof is made of wooden brooms.",
+            "background": "The witch was banished from the kingdom, so she needed a new home.  She built the cottage from the sticks she gathered from the forest floor.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "You make your way across a well-worn path, the bustle of the cottage fading behind you as you approach the grand expanse of the hay field. The air is thick with the smell of fresh hay and ripe crops.",
+                "inside": "You step inside from the cozy warmth of the cottage into the bracing chill of the cold storage room. Your breath fogs up in the air as you maneuver between crates of stored harvest."
+            },
+            "connections": {
+                "west": "The Hay Field",
+                "inside": "Cold Storage Room"
+            },
+            "items": {
+                "Cauldron": {
+                    "name": "Cauldron",
+                    "description": "A large, black, cast-iron cauldron sitting in the middle of the cottage.",
+                    "examine_text": "The cauldron is old, battered, and stained from many years of use. The scent of herbs and spices lingers around it, a relic of the potions and brews it has held.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Witches Cottage"
+                },
+                "Glass Jars": {
+                    "name": "Glass Jars",
+                    "description": "Shelves packed with glass jars storing various magical ingredients.",
+                    "examine_text": "The jars are filled with peculiar things: spider legs, dragon toe nails, fairy wings. Each jar is labeled with a careful hand, the elegant script a testament to the witch's meticulous nature.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Witches Cottage"
+                },
+                "Witch's Broom": {
+                    "name": "Witch's Broom",
+                    "description": "A bristly, worn-out broom leaning against one corner of the cottage.",
+                    "examine_text": "The bristles are worn down from years of sweeping and flying, the wooden handle smoothed by the witch's constant grip. There's something magical about this broom, it tingles with energy when touched.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "The Witches Cottage"
+                }
+            },
+            "characters": {
+                "Witch": {
+                    "name": "Witch",
+                    "description": "An eccentric looking woman with an overgrown hat and untamed hair. Her mismatched eyes and rune-covered outfit make her a sight to behold.",
+                    "persona": "I am a spiritual woman who values the serenity of the woods. I derive my power from nature and seek to protect it from harm.",
+                    "location": "The Witches Cottage",
+                    "goal": "Her goal is to protect the woods from those who seek to destroy it.",
+                    "inventory": {
+                        "Witch's Broom": {
+                            "name": "Witch's Broom",
+                            "description": "A sturdy broom made of wooden sticks",
+                            "examine_text": "An antique broom, crafted with love from sturdy oak sticks collected from the forest floor, it is both functional and a symbol of the Witch's connection with nature. You can see faint traces of earth still clinging to it.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Cauldron": {
+                            "name": "Cauldron",
+                            "description": "A large black cauldron that is used for mixing potions",
+                            "examine_text": "This is a significant artifact of the Witch's Cottage. The cauldron is as black as a moonless night, peppered with dents and stains from decades, if not centuries, of brewing potions. An exotic scent wafts from the interior, a mix of herbs and magic that tickles your nose.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Cottage"
+        },
+        {
+            "name": "Cold Storage Room",
+            "description": "The cold storage lies just beyond the cottage door. In it are various harvested vegetables, fruits, and nuts. Cured meat hangs from the ceiling by thin rope. The room is made of wood, and the wind whistles through the cracks.",
+            "background": "The man of the house built this room for his wife as their family grew. Originally they only had a larder and root cellar for their harvests, but with new mouths to feed came added need for more space for food. The family works together to fill the cold storage room during harvest time.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "outside": "You step out of the chilled storage room into the cozy warmth of the witch's cottage, filled with the aroma of dried herbs and magical ingredients.",
+                "south": "Walking south from the cold storage room, you transition from a space of life's sustenance into an area of eternal rest - a small, solemn graveyard."
+            },
+            "connections": {
+                "outside": "The Witches Cottage",
+                "south": "Small Graveyard"
+            },
+            "items": {
+                "Carrots": {
+                    "name": "Carrots",
+                    "description": "A bunch of harvested carrots.",
+                    "examine_text": "Bright orange carrots with green tops. They were likely harvested lately as they're still firm and fresh.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Cold Storage Room"
+                },
+                "Hanging Meat": {
+                    "name": "Hanging Meat",
+                    "description": "Cured meat hung from the ceiling.",
+                    "examine_text": "The meat hung from the ceiling. It's been cured, dried, and seasoned, perfect for long term storage.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Cold Storage Room"
+                },
+                "Wooden Crates": {
+                    "name": "Wooden Crates",
+                    "description": "Several wooden crates used for storage.",
+                    "examine_text": "The crates are old but well-built, with slats that allow air flow to keep the produce fresh.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Cold Storage Room"
+                },
+                "Rope": {
+                    "name": "Rope",
+                    "description": "A long, thin rope used for hanging meat.",
+                    "examine_text": "The rope is thin yet strong, perfect for hanging heavy meats from the ceiling.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Cold Storage Room"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Cottage"
+        },
+        {
+            "name": "Small Graveyard",
+            "description": "This is a small grassy area located under a large oak tree.  There are two home made wooden crosses set up along with mounds where the bodies are buried.",
+            "background": "This is where the residents of the cottage have buried their loved ones.  They wanted them to be close by so they can pay their respects.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Walking north towards the Cold Storage Room, you crunch over frosted leaves, feel the stiff breeze and take in the aroma of preserved harvest.",
+                "west": "Heading west, the way to the Tool Shed reminds you of a rustic path, running parallel to well-tended vegetable patches, the air filled with an earthy scent."
+            },
+            "connections": {
+                "north": "Cold Storage Room",
+                "west": "Tool Shed"
+            },
+            "items": {
+                "Wooden Cross 1": {
+                    "name": "Wooden Cross 1",
+                    "description": "A homemade wooden cross standing tall in respect to someone's memory.",
+                    "examine_text": "It is a sturdy, weathered cross made from untreated wood. A name is roughly carved on it, though wear and time have made it difficult to read.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Small Graveyard"
+                },
+                "Wooden Cross 2": {
+                    "name": "Wooden Cross 2",
+                    "description": "Another homemade cross, perhaps sharing a story of its own.",
+                    "examine_text": "The wooden cross is a little smaller than the first. A crude name is etched at the foot of it, but it's nearly impossible to read.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Small Graveyard"
+                },
+                "Large Oak Tree": {
+                    "name": "Large Oak Tree",
+                    "description": "A large oak tree, casting its long shadow over the small graveyard.",
+                    "examine_text": "The tree is tall and strong, with its wide-reaching branches offering shade and shelter. A symbol of endurance and stability, it fittingly overlooks the quiet graves.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Small Graveyard"
+                }
+            },
+            "characters": {
+                "Ghost": {
+                    "name": "Ghost",
+                    "description": "A spectral figure appearing as a faint glow in the darkness. Its exact appearance seems to waver and change every few seconds.",
+                    "persona": "I am trapped here, left to wander the earth after my death. I yearn for peace.",
+                    "location": "Small Graveyard",
+                    "goal": "The Ghost seeks to move on and find tranquility.",
+                    "inventory": {
+                        "Old Wooden Crosses": {
+                            "name": "Old Wooden Crosses",
+                            "description": "Two wooden crosses marking the graves of the departed.",
+                            "examine_text": "These crosses are old, the wood pales and cracks with age. The names of the departed are faintly visible on the crosses.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Chilled Air": {
+                            "name": "Chilled Air",
+                            "description": "A shift in the air's temperature near the grave sites.",
+                            "examine_text": "As you near the gravesites, the air turns chilly, and you feel a pit in your stomach. This is the manifestation of the trapped soul.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Ghostly Figure": {
+                            "name": "Ghostly Figure",
+                            "description": "An apparition of the character, Ghost, wander around the graveyard.",
+                            "examine_text": "'I am trapped here, left to wander the earth after my death. I yearn for peace.' The ghostly figure beckons you.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Grassy Mounds": {
+                            "name": "Grassy Mounds",
+                            "description": "Mounds of earth, marking the graves.",
+                            "examine_text": "The graves, unmarked apart from the crosses, are small mounds of earth. Grass is slowly starting to grow over what once was bare dirt.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Cottage"
+        },
+        {
+            "name": "Tool Shed",
+            "description": "The tool shed is made out of mismatched pieces of wood, haphazardly nailed together. Their are shelves inside and hooks on the walls that all hold various tools for gardening and landscaping.",
+            "background": "The tool shed was built by the owner of the cottage. While he is a hard worker, he tends to take short cuts to get the job done quickly so the shed is not exactly perfect looking, but it has stayed standing for several years now.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Leaving the tool shed, you traverse a short, worn path through well-tended greenery to the somber quiet of the small graveyard.",
+                "up": "Exiting the tool shed, you ascend a low hill covered in lush, dark green grass, with the sounds of distant mooing accompanying you to the Farmer's Hill."
+            },
+            "connections": {
+                "east": "Small Graveyard",
+                "up": "The Farmer Hill"
+            },
+            "items": {
+                "gardening_hoe": {
+                    "name": "gardening_hoe",
+                    "description": "A long, wooden handled tool with a flat, metallic blade.",
+                    "examine_text": "The wooden handle is smooth from years of use and the blade is showing signs of rust from exposure to moisture.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Tool Shed"
+                },
+                "watering_can": {
+                    "name": "watering_can",
+                    "description": "An old, metal watering can with a long spout.",
+                    "examine_text": "It is a fairly large size with a large handle for carrying. The body of the can has some dents and the paint is peeling off in certain places.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Tool Shed"
+                },
+                "garden_gloves": {
+                    "name": "garden_gloves",
+                    "description": "A pair of sturdy leather gloves.",
+                    "examine_text": "The leather is scratched and worn from use, but they still appear to be in good condition. The gloves are lined with a soft material for comfort.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Tool Shed"
+                },
+                "shovel": {
+                    "name": "shovel",
+                    "description": "A large, heavy-duty shovel with a wooden handle.",
+                    "examine_text": "The handle is a bit worn from use, but is still sturdy. The metal shovel blade is a bit rusty but still sharp.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Tool Shed"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Cottage"
+        },
+        {
+            "name": "The Farmer Hill",
+            "description": "the hill is a large patch of farming cattle and carrots growing in the grass. The grass is dark green and the hill's soil is moist. There are two black as night cows grazing, carefully avoiding the carrots.",
+            "background": "the farmer uses his farm to be self sufficient and the only thing he can grow outside his cottage is carrots. He hopes his cows give him more cows and he will be able to survive the winter.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "down": "A narrow stone path snakes its way downhill from the Farmer Hill to the Tool Shed, flanked by tall, rustling grass and dotted with bright wildflowers. The sounds of the farm gradually fade as you draw closer to the wooden structure."
+            },
+            "connections": {
+                "down": "Tool Shed"
+            },
+            "items": {
+                "Carrots": {
+                    "name": "Carrots",
+                    "description": "A bunch of carrots growing in the earth.",
+                    "examine_text": "A bundle of bright orange carrots, topped with vibrant green leaves, poking up from the dark, rich soil. They look ripe for the pulling.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Farmer Hill"
+                },
+                "Black Cow": {
+                    "name": "Black Cow",
+                    "description": "A large black cow, grazing on the lush green grass.",
+                    "examine_text": "An intimidatingly large farm animal, with smooth, glossy black hide and deep, gentle eyes. It looks well-fed and content, enjoying the grassy bounty of the hill.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Farmer Hill"
+                },
+                "Pitchfork": {
+                    "name": "Pitchfork",
+                    "description": "A weathered pitchfork, discarded nearby.",
+                    "examine_text": "A three-pronged pitchfork, its wooden handle worn smooth by the passage of weather and time. A caring tool, not a threatening weapon, but it could still easily pierce if misused.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "The Farmer Hill"
+                },
+                "Farmer Hat": {
+                    "name": "Farmer Hat",
+                    "description": "A straw hat left by the farmer.",
+                    "examine_text": "A wide-brimmed straw hat, well made and functional. It's definitely seen a lot of sun. You can almost smell the sweat of a long day's work ingrained in the fibers.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "The Farmer Hill"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Cottage"
+        }
+    ],
+    "actions": []
+}

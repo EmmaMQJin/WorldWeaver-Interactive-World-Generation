@@ -1,0 +1,1919 @@
+{
+    "player": "Old Farmer Joe",
+    "start_at": "Farmer'S House",
+    "game_history": [],
+    "game_over": false,
+    "game_over_description": null,
+    "characters": [
+        {
+            "name": "Old Farmer Joe",
+            "description": "A weathered and lively fellow with a penchant for storytelling, Old Farmer Joe is a trusted figure in these parts.",
+            "persona": "I\u2019ve been workin\u2019 these fields for just about as long as I can remember, yup, since I was knee-high to a pig\u2019s eye. Seen it all, I have.",
+            "location": "Farmer'S House",
+            "goal": "His goal is to cultivate the best crops for the lordly lord.",
+            "inventory": {}
+        },
+        {
+            "name": "Mildred the Cow",
+            "description": "Mildred is a gracious and obedient cow, with a pair of bright, miserly eyes that observe curiously her surroundings.",
+            "persona": "Moo! I love the simple life in the barn, chewing hay all day long and providing the best milk.",
+            "location": "The Old Red Barn",
+            "goal": "Mildred cherishes her peaceful life on the farm and aims to always provide the best milk.",
+            "inventory": {}
+        },
+        {
+            "name": "The Ghost of Abandoned Well",
+            "description": "A spectral apparition haunting the open field, emanating a chilling aura of loneliness and despair.",
+            "persona": "My ghostly life is hollow and devoid of joy. My only goal is to terrify the inhabitants of the field until they decide to take notice of my story.",
+            "location": "An Open Field",
+            "goal": "The ghost desires to have its tragic tale known and acquire peace by breaking its curse.",
+            "inventory": {}
+        },
+        {
+            "name": "Mr. Whiskers",
+            "description": "Mr. Whiskers is a sly and curious cat who prowls the farm grounds. He has sharp green eyes and a slick, black coat that shines in the sun.",
+            "persona": "I tread softly, unseen by the humans, catching mice and prowling the farm with unchallenged reign.",
+            "location": "Castle Farm",
+            "goal": "His aim is to have a full belly and explore every nook and cranny of the farm.",
+            "inventory": {}
+        },
+        {
+            "name": "The Herbalist",
+            "description": "A wise and introverted man who lives in the stilt home and spends his days studying plants.",
+            "persona": "People often underestimate the power of nature, but that's where true wisdom lies. My passion is to uncover the secrets of these herbs and share their benefits.",
+            "location": "Stilt Home",
+            "goal": "His goal is to uncover the true potential of natural herbs and hone his potion making skills.",
+            "inventory": {}
+        },
+        {
+            "name": "Wise Old Tree",
+            "description": "An ancient tree in the Haunted Orchard, possessing consciousness and ancient knowledge.",
+            "persona": "I have watched centuries unfold beneath my branches, providing fruit and shelter, while keeping the secrets of the land.",
+            "location": "Haunted Orchard",
+            "goal": "The tree desires to spread its seeds across the land, yearning to rejuvenate the forsaken orchard.",
+            "inventory": {}
+        },
+        {
+            "name": "Sheriff",
+            "description": "A tough and righteous man, the Sheriff ensures peace and order in the farm.",
+            "persona": "Being the sheriff, I have a duty to protect the farm and its residents. Law and order is what I believe in.",
+            "location": "Sheriff Office",
+            "goal": "His aim is to establish peace and order in the farm.",
+            "inventory": {}
+        }
+    ],
+    "locations": [
+        {
+            "name": "Farmer'S House",
+            "description": "a single room cottage with a dirt floor, minimally decorated with only a table, a pallet and a wood burning stove there is but a single window and a single door at this place",
+            "background": "This is feudal land, owned by a lordly lord and worked by a peasant farmer who grows crops mainly to be harvested for the lord's feasts and store but he is allowed to eat what he may, and has little else.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Walking east from the farmer\u2019s house, you pass through lush fields under the open sky until the grandeur of the Royal Farm is in sight.",
+                "west": "Heading west leads away from the wide-open fields, toward a tranquil river where the Stilt Home perches, safe from the rise and fall of the water\u2019s edge.",
+                "south": "Traveling south, the sounds of domesticated animals grows louder as you approach the busy Chicken Coop."
+            },
+            "connections": {
+                "east": "Royal Farm",
+                "west": "Stilt Home",
+                "south": "Chicken Coop"
+            },
+            "items": {
+                "Farm Table": {
+                    "name": "Farm Table",
+                    "description": "A roughly hewn wooden table",
+                    "examine_text": "Bears all the signs of long use, the surface worn smooth, stained by many meals and scarred from endless tasks completed upon it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Farmer'S House"
+                },
+                "Stove": {
+                    "name": "Stove",
+                    "description": "A wood-fired stove",
+                    "examine_text": "Heavy and blackened from smoke, there's enough heat radiating from it to warm the whole house.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Farmer'S House"
+                },
+                "Bed Pallet": {
+                    "name": "Bed Pallet",
+                    "description": "A straw-filled sack used as a bed",
+                    "examine_text": "A pauper's bed, full of itchy straw, but the only place to rest in this modest house.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Farmer'S House"
+                },
+                "Window": {
+                    "name": "Window",
+                    "description": "A small square hole with a hinged wooden shutter",
+                    "examine_text": "Through the dirty, scratched glass you can just make out the fields outside.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Farmer'S House"
+                }
+            },
+            "characters": {
+                "Old Farmer Joe": {
+                    "name": "Old Farmer Joe",
+                    "description": "A weathered and lively fellow with a penchant for storytelling, Old Farmer Joe is a trusted figure in these parts.",
+                    "persona": "I\u2019ve been workin\u2019 these fields for just about as long as I can remember, yup, since I was knee-high to a pig\u2019s eye. Seen it all, I have.",
+                    "location": "Farmer'S House",
+                    "goal": "His goal is to cultivate the best crops for the lordly lord.",
+                    "inventory": {
+                        "Pitchfork": {
+                            "name": "Pitchfork",
+                            "description": "An old but sturdy looking pitchfork leans against the wall.",
+                            "examine_text": "A closer look reveals that the pitchfork, while weathered with age and use, is remarkably durable. The wooden handle is smooth from years of being handled by the farmer, and the metal prongs are slightly rusted but still sharp.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Straw Hat": {
+                            "name": "Straw Hat",
+                            "description": "A wide-brimmed straw hat sits atop the table.",
+                            "examine_text": "Upon closer inspection, the hat appears to be woven from straw with a blue ribbon wrapped around for measure. It's sun-bleached, and the brim is fringed from frequent use.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Watering Can": {
+                            "name": "Watering Can",
+                            "description": "A large, metal watering can rests on the floor next to the table.",
+                            "examine_text": "The watering can is made of faded galvanized metal with a large handle and a long spout. It's showing signs of extensive use but is watertight.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Farm"
+        },
+        {
+            "name": "Royal Farm",
+            "description": "The farm is immense in land size and lies to the east of the castle and its walls. A variety of food products are created for the suitability of the kingdom. A variety of animals are grown and killed for their meats.",
+            "background": "The peasants of the kingdom must work for a living. They have gathered together to tend to the foodstuffs of the kingdom. The peasants work day and night for their crops.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "The journey towards the Farmer's House is a peaceful walk through emerald green fields brimming with golden crops, punctuated by the sounds of chirping birds and the hum of insects.",
+                "north": "Moving towards the area Adjacent To The Guest Castle, you cross a stony path that cuts through generously watered and well-tended gardens, igniting the scent of blooming roses and lavender in the air.",
+                "east": "The path to The Old Red Barn is a gradual uphill climb, with the view of rustic farmlands stretching out in the backdrop. You can hear the distant lowing of the animals housed in the barn."
+            },
+            "connections": {
+                "west": "Farmer'S House",
+                "north": "Adjacent To The Guest Castle",
+                "east": "The Old Red Barn"
+            },
+            "items": {
+                "Hay Bale": {
+                    "name": "Hay Bale",
+                    "description": "A compact, rectangular stack of dried grasses.",
+                    "examine_text": "It's a large straw-coloured, compact stack of dried and tied grasses, used mainly as animal feed. It has a dry, earthy aroma.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Royal Farm"
+                },
+                "Plow": {
+                    "name": "Plow",
+                    "description": "A medieval farming tool used for preparing the soil for planting.",
+                    "examine_text": "This heavy, wooden tool is designed to cut, lift, and turn over soil, especially to prepare it for planting. Its age and wear attest to the hard work of the peasants.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Royal Farm"
+                },
+                "Chicken Coop": {
+                    "name": "Chicken Coop",
+                    "description": "A small shelter where chickens are kept.",
+                    "examine_text": "A roughly structured wooden shelter, stacked with hay and occupied by clucking and pecking chickens. The coop's small door is slightly ajar.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Royal Farm"
+                },
+                "Watering Can": {
+                    "name": "Watering Can",
+                    "description": "A tin can used for watering plants.",
+                    "examine_text": "It's a slightly rusty, but sturdy, tin can with a handle and a nozzle. It is used to sprinkle water on thirsty crops. It seems to be recently filled with cool, fresh water.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Royal Farm"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Farm"
+        },
+        {
+            "name": "Stilt Home",
+            "description": "This stilt home has large wooden vertical beams propping it up to avoid the annual flooding that comes about during the year.  The dark wooden home itself is rather plain on the inside and outside with a thatch roof.  There's a small garden to the rear of the stilt home.",
+            "background": "This home belongs to a clever herbalist who thought it'd be smart to have his house propped out to avoid getting flooded.  As a result, he encounters few if any damages to his home.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "A winding path leads through tall rows of corn, the stalks waving gently in the breeze as you move eastward towards the Farmer's House.",
+                "north": "Heading north, you follow a well-trod path picked out by the hooves of noble steeds, leading you towards the royal Horse Tent."
+            },
+            "connections": {
+                "east": "Farmer'S House",
+                "north": "Horse Tent"
+            },
+            "items": {
+                "Herbal Scroll": {
+                    "name": "Herbal Scroll",
+                    "description": "A parchment of old knowledge describing the use and properties of various herbs.",
+                    "examine_text": "The scroll is elderly, filled with handwritten notations of different herbs, their properties, and uses. You notice diagrams and drawings as well as methods of preparation.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Stilt Home"
+                },
+                "Herbalist's Robe": {
+                    "name": "Herbalist's Robe",
+                    "description": "A simple robe, stained with Earth's colors, worn by the herbalist.",
+                    "examine_text": "The robe is simple, loose fitting and smeared with various dirt and herb streaks. It bears the faint scent of earth and various herbs, predicting the herbalist's frequent engagements with them.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Stilt Home"
+                },
+                "Mortar and Pestle": {
+                    "name": "Mortar and Pestle",
+                    "description": "A stone tool used by the herbalist for grinding herbs.",
+                    "examine_text": "Solid and somewhat heavy, this mortar and pestle bears the marks of frequent use. Small bits of dried herbs remain in the mortar, indicating recent use.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Stilt Home"
+                },
+                "Garden Herbs": {
+                    "name": "Garden Herbs",
+                    "description": "A mixture of herbs growing healthily in the herbalist's rear garden.",
+                    "examine_text": "Lush and green, the garden is a peaceful sight. You see a variety of herbs, some familiar to you, others completely alien. The fragrance of the herbs is refreshing and invigorating.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Stilt Home"
+                }
+            },
+            "characters": {
+                "The Herbalist": {
+                    "name": "The Herbalist",
+                    "description": "A wise and introverted man who lives in the stilt home and spends his days studying plants.",
+                    "persona": "People often underestimate the power of nature, but that's where true wisdom lies. My passion is to uncover the secrets of these herbs and share their benefits.",
+                    "location": "Stilt Home",
+                    "goal": "His goal is to uncover the true potential of natural herbs and hone his potion making skills.",
+                    "inventory": {
+                        "Herbal Scroll": {
+                            "name": "Herbal Scroll",
+                            "description": "A parchment scroll filled with meticulous details and illustrations of various herbs.",
+                            "examine_text": "Unrolling the scroll reveals countless illustrations of herbs and their uses, delineated with a practiced hand. Neat annotations and notes fill the margins with an elegant script akin to the Herbalist's speech pattern.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Mortar and Pestle": {
+                            "name": "Mortar and Pestle",
+                            "description": "A stone tool used by the Herbalist for grinding herbs into a fine powder.",
+                            "examine_text": "The Mortar and Pestle feels heavy and solid in your hand. Years of use has worn it smooth, and a light dusting of green powder clings stubbornly to its surface. You can almost smell the remnants of the fresh herbs it has crushed before.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Farm"
+        },
+        {
+            "name": "Chicken Coop",
+            "description": "The yard outside the barn is on a small, but well-maintained farm plot. There are enclosures for animals, and a short path leading up to a handsome, cozy farmhouse surrounded by large trees. The sun is warm, and the smell of grass and animal odors hangs in the air.",
+            "background": "This yard has been set up to be a chicken coop, but it doesn't appear to have been planned for that originally.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Following the well-trodden path, the comforting smell of the countryside becomes stronger as you approach the Farmer's House.",
+                "south": "A short walk down a deteriorating track leads to the mysterious Haunted Orchard, where the cawing of crows grows louder with each step."
+            },
+            "connections": {
+                "north": "Farmer'S House",
+                "south": "Haunted Orchard"
+            },
+            "items": {
+                "Chicken Feed": {
+                    "name": "Chicken Feed",
+                    "description": "A bag of mixed grains for the chickens.",
+                    "examine_text": "The chicken feed is a mix of corn and other grains designed to provide all the nutrients a chicken needs.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Chicken Coop"
+                },
+                "Feeding Trough": {
+                    "name": "Feeding Trough",
+                    "description": "A long, shallow wooden trough for the chickens to eat from.",
+                    "examine_text": "The feeding trough is filled with grains and seeds. You can see bits of corn, wheat, and other grains.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Chicken Coop"
+                },
+                "Chicken Wire": {
+                    "name": "Chicken Wire",
+                    "description": "A roll of chicken wire fencing.",
+                    "examine_text": "Upon examining the chicken wire you notice it is sturdy, with small hexagonal gaps. It's sharp on the edges.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Chicken Coop"
+                },
+                "Nesting Box": {
+                    "name": "Nesting Box",
+                    "description": "A wooden box filled with straw, where hens can lay their eggs in peace.",
+                    "examine_text": "The nesting box is cozy and soft with plenty of straw. It appears to be frequently used by the hens.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Chicken Coop"
+                },
+                "Farm Overalls": {
+                    "name": "Farm Overalls",
+                    "description": "A pair of durable, dirt-streaked overalls.",
+                    "examine_text": "The overalls are made from a tough fabric and have various pockets, many of them containing layers of lingering dust. They're designed to withstand heavy use.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Chicken Coop"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Farm"
+        },
+        {
+            "name": "Adjacent To The Guest Castle",
+            "description": "Green, fertile, and blessed with crops of all kind. This well-kept farm grows corn, rice, and wheat for the King's Family and closest aides. Animals such as horses, goats, and the bleating of sheep keeps this Farm bustling with activity.",
+            "background": "The Farm is the oldest location in the King's Land and was the first location of the Kings Castle, which has now been converted into a Guest Castle. The castle has been rejuvenated after a deadly famine 100 years ago that wiped out all life. Today, it is looked after by a team of well-compensated farmers.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "The journey south toward Royal Farm is pleasant, as you travel past verdant fields rich with fruits and vegetables. You can hear the distant sounds of animals and the faint scent of hay fills the air.",
+                "east": "Heading east, you pass through vast fields that gently sway with the wind. It's a peaceful journey leading to an Open Field, somewhat sad upon semblance as traces of past activity teasingly tugs at nostalgia."
+            },
+            "connections": {
+                "south": "Royal Farm",
+                "east": "An Open Field"
+            },
+            "items": {
+                "Sack Of Wheat": {
+                    "name": "Sack Of Wheat",
+                    "description": "A heavy sack filled with mature, dry wheat.",
+                    "examine_text": "Upon closer examination, you see that the wheat is golden and heavy, full of potential energy just waiting to be released in the form of flour.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Adjacent To The Guest Castle"
+                },
+                "Wooden Shovel": {
+                    "name": "Wooden Shovel",
+                    "description": "A sturdy wooden shovel used for digging the soil.",
+                    "examine_text": "The shovel is worn but still strong. Its handle is smooth from years of use.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Adjacent To The Guest Castle"
+                },
+                "Bucket Of Water": {
+                    "name": "Bucket Of Water",
+                    "description": "A large bucket filled to the brim with clear, cool water.",
+                    "examine_text": "The water is refreshingly cool to the touch, and clear enough that you can see your reflection.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Adjacent To The Guest Castle"
+                },
+                "Straw Hat": {
+                    "name": "Straw Hat",
+                    "description": "A wide-brimmed hat made from woven straw.",
+                    "examine_text": "The hat is simple but well-made, offering excellent protection from the sun.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Adjacent To The Guest Castle"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Farm"
+        },
+        {
+            "name": "The Old Red Barn",
+            "description": "This is an old run down red barn. It's two stories and most farmers wouldn't still be using it. It has chickens and cows inside and harvests eggs and milk for the entire family. The second story has a large pile of hay visible through an old opening in the front.",
+            "background": "This barn has been on the farm since the very beginning. It was built by the first generation farmer to live on the land over sixty years ago. It has been repainted numerous times and wasn't originally red. It was actually yellow before switching to red.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "The journey west to the Royal Farm is through rolling fields of grain bordered by winding country roads, while in the distance, the vast farmland and bustling activity of the farm workers can be sighted.",
+                "east": "Moving east towards the Castle Farm, the scenery morphs gradually from the rustic hues of the countryside, to imposing grey stone fortifications, marking the demarcation of Castle Farm from the rest of the kingdom."
+            },
+            "connections": {
+                "west": "Royal Farm",
+                "east": "Castle Farm"
+            },
+            "items": {
+                "Barn Hay": {
+                    "name": "Barn Hay",
+                    "description": "An old pile of golden hay in the corner",
+                    "examine_text": "Upon closer examination, the hay is dry and scratchy. It crinkles under the weight of your hand. It appears to have been used for bedding for some animal recently.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Old Red Barn"
+                },
+                "Milk Bucket": {
+                    "name": "Milk Bucket",
+                    "description": "A tin milk bucket placed beside milking stool",
+                    "examine_text": "The bucket is full of fresh, frothy milk. It looks freshly collected.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Old Red Barn"
+                },
+                "Milking Stool": {
+                    "name": "Milking Stool",
+                    "description": "A small wooden stool located next to the cows",
+                    "examine_text": "This stool, constructed of sturdy but worn wood, shows signs of heavy use. It is small and low, perfect for sitting at the side of a cow and milking.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Old Red Barn"
+                },
+                "Egg Basket": {
+                    "name": "Egg Basket",
+                    "description": "A woven basket containing chicken eggs",
+                    "examine_text": "The basket is full of smooth, oval-shaped, chicken eggs. You need to be careful carrying this around, those eggs look delicate.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Old Red Barn"
+                }
+            },
+            "characters": {
+                "Mildred the Cow": {
+                    "name": "Mildred the Cow",
+                    "description": "Mildred is a gracious and obedient cow, with a pair of bright, miserly eyes that observe curiously her surroundings.",
+                    "persona": "Moo! I love the simple life in the barn, chewing hay all day long and providing the best milk.",
+                    "location": "The Old Red Barn",
+                    "goal": "Mildred cherishes her peaceful life on the farm and aims to always provide the best milk.",
+                    "inventory": {
+                        "Bell": {
+                            "name": "Bell",
+                            "description": "A brass bell that hangs around Mildred's neck.",
+                            "examine_text": "A sturdy brass bell with a mellow tone. It is old, but shines with the loving wear and polish it receives from loyal farmer's hands. It is marked with a little 'M' on the side, perhaps for 'Mildred'?",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Bucket of fresh milk": {
+                            "name": "Bucket of fresh milk",
+                            "description": "A wooden bucket filled with frothy, fresh milk from Mildred.",
+                            "examine_text": "The wooden bucket is sturdy and without leak. The milk inside is cool to touch, cleanly harvested, frothy on top and has a fresh and inviting smell. It comforts you with the promise of tenderness and the wholesome taste of the countryside.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": true,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Farm"
+        },
+        {
+            "name": "Horse Tent",
+            "description": "Held erect by large bronze poles planted firmly in the ground, the purple and gold Horse tent offers a canvas over a number of stalls, each with it's own accommodations including fresh hay and a trough that is refilled daily. The tent's entrance is kept open during the day to allow sunlight to shine into the tent illuminating those inside, while the other end of the tent has a door leading directly into the guest castle.",
+            "background": "The Horse Tent is used to store the royalty's guests' horses as they visit the kingdom. They are tended to by the stable boys, and are a means to show the King's generosity in dealing with visitors.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "Heading south from the Horse Tent, the path leads across open landscape, the fresh scent of hay fading as the noise of nature grows, until you eventually reach the peculiar vertical structures of the Stilt Home.",
+                "east": "Moving eastward from the Horse Tent, the land shifts unsettlingly, from the comforting rustic ambience of the tent to the eeriness of the twisted and gnarled fruit trees of the Haunted Orchard."
+            },
+            "connections": {
+                "south": "Stilt Home",
+                "east": "Haunted Orchard"
+            },
+            "items": {
+                "Bronze Poles": {
+                    "name": "Bronze Poles",
+                    "description": "Tall sturdy bronze poles supporting the tent",
+                    "examine_text": "The bronze poles are hard, cold, and tower above you. They serve as the structure to hold the large tent up.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Horse Tent"
+                },
+                "Trough": {
+                    "name": "Trough",
+                    "description": "A wooden trough filled with water",
+                    "examine_text": "The trough is made of thick, raw wood. The water inside is clear and cool, filled to the brim for the horses to drink.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Horse Tent"
+                },
+                "Fresh Hay": {
+                    "name": "Fresh Hay",
+                    "description": "Crisp, clean hay in horse's stalls",
+                    "examine_text": "The hay is still fresh, golden and soft. It makes for comfortable bedding for the horses",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Horse Tent"
+                },
+                "Stable Boy's Rake": {
+                    "name": "Stable Boy's Rake",
+                    "description": "A tool used by the stable boys for cleaning",
+                    "examine_text": "It's a long tool with wooden handle and metal prongs, shows sign of constant use.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Horse Tent"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Farm"
+        },
+        {
+            "name": "Haunted Orchard",
+            "description": "Stunted and gnarled fruit trees are lined in rows. The trees have thick bases and are clearly very old but have not produced any fruit for a long time, yet they stubbornly cling to life. Unpruned, their branches stick out at all angles making it hard for a person to traverse the orchard and frequently these branches grab the loose clothing of any visitor. Wind moan through the trunks while dead leaves slowly tumble along the ground.",
+            "background": "This orchard was clearly a well tended, food producing area taken care of by people living in the Abandoned Shack. But it too has become abandoned.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Passing through the orchard filled with old fruit trees, the path leads to a small but well-maintained farm plot, where the yard has been repurposed into a chicken coop.",
+                "west": "A winding path leads west, away from the orchard. Gradually, the sight of a grand horse tent, held by bronze poles and decorated in royal colors, comes into view.",
+                "south": "The path slowly descends to the south, opening up to vast expanses of farmland. A gigantic farm stretches over the horizon, lively with the sound of horses and commanding your gaze towards an iconic red barn at its heart."
+            },
+            "connections": {
+                "north": "Chicken Coop",
+                "west": "Horse Tent",
+                "south": "Large Farm"
+            },
+            "items": {
+                "Rusty Scissors": {
+                    "name": "Rusty Scissors",
+                    "description": "A pair of old rusted shears with a chipped blade.",
+                    "examine_text": "These scissors once used to trim the orchard are now rusted and have an almost unusable, chipped blade. One of the handles is broken. Legacy of more fertile times seem to haunt you.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Haunted Orchard"
+                },
+                "Old Ladder": {
+                    "name": "Old Ladder",
+                    "description": "A wooden ladder resting against a tree trunk.",
+                    "examine_text": "The ladder has an unstable appearance. The paint is flaking off and it's splintered in many places. Long deserted, it poses a hazard to anyone who might attempt to climb it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Haunted Orchard"
+                },
+                "Broken Trunk": {
+                    "name": "Broken Trunk",
+                    "description": "A rotten fruit tree trunk, hollowed out by age and neglect.",
+                    "examine_text": "The trunk is broken, its bark peeling off. Inside you see a hollow space, like a black gaping wound. It exudes a smell of rotten soil and fungi.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Haunted Orchard"
+                }
+            },
+            "characters": {
+                "Wise Old Tree": {
+                    "name": "Wise Old Tree",
+                    "description": "An ancient tree in the Haunted Orchard, possessing consciousness and ancient knowledge.",
+                    "persona": "I have watched centuries unfold beneath my branches, providing fruit and shelter, while keeping the secrets of the land.",
+                    "location": "Haunted Orchard",
+                    "goal": "The tree desires to spread its seeds across the land, yearning to rejuvenate the forsaken orchard.",
+                    "inventory": {
+                        "Golden Leaf": {
+                            "name": "Golden Leaf",
+                            "description": "A large, perfectly shaped leaf shines with a natural golden sheen.",
+                            "examine_text": "As you hold the golden leaf up to the light, the leaf glistens and seems to delve its entire history into your thoughts. This leaf has seen many seasons come and go under Wise Old Tree's watch, absorbing the wisdom ingrained in every tree ring.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Ancient Seed": {
+                            "name": "Ancient Seed",
+                            "description": "An oversized seed, seemingly preserved in time.",
+                            "examine_text": "The seed appears quite larger than most seeds you\u2019ve seen, looking ageless and durable. There's an ancient energy emanating from it. Even as it rests on your palm, it carries the weight and wisdom of centuries that have passed under the shade of the Wise Old Tree. It seems to bear the potential of a thousand orchards.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Farm"
+        },
+        {
+            "name": "An Open Field",
+            "description": "An old run down farm, long abandoned by the inhabitants due to a ghost in the well directly in front of the farmhouse. It has seen better days, the wood is old and warped, scorched from fire set by brigands. Old tools litter the yard and bits of armor. It is obvious many have used this as a temporary camp since it's days as a working farm.",
+            "background": "The farm once was a very productive venture, providing meat and produce for the people in the tower. The decorations are old but nice, not the type a king would own but a well-to-do merchant. What isn't nailed down has been carted off or used for campfire fuel.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Moving towards the east, one finds themselves on a path that winds between the abandoned farm and a copse of trees. It directs you to the Sheriff's Office, located on the southern edge of the field. It's a quiet stroll with the rustling of leaves and the occasional sounds of birds echoing in the air."
+            },
+            "connections": {
+                "east": "Sheriff Office"
+            },
+            "items": {
+                "Old Plow": {
+                    "name": "Old Plow",
+                    "description": "A rusty, abandoned plow.",
+                    "examine_text": "This old plow has been left to rust, forgotten in the field. It was once a vital tool for the farmers who lived here.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "An Open Field"
+                },
+                "Brigand Armor": {
+                    "name": "Brigand Armor",
+                    "description": "Pieces of discarded brigand armor.",
+                    "examine_text": "This armor was left by the brigands who raided this farm. It's a bit beaten up, but it could still provide some protection.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "An Open Field"
+                },
+                "Farmhouse Door": {
+                    "name": "Farmhouse Door",
+                    "description": "The old, warped door to the farmhouse.",
+                    "examine_text": "This once sturdy door now hangs off its hinges, the wood scorched from the brigands' fire. It's not much of a barrier anymore.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "An Open Field"
+                },
+                "Ghostly Well": {
+                    "name": "Ghostly Well",
+                    "description": "An old well, said to be haunted by a ghost.",
+                    "examine_text": "This well, once a source of clean water for the farm, now stands as a haunting reminder of its past. The water inside is murky and undrinkable.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "An Open Field"
+                },
+                "Abandoned Tools": {
+                    "name": "Abandoned Tools",
+                    "description": "Old farming tools scattered around the yard.",
+                    "examine_text": "These farming implements were once the lifeblood of the farm. Now they are nothing more than remnants of a bygone era.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "An Open Field"
+                }
+            },
+            "characters": {
+                "The Ghost of Abandoned Well": {
+                    "name": "The Ghost of Abandoned Well",
+                    "description": "A spectral apparition haunting the open field, emanating a chilling aura of loneliness and despair.",
+                    "persona": "My ghostly life is hollow and devoid of joy. My only goal is to terrify the inhabitants of the field until they decide to take notice of my story.",
+                    "location": "An Open Field",
+                    "goal": "The ghost desires to have its tragic tale known and acquire peace by breaking its curse.",
+                    "inventory": {
+                        "Ancient Relic": {
+                            "name": "Ancient Relic",
+                            "description": "A weather worn artifact exuding a ghostly aura",
+                            "examine_text": "Even in its worn state, the relic eminates a potent aura of the supernatural. There's an inscription which appears to be some kind of an ancient chant. Perhaps it is related to the ghost of abandoned well.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Broken Key": {
+                            "name": "Broken Key",
+                            "description": "An old, rusted key snapped in half",
+                            "examine_text": "This key's burly shaft is rusted over, with a jagged split separating the bit from the bow. It almost seems as if it's just waiting to tell its part of a tragic tale. It may have been an important key when it was whole.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Farm"
+        },
+        {
+            "name": "Castle Farm",
+            "description": "The farm is a large patch of land located directly outside of the castle walls. A wide variety of grains, vegetables and fruits are grown here to feed the castle's people. A few lone barns are scattered across the farmland, housing a wide array of farm animals that are slaughtered for their delicious meats.",
+            "background": "The farms were a necessity for the castle to be able to sustain itself during winters and sieges. As a result, the unskilled laborers of the castle were designated to move outside the castle walls and generate food for their people. The farmers always made sure there was a plentiful amount of harvest to last during these harsh times.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Weaving through stalks of corn and sturdy wheat, the path leading west to the Old Red Barn is rough but reliable, shaded by the sweeping branches of ancient, gnarled oak trees.",
+                "north": "Heading north from the farm, a narrow, dusty road snakes its way to the Sheriff Office. The air gradually fills with the murmur of the town and the scent of parchment and ink."
+            },
+            "connections": {
+                "west": "The Old Red Barn",
+                "north": "Sheriff Office"
+            },
+            "items": {
+                "Pitchfork": {
+                    "name": "Pitchfork",
+                    "description": "A standard farm tool.",
+                    "examine_text": "A tool with a long handle and sharp metal prongs, used mainly for pitching hay.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Castle Farm"
+                },
+                "Hay Bale": {
+                    "name": "Hay Bale",
+                    "description": "A large bundled-up stack of hay.",
+                    "examine_text": "A tightly packed bale of straw, used for animal feed, bedding or as a makeshift seat in the field.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Castle Farm"
+                },
+                "Water Trough": {
+                    "name": "Water Trough",
+                    "description": "A container of water for the livestock.",
+                    "examine_text": "It\u2019s a shallow, wide container filled with water, usually for farm animals to drink.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Castle Farm"
+                },
+                "Fresh Vegetables": {
+                    "name": "Fresh Vegetables",
+                    "description": "Basket filled with ripe vegetables.",
+                    "examine_text": "A basket overflowing with various fresh vegetables from the farm. You see tomatoes, potatoes, carrots and more. The vegetables look ripe and ready to eat.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Castle Farm"
+                },
+                "Farm Overalls": {
+                    "name": "Farm Overalls",
+                    "description": "A pair of durable overalls.",
+                    "examine_text": "This is a pair of heavy-duty overalls, stained with dirt. The rugged fabric looks durable and is designed to protect the wearer from grime and sun.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Castle Farm"
+                }
+            },
+            "characters": {
+                "Mr. Whiskers": {
+                    "name": "Mr. Whiskers",
+                    "description": "Mr. Whiskers is a sly and curious cat who prowls the farm grounds. He has sharp green eyes and a slick, black coat that shines in the sun.",
+                    "persona": "I tread softly, unseen by the humans, catching mice and prowling the farm with unchallenged reign.",
+                    "location": "Castle Farm",
+                    "goal": "His aim is to have a full belly and explore every nook and cranny of the farm.",
+                    "inventory": {
+                        "Ball of Yarn": {
+                            "name": "Ball of Yarn",
+                            "description": "A soft, spherical mass of fibres wound together",
+                            "examine_text": "This ball of plain, mashed yarn seems to have been abandoned for some time, and there are tangles where it seems to have been played with. It's soft to the touch and bounces just enough to be entertaining.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Mouse Toy": {
+                            "name": "Mouse Toy",
+                            "description": "A miniature, soft toy made to resemble a mouse",
+                            "examine_text": "This mouse toy is a bit worn, with patches where the fur has been scratched off. Its small, beady eyes and leather tail attached makes it a good plaything to practise catching real mice. It's surprisingly light and jingles slightly when moved.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Empty Collar": {
+                            "name": "Empty Collar",
+                            "description": "A collar without any tags or ornaments",
+                            "examine_text": "This used to be a grand and shiny collar, but now it's empty, torn and faded. There's an engraved plate that reads, 'Mr. Whiskers'. It seems to have come undone and probably awaits its owner to come put this right back on.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Farm"
+        },
+        {
+            "name": "Large Farm",
+            "description": "The farm is huge, over 1000 acres. There are a ton of horses that live on the farm and a wooden fence is around all roads of the farm. There is a red barn in the center of the farm.",
+            "background": "The farm is the life of the town. It is where all the crops are grown to feed the people. The barn was the first building built when the town was established.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Wandering through the eerie farm fields, the gnarled fruit trees of the orchard soon creep into view. The wind carries eerie echoes and the crunch of dry leaves underfoot is the only accompaniment.",
+                "west": "Trudging west, the busy sounds of the farm grow quiet. The rustic aroma of the stable fills the air, accompanied by the distant sounds of animals shifting in their stalls."
+            },
+            "connections": {
+                "north": "Haunted Orchard",
+                "west": "Stable"
+            },
+            "items": {
+                "Wooden Fence": {
+                    "name": "Wooden Fence",
+                    "description": "A sturdy wooden fence stretching around the farm.",
+                    "examine_text": "The fence is tall, strong, and made from thick oak wood. It's apparent its purpose is to keep the horses from straying off the farm.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Large Farm"
+                },
+                "Red Barn": {
+                    "name": "Red Barn",
+                    "description": "A large red barn, the heart of the farm.",
+                    "examine_text": "The barn is painted a vibrant shade of red, and is faded in certain areas, hinting at years of historical relevance.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Large Farm"
+                },
+                "Horse": {
+                    "name": "Horse",
+                    "description": "A majestic creature of the farm.",
+                    "examine_text": "The horses are strong and beautiful, their coats shiny from careful grooming.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Large Farm"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Farm"
+        },
+        {
+            "name": "Sheriff Office",
+            "description": "The sheriff's office is a small building on the southern edge of the farm. There is a desk with decrees from the king and other papers strewn about. Hanging on the wall are swords and other weapons. The room is small and cluttered, with various books and other things strewn about.",
+            "background": "The sheriff spends a lot of his time reading when he is not tasked with taking care of a problem. The main jail is underneath the castle, so no prisoners are housed at the office. It is a small, quiet building and the sheriff is often napping when someone comes to see him.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "The journey south to the Castle Farm involves walking down a well-trodden path, lined with low stone walls. The soothing smell of ripening crops and distant lowing of cattle set a calming mood.",
+                "west": "Westwards towards the Open Field, the terrain becomes wilder and less cultivated. Wild grass and untamed flora adds a sense of unpredictability during the journey, an old wisp of the time when the land was yet to be tamed."
+            },
+            "connections": {
+                "south": "Castle Farm",
+                "west": "An Open Field"
+            },
+            "items": {
+                "Desk": {
+                    "name": "Desk",
+                    "description": "A weathered wooden desk cluttered with papers and writing tools.",
+                    "examine_text": "The desk is old and covered in scratches and stains. There are papers all over the desk - decrees, reports, and notes. There's also a quill and ink pot for writing.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Sheriff Office"
+                },
+                "Sword": {
+                    "name": "Sword",
+                    "description": "A sword hangs on the wall amid a few similar weapons.",
+                    "examine_text": "It's a standard steel short sword, well maintained and still sharp. It seems like it's mostly for show, but it could be used in a fight if necessary.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Sheriff Office"
+                },
+                "Book": {
+                    "name": "Book",
+                    "description": "There are various books strewn about.",
+                    "examine_text": "Most of the books seem to be about laws, history, and the duties of a sheriff. They are worn out from heavy usage.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Sheriff Office"
+                }
+            },
+            "characters": {
+                "Sheriff": {
+                    "name": "Sheriff",
+                    "description": "A tough and righteous man, the Sheriff ensures peace and order in the farm.",
+                    "persona": "Being the sheriff, I have a duty to protect the farm and its residents. Law and order is what I believe in.",
+                    "location": "Sheriff Office",
+                    "goal": "His aim is to establish peace and order in the farm.",
+                    "inventory": {
+                        "Sheriff\u2019s Badge": {
+                            "name": "Sheriff\u2019s Badge",
+                            "description": "A shiny metallic badge shaped like a star.",
+                            "examine_text": "Upon closer examination, you see that the badge is well-polished with intricate detailing. It has the words, 'Farm Sheriff' inscribed in elegant lettering.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Sword": {
+                            "name": "Sword",
+                            "description": "A long sharp sword hanging on the wall.",
+                            "examine_text": "The sword is shiny and well-maintained, despite its age. It has a lavish hilt embedded with semi-precious stones and a lengthy, sharp double-edged blade.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Handcuffs": {
+                            "name": "Handcuffs",
+                            "description": "A pair of steel handcuffs sitting on the desk.",
+                            "examine_text": "Upon closer examination, you note that these handcuffs are heavy and sturdy, with a shiny steel finish. They are well-worn from use.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Farm"
+        },
+        {
+            "name": "Stable",
+            "description": "It's a plain wooden building that has survived many harsh seasons.  The floor of the stable is covered in hay and there's food and pieces of farm equipment stored inside.",
+            "background": "This is an area where the horses are kept and maintained.  The peasants who run the farm store pieces of equipment in here as well along with food for the animals.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Walking from the dusty stable eastwards, you enter a vast farm with vibrant green fields stretching beyond the horizon.",
+                "north": "Heading north from the stable, the corn field looms in front of you, tall stalks swaying as a warm breeze rustles through them."
+            },
+            "connections": {
+                "east": "Large Farm",
+                "north": "Corn Field"
+            },
+            "items": {
+                "Hay Bale": {
+                    "name": "Hay Bale",
+                    "description": "A large, square bundle of dried grass, perfect for the horses' diet.",
+                    "examine_text": "Upon closer inspection, you can see this is a perfectly tied bundle of dried, yellow-straw.  The grass is tightly bound and ready to be distributed to the horses.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Stable"
+                },
+                "Shovel": {
+                    "name": "Shovel",
+                    "description": "A long-handled shovel used for cleaning and maintenance.",
+                    "examine_text": "This is an old, well-used shovel. The wooden handle is smooth from years of use and the metal blade is showing signs of rust.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Stable"
+                },
+                "Horse Harness": {
+                    "name": "Horse Harness",
+                    "description": "A leather harness used to control the horses.",
+                    "examine_text": "The harness is made of strong, well-crafted leather. It's sturdily built, with strong buckles and rings for reins.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Stable"
+                },
+                "Barrel of Water": {
+                    "name": "Barrel of Water",
+                    "description": "A large wooden barrel filled with water for the horses.",
+                    "examine_text": "Splintered wood bound together by rusty bands. It's filled nearly to the brim with clear, cool water.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Stable"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Farm"
+        },
+        {
+            "name": "Barn",
+            "description": "The old rustic barn was settled on the outermost edge of the farm.  Standing tall over the fields, this two-story red barn cast a long shadow over the field surrounding it.  Large wooden doors that could be propped open with great effort would lead you directly inside.",
+            "background": "This barn was a landmark of the farm.  Withstanding the elements for almost a century, it has kept it's original construct.  Whenever guests come for fresh eggs or milk, the farmer often boasts about it.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "Walking south from the barn, you'll traverse over the slightly uneven terrain of the farm. The smell of the barn slowly fades and is replaced by the homey scents of the main house.",
+                "west": "Heading west to the living quarters, the path is lined with greenery. Rustling sounds from the leaves add to the emotional connection between the farm workers and the land they cultivate."
+            },
+            "connections": {
+                "south": "Main House",
+                "west": "The Living Quarters"
+            },
+            "items": {
+                "Bale of Hay": {
+                    "name": "Bale of Hay",
+                    "description": "A stack of hay, neatly tied and ready for feeding.",
+                    "examine_text": "The bale of hay, tied tightly with twine, has a sweet, earthy scent to it. It's dry and scratchy to the touch, but the animals on this farm seem to love it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Barn"
+                },
+                "Milk Bucket": {
+                    "name": "Milk Bucket",
+                    "description": "A round, metal bucket used for collecting milk.",
+                    "examine_text": "This bucket is large and sturdy, with a heavy-duty handle for carrying. The inside is clean and shiny, perfect for gathering fresh milk.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Barn"
+                },
+                "Old Pitchfork": {
+                    "name": "Old Pitchfork",
+                    "description": "A rusty, old pitchfork leaning against the wall.",
+                    "examine_text": "The wooden handle of this tool is worn and splintered. The metal prongs are rusty but still very sharp. It seems like it has been used a lot.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Barn"
+                },
+                "Farmer's Cap": {
+                    "name": "Farmer's Cap",
+                    "description": "A simple cap, well worn from the elements.",
+                    "examine_text": "The cap is weathered, with sweat stains marking the brim. A farm logo is embroidered on the front, proving an authenticity to the farming tale.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Barn"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Farm"
+        },
+        {
+            "name": "Corn Field",
+            "description": "the corn field extends as far as the eye can see. In the off season months it is barren grass, but during the corn growing season it is filled with shoulder high thick yellow stocks with corn growing at the ends. There are pathways cut into the field to provide walking terrain for the farmers.",
+            "background": "Corn provides the livelihood for these farmers, and as such most of their days are spent tending to the crop. For about a century the farmers and their forefathers have tended to their now famous crop, which is boasted as the best in the land.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "Walking south from the corn field, the path is bordered by more lush crops swaying gently in the breeze. As you near the stable, the distinct scent of hay and horses fills the air.",
+                "west": "Moving westward, the path is well-trodden, showing the frequent journies made by the farmers from field to house. As the main house comes into view, you can see warm light flickering from its windows."
+            },
+            "connections": {
+                "south": "Stable",
+                "west": "Main House"
+            },
+            "items": {
+                "Corn Stalk": {
+                    "name": "Corn Stalk",
+                    "description": "A tall stalk of corn, thick and sturdy.",
+                    "examine_text": "Upon a closer look, you find this is a prime corn stalk, verdant and strong. Ears of corn hang heavily from it, ripe and ready for harvesting. Every leaf and cell is bursting with life and vigour.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Corn Field"
+                },
+                "Harvest Sack": {
+                    "name": "Harvest Sack",
+                    "description": "A large burlap sack for carrying harvested corn.",
+                    "examine_text": "The sack is made from burlap, coarse and scratchy, but sturdy. It's large, capable of fitting a good amount of corn. It's currently empty, waiting to be filled.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Corn Field"
+                },
+                "Scarecrow": {
+                    "name": "Scarecrow",
+                    "description": "A scarecrow stands sentinel in the field.",
+                    "examine_text": "The scarecrow is a simple construction of straw and old clothes, its purpose to keep the birds away from the precious crops. It has a crude, painted face that is more charming than scary.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Corn Field"
+                },
+                "Farmers Hat": {
+                    "name": "Farmers Hat",
+                    "description": "A wide-brimmed hat, perfect for blocking out the sun.",
+                    "examine_text": "The hat looks old, well used, and loved. It's made of a rough fabric, stained by sweat and sun, and seems to have a long history of hard work.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Corn Field"
+                },
+                "Water Bottle": {
+                    "name": "Water Bottle",
+                    "description": "A reusable water bottle.",
+                    "examine_text": "The water bottle is large, meant to hold enough water for a full day's work in the field. Its exterior is scratched and worn, the plastic casing showing signs of repeated use.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Corn Field"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Farm"
+        },
+        {
+            "name": "Main House",
+            "description": "A fairly plain wooden building, the fireplace in the center of the back wall provides warmth during the winter seasons. There are paintings on the wall showing the farmer's forefathers and the previous owners. The floor is adorned with animal pelt rugs, and wood crafted furniture for the farmers to sit in.",
+            "background": "The main house provides refuge for the farmers after a hard days work, and is where they sleep, eat, and socialize before heading out for another day in the fields.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "With the wind guiding your life, you stroll through the vibrant green foliage towards the endless corn fields. The soothing rustling of leaves in the wind provides a calming soundtrack to your journey.",
+                "north": "Walking north, the barn slowly begins to dominate your field of view. The rhythmic sounds of animals and the scent of hay intensify as you near it."
+            },
+            "connections": {
+                "east": "Corn Field",
+                "north": "Barn"
+            },
+            "items": {
+                "Wooden Chair": {
+                    "name": "Wooden Chair",
+                    "description": "A sturdy, hand-crafted delight made from quality farm-grown timber",
+                    "examine_text": "The chair looks weathered but it is a testament to workmanship. It has a few carvings on its armrests",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Main House"
+                },
+                "Farmers Painting": {
+                    "name": "Farmers Painting",
+                    "description": "A canvas painting depicting the history of the farm and its previous owners.",
+                    "examine_text": "Upon closer inspection, the painting shows the farm in its different stages, noting each era and major event.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Main House"
+                },
+                "Pelt Rug": {
+                    "name": "Pelt Rug",
+                    "description": "An animal pelt rug which adds a cozy feel to the room and feels soft under foot.",
+                    "examine_text": "The rug is made from the pelts of multiple animals, a patina of interesting patterns.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Main House"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Farm"
+        },
+        {
+            "name": "Barn",
+            "description": "The barn is old and rustic on the inside, with fresh red paint on the outside. Inside there is a ladder leading up to a loft. There is hay everywhere.",
+            "background": "The barn is the biggest and brightest building on the property. It is where the animals sleep at night and take shelter in the cold. Children sometimes play in the barn, jumping from the loft and landing on a pile of hay.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "Walking south from the rustic barn, one would find themselves approaching the warm comfort of the main house, its welcoming glow a stark difference against the quiet, humble barn.",
+                "west": "Heading west from the barn leads to the living quarters, a journey filled with sounds and sights of the farm, from the rustle of the hay to the distant clucking of the chickens."
+            },
+            "connections": {
+                "south": "Main House",
+                "west": "The Living Quarters"
+            },
+            "items": {
+                "Ladder": {
+                    "name": "Ladder",
+                    "description": "A sturdy, wooden ladder",
+                    "examine_text": "It's a tall ladder, constructed of strong wood with a worn finish. Leading up to the loft, it's the only way to get up there",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Barn"
+                },
+                "Hay": {
+                    "name": "Hay",
+                    "description": "Baled hay, piled high",
+                    "examine_text": "This is a large pile of hay bales, neatly stacked. The hay is dry and has a freshly cut grass smell. You can imagine the animals enjoy eating this.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Barn"
+                },
+                "Paint": {
+                    "name": "Paint",
+                    "description": "A can of fresh, red paint",
+                    "examine_text": "A can of red paint sits here, lightly covered in dust. A brush with dried paint on it sits on the lid. It's the same color as the barn.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Barn"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Farm"
+        },
+        {
+            "name": "The Living Quarters",
+            "description": "Small barn like building, with old wooden doors and not many windows. It has different rooms as well as a decent sized kitchen.",
+            "background": "The farm workers live here, where they share meals and their free time. Despite all being different, they have become like a family. They like the fact they can live where they work.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Walking from The Living Quarters, a path leads through a small backyard garden. As you traverse the beaten path, the looming figure of the old rustic Barn comes into view."
+            },
+            "connections": {
+                "east": "Barn"
+            },
+            "items": {
+                "Wooden Table": {
+                    "name": "Wooden Table",
+                    "description": "An old sturdy wooden table littered with traces of rural living.",
+                    "examine_text": "The table is rough to the touch, with wear and tear marks on its surface. It's laden with plates and mugs from breakfast, a few farming magazines, some playing cards and a dusty old lantern.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Living Quarters"
+                },
+                "Lantern": {
+                    "name": "Lantern",
+                    "description": "An old dusty lantern sits in disuse.",
+                    "examine_text": "The lantern is made of rusted metal and glass. Although it's dusty, it looks like it's still operational and might come handy after dusk.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Living Quarters"
+                },
+                "Casserole Dish": {
+                    "name": "Casserole Dish",
+                    "description": "A large ceramic casserole dish with some leftover food.",
+                    "examine_text": "Looking closer, the casserole dish holds some remains of what seemed to be a hearty meal, probably made with farm fresh ingredients.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Living Quarters"
+                },
+                "Old Chair": {
+                    "name": "Old Chair",
+                    "description": "A worn-out wooden chair with a straw seat.",
+                    "examine_text": "It's an old chair creaking under its own weight. Its straw seat holds imprinted shapes of the people who've occupied it over the years.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Living Quarters"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Farm"
+        },
+        {
+            "name": "Barn",
+            "description": "A large shed like building aside any farmers house. Usually made out of wood with a large gate for moving animals. Used to store animals or farm equipment.",
+            "background": "A barn is must need for any farmer. It is the place of productivity. Where the cows can be milked and equipment is stored. A farmer without one is running the farm with out a leg. Simple yet helpful to such a degree where one might find a farmer spend most of his time in.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "Walking to the Main House from the Barn involves crossing a large open area of the farm, buzzing with the activities of farm animals and workers.",
+                "west": "Travelling to The Living Quarters from the Barn is an interesting journey along a worn footpath, flanked by shrubs and agricultural paraphernalia."
+            },
+            "connections": {
+                "south": "Main House",
+                "west": "The Living Quarters"
+            },
+            "items": {
+                "Hay Bale": {
+                    "name": "Hay Bale",
+                    "description": "A large, golden bundle of dried grass.",
+                    "examine_text": "The bale is comprised of dry, coarse grass, bound together in a neat cube shape. It's quite heavy and provides an eatable surface for any barn animals.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Barn"
+                },
+                "Pitchfork": {
+                    "name": "Pitchfork",
+                    "description": "A large, intimidating farming tool with three sharpe spikes.",
+                    "examine_text": "This is a long, wooden handled tool, with a steel three-pronged forkhead. It's used for handling hay, but could presumably be used as a weapon in a pinch.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Barn"
+                },
+                "Milk Pail": {
+                    "name": "Milk Pail",
+                    "description": "A shiny, steel bucket used for collecting milk.",
+                    "examine_text": "The pail is a round and deep container with a flat bottom and a semicircular bail handle. It's often used by the farmer to milk cows.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Barn"
+                },
+                "A Bag of Seeds": {
+                    "name": "A Bag of Seeds",
+                    "description": "A burlap bag filled with various plant seeds.",
+                    "examine_text": "A rough, robust bag full of countless small, round seeds that are intended to be sown on the farmland.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Barn"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Farm"
+        }
+    ],
+    "actions": []
+}

@@ -1,0 +1,1484 @@
+{
+    "player": "Priest",
+    "start_at": "Beside The Town Church",
+    "game_history": [],
+    "game_over": false,
+    "game_over_description": null,
+    "characters": [
+        {
+            "name": "Priest",
+            "description": "The old priest has a gentle smile and tranquil eyes. He spends most of his time praying and taking care of the church.",
+            "persona": "I am always there to help those in need. My faith in God acts as a beacon in the times of darkness.",
+            "location": "Beside The Town Church",
+            "goal": "To preach the word of God to the villagers.",
+            "inventory": {}
+        },
+        {
+            "name": "Old Widow",
+            "description": "A middle-aged woman draped in black mourning clothes. She is often seen visiting the graveyard, talking to her departed husband.",
+            "persona": "Life has shown me its harshest phase, but the memories of my husband help me get through the day.",
+            "location": "Graveyard",
+            "goal": "Seeking solace in her husband's memories.",
+            "inventory": {}
+        },
+        {
+            "name": "Monk",
+            "description": "A silent figure robed in brown, often meditating under the ancient tree outside the Church of Monks.",
+            "persona": "I strive for internal peace and spiritual enlightenment.",
+            "location": "Outside The Church Of Monks",
+            "goal": "He wishes to reach enlightenment and inner peace.",
+            "inventory": {}
+        },
+        {
+            "name": "Outlaw",
+            "description": "This sneaky figure is often lurking around the whipping station, he takes pleasure in others suffering.",
+            "persona": "They underestimate me, all of them, someday I'll show them my true power.",
+            "location": "The Whipping Station",
+            "goal": "Seeking revenge from those who wronged him.",
+            "inventory": {}
+        },
+        {
+            "name": "Care taker",
+            "description": "An old man who tends to the blooming flowers and vegetables at the church garden.",
+            "persona": "I make sure the work of God is not forgotten and neglected. The garden is my prayer.",
+            "location": "Church Garden",
+            "goal": "Keeping the church garden flourishing with beautiful plants and vegetables.",
+            "inventory": {}
+        },
+        {
+            "name": "Care taker",
+            "description": "An old man who tends to the blooming flowers and vegetables at the church garden.",
+            "persona": "I make sure the work of God is not forgotten and neglected. The garden is my prayer.",
+            "location": "Church Garden",
+            "goal": "Keeping the church garden flourishing with beautiful plants and vegetables.",
+            "inventory": {}
+        },
+        {
+            "name": "Ghost",
+            "description": "A ghastly apparition, rumored to be a wandering spirit of the former king. Seen occasionally around the Church Entrance.",
+            "persona": "Even in death, I am unable to leave my kingdom. So much left unfinished, so much unsaid.",
+            "location": "Entrance To Church",
+            "goal": "Seeking closure so he can pass on to the other side.",
+            "inventory": {}
+        },
+        {
+            "name": "Orphan",
+            "description": "A young, ragged boy who spends his days playing around the church field.",
+            "persona": "I don't have much, but I cherish what I have. The church field is my playground.",
+            "location": "Church Field",
+            "goal": "Survive every day and eventually find a loving home.",
+            "inventory": {}
+        }
+    ],
+    "locations": [
+        {
+            "name": "Beside The Town Church",
+            "description": "The church is made of old stones, and it's tower sit's above the town. The stained glass clock at the top depicts scenes from the bible in many different colors. The archway leading into the church is adored in stone carvings of angels and other biblical figures.",
+            "background": "The Town Church has become not only a central meeting place for the religious devout, but also a place for the town to meet and discuss news and other political issues. The priest resides within the town Church as well, and it's pews are long and vast enough to hold the citizens of the town.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "A short walk along the paved path takes you towards the church entrance. The creaking sound of the massive wooden doors standing guard at the entrance can be heard, adding a touch of mystique to your journey. The air gradually becomes rich with the smell of incense as you approach closer."
+            },
+            "connections": {
+                "east": "Beside Church Entrance"
+            },
+            "items": {},
+            "characters": {
+                "Priest": {
+                    "name": "Priest",
+                    "description": "The old priest has a gentle smile and tranquil eyes. He spends most of his time praying and taking care of the church.",
+                    "persona": "I am always there to help those in need. My faith in God acts as a beacon in the times of darkness.",
+                    "location": "Beside The Town Church",
+                    "goal": "To preach the word of God to the villagers.",
+                    "inventory": {
+                        "Bible": {
+                            "name": "Bible",
+                            "description": "An old, worn out but carefully preserved Holy Bible.",
+                            "examine_text": "This is an ancient book full of spiritual scriptures and teachings. It looks old and used with the edges frayed, but you can sense it\u2019s been well cared for. The pages are slightly yellowed from constant use, and some notes are scribbled on the side margins, reflecting countless hours of devotion and study.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Holy Water": {
+                            "name": "Holy Water",
+                            "description": "A antique glass vial filled with blessed holy water.",
+                            "examine_text": "This vial contains water that has been blessed, regarded as holy. The water inside is clear and pure. The glow it produces provides a sense of peacefulness and security, as if divine powers are watching over.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": true,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Church"
+        },
+        {
+            "name": "Beside Church Entrance",
+            "description": "Ornate stonework covers the building. A towering arch of marble and silver line the entrance, giving the church a most grand appearance. Holy idols gaze upon the entrance, as  they flank the walkway to entrance side by side.",
+            "background": "The church entrance looks grand, but not too excessive - as the king's architect wanted it to be. Many flock down the walkway to the entrance every Sunday for the weekly ritual. This is the only entrance to the church.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Moving westward, you approach the strains of chorus and faint smell of incense. It is calming as you near The Town Church.",
+                "north": "Heading north, you notice the atmosphere becoming stiller. The path overgrown and untrodden, leads to the sacred, deserted Church Entrance."
+            },
+            "connections": {
+                "west": "Beside The Town Church",
+                "north": "Entrance To Church"
+            },
+            "items": {
+                "Old Stone Bench": {
+                    "name": "Old Stone Bench",
+                    "description": "An aged stone bench, weathered by time and elements.",
+                    "examine_text": "You see the bench made from porous stone. Some parts of the bench have moss growing on them and few inscriptions can be seen, possibly from a lover or a bored passerby.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Beside Church Entrance"
+                },
+                "Silver Archway": {
+                    "name": "Silver Archway",
+                    "description": "A grand archway forged from marble and silver.",
+                    "examine_text": "The archway stands tall protecting entrance of the church. It's filled with ornate carvings of saints, and angels that shimmer in any wave of light. Each corner of the arch hides tiny but magnificent carvings of complex symbology.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Beside Church Entrance"
+                },
+                "Holy Idols": {
+                    "name": "Holy Idols",
+                    "description": "Statues of sacred figures flanking the shackled path.",
+                    "examine_text": "The Idols stand about half the height of a normal man, meticulously carved from a bright, gleaming marble. Their features are sharp and eyes seem to follow you wherever you move. They are holding books, crosses, and in some cases weapons, depending upon who they represent.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Beside Church Entrance"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Church"
+        },
+        {
+            "name": "Entrance To Church",
+            "description": "The entrance to the church can only be described as a bit scary.  It is overgrown with mosses and weeds.  It has not been taken care of and is a mixture of wood and stone.  It is dirty, and things live here.",
+            "background": "This was the church that the King attended with his family when they were alive.  They all died under mysterious circumstances and are all now buried in the cemetery.  But now no one comes into this church, it is considered sacred ground.  And there are things that live here, things that are different.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "Exiting the entrance, you cautiously tread upon the trampled path towards the south. The haunting atmosphere following your trail.",
+                "inside": "Steeled for the impending dread, you approach the wooden doors, your heart pounding in your chest as you push them open and venture inside the church.",
+                "east": "Taking the path to the right, you near the iron gate. The cold, eerie silence is only shattered by its anguished squeals as you push through it to the street."
+            },
+            "connections": {
+                "south": "Beside Church Entrance",
+                "inside": "Church",
+                "east": "Gate To Street"
+            },
+            "items": {
+                "Moss-covered gate": {
+                    "name": "Moss-covered gate",
+                    "description": "An old wooden gate, overgrown with moss",
+                    "examine_text": "The gate is made of sturdy oak, now worn with age. Green moss covers most of its surface, a testament to the abandon and decay. It creaks ominously when pushed.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Entrance To Church"
+                },
+                "Stone steps": {
+                    "name": "Stone steps",
+                    "description": "Aged stone steps leading up to the church entrance",
+                    "examine_text": "The stone steps are worn down by countless footsteps over the years. They are cold to the touch, witnessing to untold stories and forgotten prayers.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Entrance To Church"
+                },
+                "Weather-worn cross": {
+                    "name": "Weather-worn cross",
+                    "description": "A wooden cross, battered by weather",
+                    "examine_text": "The wooden cross stands silent and solemn, its once defined features now made smooth and almost unrecognisable by the weather, testifying of the faith of the once vibrant parish.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Entrance To Church"
+                },
+                "Weeds": {
+                    "name": "Weeds",
+                    "description": "A bunch of unruly weeds",
+                    "examine_text": "These resilient weeds have claimed the church entrance as their own, intertwining with the stone and wood, setting a wild, almost hostile atmosphere.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Entrance To Church"
+                }
+            },
+            "characters": {
+                "Ghost": {
+                    "name": "Ghost",
+                    "description": "A ghastly apparition, rumored to be a wandering spirit of the former king. Seen occasionally around the Church Entrance.",
+                    "persona": "Even in death, I am unable to leave my kingdom. So much left unfinished, so much unsaid.",
+                    "location": "Entrance To Church",
+                    "goal": "Seeking closure so he can pass on to the other side.",
+                    "inventory": {
+                        "Crown": {
+                            "name": "Crown",
+                            "description": "An aged, rusted crown scattered with remnants of what once were sparkly jewels.",
+                            "examine_text": "Closer look at the crown reveals an inscription on the inner band: 'To the King, may you reign in peace. Love, your Queen'. You can make out the ghost of the former king, chained to his mortal belongings.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Royal sceptre": {
+                            "name": "Royal sceptre",
+                            "description": "An ancient sceptre, once symbolizing the power and authority of the king, it is now tarnished with age.",
+                            "examine_text": "The sceptre feels heavy in your hands, a symbol of the burdens the king once bore. The ghost of the king gestures towards it with longing, unable to hold it in his spectral form.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Church"
+        },
+        {
+            "name": "Church",
+            "description": "Rows of headstones line the field beside the large ornate church with stained glass windows. The Church is mid-century and made of stone. A large steeple resides in the center adorned with a cross. Large front doors made of wood with iron handles. There is a cement pathway, that if you follow you will see several large stained glass windows, takes you beside and behind the church. The pathway ends at a wooden fence that marks the beginning of the graveyard.",
+            "background": "The church has been around for over 100 years. It is old and has rich history. There are many headstones present in the cemetery. The church holds services on Wednesdays and Sundays, has celebrations (such as weddings and baptisms), and offers funeral services.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "outside": "Walking towards the entrance of the church is a dimly lit path, surrounded by wild foliage that lends an eerie atmosphere.",
+                "west": "Traveling westwards, one encounters the beautifully ornated Iconostasis, a journey immersed in peaceful silence and spiritual contemplation.",
+                "north": "Heading north encompasses ascending the worn-out steps leading to the enormous and daunting church entrance door, echoing centuries of history and reverence in each step."
+            },
+            "connections": {
+                "outside": "Entrance To Church",
+                "west": "Iconostasis",
+                "north": "Enormous Church Entrance Door"
+            },
+            "items": {
+                "Wooden Cross": {
+                    "name": "Wooden Cross",
+                    "description": "An old wooden cross placed on the ground near the main entrance.",
+                    "examine_text": "This cross has been well-worn by the weather and appears to be quite old. There are intricately carved symbols upon it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Church"
+                },
+                "Stained Glass Window": {
+                    "name": "Stained Glass Window",
+                    "description": "A large, vibrant stained glass window depicting different scenes from the Bible.",
+                    "examine_text": "Upon closer inspection, you notice the impressive attention to detail and craftsmanship.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Church"
+                },
+                "Headstone": {
+                    "name": "Headstone",
+                    "description": "An old headstone marked with the dates and names of the deceased.",
+                    "examine_text": "The stone is weathered but you can still make out the name and dates. The epitaph reads something poetic and thoughtful.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Church"
+                },
+                "Church Door": {
+                    "name": "Church Door",
+                    "description": "A large double door made of heavy oak with wrought iron handles.",
+                    "examine_text": "The door is sturdy and ornate. Wrought iron hinges creak when you push against it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Church"
+                },
+                "Pathway": {
+                    "name": "Pathway",
+                    "description": "A paved path leading to the church.",
+                    "examine_text": "Stones of various shapes and sizes make up this pathway leading to and from the church's entrance.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Church"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Church"
+        },
+        {
+            "name": "Gate To Street",
+            "description": "The street outside the church is empty, with not a soul in sight. The sky is gray and seems to threaten snow. The pavement is rutted and worn, littered with loose cobblestones and other signs of disuses and disrepair. The only sound is the cold wind blowing, and the awful metallic squeak as it blows the iron gate open and shut.",
+            "background": "The street running outside the abandoned church. Empty and devoid of activity.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "As you approach the Entrance to the Church, the wind howls solemnly, pulling at your clothes. The eerie creaking of the neglected iron gate is unsettling. The once vibrant path is now overgrown with mosses, and strewn with fallen leaves. You have a sense of treading on sacred, abandoned ground."
+            },
+            "connections": {
+                "west": "Entrance To Church"
+            },
+            "items": {
+                "Iron Gate": {
+                    "name": "Iron Gate",
+                    "description": "An old, rusty iron gate",
+                    "examine_text": "This is the imposing iron gate in front of the church. It has a creepy, gothic style design. It squeaks when it moves, showing signs of disrepair and neglect. Despite its age, the iron gate remains sturdy.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Gate To Street"
+                },
+                "Loose Cobblestones": {
+                    "name": "Loose Cobblestones",
+                    "description": "Loose cobblestones from the pavement",
+                    "examine_text": "These cobblestones are remnants from the olden days, irregularly shaped and sized. They're quite heavy and rough around the edges.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Gate To Street"
+                },
+                "Lantern Post": {
+                    "name": "Lantern Post",
+                    "description": "An old lantern post without a lantern",
+                    "examine_text": "The post, made from iron, was once a gleaming beacon, guiding travellers. Now, it stands desolate, stripped of its lantern. It's covered with a patina of rust, bearing witness to many years of abandonment.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Gate To Street"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Church"
+        },
+        {
+            "name": "Enormous Church Entrance Door",
+            "description": "The door stands twenty feet tall. It is made of metal with a large knocker at eye level. There is a small sliding window covered with metal so that people inside can slide it and see who is knocking. The door has three large rectangles made of rivets, one high, one in the middle, and one low.",
+            "background": "This church has stood for over five hundred years. Many people have knocked on its doors looking for protection or service. It is commanding, yet welcoming.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "Stepping through the immense door, you walk along an old stone path lined with statues, arriving at the scenic mid-century Church with beautiful stained glass windows.",
+                "outside": "Back outside, you follow the winding path through the lush grass, leading you to the peaceful solitude of the Graveyard with its simple wooden crosses and poignant tokens of remembrance."
+            },
+            "connections": {
+                "south": "Church",
+                "outside": "Graveyard"
+            },
+            "items": {
+                "Large Metal Door": {
+                    "name": "Large Metal Door",
+                    "description": "An enormous door made of sturdy metal with a large knocker.",
+                    "examine_text": "Upon closer look, the door's structure reveals it to be several hundred years old. The colossal knocker is decorated with meticulous carvings of religious scenes.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Enormous Church Entrance Door"
+                },
+                "Door Knocker": {
+                    "name": "Door Knocker",
+                    "description": "A large, intricately carved door knocker.",
+                    "examine_text": "A meticulously designed knocker etched with intricate religious scenes. It appears heavy to lift, and rings a deep, resonating sound when thumped against the door.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Enormous Church Entrance Door"
+                },
+                "Sliding Window": {
+                    "name": "Sliding Window",
+                    "description": "A small metal-covered window.",
+                    "examine_text": "This sliding window provides a thin view outside when required. Completely covered in metal, it guarantees security without compromising the peephole's functionality.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Enormous Church Entrance Door"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Church"
+        },
+        {
+            "name": "Graveyard",
+            "description": "A large grassy section of field with headstones and primitive wooden crosses.  Flowers adorn some of the graves from loved ones.  Wooden fences enclose the area.",
+            "background": "This is an area where loved ones bury their dearly departed.  There are also ceremonies held here as well to commemorate different events.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "inside": "As you approach the enormous church door, you feel a sense of awe for its grandeur and the history it holds. The rustic metal knocker seems to beckon, ready to announce your arrival.",
+                "west": "Walking towards the west, you encounter the serene tranquility of the church garden. Sweet-smelling flowers, ripe fruits and vegetables come into view as you wander along the path, inviting you to explore further."
+            },
+            "connections": {
+                "inside": "Enormous Church Entrance Door",
+                "west": "Church Garden"
+            },
+            "items": {
+                "Gravestone": {
+                    "name": "Gravestone",
+                    "description": "An ornate granite gravestone with engraved writing.",
+                    "examine_text": "A beautiful, albeit weathered, granite stone rises from the ground. There's a name and dates inscribed, but it's hard to read through the moss and lichen.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Graveyard"
+                },
+                "Candle": {
+                    "name": "Candle",
+                    "description": "A beautiful, pillar candle, possibly left by a mourner.",
+                    "examine_text": "A pillar candle with a warm, ivory wax exterior. Judging by its burn, it hasn\u2019t been long since it was last lit. It\u2019s scentless.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Graveyard"
+                },
+                "Garden Bench": {
+                    "name": "Garden Bench",
+                    "description": "A wooden bench near an ancient oak tree.",
+                    "examine_text": "A solid wooden bench beneath an old tree. Handsome in its simplicity, made from teak that has aged to a soft silver color. Despite the weather and years, it still stands firm.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Graveyard"
+                },
+                "Flower Bouquet": {
+                    "name": "Flower Bouquet",
+                    "description": "A bouquet of colorful wildflowers left on a grave.",
+                    "examine_text": "A beautiful mix of flowers tied together with a soft pink ribbon. Some are fresh, while others have wilted slightly, indicating they\u2019ve been here for some time.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Graveyard"
+                }
+            },
+            "characters": {
+                "Old Widow": {
+                    "name": "Old Widow",
+                    "description": "A middle-aged woman draped in black mourning clothes. She is often seen visiting the graveyard, talking to her departed husband.",
+                    "persona": "Life has shown me its harshest phase, but the memories of my husband help me get through the day.",
+                    "location": "Graveyard",
+                    "goal": "Seeking solace in her husband's memories.",
+                    "inventory": {
+                        "Flower Bouquet": {
+                            "name": "Flower Bouquet",
+                            "description": "A bouquet of carefully selected flowers",
+                            "examine_text": "A collection of fresh, fragrant flowers intricately woven into a captivating bouquet. Their petals still hold dew, indicating their recent picking.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Locket with picture": {
+                            "name": "Locket with picture",
+                            "description": "A small, golden locket hiding a precious memento inside",
+                            "examine_text": "An intricate, golden locket that when opened reveals a sepia-toned photograph of a smiling man. The resemblance indicates that this is the Old Widow's late husband.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Church"
+        },
+        {
+            "name": "Church Garden",
+            "description": "The church garden is filled with a variety of useful plants. There are many flowering plants. There is a lot of food grown in the garden. There are carrots, tomatoes, strawberries and a variety of other fruits and vegetables. Fruit-bearing trees provide shade for the garden. The plants are arranged in neat rows. It smells sweet with the flowers. Different colored sticks show the different plants.",
+            "background": "Many villagers benefit from the produce of the church garden. The fruits and vegetables are used to feed the poor and the hungry. Many people would starve if they did not get the produce from the church garden. They are used for celebrations such as weddings as well. The flowers are used in ceremonies.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Walking towards the east, you leave the freshness of the garden behind, sensing a somber shift in the air as you approach the solemn silence of the graveyard.",
+                "inside": "As you step from the brightness of the garden into the grandeur of the Church, the stained-glass windows paint a rainbow of colors on the stone floor.",
+                "south": "Traveling south from the calmness of the garden, the tranquility is replaced by an austere atmosphere, marking your arrival at the perimeter of the Church of Monks."
+            },
+            "connections": {
+                "east": "Graveyard",
+                "inside": "Church",
+                "south": "Outside The Church Of Monks"
+            },
+            "items": {
+                "Church Garden Bench": {
+                    "name": "Church Garden Bench",
+                    "description": "An old wooden bench situated under the shades of the fruit-bearing trees.",
+                    "examine_text": "This bench has witnessed countless stories, from people sharing their tales of joy to those shedding tears of pain. It's in decent condition, with some wear and tear signs showing on it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Church Garden"
+                },
+                "Garden Carrots": {
+                    "name": "Garden Carrots",
+                    "description": "Freshly picked carrots from the church garden.",
+                    "examine_text": "These carrots are fresh and bright orange. They're perfectly shaped, and the leafy tops are still attached to them.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Church Garden"
+                },
+                "Church Tomatoes": {
+                    "name": "Church Tomatoes",
+                    "description": "Juicy tomatoes from the church's vegetable garden.",
+                    "examine_text": "These tomatoes have a rich red color and a sheen that reflects the sunlight. They are ripe and ready to be used.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Church Garden"
+                },
+                "Garden Flowers": {
+                    "name": "Garden Flowers",
+                    "description": "Beautiful garden flowers of different species.",
+                    "examine_text": "The flowers are blooming in a rainbow of colors, their sweet fragrance fills the air. There are roses, daisies, and lilies among other species.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Church Garden"
+                }
+            },
+            "characters": {
+                "Care taker": {
+                    "name": "Care taker",
+                    "description": "An old man who tends to the blooming flowers and vegetables at the church garden.",
+                    "persona": "I make sure the work of God is not forgotten and neglected. The garden is my prayer.",
+                    "location": "Church Garden",
+                    "goal": "Keeping the church garden flourishing with beautiful plants and vegetables.",
+                    "inventory": {
+                        "Priest's Bible": {
+                            "name": "Priest's Bible",
+                            "description": "A small leather-bound Bible.",
+                            "examine_text": "This Bible feels old and worn, the gold letters on the cover have faded with time. It possesses a profound aura and you can see a bookmark sticking out between the pages.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Gardening Tools": {
+                            "name": "Gardening Tools",
+                            "description": "Various tools for maintaining the beautiful garden.",
+                            "examine_text": "A well used shovel, a pair of rusty secateurs, and a small rake are among the tools. Each one tells a story of hard work and dedication.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Bench": {
+                            "name": "Bench",
+                            "description": "A wooden bench, perfectly placed under a large acorn tree.",
+                            "examine_text": "The bench is a comfortable rest place. It is worn from use, and you can see the wood grain has been smoothed over time. The carving of 'John 3:16' can be seen faintly.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Statues": {
+                            "name": "Statues",
+                            "description": "Imposing statues of biblical figures.",
+                            "examine_text": "The statues are lifelike, carved in great detail from marble by skilled artisans. Looking at them, you feel an aura of peace and tranquility.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Beehive": {
+                            "name": "Beehive",
+                            "description": "A well-constructed beehive tied to a tree.",
+                            "examine_text": "The hive buzzes with incessant activity and the smell of honey wafts in the air. It's best not to disturb the inhabitants.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Church"
+        },
+        {
+            "name": "Iconostasis",
+            "description": "Iconostasis is a small stand with icons right outside the church. It has 5 different handmade icons. The stand is decorated with golden roses and white linen",
+            "background": "This stand was made by an old priest Nicolas. He spent 5 years creating the iconostasis and he ordered the icons from another kingdom.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "As you walk towards the church from the Iconostasis, you pass through a serene setting, filled with rows of headstones, highlighting the long history of the area. As you get closer, you observe the mid-century architecture of the church, its large windows adorned with stained glass, all leading up to the large wooden door with iron handles."
+            },
+            "connections": {
+                "east": "Church"
+            },
+            "items": {
+                "Golden Roses": {
+                    "name": "Golden Roses",
+                    "description": "Glistening in the sunlight, these golden roses decorate the iconostasis.",
+                    "examine_text": "Despite their metallic appearance, these golden roses are soft to touch. They are delicately crafted, each petal gleaming under the sun. The roses are not real, key note of craftmanship of the old priest, Nicolas.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Iconostasis"
+                },
+                "Handmade Icons": {
+                    "name": "Handmade Icons",
+                    "description": "Five beautiful, handmade icons, each one unique in its design.",
+                    "examine_text": "The icons are carefully detailed, featuring images of different saints. Each one is framed in a delicate gold and possesses a certain mystical aura around it. They show the intricate work of an unknown artist from another kingdom.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Iconostasis"
+                },
+                "White Linen": {
+                    "name": "White Linen",
+                    "description": "A fine piece of white linen that adorns the iconostasis.",
+                    "examine_text": "The white linen is smooth and soft to touch. Pure white in color, it gives off a sense of serenity and purity. There are subtle patterns and flowing lines embroidered onto the fabric.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Iconostasis"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Church"
+        },
+        {
+            "name": "Church Garden",
+            "description": "The church gardens have many paths that meander through trees and plants. There are beautiful flowers blooming and the grass and shrubs are immaculately maintained. There are benches to rest and think, and religious statues throughout.",
+            "background": "The priests often walk and contemplate for hours in the gardens. The queen can often be spotted walking and thinking. The king almost never visits the gardens, as he is allergic to bee stings.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "A serene walk past colorful flowers, under the shade of tall trees, brings you to the solemn tranquility of the Church's Graveyard.",
+                "inside": "Ascending the gothic stone steps and passing through the ornate wooden doors, you enter the hallowed halls of the Church.",
+                "south": "Leaving the comforting presence of the Church Garden, you move towards the spartan exterior of the Church Of Monks."
+            },
+            "connections": {
+                "east": "Graveyard",
+                "inside": "Church",
+                "south": "Outside The Church Of Monks"
+            },
+            "items": {
+                "Stone Bench": {
+                    "name": "Stone Bench",
+                    "description": "A grey, worn-out stone bench designed with angel motifs.",
+                    "examine_text": "The bench seems older than time itself, well worn and weathered. Delicate angels are carved at each end of the bench, providing a support for the sturdy stone seat.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Church Garden"
+                },
+                "Rose Bushes": {
+                    "name": "Rose Bushes",
+                    "description": "A row of vibrant rose bushes. Each bush is thick with blooms, ranging in color from pure white to deep red.",
+                    "examine_text": "The roses are so bold and fragrant, their scent filling the air. Their petals are incredibly soft to the touch, but beware of the thorns hidden among the leaves.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Church Garden"
+                },
+                "Religious Statue": {
+                    "name": "Religious Statue",
+                    "description": "A statue of an unknown saint, worn by time and weather but still standing tall.",
+                    "examine_text": "The features of the statue are worn, making it hard to identify the figure it represents. Still, the figure emanates an aura of tranquility and divinity, inviting anyone to stay and pray.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Church Garden"
+                }
+            },
+            "characters": {
+                "Care taker": {
+                    "name": "Care taker",
+                    "description": "An old man who tends to the blooming flowers and vegetables at the church garden.",
+                    "persona": "I make sure the work of God is not forgotten and neglected. The garden is my prayer.",
+                    "location": "Church Garden",
+                    "goal": "Keeping the church garden flourishing with beautiful plants and vegetables.",
+                    "inventory": {
+                        "Priest's Bible": {
+                            "name": "Priest's Bible",
+                            "description": "A small leather-bound Bible.",
+                            "examine_text": "This Bible feels old and worn, the gold letters on the cover have faded with time. It possesses a profound aura and you can see a bookmark sticking out between the pages.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Gardening Tools": {
+                            "name": "Gardening Tools",
+                            "description": "Various tools for maintaining the beautiful garden.",
+                            "examine_text": "A well used shovel, a pair of rusty secateurs, and a small rake are among the tools. Each one tells a story of hard work and dedication.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Bench": {
+                            "name": "Bench",
+                            "description": "A wooden bench, perfectly placed under a large acorn tree.",
+                            "examine_text": "The bench is a comfortable rest place. It is worn from use, and you can see the wood grain has been smoothed over time. The carving of 'John 3:16' can be seen faintly.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Statues": {
+                            "name": "Statues",
+                            "description": "Imposing statues of biblical figures.",
+                            "examine_text": "The statues are lifelike, carved in great detail from marble by skilled artisans. Looking at them, you feel an aura of peace and tranquility.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Beehive": {
+                            "name": "Beehive",
+                            "description": "A well-constructed beehive tied to a tree.",
+                            "examine_text": "The hive buzzes with incessant activity and the smell of honey wafts in the air. It's best not to disturb the inhabitants.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Church"
+        },
+        {
+            "name": "Outside The Church Of Monks",
+            "description": "the outside of the church of monks looks like it was made from live standing trees.  there are a few windows scattered throughout.  there is a long narrow door in the middle.",
+            "background": "the monks are not allowed to talk to anyone, so they have built the outside of their church to be as uninviting as possible.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Travelling north, the harsh austerity of the church gives way to the tranquillity of the Church Garden. Paths brimming with lush greenery lead you towards floral scents that whisper tales of serenity.",
+                "west": "Heading west, the scenery transitions abruptly. The peaceful quiet is replaced by a severe solemnity as you approach The Whipping Station, a reminder of harsh realities."
+            },
+            "connections": {
+                "north": "Church Garden",
+                "west": "The Whipping Station"
+            },
+            "items": {
+                "Ancient Tree": {
+                    "name": "Ancient Tree",
+                    "description": "A tall tree that seems to have withstood time.",
+                    "examine_text": "Looking closer, you can see the bark is thick and rough. It's branches extend in all directions serving as a natural shield for the church.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Outside The Church Of Monks"
+                },
+                "Narrow Door": {
+                    "name": "Narrow Door",
+                    "description": "The door to the church, longer than it is wide",
+                    "examine_text": "The door seems to be made of a very dark, possibly aged, wood with intricate carvings depicting a religious tale.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Outside The Church Of Monks"
+                },
+                "Silent Monk": {
+                    "name": "Silent Monk",
+                    "description": "A monk observing a vow of silence",
+                    "examine_text": "This monk is dressed in plain, simple robes coloured in earthy tones. In his hand, he holds a set of prayer beads, which he's silently counting.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Outside The Church Of Monks"
+                },
+                "Stone Carving": {
+                    "name": "Stone Carving",
+                    "description": "There is a stone carving on the church wall",
+                    "examine_text": "Upon examination, the carvings seem to depict various scenes from the monks' daily life.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Outside The Church Of Monks"
+                }
+            },
+            "characters": {
+                "Monk": {
+                    "name": "Monk",
+                    "description": "A silent figure robed in brown, often meditating under the ancient tree outside the Church of Monks.",
+                    "persona": "I strive for internal peace and spiritual enlightenment.",
+                    "location": "Outside The Church Of Monks",
+                    "goal": "He wishes to reach enlightenment and inner peace.",
+                    "inventory": {
+                        "Praying Beads": {
+                            "name": "Praying Beads",
+                            "description": "A string of simple wooden beads.",
+                            "examine_text": "Each bead has been carefully carved from wood, faded with time and worn smooth by countless prayers. It exudes a sense of calm and serenity.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Book of Silence": {
+                            "name": "Book of Silence",
+                            "description": "An old, worn book with no title on its cover.",
+                            "examine_text": "The cover of the book is worn smooth from many readings. Inside, the pages are inked with meditations and teachings on the art and virtue of silence. It's a necessary tool for a Monk striving for spiritual enlightenment.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Church"
+        },
+        {
+            "name": "The Whipping Station",
+            "description": "the whipping station is just a large wooden platform that serves to embarrass the peasant villagers that sin, they also hang adulterers and homosexuals.",
+            "background": "the whipping station is used by corrupt priests that allow anyone to be hung who does not follow the old king's law",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "The travel to the Church of Monks takes you through a dense, eerie forest. The silence is deafening, barring the rustling leaves that hint at unseen wildlife.",
+                "north": "The path to the Outside Church is a desolate one, filled with overgrown weeds and thorny bushes. A chilling wind accompanies you as you navigate this forgotten path."
+            },
+            "connections": {
+                "east": "Outside The Church Of Monks",
+                "north": "Outside Church"
+            },
+            "items": {
+                "Wooden Platform": {
+                    "name": "Wooden Platform",
+                    "description": "A large, worn wooden platform in the center of the courtyard.",
+                    "examine_text": "The platform is stained with spots of dried blood. Its wooden planks are cracked and worn from repeated use. There are two tall wooden poles with attached chains and cuffs built at one end for attaching offenders.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Whipping Station"
+                },
+                "Old King's Law Scroll": {
+                    "name": "Old King's Law Scroll",
+                    "description": "A weather-beaten scroll holding the old king's laws.",
+                    "examine_text": "The parchment is yellowed with age. Harsh and draconian laws are written in bold, faded ink, with numerous addendums crammed along the margins. It is the rulebook of the church.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Whipping Station"
+                },
+                "Priest's Robe": {
+                    "name": "Priest's Robe",
+                    "description": "A heavily embroidered purple robe worn by the priests.",
+                    "examine_text": "The robe is decorated with intricate patterns and religious symbols. It is too large for a normal sized man, signifying its origin for the church's stout priests.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "The Whipping Station"
+                }
+            },
+            "characters": {
+                "Outlaw": {
+                    "name": "Outlaw",
+                    "description": "This sneaky figure is often lurking around the whipping station, he takes pleasure in others suffering.",
+                    "persona": "They underestimate me, all of them, someday I'll show them my true power.",
+                    "location": "The Whipping Station",
+                    "goal": "Seeking revenge from those who wronged him.",
+                    "inventory": {
+                        "Dagger": {
+                            "name": "Dagger",
+                            "description": "A small, sharp dagger with an ornate hilt.",
+                            "examine_text": "The Dagger may be small but it is incredibly sharp. The hilt is ornately designed, with intricate carvings that suggest it may have once belonged to someone of importance. It seems like it could easily be concealed.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Stolen Ideals": {
+                            "name": "Stolen Ideals",
+                            "description": "A collection of forbidden books, scrolls, and manuscripts.",
+                            "examine_text": "The collection of stolen ideals consists of various books, scrolls and manuscripts. They contain the teachings that the old king has outlawed, secret truths about the world and stories of heroes who dared to challenge the status quo.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Church"
+        },
+        {
+            "name": "Outside Church",
+            "description": "A cold wind blows through the small decrepit graveyard in front of the church. Shutters and other loose neglected ad to the mood of death and decay.",
+            "background": "The former church of royalty. Long abandoned after the fall of the empire. Forgotten and forlorn.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "Traveling south, you approach a harsh scene of a raised, old wooden platform, where the air hangs heavy with a mournful energy.",
+                "west": "Venturing west, you find yourself amidst a serene environment of sprawling grass and beautiful flowers orchestrated around the quaint setup of wooden benches."
+            },
+            "connections": {
+                "south": "The Whipping Station",
+                "west": "Church Field"
+            },
+            "items": {
+                "Old Tombstone": {
+                    "name": "Old Tombstone",
+                    "description": "An ancient and weathered tombstone.",
+                    "examine_text": "No family name can be deciphered from the eroded stone. Just a faint decade and a single word - 'Beloved'.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Outside Church"
+                },
+                "Shutters": {
+                    "name": "Shutters",
+                    "description": "Shutters hanging off the old neglected church.",
+                    "examine_text": "From up close, you can see that the shutters were once painted white, but now are flaking and peeling, showing the bare wood beneath.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Outside Church"
+                },
+                "Fallen Cross": {
+                    "name": "Fallen Cross",
+                    "description": "The cross that once adorned the church now lay fallen on the ground.",
+                    "examine_text": "The rusting iron cross is almost as tall as you are. It was once a symbol of refuge and peace, now a desolate reminder of abandoned faith.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Outside Church"
+                },
+                "Bible": {
+                    "name": "Bible",
+                    "description": "A tattered Bible lies abandoned near the entrance of the church.",
+                    "examine_text": "Opening the Bible, you can see that someone has scribbled notes in the margins. Passages about forgiveness and mercy are underlined extensively.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Outside Church"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Church"
+        },
+        {
+            "name": "Church Field",
+            "description": "Sprawling grass is adorned with simple yet pretty flowers here. Wooden benches are organized into small rows. There's a roof covering the benches and pastors table. A white wooden fence encloses the area.",
+            "background": "This is used for special occasions like a wedding. It is also used for baptism and summer services.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "A cold wind blows through the small decrepit graveyard in front of the church. Shutters and other loose neglected ad to the mood of death and decay. The former church of royalty. Long abandoned after the fall of the empire. Forgotten and forlorn."
+            },
+            "connections": {
+                "east": "Outside Church"
+            },
+            "items": {
+                "Wooden Bench": {
+                    "name": "Wooden Bench",
+                    "description": "A simple wooden bench, enough for three people to sit comfortably",
+                    "examine_text": "The wood appears old yet sturdy, subtly polished to prevent splinters. There are slight indentations along the seat that evoke the echoes of past church-goers.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Church Field"
+                },
+                "Pastor Table": {
+                    "name": "Pastor Table",
+                    "description": "A small wooden table covered in a white cloth, used by the pastor during services",
+                    "examine_text": "The table is small in size, large enough for a single bible and other items used during a service. The white cloth over it shows signs of weathering, yet its sanctity is unmistakable.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Church Field"
+                },
+                "Church Flower": {
+                    "name": "Church Flower",
+                    "description": "A beautiful flower blooming amidst the grass",
+                    "examine_text": "The flower is a vibrant cerise hue, stark against the green backdrop. It has a light, delicate aroma that enhances the tranquility of the location.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Church Field"
+                },
+                "Wooden fence": {
+                    "name": "Wooden fence",
+                    "description": "A white wooden fence surrounding the church field",
+                    "examine_text": "The fence is coated in white paint, with the grain of the wood subtly peeking through. It runs around the church area, a physical symbol of the sanctity within.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Church Field"
+                }
+            },
+            "characters": {
+                "Orphan": {
+                    "name": "Orphan",
+                    "description": "A young, ragged boy who spends his days playing around the church field.",
+                    "persona": "I don't have much, but I cherish what I have. The church field is my playground.",
+                    "location": "Church Field",
+                    "goal": "Survive every day and eventually find a loving home.",
+                    "inventory": {
+                        "Dirty Rag": {
+                            "name": "Dirty Rag",
+                            "description": "A rag stained with mud and soil",
+                            "examine_text": "A small, ragged piece of cloth, dirtied from substantial use. The stains and patches of dirt could tell countless tales of its past use. It's not much to look at, but it holds meaning to the Orphan.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Small Wooden Horse Toy": {
+                            "name": "Small Wooden Horse Toy",
+                            "description": "A little toy horse carved from wood",
+                            "examine_text": "Upon closer inspection, you can see the intricate details of this simply crafted plaything. Well-worn from use, the polished wood is smooth to the touch. A small crack is visible on the lower part of the horse's leg, testifying to its age and frequent use. This toy holds immense sentimental value for the Orphan.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Church"
+        }
+    ],
+    "actions": []
+}

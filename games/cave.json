@@ -1,0 +1,1850 @@
+{
+    "player": "Guardian of the Cave",
+    "start_at": "Entrance",
+    "game_history": [],
+    "game_over": false,
+    "game_over_description": null,
+    "characters": [
+        {
+            "name": "Guardian of the Cave",
+            "description": "A spectral figure shrouded in mist and mystery.",
+            "persona": "I am the echo in the darkness, I am the silent watcher. My purpose is to guard what lies within this cave.",
+            "location": "Entrance",
+            "goal": "My duty is to prevent those unworthy from entering the cave.",
+            "inventory": {}
+        },
+        {
+            "name": "Bat King",
+            "description": "A majestic bat creature, ruling over the other bats.",
+            "persona": "As the ruler of bats, my duty is to ensure the well-being of my subjects.",
+            "location": "Bat Room",
+            "goal": "To maintain the peace and prosperity of my kingdom.",
+            "inventory": {}
+        },
+        {
+            "name": "The Troll",
+            "description": "A monstrous, isolated creature with piercing red eyes.",
+            "persona": "In my territory, I'm the law. Begone from my sight, unless you want to be my next meal.",
+            "location": "The Troll'S Lair",
+            "goal": "To protect his territory from intruders.",
+            "inventory": {}
+        },
+        {
+            "name": "Spectral Lion",
+            "description": "A mystical lion acting as a gatekeeper of the Underground Chamber.",
+            "persona": "I am the guardian of the treasures, trespassers shall face my wrath.",
+            "location": "Underground Chamber",
+            "goal": "To guard the treasures within the chamber.",
+            "inventory": {}
+        },
+        {
+            "name": "Phantom Prisoner",
+            "description": "A long-deceased prisoner, trapped within the secret tunnel.",
+            "persona": "I've been here for centuries, trying to find the end of this damned tunnel. So far, no luck.",
+            "location": "Secret Tunnel",
+            "goal": "To find freedom and eternal rest.",
+            "inventory": {}
+        },
+        {
+            "name": "Local Teenager",
+            "description": "A curious teenager exploring the Underground River.",
+            "persona": "This place, man... it's just so chill. I can escape all of my problems here.",
+            "location": "The Underground River",
+            "goal": "To relax and unwind.",
+            "inventory": {}
+        },
+        {
+            "name": "Rosco the Explorer",
+            "description": "A loyal patriot who discovered the cave.",
+            "persona": "I found much more than I expected here. That's the beauty of exploration!",
+            "location": "Cave Exit",
+            "goal": "To uncover more secrets within the cave.",
+            "inventory": {}
+        },
+        {
+            "name": "Mysterious Figure",
+            "description": "A solitary figure that watches over the Dark Cave.",
+            "persona": "I am a secret, a story waiting to be told. I have waited centuries in this darkness.",
+            "location": "Dark Cave",
+            "goal": "To witness the first tale of this location.",
+            "inventory": {}
+        },
+        {
+            "name": "Treasure Hunter",
+            "description": "An adventurous figure seeking the fabled treasure within the Cave.",
+            "persona": "The thrill of the hunt drives me \u2013 the potential for danger, the promise of reward.",
+            "location": "Cave",
+            "goal": "To find the hidden treasure.",
+            "inventory": {}
+        },
+        {
+            "name": "Treasure Hunter",
+            "description": "An adventurous figure seeking the fabled treasure within the Cave.",
+            "persona": "The thrill of the hunt drives me \u2013 the potential for danger, the promise of reward.",
+            "location": "Cave",
+            "goal": "To find the hidden treasure.",
+            "inventory": {}
+        }
+    ],
+    "locations": [
+        {
+            "name": "Underwater Cave",
+            "description": "The underwater cave is dark and rocky. Inside the cave fish and tadpoles have taken over. The water is cold, no light gets in. Once inside, a rocky outcrop allows swimmers to come up for air.",
+            "background": "This underwater cave holds many secrets. It is impossible to reach it from dry land. One must swim into the cave from the bog. Inside it is lit by a single ever-burning torch where the coven meets every full moon.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "up": "You scrabble up a slippery and dark slope, with the cold water dripping onto you from above.",
+                "south": "A winding passage leads south, with faintly glowing crystals providing weak illumination of the damp walls.",
+                "outside": "You swim through a narrow underwater tunnel that opens into a surprisingly clear and quiet river."
+            },
+            "connections": {
+                "up": "Gallery",
+                "south": "Underground Chamber",
+                "outside": "The Underground River"
+            },
+            "items": {
+                "Torch": {
+                    "name": "Torch",
+                    "description": "An ever-burning torch fastened to the rocky wall.",
+                    "examine_text": "The torch is fastened securely to the wall. The flame dances wildly, casting eerie shadows on the damp cave walls.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Underwater Cave"
+                },
+                "Coven Robe": {
+                    "name": "Coven Robe",
+                    "description": "A black robe hanging from a stalactite.",
+                    "examine_text": "The robe is make of rough fabric, dyed black. Some sort of emblem is embroidered by hand onto the chest.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Underwater Cave"
+                },
+                "Fish": {
+                    "name": "Fish",
+                    "description": "Small fish swimming in the water nearby.",
+                    "examine_text": "They are small, silvery fish with large eyes and a shimmering tail.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Underwater Cave"
+                },
+                "Rocky Outcrop": {
+                    "name": "Rocky Outcrop",
+                    "description": "A platform of rocks above the water level.",
+                    "examine_text": "The rocky area is broad and flat which provides enough space for people to sit, or a place for items to rest.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Underwater Cave"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Cave"
+        },
+        {
+            "name": "Bat Room",
+            "description": "It is cold, dark and filled with bats. it is humid and there are some paddles on the ground.",
+            "background": "There is a bat king and bat queen and their children bats. They live in the deepest place. They have a big mushroom like beds. Other bats are always working for royal family.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Navigating through the swarm of bats, the light from the entrance of the Bandit Lair soon starts to become more visible, characterized by a faint murmur of coarse voices and the clattering of steel.",
+                "west": "As you move westward, the space plunges into a daunting darkness. The echo of your footsteps is the only company you have, signaling your entry into the Dark Cave.",
+                "up": "Ascending from the Bat Room, the echoes of bats slowly fade away and are replaced by the somber dripping of water, hinting towards the bleak Gallery above."
+            },
+            "connections": {
+                "east": "Bandit Lair",
+                "west": "Dark Cave",
+                "up": "Gallery"
+            },
+            "items": {
+                "Paddle": {
+                    "name": "Paddle",
+                    "description": "A paddle lying on the cave floor.",
+                    "examine_text": "It's a wooden paddle, possibly drifted here from some underground river. It's long and somewhat heavy, making it potentially useful as a weapon or a tool.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Bat Room"
+                },
+                "Mushroom Bed": {
+                    "name": "Mushroom Bed",
+                    "description": "An oddly shaped mushroom that functions as the bat royal family's bed.",
+                    "examine_text": "It's quite large for a mushroom, providing just enough space for the bat king and queen. It's soft and moist to the touch.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Bat Room"
+                },
+                "Bat King Ornament": {
+                    "name": "Bat King Ornament",
+                    "description": "The bat king's regal ornament, shining dimly in the darkness.",
+                    "examine_text": "You see a precious gem held by a thin string. It's so small, yet it carries such majesty. It can be worn.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Bat Room"
+                },
+                "Bat Queen Crown": {
+                    "name": "Bat Queen Crown",
+                    "description": "The bat queen's crown, adorned with precious stones.",
+                    "examine_text": "The crown is exquisitely beautiful, studded with different types of stones. It's surprisingly lightweight and wearable.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Bat Room"
+                }
+            },
+            "characters": {
+                "Bat King": {
+                    "name": "Bat King",
+                    "description": "A majestic bat creature, ruling over the other bats.",
+                    "persona": "As the ruler of bats, my duty is to ensure the well-being of my subjects.",
+                    "location": "Bat Room",
+                    "goal": "To maintain the peace and prosperity of my kingdom.",
+                    "inventory": {
+                        "Bat King Crown": {
+                            "name": "Bat King Crown",
+                            "description": "A crown worn by the bat king",
+                            "examine_text": "A majestic and heavily adorned crown. It's made from precious metals and decorated with rare gemstones. Its craftsmanship is marks it out as a symbol of authority and dominance.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Scepter": {
+                            "name": "Scepter",
+                            "description": "A scepter used by the Bat King",
+                            "examine_text": "An expensive looking scepter glistening in the dim light. The handle appears to be made from carved, polished bone and the top is decorated with a large gem. It appears to hold some sort of magical power.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Cave"
+        },
+        {
+            "name": "Underground Chamber",
+            "description": "This location is very gloomy, damp and magical. Has a lot of geodes and various types of crystals.",
+            "background": "Not just anyone can enter into this underground chamber because it is guarded by mystical lions.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "The journey towards the Underwater Cave is filled with rocky terrain and cold, dark water. Along the way, you have to take a deep breath and swim underwater until reaching a rocky outcrop for air.",
+                "south": "The path towards the Troll's Lair is hazardous, filled with the stench of rotten meat. You have to tread carefully around bones and stalagmites, keeping your senses sharp in the eerie darkness.",
+                "east": "Traveling to the Secret Tunnel involves slipping through a well-hidden door behind storage chests and barrels. The journey through the damp, mossy tunnel, lit by faint light at the end, is thrilling and chilling."
+            },
+            "connections": {
+                "north": "Underwater Cave",
+                "south": "The Troll'S Lair",
+                "east": "Secret Tunnel"
+            },
+            "items": {
+                "Geode": {
+                    "name": "Geode",
+                    "description": "A small, unassuming rock",
+                    "examine_text": "Upon closer observation, it's clear the the rock is actually a Geode. Its exterior is rough and uninteresting, however when you get a glimpse inside of it, you are mystified by a cavalcade of magnificent crystals.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Underground Chamber"
+                },
+                "Crystals": {
+                    "name": "Crystals",
+                    "description": "Brightly colored, luminescent stones",
+                    "examine_text": "You examine the crystals more closely. They possess radiant colors that seem to shimmer from within, casting a soft, ethereal glow around the room. Their symmetrical facets shimmer in the pale light, and you are struck by how each crystal is uniquely beautiful.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Underground Chamber"
+                },
+                "Mystical Lion": {
+                    "name": "Mystical Lion",
+                    "description": "A majestic, ethereal creature",
+                    "examine_text": "Up close, the lion's appearance is awe-inspiring. It is etched in a constellation of stars which twinkle and swirl on its body. Its eyes burn with an intensity that belies wisdom older than time. It is a sight to behold and fear; a mythical guardian of the chamber.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Underground Chamber"
+                }
+            },
+            "characters": {
+                "Spectral Lion": {
+                    "name": "Spectral Lion",
+                    "description": "A mystical lion acting as a gatekeeper of the Underground Chamber.",
+                    "persona": "I am the guardian of the treasures, trespassers shall face my wrath.",
+                    "location": "Underground Chamber",
+                    "goal": "To guard the treasures within the chamber.",
+                    "inventory": {
+                        "Crystal Claw": {
+                            "name": "Crystal Claw",
+                            "description": "A bright, sharp claw made entirely out of crystalline substance.",
+                            "examine_text": "The claw is incredibly sharp and shimmering in the dimly lit chamber. It seems like it was carefully carved from a single, large crystal. It's cold to the touch and sends chills up your spine.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Silken Mane": {
+                            "name": "Silken Mane",
+                            "description": "A long, flowing mane made from a material that resembles silk.",
+                            "examine_text": "The mane is stunning. It has the softness of silk yet it glows with an ethereal light that seems to come from within. It trails behind the spectral lion, creating an almost dream-like aura.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Cave"
+        },
+        {
+            "name": "The Troll'S Lair",
+            "description": "Covered with rotting meat from nearby wildlife, the Troll's lair reeks of death.  If the stench alone wasn't enough to scare off an unfortunate travelers who stumbled upon it, the bones of unlucky spelunkers would be.  The Troll places his spoils near the numerous stalagmites on the damp cave wall, his red eyes patiently scanning the dark cave interior for anything that may disturb his isolation.",
+            "background": "Used as a story to scare local children, the Troll is very reclusive, and prefers a life of solitude in his lair.  While a few brave knights have tried to root him out from his home within the cave, none have ever escaped.  Now, most let him be, happy to grant him lease within the darkness underground.  The Troll leaves his lair at night searching for food, and then drags it back into the cave to feast on it.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "You squeeze through a narrow opening into a claustrophobic pathway that leads to the Underground Chamber. As you move forward, you can sense the air becoming increasingly damp and mystical.",
+                "outside": "Exit a teetering mouth of the cave that leads outside. As you fumble through the dark, the flickering torchlight and drawings on the cave wall guide you towards the outside world.",
+                "south": "Venturing south, you cross a cold, treacherous path filled with eerie noises. The air is heavy with humidity as you approach the Bat Room, the echoing of bat cries reverberates around you."
+            },
+            "connections": {
+                "north": "Underground Chamber",
+                "outside": "Cave Exit",
+                "south": "Bat Room"
+            },
+            "items": {
+                "Troll's Club": {
+                    "name": "Troll's Club",
+                    "description": "A large, sturdy club made from gnarled wood, crudely crafted with sharp stones embedded in its top.",
+                    "examine_text": "The club is heavy and has a rough, rugged feel. Streaks of dried blood across it tell a tale of savage attacks. The stones embedded at the top are large and jagged, clearly designed to deal devastating blows. There's something almost primal about it, a simple design brutality that chills you to your core.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "The Troll'S Lair"
+                },
+                "Bones": {
+                    "name": "Bones",
+                    "description": "Remains of unlucky spelunkers who ventured into the troll's den, scattered on the cave floor.",
+                    "examine_text": "The bones are of different sizes, many broken and cracked likely from the troll's strong grip. Some bear the marks of gnawing, a grim reminder of the troll's carnivorous diet. There's a sort of sadness about them, a monument to a final, desperate struggle that ended in failure.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "The Troll'S Lair"
+                },
+                "Rotting Meat": {
+                    "name": "Rotting Meat",
+                    "description": "Spoiled meat from the troll's previous meals, piled grotesquely near the wall of the cave.",
+                    "examine_text": "The meat is in varying states of decay, ranging from fairly fresh kills to unrecognizable messes of maggots and decomposition. The smell is nauseating - an overpowering stench of rotting flesh. Even a glimpse of such a grotesque sight is enough to make your stomach churn.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Troll'S Lair"
+                },
+                "Stalagmites": {
+                    "name": "Stalagmites",
+                    "description": "Large rock formations that emerge from the ground of the cave.",
+                    "examine_text": "These stalagmites, formed over hundreds of years, have a beautiful, albeit eerie quality to them. Despite their dangerous appearance, there's something mesmeric about them: the way the light glints off their hard surface, the irregular patterns marking their growth...it's almost enough to make you forget about the surrounding danger.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Troll'S Lair"
+                }
+            },
+            "characters": {
+                "The Troll": {
+                    "name": "The Troll",
+                    "description": "A monstrous, isolated creature with piercing red eyes.",
+                    "persona": "In my territory, I'm the law. Begone from my sight, unless you want to be my next meal.",
+                    "location": "The Troll'S Lair",
+                    "goal": "To protect his territory from intruders.",
+                    "inventory": {
+                        "Troll's Club": {
+                            "name": "Troll's Club",
+                            "description": "A large, heavy club wielded by the Troll",
+                            "examine_text": "The Troll's Club is incredibly heavy, nearly seven feet in length with thick knots and rugged spikes protruding along its length. Dried blood stains can be seen on the blunt end of the wood. It's very well balanced, indicating that its gigantic owner uses it with surprising skill.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Bones": {
+                            "name": "Bones",
+                            "description": "Bones of the Troll's various victims",
+                            "examine_text": "Bleached white from the cold and damp of the cave, the bones are scattered around. Some are cracked and splintered, symbols of a predator's savage feasting. There are skulls, femurs, and twisted spinal columns, remains of man and beast alike.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Cave"
+        },
+        {
+            "name": "Secret Tunnel",
+            "description": "Your senses are met with the dank moisture of a secret tunnel. The stony walls are full of lichen and cave moss. Stalactites and stalagmites pepper the small channel, which bleeds in a pinpoint light from a far off point. The chill air of the King's forest whistles through the tunnel interior.",
+            "background": "This tunnel provides escape to prisoners with enough coin to bribe the guards. While escape is possible through other means, slipping five copper to the militiaman in charge of relieving you of your wares may grant you access to the tunnel. The door was well hidden and unassuming, blending in the wall behind chests and barrels in the storage room. The tunnel is a natural formation, used by early pioneering guards to make a few extra coins on top of their salaries.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Delving into the Underground Chamber requires navigating through a dimly lit pathway lined with shimmering geodes and enigmatic crystals. A mystical aura permeates the air, resonating from the unseen mystical lions guarding the entrance.",
+                "east": "Traveling into the Cave is like venturing into the belly of the earth. It's an eerie trail that gradually disappears into the inky blackness, lit only by the sparse torchlight that bounces off the cold, damp walls.",
+                "down": "Descending to the Underground River demands a blind leap of faith into the darkness. The subtle echo of water lapping against rocks is the only indicator of the hidden network of waterways filled with gleaming, colorful gems."
+            },
+            "connections": {
+                "west": "Underground Chamber",
+                "east": "Cave",
+                "down": "The Underground River"
+            },
+            "items": {
+                "Copper Coins": {
+                    "name": "Copper Coins",
+                    "description": "A small handful of gleaming copper coins.",
+                    "examine_text": "These bright, well-worn coppers are coveted by every prisoner wanting escape. The guards who made a living by exploiting the hope bottled in these coins seems to never tire of their shine.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Secret Tunnel"
+                },
+                "Militiaman's Torch": {
+                    "name": "Militiaman's Torch",
+                    "description": "A small, used torch formerly owned by a militiaman.",
+                    "examine_text": "This charcoal-black torch has seen better days. Still, even an old friend can light the way in darkness. You imagine the militiaman, holding it high above his head to light the cavernous tunnel, his questionable morals masked by the comforting candlelight.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Secret Tunnel"
+                },
+                "Cave Moss": {
+                    "name": "Cave Moss",
+                    "description": "A patch of soft, green cave moss.",
+                    "examine_text": "The soft, green carpet of moss that covers most of the tunnel is cool and damp. It thrives in the shadowy, wet atmosphere of the cave. There's a certain freshness to it - something that calms your nerves in your bid to escape.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Secret Tunnel"
+                }
+            },
+            "characters": {
+                "Phantom Prisoner": {
+                    "name": "Phantom Prisoner",
+                    "description": "A long-deceased prisoner, trapped within the secret tunnel.",
+                    "persona": "I've been here for centuries, trying to find the end of this damned tunnel. So far, no luck.",
+                    "location": "Secret Tunnel",
+                    "goal": "To find freedom and eternal rest.",
+                    "inventory": {
+                        "Rusty Chains": {
+                            "name": "Rusty Chains",
+                            "description": "Heavy, corroded chains lay tangled on the cold, damp ground.",
+                            "examine_text": "Upon closer examination, these chains have clearly been through centuries of neglect. The orange tinge of rust is widespread across the links, giving testament to the harsh conditions in this part of the tunnel. There is a semblance of once shiny iron peeking through in places but the harmony of age has played its symphony and all that remains is a melody of decay. The chains, however, still seem sturdy enough to use.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Old Locket": {
+                            "name": "Old Locket",
+                            "description": "A worn, antique locket lies abandoned, forgotten by the world.",
+                            "examine_text": "The locket appears extremely old, yet is somehow untouched by the ravages of time. It's made of an undefined metal, worn smooth through the years. Inside is an extremely faded photo of a young woman who looks to be from a different era. Despite everything, the locket feels warm to touch, suggesting some kind of enchantment. It seems to hum with a sustained energy.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Cave"
+        },
+        {
+            "name": "The Underground River",
+            "description": "The river is small and winding and hard to see because there are no lights within its' location. The river has many colorful rocks and gems.",
+            "background": "The local teenagers found this location by accident after sneaking away from their parents. It was known afterwards as a local hangout from parents and local stresses of life.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "up": "Your senses are met with the dank moisture of a secret tunnel, filled with lichen and cave moss. The chill air of the King's forest whistles here, promising an escape for those fortunate enough to find it.",
+                "outside": "The brightness of the torch-lit cave contrasts starkly with the dark interior of the underground river. The journey breathes life back into you, with depictions of previous Kings illuminating the historical significance of this place.",
+                "south": "As you swim towards the underwater cave, the chill of the water bites at your skin, giving way to a darkened habitat teeming with aquatic life. A hidden coven meets here under the glow of a single ever-burning torch."
+            },
+            "connections": {
+                "up": "Secret Tunnel",
+                "outside": "Cave Exit",
+                "south": "Underwater Cave"
+            },
+            "items": {
+                "Alcohol Bottles": {
+                    "name": "Alcohol Bottles",
+                    "description": "Empty bottles with the labels torn off.",
+                    "examine_text": "You can see dried out liquid at the bottom and some small insects crawling on it.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "The Underground River"
+                },
+                "Colorful Pebble": {
+                    "name": "Colorful Pebble",
+                    "description": "A small stone from the river, it's dyed by the minerals in the water and shiny.",
+                    "examine_text": "Upon closer look, it's both curved and rough, with shiny specks on it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Underground River"
+                },
+                "Glowing Gem": {
+                    "name": "Glowing Gem",
+                    "description": "A slightly luminous gem, embedded in the cave wall.",
+                    "examine_text": "The gem seems to have the ability to capture any light and refract it. It reminds you of a starry night.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Underground River"
+                },
+                "Forgotten Jacket": {
+                    "name": "Forgotten Jacket",
+                    "description": "A jacket forgotten by a teenager, in the corner of the cave.",
+                    "examine_text": "It's a denim jacket, with a school logo on the back. It smells like cigarettes and summer.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "The Underground River"
+                }
+            },
+            "characters": {
+                "Local Teenager": {
+                    "name": "Local Teenager",
+                    "description": "A curious teenager exploring the Underground River.",
+                    "persona": "This place, man... it's just so chill. I can escape all of my problems here.",
+                    "location": "The Underground River",
+                    "goal": "To relax and unwind.",
+                    "inventory": {
+                        "Flashlight": {
+                            "name": "Old Flashlight",
+                            "description": "A handheld flashlight of older make",
+                            "examine_text": "Upon closer inspection, you see that this flashlight has seen better days. It's been dented and scratched, most likely from countless dropped. The lens is a bit foggy from years of use. However, it's still working, giving off a warm, yellow light that illuminates the immediate area.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Music Player": {
+                            "name": "Vintage Music Player",
+                            "description": "An older styled device used for playing music",
+                            "examine_text": "Upon closer inspection, you see that this music player isn't exactly the latest model. It's got a rusty exterior and is covered in band stickers. It has a pair of headphones attached to it and if you listen closely enough, you can hear strains of classic rock music playing from it.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Cave"
+        },
+        {
+            "name": "Cave Exit",
+            "description": "The large cave is covered along the walls with bright torches.  A large hole has been carved in the ceiling of the cave, right above the ladder that descends into the underground cave.  On good bright days, sunlight directly surround the hole with the gold ornate ladder descending into the underground part of the cave.  On the walls of the cave the torches illuminate many ornate drawings and paintings mainly dealing with the history of Kings of the realm.",
+            "background": "This cave was discovered quite by accident during an expedition.  The explorer, Rosco Monteguy thought perhaps when finding it there was an underground stream.  He returned a year later to explore and upon digging the hole found a literal goldmine in jewels.  Rosco, ever the patriot returned to the King and told him of his findings.  Rosco is given a statue at the cave entrance to signify his achievement.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "inside": "Venturing inside, you travel deeper into the cave's stony heart, eventually reaching the creepy Troll's Lair that echoes ominously with distant drips of water.",
+                "west": "Heading west, the echo of your footsteps leads you through a labyrinth of winding tunnels towards the gentle lapping sounds of the Underground River.",
+                "east": "Walking eastwards, you move towards the dim sunlight seeping through the moss-covered entrance, where the faint sounds of the outside world grow gradually louder."
+            },
+            "connections": {
+                "inside": "The Troll'S Lair",
+                "west": "The Underground River",
+                "east": "Entrance"
+            },
+            "items": {
+                "Ornate Ladder": {
+                    "name": "Ornate Ladder",
+                    "description": "A gold ladder leading into the underground",
+                    "examine_text": "This ladder is carved from gold, the rungs spiraling downward into the darkness of the cave. It seems sturdy enough to hold your weight.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Cave Exit"
+                },
+                "Torches": {
+                    "name": "Torches",
+                    "description": "Bright torches illuminating the cave",
+                    "examine_text": "The torches flicker and cast shadows on the painted walls. They have a strange blue flame suggesting they are no ordinary fire torches.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Cave Exit"
+                },
+                "Rosco Statue": {
+                    "name": "Rosco Statue",
+                    "description": "A statue of Rosco Monteguy",
+                    "examine_text": "A life-sized statue of Rosco, the famous explorer, in a proud pose, facing the entrance as if guarding the mysterious cave behind him. His excited gaze suggests he's just found something incredible.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Cave Exit"
+                },
+                "Wall Paintings": {
+                    "name": "Wall Paintings",
+                    "description": "Historical paintings on the cave's walls",
+                    "examine_text": "The scenes are painted with vibrant natural pigments and show various historical events, including battles of legendary kings, peaceful kingdom's life, and the history of the cave's discovery. You could learn a lot from these historical paintings, if you took the time.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Cave Exit"
+                }
+            },
+            "characters": {
+                "Rosco the Explorer": {
+                    "name": "Rosco the Explorer",
+                    "description": "A loyal patriot who discovered the cave.",
+                    "persona": "I found much more than I expected here. That's the beauty of exploration!",
+                    "location": "Cave Exit",
+                    "goal": "To uncover more secrets within the cave.",
+                    "inventory": {
+                        "Map": {
+                            "name": "Map",
+                            "description": "A worn and aged piece of parchment with markings and lines.",
+                            "examine_text": "Upon closer inspection, you realise this is a map of the intricate cave system. Faintly drawn lines trace the winding tunnels, whilst small notations indicate possible points of interest.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Compass": {
+                            "name": "Compass",
+                            "description": "A beautifully crafted antique compass embossed with gold detailing.",
+                            "examine_text": "This is an antique compass that remains as functional as ever. The face of the compass is covered by a clear glass pane, with the four cardinal directions marked in fancy calligraphy. The needle swings around freely, quickly finding magnetic North when held level.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Cave"
+        },
+        {
+            "name": "Dark Cave",
+            "description": "Its dark, not much light can be seen in this hollow and empty cave site. Its made of stone that has been here seemingly since time began, the walls are hard as diamond, yet black like darkness itself.",
+            "background": "Unknown cave happened upon, it seems there are no stories, or tales for this place. It seems untouched by human life, as if the world has kept this secret for itself for centuries. We will be able to tell the first tale of this location.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Walking towards the east, you can hear a faint flutter of wings and feel the temperature drop, hinting at the bat-infested room ahead.",
+                "west": "Venturing to the west, you feel the dank chill of the unexploited cave, a silent monolith that whispers tales of the unknown.",
+                "south": "Traveling down south, an ominous vibe begins to creep over you as you near the infamous bandit lair, a place shrouded in danger and mystery."
+            },
+            "connections": {
+                "east": "Bat Room",
+                "west": "Cave",
+                "south": "Bandit Lair"
+            },
+            "items": {
+                "Dimly Lit Torch": {
+                    "name": "Dimly Lit Torch",
+                    "description": "A flickering torch barely illuminating its surroundings",
+                    "examine_text": "This is a flaming torch. It is almost extinguished, struggling to stay alive in the damp atmosphere of the cave. The torch seems capable of providing barely adequate light for a short time. A faint smell of burning wood hangs in the air around it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Dark Cave"
+                },
+                "Jagged Rock": {
+                    "name": "Jagged Rock",
+                    "description": "An oddly shaped rock found on the cave floor",
+                    "examine_text": "A large, rough and jagged rock sits on the ground. It appears to have been freshly broken off from the cave wall. Its sharp edges seem capable of inflicting damage if correctly applied.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Dark Cave"
+                },
+                "Empty Bottle": {
+                    "name": "Empty Bottle",
+                    "description": "A bottle, found in one corner of the cave",
+                    "examine_text": "An old, dusty glass bottle lies in a corner of the cave. It appears to be empty, but there's something etched into the side of the glass. Upon closer inspection, it's too dirty to make out what it is.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Dark Cave"
+                }
+            },
+            "characters": {
+                "Mysterious Figure": {
+                    "name": "Mysterious Figure",
+                    "description": "A solitary figure that watches over the Dark Cave.",
+                    "persona": "I am a secret, a story waiting to be told. I have waited centuries in this darkness.",
+                    "location": "Dark Cave",
+                    "goal": "To witness the first tale of this location.",
+                    "inventory": {
+                        "Dim Lantern": {
+                            "name": "Dim Lantern",
+                            "description": "A fading light source under the pitch-black cave.",
+                            "examine_text": "An old, rusted lantern with a small, dimly glowing candle inside. The faint light it provides barely manages to pierce the cave's all-encompassing darkness.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Mysterious Figure": {
+                            "name": "Mysterious Figure",
+                            "description": "An enigmatic presence under the cloak of darkness.",
+                            "examine_text": "A silent figure shrouded in a thick, dark cloak. Their face is hidden, yet you can sense their ancient, watchful eyes on you, holding centuries worth of untold stories.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Stones of Time": {
+                            "name": "Stones of Time",
+                            "description": "Hard and dark stones, as old as the cave itself.",
+                            "examine_text": "Large, dark stones that appear as ancient as the cave itself. They are cold and unyielding to the touch, and you imagine they hold countless secrets of this timeless cave.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": true,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Cave"
+        },
+        {
+            "name": "Cave",
+            "description": "Cold and dark, the moist cool walls enclose all who proceed. With just torches to light the way the large opening gets smaller and smaller.",
+            "background": "The cave is a dark and mysterious place with stories of hidden treasure and littered with bones of those who have searched for it. The endless passages are enough to drive ones sense of direction aerie.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "A daunting journey towards the east takes you to the Dark Cave. Facing complete darkness with the echo of your footsteps for company, you walk into uncertainty.",
+                "west": "Moving west takes you towards an inconspicuous nook that exposes the Secret Tunnel. The journey is filled with an air of mystery, with the damp, stony surroundings of the tunnel whispering untold stories.",
+                "south": "Heading south introduces you to a grand vista of the Underground Cavern. The transition from the ordinary cave to the cavern draped in glittering gems is both exciting and mesmerizing."
+            },
+            "connections": {
+                "east": "Dark Cave",
+                "west": "Secret Tunnel",
+                "south": "Underground Cavern"
+            },
+            "items": {
+                "Torch": {
+                    "name": "Torch",
+                    "description": "A simple wooden torch that emits a warm, flickering light.",
+                    "examine_text": "This hand-made torch looks like it has been used many times before. Charred at the end and wrapped in a fabric that's doused in a flammable liquid. It lights up the cave around you, painting the walls with ghostly shadows.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Cave"
+                },
+                "Skeletal Remains": {
+                    "name": "Skeletal Remains",
+                    "description": "The remains of someone who failed to find their way.",
+                    "examine_text": "These are the skeletal remains of a human, a grim reminder of the perils of the cave. Some of the bones are scattered around, possibly from the activities of cave dwelling creatures.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Cave"
+                },
+                "Loose Rock": {
+                    "name": "Loose Rock",
+                    "description": "A small rock that appears to be removable from the cave wall.",
+                    "examine_text": "This modest rock, looser than the rest, seems to be removable from the wall. While it might not seem like much, you never know what uses you might find for a good rock in a place like this.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Cave"
+                },
+                "Hidden Chest": {
+                    "name": "Hidden Chest",
+                    "description": "An old wooden chest, hidden away in a corner of the cave.",
+                    "examine_text": "Legend says treasure is hidden in these caves, could this old chest be it? It's wooden, worn, and covered in a layer of dust. A small lock guards the contents.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Cave"
+                },
+                "Mushroom Cluster": {
+                    "name": "Mushroom Cluster",
+                    "description": "A collection of fungi growing from the cave floor.",
+                    "examine_text": "Growing in the dampness of the cave, a cluster of mushrooms spread out. Some of them are glowing faintly, perhaps a self defense mechanism against the perpetual darkness of the cave environment.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Cave"
+                }
+            },
+            "characters": {
+                "Treasure Hunter": {
+                    "name": "Treasure Hunter",
+                    "description": "An adventurous figure seeking the fabled treasure within the Cave.",
+                    "persona": "The thrill of the hunt drives me \u2013 the potential for danger, the promise of reward.",
+                    "location": "Cave",
+                    "goal": "To find the hidden treasure.",
+                    "inventory": {
+                        "Lantern": {
+                            "name": "Lantern",
+                            "description": "An old, rusty lantern with a flickering flame",
+                            "examine_text": "This lantern is old and rusty. It's been used for years, maybe even decades. The flame flickers, casting a dim light that barely illuminates the area around you. It feels sturdy and well-built, despite its age.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Treasure chest": {
+                            "name": "Treasure chest",
+                            "description": "A big wooden chest with metal locks",
+                            "examine_text": "The chest is surprisingly heavy and made from a dark wood that seems old. The metal locks appear sturdy and are covered in rust, hinting at the chest's age. There's something exciting about the possibility of what might be inside.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Ancient Sword": {
+                            "name": "Ancient Sword",
+                            "description": "A shining ancient sword with engraved hilt",
+                            "examine_text": "The blade of the sword is sharp, possibly ready to be wielded at any time. The hilt is engraved with intricate symbols and patterns that don't match any known culture. It must be very old and might bring a fair price.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Waterskin": {
+                            "name": "Waterskin",
+                            "description": "A large, leather waterskin",
+                            "examine_text": "This waterskin is big and made of leather. It's been used a lot, and you can see the worn-out marks. It's quite heavy, suggesting it's full of water. Being hydrated is essential for exploring caves like these.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": true,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Cave"
+        },
+        {
+            "name": "Gallery",
+            "description": "The cave is pitch black and smells of dank and mold. It's quiet except for a faint dripping noise from water overhead and the occasionally scurrying of an unseen rodent through the darkness. Barely discernable by the light of a torch is a small pile of bones in one corner. From what type of animal they are from is unclear.",
+            "background": "This cave used to be used a a wine cellar many years ago, until alcohol was outlawed by the king after his son died in a drunken brawl. Now it sits empty and rumor has it, enemies of the kingdom are kept down here.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "down": "Descending into the Bat Room requires one to adjust their eyes to the deep blackness as air temperature drops and a distinct, musky scent of bats fills the air.",
+                "west": "Moving westward towards the Underwater Cave, one must carefully wade through mud and murky water, with a constant feeling of something lurking in the depths below.",
+                "outside": "Exiting the cave is a relief as you step out onto a massive ladder amid bright torch light that casts glowing shadows on the walls and reveals the cave's rich history."
+            },
+            "connections": {
+                "down": "Bat Room",
+                "west": "Underwater Cave",
+                "outside": "Cave Exit"
+            },
+            "items": {
+                "Rusty Iron Shackle": {
+                    "name": "Rusty Iron Shackle",
+                    "description": "A rusted chain affixed to a shackle, nailed into the rock wall of the cave.",
+                    "examine_text": "The Iron shackle is rusty and old, it has been used to bound prisoners. The long chain fixed to the shackle leads to a damp stone wall.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Gallery"
+                },
+                "Rat": {
+                    "name": "Rat",
+                    "description": "A small, scurrying rat.",
+                    "examine_text": "This cave rat is quick and nimble, constantly on the move looking for food. It appears used to the darkness and eeriness of the cave.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Gallery"
+                },
+                "Pile of Bones": {
+                    "name": "Pile of Bones",
+                    "description": "A small pile of bones lay in a corner.",
+                    "examine_text": "The pile consists of many bones of different sizes, all belonging to small to medium creatures. Many have been picked clean, possibly by the rats.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Gallery"
+                },
+                "Old Wine Bottle": {
+                    "name": "Old Wine Bottle",
+                    "description": "An old wine bottle sitting in a dry, dusty corner of the cave.",
+                    "examine_text": "This is a vintage bottle, left over from the day this cave was a wine cellar. It is now empty, the label is worn out and faded, but still intact.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Gallery"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Cave"
+        },
+        {
+            "name": "Bandit Lair",
+            "description": "The outside of the cave looks normal. Inside goes for about 10 feet til' you reach the front of the Bandit lair. Inside is a barracks and dining hall with beds and a big table with chairs around it.",
+            "background": "A very well known bandit gang live in this cave. They have been known for stealing many royal treasures but also killing many innocents. The bandits know they are well known and use that to incite fear into the locals that settle near the cave.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Venturing from the Bandit Lair to the Dark Cave, you navigate through unsteady terrain, the air growing colder and darkness creeping in as you advance.",
+                "west": "Moving westwards towards the Bat Room from the Bandit Lair, the silence is replaced by bouts of high-pitched screeches. The walls gain a slick texture, and faint fluttering sounds fill the ears.",
+                "down": "Descending from the Bandit Lair to the Entrance is like stepping out of a chaotic timeline into tranquility. The harsh laughter and clinking metal fades into a peaceful rustling of leaves and chirping of birds."
+            },
+            "connections": {
+                "north": "Dark Cave",
+                "west": "Bat Room",
+                "down": "Entrance"
+            },
+            "items": {
+                "Weapon Rack": {
+                    "name": "Weapon Rack",
+                    "description": "A large wooden rack filled with various types of weapons",
+                    "examine_text": "A closer look reveals an array of swords, axes, bows and arrows, and daggers. Some of them seem to be of high value, indicating the gang's frequent encounters with royal guards.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Bandit Lair"
+                },
+                "Bandit Loot": {
+                    "name": "Bandit Loot",
+                    "description": "A pile of assorted treasures, looted from various raids",
+                    "examine_text": "The pile contains gold coins, jewelry, goblets, armors, and even some royal seals, evidently acquired from noble households.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Bandit Lair"
+                },
+                "Food Table": {
+                    "name": "Food Table",
+                    "description": "A long wooden table covered in food and drinks",
+                    "examine_text": "The table is laden with bread, cheese, fruit, meat, and hip flasks, presumably full of some local brew.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": true,
+                        "is_food": true,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Bandit Lair"
+                },
+                "Ragged Clothes": {
+                    "name": "Ragged Clothes",
+                    "description": "Scruffy and muddied clothes, scattered around the cave",
+                    "examine_text": "These garments are obviously not taken care of and are dirty and torn, a fact that is representative of the bandits' lifestyle.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Bandit Lair"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Cave"
+        },
+        {
+            "name": "Entrance",
+            "description": "The entrance to his cave is covered in hanging moss with shrubs on either side of the entrance.  The path to this cave is a small dirt one with low grass on the floor.",
+            "background": "No one really knows what this cave is used for.  Some say for witchcraft and devil worship, others say mythical creatures reside here.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "inside": "Descending ladder into the brightly illuminated cave, you are surrounded by various ornate drawings and paintings narrating the history of the realm.",
+                "up": "An unsettling sense of danger accompanies your journey towards the Bandit Lair, where lawlessness reigns.",
+                "west": "Advance towards the whispering whisper of the Underground River, a winding path in the dimly lit, hidden away from the world."
+            },
+            "connections": {
+                "inside": "Cave Exit",
+                "up": "Bandit Lair",
+                "west": "The Underground River"
+            },
+            "items": {
+                "Hanging Moss": {
+                    "name": "Hanging Moss",
+                    "description": "A growth of moss hanging from the roof of the cave's entrance.",
+                    "examine_text": "The moss hangs creepily from the entrance of the cave, swaying slightly in the breeze. Its colours range from dark green to brown, hinting at its age and endurance. The texture looks a little rough and slimy, typical of natural mosses.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Entrance"
+                },
+                "Shrubs": {
+                    "name": "Shrubs",
+                    "description": "Green shrubs growing on either side of the entrance",
+                    "examine_text": "The shrubs look strong and bushy. Their leaves are a rich, verdant green, healthy despite the fact that they grow in the absence of sun. The branches twist and turn, making them difficult to traverse unless cleared out.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Entrance"
+                },
+                "Dirt Path": {
+                    "name": "Dirt Path",
+                    "description": "Narrow dirt path that leads to the entrance of the cave",
+                    "examine_text": "The path is hardened from constant use, a dark, coffee colour that leads your eyes straight to the cave. Some patches of green grass manage to push through the solid earth, adding a little life to this somewhat desolate location.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Entrance"
+                },
+                "Grass": {
+                    "name": "Grass",
+                    "description": "Sparse clumps of grass dotting the cave's entrance",
+                    "examine_text": "The grass is a stark contrast to the hardened dirt path, providing a slight softness to this harsh location. Gentle and resilient, the grass grows in clumps, never managing to completely cover the ground.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Entrance"
+                }
+            },
+            "characters": {
+                "Guardian of the Cave": {
+                    "name": "Guardian of the Cave",
+                    "description": "A spectral figure shrouded in mist and mystery.",
+                    "persona": "I am the echo in the darkness, I am the silent watcher. My purpose is to guard what lies within this cave.",
+                    "location": "Entrance",
+                    "goal": "My duty is to prevent those unworthy from entering the cave.",
+                    "inventory": {
+                        "Mystical Sword": {
+                            "name": "Mystical Sword",
+                            "description": "A shimmering sword that appears light as feather but gives the sense of immense power.",
+                            "examine_text": "You see a mystical sword that gives off a faint light. Its edge is honed to perfection and it seems to hum with an otherworldly energy.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Mirror Shield": {
+                            "name": "Mirror Shield",
+                            "description": "A polished shield with mirror-like surface, reflecting everything in its surroundings.",
+                            "examine_text": "Your gaze falls upon a large shield. Its surface is so polished, it almost appears to be a large mirror, capable of reflecting any adverse force.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Cave"
+        },
+        {
+            "name": "Cave",
+            "description": "This cave is big but has no lights. It is made from stone and has a small pool of water in the back. The floor is made from dirt.",
+            "background": "This cave is only used when the village is being attacked. It is a place to hide from the enemies during war. The cave is good for hiding cause it has no lights and is very hard to find.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Travelling through the narrow passage to the east, you rely on your touch to navigate as the darkness engulfs everything, heralding the approach of the Dark Cave.",
+                "west": "Moving to the west, the damp air and mossy stones underfoot provide a hint of the Secret Tunnel lying ahead.",
+                "south": "Heading south, a sudden chill hits you, along with the twinkling reflection of various gems indicating the entrance to the Underground Cavern."
+            },
+            "connections": {
+                "east": "Dark Cave",
+                "west": "Secret Tunnel",
+                "south": "Underground Cavern"
+            },
+            "items": {
+                "Cave Torch": {
+                    "name": "Cave Torch",
+                    "description": "An unlit torch resting against the cavern wall. Looks like it's been here for a while, left by the villagers.",
+                    "examine_text": "The torch is made of a sturdy wood, with a head wrapped in some kind of absorbent material, likely drenched in a flammable substance. It's heavy, well-used but still in good shape.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Cave"
+                },
+                "Pool of Water": {
+                    "name": "Pool of Water",
+                    "description": "A small, deep blue pool of water. The water in the pool remains still, reflecting the cave walls in its surface.",
+                    "examine_text": "Upon closer inspection, you can see that the pool's water is clean and clear. It seems drinkable. There may be possibilities for fishing here.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Cave"
+                },
+                "Cave Stones": {
+                    "name": "Cave Stones",
+                    "description": "A pile of large, sharp stones near the cave entrance. Probably used to fortify the entrance in case of an attack.",
+                    "examine_text": "The stones are heavy, with sharp, jagged edges. They would make an improvised but effective weapon should you need it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Cave"
+                },
+                "Dirt Floor": {
+                    "name": "Dirt Floor",
+                    "description": "The floor of the cave is made from damp, packed dirt. Not comfortable, but could be used as a surface.",
+                    "examine_text": "Upon closer examination, the floor is cold to the touch. Small impressions show that this area has seen traffic recently.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Cave"
+                }
+            },
+            "characters": {
+                "Treasure Hunter": {
+                    "name": "Treasure Hunter",
+                    "description": "An adventurous figure seeking the fabled treasure within the Cave.",
+                    "persona": "The thrill of the hunt drives me \u2013 the potential for danger, the promise of reward.",
+                    "location": "Cave",
+                    "goal": "To find the hidden treasure.",
+                    "inventory": {
+                        "Lantern": {
+                            "name": "Lantern",
+                            "description": "An old, rusty lantern with a flickering flame",
+                            "examine_text": "This lantern is old and rusty. It's been used for years, maybe even decades. The flame flickers, casting a dim light that barely illuminates the area around you. It feels sturdy and well-built, despite its age.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Treasure chest": {
+                            "name": "Treasure chest",
+                            "description": "A big wooden chest with metal locks",
+                            "examine_text": "The chest is surprisingly heavy and made from a dark wood that seems old. The metal locks appear sturdy and are covered in rust, hinting at the chest's age. There's something exciting about the possibility of what might be inside.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Ancient Sword": {
+                            "name": "Ancient Sword",
+                            "description": "A shining ancient sword with engraved hilt",
+                            "examine_text": "The blade of the sword is sharp, possibly ready to be wielded at any time. The hilt is engraved with intricate symbols and patterns that don't match any known culture. It must be very old and might bring a fair price.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Waterskin": {
+                            "name": "Waterskin",
+                            "description": "A large, leather waterskin",
+                            "examine_text": "This waterskin is big and made of leather. It's been used a lot, and you can see the worn-out marks. It's quite heavy, suggesting it's full of water. Being hydrated is essential for exploring caves like these.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": true,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Cave"
+        },
+        {
+            "name": "Orc Cave",
+            "description": "It is a dark cave that is cold and damp inside. The floor is rocks covered it bat poop. It is damp from the ceiling dripping of water. The cave just goes on what seems to be endlessly into the dark abyss. The only lite you can see is from the distance entrance of the cave.",
+            "background": "The cave is an old orc hiding place. It housed thousands of orcs that used it for shelter and to store their gold. The orc population has died and there is now very little that remains of the orcs that used to occupy this cave. Robbers have stolen anything worthwhile in this cave.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "As you head south, you sense the lingering essence of a lingering scent of orc. The chill wind blows against your skin, making you appreciate the cavern's dry, stone-shot walls.",
+                "east": "You move east, trekking through the damp ground. The rays of your torch cast long eerie shadows on the cavern, revealing untold mysteries.",
+                "up": "Ascending to the Primary Cave, the trek up is jarringly exhausting. The steady drip of mineral rich water from above echoes in your ears."
+            },
+            "connections": {
+                "south": "Cave",
+                "east": "Underground Cavern",
+                "up": "Primary Cave"
+            },
+            "items": {
+                "Rusty sword": {
+                    "name": "Rusty sword",
+                    "description": "An old, corroded blade that's seen better days.",
+                    "examine_text": "The sword is old and rusted beyond recognition. Perhaps this was once wielded by a powerful orc, or perhaps it was simply left to rot.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Orc Cave"
+                },
+                "Old torch": {
+                    "name": "Old torch",
+                    "description": "A poorly maintained torch, its flame flickering dimly.",
+                    "examine_text": "The torch is on the brink of going out. It's covered in a thick layer of grime, suggesting it hasn't been cared for in a while.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Orc Cave"
+                },
+                "Rock pile": {
+                    "name": "Rock pile",
+                    "description": "A mound of various-sized rocks.",
+                    "examine_text": "The pile is comprised mostly of jagged, small rocks. Some of the rocks have traces of ore. There are traces of old blood stains on a few rocks.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Orc Cave"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Cave"
+        },
+        {
+            "name": "Underground Cavern",
+            "description": "The underground cavern is covered in precious metals and gems. In the wall, rubies, emeralds and sapphires sparkle. There is gold and silver, shining brightly. It is cool in the underground cavern.",
+            "background": "By law, the jewels belong to the king. Yet he lets people go into the cavern to look at the beauty of his gems. People love to go in there and enjoy the coolness, especially in the hot months. They must bring candles, because it is pitch black!",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "The walk towards the Orc Cave becomes increasingly colder and darker, urging the need for a source of light. The faint smell of dew and moss intensifies with each step, igniting an air of trepidation.",
+                "west": "Journeying west towards the Cave, the air chills as the light gradually succumbs to the crepuscular gloom. The sound of trickling water and distant echoes sparks an unease of the unknown.",
+                "down": "Descending to the Entrance, you feel a temperate gust of air ascend as you carefully navigate the rocky steps. The scent of damp earth fills your nostrils as the cavernous darkness envelops you."
+            },
+            "connections": {
+                "north": "Orc Cave",
+                "west": "Cave",
+                "down": "Entrance"
+            },
+            "items": {
+                "Glowing Ruby": {
+                    "name": "Glowing Ruby",
+                    "description": "A large, radiant, red ruby embedded in the cave wall.",
+                    "examine_text": "As you move closer, you can appreciate the perfect cut and incredibly deep, rich red color of this ruby. It glows from within, projecting an almost otherworldly light.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Underground Cavern"
+                },
+                "Silver Nugget": {
+                    "name": "Silver Nugget",
+                    "description": "A large nugget of pure silver rests on the cave floor.",
+                    "examine_text": "The nugget is heavy and cold to the touch, with a high shine that catches the flickering candlelight amazingly.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Underground Cavern"
+                },
+                "Cave Candle": {
+                    "name": "Cave Candle",
+                    "description": "A partially-burnt down wax candle providing a small circle of light.",
+                    "examine_text": "This simple candle lights the immediate area, casting shadows on the gleaming minerals around. Wax is slowly melting down its side.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Underground Cavern"
+                },
+                "Emerald Cluster": {
+                    "name": "Emerald Cluster",
+                    "description": "A cluster of emerald crystals embedded in the cave wall.",
+                    "examine_text": "Upon closer examination, the crystals glimmer in the subtle candlelight. Their facets refract the light in such a way that the cave wall appears to be covered in a sheet of flickering green fire.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Underground Cavern"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Cave"
+        },
+        {
+            "name": "Primary Cave",
+            "description": "Dark and with a lot of space in it. The primary cave has a scary look that scares people away. Underneath, in the floor, many precious minerals that no one dares to get out.",
+            "background": "The primary cave is respected and feared among people across the land. Tales of adventurers that have gone inside the cave but never seen again are part of the stories told by the elder.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "down": "Descending deeper into the cave, the air grows colder and damp. The echo of your footsteps is the only sound accompanying \u2013 a sign of the orc cave below.",
+                "east": "Venturing eastwards, the cave narrows and darkness intensifies. The faint scent of mold and the chilling silence suggests you are nearing the mysterious Gallery.",
+                "outside": "Heading towards the entrance, the cave becomes increasingly brighter. The fresh aroma of moss and sound of crickets chirping is a signal of the world outside."
+            },
+            "connections": {
+                "down": "Orc Cave",
+                "east": "Gallery",
+                "outside": "Entrance"
+            },
+            "items": {
+                "Torch": {
+                    "name": "Torch",
+                    "description": "A wooden stick with a flammable end.",
+                    "examine_text": "The torch is made of a sturdy piece of wood as long as an adult\u2019s arm, with one end covered in a dark viscous substance. The torch's end is currently unlit.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Primary Cave"
+                },
+                "Precious Mineral": {
+                    "name": "Precious Mineral",
+                    "description": "A beautiful, shiny mineral embedded in the floor of the cave.",
+                    "examine_text": "The precious minerals sparkle dimly from the floor of the cave. Their colors range from deep blues to bright yellows and reflect any source of light brilliantly.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Primary Cave"
+                },
+                "Skeleton": {
+                    "name": "Skeleton",
+                    "description": "The remains of a former adventurer.",
+                    "examine_text": "The skeleton lies eerily on the cave floor, its bony fingers still clutching a rusted sword. The empty eye sockets stare accusingly into the darkness.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Primary Cave"
+                },
+                "Rusted Sword": {
+                    "name": "Rusted Sword",
+                    "description": "A rusted sword next to the skeleton.",
+                    "examine_text": "The sword, though heavily rusted, still feel considerably heavy in your hands. The blade is chipped in several places.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Primary Cave"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Cave"
+        }
+    ],
+    "actions": []
+}

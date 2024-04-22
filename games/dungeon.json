@@ -1,0 +1,1162 @@
+{
+    "player": "Morbid Guard",
+    "start_at": "The Lower Dungeon Guard Room",
+    "game_history": [],
+    "game_over": false,
+    "game_over_description": null,
+    "characters": [
+        {
+            "name": "Morbid Guard",
+            "description": "A horrific looking man, large, with a face scarred from many battles. He always seems to be sneering.",
+            "persona": "I've got the face I deserve, from countless fights. The Prisoners fear me, even the ones who used to be warriors.",
+            "location": "The Lower Dungeon Guard Room",
+            "goal": "Keep prisoners in check and secure at all times.",
+            "inventory": {}
+        },
+        {
+            "name": "Wicked Torturer",
+            "description": "Cruel and cold, he carries out his duties without emotion. His eyes are dead.",
+            "persona": "People think I'm cruel, but I don't care. This is my job, and I do it very well.",
+            "location": "Torture Chamber",
+            "goal": "To efficiently extract information from prisoners.",
+            "inventory": {}
+        },
+        {
+            "name": "The Wise Ghost",
+            "description": "A ghostly apparition of a wizard who died while putting up the wards on the Prisoners Cells.",
+            "persona": "I was the best at what I did, and I died for it but my soul carries on, keeping watch over this cold, haunting place.",
+            "location": "Prisoners Cells",
+            "goal": "To keep the evil within the cells contained.",
+            "inventory": {}
+        },
+        {
+            "name": "Creepy Creatures",
+            "description": "Unknown creatures lurking in the dark with gleaming eyes. Some whisper in strange languages. Are they malevolent or benign?",
+            "persona": "We lurk, we watch, we wait. What are we waiting for? You'll find out.",
+            "location": "Inside A Desolate Cave",
+            "goal": "Uncertain.",
+            "inventory": {}
+        },
+        {
+            "name": "Sadistic Jailer",
+            "description": "A man who enjoys the punishments more than he should. He enjoys his power and uses it freely.",
+            "persona": "I'm the one in charge here. I provide the entertainment. Pleading only makes it worse for you.",
+            "location": "Torture Chamber",
+            "goal": "Punishment of the prisoners, ensuring they learn their lesson.",
+            "inventory": {}
+        }
+    ],
+    "locations": [
+        {
+            "name": "Prisoners Cells",
+            "description": "The dungeon is filled with the same light of the enchanted torches. Cells line both walls and extend for what feels like miles. There are crates between each cell that store food and a change of clothes for the prisoners. You can hear trickles of water dropping in from the ceiling. It can be deafening at times.",
+            "background": "The prison was created to hold the mightiest of enemies. The wizards who built it warded it as heavily as they could. Some even lost their lives by using too much magic then they could handle. They say at times you can still hear them chanting, keeping a watch over the prisoners.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Traveling east, you must cross through a dark and narrow tunnel that is carved directly into the natural stone. The fear of the unknown fills your mind as you pass into its chilling blackness.",
+                "down": "Descending downwards into the Wet Dungeon, you feel the air become damp and thick. The sounds of dripping water echo eerily around you as you traverse down the slippery, stone steps."
+            },
+            "connections": {
+                "east": "The Lower Dungeon Guard Room",
+                "down": "A Wet Dungeon"
+            },
+            "items": {
+                "Enchanted Torch": {
+                    "name": "Enchanted Torch",
+                    "description": "A torch that never runs out of light.",
+                    "examine_text": "This is no ordinary torch, no fuel or flame but yet, it illuminates the whole room. As you look closer, tiny runes etched into the wood blink back at you, emanating a warm, comforting glow.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Prisoners Cells"
+                },
+                "Crate": {
+                    "name": "Crate",
+                    "description": "A wooden crate filled with food and clothes.",
+                    "examine_text": "The crate is locked and seems to be reinforced with steel. A symbol of a key is carved on its side. The clothes peeking from one of the spaces seems to be of poor quality.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Prisoners Cells"
+                },
+                "Prisoner Clothes": {
+                    "name": "Prisoner Clothes",
+                    "description": "Roughly stitched clothes of the prisoners.",
+                    "examine_text": "These clothes are threadbare and in need of repair. The color is a faded grey and they emit a damp, musty smell.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Prisoners Cells"
+                },
+                "Water Droplet": {
+                    "name": "Water Droplet",
+                    "description": "A precious droplet of water from the dungeon ceiling.",
+                    "examine_text": "You catch the water droplet in your hand. It's ice cold - chilling to the bone just as the Dungeon itself.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Prisoners Cells"
+                }
+            },
+            "characters": {
+                "The Wise Ghost": {
+                    "name": "The Wise Ghost",
+                    "description": "A ghostly apparition of a wizard who died while putting up the wards on the Prisoners Cells.",
+                    "persona": "I was the best at what I did, and I died for it but my soul carries on, keeping watch over this cold, haunting place.",
+                    "location": "Prisoners Cells",
+                    "goal": "To keep the evil within the cells contained.",
+                    "inventory": {
+                        "Enchanted Torches": {
+                            "name": "Enchanted Torches",
+                            "description": "A glowing torch embedded in a stone wall.",
+                            "examine_text": "Upon closer inspection, you can see flickering blue flames. It gives off a strange warmth that is unlike any ordinary fire. The source of light within the dungeons, casted by the deceased wizards.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Prison_Crates": {
+                            "name": "Prison Crates",
+                            "description": "Wooden crates stacked neatly between cells.",
+                            "examine_text": "You see sturdy crates, they seem to be full food and clothes. It's clear that these are used for the upkeep of prisoners.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Wizards_Spirit": {
+                            "name": "Wizards' Spirit",
+                            "description": "An echoing voice, seems to belong to The Wise Ghost",
+                            "examine_text": "If you listen carefully, you can hear chants. The spectral voice brings an odd sense of calmness. It\u2019s The Wise Ghost, ensuring everything remains in its order.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Dripping_Water": {
+                            "name": "Dripping Water",
+                            "description": "Water dripping down from the ceiling onto the cold floor.",
+                            "examine_text": "The water is cold and clear, perhaps it\u2019s collected from the underground streams. The sound it makes while dripping down can be deafening at times.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": true,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Dungeon"
+        },
+        {
+            "name": "The Lower Dungeon Guard Room",
+            "description": "This chamber, a full 30 feet below the Upper Dungeon, isn't made of stone blocks, it's hewn from the living rock of the earth.  10 by 15 feet, its domed ceiling and walls show the tool marks its excavation.  There are numerous lines of filth on the walls marking the various levels that water has risen up the walls during previous rainy seasons.\n\nA wobbly table sits in the center of the room, but there are no chairs to go with it.  Rusty cuffs hang from rusty pegs driven into the wall.  The smell is horrific.",
+            "background": "This room and its attached four cells aren't for the normal murderer or thief, they wait their sentences in the relatively salubrious Upper Dungeon.  This Lower Dungeon is for those who act against the King.  The King ensures that all the nobility know about this horrible place.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "You make your way through the dimly lit passage, feet sinking slightly into the damp earth. The smell of mold and unknown filth fills the air as you move slowly towards the guttural hushed whispers that echo faintly from the Prisoners' Cells.",
+                "south": "Cautiously descending down a narrow set of rocky stairs, you feel a cold dread wrapping around your heart. The walls close in on you as you journey towards the Torture Chamber where echoes of anguish and suffering still haunt its path.",
+                "north": "Walking northward, your senses are immediately attacked by an almost metallic scent. The light flickers off arcane instruments as you journey towards the Torture Equipment Storage Room, freezing your soul with its chilling promise of dreadful horror."
+            },
+            "connections": {
+                "west": "Prisoners Cells",
+                "south": "Torture Chamber",
+                "north": "Torture Equipment Storage Room"
+            },
+            "items": {
+                "Rusty Cuffs": {
+                    "name": "Rusty Cuffs",
+                    "description": "Rusty cuffs hanging from the wall. They look as if they've been used quite a lot.",
+                    "examine_text": "A close examination reveals that the rust on some of the cuffs is mixed with dried blood. The cuffs are cold and heavy to the touch. Small initials are carved into the metal, perhaps a remnant from past prisoners.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "The Lower Dungeon Guard Room"
+                },
+                "Wobbly Table": {
+                    "name": "Wobbly Table",
+                    "description": "A rugged, uneven table stands in the middle of the room.",
+                    "examine_text": "Looking underneath, the reason for its wobble becomes apparent. A leg has partially rotted away and someone has attempted a repair with a crude wooden splint. There are various stains and scratches on the surface of the table, evidence of its long and hard use.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Lower Dungeon Guard Room"
+                }
+            },
+            "characters": {
+                "Morbid Guard": {
+                    "name": "Morbid Guard",
+                    "description": "A horrific looking man, large, with a face scarred from many battles. He always seems to be sneering.",
+                    "persona": "I've got the face I deserve, from countless fights. The Prisoners fear me, even the ones who used to be warriors.",
+                    "location": "The Lower Dungeon Guard Room",
+                    "goal": "Keep prisoners in check and secure at all times.",
+                    "inventory": {
+                        "Keys": {
+                            "name": "Keys",
+                            "description": "A rusty set of keys attached to a large iron ring.",
+                            "examine_text": "The keys are numerous, all of different sizes and shapes, each probably unlocking a different cell in the dungeon. They are all rusty, showing their age and constant use in the damp dungeon environment.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Guard Spear": {
+                            "name": "Guard Spear",
+                            "description": "A long, well-used spear, its tip still sharp.",
+                            "examine_text": "The spear is long and imposing, perfect for keeping prisoners at bay. The grip is worn where countless hands have held it, and the tip is well-maintained and sharp, ready for use at a moment's notice.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Guard Uniform": {
+                            "name": "Guard Uniform",
+                            "description": "A stained and well-worn guard's uniform, robust and intimidating.",
+                            "examine_text": "The uniform is made of thick, robust fabric, dyed a deep, forbidding black. It's seen a lot of use and is stained in various places with who knows what. The heavy leather belt attached to it holds a number of useful-looking pouches.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Dungeon"
+        },
+        {
+            "name": "Torture Chamber",
+            "description": "Damp and dingy, the torture chamber contains almost nothing other than some shackles on the wall and a knife. There are no windows. The walls are made of solid concrete and the floor made of wood. Large dark stains are on the floor.",
+            "background": "Whenever the King finds someone that he wants information from, he sends them down to the torture chamber. A castle guard regularly goes down to interrogate the prisoners. Wrong doers are also sent to the torture chamber, where they are immediately executed.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "To move northwards from the Torture Chamber, one must dare to traverse the chilling, dampened corridors, carved into stone with the echoes of countless pleas and agonies.",
+                "east": "Heading east will lead you directly into a desolate cave \u2013 a haunting reminder of the ancient past, filled with eternal darkness, lit solely by the unpredictable flicker of enchanted torches."
+            },
+            "connections": {
+                "north": "The Lower Dungeon Guard Room",
+                "east": "Inside A Desolate Cave"
+            },
+            "items": {
+                "Shackles": {
+                    "name": "Shackles",
+                    "description": "Rusty and cold metal shackles hang from the wall.",
+                    "examine_text": "The metal of the shackles is old and rusty, having been used over many long years. It's cold to the touch, sending a chill down your spine just thinking about the many souls they have confined.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Torture Chamber"
+                },
+                "Knife": {
+                    "name": "Knife",
+                    "description": "A sharp blade lays on the floor.",
+                    "examine_text": "The blade looks incredibly sharp and it's pretty clear this instrument was used for torturing. The handle seems to have a perfect grip, though it's stained with patches of dry blood.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Torture Chamber"
+                },
+                "Blood_Stains": {
+                    "name": "Blood Stains",
+                    "description": "Dark stains are scattered across the wooden floor.",
+                    "examine_text": "Upon closer inspection, the stains are definitely blood. Some are faded, maybe even centuries old, while others are fresh. You can't help but feel a cold shiver down your spine at the sight.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Torture Chamber"
+                }
+            },
+            "characters": {
+                "Wicked Torturer": {
+                    "name": "Wicked Torturer",
+                    "description": "Cruel and cold, he carries out his duties without emotion. His eyes are dead.",
+                    "persona": "People think I'm cruel, but I don't care. This is my job, and I do it very well.",
+                    "location": "Torture Chamber",
+                    "goal": "To efficiently extract information from prisoners.",
+                    "inventory": {
+                        "Bloody Knife": {
+                            "name": "Bloody Knife",
+                            "description": "A large, sharp knife stained with fresh blood.",
+                            "examine_text": "The knife is large and sharp, perfect for cutting through flesh with ease. The blade is metallic and shiny, but is smeared with fresh blood. You can see specks of flesh still stuck to the knife.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Torturer\u2019s Mask": {
+                            "name": "Torturer\u2019s Mask",
+                            "description": "A spooky mask worn by the torturer.",
+                            "examine_text": "The mask looks daunting and spooky, with black eye holes and a grim expression. The material of the mask is leather. You can see dried blood splatters around the mouth of the mask - a horrifying sight to behold.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Sadistic Jailer": {
+                    "name": "Sadistic Jailer",
+                    "description": "A man who enjoys the punishments more than he should. He enjoys his power and uses it freely.",
+                    "persona": "I'm the one in charge here. I provide the entertainment. Pleading only makes it worse for you.",
+                    "location": "Torture Chamber",
+                    "goal": "Punishment of the prisoners, ensuring they learn their lesson.",
+                    "inventory": {
+                        "Keys": {
+                            "name": "Keys",
+                            "description": "A bunch of rusty, iron keys jingling on a metallic ring",
+                            "examine_text": "Upon closer inspection, these keys are old and worn. Each one is uniquely shaped, intended for different locks within the dungeons.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Whip": {
+                            "name": "Whip",
+                            "description": "A long, braided leather whip with a stiff handle",
+                            "examine_text": "This whip is well-used, the leather straps bearing the signs of repeated use. Its handle is wrapped in a solid grip, allowing the wielder to use it with control and precision.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Iron Chain": {
+                            "name": "Iron Chain",
+                            "description": "A heavy, gruelingly cold iron chain hanging from the walls",
+                            "examine_text": "The iron chain is thick and cold, rusting in some parts but still strong and unbreakable. It is long enough to shackle someone to the wall or floor.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": true,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Dungeon"
+        },
+        {
+            "name": "Inside A Desolate Cave",
+            "description": "The dungeon exists inside a dark cave. Enchanted torches light the cave up and lead the way to this ancient dungeon. Creatures can be seen populating the dungeon, but it is unknown if they are malevolent or benign.",
+            "background": "The dungeon is believed to have been created by ancient nobility with the aid of wizards. The dungeon was likely a prison for powerful enemies of the kingdom who may break free of traditional prison captivity by force or magical abilities.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "The journey west towards the Torture Chamber entails a path full of grim and haunting vibes. The limited light from the ancient torches flickers ominously as the chilling air fills the atmosphere."
+            },
+            "connections": {
+                "west": "Torture Chamber"
+            },
+            "items": {
+                "Ancient Torch": {
+                    "name": "Ancient Torch",
+                    "description": "An old, magical torch that provides light.",
+                    "examine_text": "The ancient torch gives off a soft, golden light. There seems to be some sort of enchantment on it as it doesn't appear to have been extinguished in centuries.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Inside A Desolate Cave"
+                },
+                "Creepy Creatures": {
+                    "name": "Creepy Creatures",
+                    "description": "Unknown creatures lurking in the shadows of the cave.",
+                    "examine_text": "Upon close examination, these creatures are unlike anything you have seen. They do not appear aggressive, but their grotesque appearance is unsettling.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Inside A Desolate Cave"
+                },
+                "Ancient Chains": {
+                    "name": "Ancient Chains",
+                    "description": "Chains presumably used to bind prisoners.",
+                    "examine_text": "Age and rust have eaten away at the chains, leaving them brittle. However, you can still feel the echo of fear and despair of those who once wore them.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Inside A Desolate Cave"
+                }
+            },
+            "characters": {
+                "Creepy Creatures": {
+                    "name": "Creepy Creatures",
+                    "description": "Unknown creatures lurking in the dark with gleaming eyes. Some whisper in strange languages. Are they malevolent or benign?",
+                    "persona": "We lurk, we watch, we wait. What are we waiting for? You'll find out.",
+                    "location": "Inside A Desolate Cave",
+                    "goal": "Uncertain.",
+                    "inventory": {
+                        "Torch": {
+                            "name": "Torch",
+                            "description": "An enchanted torch.",
+                            "examine_text": "This long wooden torch burns with an eerie blue flame. The flame doesn't seem to consume the wood and gives off a faint yet chilling radiance.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Ancient Relics": {
+                            "name": "Ancient Relics",
+                            "description": "Relics of the ancient nobility.",
+                            "examine_text": "The relics are adorned with intricate designs and precious stones. They hold a mysterious power about them and hum softly when touched.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Prisoner's Remains": {
+                            "name": "Prisoner's remains",
+                            "description": "Some dejected prisoner's remains.",
+                            "examine_text": "Laid out haplessly in the corner are the skeletal remains of a prisoner long forgotten. Their final resting place marks the long history of this dungeon.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Cave Creatures": {
+                            "name": "Cave Creatures",
+                            "description": "Lurking in the shadows, haunting the cave.",
+                            "examine_text": "Creepy creatures that slink and lurk around the corners of the cave. Their red eyes watching, waiting for their time to pounce.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Dungeon"
+        },
+        {
+            "name": "Prisoner'S Cell",
+            "description": "The prisoner's cell is incredibly dreary and dark. The walls are black and made of cobblestone. The atmosphere and smell are damp and repugnant.",
+            "background": "The prisoner's cell includes the zone by which the castle dumps and locks up prisoners. These can be prisoners of war or defectors. There are tales that the cell is haunted and even houses ghosts.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {},
+            "connections": {},
+            "items": {
+                "Old mattress": {
+                    "name": "Old mattress",
+                    "description": "An old matress dumped in the corner of the cell.",
+                    "examine_text": "The mattress is stained, torn, and worn out by years of use. The stuffing is coming out of it and it smells foul.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Prisoner'S Cell"
+                },
+                "Rusty Shackles": {
+                    "name": "Rusty Shackles",
+                    "description": "Shackles hanging from the wall, used to bind the prisoners.",
+                    "examine_text": "Upon close inspection, this immovable shackles reveal years of use. The chains are cold, rusty and corroded due to the damp surroundings.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Prisoner'S Cell"
+                },
+                "Stone bowl": {
+                    "name": "Stone bowl",
+                    "description": "A rudimentary stone bowl that serves as dining ware for the prisoners.",
+                    "examine_text": "The bowl is carved from stone and is quite rough. It has some residue of what looks like moldy bread.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Prisoner'S Cell"
+                },
+                "Old tattered clothes": {
+                    "name": "Old tattered clothes",
+                    "description": "The remnants of what used to be cloth, now barely more than rags.",
+                    "examine_text": "The clothes have been worn to the point that they're barely distinguishable as clothes anymore. They're tattered and filled with holes.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Prisoner'S Cell"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Dungeon"
+        },
+        {
+            "name": "A Wet Dungeon",
+            "description": "It is dark and eerie, especially because there is only one candle. The candle is low on wax, it will be out soon. The brick walls surrounding the dungeon are scratched with fingernails, moss is growing.",
+            "background": "The dungeon is in a low underground chamber by the castle. It is under water, or a lake. Fresh water keeps dripping from the ceiling, and it smells like fish.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "up": "Climbing up the slippery, rotted ladder brings discomfort and a sense of despair. The sound of iron chains and distant whispers echo from above.",
+                "north": "Moving northward is like walking on a path of dread, the air becomes colder and filled with intense anticipation."
+            },
+            "connections": {
+                "up": "Prisoners Cells",
+                "north": "Torture Room"
+            },
+            "items": {
+                "Scratched Brick": {
+                    "name": "Scratched Brick",
+                    "description": "A gloomy brick scratched by mysterious figures.",
+                    "examine_text": "The brick seems old, terribly filled with scratch marks. Some are deep, suggesting desperate attempts of escape by previous inhabitants. Touching them, you can sense fear and desperation.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "A Wet Dungeon"
+                },
+                "Dripping Candle": {
+                    "name": "Dripping Candle",
+                    "description": "A nearly exhausted candle, barely lighting the room.",
+                    "examine_text": "The candle isn't much. It's a short stub of wax with a rapidly sinking wick. You think it might last a few more minutes at best. But without it, you're lost in an endless sea of darkness.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "A Wet Dungeon"
+                },
+                "Moss": {
+                    "name": "Moss",
+                    "description": "A green moss growing on the wet brick walls.",
+                    "examine_text": "The moss seems to voice the humidity of the dungeon. It's wet and slippery, covering portions of the cold brick walls in patches. You can almost see it growing before your eyes.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "A Wet Dungeon"
+                },
+                "Dungeon Water": {
+                    "name": "Dungeon Water",
+                    "description": "A pool of cold, mildly fish-scented water.",
+                    "examine_text": "The water is cold and murky, a place where no light reaches. A faint smell of fish lingers around it, offering an unwelcome hint of the lake it originates from.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "A Wet Dungeon"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Dungeon"
+        },
+        {
+            "name": "Torture Equipment Storage Room",
+            "description": "The torture storage room is a well organized room of equipment, there are lashes and cat-o-nine tails hanging from the wall, several malicious devices covered by tarp. There is a iron maiden on a dolly, some clubs for plainly breaking thigh bones in one corner, along with jars of thumbscrews, boxes or pins and a big table with ropes and a crank that stretches people until they are really uncomfortable",
+            "background": "This is a room for storing equipment, it was designated long ago by a king long since forgotten, and blessed by a wizards upon completion, and rumors have it that since this blessed occasion, the thumbscrews and cuffs have never rusted to this very day",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "Venturing south from the storage room leads you down a narrow, dank path towards the Lower Dungeon Guard Room, a journey marked by increasing cold and a sense of foreboding.",
+                "west": "Heading west from the storage room brings you to an old Storage Room, a journey through narrow, stone corridors lined with shelves of dusty, forgotten trinkets."
+            },
+            "connections": {
+                "south": "The Lower Dungeon Guard Room",
+                "west": "Storage Room"
+            },
+            "items": {
+                "Iron Maiden": {
+                    "name": "Iron Maiden",
+                    "description": "An imposing, upright metal contraption, covered in rust",
+                    "examine_text": "This Iron Maiden is an old torture device. The interior is spiked, ensuring a painful experience for anyone unlucky enough to be placed inside. Its rusty exterior adds a chilling sense of age and brutality.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Torture Equipment Storage Room"
+                },
+                "Whips": {
+                    "name": "Whips",
+                    "description": "Several worn out whips hang from nails on the wall",
+                    "examine_text": "Cracked strips of ancient leather make each whip, the handles stain with sweat and blood of use. They vary in length and thickness but all carry a grim aura of suffering and pain.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Torture Equipment Storage Room"
+                },
+                "Thumbscrews": {
+                    "name": "Thumbscrews",
+                    "description": "Several jars of oddly pristine thumbscrews rest on a nearby shelf",
+                    "examine_text": "Equally troubling for their storied past and lack of rust. The thumbscrews shine ominously in the torchlight. You get an uneasy sense that these devices of pain were used recently.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Torture Equipment Storage Room"
+                },
+                "Stretching Ropes": {
+                    "name": "Stretching Ropes",
+                    "description": "A collection of robust ropes attached to a heavy wooden table with a crank",
+                    "examine_text": "The stretching ropes have seen many bodies come and go. They look strong and capable enough to fulfill their dreadful purpose. Strands of threadbare fabric from past victims still cling to some of the harsh knots.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Torture Equipment Storage Room"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Dungeon"
+        },
+        {
+            "name": "Storage Room",
+            "description": "This is a plain stone room with many trunks piled high.  There's tables with paper records stacked high along with writing instruments.",
+            "background": "This is a room used for storing the belongings of prisoners as well as keeping paper records of those who come through.  Some get their belongings back if they make it out alive.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "As you make your way east, the stark, sterile atmosphere of the plain storage room gradually transitions into an unsettling ambiance, filled with the subtle metallic scent of cold iron and an eerie silence broken occasionally by the echo of your own footsteps."
+            },
+            "connections": {
+                "east": "Torture Equipment Storage Room"
+            },
+            "items": {
+                "Storage Trunk": {
+                    "name": "Storage Trunk",
+                    "description": "An old, battered trunk, heavy from the items it holds.",
+                    "examine_text": "This trunk is heavy and made of old wood, it has a rusty lock on the front. It's filled with various items that belonged to prisoners who never made it out.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Storage Room"
+                },
+                "Paper Records": {
+                    "name": "Paper Records",
+                    "description": "Stacks of yellowed paper filled with the names of countless prisoners.",
+                    "examine_text": "Rows and rows of names, each recorded meticulously with a sense of dread. Many of these prisoners are no longer alive.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Storage Room"
+                },
+                "Quill Pen": {
+                    "name": "Quill Pen",
+                    "description": "A feathered quill pen, ankle-deep in ink.",
+                    "examine_text": "This quill has seen better days, its feather fraying and its point starting to dull. A careful inquiry reveals it to be caked in black ink.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Storage Room"
+                },
+                "Inkwell": {
+                    "name": "Inkwell",
+                    "description": "A small, oak inkwell, full of black ink.",
+                    "examine_text": "Solid and weighty, this inkwell is sturdy enough not to spill easily. A thick pool of black ink resides within.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Storage Room"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Dungeon"
+        },
+        {
+            "name": "Torture Room",
+            "description": "An absolutely filthy and disgusting place.  Blood from the recently tortured covers the floors and walls, and the place is generally filthy and grimy.  There are various pieces of torture equipment lying around the room as well as instruments, tables, and chairs.",
+            "background": "This room is used to extract confessions from those who have committed crimes.  It's also useful to obtain information from captured enemy soldiers.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "Descending towards the Wet Dungeon, the temperature drops and the uneasy scent of still water and moss fills the air, the ominous drip of water reflecting the gloomy atmosphere.",
+                "up": "Ascending towards the Dungeon Within A Castle, the stone walls become colder and the silence more deafening, a foreboding sense of unease setting in as one enters the stronghold of the king's enemies."
+            },
+            "connections": {
+                "south": "A Wet Dungeon",
+                "up": "Dungeon Within A Castle"
+            },
+            "items": {
+                "Rusty Chains": {
+                    "name": "Rusty Chains",
+                    "description": "Old and rusted chains with shackles at the ends.",
+                    "examine_text": "These chains were once silver but are now orange and brown with rust. Each link is large and weighty, binding captives with an unyielding grasp. At the ends of the chains, thick iron shackles hang open, ready to be fastened around wrists or ankles.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Torture Room"
+                },
+                "Torture Table": {
+                    "name": "Torture Table",
+                    "description": "A hauntingly ominous black, iron table with shackles on each corner.",
+                    "examine_text": "Stark and harrowing, the torture table is a grim reminder of the room's purpose. Dark blood stains are splattered across it and its iron shackles echo the cruelty of past events.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Torture Room"
+                },
+                "Bloodied Knife": {
+                    "name": "Bloodied Knife",
+                    "description": "A small, sharp knife covered in dried blood.",
+                    "examine_text": "The knife glistens eerily in the dim light, its blade slick with the remnants of dried blood. Its sharpness implies its role in the infliction of agony.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Torture Room"
+                },
+                "Iron Chair": {
+                    "name": "Iron Chair",
+                    "description": "A dark, uninviting iron chair with restraints attached to the armrests.",
+                    "examine_text": "This chilling iron chair is cold and rough. Leather straps, worn and frayed, are fastened to the armrests, a stark reminder of the room's grim purpose.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Torture Room"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Dungeon"
+        },
+        {
+            "name": "Torture Room",
+            "description": "The room is sparse and cold. A variety of torture implements are housed in the room, and a bloodied prisoner can often be found hanging in shackles on the wall of the room.",
+            "background": "The monarchs send their enemies here. The torture master is utilizes the room to extract information of use to the crown, then disposes of the remains.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "Descending from the Torture Room to the A Wet Dungeon is always a chilling experience. The air becomes damp and pungent as the sound of trickling water gets louder with every step.",
+                "up": "Ascending to the Dungeon Within A Castle is no less terrifying. As you climb, the surrounding stone walls become colder and the faint muffled sounds of the world above start to trickle down."
+            },
+            "connections": {
+                "south": "A Wet Dungeon",
+                "up": "Dungeon Within A Castle"
+            },
+            "items": {
+                "Torture Table": {
+                    "name": "Torture Table",
+                    "description": "A large, dark wooden table with leather straps and metallic devices",
+                    "examine_text": "This table is intimidating and filled with numerous devices designed for the cruel art of torture. You see leather straps designed to hold victims down and a variety of tools laid out neatly across the surface. The table itself is stained with what you can only assume is blood.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Torture Room"
+                },
+                "Manacles": {
+                    "name": "Manacles",
+                    "description": "Heavy steel shackles affixed to the wall",
+                    "examine_text": "These manacles are intimidating, designed to hold the wrists and ankles of a prisoner. They are heavy and cold to the touch, with a slight rust covering the steel. It's clear that they have seen a fair amount of use.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Torture Room"
+                },
+                "Small Dagger": {
+                    "name": "Small Dagger",
+                    "description": "A wickedly sharp blade, used for precise cuts",
+                    "examine_text": "This dagger is perfectly honed for excruciating accuracy. Its blade gleams menacingly under the torchlight, holding a promise of pain in its gleaming edge. It's small, but deadly in its own way.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Torture Room"
+                },
+                "Torturer's Mask": {
+                    "name": "Torturer's Mask",
+                    "description": "A mask made of supple black leather",
+                    "examine_text": "The mask seems crafted to induce fear, obscuring the face of the torturer behind pits of black with no discernible features. It is made of supple black leather meticulously crafted, a terrifying face to behold for the unfortunate victim.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Torture Room"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Dungeon"
+        },
+        {
+            "name": "Dungeon Within A Castle",
+            "description": "The castles dungeon lay buried below the village on the outskirts of the castles garden. Only the guards have access to light, and light is given as a privilege. The interior is stone and smells of mildew and deadly black mold.",
+            "background": "The dungeon was initially created for only the worst enemies of the king, but with the rise of crime and corruption within the kingdom, it is now populated by even the most petty of criminals. Simply looking at a guard the wrong way can land you in the dark abysses of the cruel dungeon. An escape tunnel is believed to exist somewhere within, but the darkness makes it impossible to find, even for the guards.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "down": "The journey towards the torture room is one filled with dread and anxiety. As you traverse further, the dungeon's walls become increasingly thick with the more pungent stench of blood and decay becomes overwhelming."
+            },
+            "connections": {
+                "down": "Torture Room"
+            },
+            "items": {
+                "Rusty Sword": {
+                    "name": "Rusty Sword",
+                    "description": "An old, rusted sword discarded on the ground.",
+                    "examine_text": "The sword is wrought of iron, aged and neglected. The blade is tarnished with rust and time, yet there's an inherent sharpness to it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Dungeon Within A Castle"
+                },
+                "Dank Cell": {
+                    "name": "Dank Cell",
+                    "description": "A small, mildew-infested cell.",
+                    "examine_text": "The cell is small, and the air reeks of mildew. A rotting straw pallet lies in one corner, and the cell bars are covered with rust.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Dungeon Within A Castle"
+                },
+                "Guard's Key": {
+                    "name": "Guard's Key",
+                    "description": "A small key attached to a sturdy ring.",
+                    "examine_text": "The key is made of hardy steel, though showing signs of wear with its numerous nicks and scratches. It's attached to a heavy-duty ring that signifies its importance.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Dungeon Within A Castle"
+                },
+                "Stale Bread": {
+                    "name": "Stale Bread",
+                    "description": "A rock-hard piece of stale bread.",
+                    "examine_text": "The bread, darkened and hardened through the passage of time, was seemingly devoid of any nourishment it might've once held. One could probably break a tooth trying to eat it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Dungeon Within A Castle"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Dungeon"
+        }
+    ],
+    "actions": []
+}

@@ -1,0 +1,2869 @@
+{
+    "player": "Zephyr",
+    "start_at": "Underwater Aquapolis",
+    "game_history": [],
+    "game_over": false,
+    "game_over_description": null,
+    "characters": [
+        {
+            "name": "Zephyr",
+            "description": "Zephyr is a graceful mermaid with sea-green hair that flows in the water. Her tail is a shimmering blend of blues and greens with golden scales that catch the light from the fluorescent rocks.",
+            "persona": "I've lived here all my life, swimming between these buildings, caring for our sea creature friends. I can't imagine living anywhere else.",
+            "goal": "She aims to keep the peace in the aquapolis and protect it from external threats.",
+            "location": "Underwater Aquapolis",
+            "inventory": {}
+        },
+        {
+            "name": "Boulder",
+            "description": "Boulder is a stout and sturdy crustacean humanoid with a rough, coral-colored exoskeleton. His large claws snap rhythmically as he shuffles about.",
+            "persona": "Nothing gets past these claws of mine. Aquapolis is me home, and I'll be shelled if I let any harm come to it!",
+            "goal": "His goal is to maintain the structural integrity of the aquapolis.",
+            "location": "Underwater Aquapolis",
+            "inventory": {}
+        },
+        {
+            "name": "Pearl",
+            "description": "Pearl is a young and curious sea sprite, with luminescent blue skin that emits a faint glow. Her eyes are large and full of wonder, intersected with brilliant streaks of gold.",
+            "persona": "I love exploring! Everything in Aquapolis is so fascinating - the glowing shells, the hidden corners...",
+            "goal": "Her aim is to uncover the ancient secrets of the aquapolis.",
+            "location": "Underwater Aquapolis",
+            "inventory": {}
+        },
+        {
+            "name": "Lord Mariner",
+            "description": "He has a dreadful grimace with a formidable stare as if daring you to challenge him. He dresses in a heavy, royal ensemble, adorned with jewels, giving him both a graceful but terrifying presence.",
+            "persona": "I am Lord Mariner, the king of this underwater city. Fear is my tool and loyalty is my reward. Cross me, and you'll meet my favorite companion, the Iron Maiden.",
+            "goal": "To maintain unquestioned rule over the aquapolis and quash any signs of rebellion.",
+            "location": "The Dungeon",
+            "inventory": {}
+        },
+        {
+            "name": "The Jailer",
+            "description": "A gaunt figure with graying hair and a hunchback. His eyes, traumatized from witnessing desolation, seem to hold a sea of despair.",
+            "persona": "I am the jailer, forever stuck in these haunting dungeons, mere puppet to the king's demands. You think you see fear? You have seen nothing yet.",
+            "goal": "To survive in this role without losing his sanity or pity, hoping for liberation from this cursed duty.",
+            "location": "The Dungeon",
+            "inventory": {}
+        },
+        {
+            "name": "The Prisoner",
+            "description": "He is frail and thin, his figure filled with wounds from the king's torturous methods. His eyes have lost their light, yet a flicker of an unyielding spirit still resides in them.",
+            "persona": "I was once a freeman of this city but dared question the King. Now, I languish in this place, away from light, away from freedom.",
+            "goal": "To escape this gruesome cage and to bring hope back to the city dwellers.",
+            "location": "The Dungeon",
+            "inventory": {}
+        },
+        {
+            "name": "Old Toad",
+            "description": "Old Toad is massive in size with an olive-green back covered in stippled warts; his eyes are bulbous and yellow.",
+            "persona": "I've seen many come and go in my time here in Toad Hollow, little do they know what lurks beneath these muddy waters.",
+            "goal": "Old Toad's primary goal is to keep existing within the safety of Toad Hollow and protect the unidentified creature.",
+            "location": "Toad Hollow",
+            "inventory": {}
+        },
+        {
+            "name": "Knight Ghost",
+            "description": "Knight Ghost is a specter of a drowned knight; his armor tarnished and algae-infested, his eyes glow eerily red within the helmet's visor.",
+            "persona": "I drowned here seeking glory. Now, I remain, bound to these cursed waters.",
+            "goal": "Knight Ghost's aim is to free himself of the curse that bounds him to Toad Hollow.",
+            "location": "Toad Hollow",
+            "inventory": {}
+        },
+        {
+            "name": "Mysterious Creature",
+            "description": "This unidentified creature is elusive, only its ominous red eyes and swift fins ever seen as it glides through the murky waters.",
+            "persona": "I lurk. I protect. I survive.",
+            "goal": "The mysterious creature's only goal is to protect the safety of Toad Hollow from outside threats.",
+            "location": "Toad Hollow",
+            "inventory": {}
+        },
+        {
+            "name": "Lord Triton",
+            "description": "A muscular merman with a powerfully built physique, adorned in royal robes glittering with precious gems. His eyes sparkle with wisdom and strength. A majestic coral crown rests atop his keen head, and a mystical trident is always by his side.",
+            "persona": "I am Lord Triton, the righteous ruler of this underwater realm. I have sworn to protect this treasure which is the heart and soul of the Aquapolis.",
+            "goal": "To protect the Lords Treasury and the Aquapolis, and to ensure its prosperity and peace.",
+            "location": "The Lords Treasury",
+            "inventory": {}
+        },
+        {
+            "name": "Aquilia",
+            "description": "A beautiful and elegant mermaid with shimmering scales and long, flowing hair that glows. Her eyes are as captivating as the deep ocean, and a magical seashell pendant dangles around her neck.",
+            "persona": "I am Aquilia, a historian and chronicler of the Aquapolis. I have served Lord Triton faithfully and recorded the history of his reign.",
+            "goal": "To record and preserve the history of the Aquapolis, and to decipher the secrets of the Lords Treasury.",
+            "location": "The Lords Treasury",
+            "inventory": {}
+        },
+        {
+            "name": "Nerian",
+            "description": "An old and wise merman with a long, silver beard and sunken eyes that tell thousand tales. He carries a magical staff made from a unique underwater plant, which radiates a serene glow.",
+            "persona": "I am Nerian, the ancient seer of the Aquapolis. I possess knowledge about the biggest secrets of the underwater world.",
+            "goal": "To translate the prophecy of the Aquapolis and decipher the future of the Lords Treasury.",
+            "location": "The Lords Treasury",
+            "inventory": {}
+        },
+        {
+            "name": "Triton",
+            "description": "Triton, a merman trader with royal-blue scales and striking gold eyes, runs a prominent gemstone stand. His hair flows like seaweed, with a crown of sea star nestled.",
+            "persona": "I've seen things unimaginable from the surface reaching here in my little stall. I've seen treasures of the deep, rare gemstones that sparkle even in this eternal twilight of the sea.",
+            "goal": "His goal is to sell his precious gemstones and historic relics to gather enough to finally retire from his trade.",
+            "location": "Underwater Marketplace",
+            "inventory": {}
+        },
+        {
+            "name": "Nemo",
+            "description": "Nemo is a young and vibrant fish with a persistent grin and eyes full of innocence. Sporting stripes in the shades of black, white and orange, his small size belies his endearing disposition.",
+            "persona": "Hello there! My name's Nemo and I'm the fastest swimmer around here! Do you want to race? I promise I won't cheat; I'm pretty confident in my abilities.",
+            "goal": "His main goal is to sell all his news scrolls by the end of the day and beat everyone in occasional races.",
+            "location": "Underwater Marketplace",
+            "inventory": {}
+        },
+        {
+            "name": "Daisy",
+            "description": "Daisy, an elderly octopus, is known for her silvery-gray tentacles and piercing green eyes. Each of her tentacles are adorned in chunky bracelets and mystical rings, signifying her reputation as a soothsayer.",
+            "persona": "Ah, a new face, excellent. I'm Daisy, the oracle of the deep sea. Sit down, my dear. Let me read your future amidst these swirling currents of time.",
+            "goal": "Daisy's ultimate goal is to guide the kingdom's inhabitants through her prophecies and ensure the welfare of the aquapolis.",
+            "location": "Underwater Marketplace",
+            "inventory": {}
+        },
+        {
+            "name": "King Neptune",
+            "description": "King Neptune, whose broad figure is covered in glistening emerald scales, has a crown adorned with pearls and his eyes are as blue as the ocean.",
+            "persona": "As the ruler of this aquapolis, I strive to maintain peace and prosperity amidst my subjects. Those who disobey shall feel my trident's wrath.",
+            "goal": "He seeks to protect the aquapolis from any potential threats and keep peace within his kingdom.",
+            "location": "Neptune'S Throne Room",
+            "inventory": {}
+        },
+        {
+            "name": "Queen Marina",
+            "description": "Queen Marina is an elegant mermaid with a radiant sea-green tail and stunning silver hair, usually seen wearing a shell tiara.",
+            "persona": "I yearn for the open sea and its endless beauty, but I love my king and country, and I wish to serve them to the best of my ability.",
+            "goal": "Her goal is to ensure the happiness and well-being of her family and subjects while yearning to someday revisit her ocean palace.",
+            "location": "Neptune'S Throne Room",
+            "inventory": {}
+        },
+        {
+            "name": "Gerard the Guard",
+            "description": "A strong and robust merman, adorned in royal armor, with eyes alert and a determined demeanor.",
+            "persona": "I\u2019ve been appointed as the chief guard, it\u2019s my duty to keep our king and queen safe. I'd give my life for them without a second thought.",
+            "goal": "His prime concern is to ensure the safety of King Neptune and Queen Marina.",
+            "location": "Neptune'S Throne Room",
+            "inventory": {}
+        },
+        {
+            "name": "Captain Darius",
+            "description": "A tall man with weathered skin and eyes that have seen countless storms, wearing a captain's hat and a diving suit.",
+            "persona": "I've spent years commanding ships on the surface now I keep order in the depths. I respect the sea and she respects me back.",
+            "goal": "Ensure a smooth and safe passage for all who travel through the dry dock.",
+            "location": "Dry Dock Room",
+            "inventory": {}
+        },
+        {
+            "name": "Maintenance Engineer Ada",
+            "description": "A young woman with short, mussed hair under a mechanic's cap, wearing a suit smeared with oil. She has an array of tools attached to her waist.",
+            "persona": "Fixing things is my passion, give me a problem and I'll solve it before you can say 'pressure leak'.",
+            "goal": "Keep the dry dock in top-performing condition and prevent any leakages.",
+            "location": "Dry Dock Room",
+            "inventory": {}
+        },
+        {
+            "name": "Diver Stanley",
+            "description": "Stanley is a hulk of a man, with muscular arms and a bulky diving suit. His muffled voice emits from his full-face breathing mask.",
+            "persona": "I've always had a love for the deep. You never know what's out there in the great expanse.",
+            "goal": "Explore the unknown and bring back lost treasures.",
+            "location": "Dry Dock Room",
+            "inventory": {}
+        },
+        {
+            "name": "Noble",
+            "description": "This noble merperson is easily the talk of the market. Dressed in various rare and beautiful sea silks, he lounges about on a massive shark which he wields as both transportation and proof of his status. His eyes sparkle with the reflection of golden coins strewn in his backpack.",
+            "persona": "I am aware of my status and I always make sure others are, too. I enjoy spending my wealth, especially on unique things. There is no object rare enough that I cannot afford.",
+            "goal": "The noble is spreading his money looking for a rare artifact that can increase his status.",
+            "location": "The Marketplace",
+            "inventory": {}
+        },
+        {
+            "name": "Coral Vendor",
+            "description": "The coral vendor is an old and wise merwoman, her scales slightly discolored with extreme age. Her shop is a kaleidoscope of colors as she sells an array of magically grown corals. Her genuine smile and excitement when showcasing each piece is infectious.",
+            "persona": "I may be old, but my passion for corals never aged. There is a certain satisfaction in seeing my customers' faces light up when they see these beautiful, colorful pieces. Every piece is like a child to me.",
+            "goal": "The coral vendor wants to sell her sculptures and grow her business.",
+            "location": "The Marketplace",
+            "inventory": {}
+        },
+        {
+            "name": "Thief",
+            "description": "A cunning and agile mermaid, the thief lurks in the shadows of the marketplace. Her dark green scales blend perfectly with seaweed around, and a double-bladed kelp dagger is skillfully hidden within her hair. Her eyes are always on the move, scanning the crowd for her next target.",
+            "persona": "Y'know, a girl's got to make a living somehow. If that means lifting a few unattended wallets, well, fish gotta swim, right?",
+            "goal": "The thief wants to rob as many people as she can with no one noticing.",
+            "location": "The Marketplace",
+            "inventory": {}
+        },
+        {
+            "name": "Dr. Stella Octo",
+            "description": "A teal-haired, bespectacled woman with a lab coat scribbled with formulas and coffee mug in hand.",
+            "persona": "I am always enthusiastic about my research work. I am the one who has been uncovering the secrets of this sea city.",
+            "goal": "To uncover the truth behind the ancient structures found in the deeper parts of the ocean.",
+            "location": "Research Lab",
+            "inventory": {}
+        },
+        {
+            "name": "Professor Fintail",
+            "description": "A grey-haired man, hunched with age, wearing a pair of thick glasses and a faded overcoat filled with strange tools.",
+            "persona": "Ever since we got here, I've been stuck in this lab trying to break new ground in marine biochemistry.",
+            "goal": "To discover a new bio-luminescent algae which can be used to power the city.",
+            "location": "Research Lab",
+            "inventory": {}
+        },
+        {
+            "name": "Assistant Jelly Pippin",
+            "description": "A youthful figure, bursting with energy, wearing a purple jumpsuit, with coral headphones around neck and an e-pad in hands.",
+            "persona": "I assist Dr. Octo in her research, maintaining lab gear and doing field tests.",
+            "goal": "To complete tasks diligently and earn Dr. Octo's respect.",
+            "location": "Research Lab",
+            "inventory": {}
+        },
+        {
+            "name": "Jeb",
+            "description": "A grizzled, barnacle-covered Aquaman with thick arms from laboring in the local seaweed fields.",
+            "persona": "I'm Jeb, born and bred in Aquapolis. I know every inch of these waters and every blade o' seaweed. Can't say I trust all those city fish, but you seem alright.",
+            "goal": "To keep his family fed and his seaweed farm prosperous, despite the relentless aquatic elements.",
+            "location": "Farmhouse",
+            "inventory": {}
+        },
+        {
+            "name": "Mama Meri",
+            "description": "A plump, water-worn mermaid with the kindest eyes and a jolly demeanor, her tail fin colored brilliantly in shades of green and blue.",
+            "persona": "Well, ain't you a sight for sore eyes? I'm Meri, Jeb's better half. Life can be tough here, but we take care of our own. Come have a seat now, you look like you need a rest.",
+            "goal": "Her heart\u2019s desire is nothing more than to see her children grow and lead better lives than their parents.",
+            "location": "Farmhouse",
+            "inventory": {}
+        },
+        {
+            "name": "Sammy",
+            "description": "The eldest child of the family, a boy of about 13 with earnest, curious eyes and an impish smile.",
+            "persona": "Hey there, stranger! Name's Sammy. Papa says I'm gonna run the farm someday... or maybe I'll just explore the whole ocean! Have you ever been to the deep sea?",
+            "goal": "Sammy dreams of going on a grand adventure outside of the small seaweed farm he's always known.",
+            "location": "Farmhouse",
+            "inventory": {}
+        },
+        {
+            "name": "Zol",
+            "description": "An octopedal aquatic being with leathery skin and deep-seated eyes that emit a warm undertone of golden hue.",
+            "persona": "I am Zol, guardian of this Valley. My mission is to make sure everyone gets their share of healing without disturbing the harmony of this place.",
+            "goal": "To maintain peace and harmony in the Geothermal Valley.",
+            "location": "Geothermal Valley",
+            "inventory": {}
+        },
+        {
+            "name": "Sirena",
+            "description": "Sirena is a mesmerizing merwoman with flowing hair that changes color with her emotions and a tail shimmering with iridescent scales.",
+            "persona": "I am Sirena, the valley's caretaker and guide. I'm here to welcome visitors and introduce them to their healing journey.",
+            "goal": "To ensure all visitors understand the benefits and respect the sanctity of the valley.",
+            "location": "Geothermal Valley",
+            "inventory": {}
+        },
+        {
+            "name": "Lumos",
+            "description": "A luminescent bioluminescent jellyfish, his body radiates different colors emitting a soothing light that adds to the milieu of the valley.",
+            "persona": "They call me Lumos, the valley's living lighthouse. I bring light to the valley in the darkest hours and guide the lost back.",
+            "goal": "To bring light and guide those who get lost in the Valley.",
+            "location": "Geothermal Valley",
+            "inventory": {}
+        },
+        {
+            "name": "Hank the Hermit Crab",
+            "description": "A delightful hermit crab that carries an interesting-looking shell, and sulks by the corner of the tool shed holding a broken tool.",
+            "persona": "I'm just a hermit crab, enjoying the quiet of the tool shed and hoping to repair my broken tools for my collection.",
+            "goal": "Iis to repair his broken tool.",
+            "location": "Tool Shed",
+            "inventory": {}
+        },
+        {
+            "name": "Selena the Seahorse",
+            "description": "A graceful seahorse with a beautiful bright aqua color gliding around a rusted spade.",
+            "persona": "I'm always exploring, and I've grown quite fond of this old tool shed with all the rusted trinkets; it holds so many tales.",
+            "goal": "She wants to collect antique objects from the shed.",
+            "location": "Tool Shed",
+            "inventory": {}
+        },
+        {
+            "name": "Molly the Manta Ray",
+            "description": "A large, majestic manta ray that hovers serenely around the shed, her eyes full of wisdom.",
+            "persona": "I enjoy the serene calmness of the tool shed. I'm here to seek solitude and be one with my thoughts.",
+            "goal": "She wants to find peace and solitude in the quiet",
+            "location": "Tool Shed",
+            "inventory": {}
+        }
+    ],
+    "locations": [
+        {
+            "name": "Underwater Aquapolis",
+            "description": "The underwater aquapolis is a massive and ornate city at the bottom of the ocean. The walls of the buildings are made or coral, pearl, and seashells. Schools of fish swim in and out of the circular holes in the walls that act as windows. The aquapolis is illuminated by florescent rocks and shells that line every building.",
+            "background": "An ancient underwater people created the city, collecting beautiful and priceless items from all over the ocean to add to the budding city. Creatures from all over the seas made their way to the aquapolis, both to help and to admire the incredible creation.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "You swim through archways of starfish-studded coral and ascend the spiraling staircase of seashells, leading to the majestic Neptune's Throne Room.",
+                "south": "Drifting in the playful current, you find yourself surrounded by garlands of kelp that guide you to the vibrant Underwater Marketplace buzzing with activity.",
+                "east": "You glide through marble portals lined with bioluminescent algae. Through underwater flora, you arrive at the mysterious Dry Dock Room at the city's edge.",
+                "west": "Against the gentle pull of the current, you journey through the coralline tunnels lit by radiant marine flora, bringing you to the buzzing hub of discovery, the Research Lab."
+            },
+            "connections": {
+                "north": "Neptune'S Throne Room",
+                "south": "Underwater Marketplace",
+                "east": "Dry Dock Room",
+                "west": "Research Lab"
+            },
+            "items": {},
+            "characters": {
+                "Zephyr": {
+                    "name": "Zephyr",
+                    "description": "Zephyr is a graceful mermaid with sea-green hair that flows in the water. Her tail is a shimmering blend of blues and greens with golden scales that catch the light from the fluorescent rocks.",
+                    "persona": "I've lived here all my life, swimming between these buildings, caring for our sea creature friends. I can't imagine living anywhere else.",
+                    "goal": "She aims to keep the peace in the aquapolis and protect it from external threats.",
+                    "location": "Underwater Aquapolis",
+                    "inventory": {
+                        "pearl necklace": {
+                            "name": "Pearl Necklace",
+                            "description": "A necklace made from lustrous, perfectly round pearls",
+                            "examine_text": "The pearls on the necklace are round and lustrous, reflecting a soft glow in the underwater city's light. It is a mark of respect and admiration in the aquapolis, a symbol of the wearer's status as a true denizen of the deep.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "coral comb": {
+                            "name": "Coral Comb",
+                            "description": "A hand-crafted, ornate comb made from coral",
+                            "examine_text": "The coral comb is expertly crafted, its natural pink and orange hues shimmering beautifully in the light. Some edges still bear the texture of the original coral from which it was crafted. It's as much a tool as it is a personal heirloom.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "small trident": {
+                            "name": "Small Trident",
+                            "description": "A small, intricate trident, perfect for a resident of the aquapolis",
+                            "examine_text": "A small but precise trident, an embodiment of the inhabitants' deep relationship with the sea. Its three prongs are polished to a high sheen. A tool, and a weapon if need be, it has been passed down through generations in the aquapolis.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Boulder": {
+                    "name": "Boulder",
+                    "description": "Boulder is a stout and sturdy crustacean humanoid with a rough, coral-colored exoskeleton. His large claws snap rhythmically as he shuffles about.",
+                    "persona": "Nothing gets past these claws of mine. Aquapolis is me home, and I'll be shelled if I let any harm come to it!",
+                    "goal": "His goal is to maintain the structural integrity of the aquapolis.",
+                    "location": "Underwater Aquapolis",
+                    "inventory": {
+                        "coral_mallet": {
+                            "name": "Coral Mallet",
+                            "description": "A sturdy mallet made from hardened coral",
+                            "examine_text": "The coral mallet, with its heavy head and strong handle, is Boulder's favorite tool and weapon. The head of the mallet is a large chunk of coral that has been polished and hardened, and the handle is made from the twisted fibers of sea kelp, tightly woven together for strength and durability.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "bucket_of_glowing_stones": {
+                            "name": "Bucket of Glowing Stones",
+                            "description": "A metal bucket filled with luminescent stones",
+                            "examine_text": "Filled to the brim are brightly glowing stones harvested from the rock formations found throughout the Aquapolis. These rocks shine in a variety of colors, and are not only beautiful, but they provide light and warmth to the underwater city. They are kept in a sturdy metal bucket, which is surprisingly light due to being fashioned from the shell of a giant sea turtle.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Pearl": {
+                    "name": "Pearl",
+                    "description": "Pearl is a young and curious sea sprite, with luminescent blue skin that emits a faint glow. Her eyes are large and full of wonder, intersected with brilliant streaks of gold.",
+                    "persona": "I love exploring! Everything in Aquapolis is so fascinating - the glowing shells, the hidden corners...",
+                    "goal": "Her aim is to uncover the ancient secrets of the aquapolis.",
+                    "location": "Underwater Aquapolis",
+                    "inventory": {
+                        "small_purse_of_sea_glass": {
+                            "name": "Small Purse of Sea Glass",
+                            "description": "A shimmering purse made of interlinked pieces of smooth, multicolored sea glass.",
+                            "examine_text": "Upon closer inspection, the sea glass purse is even more beautiful. Each piece of glass has been worn smooth by the ocean waves and bleach-bright by the sun. The pieces are tethered together with thin strands of seaweed, giving the purse a rustic look. Blue, green, and clear pieces mix with rare red and orange ones. It glimmers in the light of the florescent rocks.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": [],
+                            "location": "The Dungeon"
+                        },
+                        "collection_of_florescent_pebbles": {
+                            "name": "Collection of Florescent Pebbles",
+                            "description": "A collection of small, lightly glowing pebbles.",
+                            "examine_text": "You sift through the pebbles and watch them glow with a light like a soft star. They vary in color from a deep, undersea blue to a bright, pearl-white. The pebbles have smooth, gratifyingly round shapes, polished by the ocean current.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "The Dungeon"
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Underwater Aquapolis"
+        },
+        {
+            "name": "The Dungeon",
+            "description": "Dark only lit by the flickering flame licking the walls. smell of rot and gangrene. death and decay the walls moist and moldy. the sounds of screams fill the air along with dispear and fate. in the center a iron maiden recently used and open. the spikes a reddish brown from dried blood.",
+            "background": "this is the dungeon in a kingdom ran by a merciless king who rules with a iron fist. he believes fear is what keeps them loyal. his favorite torture? the iron maiden",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "up": "Toad Hollow is a filthy room within the Underwater Aquapolis. When you enter, you are greeted by the reek of scummy pond water. You enter Toad Hollow through a drainage pipe that you have to crawl through. Once inside Toad Hollow, you can stand up, but you still don't feel comfortable with your surroundings. As far as the eye can see there is muddy water in a circular basin with lily pads floating in it. On the pads, giant toads jump back and forth making gurgling, croaking sounds. As you wade deeper into Toad Hollow, the water comes up to your waist and you see the flash of a fin. There is legend that a creature lives in the center of Toad Hollow that is half human, half monster. Not even the strongest knight has been brave enough to examine it. The fin disappears back underwater but there is a red glint suggesting eyes are watching you. When you reach the other side of the basin, you crawl into another drainage pipe and feel relieved that you're out of this place. Toad Hollow is a legend among knights young and old. Mostly, it's discovered by children playing down in the sewers who take a combination of turns through the drainage pipes and wind up there by accident. Some braze knights have purposefully tried to find Toad Hollow and been successful but most have not glimpsed the creature. Toad Hollow remains shrouded in mystery to this day and many question if it's even real. Some say that you should be careful not to get caught on the armor of the drowned when you're wading through and that hands have reached up from the bottom of the water and grabbed their ankles.",
+                "east": "Deep inside the volcanic cave that is the foundation of the aquapolis lies the treasury. Some believe its existence is a myth, but others claim they have been there. Those that claim they have seen it say you must dive out of the aquapolis' basement while holding your breath, through the cold deep water that is filled with deadly volcanic gas. The treasury room itself is a dry cave filled with riches from the very infancy of the empire Rumors say that the original ruler of the aquapolis filled the treasury with riches that he aquired while on a quest he undertook on land before the founding of the aquapolis.",
+                "down": "The underwater aquapolis is a massive and ornate city at the bottom of the ocean. The walls of the buildings are made or coral, pearl, and seashells. Schools of fish swim in and out of the circular holes in the walls that act as windows. The aquapolis is illuminated by florescent rocks and shells that line every building. An ancient underwater people created the city, collecting beautiful and priceless items from all over the ocean to add to the budding city. Creatures from all over the seas made their way to the aquapolis, both to help and to admire the incredible creation."
+            },
+            "connections": {
+                "up": "Toad Hollow",
+                "east": "The Lords Treasury",
+                "down": "Underwater Aquapolis"
+            },
+            "items": {
+                "Rusty Chains": {
+                    "name": "Rusty Chains",
+                    "description": "A set of cold, rusty chains hanging from the ceiling.",
+                    "examine_text": "Upon examining the chains, you can see they're old and rusted. Some links are barely holding together. Bits of moss and lichen grow on the damper portions and the iron has a peculiar, bitter smell.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    }
+                },
+                "Iron Maiden": {
+                    "name": "Iron Maiden",
+                    "description": "A tall, imposing iron maiden; its spike-filled interior visible",
+                    "examine_text": "With its old, rusted exterior and menacing interior filled with stiletto-sharp spikes, it's clear that the iron maiden is an instrument of torture. Dried blood stains splotch the spikes, reminding you of the victims that met their gruesome end inside.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                },
+                "Flickering Torch": {
+                    "name": "Flickering Torch",
+                    "description": "A lone torch burns, casting jittery shadows on the moldy walls.",
+                    "examine_text": "The fire wanes, making the torch burn in an uneven manner. At times, the surrounding atmosphere feels soothing; other times, oppressively foreboding. It's secured firmly in a sconce attached to the wall - it's not portable, unfortunately.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                }
+            },
+            "characters": {
+                "Lord Mariner": {
+                    "name": "Lord Mariner",
+                    "description": "He has a dreadful grimace with a formidable stare as if daring you to challenge him. He dresses in a heavy, royal ensemble, adorned with jewels, giving him both a graceful but terrifying presence.",
+                    "persona": "I am Lord Mariner, the king of this underwater city. Fear is my tool and loyalty is my reward. Cross me, and you'll meet my favorite companion, the Iron Maiden.",
+                    "goal": "To maintain unquestioned rule over the aquapolis and quash any signs of rebellion.",
+                    "location": "The Dungeon",
+                    "inventory": {
+                        "Crown of Coral": {
+                            "name": "Crown of Coral",
+                            "description": "A lavishly ornate crown constructed from finely carved coral pieces, strewn with polished pearls & glinting aquamarine gems.",
+                            "examine_text": "The Crown of Coral boasts of a regality only fitting for the king of the underwater city. The intricate carvings on the coral seem to tell tales of the underwater kingdom. The pearls and gems, when illuminated, dart reflections giving it an other-worldly aura.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Iron Scepter": {
+                            "name": "Iron Scepter",
+                            "description": "A robust iron scepter, with a sea monster motif and an embedded opal on the top.",
+                            "examine_text": "The Iron Scepter feels heavy and solid, a symbol of unwavering authority. The finely crafted sea monster, wrapped around the rod of the scepter, flashes a menacing look. The opal at the top glows with a mesmerizing hue, casting an eerie glow in the aquatic kingdom's light.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Key to the Iron Maiden": {
+                            "name": "Key to the Iron Maiden",
+                            "description": "A rusty delineated key, with a skull as its bow.",
+                            "examine_text": "The Key to the Iron Maiden, embellished with a chilling skull, radiates an impending doom. Its rusty exterior mirrors the torturous intent it is used for. The intricate patterns etched tell of the twisted fate met by its recipients.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "The Jailer": {
+                    "name": "The Jailer",
+                    "description": "A gaunt figure with graying hair and a hunchback. His eyes, traumatized from witnessing desolation, seem to hold a sea of despair.",
+                    "persona": "I am the jailer, forever stuck in these haunting dungeons, mere puppet to the king's demands. You think you see fear? You have seen nothing yet.",
+                    "goal": "To survive in this role without losing his sanity or pity, hoping for liberation from this cursed duty.",
+                    "location": "The Dungeon",
+                    "inventory": {
+                        "Rusty Keys": {
+                            "name": "Rusty Keys",
+                            "description": "Old, rusty iron keys with a sinister aura.",
+                            "examine_text": "A set of three old-fashioned iron keys, discolored and covered with rust. They jiggle with a hollow, ominous echo.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Whip": {
+                            "name": "Whip",
+                            "description": "A worn-out, hefty whip with a cruel aura.",
+                            "examine_text": "Long and worn-out but still serviceable, this whip has a mean look to it. The handle is well-worn, suggesting regular use.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Tattered Diary of Prisoners": {
+                            "name": "Tattered Diary of Prisoners",
+                            "description": "A diary belonging to the countless souls who've been in this torturous purgatory.",
+                            "examine_text": "As you browse the fragile pages, you read the chilling tales of despair penned by those who were confined here. It's a catalog of misery and torment.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "The Prisoner": {
+                    "name": "The Prisoner",
+                    "description": "He is frail and thin, his figure filled with wounds from the king's torturous methods. His eyes have lost their light, yet a flicker of an unyielding spirit still resides in them.",
+                    "persona": "I was once a freeman of this city but dared question the King. Now, I languish in this place, away from light, away from freedom.",
+                    "goal": "To escape this gruesome cage and to bring hope back to the city dwellers.",
+                    "location": "The Dungeon",
+                    "inventory": {
+                        "Broken Shackle": {
+                            "name": "Broken Shackle",
+                            "description": "A broken shackle laying on the moist dungeon floor.",
+                            "examine_text": "A testament to the fierce struggle of its previous wearer. The metal is corroded from years of repeated contact with salty sea water. You see marks and scratches which show signs of wear and tear, hope and despair.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": true,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "Toad Hollow"
+                        },
+                        "Hidden Shiv": {
+                            "name": "Hidden Shiv",
+                            "description": "A rudimentary weapon, hidden in a corner.",
+                            "examine_text": "A shard of rusted iron, sharpened on one end, probably by scraping it again and again on the harsh, unforgiving dungeon walls. It's wrapped in a scrap of cloth for better grip. For a prisoner, it represents a sliver of hope in this underwater hell.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "Toad Hollow"
+                        },
+                        "Crumpled Note of a Failed Escape Plan": {
+                            "name": "Crumpled Note of a Failed Escape Plan",
+                            "description": "A piece of parchment, crumpled and nearly torn.",
+                            "examine_text": "The note is filled with hastily scribbled instructions for an escape route. Directions that talk of secret passages and hidden doors within the seemingly impenetrable underwater structure. The author's shaky handwriting speak volumes about his fear and desperation.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "Toad Hollow"
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Underwater Aquapolis"
+        },
+        {
+            "name": "Toad Hollow",
+            "description": "Toad Hollow is a filthy room within the Underwater Aquapolis. When you enter, you are greeted by the reek of scummy pond water. You enter Toad Hollow through a drainage pipe that you have to crawl through. Once inside Toad Hollow, you can stand up, but you still don't feel comfortable with your surroundings. As far as the eye can see there is muddy water in a circular basin with lily pads floating in it. On the pads, giant toads jump back and forth making gurgling, croaking sounds. As you wade deeper into Toad Hollow, the water comes up to your waist and you see the flash of a fin. There is legend that a creature lives in the center of Toad Hollow that is half human, half monster. Not even the strongest knight has been brave enough to examine it. The fin disappears back underwater but there is a red glint suggesting eyes are watching you. When you reach the other side of the basin, you crawl into another drainage pipe and feel relieved that you're out of this place.",
+            "background": "Toad Hollow is a legend among knights young and old. Mostly, it's discovered by children playing down in the sewers who take a combination of turns through the drainage pipes and wind up there by accident. Some braze knights have purposefully tried to find Toad Hollow and been successful but most have not glimpsed the creature. Toad Hollow remains shrouded in mystery to this day and many question if it's even real. Some say that you should be careful not to get caught on the armor of the drowned when you're wading through and that hands have reached up from the bottom of the water and grabbed their ankles.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "The journey to the south is underground, through dark and murky passageways which leads to a medieval site, commonly accompanied by the smell of dread that fills the air as one approaches The Dungeon.",
+                "east": "Heading east, one travels through underbrush and small patches of farmland, the smell of salt in the air growing stronger as they approach the humble Farmhouse settled in the outskirts of an old seaweed plantation.",
+                "west": "Towards the west, the path winds through rolling grasslands eventually leading to an old Tool Shed packed with rusty implements used in seaweed farming and lingered scent of weathered wood and earth."
+            },
+            "connections": {
+                "south": "The Dungeon",
+                "east": "Farmhouse",
+                "west": "Tool Shed"
+            },
+            "items": {
+                "Filthy Water": {
+                    "name": "Filthy Water",
+                    "description": "A pool of murky, grimy water that sits in the middle of Toad Hollow.",
+                    "examine_text": "On closer inspection, the muddied color of the water obscures anything below the surface. It's stagnant and gives off a foul smell that is reminiscent of old, rotting plants.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                },
+                "Lily Pads": {
+                    "name": "Lily Pads",
+                    "description": "Several damp lily pads float atop the grubby water, offering occasional breaks from the sodden scenery.",
+                    "examine_text": "Each lily pad is large with a slick surface. The undersides are a deep lavender, while the upper surface is a waxy, vivid green. Tiny droplets of water collect on the surface of the pads, balancing delicately.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                },
+                "Drainage Pipe": {
+                    "name": "Drainage Pipe",
+                    "description": "There are several rusty drainage pipes that form the entrance and exit of Toad Hollow.",
+                    "examine_text": "The pipe is cold, wet, and slimy, constructed from rusted metal. It appears large enough for a human to crawl through, albeit uncomfortably. Dark stains streak the inside of the pipe.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                },
+                "Giant Toad": {
+                    "name": "Giant Toad",
+                    "description": "Giant toads inhabit Toad Hollow, leaping from lily pad to lily pad.",
+                    "examine_text": "The toad's skin is a mottled blend of browns and greens, its eyes are luminescent, and it has a grotesquely large body. It seems unperturbed by your presence.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                }
+            },
+            "characters": {
+                "Old Toad": {
+                    "name": "Old Toad",
+                    "description": "Old Toad is massive in size with an olive-green back covered in stippled warts; his eyes are bulbous and yellow.",
+                    "persona": "I've seen many come and go in my time here in Toad Hollow, little do they know what lurks beneath these muddy waters.",
+                    "goal": "Old Toad's primary goal is to keep existing within the safety of Toad Hollow and protect the unidentified creature.",
+                    "location": "Toad Hollow",
+                    "inventory": {
+                        "Lily pad leaf": {
+                            "name": "Lily pad leaf",
+                            "description": "A big round lily pad leaf, floating on the water.",
+                            "examine_text": "The leaf is round and large, big enough to support a small creature. It's green and waxy to touch, with a distinctive vein pattern. It seems relatively sturdy.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Broken Dagger": {
+                            "name": "Broken Dagger",
+                            "description": "A fragment of a dagger made of ancient steel, found half-buried in the mud.",
+                            "examine_text": "Upon close inspection, the dagger is quite old with a weathered and rusted blade that has snapped halfway. The handle is still intact, wrapped in now tattered leather and carved with symbols that have faded over time.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Knight Ghost": {
+                    "name": "Knight Ghost",
+                    "description": "Knight Ghost is a specter of a drowned knight; his armor tarnished and algae-infested, his eyes glow eerily red within the helmet's visor.",
+                    "persona": "I drowned here seeking glory. Now, I remain, bound to these cursed waters.",
+                    "goal": "Knight Ghost's aim is to free himself of the curse that bounds him to Toad Hollow.",
+                    "location": "Toad Hollow",
+                    "inventory": {
+                        "Rusty Sword": {
+                            "name": "Rusty Sword",
+                            "description": "Ghostly reflection of a once-mighty weapon",
+                            "examine_text": "You see a sword that seems more rust than iron. Its once sharp edge is now dull and gnawed with age. Yet, it still holds a mystic's intrigue.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Cracked Shield": {
+                            "name": "Cracked Shield",
+                            "description": "An ethereal echo of a shield long lost to time and water",
+                            "examine_text": "The shield, once a protector now lies cracked and eroded. Ghostly white, it glows with an otherworldly light, old battle scars crisscross its face. You wonder about the battles it has seen and the knight it once served.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Mysterious Creature": {
+                    "name": "Mysterious Creature",
+                    "description": "This unidentified creature is elusive, only its ominous red eyes and swift fins ever seen as it glides through the murky waters.",
+                    "persona": "I lurk. I protect. I survive.",
+                    "goal": "The mysterious creature's only goal is to protect the safety of Toad Hollow from outside threats.",
+                    "location": "Toad Hollow",
+                    "inventory": {
+                        "Rusty Trident": {
+                            "name": "Rusty Trident",
+                            "description": "An ancient, rusted trident.",
+                            "examine_text": "Looking closer, you can see the coral growths on the trident. The years underneath the polluted waters of Toad Hollow have left its mark.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "The Lords Treasury"
+                        },
+                        "Shimmering Scales": {
+                            "name": "Shimmering Scales",
+                            "description": "A cluster of gleaming, red scales.",
+                            "examine_text": "Upon close inspection, the scales gleam with an eerie brilliance in the dim light. They seem to come from a creature unlike any you've seen.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": [],
+                            "location": "The Lords Treasury"
+                        },
+                        "The Drowned Armour": {
+                            "name": "The Drowned Armour",
+                            "description": "A battered, ancient suit of armor, stuck in the muddy bottom of Toad Hollow.",
+                            "examine_text": "On closer look, the armour has signs of struggle with deep-set scratches all over. The helmet is missing, possibly lost during an underwater battle. The armour, now a rusted metallic shade, is stuck tight in the muddy bottom of the hollow.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "The Lords Treasury"
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Underwater Aquapolis"
+        },
+        {
+            "name": "The Lords Treasury",
+            "description": "Deep inside the volcanic cave that is the foundation of the aquapolis lies the treasury.  Some believe its existence is a myth, but others claim they have been there.  Those that claim they have seen it say you must dive out of the aquapolis' basement while holding your breath, through the cold deep water that is filled with deadly volcanic gas.  The treasury room itself is a dry cave filled with riches from the very infancy of the empire",
+            "background": "Rumors say that the original ruler of the aquapolis filled the treasury with riches that he aquired while on a quest he undertook on land before the founding of the aquapolis.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Moving towards the west, the air gets colder and you can smell the faint scent of decay. The ground underfoot turns uneven and clammy, your senses filled with an unsettling echo of screams and despair. This is the path to the Dungeon.",
+                "north": "As you travel northward, the sound of trading haggles and high-pitched calls grow louder. The water becomes more vibrant as various colorful clouds fill the water around you, pointing towards exotic booths. Your senses are invigorated by the energy and liveliness, already feeling the charm of the underwater Marketplace."
+            },
+            "connections": {
+                "west": "The Dungeon",
+                "north": "The Marketplace"
+            },
+            "items": {
+                "Golden Trident": {
+                    "name": "Golden Trident",
+                    "description": "A trident made of solid gold, glittering in the sparse light of the treasury.",
+                    "examine_text": "Upon close inspection, you can see aged symbols etched into the handle, telling a tale of ancient victories. It is remarkably light, although huge, and doing anything more than observing it seems to violate the sanctity of the weapon.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    }
+                },
+                "Jeweled Crown": {
+                    "name": "Jeweled Crown",
+                    "description": "A crown adorned with variety of precious gems.",
+                    "examine_text": "The crown exhibits perfect craftsmanship; each gem skillfully embedded into the gold frame, glinting with a unique brilliance. Pearls, ruby, emerald, sapphire... a true testament of the underwater kingdom's wealth.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    }
+                },
+                "Ancient Map": {
+                    "name": "Ancient Map",
+                    "description": "It appears to be a map made from a material you can't identify.",
+                    "examine_text": "You carefully unroll the map that remarkably has stood the test of time. It depicts the Aquapolis in its prime, with additional notes and symbols possibly indicating secret passages and treasure spots within the city.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                }
+            },
+            "characters": {
+                "Lord Triton": {
+                    "name": "Lord Triton",
+                    "description": "A muscular merman with a powerfully built physique, adorned in royal robes glittering with precious gems. His eyes sparkle with wisdom and strength. A majestic coral crown rests atop his keen head, and a mystical trident is always by his side.",
+                    "persona": "I am Lord Triton, the righteous ruler of this underwater realm. I have sworn to protect this treasure which is the heart and soul of the Aquapolis.",
+                    "goal": "To protect the Lords Treasury and the Aquapolis, and to ensure its prosperity and peace.",
+                    "location": "The Lords Treasury",
+                    "inventory": {
+                        "Royal Trident": {
+                            "name": "Royal Trident",
+                            "description": "A grand, three-pronged weapon made from a mysterious, reflective metal.",
+                            "examine_text": "The trident sparkles with an otherworldly glow, even in the gloomy light of the treasury. Each prong is beautifully carved and it emits a faint, comforting warmth. Ancient symbols are etched into the handle, spinning tales of forgotten battles and victories.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Coral Crown": {
+                            "name": "Coral Crown",
+                            "description": "A magnificent crown, crafted from pure coral, inlaid with precious stones.",
+                            "examine_text": "The crown reflects a vast range of colors, each jewel shimmering within the coral setting. The coral itself is a rich, oceanic blue, untouched by time. Its design is elaborate and masterful, a testament to the artistry of the ancient Aquapolis residents.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Book of Ancients": {
+                            "name": "Book of Ancients",
+                            "description": "A hefty tome, bound in leather with golden inscriptions.",
+                            "examine_text": "The book is brimming with ancient knowledge, each page waving under the timeless magic embedded in their fibers. The inscriptions are a complex mix of hieroglyphs and script. Touching it lightly, you can feel the faint vibration of wisdom pulsing from its ancient pages.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Aquilia": {
+                    "name": "Aquilia",
+                    "description": "A beautiful and elegant mermaid with shimmering scales and long, flowing hair that glows. Her eyes are as captivating as the deep ocean, and a magical seashell pendant dangles around her neck.",
+                    "persona": "I am Aquilia, a historian and chronicler of the Aquapolis. I have served Lord Triton faithfully and recorded the history of his reign.",
+                    "goal": "To record and preserve the history of the Aquapolis, and to decipher the secrets of the Lords Treasury.",
+                    "location": "The Lords Treasury",
+                    "inventory": {
+                        "Magical Seashell Pendant": {
+                            "name": "Magical Seashell Pendant",
+                            "description": "A shimmery seashell pendant, glows subtly in the underwater dim light.",
+                            "examine_text": "Upon closer inspection, this pendant is not just an ordinary seashell but a magical charm. Carved intricately, it glows with a low iridescent light and emits warmth even in the cold oceanic depth. Its magic power is unknown.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Scroll of History": {
+                            "name": "Scroll of History",
+                            "description": "An ancient scroll containing the history of the Aquapolis",
+                            "examine_text": "Unrolling the scroll reveals detailed chronicles of the Aquapolis, its founding, victories, failures, and secrets. Despite its age, the parchment seems unaffected by the passage of time.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Ink and Quill": {
+                            "name": "Ink and Quill",
+                            "description": "A basic, yet indispensable tool of any historian",
+                            "examine_text": "Looking at the Ink and Quill, its obvious that this isn't your everyday writing equipment. The quill is made of a feather from a rare deep sea bird and the ink is a special blend, synthesized with oceanic flora, that ensures the writing doesn't wash off underwater.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Nerian": {
+                    "name": "Nerian",
+                    "description": "An old and wise merman with a long, silver beard and sunken eyes that tell thousand tales. He carries a magical staff made from a unique underwater plant, which radiates a serene glow.",
+                    "persona": "I am Nerian, the ancient seer of the Aquapolis. I possess knowledge about the biggest secrets of the underwater world.",
+                    "goal": "To translate the prophecy of the Aquapolis and decipher the future of the Lords Treasury.",
+                    "location": "The Lords Treasury",
+                    "inventory": {
+                        "Magic Staff": {
+                            "name": "Magic Staff",
+                            "description": "A long, ornamental staff made from rare seashells and encrusted with precious stones.",
+                            "examine_text": "The staff is clearly ancient and covered in nautical symbols and mysterious runes that glow slightly in the ambient light. It pulses with a magical energy that feels warm to the touch.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "Underwater Marketplace"
+                        },
+                        "Ancient Maps": {
+                            "name": "Ancient Maps",
+                            "description": "Parchments displaying old navigational routes, some of which detail areas of the sea that have long since changed.",
+                            "examine_text": "These are ancient sea maps, presumably of the surrounding oceans and the underwater realm. You can make out old compass points, distance markings, and symbols potentially pointing to hidden areas of interest.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "Underwater Marketplace"
+                        },
+                        "Crystal Orb": {
+                            "name": "Crystal Orb",
+                            "description": "A large orb made of clear crystal that glows with a captivating ethereal light.",
+                            "examine_text": "The orb almost appears to be filled with dancing lights, similar to bioluminescent creatures of the deep sea. It has a tranquil, soothing aura, and you can't help but feel connected to the entire ocean as you gaze into it.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "Underwater Marketplace"
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Underwater Aquapolis"
+        },
+        {
+            "name": "Underwater Marketplace",
+            "description": "The marketplace is the main hub for the residents of the aquapolis. With high ceilings and bright, colorful flags at each market stand, the place seems to stretch on forever. Near the entrance, there is a young boy attempting to sell the latest news of the kingdom.",
+            "background": "This market started as a small trading place, but has evolved over generations to become a major resource for the community. The building itself started small as well, and as the market's popularity grew the building was expanded. Today, the market stands as the largest source of tourism for the kingdom.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Moving north brings you towards the heart of the aquapolis. Surrounded by sea flora and fauna, the deeper you go the more of the cities stunning coral and pearl architecture can be seen, glistening in the soft sea light.",
+                "west": "Heading west, you find yourself venturing towards the research lab at the heart of the city. The surroundings pulse with scientific activity. The glow from the lab is brighter here, signalling the intense scientific research happening within."
+            },
+            "connections": {
+                "north": "Underwater Aquapolis",
+                "west": "Research Lab"
+            },
+            "items": {
+                "Market Stand Sign": {
+                    "name": "Market Stand Sign",
+                    "description": "A brightly colored sign hanging from the top of a market stand",
+                    "examine_text": "The sign is made out of water-resistant material and covered with luminescent colors, ensuring it can be seen even in the dim underwater light. It appears to be for a business that sells rare crustaceans.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                },
+                "Sea Newspaper": {
+                    "name": "Sea Newspaper",
+                    "description": "A paper made of underwater plant fibers, filled with the daily news of the kingdom",
+                    "examine_text": "The paper is full of news and updates from different parts of the kingdom. It seems that the recent sightings of a giant squid have been causing a bit of a panic.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                },
+                "Aquatic Fruit": {
+                    "name": "Aquatic Fruit",
+                    "description": "A luminous fruit with a vivid color, glistening under the underwater light",
+                    "examine_text": "The fruit appears to be similar to a pomegranate, sparking with a unique, fluorescent glow. Nobody in the surface world has ever seen this type of food. It seems to be incredibly fresh and delicious.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                },
+                "Underwater Robes": {
+                    "name": "Underwater Robes",
+                    "description": "Beautifully crafted robes, made with exclusive underwater fabric",
+                    "examine_text": "Inspecting the robes closer, you see they are made of a strange, shimmering material. It has been designed with luminescent threads that create an ethereal glow under the water. They look soft, versatile and breathable, perfect for a comfortable swim.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    }
+                }
+            },
+            "characters": {
+                "Triton": {
+                    "name": "Triton",
+                    "description": "Triton, a merman trader with royal-blue scales and striking gold eyes, runs a prominent gemstone stand. His hair flows like seaweed, with a crown of sea star nestled.",
+                    "persona": "I've seen things unimaginable from the surface reaching here in my little stall. I've seen treasures of the deep, rare gemstones that sparkle even in this eternal twilight of the sea.",
+                    "goal": "His goal is to sell his precious gemstones and historic relics to gather enough to finally retire from his trade.",
+                    "location": "Underwater Marketplace",
+                    "inventory": {
+                        "Rare Gemstones": {
+                            "name": "Rare Gemstones",
+                            "description": "A handful of unusual, glowing gemstones taken straight from the seabed.",
+                            "examine_text": "Upon closer examination, the gemstones seem to shimmer with an inner light, their surfaces gleaming with the colors of the deepest ocean. A soft hum emanates from them, carrying a faint, but mesmerizing melody of the sea.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Ancient Trinkets": {
+                            "name": "Ancient Trinkets",
+                            "description": "Several odd artifacts that hint to the history and forgotten civilizations of the oceanic depths.",
+                            "examine_text": "The trinkets appear ancient and mysterious, tarnished by the passage of time. Carved symbols and inscriptions are etched across their surfaces. The materials seem impervious to the harsh seawater, retaining a certain ageless nobility.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Coral Crown": {
+                            "name": "Coral Crown",
+                            "description": "A delicately crafted crown using a blend of exotic corals. The mark of a true marine royalty.",
+                            "examine_text": "This crown is an exquisite piece of craftsmanship. Each piece of coral is carefully chosen for its color and shape, and expertly joined together to create a flowing, organic design. As light plays across it, the crown seems almost enchantingly alive.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Nemo": {
+                    "name": "Nemo",
+                    "description": "Nemo is a young and vibrant fish with a persistent grin and eyes full of innocence. Sporting stripes in the shades of black, white and orange, his small size belies his endearing disposition.",
+                    "persona": "Hello there! My name's Nemo and I'm the fastest swimmer around here! Do you want to race? I promise I won't cheat; I'm pretty confident in my abilities.",
+                    "goal": "His main goal is to sell all his news scrolls by the end of the day and beat everyone in occasional races.",
+                    "location": "Underwater Marketplace",
+                    "inventory": {
+                        "News Scrolls": {
+                            "name": "News Scrolls",
+                            "description": "A set of rolled up parchment tied with a seaweed string",
+                            "examine_text": "Upon closer inspection, the scrolls contain news from around the Aquapolis. The characters are sharp and legible even when under the water. Looking from top to bottom, the news contains details and stories of recent events, daily news, and advertising of local businesses.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Racing Fins": {
+                            "name": "Racing Fins",
+                            "description": "A pair of sleek, neon-green racing fins.",
+                            "examine_text": "The fins are made of a lightweight, yet durable material. They're well-crafted; designed to enhance a swimmer's speed and agility. There are signs of use, but they have been well maintained. The neon green color is bright and eye-catching.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Conch Shell": {
+                            "name": "Conch Shell",
+                            "description": "A large and beautiful pink conch shell.",
+                            "examine_text": "The conch shell is large and sturdy with a beautiful pink color. The interior holds a stunning array of swirling colors and patterns that only nature can produce. The edges are sharp, and the conch could be used as a tool or weapon in a pinch.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Daisy": {
+                    "name": "Daisy",
+                    "description": "Daisy, an elderly octopus, is known for her silvery-gray tentacles and piercing green eyes. Each of her tentacles are adorned in chunky bracelets and mystical rings, signifying her reputation as a soothsayer.",
+                    "persona": "Ah, a new face, excellent. I'm Daisy, the oracle of the deep sea. Sit down, my dear. Let me read your future amidst these swirling currents of time.",
+                    "goal": "Daisy's ultimate goal is to guide the kingdom's inhabitants through her prophecies and ensure the welfare of the aquapolis.",
+                    "location": "Underwater Marketplace",
+                    "inventory": {
+                        "Magic Orbs": {
+                            "name": "Magic Orbs",
+                            "description": "A cluster of glowing orbs available for purchase at Daisy's stall.",
+                            "examine_text": "The magic orbs radiate a gentle, spectral light of varying colors. They pulse softly, steady like a heartbeat, and you swear they hum faintly with an otherworldly melody, so enchanting it's hard to resist their allure.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "Neptune'S Throne Room"
+                        },
+                        "Ancient Rings": {
+                            "name": "Ancient Rings",
+                            "description": "Several intricately designed rings flaunted by Daisy for her customers.",
+                            "examine_text": "Upon closer inspection, the rings have cryptic symbols etched onto their bands, they shimmer in the light with aged silver and gold, hinting at a past unknown. Each ring seems to possess a unique tale of its own.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": [],
+                            "location": "Neptune'S Throne Room"
+                        },
+                        "Mystic Bracelets": {
+                            "name": "Mystic Bracelets",
+                            "description": "A collection of bracelets brimming with mystic energy that Daisy displays for her customers.",
+                            "examine_text": "The bracelets are crafted from iridescent sea shells and enchanted kelp, strung together with strands of magic pearls. An arcane aura envelops them, and they seem thrum with potential.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": [],
+                            "location": "Neptune'S Throne Room"
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Underwater Aquapolis"
+        },
+        {
+            "name": "Neptune'S Throne Room",
+            "description": "A small room in the castle, Neptune's throne room is adorned with painted walls as blue as the sea itself. Tables constructed of beautiful coral lean against all four walls with decorative shells serving as a border for them. The ceiling is painted to resemble waves.",
+            "background": "The queen loved the sea. When she was married off to a royal family in the country far from her beloved ocean palace, her husband requested that a room embodying everything beautiful about the ocean was constructed to please his queen.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "Leaving Neptune's Throne Room, you glide through the water, moving effortlessly as you marvel at the brilliant colors and luminescent glow of the surrounding coral architecture. Schools of tropical fish flit about as larger majestic creatures like sea turtles and manta rays glide gracefully through the tranquil deep. As you continue your journey, you begin to make out a grand cityscape in the distance. The Underwater Aquapolis comes into view, a sprawling metropolis of stunning architectural wonders beautifully illuminated by bio-luminescent plants and animals. "
+            },
+            "connections": {
+                "south": "Underwater Aquapolis"
+            },
+            "items": {
+                "Neptune's Throne": {
+                    "name": "Neptune's Throne",
+                    "description": "A giant throne made of seashells and corals.",
+                    "examine_text": "Upon closer examination, the throne's armrests seem to be carved from a solid piece of mother of pearl. The seat is covered in layers of soft sea sponges, giving it a comfortable look.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                },
+                "Coral Table": {
+                    "name": "Coral Table",
+                    "description": "A table made from intricately carved corals.",
+                    "examine_text": "It seems that each coral leg is sculpted to resemble ocean plants waving in the sea current. A closer look at the table top reveals a carved depiction of mermaids frolicking amongst the coral reefs.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                },
+                "Becorative Shell": {
+                    "name": "Decorative Shell",
+                    "description": "A large conch shell used for decoration.",
+                    "examine_text": "The conch is of considerable size and shimmers under the light. It has been gently polished to reveal its natural beauty. It could also be used to call others if blown into.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                }
+            },
+            "characters": {
+                "King Neptune": {
+                    "name": "King Neptune",
+                    "description": "King Neptune, whose broad figure is covered in glistening emerald scales, has a crown adorned with pearls and his eyes are as blue as the ocean.",
+                    "persona": "As the ruler of this aquapolis, I strive to maintain peace and prosperity amidst my subjects. Those who disobey shall feel my trident's wrath.",
+                    "goal": "He seeks to protect the aquapolis from any potential threats and keep peace within his kingdom.",
+                    "location": "Neptune'S Throne Room",
+                    "inventory": {
+                        "Golden Triton": {
+                            "name": "Golden Triton",
+                            "description": "A shimmering golden trident of great power.",
+                            "examine_text": "A royal trident, its three spear-like prongs are golden and jewel-encrusted. It hums with an otherworldly power only a ruler of the sea could wield.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Seashell Amulet": {
+                            "name": "Seashell Amulet",
+                            "description": "A beautiful amulet crafted from a large seashell.",
+                            "examine_text": "A beautiful, glowing amulet, made of a perfect spiral seashell inlaid with tiny pearls. You can hear the faint sound of the ocean when you hold it to your ear.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Queen Marina": {
+                    "name": "Queen Marina",
+                    "description": "Queen Marina is an elegant mermaid with a radiant sea-green tail and stunning silver hair, usually seen wearing a shell tiara.",
+                    "persona": "I yearn for the open sea and its endless beauty, but I love my king and country, and I wish to serve them to the best of my ability.",
+                    "goal": "Her goal is to ensure the happiness and well-being of her family and subjects while yearning to someday revisit her ocean palace.",
+                    "location": "Neptune'S Throne Room",
+                    "inventory": {
+                        "Shell Tiara": {
+                            "name": "Shell Tiara",
+                            "description": "A delicate tiara made of seashells",
+                            "examine_text": "Up close, you can see that the tiara is made of a variety of seashells, all polished to a glossy shine. The base is composed of a line of conch shells, while smaller shells form a fan-like design on the top. It is exquisite in its craftsmanship and it symbolizes the queen's love for the sea.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Coral Necklace": {
+                            "name": "Coral Necklace",
+                            "description": "A stunning necklace of coral beads",
+                            "examine_text": "Upon further examination, the necklace is made up of various pieces of coral, from small round beads to larger, intricate shapes. It's primarily a soft pink hue, interspersed with highlights of crimson and white. It's a beautiful piece that reflects the queen's longing for her underwater home.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Gerard the Guard": {
+                    "name": "Gerard the Guard",
+                    "description": "A strong and robust merman, adorned in royal armor, with eyes alert and a determined demeanor.",
+                    "persona": "I\u2019ve been appointed as the chief guard, it\u2019s my duty to keep our king and queen safe. I'd give my life for them without a second thought.",
+                    "goal": "His prime concern is to ensure the safety of King Neptune and Queen Marina.",
+                    "location": "Neptune'S Throne Room",
+                    "inventory": {
+                        "Pearl Sword": {
+                            "name": "Pearl Sword",
+                            "description": "An exquisitely crafted weapon made of iridescent pearls.",
+                            "examine_text": "This Pearl Sword has an iridescent quality to it, shimmering all colours under the sun like rainbows captured in each pearl. It is light but still feels balanced and durable. There is an abstract design carved onto the hilt, denoting the importance and personality of the owner. ",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "Dry Dock Room"
+                        },
+                        "Guard's Key": {
+                            "name": "Guard's Key",
+                            "description": "This is the key that Gerard the Guard carries. It can be used to access various locked areas.",
+                            "examine_text": "The key is old, made from silver and engraved with the letters 'GtG', which stands for 'Gerard the Guard'. It is dented and worn, but its teeth still look sharp. It has seen years of use, sliding in and out of locks without ever failing.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "Dry Dock Room"
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Underwater Aquapolis"
+        },
+        {
+            "name": "Dry Dock Room",
+            "description": "The room is located on the border wall of the aquapolis. There is one on the far north and far south side.",
+            "background": "The dry dock is need as a portal in between the dry area of the aquapolis and the outside water. Divers and maintence workers will enter the room and it will fill with water. After which the door will open to the outside.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Navigating through the Dry Dock Room, the metal doors creak open revealing a world submerged in water. As the water fills the room, shadowy figures dance across the coral structures of the Underwater Aquapolis. The journey is a transformation, from a dry, compressed air environment to the serene and boundless abyss of the underwater city."
+            },
+            "connections": {
+                "west": "Underwater Aquapolis"
+            },
+            "items": {
+                "Pressure Suit": {
+                    "name": "Pressure Suit",
+                    "description": "A suit designed to protect the wearer from pressure changes and water damage.",
+                    "examine_text": "The pressure suit is designed to withstand the pressure changes when going to the outside water. It looks sturdy and appears to be able to protect the wearer from the crushing depths.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    }
+                },
+                "Diving Helmet": {
+                    "name": "Diving Helmet",
+                    "description": "A big, bulbous helmet with glass window in front.",
+                    "examine_text": "The helmet is bulky, crafted from a dense metal and designed to keep the wearer's head safe and dry. The small, thick window allows only a minimum view but enough to navigate.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    }
+                },
+                "Tool Box": {
+                    "name": "Tool Box",
+                    "description": "A small box containing various tools.",
+                    "examine_text": "This box is made of a tough, water-resistant material and locked tightly closed. It seems to rattle when you shake it - likely it's full of various tools for maintenance work.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                },
+                "Dry Dock Door": {
+                    "name": "Dry Dock Door",
+                    "description": "The main entrance to the dry dock.",
+                    "examine_text": "The massive metal door serves as the barrier sealing the aquapolis from the crushing depths of the sea. It can be opened only when the dry dock is filled with water, equalizing the pressure.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                }
+            },
+            "characters": {
+                "Captain Darius": {
+                    "name": "Captain Darius",
+                    "description": "A tall man with weathered skin and eyes that have seen countless storms, wearing a captain's hat and a diving suit.",
+                    "persona": "I've spent years commanding ships on the surface now I keep order in the depths. I respect the sea and she respects me back.",
+                    "goal": "Ensure a smooth and safe passage for all who travel through the dry dock.",
+                    "location": "Dry Dock Room",
+                    "inventory": {
+                        "diving_suit": {
+                            "name": "Diving Suit",
+                            "description": "A sturdy, high-pressure resistant diving suit hanging on the wall.",
+                            "examine_text": "The suit is well-worn but impeccably cared for. Reinforced joints and a built-in air supply system indicate it's designed for deep sea diving. An insignia identifies the owner as Captain Darius.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "flashlight": {
+                            "name": "Flashlight",
+                            "description": "High-power flashlight designed for undersea use. It\u2019s laying on a table.",
+                            "examine_text": "This flashlight is waterproof and high-powered with several brightness settings, suitable for the dark depths of the sea. The surface is a bit scratched but it is still fully functional. It even has 'Darius' carved into the side.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "toolkit": {
+                            "name": "Toolkit",
+                            "description": "Underwater maintenance toolkit, currently closed and resting on a bench.",
+                            "examine_text": "Upon closer examination, you notice the toolkit has everything a diver might need for quick fixes underwater: a variety of rust-resistant tools, a roll of sturdy adhesive tape, and several patches of waterproof fabric. It\u2019s clearly been used heavily and has 'Darius' etched into the handle.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Maintenance Engineer Ada": {
+                    "name": "Maintenance Engineer Ada",
+                    "description": "A young woman with short, mussed hair under a mechanic's cap, wearing a suit smeared with oil. She has an array of tools attached to her waist.",
+                    "persona": "Fixing things is my passion, give me a problem and I'll solve it before you can say 'pressure leak'.",
+                    "goal": "Keep the dry dock in top-performing condition and prevent any leakages.",
+                    "location": "Dry Dock Room",
+                    "inventory": {
+                        "wrench": {
+                            "name": "wrench",
+                            "description": "A hefty stainless steel wrench",
+                            "examine_text": "This wrench has seen its fair share of maintenance work. Its grooves hold traces of grease, and the handle is worn from countless hours in Ada's firm grip.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "welding_torch": {
+                            "name": "welding torch",
+                            "description": "A high-intensity underwater welding torch",
+                            "examine_text": "The blue-green flame of the welding torch is designed to function even in the high-pressure underwater environment of the aquapolis. It pulses with a potentially deadly heat.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "blueprints": {
+                            "name": "blueprints",
+                            "description": "Blueprints of the aquapolis",
+                            "examine_text": "The blueprints display the intricate design of the aquapolis. You can see the ringed structure of the city, the extensive pipe network, and details of individual buildings. They bear the insignia of the aquapolis's planning department.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Diver Stanley": {
+                    "name": "Diver Stanley",
+                    "description": "Stanley is a hulk of a man, with muscular arms and a bulky diving suit. His muffled voice emits from his full-face breathing mask.",
+                    "persona": "I've always had a love for the deep. You never know what's out there in the great expanse.",
+                    "goal": "Explore the unknown and bring back lost treasures.",
+                    "location": "Dry Dock Room",
+                    "inventory": {
+                        "breathing_mask": {
+                            "name": "Breathing Mask",
+                            "description": "A standard issue underwater breathing mask.",
+                            "examine_text": "This mask is made of durable, transparent plastic and has an advanced rebreather that filters and recycles exhaled carbon dioxide into breathable oxygen. It fits snugly on the face, providing an unhindered panoramic view of the underwater world.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": [],
+                            "location": "The Marketplace"
+                        },
+                        "harpoon": {
+                            "name": "Harpoon",
+                            "description": "A sharp, long harpoon with a robust handle.",
+                            "examine_text": "This harpoon is about half a meter long, made of shiny, marine-grade stainless steel. It's needle-sharp tip is capable of penetrating the toughest underwater predators. Its handle is encased in non-slip material, ensuring a firm grip even in the toughest conditions.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "The Marketplace"
+                        },
+                        "oxygen_canister": {
+                            "name": "Oxygen Canister",
+                            "description": "A compact high-pressure oxygen canister.",
+                            "examine_text": "This oxygen canister is light-weight yet highly durable, packed with pure high-pressure oxygen. It has a valve mechanism on the top for regulating oxygen flow, and a pressure gauge to monitor content levels.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": [],
+                            "location": "The Marketplace"
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Underwater Aquapolis"
+        },
+        {
+            "name": "The Marketplace",
+            "description": "The marketplace is unlike any surface dwellers' paltry trading area, for beneath the waves there is no need for gravity to limit where and how the wares can be displayed.  Indeed, the market is quite crowded, with merchants as likely setting up stalls upside down on the ceiling as on the floor.  Colorful dyes are used around some of the more exotic booths, the color clouding the water and drawing the eye to it.  High shrills pierce the waters as various merchants call out their wares to the merpeoples passing by.",
+            "background": "This market was once part of a famed above water city, which has long since sunk into the waves.  At first the merpeoples of the sea there disdained it for its primitive ways, finding its walls and broken structures an amusing testimony to the futile efforts of the surface dwellers. However, just as the tides change, so do the moods of the people that swim within them.  The merpeople clamor for goods and trades from the surface, and so the market became more of a charming testimony to the quaint and unique properties of things created far from the waves and waters of those who dwelt below.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "Deep inside the volcanic cave that is the foundation of the aquapolis lies the treasury. Some believe its existence is a myth, but others claim they have been there. Those that claim they have seen it say you must dive out of the aquapolis' basement while holding your breath, through the cold deep water that is filled with deadly volcanic gas. The treasury room itself is a dry cave filled with riches from the very infancy of the empire Rumors say that the original ruler of the aquapolis filled the treasury with riches that he aquired while on a quest he undertook on land before the founding of the aquapolis."
+            },
+            "connections": {
+                "south": "The Lords Treasury"
+            },
+            "items": {
+                "Coral Flask": {
+                    "name": "Coral Flask",
+                    "description": "A small, beautifully crafted bottle made entirely of coral.",
+                    "examine_text": "The flask is meticulously sculpted from peach-colored coral, with intricate swirls and patterns etched onto its surface. It has a small cork stopper and seems to be filled with a shimmering liquid.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                },
+                "Sea Silk Shawl": {
+                    "name": "Sea Silk Shawl",
+                    "description": "A soft, shimmering shawl woven from the finest kelp silk.",
+                    "examine_text": "The shawl is gossamer-thin and incredibly soft to the touch, its hues shifting between emerald and turquoise in the light. It's light, airy, and seems to flow like water when moved.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    }
+                },
+                "Pearl Dagger": {
+                    "name": "Pearl Dagger",
+                    "description": "A sharp dagger with a hilt carved from a single, large pearl.",
+                    "examine_text": "The dagger's blade shimmers with a dangerous light, while the intricate hilt seems to have been carved from a particularly large, lustrous pearl. Despite its beauty, one can tell it is more than just a decorative piece.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    }
+                },
+                "Sunlight Pendant": {
+                    "name": "Sunlight Pendant",
+                    "description": "A pendant that contains a shining sun ray.",
+                    "examine_text": "Its seashell case reflects iridescent hues as it encases a fragment of an actual sun's ray, which forever shines inside it like an eternal flame.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    }
+                }
+            },
+            "characters": {
+                "Noble": {
+                    "name": "Noble",
+                    "description": "This noble merperson is easily the talk of the market. Dressed in various rare and beautiful sea silks, he lounges about on a massive shark which he wields as both transportation and proof of his status. His eyes sparkle with the reflection of golden coins strewn in his backpack.",
+                    "persona": "I am aware of my status and I always make sure others are, too. I enjoy spending my wealth, especially on unique things. There is no object rare enough that I cannot afford.",
+                    "goal": "The noble is spreading his money looking for a rare artifact that can increase his status.",
+                    "location": "The Marketplace",
+                    "inventory": {
+                        "golden coins": {
+                            "name": "Golden Coins",
+                            "description": "A gleaming bag full of high value golden coins",
+                            "examine_text": "Upon closer inspection, you notice the intricately crafted profiles of great merkings stamped on the face of these pure gold coins. They shimmer in the ethereal light filtering through the water above, displaying affluence and opulence.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "amulet of authority": {
+                            "name": "Amulet of Authority",
+                            "description": "A mesmerizing amulet worn by merpeople of high authority",
+                            "examine_text": "The amulet is a grand piece shaped like a giant seashell, encrusted with lustrous pearls, corals, and inlaid with a grand opal center. Its beauty would captivate anyone, leaving little doubt about the wearer's proclaimed high status.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "shark reins": {
+                            "name": "Shark Reins",
+                            "description": "A rugged set of reins specially designed for controlling sharks",
+                            "examine_text": "Upon further examination, these reins are made from the durable fiber of underwater seaweed, decorated with shells and bone. Clearly, these are designed to signal status and wealth, all while serving a practical purpose of controlling a powerful sea creature.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Coral Vendor": {
+                    "name": "Coral Vendor",
+                    "description": "The coral vendor is an old and wise merwoman, her scales slightly discolored with extreme age. Her shop is a kaleidoscope of colors as she sells an array of magically grown corals. Her genuine smile and excitement when showcasing each piece is infectious.",
+                    "persona": "I may be old, but my passion for corals never aged. There is a certain satisfaction in seeing my customers' faces light up when they see these beautiful, colorful pieces. Every piece is like a child to me.",
+                    "goal": "The coral vendor wants to sell her sculptures and grow her business.",
+                    "location": "The Marketplace",
+                    "inventory": {
+                        "bag_of_coral_seeds": {
+                            "name": "Bag of coral seeds",
+                            "description": "A waterproof canvas bag filled with tiny, shimmering seeds. These are destined to become beautiful coral reefs.",
+                            "examine_text": "Upon closer examination, you notice the seeds in the bag are incredibly small and each one carries a beautiful, iridescent shine. Scattered lights from the depths hit them, reflecting a symphony of mesmerizing colors back.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "pruning_tools": {
+                            "name": "Pruning tools",
+                            "description": "A set of handcrafted, corrosion-resistant pruning tools. These are essential for maintaining the health and beauty of coral reefs.",
+                            "examine_text": "Upon closer inspection, these tools are incredibly well made. Each one is crafted from a scale-toughened, sharkgrass blend, capable of withstanding the harsh underwater environment while providing precision in pruning delicate corals.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "assorted_colorful_corals": {
+                            "name": "Assorted colorful corals",
+                            "description": "A varied collection of brilliantly hued corals harvested from the aquapolis' reefs. Each piece stands as an evidence of the ocean's wonder.",
+                            "examine_text": "Examining the corals, each one is a wonder in its own right; myriad colors and shapes come to life, casting astonishingly intricate patterns and an array of vibrant colors. It\u2019s like holding a small piece of the underwater magic right in your hands.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Thief": {
+                    "name": "Thief",
+                    "description": "A cunning and agile mermaid, the thief lurks in the shadows of the marketplace. Her dark green scales blend perfectly with seaweed around, and a double-bladed kelp dagger is skillfully hidden within her hair. Her eyes are always on the move, scanning the crowd for her next target.",
+                    "persona": "Y'know, a girl's got to make a living somehow. If that means lifting a few unattended wallets, well, fish gotta swim, right?",
+                    "goal": "The thief wants to rob as many people as she can with no one noticing.",
+                    "location": "The Marketplace",
+                    "inventory": {
+                        "double_bladed_kelp_dagger": {
+                            "name": "Double-Bladed Kelp Dagger",
+                            "description": "An unusual underwater weapon, its blades are made from hardened kelp, resilient yet flexible.",
+                            "examine_text": "The Double-Bladed Kelp Dagger is a delicate balance of art and utility. Each blade arches outward like a fang, clear as glass but as strong as steel. Different, lighter shades of green spiral around the hilt, signifying the veins of the kelp from which it was formed.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "Research Lab"
+                        },
+                        "stolen_wallets": {
+                            "name": "Stolen Wallets",
+                            "description": "A pile of wallets, obviously pilfered from unsuspecting victims.",
+                            "examine_text": "From a distance, the pile of wallets could have been any random collection of items. But up close, it's clear what they are: the wallets vary greatly in style. Some are made from the scales of exotic fish, others from simply stitched seaweed.  Each one holds a different collection of coins, shells and sometimes, a small trinket or two.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "Research Lab"
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Underwater Aquapolis"
+        },
+        {
+            "name": "Research Lab",
+            "description": "The research lab is the main science hub of the aquapolis. Dozens of scientists are working on a myriad of different projects.",
+            "background": "The research lab is located in the central area of the aquapolis for easy access for all those involved in the research.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Journeying to the Underwater Aquapolis is an otherworldly experience. As you move from the research lab, the water around you changes from clear to a shimmering transition of aquatic colors. Soon, the majestic buildings come into sight, surrounded by an air bubble and full of life, making you feel like you've entered a unique realm.",
+                "south": "The trip to the Underwater Marketplace feels like stepping into an old storybook. A short swim from the lab reveals the bustling marketplace. Vibrant stalls are filled with varied items collected from all over the ocean, and residents of the aquapolis hasten about their business. An area full of vibrancy and energy that almost makes you forget you're under the sea."
+            },
+            "connections": {
+                "east": "Underwater Aquapolis",
+                "south": "Underwater Marketplace"
+            },
+            "items": {
+                "Microscope": {
+                    "name": "Microscope",
+                    "description": "A high-powered microscope used for analyzing samples.",
+                    "examine_text": "You see a microscope built to analyze things at a molecular level. It is extremely advanced, much more so than any microscope you've seen topside.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                },
+                "Research notes": {
+                    "name": "Research notes",
+                    "description": "A stack of notes from the ongoing research.",
+                    "examine_text": "Upon closer inspection, you see the notes detail various findings on marine biology, some of which are completely fringing on the unknown.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                },
+                "Lab Coat": {
+                    "name": "Lab Coat",
+                    "description": "A white lab coat made of special material to withstand the underwater environment.",
+                    "examine_text": "The lab coat is perfectly white and pristine. It has the emblem of the aquapolis stitched on it, showing the bearer as part of the science team.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    }
+                },
+                "Sample Container": {
+                    "name": "Sample Container",
+                    "description": "A small, sterile container for collecting samples.",
+                    "examine_text": "The container is made of clear, high strength plastic with a air-tight seal to preserve any samples that are stored in it.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                }
+            },
+            "characters": {
+                "Dr. Stella Octo": {
+                    "name": "Dr. Stella Octo",
+                    "description": "A teal-haired, bespectacled woman with a lab coat scribbled with formulas and coffee mug in hand.",
+                    "persona": "I am always enthusiastic about my research work. I am the one who has been uncovering the secrets of this sea city.",
+                    "goal": "To uncover the truth behind the ancient structures found in the deeper parts of the ocean.",
+                    "location": "Research Lab",
+                    "inventory": {
+                        "Researching tools": {
+                            "name": "Researching tools",
+                            "description": "A set of tools used for conducting underwater research.",
+                            "examine_text": "A collection of tools made from corrosion-resistant materials. The tools include a deep-sea sonar pendant, a pressure-resistant sampler, an accelerometer, and a rangefinder. They're most likely used by Dr. Octo for her in-depth studies.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Lab coat": {
+                            "name": "Lab coat",
+                            "description": "Dr. Octo's favorite lab coat.",
+                            "examine_text": "A pristine white lab coat. There\u2019s a name tag that says, 'Dr. Stella Octo'. It has a futuristic look to it, with smart fabrics that fit perfectly for underwater research.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Coffee mug": {
+                            "name": "Coffee mug",
+                            "description": "A coffee mug with a tentacle motif.",
+                            "examine_text": "The mug appears old and worn, indicating its long-time usage. It has a unique motif of an octopus, hinting at the owner's strong affiliation to sea life. There\u2019s a faint aroma of coffee.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": true,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Portable computer": {
+                            "name": "Portable computer",
+                            "description": "A waterproof portable computer for underwater research.",
+                            "examine_text": "A high-tech device specifically designed for underwater usage. The portable computer is encased in a sleek, waterproof casing and features cutting-edge data processing and communication technology crucial for underwater research.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Professor Fintail": {
+                    "name": "Professor Fintail",
+                    "description": "A grey-haired man, hunched with age, wearing a pair of thick glasses and a faded overcoat filled with strange tools.",
+                    "persona": "Ever since we got here, I've been stuck in this lab trying to break new ground in marine biochemistry.",
+                    "goal": "To discover a new bio-luminescent algae which can be used to power the city.",
+                    "location": "Research Lab",
+                    "inventory": {
+                        "Glasses": {
+                            "name": "Glasses",
+                            "description": "A pair of round-rimmed eyeglasses.",
+                            "examine_text": "The glasses are a little old-fashioned, round and rimmed with a thin gold frame. The lenses are smudged slightly. Surely they belong to Professor Fintail.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Old Notebook": {
+                            "name": "Old Notebook",
+                            "description": "A leather-bound notebook filled with scribbles and annotations.",
+                            "examine_text": "The notebook is old and well-worn. Packed with pages of notes, diagrams, and equations penned in a distinct handwriting. It seems to detail some sort research in marine biochemistry, the field where Professor Fintail excels.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Marine Sample Kit": {
+                            "name": "Marine Sample Kit",
+                            "description": "A kit filled with various tools for collecting and analyzing marine samples.",
+                            "examine_text": "The marine sample kit is well-equipped, housing several vials, swabs, tweezers, and a portable microscope. The tools look well-used but cared for, a clear sign of Professor Fintail's diligence in his field.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Assistant Jelly Pippin": {
+                    "name": "Assistant Jelly Pippin",
+                    "description": "A youthful figure, bursting with energy, wearing a purple jumpsuit, with coral headphones around neck and an e-pad in hands.",
+                    "persona": "I assist Dr. Octo in her research, maintaining lab gear and doing field tests.",
+                    "goal": "To complete tasks diligently and earn Dr. Octo's respect.",
+                    "location": "Research Lab",
+                    "inventory": {
+                        "Headphones": {
+                            "name": "Headphones",
+                            "description": "These are water-resistant headphones for communication.",
+                            "examine_text": "A sturdy set of water-resistant headphones with microphonic capabilities designed specifically for intra-aquapolis communication.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": [],
+                            "location": "Farmhouse"
+                        },
+                        "E-pad with research data": {
+                            "name": "E-pad with research data",
+                            "description": "You're carrying a lot of data related to your recent underwater experiments.",
+                            "examine_text": "The e-pad is more than a simple computer. The screen shows tons of graphs, results, and scientific notation related to your underwater research.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "Farmhouse"
+                        },
+                        "Lab toolkit": {
+                            "name": "Lab Toolkit",
+                            "description": "A specially designed toolkit for underwater research maintenance.",
+                            "examine_text": "This lab toolkit is far from a simple set of screwdrivers and wrenches. It\u2019s designed specifically for maintaining sensitive research technology in the moist, salty environment of the aquapolis.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "Farmhouse"
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Underwater Aquapolis"
+        },
+        {
+            "name": "Farmhouse",
+            "description": "a small house on a seaweed plantation, small and rustic, really only the single room with a closet, maybe, a table and some chairs",
+            "background": "this is a humble farmer's shack where he lives with his wife and six children, it is falling apart and in disrepair and is very old",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Toad Hollow is a filthy room within the Underwater Aquapolis. When you enter, you are greeted by the reek of scummy pond water. You enter Toad Hollow through a drainage pipe that you have to crawl through. Once inside Toad Hollow, you can stand up, but you still don't feel comfortable with your surroundings. As far as the eye can see there is muddy water in a circular basin with lily pads floating in it. On the pads, giant toads jump back and forth making gurgling, croaking sounds. As you wade deeper into Toad Hollow, the water comes up to your waist and you see the flash of a fin. There is legend that a creature lives in the center of Toad Hollow that is half human, half monster. Not even the strongest knight has been brave enough to examine it. The fin disappears back underwater but there is a red glint suggesting eyes are watching you. When you reach the other side of the basin, you crawl into another drainage pipe and feel relieved that you're out of this place. Toad Hollow is a legend among knights young and old. Mostly, it's discovered by children playing down in the sewers who take a combination of turns through the drainage pipes and wind up there by accident. Some brave knights have purposely tried to find Toad Hollow and been successful but most have not glimpsed the creature. Toad Hollow remains shrouded in mystery to this day and many question if it's even real. Some say that you should be careful not to get caught on the armor of the drowned when you're wading through and that hands have reached up from the bottom of the water and grabbed their ankles.",
+                "south": "Deep and warm the geothermal valley boasts a reviving epicenter for all to migrate to. The warm bursts of heat send bubble around the perimeter of the valley reflecting colors of green and blue. The Geothermal Valley is place where one can come and heal with the minerals and heat that permeates through the body and soul. It is the main attraction in the underwater aquapolis."
+            },
+            "connections": {
+                "west": "Toad Hollow",
+                "south": "Geothermal Valley"
+            },
+            "items": {
+                "Seaweed Bundle": {
+                    "name": "Seaweed Bundle",
+                    "description": "Fresh seaweed harvested from the fields.",
+                    "examine_text": "A large bundle of dark green seaweed. It is wet and slick to touch, and gives off a briny smell.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                },
+                "Old Table": {
+                    "name": "Old Table",
+                    "description": "A small wooden table, whole family uses it for meals.",
+                    "examine_text": "This table has clearly seen years of use. Its surface is weathered and scarred, but it still holds sturdy.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                },
+                "Rustic Chair": {
+                    "name": "Rustic Chair",
+                    "description": "A handcrafted chair, used frequently, but still in good shape.",
+                    "examine_text": "The chair is made of some undersea wood. It's old and creaks slightly under weight, but still functional.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                },
+                "Shabby Closet": {
+                    "name": "Shabby Closet",
+                    "description": "An old wooden closet where farmer keeps his belongings.",
+                    "examine_text": "The closet is dark and musty, crammed with bits and bobs. Certain items of interest might be hidden within its depths.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                }
+            },
+            "characters": {
+                "Jeb": {
+                    "name": "Jeb",
+                    "description": "A grizzled, barnacle-covered Aquaman with thick arms from laboring in the local seaweed fields.",
+                    "persona": "I'm Jeb, born and bred in Aquapolis. I know every inch of these waters and every blade o' seaweed. Can't say I trust all those city fish, but you seem alright.",
+                    "goal": "To keep his family fed and his seaweed farm prosperous, despite the relentless aquatic elements.",
+                    "location": "Farmhouse",
+                    "inventory": {
+                        "seaweed_shovel": {
+                            "name": "Seaweed Shovel",
+                            "description": "A sturdy, slightly rusted shovel used for harvesting seaweed",
+                            "examine_text": "The shovel shows signs of heavy use. Its metal body is slightly rusted, and the wooden handle is worn smooth from countless hours of gripping. Despite this, the tool still seems reliable.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "rustic_pipe": {
+                            "name": "Rustic Pipe",
+                            "description": "A simple, worn pipe, carrying the sweet smell of kelp tobacco",
+                            "examine_text": "The pipe seems to have been carved from some sort of aquatic wood. It's old and slightly brittle, but it carries a residual smell of kelp tobacco that is strangely comforting.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "sun_bleached_picture": {
+                            "name": "Sun-Bleached Picture",
+                            "description": "A picture of Jeb's family, faded from sunlight and time",
+                            "examine_text": "The picture is in a simple wood frame. It features a smiling Jeb, younger and more hopeful, surrounded by his wife and six children. They've posed in front of their seaweed farm, looking proud despite the clear signs of hard work visible in their faces. The image is faded, the colors bleached by sunlight and time, but the warmth in their expressions remains.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Mama Meri": {
+                    "name": "Mama Meri",
+                    "description": "A plump, water-worn mermaid with the kindest eyes and a jolly demeanor, her tail fin colored brilliantly in shades of green and blue.",
+                    "persona": "Well, ain't you a sight for sore eyes? I'm Meri, Jeb's better half. Life can be tough here, but we take care of our own. Come have a seat now, you look like you need a rest.",
+                    "goal": "Her heart\u2019s desire is nothing more than to see her children grow and lead better lives than their parents.",
+                    "location": "Farmhouse",
+                    "inventory": {
+                        "homemade_seaweed_pie": {
+                            "name": "Homemade Seaweed Pie",
+                            "description": "A hearty pie made from local seaweed.",
+                            "examine_text": "Upon closer examination, you can see the green seaweed peeking out from the crust, giving off a unique, savory aroma.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": true,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "patchwork_apron": {
+                            "name": "Patchwork Apron",
+                            "description": "Mama Meri's well-worn, multi-colored apron.",
+                            "examine_text": "You can see the care that she has put into mending and patching this apron over the years, a testament to her resourcefulness.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "locket": {
+                            "name": "Locket",
+                            "description": "A small, worn locket with a grainy photo of Meri and Jeb.",
+                            "examine_text": "It's a faded photo, but you can still make out the joy in their eyes. They've been through a lot together.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Sammy": {
+                    "name": "Sammy",
+                    "description": "The eldest child of the family, a boy of about 13 with earnest, curious eyes and an impish smile.",
+                    "persona": "Hey there, stranger! Name's Sammy. Papa says I'm gonna run the farm someday... or maybe I'll just explore the whole ocean! Have you ever been to the deep sea?",
+                    "goal": "Sammy dreams of going on a grand adventure outside of the small seaweed farm he's always known.",
+                    "location": "Farmhouse",
+                    "inventory": {
+                        "small_toolkit": {
+                            "name": "Small Toolkit",
+                            "description": "A compact set of basic tools, slightly rusty from the sea",
+                            "examine_text": "The toolkit consists of several rudimentary tools, like a wrench, screwdriver, and hammer, all showing signs of wear and tear from use and exposure to sea water. Despite its condition, it would be incredibly versatile for a variety of tasks.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "Geothermal Valley"
+                        },
+                        "hand-drawn_map_of_aquapolis": {
+                            "name": "Hand-Drawn Map of Aquapolis",
+                            "description": "A roughly sketched map of the underwater city",
+                            "examine_text": "The map, while crudely drawn, seems to cover the major points of interest in Aquapolis. There are annotations and tiny sketches around the map, probably marking various landmarks and Sammy's own personal notes. This could guide someone around the city or to lesser-known spots.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "Geothermal Valley"
+                        },
+                        "pet_pufferfish_named_puff": {
+                            "name": "Pet Pufferfish named Puff",
+                            "description": "Sammy's loyal pet pufferfish",
+                            "examine_text": "Puff is a little pufferfish, its scales gleaming a beautiful mix of hues under the aquatic light. He seems to have a playful and loyal temperament, hovering around Sammy with clear affection. He might be small, but those spikes could serve as a deterrent to smaller threats.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "Geothermal Valley"
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Underwater Aquapolis"
+        },
+        {
+            "name": "Geothermal Valley",
+            "description": "Deep and warm the geothermal valley boasts a reviving epicenter for all to migrate to. The warm bursts of heat send bubble around the perimeter of the valley reflecting colors of green and blue.",
+            "background": "The Geothermal Valley is place where one can come and heal with the minerals and heat that perminates through the body and soul. It is the main attraction in the underwater aquapolis.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "The journey from Geothermal Valley to the north brings a sudden and stark contrast. Leaving behind the warmth and rejuvenating energies of the valley, the path upwards winds between rows of seaweed plantation, where the moist air gives way to a drier, grittier atmosphere. Dotted along the path are rusty plow tools and dilapidated sheds, giving the area a humble, rustic aesthetic. As you move further north, the solitary silhouette of a farmhouse gradually comes into view, showcasing the rugged resilience of bygone farm life."
+            },
+            "connections": {
+                "north": "Farmhouse"
+            },
+            "items": {
+                "Thermal Crystal": {
+                    "name": "Thermal Crystal",
+                    "description": "A shimmery orb that is warmed from the surrounding geothermal heat.",
+                    "examine_text": "Upon closer inspection, the crystal is not merely glowing from heated energy, it seems to have an inner light that flickers and dances as you observe it. Its warmth is inviting.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    }
+                },
+                "Healing Pool": {
+                    "name": "Healing Pool",
+                    "description": "A natural pool enriched with minerals known for their healing properties.",
+                    "examine_text": "Dipping your fingers into the warm pool, you feel a tingling sensation. It is said that wounds can heal and strength can be recovered by bathing in this mystical mini-lagoon.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                },
+                "Sea Urchin Sushi": {
+                    "name": "Sea Urchin Sushi",
+                    "description": "A piece of Sea urchin sushi, freshly prepared by underwater aquapolis' top chef.",
+                    "examine_text": "On a small bed of seaweed rice lies a tender medallion of sea urchin - a delicacy in underwater communities. It looks fresh and smells divine.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                }
+            },
+            "characters": {
+                "Zol": {
+                    "name": "Zol",
+                    "description": "An octopedal aquatic being with leathery skin and deep-seated eyes that emit a warm undertone of golden hue.",
+                    "persona": "I am Zol, guardian of this Valley. My mission is to make sure everyone gets their share of healing without disturbing the harmony of this place.",
+                    "goal": "To maintain peace and harmony in the Geothermal Valley.",
+                    "location": "Geothermal Valley",
+                    "inventory": {
+                        "Golden Staff": {
+                            "name": "Golden Staff",
+                            "description": "The symbol of Zol's authority",
+                            "examine_text": "A resonating, towering staff, gleaming with gold and embellished with emerald grip.  Its aura is a testament to Zol's power.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Healing Tonic": {
+                            "name": "Healing Tonic",
+                            "description": "A reviving concoction prepared from the geothermal minerals",
+                            "examine_text": "The tonic shines in a soothing turquoise glow. Zol hands these flasks to the needy for their healing.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": true,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Spiritual Shells": {
+                            "name": "Spiritual Shells",
+                            "description": "Sacred shells collected from the seabed of the Geothermal Valley",
+                            "examine_text": "Every shell gleams with a pearly luminescence. Used in healing rituals, these shells are believed to provide spiritual alignment.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Sirena": {
+                    "name": "Sirena",
+                    "description": "Sirena is a mesmerizing merwoman with flowing hair that changes color with her emotions and a tail shimmering with iridescent scales.",
+                    "persona": "I am Sirena, the valley's caretaker and guide. I'm here to welcome visitors and introduce them to their healing journey.",
+                    "goal": "To ensure all visitors understand the benefits and respect the sanctity of the valley.",
+                    "location": "Geothermal Valley",
+                    "inventory": {
+                        "Color changing mirror": {
+                            "name": "Color changing mirror",
+                            "description": "A sleek, oblong-shaped mirror changing colors reflecting the geothermal bubbles",
+                            "examine_text": "Upon careful examination, you see your reflection shift between hues of green and blue, mimicking the geothermal bubbles that defines the valley. The back of the mirror is elegantly carved with symbols of the aquapolis.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Crystal amulet": {
+                            "name": "Crystal amulet",
+                            "description": "A translucent amulet pulsating with a mysterious inner light",
+                            "examine_text": "Held in your hands, the amulet feels warm to the touch, offering an inexplicable feeling of comfort. Suspended within the crystal is a small replica of the underwater aquapolis.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Valley map": {
+                            "name": "Valley map",
+                            "description": "A durable waterproof map of Geothermal Valley",
+                            "examine_text": "The map details the intricacies of the valley with precision, showing the healing centers, areas of intense heat, and sections of calming warmth. Routes and landmarks are clearly marked, guiding visitors through their journey of healing and discovery.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Lumos": {
+                    "name": "Lumos",
+                    "description": "A luminescent bioluminescent jellyfish, his body radiates different colors emitting a soothing light that adds to the milieu of the valley.",
+                    "persona": "They call me Lumos, the valley's living lighthouse. I bring light to the valley in the darkest hours and guide the lost back.",
+                    "goal": "To bring light and guide those who get lost in the Valley.",
+                    "location": "Geothermal Valley",
+                    "inventory": {
+                        "Luminous Pearls": {
+                            "name": "Luminous Pearls",
+                            "description": "Small spherical glowing objects",
+                            "examine_text": "These are small pearls that glow with an inner light. Their soft luminescence seems to pulsate gently, turning a murky green color underwater. Lumos, as the keeper of the valley, always has a handful of these pearls to light up dark places in the valley.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": [],
+                            "location": "Tool Shed"
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Underwater Aquapolis"
+        },
+        {
+            "name": "Tool Shed",
+            "description": "a shed with tools hanging from hooks. there are various hoes and shovels. it's for seaweed harvest",
+            "background": "a humble shack for storing the implements of agrarian life",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Travel between the Tool Shed and Toad Hollow is a dark damp journey. You crawl into this tunnel feeling the slimy walls as you go along. The smell of stagnant water becomes more potent as you make your way to Toad Hollow."
+            },
+            "connections": {
+                "east": "Toad Hollow"
+            },
+            "items": {
+                "Aquatic Hoe": {
+                    "name": "Aquatic Hoe",
+                    "description": "A long tool typically used for tilling underwater soil.",
+                    "examine_text": "The Hoe is solid and reliable, made out of titanium to resist corrosion and feature artificial gills to adjust buoyancy. It's quite heavy, signifying its sturdy build and efficient functionality.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    }
+                },
+                "Seaweed Shovel": {
+                    "name": "Seaweed Shovel",
+                    "description": "Specifically designed tool for shoveling seaweed and soft underwater earth.",
+                    "examine_text": "This Shovel has a wide, concave blade which contains a cutting edge at its bottom, made from steel alloy. Designed to scoop and transport seaweed and soft earth.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    }
+                },
+                "Storage Box": {
+                    "name": "Storage Box",
+                    "description": "A storage box to keep tools and other items.",
+                    "examine_text": "This is a large, sturdy wooden box with a metal latch. It's water-resistant and looks capable of holding a decent amount of stuff.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                }
+            },
+            "characters": {
+                "Hank the Hermit Crab": {
+                    "name": "Hank the Hermit Crab",
+                    "description": "A delightful hermit crab that carries an interesting-looking shell, and sulks by the corner of the tool shed holding a broken tool.",
+                    "persona": "I'm just a hermit crab, enjoying the quiet of the tool shed and hoping to repair my broken tools for my collection.",
+                    "goal": "Iis to repair his broken tool.",
+                    "location": "Tool Shed",
+                    "inventory": {
+                        "broken_hoe": {
+                            "name": "Broken Hoe",
+                            "description": "An old, broken hoe that has seen better days.",
+                            "examine_text": "A hoe with a dull and partially splintered blade. The wooden handle is weathered and has a break halfway down, making it not useful for digging or harvesting.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "seashell": {
+                            "name": "Seashell",
+                            "description": "An enchanting seashell, the home of Hank the Hermit Crab.",
+                            "examine_text": "A diversely colored shell with a coiled design on one side. It has been polished to a shine by the consistent wave action. It appears to be large enough for Hank to crawl into, suggesting it might be his home.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Selena the Seahorse": {
+                    "name": "Selena the Seahorse",
+                    "description": "A graceful seahorse with a beautiful bright aqua color gliding around a rusted spade.",
+                    "persona": "I'm always exploring, and I've grown quite fond of this old tool shed with all the rusted trinkets; it holds so many tales.",
+                    "goal": "She wants to collect antique objects from the shed.",
+                    "location": "Tool Shed",
+                    "inventory": {
+                        "Rusted Spade": {
+                            "name": "Rusted Spade",
+                            "description": "An old, heavily oxidized spade, it shows the signs of many hours of rigorous use.",
+                            "examine_text": "The spade's once shiny metal blade is now a deep rusted orange, covered in barnacles and sea growth. Despite its poor condition, it still holds a certain weight and sturdiness, a sign of its past reliability in tending the nearby kelp fields.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Molly the Manta Ray": {
+                    "name": "Molly the Manta Ray",
+                    "description": "A large, majestic manta ray that hovers serenely around the shed, her eyes full of wisdom.",
+                    "persona": "I enjoy the serene calmness of the tool shed. I'm here to seek solitude and be one with my thoughts.",
+                    "goal": "She wants to find peace and solitude in the quiet",
+                    "location": "Tool Shed",
+                    "inventory": {
+                        "Old Weeder": {
+                            "name": "Old Weeder",
+                            "description": "An ancient looking tool with a thin metal rod and a claw at the end.",
+                            "examine_text": "An old hand weeder tool, aged and encrusted with a unique blend of algae and rust. The handle has been smoothed by years of use and the metal claw at the end still looks quite sharp.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Underwater Aquapolis"
+        }
+    ],
+    "actions": []
+}

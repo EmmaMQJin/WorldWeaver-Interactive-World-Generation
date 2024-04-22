@@ -1,0 +1,1383 @@
+{
+    "player": "Troll",
+    "start_at": "Inside Of A Troll Cave",
+    "game_history": [],
+    "game_over": false,
+    "game_over_description": null,
+    "characters": [
+        {
+            "name": "Troll",
+            "description": "A foul hulking brute with moss growing on its back.",
+            "persona": "I don't fancy talking, but when I do, it's primarily grunts or curses.",
+            "location": "Inside Of A Troll Cave",
+            "goal": "Protect his cave from intruders.",
+            "inventory": {}
+        },
+        {
+            "name": "Cave Creature",
+            "description": "An unidentifiable beast of darkness with eyes that glows ominously.",
+            "persona": "You can't understand me, but I am territorial and solitary.",
+            "location": "A Creature Cave",
+            "goal": "To claim more territory.",
+            "inventory": {}
+        },
+        {
+            "name": "Fountain Guardian",
+            "description": "An ancient skeleton warrior clad in rusted armor. Forever vigilant.",
+            "persona": "Once a brave knight, now a guardian bound to this fountain forever.",
+            "location": "The Fountain Of Youth",
+            "goal": "Forever prevent access to the fountain.",
+            "inventory": {}
+        },
+        {
+            "name": "Archmage Sergius",
+            "description": "An old, wise wizard wearing a tattered robe, razor-sharp eyes shimmer with power.",
+            "persona": "I am a sage, a scholar. My duty is to advance our magical understanding.",
+            "location": "Echo Hall",
+            "goal": "Uncover the ultimate truth of magic.",
+            "inventory": {}
+        },
+        {
+            "name": "Elf Refuge",
+            "description": "A timid elf with a gentle aura. He has large, expressive eyes and pointed ears.",
+            "persona": "I am lost but resilient, forever hopeful for better days.",
+            "location": "Elf'S Room",
+            "goal": "Find the way back to his home safely.",
+            "inventory": {}
+        },
+        {
+            "name": "Swamp Prophet",
+            "description": "A entity known as the spirit of the swamp, appears as a shimmering apparition.",
+            "persona": "I am the Swamp. I decide who is worthy.",
+            "location": "Swamp",
+            "goal": "Maintain the balance of the swamp.",
+            "inventory": {}
+        },
+        {
+            "name": "Faerie Queen",
+            "description": "A tiny, ethereal being, beautiful beyond comparison.",
+            "persona": "We faeries nourish the world, bring harmony.",
+            "location": "Faeries Den",
+            "goal": "Protect the magical realm from evil.",
+            "inventory": {}
+        },
+        {
+            "name": "Elf Queen",
+            "description": "A regal elven queen whose beauty is matched only by her wisdom.",
+            "persona": "As queen, it is my duty to lead my people through every trial.",
+            "location": "The Royal Tent",
+            "goal": "Maintain the prosperity and harmony in the kingdom.",
+            "inventory": {}
+        },
+        {
+            "name": "Wizard Mordak",
+            "description": "A powerful magician, soft-spoken with a profound understanding of magical theory.",
+            "persona": "I dedicated my life to understand the ancient wisdom, to control the unseen.",
+            "location": "Secret Magician'S Workshop",
+            "goal": "Master all aspects of magic.",
+            "inventory": {}
+        },
+        {
+            "name": "The Enchantress",
+            "description": "A mysterious woman known for her mesmerizing voice and enchanting eyes.",
+            "persona": "Through my charms, every creature becomes an open book.",
+            "location": "Wizard'S Lair",
+            "goal": "Control all magical creatures.",
+            "inventory": {}
+        },
+        {
+            "name": "Ogre",
+            "description": "A towering, hulk-like being with green skin and monstrous strength.",
+            "persona": "I'm misunderstood, not a monster. I prefer quiet and solitude.",
+            "location": "The Cabin Of An Ogre",
+            "goal": "Live peacefully without any human interaction.",
+            "inventory": {}
+        }
+    ],
+    "locations": [
+        {
+            "name": "Inside Of A Troll Cave",
+            "description": "A damp and vile smelling cave that only is lit by the sun that goes through the entrance. Skeletons from small animals can be seen sprawled across the floor. A little pile of leaves sit in a corner next to a campfire.",
+            "background": "The local troll that roams the land lives in this cave. He only comes out in the day to find food then comes back to his cave at night to eat and sleep. Sometimes adventurers stumble upon this cave and run away from the rancid smell.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "As you navigate your way south, the damp cave air shifts to the tranquil hum of nature, interjected only by the suckling sound of feet treading through swampy marshlands.",
+                "east": "Heading east from the cave, the rough stone path smoothes out and the journey is filled with the smell of wildflowers until a chilling wind heightens your senses as you draw closer to the foreboding cabin."
+            },
+            "connections": {
+                "south": "Swamp",
+                "east": "The Cabin Of An Ogre"
+            },
+            "items": {
+                "Rusty Sword": {
+                    "name": "Rusty Sword",
+                    "description": "A beaten-down, rusty sword.",
+                    "examine_text": "This sword has seen a lot of use. The edge is dull and the whole length is covered in rust. There are some dried bloodstains on the blade.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Inside Of A Troll Cave"
+                },
+                "Animal Bones": {
+                    "name": "Animal Bones",
+                    "description": "A pile of small animal bones.",
+                    "examine_text": "Countless small bones, picked clean and gnawed on by something with sharp teeth. Some of them have been cracked open, probably to get at the marrow.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Inside Of A Troll Cave"
+                },
+                "Old Campfire": {
+                    "name": "Old Campfire",
+                    "description": "An old, extinguished campfire.",
+                    "examine_text": "There's not much left of the fire - just some old ashes and half-burned logs. It smells faintly of smoke and cooked meat.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Inside Of A Troll Cave"
+                },
+                "Leaf Bed": {
+                    "name": "Leaf Bed",
+                    "description": "A surprisingly soft bed made of leaves.",
+                    "examine_text": "It's a simple bed made of a pile of leaves. It smells musty, and there's a surprised depression in the middle \u2013 like someone or something has been sleeping here.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Inside Of A Troll Cave"
+                }
+            },
+            "characters": {
+                "Troll": {
+                    "name": "Troll",
+                    "description": "A foul hulking brute with moss growing on its back.",
+                    "persona": "I don't fancy talking, but when I do, it's primarily grunts or curses.",
+                    "location": "Inside Of A Troll Cave",
+                    "goal": "Protect his cave from intruders.",
+                    "inventory": {
+                        "Rusty Sword": {
+                            "name": "Rusty Sword",
+                            "description": "A old, rusty sword that's seen better days.",
+                            "examine_text": "The sword has a long, once sharp blade that is now covered in rust and chipped in places. The hilt is wrapped in tattered, old leather, and the pommel has a figure of a lion, now worn and nearly unrecognizable.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": true,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Bag of Bones": {
+                            "name": "Bag of Bones",
+                            "description": "A greasy, old sack filled with small animal bones.",
+                            "examine_text": "Upon closer inspection, the bones inside the sack seem to come mostly from small, forest-dwelling creatures. Various sizes and shapes of the bones suggest they could be from rabbits, mice, or birds.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Magical Realm"
+        },
+        {
+            "name": "A Creature Cave",
+            "description": "This cave is very dark and damp. The smell is a stale and strong scent. There is little to no light. The walls are wet and the floor is slippery. Mice are all over and some bats are hanging from the ceiling.",
+            "background": "This cave houses a large creature. No one knows where it came from but they do know it is harmful to humans. The creature likes to bring it's kills back into this cave.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "You carefully navigate the slippery and wet cave floors to the north, towards a faint smell of something rotten and unwelcoming.",
+                "west": "Moving towards the west takes you through an increasingly damp area of the cave, as a strange iridescent glow starts to fill the surroundings."
+            },
+            "connections": {
+                "north": "Inside Of A Troll Cave",
+                "west": "Swamp"
+            },
+            "items": {
+                "Mouse carcass": {
+                    "name": "Mouse Carcass",
+                    "description": "A small decaying corpse of a rodent",
+                    "examine_text": "A small, vile smelling carcass of what used to be a field mouse. The decomposition process seems to have started, indicated by the leaking viscera and gathering cloud of flies.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "A Creature Cave"
+                },
+                "Bats": {
+                    "name": "Bats",
+                    "description": "Several bats roosting overhead",
+                    "examine_text": "Looking upwards, you spot a mass of chittering, squirming shapes latched onto the roof of the cave. Upon closer observation, you realize these creatures are bats, their bodies cloaked in darkness, only the eerie red glow of their eyes visible in the scant light.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "A Creature Cave"
+                },
+                "Claw marks": {
+                    "name": "Claw Marks",
+                    "description": "Disturbingly large gashes in the wall",
+                    "examine_text": "Upon closer inspection of the cave walls, you notice disturbing large gashes which seem to have been clawed into the stone by some beast. The deep grooves are fresh, indicating the monster may still be nearby.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "A Creature Cave"
+                }
+            },
+            "characters": {
+                "Cave Creature": {
+                    "name": "Cave Creature",
+                    "description": "An unidentifiable beast of darkness with eyes that glows ominously.",
+                    "persona": "You can't understand me, but I am territorial and solitary.",
+                    "location": "A Creature Cave",
+                    "goal": "To claim more territory.",
+                    "inventory": {
+                        "Mouse Carcass": {
+                            "name": "Mouse Carcass",
+                            "description": "A tiny dead mouse, its body completely intact. It seems like it was recently killed.",
+                            "examine_text": "Taking a closer look, you can see the lifeless eyes of the mouse looking back at you. It appears to be a recent kill by the cave creature. Its body is still warm to the touch.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Magical Realm"
+        },
+        {
+            "name": "The Fountain Of Youth",
+            "description": "The water here bubbles softly, cascading down the golden framework of the fountain.  The water is clear as crystal, and shimmers softly with a faint glow that doesn't seem to quite reflect the light around it.  The fountain itself is made of elaborately filigrees of gold and silver that twist and curve to show the sparkle of the water best, and it breathtaking to behold. While the fountain's beauty is what first draws the eye, a careful glace down at the earth around it reveals a frightening sight.  Skeletons, some clad in ancient armor from kingdoms long turned to dust, others worn down so that even what clothing they had has long since disintegrated, litter the earth.  Beautiful flowers grow up from them, partially obscuring whatever carnage caused these people to perish.",
+            "background": "The Fountain of Youth has long been a story of legend among mortal folk.  Yet, as with any magic in these realms, there is oft a price to be paid to cheat Nature of her rights.  While many whisper and dream of finding this mysterious fountain, and over the centuries many a brave knight has searched, no one has ever returned from visiting this perilous place.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "Moving southward from the glistening Fountain of Youth, the scenery transitions from ominous skeletal remains to the cozy confines of the Elf's Room nestled within a picturesque red mushroom.",
+                "east": "As you traverse the path east from the fountain, the atmosphere becomes noticeably lighter. The ominous aura subsides and an overwhelming sense of magic and light fills the air as you approach the shimmering silver walls of the Faeries Den.",
+                "outside": "Exiting the magical aura of the Fountain of Youth, the path to The Royal Tent is enchanting. A soft glow lights the way, leading you to a tent shimmering in the moonlight, exuding a warmth that promises rest and respite."
+            },
+            "connections": {
+                "south": "Elf'S Room",
+                "east": "Faeries Den",
+                "outside": "The Royal Tent"
+            },
+            "items": {
+                "Golden Chalice": {
+                    "name": "Golden Chalice",
+                    "description": "A beautifully crafted chalice made of pure gold, shimmering under the light of the magical fountain.",
+                    "examine_text": "The golden chalice has an intricate design carved delicately on it. The voluptuous rubies embedded on the cup radiate a mesmerizing glow when it is filled with the enchanted water.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Fountain Of Youth"
+                },
+                "Ancient Armor": {
+                    "name": "Ancient Armor",
+                    "description": "A worn-out iron suit, remnants of a brave knight who sought eternal youth.",
+                    "examine_text": "On closer look, the armor is covered with dents and scratches, a witness of countless battles. Its rust-ridden surface and faded insignia tell the tale of a forgotten kingdom.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "The Fountain Of Youth"
+                },
+                "Eternal Flowers": {
+                    "name": "Eternal Flowers",
+                    "description": "Blooming strongly amidst the skeleton bones, these flowers possess an otherworldly charm.",
+                    "examine_text": "The Eternal Flowers glow radiantly as if reflecting the fountain's magic energy. They seem to have nectar-like drops which can heal minor wounds upon touch.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "The Fountain Of Youth"
+                }
+            },
+            "characters": {
+                "Fountain Guardian": {
+                    "name": "Fountain Guardian",
+                    "description": "An ancient skeleton warrior clad in rusted armor. Forever vigilant.",
+                    "persona": "Once a brave knight, now a guardian bound to this fountain forever.",
+                    "location": "The Fountain Of Youth",
+                    "goal": "Forever prevent access to the fountain.",
+                    "inventory": {
+                        "Ancient Armor": {
+                            "name": "Ancient Armor",
+                            "description": "A suit of archaic, rusted armor, once worn by the brave knight now known as the Fountain Guardian.",
+                            "examine_text": "On closer inspection, the Ancient Armor displays the marks of innumerable battles. Although heavily worn with time, the armor maintains a certain majesty and appears steeped in ancient magic. The rusted metal is cold to the touch and the once-vibrant colors of the shield and arms are faded, but the craftsmanship and detail of its original design continue to command respect.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Golden Chalice": {
+                            "name": "Golden Chalice",
+                            "description": "An ornate golden chalice, used by the Fountain Guardian to drink from the Fountain's waters.",
+                            "examine_text": "As you approach the Golden Chalice, you see the gleam of gold adorning the cup. Its intricately etched vines and runes give off an ancient aura. It's more than just a piece of fine artistry - there's an underlying mystical power. The inside of the chalice looks like it's never been dry, a small droplet trickling slowly down the golden rim.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": true,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Magical Realm"
+        },
+        {
+            "name": "Echo Hall",
+            "description": "A gigantic dome-like building with a round table in the center of it. There is magelight above it and encircles the dome. Traces of wizards' histories appear on the walls and disappear from time to time.",
+            "background": "The most renown of wizards would congregate here historically in order to discuss advancements of magic. Their deeds would be recorded on the walls and recalled when wizards would speak about them again.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Traveling west through the enchanted forest, you feel a suspenseful calm. The verdant trees twinkle with mysterious energy leading to the golden glimmer of the Fountain of Youth.",
+                "east": "Moving east, you pass through treacherous, sharp rocks. The dank smell of the troll cave eventually hits, warning of the foul creature lurking within.",
+                "up": "Ascending magically, the world swirls around you. The creeping cold of the wizard\u2019s lair starts to settle in, amidst distant whispers of powerful spells."
+            },
+            "connections": {
+                "west": "The Fountain Of Youth",
+                "east": "Inside Of A Troll Cave",
+                "up": "Wizard'S Lair"
+            },
+            "items": {
+                "Round Magical Table": {
+                    "name": "Round Magical Table",
+                    "description": "An ancient round table made of solid oak wood with mysterious runes carved around its edges.",
+                    "examine_text": "The table possesses an ancient aura. Runes carved around the edges glow intermittently, leaving a trail of warm, sparkling dust. The table surface, though obviously used for centuries, remains flawlessly smooth.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Echo Hall"
+                },
+                "Magelight Chandelier": {
+                    "name": "Magelight Chandelier",
+                    "description": "A chandelier hanging from the top of Echo Hall, filled with hovering balls of soft-glowing magelight.",
+                    "examine_text": "The chandelier, intricately crafted from silver and decorated with numerous magical gems, holds countless hovering balls of soft-glowing magelight. It lights up the entire room with a warm, welcoming glow.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Echo Hall"
+                },
+                "Wizard's Robe": {
+                    "name": "Wizard's Robe",
+                    "description": "A dark blue robe embellished with sparkling stars and cosmic nebulas.",
+                    "examine_text": "The dark blue robe is made from a silky material that feels like cool water when touched. It is adorned with stars that seem to twinkle in the dim light and cosmic nebula patterns that shift fluidly.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Echo Hall"
+                },
+                "Spellbook": {
+                    "name": "Spellbook",
+                    "description": "A thick tome containing all known wizard spells since the founding of Echo Hall.",
+                    "examine_text": "All the notorious spells inked on crisp, parchment paper. Its cover has a majestic embroidery of prominent elements and is bound by spine of dragon's scale. It hums a faint, magical aura when touched.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Echo Hall"
+                }
+            },
+            "characters": {
+                "Archmage Sergius": {
+                    "name": "Archmage Sergius",
+                    "description": "An old, wise wizard wearing a tattered robe, razor-sharp eyes shimmer with power.",
+                    "persona": "I am a sage, a scholar. My duty is to advance our magical understanding.",
+                    "location": "Echo Hall",
+                    "goal": "Uncover the ultimate truth of magic.",
+                    "inventory": {
+                        "Spellbook": {
+                            "name": "Spellbook",
+                            "description": "A thick, leather-encoded tome speckled with arcane symbols",
+                            "examine_text": "The cover of the book sports a series of strange symbols, arranged in what you assume to be some sort of magical pattern. It's old, the corners scuffed from countless hours of study. As you flip through it, you find the pages are filled with beautifully inscribed glyphs, diagrams, and notes in the margins. It's a lifework of a dedicated wizard.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Wizard's Robe": {
+                            "name": "Wizard's Robe",
+                            "description": "A majestic robe of deep blue color with silver stars and moon pattern",
+                            "examine_text": "The robe is heavy and seems to be imbued with power. Silver embroidery weaves its way across the robe, forming constellations amid a sea of blue. The faux stars twinkle in the magelight and the whole garment seems to be made of the night sky itself. Clearly, this robe was worn by a wizard of great import.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Magical Realm"
+        },
+        {
+            "name": "Elf'S Room",
+            "description": "A tiny room in a red mushroom. Tiny frames with photos of an elf family decorate the walls of a well-lit room. A miniscule lantern lit with a single morsel shines on a table made of oak bark.",
+            "background": "A magical elf far from home built this room in an attempt to seek refuge from the creatures of the forest. He hides during the night, but ventures out to explore during the day.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "As you wander north towards the Fountain of Youth, the path is accompanied by crisp, verdant moss. But mind the eerie silence as skeletons appear occasionally amidst the floral beauty.",
+                "east": "Venturing east to the Secret Magician's Workshop, an eerie chill replaces the forest's warmth. The influence of the wizard's magic increasingly clings to the air, infusing it with a pulsating energy."
+            },
+            "connections": {
+                "north": "The Fountain Of Youth",
+                "east": "Secret Magician'S Workshop"
+            },
+            "items": {
+                "Elven bed": {
+                    "name": "Elven bed",
+                    "description": "A very small bed made out of leaves and twigs",
+                    "examine_text": "The bed is magically warm and inviting. There are delicate patterns inlaid into the twigs with threads of gold. It's so small, you're afraid you might crush it by accident.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Elf'S Room"
+                },
+                "Oak bark table": {
+                    "name": "Oak bark table",
+                    "description": "A rough table made from oak bark",
+                    "examine_text": "The table, though tiny, has been polished to a high shine and is surprisingly sturdy. Rings from the oak's tree life can be seen in its surface.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Elf'S Room"
+                },
+                "Elven lantern": {
+                    "name": "Elven lantern",
+                    "description": "A tiny illuminated lantern",
+                    "examine_text": "A flame no bigger than a teardrop floats in the center of this lantern, casting a soft light. It seems to be filled with luminescent moss.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Elf'S Room"
+                },
+                "Elven family photos": {
+                    "name": "Elven family photos",
+                    "description": "Tiny frames with photos of an elf family",
+                    "examine_text": "Each photo captures moments of joy. Some showcase an elven couple, others depict a small elf child. The subjects glow with a soft warmth, just like the environment around them.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Elf'S Room"
+                }
+            },
+            "characters": {
+                "Elf Refuge": {
+                    "name": "Elf Refuge",
+                    "description": "A timid elf with a gentle aura. He has large, expressive eyes and pointed ears.",
+                    "persona": "I am lost but resilient, forever hopeful for better days.",
+                    "location": "Elf'S Room",
+                    "goal": "Find the way back to his home safely.",
+                    "inventory": {
+                        "Elven Lantern": {
+                            "name": "Elven Lantern",
+                            "description": "A minuscule lantern glowing with warm light.",
+                            "examine_text": "A tiny but extraordinarily bright lantern. It is made out of a crystal, pulsing with magical energy. Despite its size, it illuminates the room entirely, filling it with a warm, cosy light that has a soothing effect on your eyes.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Small Dagger": {
+                            "name": "Small Dagger",
+                            "description": "A small but deadly dagger.",
+                            "examine_text": "Upon closer inspection, the dagger is not an ordinary dagger. It is small but extremely sharp. The blade reflects light in a way that suggests it is made from pure moonlight. The hilt is adorned with intricate elven designs and precious gems, clearly a work of an exceptional elven craftsman.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Magical Realm"
+        },
+        {
+            "name": "Swamp",
+            "description": "The swamp is glowing with wonder and color.  There are parts that range from dark red to bright yellow.  People often visit here to speak with the gods and claim it can be both harmful to those it dislikes and healing to those who it deems worthy.",
+            "background": "The swamp contains many different properties.  It allows people to live forever or possibly cause death based on whom approaches it.  It has been called both the swamp of evil and the swamp of youth.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "The path to the north leads through murky waters filled with ghostly lights to a hulking darkened formation - the Creature Cave.",
+                "east": "To East, the scent of dank earth and overgrown foliage indicates the Troll Cave, a journey full of treacherous dips and mud trodden pathways.",
+                "south": "The route southward is suffused with an ethereal glamour, fragrant with blooming flowers and gentle fluttering sounds hinting towards the realms of the Faeries Den."
+            },
+            "connections": {
+                "north": "A Creature Cave",
+                "east": "Inside Of A Troll Cave",
+                "south": "Faeries Den"
+            },
+            "items": {
+                "Magical Elixir": {
+                    "name": "Magical Elixir",
+                    "description": "A glowing bottle filled with swirling liquid of various hues.",
+                    "examine_text": "The bottle glows with a soft radiance, the colors inside it swirling and moving as though alive. The cork sealing the top is adorned with archaic markings possibly suggesting potent magical properties.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Swamp"
+                },
+                "Sacred Stone": {
+                    "name": "Sacred Stone",
+                    "description": "This small, black stone is incredibly smooth and surprisingly heavy. It pulsates with a strong energy.",
+                    "examine_text": "The stone appears to be solid obsidian, its obsidian blackness seems to drink in all the light around. Holding it, you feel a sense of gravity, as if it's somehow significant.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Swamp"
+                },
+                "Cursed Sword": {
+                    "name": "Cursed Sword",
+                    "description": "An ancient, eerily glowing sword.",
+                    "examine_text": "The hilt of the sword is wrapped in decaying leather. The blade, despite its countless nicks and scratches, glows with a mysterious energy.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Swamp"
+                },
+                "Healing Herbs": {
+                    "name": "Healing Herbs",
+                    "description": "A bunch of bright, fragrant herbs.",
+                    "examine_text": "The herbs have a refreshing aroma that suggests health and vitality. They are filled with a magical properties reputed to cure diseases and heal injuries.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Swamp"
+                }
+            },
+            "characters": {
+                "Swamp Prophet": {
+                    "name": "Swamp Prophet",
+                    "description": "A entity known as the spirit of the swamp, appears as a shimmering apparition.",
+                    "persona": "I am the Swamp. I decide who is worthy.",
+                    "location": "Swamp",
+                    "goal": "Maintain the balance of the swamp.",
+                    "inventory": {
+                        "Sacred Stone": {
+                            "name": "Sacred Stone",
+                            "description": "A mystic stone glowing in the shades of swamp vegetation",
+                            "examine_text": "Upon closer observation, you can see that the stone has tiny inscriptions on it which seems to be an ancient language. The stone emanates a gentle, captivating glow unmatched by anything you've ever seen.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Magical Realm"
+        },
+        {
+            "name": "Faeries Den",
+            "description": "Stunning with silver walls and gold decorations, Magical items can be found on the shelves, including crystals, faery wands, and a crown.",
+            "background": "The Faerie Den is home to the faeries when they are not out helping others. Faeries come here to rest and regain their magical powers after helping humans in the human realm. No human has ever entered here.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "The journey from the Faeries Den to the Swamp is filled with bewitching beauty, as you pass through luminescent mushrooms that twinkle like the starts and navigate through tangled growths of emerald foliage, their tangled beauty often luring travellers.",
+                "north": "Now the journey turns darker. Entering the Troll Cave means moving through the mist-filled forest filled with gnarled trees. The chatter of the forest creatures reduces as one nears the cave, hinting at the cave's resident who's feared by all.",
+                "south": "Traveling towards the Royal Tent is uplifting. The intensity of the magic in the air increases, with the flora seeming to glow with an ambient light. The hum of magical energy intensifies, almost like a melody, as you near the Tent, making the journey ethereal."
+            },
+            "connections": {
+                "west": "Swamp",
+                "north": "Inside Of A Troll Cave",
+                "south": "The Royal Tent"
+            },
+            "items": {
+                "Magic Crystals": {
+                    "name": "Magic Crystals",
+                    "description": "Many shaped crystals are shimmering on the shelves.",
+                    "examine_text": "As you draw closer, you see that these are not ordinary crystals. They are a deep, translucent purple, glowing with an inner light. It pulses, like a heartbeat. Especially one of the larger crystals, almost as big as your hand, catches your eye.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Faeries Den"
+                },
+                "Faery Wand": {
+                    "name": "Faery Wand",
+                    "description": "A slender, intricate wand is resting on a velvet pillow.",
+                    "examine_text": "The wand appears to be made of some kind of beautiful silver material that you can't identify. It swirls with artful, elegant spirals and is topped with a radiant crystal. You can feel a pulsating hum of magic when you get near it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Faeries Den"
+                },
+                "Faery Crown": {
+                    "name": "Faery Crown",
+                    "description": "A delicate golden crown is displayed under a glass dome.",
+                    "examine_text": "The crown is small and appears to be wrought from pure gold, forming the shapes of intricate flowers and vines. In the center of the crown is a glimmering, heart-shaped gem. It seems imbued with an ethereal glow.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Faeries Den"
+                }
+            },
+            "characters": {
+                "Faerie Queen": {
+                    "name": "Faerie Queen",
+                    "description": "A tiny, ethereal being, beautiful beyond comparison.",
+                    "persona": "We faeries nourish the world, bring harmony.",
+                    "location": "Faeries Den",
+                    "goal": "Protect the magical realm from evil.",
+                    "inventory": {
+                        "Faery Wand": {
+                            "name": "Faery Wand",
+                            "description": "A slim, silver wand twinkles with mysterious enchantments.",
+                            "examine_text": "The wand is about a foot long with intricate carvings that spiral down its length. Mystical runes are engraved at the handle. At the very tip, there is a tiny, glowing star-shaped crystal. It seems delicate, but you can sense a powerful magical current running through it.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Faery Crown": {
+                            "name": "Faery Crown",
+                            "description": "A delicate crown forged from gold, bedecked with numerous gemstones.",
+                            "examine_text": "This golden crown is more than just a symbol, it is an embodiment of the authority and respect for the wearer. It's elegant, adorned with various gemstones that shimmer in the faerie light. Each gem corresponds to a different type of magic, the queen's sovereignty over all types of magic in the realm. It looks light, cool to touch and surprisingly durable.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Magical Realm"
+        },
+        {
+            "name": "The Royal Tent",
+            "description": "The walls of this tent shimmer with a soft glow at every passing breeze.  Though they seem thin and almost weblike, no trace of a draft comes from them.  A bed made of cloth that is both soft and warm hangs in the corner of the tent.  It seems to perfectly fit there, as though it was grown from the tent walls instead of skillfully placed.  The floor is carpeted with impossibly vibrant rugs, the likes of which no mortal eye has seen, and the walls of the tent rise up so high that the ceiling cannot be seen.  A brazier glows softly, and above it hangs a golden teapot.  Vapors rising from its spout waft into the space, smelling of cinnamon and spices. There is a soft glowing stone by one side of the tent wall that looks like a flagstone crafted from an impossibly large pearl. The tent is warm and inviting, and a little unnervingly beautiful.  Truly, this is a place worthy of the Royal Family of the Alabaster Elves.",
+            "background": "The Alabaster Elves disdain those who separate themselves from the magical realm they live in with walls and stone.  Instead they chose to live in fantastical tents, and roam throughout the Realm of Magic, always seeking to unlock the secrets and mysteries throughout the land.  The Royal Tent is but slightly larger than the rest, as the royal family does not hold themselves overly above their subjects.  It was said to have been a gift of the Elves of the North, and the magics of it allow for it to be as practical and durable as it is beautiful to behold.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Traveling north to the Faeries Den, you pass through a misty forest shimmering with ethereal beauty. The air is filled with the sweet aroma of otherworldly blossoms, and you can occasionally glimpse tiny, darting lights between the trees.",
+                "inside": "Journeying inside to the Fountain Of Youth, there is a strange sensation - like passing through a portal into a different world. The forest gives way to an endless stretch of twilight where the time seems to stand still. The path is paved with glowing pebbles, forming a path that seems to hum with ancient magic."
+            },
+            "connections": {
+                "north": "Faeries Den",
+                "inside": "The Fountain Of Youth"
+            },
+            "items": {
+                "Royal Bed": {
+                    "name": "Royal Bed",
+                    "description": "A bed made of shimmering, warm cloth hanging in a corner.",
+                    "examine_text": "Upon closer inspection, the bed seems to have been grown from the tent walls themselves. It shimmers with a soft golden light and seems exceptionally comforting and inviting.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Royal Tent"
+                },
+                "Vibrant Rugs": {
+                    "name": "Vibrant Rugs",
+                    "description": "Carpets of unknown material that radiate an otherworldly vibrance.",
+                    "examine_text": "The rugs are intricately woven with threads of countless colors. None of the patterns are random; they tell stories of the royal family's history.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Royal Tent"
+                },
+                "Golden Teapot": {
+                    "name": "Golden Teapot",
+                    "description": "An ornate teapot, glowing softly above a brazier.",
+                    "examine_text": "Teapot is made of pure gold, adorned with engravings of mythical creatures. It releases a scent of cinnamon and spices.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Royal Tent"
+                },
+                "Luminous Pearl": {
+                    "name": "Luminous Pearl",
+                    "description": "A large, softly glowing pearl used as a flagstone.",
+                    "examine_text": "The pearl emits a soft glow and has a tranquilizing effect, filling its surroundings with peace and harmony.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "The Royal Tent"
+                }
+            },
+            "characters": {
+                "Elf Queen": {
+                    "name": "Elf Queen",
+                    "description": "A regal elven queen whose beauty is matched only by her wisdom.",
+                    "persona": "As queen, it is my duty to lead my people through every trial.",
+                    "location": "The Royal Tent",
+                    "goal": "Maintain the prosperity and harmony in the kingdom.",
+                    "inventory": {
+                        "Luminous Pearl": {
+                            "name": "Luminous Pearl",
+                            "description": "A softly glowing pearl the size of a fist.",
+                            "examine_text": "Under closer inspection, the pearl is luminescent with a soft, warm light that seems to have a life of its own, its hues change subtly, now softer, now brighter.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Royal Bed": {
+                            "name": "Royal Bed",
+                            "description": "A bed made of cloth that is both soft and warm.",
+                            "examine_text": "The bed seems to be grown from the very fabric of the tent, it embodies comfort and luxury. The fabrics carry the faint scent of magical forest blooms.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Golden Teapot": {
+                            "name": "Golden Teapot",
+                            "description": "A luxurious golden teapot hanging over a brazier.",
+                            "examine_text": "The teapot is made of delicate gold, with an intricate design of elves dancing in a forest. It smells of cinnamon and exotic spices, and emits a warm steam.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Queen\u2019s Robe": {
+                            "name": "Queen\u2019s Robe",
+                            "description": "A magnificent royal robe is draped over the back of a chair.",
+                            "examine_text": "The robe is embroidered with fine threads of silver, representing scenes from Elvish mythology. It is soft to the touch and radiates a faint, ethereal glow.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Magical Realm"
+        },
+        {
+            "name": "Secret Magician'S Workshop",
+            "description": "This is the hidden workshop of the most powerful wizard in the land.  There are ornate tapestries on the walls depicting wizards using their powers and potions in battle.",
+            "background": "Mordak, the wizard, constructed this powerful workshop after the death of the most famous king, Henry of Silverton.  Any who enter here immediately become enchanted with the wizard's power, giving them advanced healing powers.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Walking west, you find yourself entering the room of a woodland elf. The scent of wild mushrooms fills the air as you marvel at the tiny frames hanging on the walls.",
+                "north": "Heading north, the path leads you to Echo Hall. You shiver at the frigidly eerie ambiance amidst the echoing sounds of whispered magical chants that seem to bounce off the dome-like walls.",
+                "down": "Taking the path downwards, you arrive at the Wizard's Lair. An overwhelming sense of mystery and intrigue fills you as you navigate amongst painted walls, overgrown pots of plants and empty cages."
+            },
+            "connections": {
+                "west": "Elf'S Room",
+                "north": "Echo Hall",
+                "down": "Wizard'S Lair"
+            },
+            "items": {
+                "Wizard's Robes": {
+                    "name": "Wizard's Robes",
+                    "description": "Beautiful, dark blue robes with celestial symbols etched into the fabric.",
+                    "examine_text": "The dark blue fabric of the robes is surprisingly light, but also very warm. The sparkling celestial symbols stitched into the fabric appear to move and twirl under your stare, as if they are being guided by magic. A large hood and wide sleeves simply add to the mystical look.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Secret Magician'S Workshop"
+                },
+                "Mystical Grimoire": {
+                    "name": "Mystical Grimoire",
+                    "description": "An ancient book filled with spells and enchantments.",
+                    "examine_text": "The grimoire is filled with pages upon pages of cryptic symbols and carefully drawn diagrams. Some of the pages are so filled with notes and annotations that the original text is barely visible. There is a sense of raw power from these pages, a whispering promise of magic and knowledge.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Secret Magician'S Workshop"
+                },
+                "Glowing Potion": {
+                    "name": "Glowing Potion",
+                    "description": "A spellbinding potion that shines with a tranquil, yet potent, magical radiance.",
+                    "examine_text": "When the potion is closely inspected, its light coats everything in a peaceful glow. It is as tranquil as it is potent, filling you with a sense of calm and warmth that even fear cannot penetrate. You can't help but feel that taking this potion would yield a very powerful effect.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Secret Magician'S Workshop"
+                },
+                "Magician's Hat": {
+                    "name": "Magician's Hat",
+                    "description": "A pointy hat that Mordak, the powerful magician, wears.",
+                    "examine_text": "The hat is a classic pointy magician's hat. The velvet fabric is dark and soft, dotted with tiny, sparkling stars. The hat is big and floppy, dropping slightly to one side.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Secret Magician'S Workshop"
+                }
+            },
+            "characters": {
+                "Wizard Mordak": {
+                    "name": "Wizard Mordak",
+                    "description": "A powerful magician, soft-spoken with a profound understanding of magical theory.",
+                    "persona": "I dedicated my life to understand the ancient wisdom, to control the unseen.",
+                    "location": "Secret Magician'S Workshop",
+                    "goal": "Master all aspects of magic.",
+                    "inventory": {
+                        "Mystical Grimoire": {
+                            "name": "Mystical Grimoire",
+                            "description": "An ancient book filled with cryptic symbols and diagrams.",
+                            "examine_text": "The grimoire is bound in ebon leather which feels ice cold to the touch. Its pages are of a parchment you can't identify. Such a book radiates power, leaving a faint blue glow, and it's filled with arcane scripts, some moving and changing as you read. Hand-drawn diagrams depict strange constellations and rituals.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Crystal Ball": {
+                            "name": "Crystal Ball",
+                            "description": "A large crystal orb pulsating with an inner light.",
+                            "examine_text": "The crystal ball is polished to perfection, unmarred by any scratch. It pulses with a hypnotic inner light, swirling mists within hint at mysterious visions. It is set on a polished brass stand with intricate carvings of stars and moons.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Magical Realm"
+        },
+        {
+            "name": "Wizard'S Lair",
+            "description": "The wizard's lair is a mystical room. The walls are painted to resemble the night sky and pots of overgrown plants line the walls. Cages that once held creatures sit on top of an oak table in the center of the lair.",
+            "background": "The wizard of the town was tired of casting spells in public and being ridiculed. He built this room for months in order to have a private place to think and get revenge.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "up": "The journey to the Secret Magician'S Workshop is a dizzying ascent through a magical vortex that rapidly shifts colors and emits enchanting music.",
+                "west": "You walk across a crystal bridge that glows under your feet, the flickering shadows painting a path to Echo Hall.",
+                "south": "Traveling south to the Cabin Of An Ogre, you traverse a murky forest dense with cryptic symbols carved into the trees, casting an eeriness over the path."
+            },
+            "connections": {
+                "up": "Secret Magician'S Workshop",
+                "west": "Echo Hall",
+                "south": "The Cabin Of An Ogre"
+            },
+            "items": {
+                "Ornate Wand": {
+                    "name": "Ornate Wand",
+                    "description": "A beautiful wand with mysterious carvings.",
+                    "examine_text": "This wand is made of black ash with myriad iridescent lines inlaid within its smooth surface. The tip is embedded with a single, radiant crystal that pulses gently. The carvings which adorn it appear to tell a story if you look long enough.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Wizard'S Lair"
+                },
+                "Caged Phoenix Feather": {
+                    "name": "Caged Phoenix Feather",
+                    "description": "A vibrant, glowing feather enclosed in a cage.",
+                    "examine_text": "The feather is a bright, shining contrast to its austere cage. The caged phoenix feather is large, almost as long as your arm, and every color imaginable dances in its glow. The bars of the cage are surprisingly cool to the touch.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Wizard'S Lair"
+                },
+                "Wizard's Robe": {
+                    "name": "Wizard's Robe",
+                    "description": "A dark, thick, enchanted cloth robe.",
+                    "examine_text": "The robe smells of herbs and magic. It is adorned with celestial symbols and feels heavy with enchantment. The soft inner lining feels like it could keep you warm in the coldest of winters.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Wizard'S Lair"
+                }
+            },
+            "characters": {
+                "The Enchantress": {
+                    "name": "The Enchantress",
+                    "description": "A mysterious woman known for her mesmerizing voice and enchanting eyes.",
+                    "persona": "Through my charms, every creature becomes an open book.",
+                    "location": "Wizard'S Lair",
+                    "goal": "Control all magical creatures.",
+                    "inventory": {
+                        "Ornate Wand": {
+                            "name": "Ornate Wand",
+                            "description": "A wizard's wand engraved with mystic symbols.",
+                            "examine_text": "Upon closer inspection, the many symbols etched on the wand appear to be constantly changing, as if imbued with a powerful magic. The wand is light and fits perfectly in your hand.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Crystal Ball": {
+                            "name": "Crystal Ball",
+                            "description": "A large, gleaming crystal ball that seems to swirl with inner light.",
+                            "examine_text": "As you gaze into the crystal ball, you see images of present, past, and future swirling in front of your eyes. It has an aura of otherworldly power.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Magical Realm"
+        },
+        {
+            "name": "The Cabin Of An Ogre",
+            "description": "The wooden walls of the cabin are crudely adorned with a green, suspicious ooze. A dusty rug lays on the cold wooden floor of the cabin, dimly lit with a lantern situated in a corner in front of a large cobweb.",
+            "background": "The ogre built this cabin and has inhabited it for years after being run out of town. He tends to his gardens and imagines what it is like to be among his own one day. He invites no one to this place.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Venturing north, the ambiance shifts from the mundane to the mystical. The scent of freshly turned soil gives way to the aroma of spell ingredients as you approach the wizard's secluded lair.",
+                "west": "Heading west, the air slowly grows damp and stagnant as you move towards the troll's cave. The telltale signs of its frequently used fire are evident even before you arrive at the cave mouth."
+            },
+            "connections": {
+                "north": "Wizard'S Lair",
+                "west": "Inside Of A Troll Cave"
+            },
+            "items": {
+                "Splintered Table": {
+                    "name": "Splintered Table",
+                    "description": "A rugged, decrepit wooden table standing on three legs.",
+                    "examine_text": "The table seems to have seen better days. Its surface is scarred with scratches, stains, and grooves, hinting at years of abuse from an ogre's heavy hand.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Cabin Of An Ogre"
+                },
+                "Lantern": {
+                    "name": "Lantern",
+                    "description": "A rusty old lantern dimly lit",
+                    "examine_text": "The lantern is old with rusty metal surrounding the glass. The flame inside flickers lazily, emanating a weak, yet steady glow.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Cabin Of An Ogre"
+                },
+                "Green Ooze": {
+                    "name": "Green Ooze",
+                    "description": "A sticky green substance trickling down the cabin's walls.",
+                    "examine_text": "The ooze is sticky, thick and disgusting. It emanates a peculiar odour, indicating it might not be entirely natural.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Cabin Of An Ogre"
+                },
+                "Dusty Rug": {
+                    "name": "Dusty Rug",
+                    "description": "A large, faded rug with multiple holes.",
+                    "examine_text": "The rug, probably once beautifully woven, is old and neglected, covered in grime and dust. Its intricate pattern barely visible under the ages of filth.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Cabin Of An Ogre"
+                }
+            },
+            "characters": {
+                "Ogre": {
+                    "name": "Ogre",
+                    "description": "A towering, hulk-like being with green skin and monstrous strength.",
+                    "persona": "I'm misunderstood, not a monster. I prefer quiet and solitude.",
+                    "location": "The Cabin Of An Ogre",
+                    "goal": "Live peacefully without any human interaction.",
+                    "inventory": {
+                        "Club": {
+                            "name": "Club",
+                            "description": "A large, rudimentary club staunched against the wall.",
+                            "examine_text": "A heavy makeshift club with noticeable dents and scratches, showing signs of disuse. The mere size and weight of it suggest that it could inflict a severe blow, but it also is clear it hasn't been used in a long time.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Bag of Seeds": {
+                            "name": "Bag of Seeds",
+                            "description": "A small bag of garden seeds sits on a wooden table.",
+                            "examine_text": "A humble hessian bag full of various seeds. They appear to be organised and separated into different sections. These seeds are the proof of the ogre's love for gardening and solitude.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Magical Realm"
+        }
+    ],
+    "actions": []
+}

@@ -1,0 +1,1091 @@
+{
+    "player": "Sir Reginald",
+    "start_at": "Knight'S Hunting Ground",
+    "game_history": [],
+    "game_over": false,
+    "game_over_description": null,
+    "characters": [
+        {
+            "name": "Sir Reginald",
+            "description": "A senior knight who is now living out his twilight years. In his prime, Sir Reginald was a fierce warrior.",
+            "persona": "In my prime, I would have been a dreadful foe. Now, I seek someone worthy to teach my skills.",
+            "location": "Knight'S Hunting Ground",
+            "goal": "Train a worthy successor of his knightly skills.",
+            "inventory": {}
+        },
+        {
+            "name": "Forest Ghost Child",
+            "description": "A spooky ghost of a child, it is said to have befell to a tragic end on the famous Ghost Trail.",
+            "persona": "I was unfortunate in life... will you sit and spend time with me?",
+            "location": "The Ghost Trail",
+            "goal": "Find a friend to spend time with.",
+            "inventory": {}
+        },
+        {
+            "name": "The Great Oak Spirit",
+            "description": "The spirit of the ancient oak tree, keeps a watch over its home.",
+            "persona": "The spirits and I have been here for centuries, we intend to stay...",
+            "location": "Tree Of Spirits",
+            "goal": "Protect the forest and its creatures.",
+            "inventory": {}
+        },
+        {
+            "name": "Mother Rabbit",
+            "description": "A small and fluffy white rabbit, always seen caring for her young.",
+            "persona": "I must feed my children, will you help?",
+            "location": "Grassy Plains",
+            "goal": "Protect and care for her young.",
+            "inventory": {}
+        },
+        {
+            "name": "Old Beggar",
+            "description": "An old beggar who has lived at the trailhead for years.",
+            "persona": "Can you spare some bread, good sir?",
+            "location": "Trailhead",
+            "goal": "Find food to survive.",
+            "inventory": {}
+        },
+        {
+            "name": "Ivory Buck",
+            "description": "A very elusive, majestic deer with pure white fur. It is said to only appear to the pure of heart.",
+            "persona": "Can you see me? You must be pure of heart.",
+            "location": "Trail Exit",
+            "goal": "Avoid being hunted.",
+            "inventory": {}
+        },
+        {
+            "name": "Fair Maiden",
+            "description": "A young lady of extravagant beauty, she has been lost in the forest since her family crossed the wicked Ogre.",
+            "persona": "Please, kind traveler, can you help me find my way out?",
+            "location": "Path In Forest",
+            "goal": "Find her way out of the forest.",
+            "inventory": {}
+        },
+        {
+            "name": "Gruff Hunter",
+            "description": "A burly man, always seen with a hunting bow in hand.",
+            "persona": "These grounds are ripe for hunting, join me and we can share the spoils.",
+            "location": "Hunting Grounds",
+            "goal": "Hunt the elusive Ivory Buck.",
+            "inventory": {}
+        }
+    ],
+    "locations": [
+        {
+            "name": "Scenic Overlook",
+            "description": "This lovely clearing overlooks the great mountain range. It is covered in wildflowers of all different colors. There are stone benches where one can sit.",
+            "background": "The scenic overlook is the most beautiful location on the trail. It was made to give people a place to sit and reflect on the beauty of nature. For many years, people enjoy it. There have been many proposals and was even a wedding!",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "The path to the Opening To The Drawbridge Of The Castle is laden with mystery and anticipation. The route is lined with dense forest and strewn with indications of historical conflicts.",
+                "south": "The journey to the Grassy Plains feels like stepping into a nature painting. One can almost hear the flutter of butterfly wings and soft squeaks of tiny critters, as the sun casts cheerful rays on the stone pathway."
+            },
+            "connections": {
+                "east": "The Opening To The Drawbridge Of The Castle",
+                "south": "Grassy Plains"
+            },
+            "items": {},
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Trail"
+        },
+        {
+            "name": "The Opening To The Drawbridge Of The Castle",
+            "description": "The trailhead to the forest is a dirt trail, dusty as it has not rained in a while. The overhang of the trees is luscious and green with only patches of sunlight beaming through the dense canopy. There are many large trees, some with arrows still stuck in their trunks. The trail is treacherous as it leads through the densest part of the forest, through a stream and to a well-hidden castle. Once inside the forest, the shade and canopy has provided plenty of opportunities for foliage to grow making it harder to follow.",
+            "background": "The trail leads straight to the drawbridge of the castle. There are arrows stuck in the trunks of the trees from previous battles and the trunks also show scarring from sword hits. The trail leads straight through the forest to the castle which is hidden by the luscious canopy of the trees. Worthy opponents of the castle can get through the trail; however, they then are at the trailhead and face the castle's kingdom and army.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Travelling west to the Scenic Overlook, you will stroll through lush greenery and wildflowers, with the breathtaking mountain range growing closer with each step.",
+                "south": "Heading south towards Knight'S Hunting Ground, you will traverse along a dirt path, encompassed by a rustling wildlife and thickly wooded areas, brimming with life and adventure.",
+                "east": "Venturing east to The Ghost Trail, you will find yourself under the eerie glow of moonlight, in a path cloaked in ghostly legends, as the stars twinkle ominously overhead."
+            },
+            "connections": {
+                "west": "Scenic Overlook",
+                "south": "Knight'S Hunting Ground",
+                "east": "The Ghost Trail"
+            },
+            "items": {},
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Trail"
+        },
+        {
+            "name": "Knight'S Hunting Ground",
+            "description": "The knight's hunting ground is lush and full of animals and other organisms. This area features trees, a long dirt path, and a variety of colorful wildlife.",
+            "background": "There isn't very much to be said about the hunting grounds. Its keepers take a lot of special care to ensure there are plenty of animals to hunt.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "The trailhead to the forest is a dirt trail, dusty as it has not rained in a while. The overhang of the trees is luscious and green with only patches of sunlight beaming through the dense canopy.",
+                "east": "The Tree of Spirits is a large oak tree that is over 500 years old. It's branches spread out several feet and it is home to several animals."
+            },
+            "connections": {
+                "north": "The Opening To The Drawbridge Of The Castle",
+                "east": "Tree Of Spirits"
+            },
+            "items": {
+                "Hunting Knife": {
+                    "name": "Hunting Knife",
+                    "description": "A sharp, well-balanced hunting knife.",
+                    "examine_text": "The knife is lean and mean, built for precision and utility. It has a diamond-shaped cross-section, and it glistens menacingly under the sunlight. The handle is wrapped up in coarse leather, providing a good grip.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Knight'S Hunting Ground"
+                },
+                "Leather Quiver": {
+                    "name": "Leather Quiver",
+                    "description": "A quiver made of sturdy leather, filled with arrows.",
+                    "examine_text": "A sturdy leather quiver, dyed dark green. It holds a number of sleek, feathered arrows. The quiver's strap is thick and built to last, while the interior is divided into sections to keep each arrow separate.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Knight'S Hunting Ground"
+                },
+                "Hunting Flask": {
+                    "name": "Hunting Flask",
+                    "description": "A steel flask filled with a refreshing beverage.",
+                    "examine_text": "A quality flask, polished to a high shine. It's cool to the touch and you can hear liquid sloshing around when you give it a little shake. The top is smoothly threaded, suggesting it can be opened.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Knight'S Hunting Ground"
+                },
+                "Camouflage Hood": {
+                    "name": "Camouflage Hood",
+                    "description": "A hood dyed with different shades of green and brown to blend into the environment.",
+                    "examine_text": "The hood is made of a durable fabric, dyed with streaks of green, brown, and black. The inside is lined with a softer material, and there's a slight weight to it, suggesting it's made to resist elements.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Knight'S Hunting Ground"
+                }
+            },
+            "characters": {
+                "Sir Reginald": {
+                    "name": "Sir Reginald",
+                    "description": "A senior knight who is now living out his twilight years. In his prime, Sir Reginald was a fierce warrior.",
+                    "persona": "In my prime, I would have been a dreadful foe. Now, I seek someone worthy to teach my skills.",
+                    "location": "Knight'S Hunting Ground",
+                    "goal": "Train a worthy successor of his knightly skills.",
+                    "inventory": {
+                        "Rusty Sword": {
+                            "name": "Rusty Sword",
+                            "description": "An old and rusty sword, probably belonged to Sir Reginald",
+                            "examine_text": "This sword has seen better days. The edge is dull and rust has set in, yet its weight and balance suggest it was once a formidable weapon. You can almost feel its previous owner's thirst for valorous deeds.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Ancient Shield": {
+                            "name": "Ancient Shield",
+                            "description": "An ancient shield that seems to have seen many battles",
+                            "examine_text": "The shield is dented and scratched, with signs of countless encounters etched upon its surface. It's heavy, but a comforting weight. You can almost hear the clang of swords and the roars of battles long past.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Trail"
+        },
+        {
+            "name": "The Ghost Trail",
+            "description": "The Ghost Trail is dark, with no torches or writing.  The stars shine over head, the glow of the moon seems to beam in lulls. The trail seems to go on east or west as far as the eye can see.",
+            "background": "It is rumored if you walk the ghost trail long enough you will end up like the little boy who led his family on this road to murder them.  Their spirits are said to collect little children.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "The trailhead to the forest is a dirt trail, dusty as it has not rained in a while. Through the densest part of the forest, you will come across a well-hidden castle.",
+                "south": "Heavily forested with dense undergrowth that stretches for miles, this is often used by the King and his family members for evening walks.",
+                "east": "The trailhead is a worn down area leading in many directions, showing the wear of constant horse travel and other methods of transportation."
+            },
+            "connections": {
+                "west": "The Opening To The Drawbridge Of The Castle",
+                "south": "Across The King'S Garden",
+                "east": "Trailhead"
+            },
+            "items": {
+                "Old Lantern": {
+                    "name": "Old Lantern",
+                    "description": "A battered, rusty lantern. It seems old and abandoned.",
+                    "examine_text": "The lantern is really old and the glass is already cracked. It's made from rusty iron. By some miracle, it seems to still hold some oil in it.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Ghost Trail"
+                },
+                "Cloak": {
+                    "name": "Cloak",
+                    "description": "A dirty, torn cloak hangs on the trail's sign pole.",
+                    "examine_text": "The cloak is dirty and dusty. It is torn in many places but could perhaps still offer some shelter from the cold.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "The Ghost Trail"
+                },
+                "Ghostly Amulet": {
+                    "name": "Ghostly Amulet",
+                    "description": "An ancient, pallid amulet that appears to glow dimly with ghostly light.",
+                    "examine_text": "The amulet hangs on a thin, silvery chain. The center bears a large, clear gem which seems to flicker with an inner light. The spectral light it emits adds an eerie quality to it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "The Ghost Trail"
+                }
+            },
+            "characters": {
+                "Forest Ghost Child": {
+                    "name": "Forest Ghost Child",
+                    "description": "A spooky ghost of a child, it is said to have befell to a tragic end on the famous Ghost Trail.",
+                    "persona": "I was unfortunate in life... will you sit and spend time with me?",
+                    "location": "The Ghost Trail",
+                    "goal": "Find a friend to spend time with.",
+                    "inventory": {
+                        "Teddy Bear": {
+                            "name": "Teddy Bear",
+                            "description": "An old, worn-out teddy bear that seems to still have some form of life in it.",
+                            "examine_text": "This teddy bear, though it's clearly seen better days, still feels oddly warm. Scraps of fluff stick out from where it's been sewn back together over the years. It's missing an eye and its fur is faded \u2013 but it has a charm to it.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Ghostly Tear": {
+                            "name": "Ghostly Tear",
+                            "description": "A single tear fallen from the ghost child's eye, shimmering in the darkness.",
+                            "examine_text": "Upon closer examination, the tear sparkles with an ethereal glow. Though it should have evaporated or soaked into the earth, it remains intact, pulsating softly as though holding some spectral emotion.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": true,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Trail"
+        },
+        {
+            "name": "Tree Of Spirits",
+            "description": "The Tree of Spirits is a large oak tree that is over 500 years old. It exceeds 100 feet tall and 10 feet wide. It's branches spread out several feet and it is home to several animals.",
+            "background": "The Tree of Spirits is supposed to contain the souls of everyone who has died in the forest for the past 500 years.  Legend has it if you disturb the tree, it will capture your soul as it's own.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Traveling west from the Tree of Spirits, one enters the Knight'S Hunting Ground. The journey is rather serene, carrying the aroma of the forest with the occasional rustle of wildlife.",
+                "south": "Southward from the Tree of Spirits are the Grassy Plains. The transition from forest to open fields is refreshing with a gentle cool breeze and a clear sky filled with cotton candy-like clouds."
+            },
+            "connections": {
+                "west": "Knight'S Hunting Ground",
+                "south": "Grassy Plains"
+            },
+            "items": {
+                "Ancient Acorn": {
+                    "name": "Ancient Acorn",
+                    "description": "An acorn from the Tree of Spirits, glowing with a mysterious energy",
+                    "examine_text": "The acorn is rough to the touch, with a faint, pulsating glow. It is rumored to hold great power due to its connection with the souls trapped within the tree.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Tree Of Spirits"
+                },
+                "Spirit-Brew Berries": {
+                    "name": "Spirit-Brew Berries",
+                    "description": "A handful of shimmering berries picked from a nearby bush. They are said to have healing properties.",
+                    "examine_text": "Each berry is a vibrant, almost ethereal blue. Their sweet scent fills the air, making your mouth water. It's said these can be brewed into a potent healing draught.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Tree Of Spirits"
+                },
+                "Bark of Protection": {
+                    "name": "Bark of Protection",
+                    "description": "An enchanting piece of bark from the Tree of Spirits, believed to ward off harm.",
+                    "examine_text": "The bark is rough yet mesmerizing, with bright swirls of colors reflecting from its surface. It is believed to shield the wearer from harm.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Tree Of Spirits"
+                },
+                "Feathered Nest": {
+                    "name": "Feathered Nest",
+                    "description": "A slightly glowing birds nest, nestled in one of the tree's branches.",
+                    "examine_text": "This beautiful nest is finely woven from small twigs and leaves, lined with glowing feathers from the birds who've made the Tree of Spirits their home. It's quite big, and something is rustling below the feathers...",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Tree Of Spirits"
+                }
+            },
+            "characters": {
+                "The Great Oak Spirit": {
+                    "name": "The Great Oak Spirit",
+                    "description": "The spirit of the ancient oak tree, keeps a watch over its home.",
+                    "persona": "The spirits and I have been here for centuries, we intend to stay...",
+                    "location": "Tree Of Spirits",
+                    "goal": "Protect the forest and its creatures.",
+                    "inventory": {
+                        "Acorn of Time": {
+                            "name": "Acorn of Time",
+                            "description": "An ancient acorn that is said to hold the wisdom of times gone by.",
+                            "examine_text": "The Acorn of Time glows with an ethereal light and vibrates softly in your hand. Runes are encrypted across its surface, pulsating as if whispering tales of ancient years.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Leaf of Eternity": {
+                            "name": "Leaf of Eternity",
+                            "description": "A celestial leaf said to prolong the lifespan whoever holds it.",
+                            "examine_text": "The Leaf of Eternity shimmers with a blend of transcendent colors. Its veins flawlessly catching the light, map out what looks like an endlessly stretching forest.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Trail"
+        },
+        {
+            "name": "Grassy Plains",
+            "description": "Flowers are blooming all around and the sun is shining. Small animals are roaming the area looking for food and relaxing. The trail is located in the center of the grassy plain and is made of stone.",
+            "background": "This trail leads to a cave deep in the forest. Many people have followed the trail and entered the forest to look for treasure that was lost long ago, but no one has been able to find it.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Traversing northwards, the ethereal whispers of gossamer winds lead to the mystical Tree Of Spirits, where vibrant, life-filled flora effortlessly transitions to an arena of timeless legacy.",
+                "west": "Journeying west along the meandering stony trail, the panoramic vista of the Scenic Overlook unfurls in swathes of colorful wildflower expanses under the vast azure stretch of the sky."
+            },
+            "connections": {
+                "north": "Tree Of Spirits",
+                "west": "Scenic Overlook"
+            },
+            "items": {},
+            "characters": {
+                "Mother Rabbit": {
+                    "name": "Mother Rabbit",
+                    "description": "A small and fluffy white rabbit, always seen caring for her young.",
+                    "persona": "I must feed my children, will you help?",
+                    "location": "Grassy Plains",
+                    "goal": "Protect and care for her young.",
+                    "inventory": {
+                        "Bundle of Grass": {
+                            "name": "Bundle of Grass",
+                            "description": "A towering pile of fresh grass tied together with twine.",
+                            "examine_text": "A large bundle of grass, fresh from the field. It's tied together securely with twine to make it easy to transport. Each blade of grass is lush and green, recently plucked from the ground.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": true,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Small Carrots": {
+                            "name": "Small Carrots",
+                            "description": "A bunch of small orange carrots tied together.",
+                            "examine_text": "A bunch of small, freshly plucked carrots. They are bright orange, crunchy and full of nutrients. Perfect for feeding to a family of rabbits.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": true,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Trail"
+        },
+        {
+            "name": "Trailhead",
+            "description": "the trailhead is a worn down area leading in many directions, it has shown the wear of constant horse travel and other methods of transportation. it is till well used but in need of a makeover",
+            "background": "this area is notorious for fights and robberies, there are many poor people in the area who could use some food and money",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Moving west from the Trailhead takes you down an eerily calm path. Darkness swallows up any light as you venture further into The Ghost Trail, feeling the crunch of fallen leaves underfoot and hearing the faint whispering winds that carry old tales of ghostly encounters.",
+                "south": "Traveling south from the Trailhead, you enter the bountiful Hunting Grounds. You can hear the rustling of the lush green foliage in the breeze and distant calls of wildlife, creating a symphony of nature that is both soothing and exciting for any hunting enthusiasts."
+            },
+            "connections": {
+                "west": "The Ghost Trail",
+                "south": "Hunting Grounds"
+            },
+            "items": {
+                "Old Signboard": {
+                    "name": "Old Signboard",
+                    "description": "An aged wooden sign.",
+                    "examine_text": "Up close, you can see the faded lettering of various trail names and distances. Despite its age, the sign still serves its purpose efficiently.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Trailhead"
+                },
+                "Old Wagon Wheel": {
+                    "name": "Old Wagon Wheel",
+                    "description": "A weathered wagon wheel resting against a tree.",
+                    "examine_text": "Time and the elements have not been kind to this old wheel. From the looks of it, it might have been part of a merchant's caravan once.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Trailhead"
+                },
+                "Loaf of Bread": {
+                    "name": "Loaf of Bread",
+                    "description": "A half-eaten loaf of bread.",
+                    "examine_text": "Despite being half-eaten and slightly stale, this loaf of bread could potentially be a welcome meal for someone in need.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Trailhead"
+                },
+                "Cooking Pot": {
+                    "name": "Cooking Pot",
+                    "description": "A rusty old cooking pot.",
+                    "examine_text": "Despite the rust, the pot still seems serviceable. You could probably use it to cook something, given the right ingredients.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Trailhead"
+                },
+                "Old Blanket": {
+                    "name": "Old Blanket",
+                    "description": "A threadbare blanket.",
+                    "examine_text": "While it may not afford much warmth, it's definitely better than nothing.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Trailhead"
+                }
+            },
+            "characters": {
+                "Old Beggar": {
+                    "name": "Old Beggar",
+                    "description": "An old beggar who has lived at the trailhead for years.",
+                    "persona": "Can you spare some bread, good sir?",
+                    "location": "Trailhead",
+                    "goal": "Find food to survive.",
+                    "inventory": {
+                        "Worn Out Shoes": {
+                            "name": "Worn Out Shoes",
+                            "description": "A pair of shoes that are nearly torn to shreds",
+                            "examine_text": "Upon closer inspection, these shoes are held together more by hope than any material substance. The sole is nearly completely gone and the upper part is a patchwork of mended spots.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Crutches": {
+                            "name": "Crutches",
+                            "description": "A pair of old wooden crutches, beaten and scratched from extensive use",
+                            "examine_text": "These crutches, likely hand made, have seen better days. The underarm pads are worn thin and the wood is splintering in several places. Still, they seem to be holding up well enough to support someone's weight.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Trail"
+        },
+        {
+            "name": "Trail Exit",
+            "description": "The woodland area creates a gentle, peaceful feel as one walks along past the leafy fronds and gently shifting foliage.  The path is firm and wide, having been traversed by many feet, but not so wide as to allow a merchant's cart to pass through.  A bird's cry sounds in the distance, followed by a ruffle of feathers, and then silence.  The beauty of the forest hides the struggle of nature that lies within...",
+            "background": "This forest has an abundance of deer and other wildlife that the local peasants often hunt, when politics allow.  Various kings have shown their largesse or greed by allowing their subjects free (or lack thereof) access to what is official part of the Royal grounds, though no one of noble blood has been see there for centuries.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Traveling north along the wooded trail, the bones lining the path creak eerily beneath your footsteps. The once vibrant trail now hums with a mysterious energy.",
+                "east": "Heading east towards the Hunting Grounds, the scent of rich greenery grows stronger. Echoes of knightly yells and the rustling of wildlife resonate even strongly as you move closer."
+            },
+            "connections": {
+                "north": "Path In Forest",
+                "east": "Hunting Grounds"
+            },
+            "items": {
+                "Large Oak Tree": {
+                    "name": "Large Oak Tree",
+                    "description": "A centuries-old oak tree that towers over the trail exit",
+                    "examine_text": "The tree is majestic, with a sturdy trunk and sprawling branches. Some initials have been carved into its bark, probably by lovers or hopeful adventurers leaving their mark. There is a sense of history and wisdom about this old tree; it has silently observed the passing of time and events in this forest.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Trail Exit"
+                },
+                "Broken Branch": {
+                    "name": "Broken Branch",
+                    "description": "A sturdy-looking branch that has snapped off the tree",
+                    "examine_text": "The branch, probably from the oak tree, is solid and hefty, although one end is splintered from where it broke off. It's long and light enough to serve a purpose as a makeshift weapon or walking stick",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Trail Exit"
+                },
+                "Bird Nest": {
+                    "name": "Bird Nest",
+                    "description": "A small nest at an upper branch of the oak",
+                    "examine_text": "Upon careful observation, you see a small, delicately woven bird nest. Although the bird has flown away, the nest is a testament to nature's craftsmanship. It's perfectly formed, possibly with three or four small eggs in it.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Trail Exit"
+                },
+                "Peasant's Quiver": {
+                    "name": "Peasant's Quiver",
+                    "description": "A leather quiver discarded by a peasant",
+                    "examine_text": "The quiver is crafted from worn, sturdy leather with a strap for shoulder carry. It's designed to hold a set of arrows. Distinct smell of animal's skin confirms it's not new, although it's empty now and the arrows are nowhere to be found.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Trail Exit"
+                }
+            },
+            "characters": {
+                "Ivory Buck": {
+                    "name": "Ivory Buck",
+                    "description": "A very elusive, majestic deer with pure white fur. It is said to only appear to the pure of heart.",
+                    "persona": "Can you see me? You must be pure of heart.",
+                    "location": "Trail Exit",
+                    "goal": "Avoid being hunted.",
+                    "inventory": {
+                        "Ivory Antler Piece": {
+                            "name": "Ivory Antler Piece",
+                            "description": "A piece of antler, slightly yellow in color, found on your path.",
+                            "examine_text": "A part of antler that seems to be detached naturally, worn by time and weather. Although slightly tattered, it's weight and reinforced edges directly indicate the healthy condition and longevity of the deer it once belonged to.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Trail"
+        },
+        {
+            "name": "Path In Forest",
+            "description": "The trail path is a well designed path in the middle of a deep, dark forest. It is made purely from the bones of the innocent that were sacrificed to the ogre. There are eyes looking in the dark at you as you walk on the trail.",
+            "background": "The trail used to be a fun and interesting trail to walk on in the light before the war against humanity. Thousands of humans fought for the right of the trail and now it is dark and mysterious.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "The woodland area creates a gentle, peaceful feel as one walks along past the leafy fronds and gently shifting foliage.  The path is firm and wide, having been traversed by many feet, but not so wide as to allow a merchant's cart to pass through.",
+                "east": "The trailhead is a worn down area leading in many directions, it has shown the wear of constant horse travel and other methods of transportation. It is till well used but in need of a makeover."
+            },
+            "connections": {
+                "south": "Trail Exit",
+                "east": "Trailhead"
+            },
+            "items": {
+                "Ancient Bone": {
+                    "name": "Ancient Bone",
+                    "description": "A bone from an unknown animal that adds to the structural integrity of the path",
+                    "examine_text": "It is a tinted piece of bone, aged and weathered. The bone is exceptionally tough and etched with marks of old runes.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Path In Forest"
+                },
+                "Scary Eyes": {
+                    "name": "Scary Eyes",
+                    "description": "Eyes that continuously watch you from the darkness of the forest",
+                    "examine_text": "These eyes glow with an ominous gleam. They seem to follow you around, staring with an intense scrutiny.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Path In Forest"
+                },
+                "Ogre's Club": {
+                    "name": "Ogre's Club",
+                    "description": "A massive weapon once wielded by the Ogre of the trail",
+                    "examine_text": "The club is massive, crudely constructed, but deadly nevertheless. It is stained with ancient tales of violence and combat.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Path In Forest"
+                }
+            },
+            "characters": {
+                "Fair Maiden": {
+                    "name": "Fair Maiden",
+                    "description": "A young lady of extravagant beauty, she has been lost in the forest since her family crossed the wicked Ogre.",
+                    "persona": "Please, kind traveler, can you help me find my way out?",
+                    "location": "Path In Forest",
+                    "goal": "Find her way out of the forest.",
+                    "inventory": {
+                        "Golden Locket": {
+                            "name": "Golden Locket",
+                            "description": "A beautifully crafted golden locket, it seems quite old.",
+                            "examine_text": "Upon a closer look, the golden locket is intricately carved with small figures that tell a long-forgotten story. It is adorned with an inlaid emerald gem. The locket opens to reveal a faded portrait of a noble woman.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Silken Handkerchief": {
+                            "name": "Silken Handkerchief",
+                            "description": "A delicate handkerchief made of pure silk.",
+                            "examine_text": "The handkerchief is made from the finest silk you've ever seen. Its edges are embroidered with a delicate leaf pattern in silver thread, and a monogrammed 'F' is placed at one corner, signaling the Fair Maiden's ownership.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Trail"
+        },
+        {
+            "name": "Hunting Grounds",
+            "description": "The hunting grounds are spacious and full of wildlife. A variety of hogs and oxen cross the grounds every day. The fields are lush with green and the skies always deep blue.",
+            "background": "The hunting ground is revered among knights. The greatest knights and archers practice day and night slaying pigs. Some say the grounds are even haunted with the spirits of the deceased organisms.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "The woodland area creates a gentle, peaceful feel as one walks along past the leafy fronds and gently shifting foliage. The path is firm and wide, having been traversed by many feet, but not so wide as to allow a merchant's cart to pass through. Various kings have shown their largesse or greed by allowing their subjects free (or lack thereof) access to what is official part of the Royal grounds, though no one of noble blood has been see there for centuries.",
+                "north": "The trailhead is a worn down area leading in many directions. Tattered from constant horse travel and other methods of transportation, it is in need of care. This area, notorious for fights and robberies, reveals the hardships of the less fortunate who frequent it."
+            },
+            "connections": {
+                "west": "Trail Exit",
+                "north": "Trailhead"
+            },
+            "items": {
+                "Wild Fruits": {
+                    "name": "Wild Fruits",
+                    "description": "A selection of brightly colored fruits clustered at the base of lone tree.",
+                    "examine_text": "The fruits vary in size, some as small as cherries while others are as big as a clenched fist. Their colors are just as varied, each adding to the enticing appearance of this natural bounty.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Hunting Grounds"
+                },
+                "Hunting Bow": {
+                    "name": "Hunting Bow",
+                    "description": "A sturdy bow, crafted from a tough flexible wood. Perfect for hunting.",
+                    "examine_text": "This bow is a piece of art. The wood is smoothly polished to ease tension, while the string, surprisingly, is of such strength that could withstand even the toughest arrow's speed.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Hunting Grounds"
+                },
+                "Leather Quiver": {
+                    "name": "Leather Quiver",
+                    "description": "A handy quiver made of sturdy leather. It comes full of sharp arrows.",
+                    "examine_text": "The leather quiver radiates an aroma of wild animals. The arrows are sharp and ready, glistening under the sun, promising to pierce through any flesh.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": true
+                    },
+                    "location": "Hunting Grounds"
+                },
+                "Gourd Flask": {
+                    "name": "Gourd Flask",
+                    "description": "A flask made out of a hollowed gourd, it\u2019s full of refreshing water.",
+                    "examine_text": "The gourd flask is rough to touch, with bits of the natural gourd's outer shell still on. It's quite heavy, indicating that it's full of water.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Hunting Grounds"
+                },
+                "Carved Stone": {
+                    "name": "Carved Stone",
+                    "description": "A stone carved with inscriptions. It may be of importance.",
+                    "examine_text": "The stone is engraved with an old language. The characters are so complex that it's hard to interpret their meanings.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Hunting Grounds"
+                }
+            },
+            "characters": {
+                "Gruff Hunter": {
+                    "name": "Gruff Hunter",
+                    "description": "A burly man, always seen with a hunting bow in hand.",
+                    "persona": "These grounds are ripe for hunting, join me and we can share the spoils.",
+                    "location": "Hunting Grounds",
+                    "goal": "Hunt the elusive Ivory Buck.",
+                    "inventory": {
+                        "Handmade Bow": {
+                            "name": "Handmade Bow",
+                            "description": "A sturdy wooden bow, crafted by hand with surprising precision.",
+                            "examine_text": "The bow is heavy but meticulously balanced. The string is tight and ready for action. There are notches on the wood where the user has kept count of his kills.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Quiver of Arrows": {
+                            "name": "Quiver of Arrows",
+                            "description": "A leather quiver filled with homemade arrows. Essential for hunting.",
+                            "examine_text": "The quiver is made from sturdy leather, and it fits comfortably on the shoulder. The arrows within are sharp, each feathered with meticulous care. It looks like these were made to kill.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Trail"
+        },
+        {
+            "name": "Across The King'S Garden",
+            "description": "Heavily forested with dense undergrowth that stretches for miles. A cool mist enshrouds the trees and shrubs. The sounds of birds chirping fills the air and in the distance, the rumbling of a waterfall can be heard.",
+            "background": "Often used by the King and his family members for evening walks. It is part of the Kings Land that has been left untouched by man and is only presided by nature itself. It is said that the King often brings his war officers here to discuss secrets and make important decisions.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "The path to The Ghost Trail is a haunting journey; it feels as though the air turns chillier as you continue forward.  A sense of eerie silence grows, as the chirping of birds falls away, replaced by the distant howl of a lone wolf. Before long, you find yourself engulfed in darkness, standing before the ominously named Ghost Trail."
+            },
+            "connections": {
+                "north": "The Ghost Trail"
+            },
+            "items": {
+                "Ancient Oak Tree": {
+                    "name": "Ancient Oak Tree",
+                    "description": "A towering, majestic oak tree with sprawling branches and sturdy trunk.",
+                    "examine_text": "This ancient creation of nature looks like it's been here for hundreds of years. The bark is rough and knotty, making progress difficult. A few holes in the tree suggest the existence of squirrel's nests.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Across The King'S Garden"
+                },
+                "King's War Map": {
+                    "name": "King's War Map",
+                    "description": "A detailed war map illustrating the layout of neighbouring kingdoms.",
+                    "examine_text": "This map, painted on a heavy piece of parchment, exhibits the strategic genius of the King. The details, illustrated with astute precision, depict the terrains, fortresses and key areas of the nearby kingdoms. It's secured in a leather tube.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Across The King'S Garden"
+                },
+                "Soft Moss Bed": {
+                    "name": "Soft Moss Bed",
+                    "description": "A clump of damp, soft moss underfoot.",
+                    "examine_text": "A thick bed of plush seasonal moss. It's cool to the touch and brings a sense of calming tranquility. It's the perfect place to take a quick nap if you don't mind a few insects.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Across The King'S Garden"
+                },
+                "King's Sword": {
+                    "name": "King's Sword",
+                    "description": "The King's ornate, jeweled sword, gleaming in the light.",
+                    "examine_text": "It's made of high-quality steel, a symbol of power and wealth. The hilt is adorned with precious gemstones, and the blade is engraved with the King's official crest.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Across The King'S Garden"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Trail"
+        }
+    ],
+    "actions": []
+}

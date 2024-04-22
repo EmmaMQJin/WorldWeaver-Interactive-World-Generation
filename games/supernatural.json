@@ -1,0 +1,1140 @@
+{
+    "player": "Ghost of the Wife",
+    "start_at": "Haunted Basement",
+    "game_history": [],
+    "game_over": false,
+    "game_over_description": null,
+    "characters": [
+        {
+            "name": "Ghost of the Wife",
+            "description": "She is the spirit of a woman who was beaten to death by her husband. She is dressed in clothing from a past era and is constantly crying.",
+            "persona": "I just wanted to stop the pain, never meant to scare anyone. My cries echo in the basement, reminding people of the horrors that happened here.",
+            "location": "Haunted Basement",
+            "goal": "She wants justice and to make her story known.",
+            "inventory": {}
+        },
+        {
+            "name": "Monk Simon",
+            "description": "He is the ghost of a long dead monk. His spectral form is still seen in his old robe. ",
+            "persona": "A world of seclusion was what I wanted, lonely but peaceful. Now I have to share this room with whosoever dares to enter.",
+            "location": "Ghost Monk Quarters",
+            "goal": "He is seeking enlightenment even in death.",
+            "inventory": {}
+        },
+        {
+            "name": "Forest Guardian",
+            "description": "Seen as a gigantic wolf by those who meet him, he stands as a guardian to the spirits of the forest and the woodland people.",
+            "persona": "I am the Forest Guardian, as silent as the wind, as firm as the mountain. My life is bound to this forest and its creatures.",
+            "location": "Goddess Hollow",
+            "goal": "He wants to protect the forest from any external threat.",
+            "inventory": {}
+        },
+        {
+            "name": "King of Ghosts",
+            "description": "He is a great spectral monarch who commands the spirits of a thousand warriors. His form is tall, gaunt and adorned with a magnificent ethereal crown.",
+            "persona": "A king in life, a king in death. I wander eternally on this bridge, my battlefield.",
+            "location": "Bridge In The Forest",
+            "goal": "He is looking for a worthy opponent to free his spirit.",
+            "inventory": {}
+        },
+        {
+            "name": "Ethereal Gladiator",
+            "description": "Formerly the greatest knight of his era, now he is a ghost doomed to fight eternally in the arena.",
+            "persona": "In life, I desired glory. In death, I desire only an honorable end to the endless fights.",
+            "location": "Fighting Arena Inside Tourney Grounds",
+            "goal": "He wants to find a warrior strong enough to end his eternal service.",
+            "inventory": {}
+        },
+        {
+            "name": "Sorceress Adepta",
+            "description": "She is master of the arcane practicing her arts in the Magic Room. Her eyes glow with intense power.",
+            "persona": "I was left behind in this timeless room. One would go mad with the loneliness, but I've found solace in my spells.",
+            "location": "Magic Room",
+            "goal": "She longs to reverse the spell that traps her in the room.",
+            "inventory": {}
+        },
+        {
+            "name": "Galactic Entity",
+            "description": "This being exists pridefully between worlds. It is made up of stardust and cosmic energy.",
+            "persona": "I am without shape, without form, and I dwell between. I was born in the cosmos, and to the cosmos, I shall return.",
+            "location": "Astral Plane",
+            "goal": "It wants to find a vessel to understand the physical realm.",
+            "inventory": {}
+        },
+        {
+            "name": "Druid of Stonehenge",
+            "description": "An ancient druid who has seen the rise and fall of many rulers. His figure is withered yet radiates ancient power.",
+            "persona": "I am the keeper of Stonehenge. My knowledge has been passed down from generation to generation.",
+            "location": "Stonehenge",
+            "goal": "He wants to guard and pass on his ancient knowledge.",
+            "inventory": {}
+        },
+        {
+            "name": "Silent Sentinel",
+            "description": "A strong warrior made of leaves and roots. He stands tall in the Glade of mysteries.",
+            "persona": "Crafted from the forest itself, I stand as the sentinel. Feeling the breath of mystery around me, I guard this sacred place.",
+            "location": "The Glade Of Mysteries",
+            "goal": "His purpose is to protect the mystical pool of the Glade.",
+            "inventory": {}
+        }
+    ],
+    "locations": [
+        {
+            "name": "Haunted Basement",
+            "description": "The basement is cold, damp, and dark. What little light coming in from the window is blotted out and dimmed by the spider webs sprawled across its surface. The shadows in the corners of the room appear nearly pitch black, and it almost feels as if something is looking back at you from within them.",
+            "background": "At night, the sound of pacing footsteps are heard, pattering against the concrete floor. On some nights the sound of a crying woman can be heard echoing from within the basement. A young mother who had recently moved in with her family could no longer take the sounds at night, her curiosity driving her mad. One day, she descended into the basement and found some old documents and journals. As it turns out, the man who built the house would drag his wife into the basement and beat her routinely. After a particularly rough day at work he beat her especially savagely and killed her.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "up": "Climbing the old wooden stairs from the haunted basement, you get an uneasy feeling of leaving the horrors below, only to be greeted by the Magic Room, a place from which there's no return.",
+                "outside": "Leaving the dampness of the basement, you emerge into the bright and open landscape of Stonehenge, a journey from closed quarters into the freedom of an open sky."
+            },
+            "connections": {
+                "up": "Magic Room",
+                "outside": "Stonehenge"
+            },
+            "items": {
+                "Old Journals": {
+                    "name": "Old Journals",
+                    "description": "A stack of old, dusty journals",
+                    "examine_text": "The pages of these journals are worn and yellowed, filled with the handwritten notes of the home's previous owner. Flipping through the journal, you discover it chronicles the disturbing activities the owner partook in, within this haunted basement - including acts of violence against his wife.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Haunted Basement"
+                },
+                "Old Mirror": {
+                    "name": "Old Mirror",
+                    "description": "A cracked mirror, a relic from a forgotten time",
+                    "examine_text": "Looking into this cracked mirror, you can see your reflection, but with a cold, spectral woman standing behind you. Barely visible tears stream down her face, as she looks forlornly back at you.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Haunted Basement"
+                },
+                "Old Crate": {
+                    "name": "Old Crate",
+                    "description": "An old wooden crate, sealed tight and covered in immemorial dust",
+                    "examine_text": "This old crate is sealed and covered in dust. The wood has slightly rotten and is infested with bugs. There seems to be something inside, although what that could be is a mystery.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Haunted Basement"
+                },
+                "Moldy Bread": {
+                    "name": "Moldy Bread",
+                    "description": "A piece of bread covered in green-blue mold",
+                    "examine_text": "This bread slice is completely encrusted with green-blue mold. Eating this would almost certainly have dire consequences.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Haunted Basement"
+                }
+            },
+            "characters": {
+                "Ghost of the Wife": {
+                    "name": "Ghost of the Wife",
+                    "description": "She is the spirit of a woman who was beaten to death by her husband. She is dressed in clothing from a past era and is constantly crying.",
+                    "persona": "I just wanted to stop the pain, never meant to scare anyone. My cries echo in the basement, reminding people of the horrors that happened here.",
+                    "location": "Haunted Basement",
+                    "goal": "She wants justice and to make her story known.",
+                    "inventory": {
+                        "Wife's Locket": {
+                            "name": "Wife's Locket",
+                            "description": "A tarnished silver locket, that belonged to the wife. It has a small portrait inside.",
+                            "examine_text": "The locket is worn and tarnished, suffering from years of neglect. A faint sense of sadness washes over you as you peer at the preserved portrait of the wife inside. More than just a faded image, her eyes seem to speak of torments past.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Broken Chain": {
+                            "name": "Broken Chain",
+                            "description": "A chain snapped in half. It was from the wife's locket that was torn during one of the husband's fits of rage.",
+                            "examine_text": "The chain is rusted over and broken in two, it would be impossible to link back together again. A brutal reminder of the violence that once filled this space.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Supernatural"
+        },
+        {
+            "name": "Astral Plane",
+            "description": "An area between worlds where the physics known to man become irrelevant. It is a space beyond time that is home to being spectral and inconceivable to those without the eyes to see them.",
+            "background": "The astral plane has always existed. It has no beginning and no end. Those who find themselves here must tremble at the enormity of it. This is a place where men's nightmares have made their abode.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "down": "As you descend from the Astral Plane, the ethereal glow fades giving way to oppressing darkness and an unsettling chill runs down your spine as you near the Haunted Basement.",
+                "north": "Moving northward from this spaceless realm, you feel a calming sensation as the detritus of Astral Plane blends seamlessly into the lush woodland surroundings of Goddess Hollow.",
+                "east": "Traveling east, the formless astral landscape gives way to ordered chaos, a symphony of granite monoliths reaching for the heavens announce your arrival at Stonehenge."
+            },
+            "connections": {
+                "down": "Haunted Basement",
+                "north": "Goddess Hollow",
+                "east": "Stonehenge"
+            },
+            "items": {
+                "Star Shard": {
+                    "name": "Star Shard",
+                    "description": "A shard of a dead star, glowing with a hauntingly beautiful aura.",
+                    "examine_text": "The shard pulses with energy, the remnant of a celestial body now long gone. It emits a soft light, illuminating the astral surroundings. Its surface is smooth and yet infinitely complex, radiating with a silent promise of ancient secrets",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Astral Plane"
+                },
+                "Void Cloak": {
+                    "name": "Void Cloak",
+                    "description": "A cloak woven from threads of pure nothingness, almost invisible to the naked eye.",
+                    "examine_text": "As you look closer at the cloak, it almost appears as if it's made from the void itself. It's surface shifts and moves like an erratic liquid, only barely acknowledging the rules of the physical world",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Astral Plane"
+                },
+                "Aether Flask": {
+                    "name": "Aether Flask",
+                    "description": "A small flask filled with a luminescent liquid, the very essence of the astral plane itself.",
+                    "examine_text": "The liquid inside the flask glows with an ethereal light. It swirls around, changing colours and creating mesmerising patterns. To the touch, it feels colder than the coldest ice and yet warmer than the hottest fire.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Astral Plane"
+                },
+                "Spectral Orb": {
+                    "name": "Spectral Orb",
+                    "description": "An orb that captures the essence of spectral beings in the astral plane.",
+                    "examine_text": "Eyeing the orb, one can see ghostly figures swirling within, trapped but seemingly at peace. The spectral light generated by the orb casts an eerie glow around. Every now and then, a face might emerge, looking outwards, before retreating back into the orb.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Astral Plane"
+                }
+            },
+            "characters": {
+                "Galactic Entity": {
+                    "name": "Galactic Entity",
+                    "description": "This being exists pridefully between worlds. It is made up of stardust and cosmic energy.",
+                    "persona": "I am without shape, without form, and I dwell between. I was born in the cosmos, and to the cosmos, I shall return.",
+                    "location": "Astral Plane",
+                    "goal": "It wants to find a vessel to understand the physical realm.",
+                    "inventory": {
+                        "Cosmic Dust": {
+                            "name": "Cosmic Dust",
+                            "description": "A small glittering pouch of dust gathered from the cosmos itself.",
+                            "examine_text": "Upon examining, you open the pouch and inside you see a fine powder. It sparkles with the infinite colors of the cosmos, and staring at it, you feel connected to every corner of the universe.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Star Map": {
+                            "name": "Star Map",
+                            "description": "An ancient parchment showing the routes amongst star systems.",
+                            "examine_text": "As you unroll the parchment, you realize it's a star map. The lines, dots, and symbols drawn on it represent constellations, planets, and pathways throughout the universe. It is old, and yet you feel its accuracy is unmatched.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Supernatural"
+        },
+        {
+            "name": "Magic Room",
+            "description": "A room that once entered, cannot be escaped. The walls are all mirrors, and you can never again find the door.",
+            "background": "This room was created when a wizard's wife was taken from him by the king for disobeying his orders. The wizard created this room, called the king in and then they both died.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "down": "Venturing down from the Magic Room, tinges of cold start to grip you as reality shifts, a sense of dread grows. You can almost hear the echoes of a tragic history.",
+                "east": "Moving eastwards, the mirrors in the Magic Room flicker ominously, reality bends and time becomes a mere concept. You feel both weightless and heavy as you venture towards the Astral Plane.",
+                "south": "Heading south, the environment starts to ripple, as if you're looking through a heat haze. The air hums with ancient magic and the smell of wet earth rises. You're on your way to Stonehenge."
+            },
+            "connections": {
+                "down": "Haunted Basement",
+                "east": "Astral Plane",
+                "south": "Stonehenge"
+            },
+            "items": {
+                "Ancient Spell Book": {
+                    "name": "Ancient Spell Book",
+                    "description": "An old, worn-out spell book with strange inscriptions.",
+                    "examine_text": "The book feels otherworldly. Its pages appear to be torn and yellowed from age, but the text written in an ancient, indecipherable language glows softly with ever changing colors.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Magic Room"
+                },
+                "Wizard's Staff": {
+                    "name": "Wizard's Staff",
+                    "description": "A beautifully crafted wooden staff imbedded with precious stones.",
+                    "examine_text": "The staff is tall and quite heavy. The wood is dark, carved with intricate symbols, and holds a large shining crystal at the top.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Magic Room"
+                },
+                "King's Crown": {
+                    "name": "King's Crown",
+                    "description": "The golden crown that once belonged to a mighty king.",
+                    "examine_text": "The crown is made of pure gold, adorned with large sparkling diamonds. The inside has a soft velvet lining, indicating its luxurious origin.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Magic Room"
+                },
+                "Shattered Mirror": {
+                    "name": "Shattered Mirror",
+                    "description": "A large, cracked mirror with an ornate silver frame.",
+                    "examine_text": "Bits of mirror glass are scattered on the floor. The reflection shows broken images, distorting the environment around you.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Magic Room"
+                }
+            },
+            "characters": {
+                "Sorceress Adepta": {
+                    "name": "Sorceress Adepta",
+                    "description": "She is master of the arcane practicing her arts in the Magic Room. Her eyes glow with intense power.",
+                    "persona": "I was left behind in this timeless room. One would go mad with the loneliness, but I've found solace in my spells.",
+                    "location": "Magic Room",
+                    "goal": "She longs to reverse the spell that traps her in the room.",
+                    "inventory": {
+                        "Arcane Amulet": {
+                            "name": "Arcane Amulet",
+                            "description": "A glowing jewel hung on a fragile chain",
+                            "examine_text": "Upon closer inspection, the amulet is adorned with intricate magical glyphs embedded in its surface. It slightly pulsates with the power of arcane magic, imbuing a sense of protection.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Wizard's Grimoire": {
+                            "name": "Wizard's Grimoire",
+                            "description": "An aged book filled with eldritch spells",
+                            "examine_text": "The leather-bound book is heavy with knowledge, its pages filled with the detailed instructions for spell after spell, marked with the arcane handwriting of the old wizard. It smells of ancient parchment and old magic.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Supernatural"
+        },
+        {
+            "name": "Stonehenge",
+            "description": "Technical and advanced, the enormous stones stand looking as if they are placed on top of each other by divine design. The green grass is a stark contrast to the gray stones hovering in the distance.",
+            "background": "Used to show power, knowledge and skill the Stonehenge is where a variety of nomadic people can trade and exchange ideas, as well as learn of astronomic occurrences.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Stepping northwards from Stonehenge, a soft glowing light leads you into a mystic path, your senses tingling with an alien but soothing melody guiding you towards The Glade Of Mysteries.",
+                "south": "Venturing south from Stonehenge, the energy shifts to an eerie serenity. An uncanny chill drapes over you, heralding your passage towards the Ghost Monk Quarters.",
+                "east": "Heading east from Stonehenge, the atmosphere is tinged with whispers of ancient lore and the subtle scent of woodland flora, marking the way to the sacred Goddess Hollow.",
+                "west": "As you tread westward from Stonehenge, the air grows heavy with mystical energies, reflecting mysteries untold and paths untraveled, baiting you towards the entrapment of the Magic Room."
+            },
+            "connections": {
+                "north": "The Glade Of Mysteries",
+                "south": "Ghost Monk Quarters",
+                "east": "Goddess Hollow",
+                "west": "Magic Room"
+            },
+            "items": {
+                "Ancient Stone Tablet": {
+                    "name": "Ancient Stone Tablet",
+                    "description": "An old, weathered stone tablet covered in mysterious symbols.",
+                    "examine_text": "Upon close inspection, the symbols on the stone appear to be an ancient language, depicting tales of historical events and astronomic phenomena.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Stonehenge"
+                },
+                "Druid's Cloak": {
+                    "name": "Druid's Cloak",
+                    "description": "A cloak worn by the ancient druids. It's made from coarse, sturdy fabric and is adorned with mystical symbols.",
+                    "examine_text": "The cloak feels thick and heavy. The embroidered symbols seem to pulse with an otherworldly energy.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Stonehenge"
+                },
+                "Chalice of Rituals": {
+                    "name": "Chalice of Rituals",
+                    "description": "A golden chalice used in mysterious druidic rituals.",
+                    "examine_text": "The chalice is exquisite. It is decorated with intricate designs of deer and trees. It glows with an eerie light.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Stonehenge"
+                }
+            },
+            "characters": {
+                "Druid of Stonehenge": {
+                    "name": "Druid of Stonehenge",
+                    "description": "An ancient druid who has seen the rise and fall of many rulers. His figure is withered yet radiates ancient power.",
+                    "persona": "I am the keeper of Stonehenge. My knowledge has been passed down from generation to generation.",
+                    "location": "Stonehenge",
+                    "goal": "He wants to guard and pass on his ancient knowledge.",
+                    "inventory": {
+                        "Druidic Staff": {
+                            "name": "Druidic Staff",
+                            "description": "A staff used by the Druid of Stonehenge.",
+                            "examine_text": "The staff is as tall as an average man, made from an ancient, gnarled oak. Symbols of the old ways are engraved deeply into it, filled with silver. It radiates a warm and soothing energy.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Time Worn Scroll": {
+                            "name": "Time Worn Scroll",
+                            "description": "An old scroll filled with druidic knowledge.",
+                            "examine_text": "This scroll is worn and fragile, human skin stretched across wooden cylinders. The ink, made from berries and iron, is still readable, filled with instructions for complicated rituals and the passing of seasons.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Supernatural"
+        },
+        {
+            "name": "Ghost Monk Quarters",
+            "description": "a simple room for an undead monk. There is an uncomfortable bed, no windows, a small table with a candle, some illustrations in a book, and not much else. There is a stool",
+            "background": "a long dead monk haunts this simple room. He is a ghostly figure and no one hardly goes in here for fear of being haunted",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "up": "You feel a mystical force pulling you upwards, leaving you momentarily weightless as you ascend to Stonehenge.",
+                "north": "Venturing northwards, you tread upon a mossy path which wends and twists until you find yourself standing before the Bridge in the Forest.",
+                "west": "Moving towards the west, you descend a creaky staircase that spirals down into the eerie silence and musty cold of the Haunted Basement."
+            },
+            "connections": {
+                "up": "Stonehenge",
+                "north": "Bridge In The Forest",
+                "west": "Haunted Basement"
+            },
+            "items": {
+                "Uncomfortable Bed": {
+                    "name": "Uncomfortable Bed",
+                    "description": "A small, dreary looking bed with sparse bedding.",
+                    "examine_text": "The bed is made of rough hewn wood with a lumpy straw mattress. There is a grey blanket and a small, flat pillow. It looks most uncomfortable.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Ghost Monk Quarters"
+                },
+                "Small Table": {
+                    "name": "Small Table",
+                    "description": "A crudely made wooden table.",
+                    "examine_text": "This small table has been worn from years of use, with many scratches and marks on its surface. A single, flickering candle sits on top.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Ghost Monk Quarters"
+                },
+                "Candle": {
+                    "name": "Candle",
+                    "description": "An old, slightly melted candle.",
+                    "examine_text": "The wick of the candle has been burned down to a small point, but it still gives off a soft flickering light. You can smell the faint scent of Elderberries.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Ghost Monk Quarters"
+                },
+                "Illustrated Book": {
+                    "name": "Illustrated Book",
+                    "description": "A book filled with sketches of strange symbols and writings.",
+                    "examine_text": "The book is filled with sketches of symbols that you don't recognize. Some pages have handwritten notes that appear to be written in a language that you can't understand.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Ghost Monk Quarters"
+                },
+                "Stool": {
+                    "name": "Stool",
+                    "description": "A simple wooden stool.",
+                    "examine_text": "This is a plain wooden stool, worn from years of use. Though it doesn't look like the most comfortable seat, it appears sturdy.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Ghost Monk Quarters"
+                }
+            },
+            "characters": {
+                "Monk Simon": {
+                    "name": "Monk Simon",
+                    "description": "He is the ghost of a long dead monk. His spectral form is still seen in his old robe. ",
+                    "persona": "A world of seclusion was what I wanted, lonely but peaceful. Now I have to share this room with whosoever dares to enter.",
+                    "location": "Ghost Monk Quarters",
+                    "goal": "He is seeking enlightenment even in death.",
+                    "inventory": {
+                        "Spectral Beads": {
+                            "name": "Spectral Beads",
+                            "description": "A set of translucent beads floating in mid-air.",
+                            "examine_text": "Upon closer inspection, you see that these aren't ordinary beads. They are spectral representations of Monk Simon's old prayer beads, radiating a soft, otherworldly glow. Despite their ghostly look, they seem to hold a strange warmth.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Old Rosary": {
+                            "name": "Old Rosary",
+                            "description": "A battered and worn rosary left on the monk's bed.",
+                            "examine_text": "The rosary is heavy, made of dark wood and well-worn from years of use. An aura of tranquility seems to radiate from it, an echo of the countless hours of prayer it has been witness to.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Supernatural"
+        },
+        {
+            "name": "Goddess Hollow",
+            "description": "The Goddess Hollow is a place created to worship woodland spirits. It is a small, closet-like room in a hollowed out tree that has existed for hundreds of years. Within the hollow there are piles of sticks, flowers, and home-made items presented to the woodland spirits.",
+            "background": "The people of the wood created the hollow several centuries ago. They discovered the hollowed out tree while searching for a missing baby who was believed to have been stolen from his mother by woodland creatures. The baby was never found but his blanket was within the tree. The woodland people began bringing gifts to the tree to protect their children from a similar fate.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "Your form turns to an ethereal mist as you step into the Astral Plane, the rules of reality shifting around you, a feeling of isolation and insignificance washes over you.",
+                "north": "You walk towards the echoing sounds of cheers and clashing metal, the adrenaline and anticipation of the Fighting Arena Inside Tourney Grounds rush through your veins.",
+                "west": "You journey to the echo of ancient mysteries and sciences of Stonehenge, feeling the awe and enigma of the past, the stone guardian of yesteryears silently watches your approach."
+            },
+            "connections": {
+                "south": "Astral Plane",
+                "north": "Fighting Arena Inside Tourney Grounds",
+                "west": "Stonehenge"
+            },
+            "items": {
+                "Baby's Blanket": {
+                    "name": "Baby's Blanket",
+                    "description": "An aged, worn-out piece of fabric.",
+                    "examine_text": "The fabric is a faded blue color, worn thin from age. It appears to be a child's blanket, made from a material that was once soft. There are ancient symbols embroidered into one corner, their exact meaning lost to time.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Goddess Hollow"
+                },
+                "Woodland Spirit Offering": {
+                    "name": "Woodland Spirit Offering",
+                    "description": "A small pile of sticks, flowers, and hand-made crafts.",
+                    "examine_text": "A collection of everything abundant in the forest - sticks and stones, petals from wildflowers, berries, and intricately folded pieces of tree bark. They have been carefully chosen and placed, as if arranged by a loving hand.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Goddess Hollow"
+                },
+                "Ancient Tree Bark": {
+                    "name": "Ancient Tree Bark",
+                    "description": "A piece of bark from the ancient tree.",
+                    "examine_text": "A dry, cracked piece of bark that looks incredibly old. It fell from the ancient, massive tree that houses the Goddess Hollow and may have properties beyond the mundane.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Goddess Hollow"
+                }
+            },
+            "characters": {
+                "Forest Guardian": {
+                    "name": "Forest Guardian",
+                    "description": "Seen as a gigantic wolf by those who meet him, he stands as a guardian to the spirits of the forest and the woodland people.",
+                    "persona": "I am the Forest Guardian, as silent as the wind, as firm as the mountain. My life is bound to this forest and its creatures.",
+                    "location": "Goddess Hollow",
+                    "goal": "He wants to protect the forest from any external threat.",
+                    "inventory": {
+                        "Wolfs Tooth": {
+                            "name": "Wolf's Tooth",
+                            "description": "A sharp tooth from a wolf",
+                            "examine_text": "You pick up the tooth and take a closer look. The tooth is longer than the length of your thumb, sharp and slightly yellowed. Given the size, it must have come from a rather big wolf.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Forest Ruby": {
+                            "name": "Forest Ruby",
+                            "description": "A large, deep red gem",
+                            "examine_text": "The Forest Ruby gleams with deep red hues that seem to emanate a mystical energy. It's half the size of your palm and it feels cool to the touch. Rumour has it, the spirit of the forest resides within this precious stone.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Supernatural"
+        },
+        {
+            "name": "Bridge In The Forest",
+            "description": "You are at a bridge. It is old and used very rarely. It is dim and foggy. The brigde is large and there is a small stream below it.",
+            "background": "Many people traveled over this bridge but it has become run down now there is a more well kept road that cuts through the forest. Some wars were fought in this area and this bridge was command posts for many armies. Many sould stil haunt this area.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "The path to Ghost Monk Quarters descends into a dim, misty hollow, enveloped by an eerie stillness that sends chills down your spine.",
+                "north": "Traveling north towards The Glade Of Mysteries, the forest canopy parts, bathing the path in a surreal, shimmering light that seems to dance to an unheard rhythm."
+            },
+            "connections": {
+                "south": "Ghost Monk Quarters",
+                "north": "The Glade Of Mysteries"
+            },
+            "items": {
+                "Old Lantern": {
+                    "name": "Old Lantern",
+                    "description": "An old, rusted lantern hangs from the post of the bridge.",
+                    "examine_text": "A century-old lantern that's been weathered by countless storms. Despite its age, a low flicker of otherworldly light still pulses from within. It might have some supernatural properties.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Bridge In The Forest"
+                },
+                "Ancient Sword": {
+                    "name": "Ancient Sword",
+                    "description": "An ancient, rusty sword is stuck on the ground near the bridge.",
+                    "examine_text": "A rust-eaten and forgotten weapon of war. Despite the corrosion, it vibrates with an uncanny power, suggesting it was once blessed or cursed.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Bridge In The Forest"
+                },
+                "Torn Military Coat": {
+                    "name": "Torn Military Coat",
+                    "description": "A tattered military coat lies draped over the bridge's railing.",
+                    "examine_text": "A tattered and old military coat, likely belonging to one of the long-forgotten soldiers. As you touch it, cold shivers run down your spine.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Bridge In The Forest"
+                }
+            },
+            "characters": {
+                "King of Ghosts": {
+                    "name": "King of Ghosts",
+                    "description": "He is a great spectral monarch who commands the spirits of a thousand warriors. His form is tall, gaunt and adorned with a magnificent ethereal crown.",
+                    "persona": "A king in life, a king in death. I wander eternally on this bridge, my battlefield.",
+                    "location": "Bridge In The Forest",
+                    "goal": "He is looking for a worthy opponent to free his spirit."
+                }
+            },
+            "has_been_visited": false,
+            "category": "Supernatural"
+        },
+        {
+            "name": "Fighting Arena Inside Tourney Grounds",
+            "description": "Filled with embroidered banners and filled with a crowd aching for entertainment, the fighting arena offers glory to all who enter. The arena itself is covered in orange dirt and surround by emblems and crests of all the knights who participate. There are weapon racks sprinkled alongside the edge of the arena.",
+            "background": "The fighting arena was once the location an actual battle between warring nations. The king issued that a tourney be erected in memory of the battle. Great memories.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "Traveling south from the bustling arena, the atmosphere changes abruptly as you step into the ancient quiet of the Goddess Hollow.",
+                "west": "Moving west, the clamor of the fighting fades into a sublime melody accompanying a mysterious glow from the Glade Of Mysteries."
+            },
+            "connections": {
+                "south": "Goddess Hollow",
+                "west": "The Glade Of Mysteries"
+            },
+            "items": {
+                "Iron Shield": {
+                    "name": "Iron Shield",
+                    "description": "A small, round shield made of iron.",
+                    "examine_text": "The circular shield has a bright iron hue. It is scruffy from many battles, with scratches and dents peppering its surface.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Fighting Arena Inside Tourney Grounds"
+                },
+                "Sword": {
+                    "name": "Sword",
+                    "description": "A long, sharp sword made from hardened steel.",
+                    "examine_text": "The sword is strong and sharp, with a gleaming steel blade. It's sure to be effective in a combat.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Fighting Arena Inside Tourney Grounds"
+                },
+                "Knight's Crest": {
+                    "name": "Knight's Crest",
+                    "description": "A decorated crest of a famous knight.",
+                    "examine_text": "The crest is ornately designed and wrought with intricate details, depicting a lion and a dragon in combat. It is affixed to a wooden board.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Fighting Arena Inside Tourney Grounds"
+                },
+                "Wine Flask": {
+                    "name": "Wine Flask",
+                    "description": "A flask filled with sweet red wine.",
+                    "examine_text": "The flask is made out of metal and adorned with crests, its body curved to fit comfortably in a hand. The thick aroma of wine wafts from its spout.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Fighting Arena Inside Tourney Grounds"
+                },
+                "Weapon Rack": {
+                    "name": "Weapon Rack",
+                    "description": "A wooden rack holding various weaponry.",
+                    "examine_text": "The weapon rack is lined with a wide range of weapons, from broadswords to maces. It's sturdily built and is kept in a pristine condition.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Fighting Arena Inside Tourney Grounds"
+                }
+            },
+            "characters": {
+                "Ethereal Gladiator": {
+                    "name": "Ethereal Gladiator",
+                    "description": "Formerly the greatest knight of his era, now he is a ghost doomed to fight eternally in the arena.",
+                    "persona": "In life, I desired glory. In death, I desire only an honorable end to the endless fights.",
+                    "location": "Fighting Arena Inside Tourney Grounds",
+                    "goal": "He wants to find a warrior strong enough to end his eternal service.",
+                    "inventory": {
+                        "Ghostly Armor": {
+                            "name": "Ghostly Armor",
+                            "description": "A spectral suit of armor that has a shimmering, other-worldly appearance.",
+                            "examine_text": "The armor is not of this world. Its surface is shimmering as if made of starlight. The ghostly suit of armor looks hard and ethereal at the same time. As you move closer, you can feel a faint cold coming from the armor, giving you an eerie sense of awe and fear.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Ethereal Sword": {
+                            "name": "Ethereal Sword",
+                            "description": "A ghostly sword with a transparent blade that has a faint silvery sheen.",
+                            "examine_text": "Upon closer inspection, the sword's transparent blade appears to be made of pure energy. Its edges are razor-like and the faintly glowing blade seems sharp enough to cut through anything, even spectral matter. The hilt is also transparent, but with a solid feel to it. It almost hums with power as you approach it.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Supernatural"
+        },
+        {
+            "name": "The Glade Of Mysteries",
+            "description": "The leaves of the trees surrounding this glade glow unnaturally, as though lit from within.  There seems to be almost a presence to this place, a waiting watchful force.  Bits of music sound occasionally, tunes that seem familiar and yet quite alien, as though played by someone who had only heard the melody described to them, instead of hearing it themselves.  And yet all this pales in comparison to the pool found in the center.  The water gleams silver, seemingly absorbing and reflecting back the light of the trees around it tenfold.  Though there is a soft breeze that blows through the glade, there is not a ripple to be seen on the water's perfectly mirrored surface.",
+            "background": "This glade is part of the Secret Realm, unknown by mortal men, and yet dwelling beside it in a parallel dimension.  Yet whispers and stories of the Glade are told in the feeble tales of men, who can only grasp at its' wonder and power.  It is said that if one looks in the surface of the pond that dwells within, that one's whole future stretches out before them, along with all the possibilities therein.  Such knowledge will drive a man, for the human mind is not meant to contain such knowledge.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "Traveling south from the glade, you leave behind the ethereal light and step into the dense woods that slowly give way to a dilapidated bridge over a quiet stream. The journey feels like walking through layers of time, as memories of long past wars seem to seep into the air around the old bridge.",
+                "east": "Heading east, the serene beauty of the glade is replaced by a hustle. The scent of dust and iron fill the air, and the distant sound of cheering draws you closer. You tread on well-worn paths, leading you toward the Fighting Arena in the Tourney Grounds, a place where glory and honor is earned through conflict.",
+                "west": "Venturing west, the trees fade into rolling grasslands as you leave the glade behind. Soon, the mysterious aura of the Glade is replaced by a sense of awe, as you approach the magnificent formation known as Stonehenge. It represents a journey not just through space, but to a window of a bygone civilization."
+            },
+            "connections": {
+                "south": "Bridge In The Forest",
+                "east": "Fighting Arena Inside Tourney Grounds",
+                "west": "Stonehenge"
+            },
+            "items": {
+                "Glowing Leaves": {
+                    "name": "Glowing Leaves",
+                    "description": "Leaves with an unusual glow.",
+                    "examine_text": "They seem to be lit from within, providing an otherworldly illumination to the surroundings.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Glade Of Mysteries"
+                },
+                "Mirror-Like Pool": {
+                    "name": "Mirror-Like Pool",
+                    "description": "A pool with a highly reflective and unnaturally calm surface.",
+                    "examine_text": "The water is incredibly still. When you look into it, you feel a strange sense of seeing not just your own reflection but glimpses of potential futures.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Glade Of Mysteries"
+                },
+                "Melodious Wind": {
+                    "name": "Melodious Wind",
+                    "description": "A breeze that seems to carry a ghostly lilt.",
+                    "examine_text": "It's not just a wind but seems to carry fragments of melody. It sounds strangely familiar, though played not quite right.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Glade Of Mysteries"
+                },
+                "Silver Tree Bark": {
+                    "name": "Silver Tree Bark",
+                    "description": "The bark of the glowing trees.",
+                    "examine_text": "The bark is shiny and metallic in color, almost as if it's made of pure silver.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Glade Of Mysteries"
+                }
+            },
+            "characters": {
+                "Silent Sentinel": {
+                    "name": "Silent Sentinel",
+                    "description": "A strong warrior made of leaves and roots. He stands tall in the Glade of mysteries.",
+                    "persona": "Crafted from the forest itself, I stand as the sentinel. Feeling the breath of mystery around me, I guard this sacred place.",
+                    "location": "The Glade Of Mysteries",
+                    "goal": "His purpose is to protect the mystical pool of the Glade.",
+                    "inventory": {
+                        "Leaf Blade": {
+                            "name": "Leaf Blade",
+                            "description": "A sword made from the glowing leaves of the surrounding trees.",
+                            "examine_text": "The edges of the sword are sharp, shimmering with a faint glow. The hilt is wrapped in soft vine, comfortable to hold. Despite its leafy nature, it feels firm, strong and exceedingly light.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Tree Bark Shield": {
+                            "name": "Tree Bark Shield",
+                            "description": "A strong and sturdy shield made from the tree barks of the glade.",
+                            "examine_text": "The shield appears hardened yet flexible, providing both protection and maneuverability. It contains the innate glow of the trees, flickering lightly on its surface. The way it's been crafted, it contours comfortably to the arm.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Supernatural"
+        }
+    ],
+    "actions": []
+}

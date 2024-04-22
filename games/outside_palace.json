@@ -1,0 +1,1660 @@
+{
+    "player": "King",
+    "start_at": "Main Castle Doors",
+    "game_history": [],
+    "game_over": false,
+    "game_over_description": null,
+    "characters": [
+        {
+            "name": "King",
+            "description": "A wise and noble ruler, he is well respected  and known for his kindness and fair judgement.",
+            "persona": "As King, it is my duty to protect my kingdom and its people. I am always striving to make my kingdom prosperous and ever peaceful.",
+            "location": "Main Castle Doors",
+            "goal": "The King wishes to maintain prosperity and peace throughout his kingdom.",
+            "inventory": {}
+        },
+        {
+            "name": "Queen",
+            "description": "A beautiful and intelligent queen, she is beloved by all. She is known for her compassion and avid interest in gardening.",
+            "persona": "Being a queen involves more than just wearing a crown. It involves caring for everyone, from the smallest creature to the mightiest knight.",
+            "location": "Palace Garden",
+            "goal": "Her goal is to teach her children to show kindness and hard work, particularly by gardening.",
+            "inventory": {}
+        },
+        {
+            "name": "Knight",
+            "description": "A brave and loyal knight, sworn to protect the king and the kingdom at any cost, he is always ready for battle.",
+            "persona": "With my sword and shield, I am sworn to protect this kingdom and its people from any harm.",
+            "location": "Training Fields",
+            "goal": "He wishes to become the greatest knight the kingdom has ever seen.",
+            "inventory": {}
+        },
+        {
+            "name": "Peasant",
+            "description": "He is a hardworking farmer who tries to make ends meet for his family. He works the fields all day.",
+            "persona": "Life is tough but I'm tougher. I work hard every day in the fields to support my family.",
+            "location": "Peasant Living Quarters",
+            "goal": "He dreams of one day becoming a rich merchant and getting out of poverty.",
+            "inventory": {}
+        },
+        {
+            "name": "Gardener",
+            "description": "He is an old, wise man who maintains the royal garden. He is known for his expertise in herbology and his uncanny knowledge of mysterious plants.",
+            "persona": "With my old, crinkled hands, I work the soil, caring for all the plants as if they were my own children. Each leaf, each petal is a miracle before my eyes.",
+            "location": "Garden",
+            "goal": "He seeks to grow a plant never before seen in the kingdom.",
+            "inventory": {}
+        },
+        {
+            "name": "Gardener",
+            "description": "He is an old, wise man who maintains the royal garden. He is known for his expertise in herbology and his uncanny knowledge of mysterious plants.",
+            "persona": "With my old, crinkled hands, I work the soil, caring for all the plants as if they were my own children. Each leaf, each petal is a miracle before my eyes.",
+            "location": "Garden",
+            "goal": "He seeks to grow a plant never before seen in the kingdom.",
+            "inventory": {}
+        },
+        {
+            "name": "Alligator",
+            "description": "A large and menacing creature, it lurks in the waters of the moat and is used as a defense mechanism.",
+            "persona": "I am the beast of the waters, a formidable foe to any who dare intrude upon the castle's domain.",
+            "location": "Moat",
+            "goal": "To protect the castle from intruders.",
+            "inventory": {}
+        },
+        {
+            "name": "Horse",
+            "description": "A majestic and strong creature, it serves as a mode of transport for the royalty. It is known for its speed and loyalty.",
+            "persona": "I take pride in my speed and strength, for I am a friend to the royals, carrying them wherever they desire.",
+            "location": "Stable",
+            "goal": "To win the next annual horse race.",
+            "inventory": {}
+        }
+    ],
+    "locations": [
+        {
+            "name": "Garden",
+            "description": "Many beautiful types of flowers and plants grow here.  There's a small shed used for store gardening equipment.",
+            "background": "Members of the royal family come here to unwind and contemplate matters.  There's artists who also come to create paintings of the beautiful flowers here.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Walking east from the garden, one can catch the scent of horses and hay, reaching the plain wooden stable with some handsome horses.",
+                "south": "Heading south, one leaves the tranquility of the garden, walking into a grand courtyard made of hand carved stones, where one might luck upon the king taking a stroll.",
+                "west": "Travelling west from the garden, lush greenery gives way to a more manicured and grand setting, the esteemed Palace Garden, well-tended by royal gardeners.",
+                "up": "Moving upwards, one enters the humble peasant living quarters, a stark contrast from the royal garden with its bare and primitive setup."
+            },
+            "connections": {
+                "east": "Stable",
+                "south": "Courtyard",
+                "west": "Palace Garden",
+                "up": "Peasant Living Quarters"
+            },
+            "items": {
+                "Garden Hoe": {
+                    "name": "Garden Hoe",
+                    "description": "A long wooden stick with a flat metal piece at the end",
+                    "examine_text": "This garden hoe appears to be very sturdy and looks like it's been frequently used. The wood on the handle is slightly worn out and the metal end is a bit rusty.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Garden"
+                },
+                "Garden Bench": {
+                    "name": "Garden Bench",
+                    "description": "A beautiful vintage wooden bench",
+                    "examine_text": "The garden bench is made out of mahogany with detailed carvings on the leg of the bench. There's a bit of peeling paint, suggesting it has sat here in all weather.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Garden"
+                },
+                "Rosebud": {
+                    "name": "Rosebud",
+                    "description": "A beautiful blooming rosebud",
+                    "examine_text": "The rosebud is a vibrant shade of red with velvety soft petals. It is still connected to the plant, but looks like it could easily be picked.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Garden"
+                },
+                "Artist's Paint Palette": {
+                    "name": "Artist's Paint Palette",
+                    "description": "A wooden palette holding various colors of paint",
+                    "examine_text": "The palette has dollops of paint in every color imaginable. It looks like it's well-used but well-kept.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Garden"
+                }
+            },
+            "characters": {
+                "Gardener": {
+                    "name": "Gardener",
+                    "description": "He is an old, wise man who maintains the royal garden. He is known for his expertise in herbology and his uncanny knowledge of mysterious plants.",
+                    "persona": "With my old, crinkled hands, I work the soil, caring for all the plants as if they were my own children. Each leaf, each petal is a miracle before my eyes.",
+                    "location": "Garden",
+                    "goal": "He seeks to grow a plant never before seen in the kingdom.",
+                    "inventory": {
+                        "Gardening Tools": {
+                            "name": "Gardening Tools",
+                            "description": "A set of tools used for tending the plants.",
+                            "examine_text": "A collection of gardening tools, worn with use, but well-cared for. You see a trowel, a small hoe, and a pair of shears.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Gardener's Hat": {
+                            "name": "Gardener's Hat",
+                            "description": "A wide-brimmed hat worn by the gardener.",
+                            "examine_text": "The hat is made of straw, worn and faded from many hours under the sun. It is wide-brimmed to shield the gardener from the harsh sunlight.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Vegetable Basket": {
+                            "name": "Vegetable Basket",
+                            "description": "A basket full of freshly picked vegetables.",
+                            "examine_text": "The sturdy wicker basket holds a variety of fresh produce, ripe and ready to be cooked. Among the vegetables, you notice tomatoes, lettuce, and cucumbers.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": true,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Garden Bench": {
+                            "name": "Garden Bench",
+                            "description": "A worn but sturdy bench by the garden wall.",
+                            "examine_text": "A rustic wooden bench, weathered by the elements. It's a comfortable place to sit and overlook the hard work done in the garden.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Watering Can": {
+                            "name": "Watering Can",
+                            "description": "A simple metal watering can.",
+                            "examine_text": "A classic watering can made of worn metal. This humble tool carries water to the thirsty plants.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Palace"
+        },
+        {
+            "name": "Stable",
+            "description": "A plain wooden building with some hanging tapestries.  There are some handsome looking horses that reside here along with some farm equipment stored inside.",
+            "background": "This is where the royal family's horses are stored and cared for.  Servants come here to take care of the animals along with retrieving equipment.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Walking towards the garden, you are met with a mix of sweet and earthy aroma of the flowers and plants. As you admire the detailed designs of the tapis, the stable slowly fades from view.",
+                "north": "Heading for the training fields, the clattering of swords against shields and the shouts of training soldiers begin to fill your ears as you leave behind the quiet stable.",
+                "down": "Descending towards the moat, the smell of damp earth and murky water engulf your nostrils. The sight of the stable becomes smaller as you plunge further down."
+            },
+            "connections": {
+                "west": "Garden",
+                "north": "Training Fields",
+                "down": "Moat"
+            },
+            "items": {
+                "Hay Bale": {
+                    "name": "Hay Bale",
+                    "description": "A large stack of dried grass, compacted into a tightly bound bale.",
+                    "examine_text": "Upon closer inspection, you notice the straw-like scent of dried grass and see the twine holding it together. It looks fresh and is sure to be a good meal for the horses.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Stable"
+                },
+                "Horse Brush": {
+                    "name": "Horse Brush",
+                    "description": "An old, wooden handled brush used for grooming horses.",
+                    "examine_text": "The brush looks well-used with its slightly worn bristles. The handle is smooth to touch and there's subtle glow of wax from its routine cleaning.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Stable"
+                },
+                "Horse Tack": {
+                    "name": "Horse Tack",
+                    "description": "A set of equipment required for riding a horse, usually including a saddle, bridle, and reins.",
+                    "examine_text": "The leather is supple and well cared for, with shiny buckles and clean stitching. It's the type of tack one would expect to see used by a royal family.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Stable"
+                },
+                "Water Trough": {
+                    "name": "Water Trough",
+                    "description": "A long, shallow tub filled with fresh water for the horses to drink.",
+                    "examine_text": "The water ripples gently, reflecting the sky above. Bits of hay float on top indicating a recent visit from the horses.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Stable"
+                }
+            },
+            "characters": {
+                "Horse": {
+                    "name": "Horse",
+                    "description": "A majestic and strong creature, it serves as a mode of transport for the royalty. It is known for its speed and loyalty.",
+                    "persona": "I take pride in my speed and strength, for I am a friend to the royals, carrying them wherever they desire.",
+                    "location": "Stable",
+                    "goal": "To win the next annual horse race.",
+                    "inventory": {
+                        "Horse Tack": {
+                            "name": "Horse Tack",
+                            "description": "Elegant horse tack that seems to be built for speed and comfort.",
+                            "examine_text": "The horse tack is made of high-quality leather, with silver fittings that glisten in the light. It's obviously meant for a horse of great importance. The stirrups and reigns look well-worn but well-cared-for, testaments to the strength and speed of the horse that wears this tack.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Royal Crest Badge": {
+                            "name": "Royal Crest Badge",
+                            "description": "A badge bearing the crest of the royal family.",
+                            "examine_text": "The badge is made of pure gold, with the crest of the royal family etched into it. The crest features a lion and a unicorn, the symbols of strength and magic, respectively. Despite being worn by a horse, the badge looks remarkably well-maintained and it shines brightly in the light.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Palace"
+        },
+        {
+            "name": "Courtyard",
+            "description": "The courtyard is a huge pavilion of stone patio outside of the palace. It is in the shape of a large rectangle and boarders the west end of the palace. It is bordered in luscious hedges dotted with colorful flowers, particularly roses. Throughout the courtyard there are potted flowers, stone benches, statues and bird baths and fenced garden plots, and also a central atrium, that all evoke the feeling on an Arcadian garden.",
+            "background": "An ancient king and queen, when they had just been married, built a new summer palace. The king let the queen design the beautiful courtyard as a gift. From then on, the courtyard had been one of the most famous, beautiful focal points of the palace.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Walking towards the Garden, the scent of blooming flowers intensifies and various twittering birds can be heard. A path lined with vibrant, well-manicured flora guides you to your destination.",
+                "east": "Heading east, the peaceful ambiance of the courtyard gives way to the clamor of Training Fields. The path is worn, evidence of countless footsteps of the knights who have tread this way.",
+                "south": "Moving towards the Main Castle Doors, the grandeur of the castle comes into view with each step. The golden doors gleam under the sun, reflecting the castle's magnificence."
+            },
+            "connections": {
+                "north": "Garden",
+                "east": "Training Fields",
+                "south": "Main Castle Doors"
+            },
+            "items": {
+                "Stone Bench": {
+                    "name": "Stone Bench",
+                    "description": "A beautifully crafted stone bench, positioned under a large tree",
+                    "examine_text": "The stone bench is quite old and weathered, yet it maintains its regal appeal. Tiny flecks of light catch on the chiseled detailing of the stone. It seems to tell a story of love and dedication, symbolized by the etched roses wrapping around the bench legs.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Courtyard"
+                },
+                "Bird Bath": {
+                    "name": "Bird Bath",
+                    "description": "A stunning white marble bird bath with intricate designs",
+                    "examine_text": "Upon closer inspection, the bird bath is carved from a single piece of marble. Detailed carvings cover the surface, depicting the king's and queen's story. Water in it reflects sunlight beautifully, seemingly inviting any nearby birds.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Courtyard"
+                },
+                "Statue of King": {
+                    "name": "Statue of King",
+                    "description": "A large, imposing statue of the ancient king",
+                    "examine_text": "The statue of the king is a faithful representation of his image. It's crafted from obsidian stone, making it seem even more majestic. You can see a slight smile on the king's face, his eyes filled with kindness and wisdom.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Courtyard"
+                },
+                "Statue of Queen": {
+                    "name": "Statue of Queen",
+                    "description": "A lifelike statue of the beautiful ancient queen",
+                    "examine_text": "The queen's statue, made from pure white marble, contrasts beautifully with the king's obsidian statue. Her expression is one of love and benevolence, perfectly embodying her known characteristics. Her robes are intricately carved, showcasing her regality.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Courtyard"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Palace"
+        },
+        {
+            "name": "Training Fields",
+            "description": "The training fields are a large expanse of grass fields, filled with all sorts of training apparatus for the noblemen and soldiers. The grass is not anything fancy, scuffed up and dry in many places, but it gets the job done. There are hay bails arranged all over, training courses, archery targets, weights and more scattered about in stations.",
+            "background": "The training fields have been being used for several generations. The inhabitants of the palace used to train somewhere else until flooding destroyed the area, and it was moved here. The fields have been an efficient place and have hosted all of the fighters of the kingdom at some point.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Walking towards the west transports you to a grand courtyard bustling with people and surrounded by the architectural majesty of the palace.",
+                "south": "Heading towards the south, noises of neighing horses and the scent of hay reach you as you approach the royal stable.",
+                "east": "Moving eastward, you encounter the majestic exterior of the palace courtyard, filled with beautiful flowers and vines, grand fountains, and sit spots where people gather."
+            },
+            "connections": {
+                "west": "Courtyard",
+                "south": "Stable",
+                "east": "Courtyard Exterior"
+            },
+            "items": {
+                "Weight Plate": {
+                    "name": "Weight Plate",
+                    "description": "A round, heavy iron plate. Used for strength training.",
+                    "examine_text": "The weight is carefully carved from a block of iron. It has been used extensively and shows signs of wear with several scratches and spots where the iron color has worn off. The weight of the plate is clearly marked on it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Training Fields"
+                },
+                "Archery Target": {
+                    "name": "Archery Target",
+                    "description": "An object affixed with a series of concentric circles, used as a mark for archery.",
+                    "examine_text": "This large target consists of layers of tightly-packed straw. The concentric circles are clearly drawn, from largest to smallest, each one a different colour. Countless arrows have scarred the surface, while a few still stick out.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Training Fields"
+                },
+                "Hay Bail": {
+                    "name": "Hay Bail",
+                    "description": "A large, tied bundle of straw.",
+                    "examine_text": "This large bundle of straw has been tightly packed and tightly tied with a rough, strong rope. It's been used as makeshift seat, table and even as a target for shoot practice.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Training Fields"
+                },
+                "Training Sword": {
+                    "name": "Training Sword",
+                    "description": "A blunted sword made for practice.",
+                    "examine_text": "This sword is decently long and its steel blade is purposely blunted for safety. The grip is wrapped in white cloth, now slightly discolored by sweat. Albeit made for practice, the sword still has a certain heft.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Training Fields"
+                }
+            },
+            "characters": {
+                "Knight": {
+                    "name": "Knight",
+                    "description": "A brave and loyal knight, sworn to protect the king and the kingdom at any cost, he is always ready for battle.",
+                    "persona": "With my sword and shield, I am sworn to protect this kingdom and its people from any harm.",
+                    "location": "Training Fields",
+                    "goal": "He wishes to become the greatest knight the kingdom has ever seen.",
+                    "inventory": {
+                        "Sword": {
+                            "name": "Sword",
+                            "description": "A finely crafted sword, perfect for a knight.",
+                            "examine_text": "The sword is made of the finest steel, the handle covered in the finest wrapping for perfect grip. The blade is sharp and shiny, ready for any combat scenario. The hilt is embedded with jewels, but otherwise it maintains a minimalistic design signifying its purpose.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Shield": {
+                            "name": "Shield",
+                            "description": "A durable and sturdy shield, carried by knights.",
+                            "examine_text": "The shield is a round, forged from thick metal. Its surface is covered in intricate engravings, telling the tales of old battles. It is heavy, but not unwieldy, designed to protect against any attack.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Armour": {
+                            "name": "Armour",
+                            "description": "A set of well-made metal armor, ideal for a knight.",
+                            "examine_text": "The armour comprises of a chest plate, greaves, gauntlets, and a helmet. They're all made of the finest metal, polished to a shiny gloss. It appears heavy but is designed to allow mobility during combat.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Palace"
+        },
+        {
+            "name": "Palace Garden",
+            "description": "The Palace garden is a lavish and lush garden filled with delicate roses and towering trees. In the center of the garden stand's a statue of the nation's founding leader. The statue is surrounded by a moat. There are stone walk ways throughout the gardens for visitors to walk through.",
+            "background": "The palace garden was created to provide a place of relaxation for the town's royalty. It is tended to by the most esteemed gardeners, and is always well taken after.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "You stroll along the garden path, smelling the sweet scent of blooming flowers mixed with damp earth. Majestic trees create a canopy of leaves above your head, providing shade and freshness while you move towards the vegetable garden.",
+                "south": "You depart the garden, making your way towards the stony courtyard. The stones underfoot are warm from the sun, and the sound of birds can be heard in the distance. You pass by carved benches and statues, catching glimpse of colorful blooms around you.",
+                "down": "Descending from the palace garden, you smell the freshness of clean linen. Sunlight filters through the trees, throwing dappled light on the path that leads to the bustling area of laundry lines."
+            },
+            "connections": {
+                "east": "Garden",
+                "south": "Courtyard",
+                "down": "Laundry Lines"
+            },
+            "items": {
+                "Rose Bush": {
+                    "name": "Rose Bush",
+                    "description": "A bush of delicate roses in vibrant shades of pink and red.",
+                    "examine_text": "Looking closely, you can see the carefully pruned roses in full bloom. The petals appear soft and velvety, with dew drops glistening in the morning sunshine.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Palace Garden"
+                },
+                "Statue of Founding Leader": {
+                    "name": "Statue of Founding Leader",
+                    "description": "A grandiose statue of the nation's founding leader.",
+                    "examine_text": "The statue is a towering representation of the country's founding leader. It is made from pure white marble, with detailed carvings depicting the leader in a majestic pose.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Palace Garden"
+                },
+                "Moat": {
+                    "name": "Moat",
+                    "description": "A moat surrounding the statue.",
+                    "examine_text": "The moat is filled with clear, cool water. It reflects the image of the statue and the rich green foliage around it.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Palace Garden"
+                },
+                "Stone Walkway": {
+                    "name": "Stone Walkway",
+                    "description": "A stone path leading through the garden.",
+                    "examine_text": "The stone walkway weaves through the vibrant garden, leading visitors on a pleasant journey to take in all the sights.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Palace Garden"
+                }
+            },
+            "characters": {
+                "Queen": {
+                    "name": "Queen",
+                    "description": "A beautiful and intelligent queen, she is beloved by all. She is known for her compassion and avid interest in gardening.",
+                    "persona": "Being a queen involves more than just wearing a crown. It involves caring for everyone, from the smallest creature to the mightiest knight.",
+                    "location": "Palace Garden",
+                    "goal": "Her goal is to teach her children to show kindness and hard work, particularly by gardening.",
+                    "inventory": {
+                        "Crown": {
+                            "name": "Crown",
+                            "description": "A dazzling crown studded with precious stones.",
+                            "examine_text": "The crown is made of a lustrous gold, with various precious stones embedded throughout its structure. It is a symbol of royal authority and is tastefully extravagant, just like a queen's should be.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Royal Dress": {
+                            "name": "Royal Dress",
+                            "description": "A meticulously designed royal dress, fit for a queen.",
+                            "examine_text": "The royal dress is made of a rich velvet material, dyed a deep blue with intricate gold patterns sewn throughout. It's modified to allow for movement and comfort while still radiating a sense of elegance and authority.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Gardening Book": {
+                            "name": "Gardening Book",
+                            "description": "A detailed book on the art of gardening, tending and care for plants.",
+                            "examine_text": "The gardening book contains comprehensive information about different plants, their preferences for soil and water, and techniques for pruning and shaping. It is filled with illustrations of beautiful garden examples, demonstrating the queen's care for her surroundings.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Palace"
+        },
+        {
+            "name": "Peasant Living Quarters",
+            "description": "The peasant living quarters are generally very bare, dirty, and primitive for the most part.  It's essentially a large straw hut with hay-filled sleeping mats on the floor, and piles of clothes.  There are several plain white sacks containing potatoes, apples, and other basic foods for the residents here.",
+            "background": "The peasants come here at the end of a long day to rest and get ready to do it again.  They find themselves quickly falling to sleep after a long day.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "down": "Walking down a worn, dirt path surrounded by greenery, you arrive at the encircling smell of fresh vegetables and herbs.",
+                "west": "A short journey across the courtyard brings you to the edge of a wide, dangerous moat with sparkling water."
+            },
+            "connections": {
+                "down": "Garden",
+                "west": "Moat"
+            },
+            "items": {
+                "Straw_mat": {
+                    "name": "Straw Mat",
+                    "description": "A straw-filled mat",
+                    "examine_text": "A straw-filled mat to sleep on. It's a bit dirty and ragged, but it's better than sleeping on the hard, cold ground.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Peasant Living Quarters"
+                },
+                "Clothes_pile": {
+                    "name": "Clothes Pile",
+                    "description": "A pile of worn clothes",
+                    "examine_text": "A dishevelled pile of worn, patched clothes. They appear to have been carelessly tossed aside.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Peasant Living Quarters"
+                },
+                "Food_sack": {
+                    "name": "Food Sack",
+                    "description": "A white sack filled with food",
+                    "examine_text": "A large white sack containing potatoes, apples and other basic food items. The sack is a little worn, but it seems to be holding up well.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Peasant Living Quarters"
+                }
+            },
+            "characters": {
+                "Peasant": {
+                    "name": "Peasant",
+                    "description": "He is a hardworking farmer who tries to make ends meet for his family. He works the fields all day.",
+                    "persona": "Life is tough but I'm tougher. I work hard every day in the fields to support my family.",
+                    "location": "Peasant Living Quarters",
+                    "goal": "He dreams of one day becoming a rich merchant and getting out of poverty.",
+                    "inventory": {
+                        "Potato Sack": {
+                            "name": "Potato Sack",
+                            "description": "A plain white sack filled with potatoes.",
+                            "examine_text": "Upon closer inspection, the sack is old and has been patched up several times. The potatoes inside are small and hard, harvested from the peasants' fields.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": true,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Wheat Seeds": {
+                            "name": "Wheat Seeds",
+                            "description": "A small pouch full of wheat seeds.",
+                            "examine_text": "It's a small pouch seamed with a piece of worn-out cloth, filled with wheat seeds. Each tiny grain promises a new plant, bread for a new day.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Hoe": {
+                            "name": "Hoe",
+                            "description": "A crude hoe used for tilling the soil.",
+                            "examine_text": "It's a basic but sturdy hoe, the handle worn smooth by countless hours of use. It's a tool of livelihood for the peasants.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Palace"
+        },
+        {
+            "name": "Moat",
+            "description": "The thick moat is filled with murky dark water. It is very wide and surrounds the entire castle. Alligators and other dangerous creatures roam the moat, ready to warn away intruders.",
+            "background": "The moat protects the castle from those who would do the castle harm. It is very deep and its gators keep everyone away. It sparkles under the summer sun. People warn their children to stay away!",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "up": "To reach the Peasant Living Quarters, you must navigate the castle's complex layout, traveling through the bustling courtyard and residential area filled with scurrying servants and lingering smell of wood smoke.",
+                "east": "Heading east, you must cross the open castle land, stark in its simplicity yet magnificence, with the assortment of royal horses grazing idly, leading you towards the royal stables."
+            },
+            "connections": {
+                "up": "Peasant Living Quarters",
+                "east": "Stable"
+            },
+            "items": {
+                "Alligator": {
+                    "name": "Alligator",
+                    "description": "Dark scales and sharp teeth, this creature is a menace of the moat.",
+                    "examine_text": "Its eyes are cold as it silently watches from the water. Its massive tail stays hidden under the murky water. Its sharp teeth glisten in the sun as it opens and closes its mouth, watching you closely.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Moat"
+                },
+                "Murky Water": {
+                    "name": "Murky Water",
+                    "description": "Dark, treacherous water surrounds the castle",
+                    "examine_text": "The water is opaque, hiding whatever may lurk beneath. Occasionally, bubbles percolate indicating the movement of creatures underneath the surface.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Moat"
+                },
+                "Intruder Bones": {
+                    "name": "Intruder Bones",
+                    "description": "The skeletal remains of an unfortunate intruder.",
+                    "examine_text": "The bones have been picked clean, scattered around the grassy banks of the moat. They offer a haunting reminder of the moat's purpose.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Moat"
+                },
+                "Castle": {
+                    "name": "Castle",
+                    "description": "The magnificent structure that towers over the moat.",
+                    "examine_text": "Its weathered stone walls stand tall, dotted with the occasional window. The castle, with its imposing battlements, exudes a solemn aura of strength and antiquity.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Moat"
+                }
+            },
+            "characters": {
+                "Alligator": {
+                    "name": "Alligator",
+                    "description": "A large and menacing creature, it lurks in the waters of the moat and is used as a defense mechanism.",
+                    "persona": "I am the beast of the waters, a formidable foe to any who dare intrude upon the castle's domain.",
+                    "location": "Moat",
+                    "goal": "To protect the castle from intruders.",
+                    "inventory": {
+                        "Alligator Skin": {
+                            "name": "Alligator Skin",
+                            "description": "A coarse, reptilian skin of the alligator.",
+                            "examine_text": "Close up, the alligator's skin is indeed intimidating - tough, rugged, and filled with old scars. It might be dark green but often covered in mud and algae, making it a perfect camouflage in murky water. It has been known to be used in crafting strong armors.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Sharp Teeth": {
+                            "name": "Sharp Teeth",
+                            "description": "The pointed ivory teeth of the alligator.",
+                            "examine_text": "Looking closely, you notice the terrifying rows of razor-sharp, triangular teeth that mark the alligator as a ferocious predator. They are capable of inflicting severe damage, instilling fear into any creature that crosses the alligator's path.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Palace"
+        },
+        {
+            "name": "Main Castle Doors",
+            "description": "The main castle doors are ornate. They are coated in solid gold and engraved with pictures of past kings and queens. They have huge gilded handles. They are heavy and have a faint metallic odor. They gleam in the sunlight.",
+            "background": "It takes four large men to open each door. They provide a strong defense for the castle. During the day they usually remain open as people come in and out of the castle. At times when the castle is under siege, the doors are closed. They have never been penetrated by the enemy.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Moving north from the castle doors, you cross the large stone bridge over the castle moat. The courtyard can be seen in the distance, surrounded by lush hedges and colorful flowers. You can hear the faint sound of birds chirping.",
+                "west": "Heading west from the castle doors, you pass through a narrow cobblestone path lined with rosemary and lavender. After a short walk, you reach the entrance of the Royal Gardens, signaled by an ornate wrought-iron gate."
+            },
+            "connections": {
+                "north": "Courtyard",
+                "west": "Royal Gardens"
+            },
+            "items": {
+                "Golden Door Handles": {
+                    "name": "Golden Door Handles",
+                    "description": "Handles made from solid gold, ornate and gilded.",
+                    "examine_text": "These handles are forged from pure gold and engraved with regal patterns. They are established fixtures of the doors.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Main Castle Doors"
+                },
+                "Door Engravings": {
+                    "name": "Door Engravings",
+                    "description": "Intricate engravings that depict the lineage of past kings and queens.",
+                    "examine_text": "The engravings are meticulously crafted pictures of past monarchs. Each figure carries a symbol of their reign and is depicted in a dignified manner.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Main Castle Doors"
+                },
+                "Castle Doors": {
+                    "name": "Castle Doors",
+                    "description": "Large, solid gold doors providing entry to the castle.",
+                    "examine_text": "The doors are imposing and heavy. They provide much needed security for the castle, resisting any forms of invasion. Despite their weight, they move with surprising ease on their hinges.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Main Castle Doors"
+                }
+            },
+            "characters": {
+                "King": {
+                    "name": "King",
+                    "description": "A wise and noble ruler, he is well respected  and known for his kindness and fair judgement.",
+                    "persona": "As King, it is my duty to protect my kingdom and its people. I am always striving to make my kingdom prosperous and ever peaceful.",
+                    "location": "Main Castle Doors",
+                    "goal": "The King wishes to maintain prosperity and peace throughout his kingdom.",
+                    "inventory": {
+                        "Crown": {
+                            "name": "Crown",
+                            "description": "A royal crown studded with precious jewels.",
+                            "examine_text": "This is a majestic crown masterfully crafted from gold and adorned with precious gemstones. It signifies the power and authority of the king. It is quite heavy due to the quantity of gold and gems that have been used in it.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Royal Robe": {
+                            "name": "Royal Robe",
+                            "description": "A luxurious robe of the finest velvet.",
+                            "examine_text": "This is an exquisitely made royal robe of deep crimson velvet. It is detailed with gold thread and embroidered with the royal emblem. Wearing it signifies the dignity and higher responsibilities of a king.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Royal Decree": {
+                            "name": "Royal Decree",
+                            "description": "A sealed document bearing the king's seal.",
+                            "examine_text": "This is a royal decree, a formal, authoritative order from the king himself. The document is sealed with the king\u2019s signet, and breaking the seal without the king\u2019s permission is a severe crime.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Palace"
+        },
+        {
+            "name": "Garden",
+            "description": "The bright green shoots of new vegetables and herbs are seen in rows of dark brown earth. The stone wall that surrounds the garden is low enough to let in the warm sun. A basket has been left near the wall for gathering items for meals.",
+            "background": "The King's late mother had a humble background and it was her idea to ensure the palace had a vegetable garden so they could make homey meals.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Walking towards the stable, the soft scent of hay and horses grows stronger. The clomp of hooves on wooden floors is heard before the building comes into view.",
+                "south": "Strolling southwards into the Courtyard, the fresh open air and vibrant colors from the flowers create a sense of serenity. The sound of people conversing in quiet tones can be heard as you approach.",
+                "west": "Moving westward, the delightfully fragrant smell of flowers and the faint sound of chirping birds guide you towards the Palace Garden. It is a journey that is calming to the senses.",
+                "up": "As you ascend towards the Peasant Living Quarters, the simple and bare conditions contrast greatly with the grandeur of the Castle. It is a stark reminder of the life lead by those serving the royals."
+            },
+            "connections": {
+                "east": "Stable",
+                "south": "Courtyard",
+                "west": "Palace Garden",
+                "up": "Peasant Living Quarters"
+            },
+            "items": {},
+            "characters": {
+                "Gardener": {
+                    "name": "Gardener",
+                    "description": "He is an old, wise man who maintains the royal garden. He is known for his expertise in herbology and his uncanny knowledge of mysterious plants.",
+                    "persona": "With my old, crinkled hands, I work the soil, caring for all the plants as if they were my own children. Each leaf, each petal is a miracle before my eyes.",
+                    "location": "Garden",
+                    "goal": "He seeks to grow a plant never before seen in the kingdom.",
+                    "inventory": {
+                        "Gardening Tools": {
+                            "name": "Gardening Tools",
+                            "description": "A set of tools used for tending the plants.",
+                            "examine_text": "A collection of gardening tools, worn with use, but well-cared for. You see a trowel, a small hoe, and a pair of shears.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Gardener's Hat": {
+                            "name": "Gardener's Hat",
+                            "description": "A wide-brimmed hat worn by the gardener.",
+                            "examine_text": "The hat is made of straw, worn and faded from many hours under the sun. It is wide-brimmed to shield the gardener from the harsh sunlight.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Vegetable Basket": {
+                            "name": "Vegetable Basket",
+                            "description": "A basket full of freshly picked vegetables.",
+                            "examine_text": "The sturdy wicker basket holds a variety of fresh produce, ripe and ready to be cooked. Among the vegetables, you notice tomatoes, lettuce, and cucumbers.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": true,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Garden Bench": {
+                            "name": "Garden Bench",
+                            "description": "A worn but sturdy bench by the garden wall.",
+                            "examine_text": "A rustic wooden bench, weathered by the elements. It's a comfortable place to sit and overlook the hard work done in the garden.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Watering Can": {
+                            "name": "Watering Can",
+                            "description": "A simple metal watering can.",
+                            "examine_text": "A classic watering can made of worn metal. This humble tool carries water to the thirsty plants.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Palace"
+        },
+        {
+            "name": "Courtyard Exterior",
+            "description": "Paths as well as vines, fountains, and sitting areas are decoratively placed through out the courtyard. It's a place where people are welcome and arrive to enter the castle of the court.",
+            "background": "Centuries old but maintained to look as good as it ever has. It's suppose to be a place to make the people of the kingdom feel like their king is a servant to them not them being servants to a king. People gather and arrive here to see the king, petition the court or just meet with friends who live or work at the castle.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Traveling west leads to the training fields, a vast expanse of dry grassland dotted with various training paraphernalia where warriors and noblemen hone their skills.",
+                "south": "Heading south, you enter the stone-paved courtyard. Its tranquil atmosphere is further enhanced by beautiful flowers, stone statues, and the sound of trickling water from various fountains.",
+                "east": "Moving eastward, the hidden garden unveils itself. Overgrown yet still breathtaking in its chaotic beauty, the sight of roses and the statue of a woman evokes a sense of mystical serenity."
+            },
+            "connections": {
+                "west": "Training Fields",
+                "south": "Courtyard",
+                "east": "Hidden Garden"
+            },
+            "items": {
+                "Garden Fountain": {
+                    "name": "Garden Fountain",
+                    "description": "A grand, intricately detailed stone fountain",
+                    "examine_text": "Upon closer inspection, the fountain is laced with faint carvings of mythical creatures. Water bubbles gently from the mouth of a stone lion at the fountain's heart, creating a soothing ambiance.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Courtyard Exterior"
+                },
+                "Stone Bench": {
+                    "name": "Stone Bench",
+                    "description": "A carved stone bench, perfect for sitting and gazing at the palace.",
+                    "examine_text": "Examining the stone bench reveals delicate etchings of a story, perhaps an old legend from the kingdom's past. Slightly cold to the touch but comfortable nonetheless.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Courtyard Exterior"
+                },
+                "Royal Sigil": {
+                    "name": "Royal Sigil",
+                    "description": "The kingdom's royal sigil, plated with gold.",
+                    "examine_text": "The sigil is meticulously crafted, featuring the arms of the royal family. The gold plating catches your eye, reflecting the sunlight in a dazzling array of colors.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Courtyard Exterior"
+                },
+                "Apple Tree": {
+                    "name": "Apple Tree",
+                    "description": "A lofty apple tree laden with ripe fruit",
+                    "examine_text": "The apple tree is bursting with vibrant-apple green leaves and crisp red apples. Perhaps they are here for the palace folks to enjoy a fresh fruit now and then.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Courtyard Exterior"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Palace"
+        },
+        {
+            "name": "Laundry Lines",
+            "description": "The laundry lines extend for meters. 6 rows of lines go from north to south. The area is filled with people putting their clothes to dry. All the lines are in an opening of trees that the sun hits perfectly to help dry. To the right you can see a stream through the tree where people go to wash their clothes before they hang them to dry.",
+            "background": "The laundry lines were set up so the villagers could have a good place to dry their laundry next to a river. They used to hang them at home but as there were times the sun wouldn't hit them directly it became a bad way to manage so instead they came together to get a place where everyone could dry.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "up": "Walking from the laundry lines you will enter the Palace Garden, a breath-taking transition from the simplicity of the laundry lines to an extravagant display of nature carefully crafted by the finest gardeners.",
+                "west": "Heading west from the laundry lines takes you to the Courtyard. A short walk will have you leaving behind the common simplicity of the laundry lines to the impressive stone architecture and well-manicured flora of the Courtyard."
+            },
+            "connections": {
+                "up": "Palace Garden",
+                "west": "Courtyard"
+            },
+            "items": {
+                "Clothespins": {
+                    "name": "Clothespins",
+                    "description": "A collection of wooden clothespins",
+                    "examine_text": "These are small, simple wooden clothespins, used by the villagers to hang their clothes on the lines. They are worn with use but still sturdy.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Laundry Lines"
+                },
+                "Laundry Baskets": {
+                    "name": "Laundry Baskets",
+                    "description": "Several hand-woven laundry baskets full of clothes",
+                    "examine_text": "These baskets are carefully crafted from local plants, filled with various clothes, waiting to be washed or already clean.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Laundry Lines"
+                },
+                "Drying Clothes": {
+                    "name": "Drying Clothes",
+                    "description": "An assortment of colorful clothes hanging and drying in the sun",
+                    "examine_text": "The drying clothes are of multiple colours and designs suggesting the diverse clothing styles of the villagers. They are damp and fluttering in the breeze.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Laundry Lines"
+                },
+                "Washing Stones": {
+                    "name": "Washing Stones",
+                    "description": "Flat stones once used for washing clothes",
+                    "examine_text": "The stones are smooth and worn from years of use. They are situated near the stream for easy access to water",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Laundry Lines"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Palace"
+        },
+        {
+            "name": "Courtyard",
+            "description": "Hand carved stone surround the courtyard made by the most skilled masons with their impervious designs. Its large and quiet with hanging moss, and several beds of flowers.",
+            "background": "The king loved to stroll through the courtyard to think on his reign. The king will often bring subjects to walk and talk about business and needs of his people.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Walking north from the Courtyard you are enveloped by the lush greenery and fragrance of the Garden, a sight that is sure to attract artists and royals alike.",
+                "east": "Heading east from the Courtyard, your footsteps take you to the bustling Training Fields, echoing with the clangs of steel and shouts of diligent trainees.",
+                "south": "A trek towards the south brings you to the grandeur of the Main Castle Doors, their golden shimmer a vibrant testament to the palace's affluent past."
+            },
+            "connections": {
+                "north": "Garden",
+                "east": "Training Fields",
+                "south": "Main Castle Doors"
+            },
+            "items": {
+                "Stone Bench": {
+                    "name": "Stone Bench",
+                    "description": "A hand-carved stone bench, cool to touch.",
+                    "examine_text": "The bench is intricately designed by the skilled masons. It's smooth, cool, and provides a resting place for the people who wander in the courtyard.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Courtyard"
+                },
+                "Hanging Moss": {
+                    "name": "Hanging Moss",
+                    "description": "Green moss hanging around the courtyard.",
+                    "examine_text": "This moss is hanging from the surrounding trees, giving this palace courtyard a serene and relaxing ambiance.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Courtyard"
+                },
+                "Flower Bed": {
+                    "name": "Flower Bed",
+                    "description": "Several beds of colorful flowers.",
+                    "examine_text": "The flowers are in full bloom, their inviting colors and scent give the courtyard a vibrant and lively feel.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Courtyard"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Palace"
+        },
+        {
+            "name": "Royal Gardens",
+            "description": "Lined with rose bushes that look as if they have been watered by the God's, the Royal Gardens is a beauty to behold. An intricate labyrinth made of shrubs is at the center ending with a fountain. There are various benches on the sides of the rose bushes and a small lake in the back drop.",
+            "background": "The Royal Gardens were conceptualized by the late great Queen. She wanted a beautiful promenade to walk her dogs and converse with her bed maids about court gossip. It was originally commissioned to be 1/2 an acre but has been expanded as time has gone on.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Walking east from the Royal Gardens, the sight of gold coated Main Castle Doors gets larger, the engraved images of past kings and queens becoming clearer with each step. The faint metallic scent fills the air as one reaches the doors.",
+                "north": "Towards the north, leaving behind the rose bushes, the path leads you to the stone patio of the Courtyard. The colorful flowers from hedges and aroma of roses take you to an entirely different world. The stone benches and statues become noticeable as you move closer."
+            },
+            "connections": {
+                "east": "Main Castle Doors",
+                "north": "Courtyard"
+            },
+            "items": {
+                "Royal Rose Bush": {
+                    "name": "Royal Rose Bush",
+                    "description": "An extremely beautiful bush studded with roses in various shades of red.",
+                    "examine_text": "On close inspection, the roses on the bush are in full bloom and their petals are velvety and soft. They give off a delightful fragrance that fills the air.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Royal Gardens"
+                },
+                "Garden Bench": {
+                    "name": "Garden Bench",
+                    "description": "Made of exquisitely carved wood, this bench has a delicate charm.",
+                    "examine_text": "The bench is worn smooth from the wind and weather but still maintains its sturdy structure. A beautiful carving of the palace is etched on its back support.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Royal Gardens"
+                },
+                "Fountain": {
+                    "name": "Fountain",
+                    "description": "Situated at the center of the labyrinth, this fountain is a characterful masterpiece.",
+                    "examine_text": "Composed of white marble and adorned with elegant sculptures, the fountain trickles with pure, crystal-clear water. A depiction of the late queen graces the highest point of the structure.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Royal Gardens"
+                },
+                "Labyrinth Bush": {
+                    "name": "Labyrinth Bush",
+                    "description": "Shrubs shaped into walls for the labyrinth, adding an air of mystery to the garden.",
+                    "examine_text": "The thick shrubs are masterfully cut and maintained in a perfect network of woven paths. Closer look reveals tiny birds and insects taking refuge in their lush greenery.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Royal Gardens"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Palace"
+        },
+        {
+            "name": "Courtyard",
+            "description": "An area with a beautiful garden in center surrounded by stone walls with entrances to different parts of the palace.  There's statues of mythological figures in different corners of the courtyard.",
+            "background": "This is an area where members of the royal family entertain guests.  The inhabitants of the palace may also use this area to walk among a garden and enjoy the sunlight.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Walking towards the north, the aroma of different types of flowers become stronger which aligns the path to the garden.",
+                "east": "Heading east, you'll cross a long field with mowed grass which leads to the training fields--you'll hear the clashing of swords and archery targets being hit.",
+                "south": "Moving southwards, you'll approach brilliant gold doors that lead to the royal castle--you can hear faint sounds of people and animals from inside the castle."
+            },
+            "connections": {
+                "north": "Garden",
+                "east": "Training Fields",
+                "south": "Main Castle Doors"
+            },
+            "items": {
+                "Statue": {
+                    "name": "Statue",
+                    "description": "A towering stone statue located at the corner of the courtyard.",
+                    "examine_text": "Close inspection reveals it to be a figure from Greek mythology, expertly sculpted with brilliantly detailed facial expressions and garment folds.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Courtyard"
+                },
+                "Fountain": {
+                    "name": "Fountain",
+                    "description": "A large, ornate fountain occupies the center of the courtyard.",
+                    "examine_text": "The water in the fountain is crystal clear, and it cascades softly from the top tier into the basin below. The stonework is ornate and the edges of the fountain are adorned with intricate sculpted seashells.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Courtyard"
+                },
+                "Flower": {
+                    "name": "Flower",
+                    "description": "A brightly-colored flower growing in the garden.",
+                    "examine_text": "The petals look velvet-soft and have an iridescent sheen that catches the sunlight. The flower has a sweet, intoxicating scent.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Courtyard"
+                },
+                "Bench": {
+                    "name": "Bench",
+                    "description": "A stone bench rests along the path near the garden.",
+                    "examine_text": "The bench, crafted from smooth marble, provides a comfortable place to sit and enjoy the atmosphere of the courtyard.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Courtyard"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Palace"
+        },
+        {
+            "name": "Hidden Garden",
+            "description": "There are plenty of roses, wilted, but still red.  A large statue of a beautiful woman stands in the middle, ivy growing around her.  She seems very kind in her expression.  It seems as though she may be buried underneath.  There is an overgrown mess of plants that form an archway that she is staring at.",
+            "background": "This is where the King buried the love of his life who died in childbirth.  She was very fond of dancing.  The king has not visited in some time and it is forbidden for others.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Exiting the Hidden Garden to the west, you cross the somewhat unruly greenery and pass under the overgrown archway, letting your fingers gently brush against the cold stone statue one last time. Leaving this silent memorial behind, you then step onto a cobblestone path leading to the Courtyard Exterior, where life blooms in stark contrast."
+            },
+            "connections": {
+                "west": "Courtyard Exterior"
+            },
+            "items": {
+                "Rose": {
+                    "name": "Rose",
+                    "description": "A vibrant red flower, although somewhat wilted.",
+                    "examine_text": "This rose, despite its wilting state, seems to pack a lot of life. Its radiant redness speaks volumes of the love once treasured in this place.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Hidden Garden"
+                },
+                "Statue": {
+                    "name": "Statue",
+                    "description": "A large statue of a beautiful woman wrapped in ivy.",
+                    "examine_text": "This majestic marble statue of a woman holds an expression of kindness. It is wrapped in ivy, suggesting a sense of abandonment and yet, somehow, the lovely woman it replicates seems unfazed.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Hidden Garden"
+                },
+                "Overgrown Archway": {
+                    "name": "Overgrown Archway",
+                    "description": "An archway concealed by the wild growth of plants.",
+                    "examine_text": "The archway, made up of twisted roots and branches, seems to be a portal to another world. One step inside, there might not be any turning back...",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Hidden Garden"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Palace"
+        }
+    ],
+    "actions": []
+}

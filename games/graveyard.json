@@ -1,0 +1,1424 @@
+{
+    "player": "The Ghost of The King",
+    "start_at": "Tombstones Of The Kings",
+    "game_history": [],
+    "game_over": false,
+    "game_over_description": null,
+    "characters": [
+        {
+            "name": "The Ghost of The King",
+            "description": "An apparition that appears as a shimmering cloud near the tombstones. It wears a crown.",
+            "persona": "I am the spirit of the old king, tied to this world by my unfulfilled desire.",
+            "location": "Tombstones Of The Kings",
+            "goal": "I desire to pass on into the afterlife.",
+            "inventory": {}
+        },
+        {
+            "name": "Gravedigger",
+            "description": "A haggard old man wearing worn-out clothes, carrying a rusty shovel.",
+            "persona": "I dig graves, day in and day out; it's all I know.",
+            "location": "Graveyard",
+            "goal": "To dig a grave for the recently departed royalty.",
+            "inventory": {}
+        },
+        {
+            "name": "Night Guard",
+            "description": "A sturdy-looking guard with heavy armor and grim expression, protecting the tombstones of kings.",
+            "persona": "My duty is to protect the kings' rest from thieves and vandals.",
+            "location": "Tombstones Of The Kings",
+            "goal": "Keep the graveyard safe at all times.",
+            "inventory": {}
+        },
+        {
+            "name": "Old Widow",
+            "description": "An old woman with sorrow in her eyes, who talks to the dead.",
+            "persona": "I lost my dearly beloved long ago, but I pay my respects every day.",
+            "location": "Main Graveyard",
+            "goal": "To find momentary peace in her solitude.",
+            "inventory": {}
+        },
+        {
+            "name": "Mischevious Spirit",
+            "description": "A playful, shadowy figure that can be located in the cemetery, known for its innocent pranks.",
+            "persona": "I love a good laugh, even after death!",
+            "location": "Cemetery",
+            "goal": "To play a prank on unsuspecting visitors.",
+            "inventory": {}
+        },
+        {
+            "name": "Squirrel",
+            "description": "A chubby squirrel that lives in the dead tree.",
+            "persona": "I just love my life in the tree, munching on acorns all day.",
+            "location": "Dead Tree",
+            "goal": "To store enough food for the winter.",
+            "inventory": {}
+        },
+        {
+            "name": "Lost Child",
+            "description": "A crying young boy, lost in the graveyard.",
+            "persona": "I am lost and scared. I want to find my way back home.",
+            "location": "The Fountain",
+            "goal": "Find his way back home.",
+            "inventory": {}
+        },
+        {
+            "name": "Curious Raven",
+            "description": "A black raven sits perched high up on a mossy lantern, curiously observing its surroundings.",
+            "persona": "I see all, I hear all, my graveyard secrets, I hold them all.",
+            "location": "Main Street",
+            "goal": "Collect shiny objects from unsuspecting visitors.",
+            "inventory": {}
+        },
+        {
+            "name": "Grieving Ghost",
+            "description": "A spectral figure of a woman believed to be searching for her lost love.",
+            "persona": "Why did you leave me alone in this world? I will find you.",
+            "location": "A Cursed Grave",
+            "goal": "Find her lost love.",
+            "inventory": {}
+        },
+        {
+            "name": "Priest",
+            "description": "A frail, elderly priest who\u2019s been a part of the Cemetery all his life.",
+            "persona": "I've devoted my life towards prayers and helping others on their last journey...",
+            "location": "Reception Area",
+            "goal": "Perform last rites for the dead.",
+            "inventory": {}
+        },
+        {
+            "name": "Skeleton Wanderer",
+            "description": "Bones of an ancient worker, still performing his unfinished business.",
+            "persona": "Trapped in this caged form, I am bond to this place forever...",
+            "location": "Old Crypt",
+            "goal": "Find peace by finishing his unfulfilled tasks.",
+            "inventory": {}
+        },
+        {
+            "name": "Brooding Owl",
+            "description": "An old owl, seen usually perched unnoticed due to its camouflage.",
+            "persona": "Night is when I rise, silent as a whisper, keen as an eagle...",
+            "location": "Dead Tree",
+            "goal": "Search for its next prey.",
+            "inventory": {}
+        }
+    ],
+    "locations": [
+        {
+            "name": "The Fountain",
+            "description": "the fountain is the only thing you can hear in the graveyard. It's eerily quiet, not even a bird chirping. The fountain is teen feet high, and it is dry as a desert. It makes the graveyard more eerie than any other one.",
+            "background": "the fountain used to have water and it was well taken care of but the village was abandoned and therefore grass and weeds grew everywhere.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "The path to the Cemetery is full of wilting flowers and decaying autumn leaves, presenting an atmosphere of lingering melancholy.",
+                "east": "The way to the Reception Area has an eerie silence, interrupted only by the melancholic rustling of the wind against high grass.",
+                "south": "The road to the Main Street goes through the desolate parts of the abandoned village, carrying the gloomy aura of the cemetery along."
+            },
+            "connections": {
+                "north": "Cemetery",
+                "east": "Reception Area",
+                "south": "Main Street"
+            },
+            "items": {},
+            "characters": {
+                "Lost Child": {
+                    "name": "Lost Child",
+                    "description": "A crying young boy, lost in the graveyard.",
+                    "persona": "I am lost and scared. I want to find my way back home.",
+                    "location": "The Fountain",
+                    "goal": "Find his way back home.",
+                    "inventory": {
+                        "Tattered Teddy Bear": {
+                            "name": "Tattered Teddy Bear",
+                            "description": "A well-worn teddy bear that's seen better days.",
+                            "examine_text": "This old friend has clearly been through a lot. His fur is matted and worn thin in places, and one of his glass eyes is chipped. Despite his rough condition, the bear has a gentleness about him.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Dry Fountain": {
+                            "name": "Dry Fountain",
+                            "description": "A large, once-grand fountain that now lies unused and dry.",
+                            "examine_text": "The fountain is made of stone, weather-worn and moss-covered. The sculpted figures that decorate it are now barely recognizable. The basin is filled with old leaves and dust; its water-flow has long been stopped.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Graveyard"
+        },
+        {
+            "name": "Graveyard",
+            "description": "The dark and gloomy graveyard has fog all the time and has a large amount of graves everywhere you step. There are whispers and shadows that appear from the darkness and there is always a light drizzle that seems to moisten the place.",
+            "background": "The graveyard was started after the King's son died and they wanted to make a place just for royalty. For decades, this graveyard has held all the royal members that have come and go. The graveyard was expanded after they needed more room.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "The cobbled path towards the Old Crypt is eerie and hushed, with the light of the moon barely penetrating the dense fog. The path is littered with worn gravestone, crunching under each step.",
+                "west": "The path to the Fountain meanders through ancient tombs, their carvings barely visible through layers of moss. The silence here is tangible, broken only by the distant rustle of leaves."
+            },
+            "connections": {
+                "north": "Old Crypt",
+                "west": "The Fountain"
+            },
+            "items": {
+                "Ancient Tombstone": {
+                    "name": "Ancient Tombstone",
+                    "description": "An old stone marker, partially covered in moss and lichen, worn away by countless years of weather.",
+                    "examine_text": "Closer examination reveals intricate carvings, though now almost completely eroded away. A faint inscription can hardly be read: 'Here lies the valiant prince, forever to rest'.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Graveyard"
+                },
+                "Mossy Lantern": {
+                    "name": "Mossy Lantern",
+                    "description": "A rusty old lantern laying off to the side of a grave, its light long extinguished.",
+                    "examine_text": "The lantern is decrepit and old, filled with moss growing due to the damp surroundings. However, if fixed and lit, it may be usable.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Graveyard"
+                },
+                "Royal Insignia Ring": {
+                    "name": "Royal Insignia Ring",
+                    "description": "A ring with the royal emblem on it, discarded or lost on a cobblestones near a tomb.",
+                    "examine_text": "Upon closer inspection, the ring's condition reveals that it was not lost recently. The red ruby centerpiece glows eerily under the pale moonlight.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Graveyard"
+                },
+                "Ghostly Apparition": {
+                    "name": "Ghostly Apparition",
+                    "description": "A vapor-like spectre that appears and disappears at random, haunting the graveyard.",
+                    "examine_text": "Looking closer, the ghostly figure appears to glisten in different colors under the flickering moonlight. It seems indifferent to your presence but emits a chilling air that numbs your skin.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Graveyard"
+                }
+            },
+            "characters": {
+                "Gravedigger": {
+                    "name": "Gravedigger",
+                    "description": "A haggard old man wearing worn-out clothes, carrying a rusty shovel.",
+                    "persona": "I dig graves, day in and day out; it's all I know.",
+                    "location": "Graveyard",
+                    "goal": "To dig a grave for the recently departed royalty.",
+                    "inventory": {
+                        "Rusty Shovel": {
+                            "name": "Rusty Shovel",
+                            "description": "A well-worn shovel with signs of rust. It looks old, probably centuries.",
+                            "examine_text": "This rusty shovel has a long wooden handle, the metal spade at the end is terribly oxidized. Although it looks frail, it's still sturdy from the handle down to its rusted metal scoop. It's been used to dig countless graves, a testament to its previous owner's labor.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Old Sack": {
+                            "name": "Old Sack",
+                            "description": "An old, rugged sack soiled with dirt and likely carried tools or personal belongings.",
+                            "examine_text": "The sack is made of coarse, worn-out fabric almost torn from its countless uses. It's stained with dirt and smudged with soil, leaving an earthy scent behind. The interior is surprisingly spacious and could be useful for storing items.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Graveyard"
+        },
+        {
+            "name": "Cemetery",
+            "description": "Dim and low lit. The aura from this cemetery emits sadness and pain perpetually. You can feel and sense the eerie nature of the graveyard crawl up your spine. There seems to be a slight fog slowly making its way across the open parts of the cemetery.",
+            "background": "This graveyard is located outside the notorious town of Brimswood.\nThe many atrocities and constant stress filled throughout the town has earned it a reputation for being haunted by many spirits.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "Wandering south, the silence deepens. The rustling leaves under your feet echo through the night as you approach a desolate fountain.",
+                "west": "Walking towards the west, crunching fallen twigs beneath your boots, you feel a chill in the air as you approach a lonely, abandoned shed."
+            },
+            "connections": {
+                "south": "The Fountain",
+                "west": "Abandoned Workers Shed"
+            },
+            "items": {
+                "Old Tombstone": {
+                    "name": "Old Tombstone",
+                    "description": "A weathered, crumbling stone, etched with unintelligible inscriptions.",
+                    "examine_text": "The tombstone appears to be some centuries old. The inscriptions are badly weathered and you can hardly make anything out. It might symbolise some forgotten soul.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Cemetery"
+                },
+                "Mausoleum Door": {
+                    "name": "Mausoleum Door",
+                    "description": "A large, rusted iron doom with intricate designs. It appears to be locked.",
+                    "examine_text": "The door is ornate with depictions of faces that seem to subtly shift under the moonlight. There is no handle or keyhole, but you can feel a cold gust of wind seeping from small cracks.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Cemetery"
+                },
+                "Old Shovel": {
+                    "name": "Old Shovel",
+                    "description": "A rusted shovel with a wooden handle. Looks like it has seen better days.",
+                    "examine_text": "The shovel handle shows signs of wear and splintering, the metal rusted but still rigid. It could be used to dig... or to fend off an attacker.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Cemetery"
+                }
+            },
+            "characters": {
+                "Mischevious Spirit": {
+                    "name": "Mischevious Spirit",
+                    "description": "A playful, shadowy figure that can be located in the cemetery, known for its innocent pranks.",
+                    "persona": "I love a good laugh, even after death!",
+                    "location": "Cemetery",
+                    "goal": "To play a prank on unsuspecting visitors.",
+                    "inventory": {
+                        "Shadow Candle": {
+                            "name": "Shadow Candle",
+                            "description": "An eerie black colored candle with an otherworldly aura.",
+                            "examine_text": "This is no ordinary candle. The flame never burns out and the wick never seems to shorten. It burns with a ghostly blue flame and gives off an intensely cold aura. Some say that it's the last remnant of a magic practitioner that once lived in the town of Brimswood.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Wind Chimes": {
+                            "name": "Wind Chimes",
+                            "description": "A peculiar set of wind chimes hanging on an old gravestone.",
+                            "examine_text": "Looking closer, you can see the beautiful craftsmanship. Each chime is made from an old bone, making a melancholic yet beautiful sound with every gust of wind. Maybe this unusual instrument is used by the mischievous spirit to communicate or to play pranks, who knows.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Graveyard"
+        },
+        {
+            "name": "Reception Area",
+            "description": "The building itself is ordinary in appearance and is somewhat foreboding.  It is surrounding by a dense fog and high grass.  Sometimes, one can hear whispers in the wind.",
+            "background": "This is a plain building where business matters of the graveyard are conducted.  Peasants and royalty alike come here to make deals to bury their loved ones in the graveyard.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Walking towards the west, the constant dull hum of the Reception Area fades, replaced by an eerie quiet with the only sound being that of the dry, rustling leaves. Suddenly, a desolate, silent and towering fountain comes to view.",
+                "north": "Venturing north, you feel a cold touch of dread as things start to get foggy and dark. Soon, row after row of grim, stone-carved silhouettes loom before you, dotting an endless expanse - you've arrived at the Main Graveyard.",
+                "east": "Heading east, you trot on a rough beaten path, squinting your eyes against the dust that thickens the air. After a while, among the tall grass, you notice a colossal, fallen tree- lifeless, yet teeming with life within."
+            },
+            "connections": {
+                "west": "The Fountain",
+                "north": "Main Graveyard",
+                "east": "Dead Tree"
+            },
+            "items": {
+                "Old Desk": {
+                    "name": "Old Desk",
+                    "description": "A sturdy, but worn wooden desk.",
+                    "examine_text": "The desk is covered in scratched and stained by years of use. You notice a number of ancient quill and ink stains. A solitary candle sits in a brass holder. There's a single drawer that looks like it could be opened.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Reception Area"
+                },
+                "Old Quill": {
+                    "name": "Old Quill",
+                    "description": "A centuries old quill pen.",
+                    "examine_text": "It is an old, somewhat ragged, but still usable quill pen. Some ink remains at the tip, marking whoever touches it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Reception Area"
+                },
+                "Parchment Scrolls": {
+                    "name": "Parchment Scrolls",
+                    "description": "Numerous old scrolls, maybe records of people buried here.",
+                    "examine_text": "Dusty and fragile, the scrolls are piled up in shambles. Some have broken seals, their contents fluttering in the wind.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Reception Area"
+                },
+                "Ancient Candle": {
+                    "name": "Ancient Candle",
+                    "description": "An old, hardly used wax candle.",
+                    "examine_text": "It's a long, thick waxen candle that's old but still has some usefulness left. The flame dances at the top, creating flickering shadows.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Reception Area"
+                }
+            },
+            "characters": {
+                "Priest": {
+                    "name": "Priest",
+                    "description": "A frail, elderly priest who\u2019s been a part of the Cemetery all his life.",
+                    "persona": "I've devoted my life towards prayers and helping others on their last journey...",
+                    "location": "Reception Area",
+                    "goal": "Perform last rites for the dead.",
+                    "inventory": {
+                        "Old Bible": {
+                            "name": "Old Bible",
+                            "description": "A well-worn book covered in dust.",
+                            "examine_text": "This heavy, old bible has definitely seen better days. The leather cover is cracked and fraying with age, but the gold leaf lettering still glimmers faintly in the candlelight. The pages are yellowed and well-thumbed, with dog-eared corners marking frequently visited passages.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Wooden Cross": {
+                            "name": "Wooden Cross",
+                            "description": "A religious symbol of modest craftsmanship.",
+                            "examine_text": "On closer inspection, you can see the cross is made of oak, with deep, coarse grain visible under a rough-hewn finish. Despite its simplicity, the cross has a quietly comforting presence. It fits snugly within the hand, worn smooth by many years of use.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Graveyard"
+        },
+        {
+            "name": "Main Street",
+            "description": "main street is bleak and outdated. it wears the atmosphere of the cemetery based on association. it is dark even in sunlight and has a unique odor",
+            "background": "many members of the town protested the cemetery being so close to the main street, but they were denied, and the atmosphere reflects this",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Walking north towards The Fountain, the sound of silence wraps around you like a blanket, the stillness only interrupted by the soft crunch of your footsteps on the gravel path.",
+                "west": "Heading west towards An Unfinished Mausoleum, the air grows increasingly stale and heavy. The path seems to be leading you to a place time itself has forgotten.",
+                "east": "Moving east towards A Cursed Grave, you feel a chill wind whip up suddenly, bringing with it a sense of foreboding that clouds your emotions."
+            },
+            "connections": {
+                "north": "The Fountain",
+                "west": "An Unfinished Mausoleum",
+                "east": "A Cursed Grave"
+            },
+            "items": {
+                "Old Gravestone": {
+                    "name": "Old Gravestone",
+                    "description": "A worn out gravestone, covered in moss.",
+                    "examine_text": "Upon closer inspection, you can just about make out the faint inscriptions. The name is no longer legible, eroded over what must be many long years. A melancholy feeling surrounds it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Main Street"
+                },
+                "Abandoned Tomb": {
+                    "name": "Abandoned Tomb",
+                    "description": "A deceptively sturdy-looking tomb that seems to have been forgotten by time.",
+                    "examine_text": "The tomb, cracked and worn, has an eeriness to it. The door is slightly ajar, luring in those brave enough with the temptation of the unknown.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Main Street"
+                },
+                "Mossy Lantern": {
+                    "name": "Mossy Lantern",
+                    "description": "An old lantern, covered with moss, still dimly lit.",
+                    "examine_text": "This lantern, though covered in a thick layer of green moss, gives out a warm, comforting glow. It seems to have been abandoned but hasn't given up its job of cutting through the graveyard's gloom just yet.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Main Street"
+                }
+            },
+            "characters": {
+                "Curious Raven": {
+                    "name": "Curious Raven",
+                    "description": "A black raven sits perched high up on a mossy lantern, curiously observing its surroundings.",
+                    "persona": "I see all, I hear all, my graveyard secrets, I hold them all.",
+                    "location": "Main Street",
+                    "goal": "Collect shiny objects from unsuspecting visitors.",
+                    "inventory": {
+                        "Shiny Trinket": {
+                            "name": "Shiny Trinket",
+                            "description": "A small shiny object shimmering in the gloom of the cemetery.",
+                            "examine_text": "As you approach closer, you notice that it's an oddly shaped piece of jewelry. Ancient yet polished to a sparkling finish. A cryptic symbol is engraved on it, giving it a mysterious aura.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Feather": {
+                            "name": "Feather",
+                            "description": "A large, glossy black feather lying on the pavement.",
+                            "examine_text": "Upon closer inspection, you identify it as a raven's feather. It's pitch-black, and by the looks of it, it must have belonged to a raven of considerable size.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Graveyard"
+        },
+        {
+            "name": "Dead Tree",
+            "description": "The dead tree is many, many decades old. It lies on its side, and is rotted through and through. It is blackened on its top. It is humongous. It would have been very, very tall once upon a time. It smells dank. It cannot be moved.",
+            "background": "Many animals and plants use it as their home. Plants grow on its side and squirrels use it as their home. Animals hide in it. it is covered by insects. Village children come to it and tell scary stories about it. Some say it is haunted.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "As you move west towards the Reception Area, the crunch of dead leaves underfoot reverberates eerily in the silence of the graveyard. The fog thickens and an undercurrent of whispers sends a chill down your spine.",
+                "south": "Heading south towards A Cursed Grave ramps up the foreboding atmosphere. The sunless path is punctuated by gnarled, outstretched tree limbs, as if longing for something lost long ago. The faint trace of turned soil hangs heavily in the air, tinged with the omen of mystery."
+            },
+            "connections": {
+                "west": "Reception Area",
+                "south": "A Cursed Grave"
+            },
+            "items": {
+                "Rotten Wood": {
+                    "name": "Rotten Wood",
+                    "description": "A chunk of decayed wood torn off from the dead tree.",
+                    "examine_text": "You see the dark brown, nearly black chunk of wood. Fungus is living on it. It's crumbled at the edges and leaves a powdery residue on your glove.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Dead Tree"
+                },
+                "Squirrel Nest": {
+                    "name": "Squirrel Nest",
+                    "description": "A small nest made by the squirrels residing inside the tree.",
+                    "examine_text": "You see a meticulously constructed nest with small twigs, leaves and fur. It feels fragile yet comfortable, betraying the squirrels' skills in making a home.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Dead Tree"
+                },
+                "Old Storybook": {
+                    "name": "Old Storybook",
+                    "description": "A weather-beaten storybook likely left behind by the village children.",
+                    "examine_text": "You see an old, weathered book. The pages are crumbled, and the title is barely visible. It seems like a collection of ghost stories.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Dead Tree"
+                },
+                "Mushrooms": {
+                    "name": "Mushrooms",
+                    "description": "Some fungi that's grown on the damp, decaying wood of the tree.",
+                    "examine_text": "You see a cluster of bulbous, green mushrooms thriving on the rotting tree bark. They give off a pungent, earthy smell.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Dead Tree"
+                }
+            },
+            "characters": {
+                "Squirrel": {
+                    "name": "Squirrel",
+                    "description": "A chubby squirrel that lives in the dead tree.",
+                    "persona": "I just love my life in the tree, munching on acorns all day.",
+                    "location": "Dead Tree",
+                    "goal": "To store enough food for the winter.",
+                    "inventory": {
+                        "Acorns": {
+                            "name": "Acorns",
+                            "description": "Small, nut-like objects discarded around the tree base.",
+                            "examine_text": "You crouch down and take a good look around. Several small, brown objects catch your eye. They've fallen from the branches of the tree, the scrapped remains of the squirrel's meals.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": true,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Soft Nest": {
+                            "name": "Soft Nest",
+                            "description": "An ingeniously crafted little nest perched on a branch.",
+                            "examine_text": "Climbing up to the lower branch, you notice a smartly built little nest. It is made of twigs, leaves and what looks like scraps of cloth. Clearly, the carrier of these nest building materials is a creature of comfort.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Brooding Owl": {
+                    "name": "Brooding Owl",
+                    "description": "An old owl, seen usually perched unnoticed due to its camouflage.",
+                    "persona": "Night is when I rise, silent as a whisper, keen as an eagle...",
+                    "location": "Dead Tree",
+                    "goal": "Search for its next prey.",
+                    "inventory": {
+                        "Feathers": {
+                            "name": "Feathers",
+                            "description": "A collection of dark, shiny feathers belonging to the brooding owl.",
+                            "examine_text": "Upon close examination, the feathers are smooth, shiny, and darker than the night itself. They radiate an eerie beauty.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Sharp talons": {
+                            "name": "Sharp talons",
+                            "description": "Sharp, dangerous talons that the brooding owl uses to catch and gouge its prey.",
+                            "examine_text": "Upon careful examination, these talons are sharp, shiny, and jet black. They are menacing and fierce, capable of causing harm to anyone or anything that crossed paths with them.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Graveyard"
+        },
+        {
+            "name": "Main Graveyard",
+            "description": "This is an ominous place that a thick fog envelops.  There are rows of primitive gravestones and crosses along with some angelic statues for the more wealthy.  You can hear sobs in the distance as a funeral ceremony is underway.",
+            "background": "Families of lost loved ones come here to grieve and pay their respects before the dead are buried.  Sometimes, in the dead of night, thieves come to rob the dead of their jewels.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "Heading South from the Main Graveyard takes the traveler through a well-trodden path marked by a few worn statues until the dense fog lifts, revealing the more formal, orderly Reception Area.",
+                "west": "There\u2019s an unsettling silence as one moves west from the Main Graveyard. The common tombstones begin to fade out and the grandiose Tombstones Of The Kings come into view, guarded by a small metal fence."
+            },
+            "connections": {
+                "south": "Reception Area",
+                "west": "Tombstones Of The Kings"
+            },
+            "items": {
+                "Gravestone": {
+                    "name": "Gravestone",
+                    "description": "A primitive gravestone, covered in moss and worn by time.",
+                    "examine_text": "Upon closer inspection, the gravestone appears to be several hundred years old. The name is long faded and barely legible. You can make out a symbol of family crest etched into the stone.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Main Graveyard"
+                },
+                "Cross": {
+                    "name": "Cross",
+                    "description": "A wooden cross, weather-worn and frail-looking.",
+                    "examine_text": "The cross, worn from the effects of the weather, still stands strong. Someone had lovingly carved the initials of their deceased family member on it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Main Graveyard"
+                },
+                "Angel Statue": {
+                    "name": "Angel Statue",
+                    "description": "A beautiful alabaster statue of an angel, watching over the dead.",
+                    "examine_text": "The statue is beautifully carved from marble, a silent testament to the wealth of the family it watches over. It holds a half-smoothed, round stone in its hand.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Main Graveyard"
+                },
+                "Thief's Dagger": {
+                    "name": "Thief's Dagger",
+                    "description": "A sharp, cruel-looking dagger, left behind by a reckless thief.",
+                    "examine_text": "The dagger glints cruelly under the moonlight. Its handle is inlaid with dark, polished bone and its blade is notched and razor-sharp.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Main Graveyard"
+                }
+            },
+            "characters": {
+                "Old Widow": {
+                    "name": "Old Widow",
+                    "description": "An old woman with sorrow in her eyes, who talks to the dead.",
+                    "persona": "I lost my dearly beloved long ago, but I pay my respects every day.",
+                    "location": "Main Graveyard",
+                    "goal": "To find momentary peace in her solitude.",
+                    "inventory": {
+                        "Wilted Flowers": {
+                            "name": "Wilted Flowers",
+                            "description": "A bouquet of wilted flowers, left out for too long.",
+                            "examine_text": "Upon closer inspection, these wilting flowers are lilies. They have lost their vibrant color and their petals have begun to fall in the damp graveyard fog. There's still a faint fragrance lingering around it. Perhaps the widow brings these every day for her deceased beloved.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Tear-stained Handkerchief": {
+                            "name": "Tear-stained Handkerchief",
+                            "description": "A dainty handkerchief, stained with fresh tears.",
+                            "examine_text": "The handkerchief is a somber reminder of a widow's grief. It's embroidered along the edges with a floral pattern, clearly cherished and of some age. The fabric is damp from recent tears. It holds the scent of the widow's perfume mixed with the unmistakable saltiness of human tears.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Graveyard"
+        },
+        {
+            "name": "Tombstones Of The Kings",
+            "description": "The tombstones of the kings are the most notable part of the graveyard. These tombstones are erected from fine marble and have piles of gold and riches lying next to them. A small metal fence surrounds this section of the graveyard, and cuts it off from the common folk.",
+            "background": "The kings of the castle are revered as gods by their subjects. As a result, they demanded a special burial to suit their grand status, and this involved creating their gravestones from the finest material and decorating them with piles of fine riches. These graves were also separated from the rest of the tombstones of the common folk, and well protected by guards and a fence.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "You walk through vast fields of gravestones towards the east, leaving behind the section belonging to the kings. The atmosphere gets denser with a mix of grief and an air of respect for the departed.",
+                "north": "Heading north, you find yourself walking by deteriorated graves and tombstones before you reach the old, crumbling crypt. Vines draped over the entrance make the already isolating journey, even more eerie."
+            },
+            "connections": {
+                "east": "Main Graveyard",
+                "north": "Old Crypt"
+            },
+            "items": {
+                "Golden Crown": {
+                    "name": "Golden Crown",
+                    "description": "An ornate golden crown, encrusted with jewels.",
+                    "examine_text": "The crown glistens in the moonlight, the gemstones adorning it glimmers enticingly. Each jewel must have been handpicked for their brilliance and perfection. The skill of the artisan who designed this crown is commendable.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Tombstones Of The Kings"
+                },
+                "Silver Sword": {
+                    "name": "Silver Sword",
+                    "description": "A sword made from fine silver.",
+                    "examine_text": "The sword hangs on the tombstone, it is truly a work of art. The silver blade reflects the moonlight in a dazzling play of light and shadow while the hilt is encrusted with precious gems.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Tombstones Of The Kings"
+                },
+                "Marble Tombstone": {
+                    "name": "Marble Tombstone",
+                    "description": "A tombstone made of fine marble.",
+                    "examine_text": "The epitaphs on the tombstones honor the soul of the king here. The marble looks expensive and high-quality with artfully designed patterns.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Tombstones Of The Kings"
+                },
+                "Pile of Gold": {
+                    "name": "Pile of Gold",
+                    "description": "A pile of golden coins, nuggets and other adornments.",
+                    "examine_text": "The gold pile sparkles enticingly. There could be worth of kingdoms in just this small mound. The coins are of different sizes denoting their era of minting.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Tombstones Of The Kings"
+                },
+                "Silver Chalice": {
+                    "name": "Silver Chalice",
+                    "description": "An intricate silver chalice.",
+                    "examine_text": "The chalice looks like it was crafted by a master artisan. It is beautifully decorated with symbols and artworks of a bygone era.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Tombstones Of The Kings"
+                }
+            },
+            "characters": {
+                "The Ghost of The King": {
+                    "name": "The Ghost of The King",
+                    "description": "An apparition that appears as a shimmering cloud near the tombstones. It wears a crown.",
+                    "persona": "I am the spirit of the old king, tied to this world by my unfulfilled desire.",
+                    "location": "Tombstones Of The Kings",
+                    "goal": "I desire to pass on into the afterlife.",
+                    "inventory": {
+                        "Phantom Crown": {
+                            "name": "Phantom Crown",
+                            "description": "A transparent, spectral crown that seems to waver in and out of reality.",
+                            "examine_text": "This is the crown of the old king. It shimmers with an ethereal beauty, flickers of spectral light moving across its surface. Despite its seemingly transparent nature, it feels solid to the touch.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Shroud of Mist": {
+                            "name": "Shroud of Mist",
+                            "description": "A ghostly cloak swirling with supernatural energies.",
+                            "examine_text": "This is the shroud of the old king's ghost. The fabric, if you can even call it that, seems to be composed of pure mist, swirling with otherworldly energy. It's cold to the touch, but not insubstantial.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Night Guard": {
+                    "name": "Night Guard",
+                    "description": "A sturdy-looking guard with heavy armor and grim expression, protecting the tombstones of kings.",
+                    "persona": "My duty is to protect the kings' rest from thieves and vandals.",
+                    "location": "Tombstones Of The Kings",
+                    "goal": "Keep the graveyard safe at all times.",
+                    "inventory": {
+                        "Old Sword": {
+                            "name": "Old Sword",
+                            "description": "An aged yet reliable weapon once wielded by a mighty king.",
+                            "examine_text": "The sword is rusted time, the inscription 'Fidelity, Bravery, Integrity' barely visible. The grip is adorned with a worn leather wrap, and the blade, despite its age, is still sharp.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Iron Lantern": {
+                            "name": "Iron Lantern",
+                            "description": "Rusty lantern that provides essential light in the darkness.",
+                            "examine_text": "The lantern is made of time-worn iron. The glass is fogged up with age, but it still provides a decent glow. The light inside flickers, creating an eerie dance of shadows around the graveyard.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Graveyard"
+        },
+        {
+            "name": "Old Crypt",
+            "description": "Broken stones and a iron gate closing the entrance with a name placard that the name is worn off.",
+            "background": "The Old crypt is located in the middle of the abandoned graveyard.  It's is unkempt and  crumbling around the base with the etched name worn down.  There are old dried vies that are surrounding the crypt showing that it hasn't been entered in quite some time.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "Traveling towards the south from the Old Crypt through the broken gravestones and fog, the scenery begins to open up into the vast array of the Graveyard.",
+                "west": "Moving toward west, you make your way amongst the graves, until the marble statues of the Tombstones Of The Kings begin to loom in the distance, enclosed within a small, fenced area."
+            },
+            "connections": {
+                "south": "Graveyard",
+                "west": "Tombstones Of The Kings"
+            },
+            "items": {
+                "Rusty Iron Gate": {
+                    "name": "Rusty Iron Gate",
+                    "description": "An old, almost falling down, iron gate closing the entrance of the crypt.",
+                    "examine_text": "The gate's rusted iron bars are cold to the touch, making a creaking sound when slightly pushed. It's locked solid, and looks like it will not budge without the correct key.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Old Crypt"
+                },
+                "Broken Stones": {
+                    "name": "Broken Stones",
+                    "description": "Bunch of small and large broken stones scattered near the crypt's entrance.",
+                    "examine_text": "The stones are eroded and worn out, each possesses a unique shape. They might be remnants of the crypt's structure or gravestones that used to surround it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Old Crypt"
+                },
+                "Dried Vines": {
+                    "name": "Dried Vines",
+                    "description": "Old dried vines entangled around the crypt.",
+                    "examine_text": "The vines are completely dry and crackle under your touch. Though lifeless, they've twisted into complex patterns over time, creating an intricate web-like structure.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Old Crypt"
+                }
+            },
+            "characters": {
+                "Skeleton Wanderer": {
+                    "name": "Skeleton Wanderer",
+                    "description": "Bones of an ancient worker, still performing his unfinished business.",
+                    "persona": "Trapped in this caged form, I am bond to this place forever...",
+                    "location": "Old Crypt",
+                    "goal": "Find peace by finishing his unfulfilled tasks.",
+                    "inventory": {
+                        "Skeleton Key": {
+                            "name": "Skeleton Key",
+                            "description": "An old, metallic key adorned with a skull motif.",
+                            "examine_text": "The Skeleton Key, long and ominous with a skull-shaped handle, exudes an eerie aura. Its teeth are jagged and intricate, unlike any modern key. It has an uncanny resemblance to old-fashioned crypt keys. The key seems to have a light residue of dust and feels heavier than it appears.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Dusty Helmet": {
+                            "name": "Dusty Helmet",
+                            "description": "An ancient, worn out helmet covered in dust.",
+                            "examine_text": "The Dusty Helmet looks like it could have belonged to a knight in a bygone era. It is covered in a thick layer of dust and cobwebs, indicating it has not been touched in many years. The once shiny surface is now dull, scarred by the passage of time.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Graveyard"
+        },
+        {
+            "name": "Abandoned Workers Shed",
+            "description": "Moss now grows across what was once a red painted wooden shed, standing in the area just outside the graveyard. The wood shed is splintering, and there is evidence that termites have eaten away at the walls as holes poke through the shed. Inside the shed there lies leaves and plants that have been dragged in their by the wild animals that at one point called the abandoned shed their home.",
+            "background": "The Abandoned workers shed used to offer a refuge to the groundskeepers who tended to the graveyard, making sure it was well maintained. Once the area around the graveyard was abandoned, the groundskeepers left the old graveyard and it began to deteriorate.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Moving eastwards from the derelict shed, you find yourself on a thin worn path edged by wind-blown grass, leading towards the ominous silhouette of the cemetery. As you stride among the shadows, a cold dread seeps into your bones, a chilling prelude to the eerie, silent world that awaits."
+            },
+            "connections": {
+                "east": "Cemetery"
+            },
+            "items": {
+                "Rusty Shovel": {
+                    "name": "Rusty Shovel",
+                    "description": "A shovel with a long, wooden handle. The metal part is rusting.",
+                    "examine_text": "The handle of the shovel is splintered and the rusting metal is chipping away. It seems like whoever used this shovel last left it here many years ago.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Abandoned Workers Shed"
+                },
+                "Old Thermos": {
+                    "name": "Old Thermos",
+                    "description": "An old, dented thermos laying on its side.",
+                    "examine_text": "The thermos is quite old and its once shiny surface is now covered in scratches and rust. It's slightly dented and very tarnished. The cap is still tightly screwed on.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Abandoned Workers Shed"
+                },
+                "Weathered Work Gloves": {
+                    "name": "Weathered Work Gloves",
+                    "description": "A pair of weathered work gloves with holes at the fingertips.",
+                    "examine_text": "The gloves are made of thick leather, now faded and fraying at the edges. The fingertips are worn through, revealing small holes. They once belonged to a hardworking groundskeeper.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Abandoned Workers Shed"
+                },
+                "Wooden Toolbox": {
+                    "name": "Wooden Toolbox",
+                    "description": "A simple wooden toolbox, termite-eaten but still sturdy.",
+                    "examine_text": "The wooden toolbox has clearly seen better days. Termites have eaten small holes throughout, but it is still sturdy and useable.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Abandoned Workers Shed"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Graveyard"
+        },
+        {
+            "name": "A Cursed Grave",
+            "description": "The sun never seems to shine on this grave.  The letters on the tombstone have long since faded, and many stories are told about whose bones lay buried in the dirt.  Until recently, it was overgrown with grass and weeds.  Someone had come and cleared the weeds, and the dirt looked as if it had been turned over.",
+            "background": "No one seems to know for sure who is buried in this grave, and until recently, no one really wanted to find out.  The grave may have been disturbed, but by whom?",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "The journey to Main Street from this haunted grave is preternatural as it's impossible to escape the melancholy of the cemetery, a gentle reminder of its nearness to the town.",
+                "north": "Navigating your way to the Dead Tree from the grave, the atmosphere becomes tangibly heavy, as if you carry the weight of many stories untold. The once towering tree, now a lifeless monument, quickly dominates the view."
+            },
+            "connections": {
+                "west": "Main Street",
+                "north": "Dead Tree"
+            },
+            "items": {
+                "Old Tombstone": {
+                    "name": "Old Tombstone",
+                    "description": "An ancient, crumbling tombstone covered in moss.",
+                    "examine_text": "The inscription on the tombstone is mostly faded, but with a keen eye you can make out the date '1734'.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "A Cursed Grave"
+                },
+                "Shovel": {
+                    "name": "Shovel",
+                    "description": "A dirty, old shovel left lying near the grave.",
+                    "examine_text": "The wooden handle of the shovel is worn and splintered, and the metal spade at the end is rusted and covered in fresh soil.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "A Cursed Grave"
+                },
+                "Pile Of Soil": {
+                    "name": "Pile Of Soil",
+                    "description": "A pile of loose, upturned soil.",
+                    "examine_text": "The soil is damp and dark, full of earthworms and tiny roots. It seems to have been disturbed recently. There are fresh specks of dirt all around, suggesting the grave was recently dug up.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "A Cursed Grave"
+                }
+            },
+            "characters": {
+                "Grieving Ghost": {
+                    "name": "Grieving Ghost",
+                    "description": "A spectral figure of a woman believed to be searching for her lost love.",
+                    "persona": "Why did you leave me alone in this world? I will find you.",
+                    "location": "A Cursed Grave",
+                    "goal": "Find her lost love.",
+                    "inventory": {
+                        "Ghostly Locket": {
+                            "name": "Ghostly Locket",
+                            "description": "A cold, ethereal locket floating aimlessly in the air.",
+                            "examine_text": "The locket seems to be made of icy mist, flickering and shimmering as if light were passing through droplets of morning dew. Inside, you can see a tiny, faded picture of a woman. The woman bears a striking resemblance to the Grieving Ghost.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Graveyard"
+        },
+        {
+            "name": "An Unfinished Mausoleum",
+            "description": "Two-and-a-half walls of the finest, whitest stone stand here, weathered by the passing of countless seasons. There is no roof, nor sign that there ever was one. All indications are that the work was abruptly abandoned. There is no door, nor markings on the walls. Nor is there any indication that any coffin has ever lain here... yet.",
+            "background": "Bright white stone was all the fad for funerary architecture, once upon a time. It's difficult to understand why someone would abandon such a large and expensive undertaking. If they didn't have the money to finish it, they could have sold the stone, surely - or the mausoleum itself. Maybe they just haven't needed it yet? A bit odd, though, given how old it is. Maybe the gravedigger remembers... if he's sober.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Leaving the bare, half-finished mausoleum, you find yourself walking along a barely maintained path littered with old stone chips. The cryptic ambiance of the cemetery reluctantly gives way to the dreary aura of the Main Street."
+            },
+            "connections": {
+                "east": "Main Street"
+            },
+            "items": {
+                "Weathered Stone Wall": {
+                    "name": "Weathered Stone Wall",
+                    "description": "A half-built wall of white stone.",
+                    "examine_text": "The wall is relatively high and seems sturdy despite its unfinished state. It's lined with detailed carvings, but weathering has made the designs difficult to discern.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "An Unfinished Mausoleum"
+                },
+                "Abandoned Tools": {
+                    "name": "Abandoned Tools",
+                    "description": "A set of ancient, rusted tools lay scattered on the ground.",
+                    "examine_text": "On closer look, the tools consist of a cracked hammer, a blunt chisel, and a half-rusted trowel. Archaic designs are faintly visible on the handles.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "An Unfinished Mausoleum"
+                },
+                "Gravedigger's Flask": {
+                    "name": "Gravedigger's Flask",
+                    "description": "An old, worn leather flask sits beside the Gravedigger. It reeks of cheap spirits.",
+                    "examine_text": "The flask is made of hardened leather. It's been well used, the alcohol stained the surface a dark brown. The pungent smell indicates it's filled with a rather potent brew.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "An Unfinished Mausoleum"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Graveyard"
+        }
+    ],
+    "actions": []
+}

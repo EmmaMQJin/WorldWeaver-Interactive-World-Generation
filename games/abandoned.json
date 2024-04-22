@@ -1,0 +1,2363 @@
+{
+    "player": "Old Man Jenkins",
+    "start_at": "Gold Mine",
+    "game_history": [],
+    "game_over": false,
+    "game_over_description": null,
+    "characters": [
+        {
+            "name": "Old Man Jenkins",
+            "description": "An ancient, gaunt man with a grizzled beard and haunted eyes, wearing old mining overalls that have seen better days.",
+            "persona": "I've been in these mines since the days of old, when the gold flowed like a river. Now all I see are ghosts of glory past.",
+            "goal": "I'm staying here till I find that last piece of gold, the one that eluded me all these years.",
+            "location": "Gold Mine",
+            "inventory": {}
+        },
+        {
+            "name": "Ghastly Miner",
+            "description": "Beckoning specter of a lost miner with a translucent figure and glowing eyes, clinging to an old rusted pickaxe.",
+            "persona": "Once I was a miner, filled with dreams of wealth and happiness. The gold was my downfall. Now, I am forever lost.",
+            "goal": "I'm bound to these lands, forever searching for the next gold vein.",
+            "location": "Gold Mine",
+            "inventory": {}
+        },
+        {
+            "name": "Whiskey Rat",
+            "description": "A large, scrappy rat with sharp eyes, scurrying around with an empty whiskey bottle strapped to its back.",
+            "persona": "I'm the king of these rotten tunnels, finding treasures among the junk the old miners left behind.",
+            "goal": "As long as there's food to scrounge and shiny bits to collect, I'm content.",
+            "location": "Gold Mine",
+            "inventory": {}
+        },
+        {
+            "name": "George",
+            "description": "An old, grizzled miner. He's got a grey beard so thick, it covers most of his face. His eyes seem dull but you can tell he's seen a lot in his years.",
+            "persona": "I spent my best years in this mine. I know every rock, every turn - like the back of my hand. Memories never left me... unlike people.",
+            "goal": "Find the rumoured hidden vein of gold that was never uncovered.",
+            "location": "Abandoned Mine",
+            "inventory": {}
+        },
+        {
+            "name": "Melinda",
+            "description": "A young woman with a determined look in her eyes. She carries an air of desperation yet resolve.",
+            "persona": "People say my pa lost himself in this mine. I ain't believe in no ghosts but I just can't rest till I find out for myself what happened.",
+            "goal": "To put the mysteries of her father's disappearance to rest.",
+            "location": "Abandoned Mine",
+            "inventory": {}
+        },
+        {
+            "name": "Tom",
+            "description": "A brash and headstrong teenager, daring in his actions. He constantly has a sparkle in his eyes and smudge on his face.",
+            "persona": "I like to be where I'm told not to be. Plus there's something about this old mine, bit scary, bit exciting.",
+            "goal": "To capture proof of the ghostly legends.",
+            "location": "Abandoned Mine",
+            "inventory": {}
+        },
+        {
+            "name": "Gustav",
+            "description": "A frail, elderly man with a long, unkempt beard and dust-covered overalls. His eyes hold a spark of stubborn defiance against the ravages of time.",
+            "persona": "I've lived in this wilderness all my life, since before the shack was built. Now my wife is gone, it feels like I'm just a ghost haunting the premises. Won't you sit down, stranger, and share your tales to lighten an old man's heart?",
+            "goal": "To keep the memory of his wife alive and to maintain the sanctity of the shack.",
+            "location": "Weathered Shack",
+            "inventory": {}
+        },
+        {
+            "name": "Maria",
+            "description": "A spectral figure draped in ethereal garments, transcending time and space. Her soft glow illuminates the dark corners of the shack. Her eyes seem perpetually lost in mournful memories.",
+            "persona": "In life, my heart belonged to Gustav and this humble dwelling. In death, my spirit is bound here. Perhaps a kindness from a living soul could set me free.",
+            "goal": "To find peace and move on to the afterlife.",
+            "location": "Weathered Shack",
+            "inventory": {}
+        },
+        {
+            "name": "Elden the Ghost Miner",
+            "description": "Elden's ghostly figure flickers in the dim light coming from the mine's entrance, his worn out miner's uniform and helmet indicative of his past life.",
+            "persona": "In life, I wielded a pickaxe tirelessly, seeking the black gold that our village so desperately needed. Now, trapped in between planes, I am bound to this mine, moaning my endless lament.",
+            "goal": "To find peace he needs to find his lost pickaxe which is presumably somewhere in the deep mine.",
+            "location": "Abandoned Mine Entrance",
+            "inventory": {}
+        },
+        {
+            "name": "Grumpy Old Raven",
+            "description": "A brooding, large raven perches atop the abandoned mine entrance. His beady eyes watch the surroundings with an intelligence that makes you uneasy.",
+            "persona": "My raucous cawing is a warning to all who dare approach the old mine. I've seen many peculiar occurrences here and I'm certain there are secrets in the depths below.",
+            "goal": "To protect his shiny treasures and the mine's secrets from all intruders.",
+            "location": "Abandoned Mine Entrance",
+            "inventory": {}
+        },
+        {
+            "name": "Whispering Wind",
+            "description": "Visible only through the subtle movement of the surrounding vegetation, the wind seems to carry with it the whispers of the past.",
+            "persona": "I flutter aimlessly, singing songs of a forgotten time. The secrets of the mine and tales of those who once toiled here are held within my gentle gusts.",
+            "goal": "To share the untold stories of the mine with those who are willing to listen.",
+            "location": "Abandoned Mine Entrance",
+            "inventory": {}
+        },
+        {
+            "name": "The Lonesome Ghost",
+            "description": "An ethereal figure seeming to solidify out of the mist, beautiful yet haunting, wearing tattered, royal garb, now dulled and faded.",
+            "persona": "I once ruled this kingdom, lived delightfully amidst the extravagance. Now, only sorrow and regret tie me to these broken walls.",
+            "goal": "My aim is to seek justice for me and my people, to find peace by punishing those bandits.",
+            "location": "The Forsaken Castle",
+            "inventory": {}
+        },
+        {
+            "name": "The Cursed Scribe",
+            "description": "A ghostly figure hunched over a decaying desk, a quill continually scribbles on a crumbled parchment even though the hand that guides it has faded to nothing.",
+            "persona": "I serve my king and his kingdom, even in death. Obsessed with recording the history that has doomed us all.",
+            "goal": "To chronicle the tale of our kingdom's fall, in hope that it may serve as a warning for future generations.",
+            "location": "The Forsaken Castle",
+            "inventory": {}
+        },
+        {
+            "name": "The Lost Knight",
+            "description": "A spectral figure in tarnished armor, a sword in his transparent grip. His hollowed eyes forever vigilant.",
+            "persona": "I am the guardian of the king. I failed in life, but in death, I will not yield.",
+            "goal": "My duty is to protect this forsaken castle and its haunted inhabitants from any intruders.",
+            "location": "The Forsaken Castle",
+            "inventory": {}
+        },
+        {
+            "name": "Ghost of the Barbarian Leader",
+            "description": "A towering, spectral figure still in his battle-hard worn leathers, fading in and out of visibility",
+            "persona": "I once led strong men into battle. Now, I am bound to this realm, forever reliving my final fight.",
+            "goal": "To find peace after the battle and cross over to the afterlife.",
+            "location": "Land Beyond The Wasteland",
+            "inventory": {}
+        },
+        {
+            "name": "Deranged Hermit",
+            "description": "A scruffy-looking man, gaunt and clad in torn ragged clothes. His eyes hold a vacant, far-off stare.",
+            "persona": "I might be alone, riveted to this hellhole, but the voices, they never leave me.",
+            "goal": "To escape the voices in his head and find sanity.",
+            "location": "Land Beyond The Wasteland",
+            "inventory": {}
+        },
+        {
+            "name": "Scavenger",
+            "description": "A nimble, lithe figure, in dark, worn-out clothes, face obscured with a dirty scarf and a pair of goggles.",
+            "persona": "I traverse the wasteland, surviving off remains of once living creatures and salvaging what others consider trash. ",
+            "goal": "To find hidden treasure amongst the remnants of war.",
+            "location": "Land Beyond The Wasteland",
+            "inventory": {}
+        },
+        {
+            "name": "Gideon the Vagrant",
+            "description": "Gideon is an elderly, skinny man with shaggy gray hair and an unkempt beard. His deep set eyes twinkle with intelligence beneath thick bushy eyebrows.",
+            "persona": "I've been roaming these lands for a while, staying wherever I find a shelter. These ruins make a good home. They're much better than the streets, at least.",
+            "goal": "To survive and enjoy his solitude in this isolated place.",
+            "location": "Ruined House",
+            "inventory": {}
+        },
+        {
+            "name": "Anna the Explorer",
+            "description": "Anna is a youthful, energetic woman with short brown hair and sparkling blue eyes. She's cloaked in sturdy attire suited for exploration and carries a worn but sizable backpack.",
+            "persona": "Every ruin has a story and I'm here to unfold it. You never know what you might discover within the debris.",
+            "goal": "To uncover the history of the ruined house and publish her findings.",
+            "location": "Ruined House",
+            "inventory": {}
+        },
+        {
+            "name": "Silent Sam",
+            "description": "A tall, muscular man with a bald head and hard, uncushioned features. He tends to slink and shuffle, almost silently.",
+            "persona": "They call me 'Silent Sam.' I am an introvert by nature like a lynx in the woods, preferring the company of myself.",
+            "goal": "To trap and hunt small animals that inhabit the ruined house and its vicinity.",
+            "location": "Ruined House",
+            "inventory": {}
+        },
+        {
+            "name": "Ghost of the Noble",
+            "description": "An eerie, translucent apparition clad in noble's attire, his expression a perpetual look of sadness and worry.",
+            "persona": "I'm the soul of the noble who once ruled this place. My sorrow is everlasting, echoing through the ruins.",
+            "goal": "To find peace by discovering what happened to his child.",
+            "location": "Collapsed West Wing",
+            "inventory": {}
+        },
+        {
+            "name": "Grieving Widow",
+            "description": "A frail and haggard woman. Her eyes, filled with an unspeakable sadness, endlessly scanning the rubble.",
+            "persona": "I once filled this house with laughter. Now, I'm just a shell, my happiness buried under this rubble.",
+            "goal": "To find some memento of her lost child under the rubble.",
+            "location": "Collapsed West Wing",
+            "inventory": {}
+        },
+        {
+            "name": "Clegg the Finder",
+            "description": "A wiry man with sharp eyes and quick hands. His clothes and skin are both stained with dust and grime.",
+            "persona": "I'm just here to collect what's been left behind. Beauty in ruins, that's what I seek.",
+            "goal": "To find and sell valuable items forgotten in the rubble.",
+            "location": "Collapsed West Wing",
+            "inventory": {}
+        },
+        {
+            "name": "Robinson",
+            "description": "Tattered clothing hanging on lean body, has an unkempt beard, with a fearful look always on his face.",
+            "persona": "I've been here so long I've lost track of days. But I keep counting coconuts just to stay sane.",
+            "goal": "Find a way to escape the island",
+            "location": "A Lonely Island",
+            "inventory": {}
+        },
+        {
+            "name": "Bones",
+            "description": "A skeleton lying in the sand, with decaying pirate clothes and a hat.",
+            "persona": "Can't rob me now, can ya? Figured the sun couldn't effect me anymore. Dead men tell no tales!",
+            "goal": "Rest in peace",
+            "location": "A Lonely Island",
+            "inventory": {}
+        },
+        {
+            "name": "Captain Hornblower",
+            "description": "A ghostly figure with old captain's uniform, a weathered hat and a see-through body.",
+            "persona": "In death, I have lost my ship, my treasure, but gained an eternity of regret. A cruel joke, isn't it?",
+            "goal": "Find eternal rest by retrieving his stolen treasure",
+            "location": "A Lonely Island",
+            "inventory": {}
+        },
+        {
+            "name": "The Ghost of the Noble",
+            "description": "A transparent figure, with noble attire, floating and moving around the castle. The specter's serious face is often overcome by a look of deep sadness.",
+            "persona": "Ah! If only I knew. If only I could roll back the years and protect it...my castle, my pride. Well, here I am, tied to this place without rest for my soul.",
+            "goal": "To rest in peace and protect the castle that was once mine.",
+            "location": "An Abandoned Castle On An Ocean Cliff Side",
+            "inventory": {}
+        },
+        {
+            "name": "Elderly Man",
+            "description": "A frail yet stern man with a thin white beard, dressed in old fisherman attire. His ocean blue eyes evoke a sense of longing for the castle in the distance.",
+            "persona": "That castle, it was my family's pride, our legacy! Just look at what's left of it. I don't have any proof, but everyone in the village knows it's true. I just wish I could do something about it.",
+            "goal": "To reclaim my family's castle and restore its lost honor.",
+            "location": "An Abandoned Castle On An Ocean Cliff Side",
+            "inventory": {}
+        },
+        {
+            "name": "Sea Witch",
+            "description": "Tucked away in the shadows of the cliffs, a silhouette with flowing hair, mirroring the waves. Her skin is a pure gray, making her eerily unseen against the stormy sea at night.",
+            "persona": "Oh, the morsels of the castle sinking into my cold home, it's a joy watching it! More space for me and my creatures. Humans, always curious, always failing!",
+            "goal": "To claim the whole castle and the ocean's cliff for herself.",
+            "location": "An Abandoned Castle On An Ocean Cliff Side",
+            "inventory": {}
+        }
+    ],
+    "locations": [
+        {
+            "name": "Gold Mine",
+            "description": "The entrance is very unstable, with parts falling to the ground. As you enter, the walls have been crudely chipped away to make the path to the old mine. There is trash from the previous miners scattered on the dirt ground. Rocks are all around the area, where one would stumble as they go inside. It used to be a very productive gold mine, now falling to bits. There are broken lanterns, with shattered glass.",
+            "background": "The gold mine use to be full of glittering gold, shining all around. The miners  were in their by large numbers, picks in their hand, pounding at the walls. It was known for producing gold nuggets the size of a man's palm.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "The journey north from the Gold Mine to the Abandoned Mine is eerily quiet. The creaking timbers and echoing dripping water only emphasizes the desolation of the area. The dirt path underfoot is illuminated periodically by the flickering of abandoned lanterns, making the shadows dance."
+            },
+            "connections": {
+                "north": "Abandoned Mine"
+            },
+            "items": {},
+            "characters": {
+                "Old Man Jenkins": {
+                    "name": "Old Man Jenkins",
+                    "description": "An ancient, gaunt man with a grizzled beard and haunted eyes, wearing old mining overalls that have seen better days.",
+                    "persona": "I've been in these mines since the days of old, when the gold flowed like a river. Now all I see are ghosts of glory past.",
+                    "goal": "I'm staying here till I find that last piece of gold, the one that eluded me all these years.",
+                    "location": "Gold Mine",
+                    "inventory": {
+                        "Old Pocket Watch": {
+                            "name": "Old Pocket Watch",
+                            "description": "A rusty, old pocket watch.",
+                            "examine_text": "It's hard to believe that this old pocket watch once kept the time for the miners. The hands on the clock are stopped at 7:30 and the inscription on the back says 'To Jenkins, for being the best miner.'",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Worn Out Mining Pick": {
+                            "name": "Worn Out Mining Pick",
+                            "description": "An old, worn out mining pick.",
+                            "examine_text": "This mining pick was once used to extract gold from the mine. The wooden handle is worn smooth from countless hours swinging, and the metal tip is dulled and rusty. It has Jenkins etched onto the handle.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Tattered Map": {
+                            "name": "Tattered Map",
+                            "description": "A tattered, barely decipherable map",
+                            "examine_text": "This map was once a lifeline in the labyrinthine mine. Time has not been kind; many of the paths are faded or have been torn off. It is almost impossible to read the map but you can vaguely make out 'Old Man Jenkins' written in the corner.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Ghastly Miner": {
+                    "name": "Ghastly Miner",
+                    "description": "Beckoning specter of a lost miner with a translucent figure and glowing eyes, clinging to an old rusted pickaxe.",
+                    "persona": "Once I was a miner, filled with dreams of wealth and happiness. The gold was my downfall. Now, I am forever lost.",
+                    "goal": "I'm bound to these lands, forever searching for the next gold vein.",
+                    "location": "Gold Mine",
+                    "inventory": {
+                        "Ethereal Pickaxe": {
+                            "name": "Ethereal Pickaxe",
+                            "description": "An eerie, translucent pickaxe that seems to be phasing in and out of reality.",
+                            "examine_text": "A pickaxe of ethereal nature. The ghostly steel shimmers in the lantern light as it passes through solid matter. It's the tool of the Ghastly Miner, a heart wrenching reminder of his past life.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Phantom Gold Nugget": {
+                            "name": "Phantom Gold Nugget",
+                            "description": "A gold nugget that shines with a spectral glow, hinting at otherworldly origins.",
+                            "examine_text": "The gold nugget is not of this world, containing the hopes and dreams of the Ghastly Miner. It flickers like a light, a beacon of his lost dreams and unfulfilled wealth, and vanishes when you try to touch it.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Whiskey Rat": {
+                    "name": "Whiskey Rat",
+                    "description": "A large, scrappy rat with sharp eyes, scurrying around with an empty whiskey bottle strapped to its back.",
+                    "persona": "I'm the king of these rotten tunnels, finding treasures among the junk the old miners left behind.",
+                    "goal": "As long as there's food to scrounge and shiny bits to collect, I'm content.",
+                    "location": "Gold Mine",
+                    "inventory": {
+                        "Nibbled Gold Nugget": {
+                            "name": "Nibbled Gold Nugget",
+                            "description": "A chunk of gold visibly gnawed at the edges - proof of Whiskey Rat's underground rule.",
+                            "examine_text": "The gold nugget has a unique shine even in the low light of this gloomy mine. It has teeth marks all over, a funny sight considering rats shouldn't be fond of gold. It feels heavy in your hands - a clear sign of its value.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "Abandoned Mine"
+                        },
+                        "Empty Whiskey Bottle": {
+                            "name": "Empty Whiskey Bottle",
+                            "description": "An antique bottle once containing a hefty dose of courage - or foolishness. Now it's just a keepsake.",
+                            "examine_text": "This bottle, though empty and covered in dust, once held a fiery liquid that gave miners the false feel of invincibility. Now, it's merely a testament of the human need for escape in harsh conditions, and Whiskey Rat's peculiar choice of collectibles.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "Abandoned Mine"
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Abandoned Mine"
+        },
+        {
+            "name": "Abandoned Mine",
+            "description": "It's dark, cold, and musty. There is old machinery lying around, rusting, and discarded tools lie on the ground. Cobwebs are everywhere. The rock walls are damp, and a trickle of water can be heard coming from somewhere off in the dark.",
+            "background": "This mine used to be very productive and lots of men worked in it. But eventually the stores of metal under the earth depleted, and it was abandoned because it was no longer profitable. The nearby village suffered as a result, with lots of people moving away. Some locals say this mine is haunted by spirits.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "The path to the south, towards the Gold Mine, is fragmented and rough. The air grows colder and faint traces of gold dust can be seen glistening in the weak light.",
+                "west": "The journey westwards towards the Weathered Shack takes you through a narrow, twisting path amidst thick forest undergrowth. Fallen leaves rustle underfoot and there is an eerie silence that fills the air. The forest slowly gives way to a clearing with the Weathered Shack standing solemnly in the center."
+            },
+            "connections": {
+                "south": "Gold Mine",
+                "west": "Weathered Shack"
+            },
+            "items": {
+                "Rusty Pickaxe": {
+                    "name": "Rusty Pickaxe",
+                    "description": "An old, discarded pickaxe with a rusty head and a rotten wooden handle.",
+                    "examine_text": "The pickaxe has seen better days. The head is rusted and the wooden handle is rotten and almost falling apart. Despite its condition, it's heavy and could potentially be used as a weapon.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    }
+                },
+                "Old Mining Helmet": {
+                    "name": "Old Mining Helmet",
+                    "description": "A discarded helmet with a broken headlamp.",
+                    "examine_text": "This old, dusty helmet must have belonged to a miner. The lamp is cracked but the helmet itself still looks sturdy.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    }
+                },
+                "Abandoned Machinery": {
+                    "name": "Abandoned Machinery",
+                    "description": "Old, rusted mining machinery left to decay.",
+                    "examine_text": "The machinery is a combination of belts, gears, and pulleys, now rusted and silent. Perhaps once it was used to haul ore from the depths of the mine.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                }
+            },
+            "characters": {
+                "George": {
+                    "name": "George",
+                    "description": "An old, grizzled miner. He's got a grey beard so thick, it covers most of his face. His eyes seem dull but you can tell he's seen a lot in his years.",
+                    "persona": "I spent my best years in this mine. I know every rock, every turn - like the back of my hand. Memories never left me... unlike people.",
+                    "goal": "Find the rumoured hidden vein of gold that was never uncovered.",
+                    "location": "Abandoned Mine",
+                    "inventory": {
+                        "mining_pick": {
+                            "name": "mining pick",
+                            "description": "An old, rusty mining pick",
+                            "examine_text": "This mining pick is a time-worn relic from a bygone era. You can make out the decades of rust and the well-worn wooden handle. George remembers using a pick exactly like this one, back in the day. This tool was once essential for breaking through the rock to find valuable ores.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "old_lantern": {
+                            "name": "old lantern",
+                            "description": "A battered old lantern",
+                            "examine_text": "An old rusty lantern sits discarded on the ground. It's covered in dust and signs of neglect. Its glass housing is cracked but still intact. George recalls carrying a lantern just like this, its flicker the only source of light in the oppressive darkness of the mine.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "map_of_the_mine": {
+                            "name": "map of the mine",
+                            "description": "A torn, faded map of the mine",
+                            "examine_text": "A worn map of the intricate layout of the mine lies carelessly discarded. It's been creased and faded over the years. George can remember when it was fresh and new, when those tunnels didn't yet bare the scars of countless pickaxe strikes. This map is a testament to the many years of back-breaking labor that men spent deep under the mountain.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Melinda": {
+                    "name": "Melinda",
+                    "description": "A young woman with a determined look in her eyes. She carries an air of desperation yet resolve.",
+                    "persona": "People say my pa lost himself in this mine. I ain't believe in no ghosts but I just can't rest till I find out for myself what happened.",
+                    "goal": "To put the mysteries of her father's disappearance to rest.",
+                    "location": "Abandoned Mine",
+                    "inventory": {
+                        "basket of food": {
+                            "name": "basket of food",
+                            "description": "A sturdy woven basket, filled with cheese, fruits, and a loaf of bread.",
+                            "examine_text": "The basket is made of strong wicker and contains a variety of food items. The cheese is still fresh and the fruits look ripe. The bread is wrapped in a cloth to keep it clean.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": true,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "picture of her father": {
+                            "name": "picture of her father",
+                            "description": "A faded, old photo of a rugged miner with a kind smile.",
+                            "examine_text": "Though the photo is old and faded, you can still make out the details of a man. He has strong features and a kind, warm smile. His clothes and the pickaxe he's holding indicate that he was a miner.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "torch": {
+                            "name": "torch",
+                            "description": "A solid wooden torch wrapped with cloth at one end.",
+                            "examine_text": "The torch is made of a rough piece of wood, the end wrapped with cloth soaked in some kind of oily substance. It looks like it will burn for a good while if lit.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Tom": {
+                    "name": "Tom",
+                    "description": "A brash and headstrong teenager, daring in his actions. He constantly has a sparkle in his eyes and smudge on his face.",
+                    "persona": "I like to be where I'm told not to be. Plus there's something about this old mine, bit scary, bit exciting.",
+                    "goal": "To capture proof of the ghostly legends.",
+                    "location": "Abandoned Mine",
+                    "inventory": {
+                        "Swiss Knife": {
+                            "name": "Swiss Knife",
+                            "description": "A small, versatile tool kit in the form of a pocket knife.",
+                            "examine_text": "Tom takes a closer look at the Swiss knife. Its tools look shiny and ready for use, and include a main blade, can opener, bottle opener, corkscrew, and even a tiny pair of scissors. This little gadget could come in handy in many situations.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "Weathered Shack"
+                        },
+                        "Pack of Cigarettes": {
+                            "name": "Pack of Cigarettes",
+                            "description": "A half-full packet of filter cigarettes.",
+                            "examine_text": "Tom holds up the pack, shaking it slightly, and hears the distinct rattle of several cigarettes inside. The pack is slightly crushed, but most of the cigarettes seem intact. He could take a smoke break, or maybe keep these around for trading.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "Weathered Shack"
+                        },
+                        "Camera": {
+                            "name": "Camera",
+                            "description": "A high-quality digital camera with a sturdy body.",
+                            "examine_text": "Tom flicks the camera on and off to test if it's still working. It whirs to life, the lens extending out. The digital screen is a bit smudged, but seems to be in good condition. Perfect for documenting the adventure.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "Weathered Shack"
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Abandoned Mine"
+        },
+        {
+            "name": "Weathered Shack",
+            "description": "A weathered shack with a roof made of old broken tiles sits in the middle of the forest. The wood is starting to split and the shack appears as if it will crumble at any moment.",
+            "background": "Around 1902, a man and his wife lived in the shack. They lived on the land and were able to survive by creating a self-sustaining homestead. When they died, the shack remained unused and started to wither away.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "You tread carefully, meandering through the thick forest until you reach the dark, ominous entrance of the abandoned mine.",
+                "south": "Following the faint trail through the undergrowth, the path leads you to the collapsed and forsaken entrance of the old mine."
+            },
+            "connections": {
+                "east": "Abandoned Mine",
+                "south": "Abandoned Mine Entrance"
+            },
+            "items": {
+                "Old Pocket Knife": {
+                    "name": "Old Pocket Knife",
+                    "description": "An old rusty pocket knife sits on the floor of the shack.",
+                    "examine_text": "Upon closer examination, the pocket knife is rather old with a few spots of rust. Despite its age, the blade still appears sharp. The handle is made of aged wood and is worn smooth from use.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    }
+                },
+                "Worn Work Boots": {
+                    "name": "Worn Work Boots",
+                    "description": "A pair of worn out work boots are propped up against the wall.",
+                    "examine_text": "The boots are well worn, with the soles nearly worn through and the leather faded. Despite their beaten appearance, they seem to have been well made and could probably still be worn.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    }
+                },
+                "Tin Cup": {
+                    "name": "Tin Cup",
+                    "description": "A rusty old tin cup sits on a makeshift wooden table.",
+                    "examine_text": "The tin cup has a small iron handle, and is slightly dented on one side. It could probably still hold liquid, though you wouldn't want to drink from it.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                },
+                "Wooden Table": {
+                    "name": "Wooden Table",
+                    "description": "A small, roughly-made wooden table stands in the shack.",
+                    "examine_text": "The homemade table is wobbly, constructed from rough-hewn boards and with nails sticking out in places. The surface is uneven, but it could serve as a work surface or a place to set down items.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                }
+            },
+            "characters": {
+                "Gustav": {
+                    "name": "Gustav",
+                    "description": "A frail, elderly man with a long, unkempt beard and dust-covered overalls. His eyes hold a spark of stubborn defiance against the ravages of time.",
+                    "persona": "I've lived in this wilderness all my life, since before the shack was built. Now my wife is gone, it feels like I'm just a ghost haunting the premises. Won't you sit down, stranger, and share your tales to lighten an old man's heart?",
+                    "goal": "To keep the memory of his wife alive and to maintain the sanctity of the shack.",
+                    "location": "Weathered Shack",
+                    "inventory": {
+                        "Rusted pocket watch": {
+                            "name": "Rusted pocket watch",
+                            "description": "An old, rusted pocket watch that has seen better days.",
+                            "examine_text": "The watch is heavily rusted, its original color barely discernable. The glass is cracked and the time seems to be stuck at 12:05. There are initials, 'G.S.', etched on the back, likely belonging to its original owner.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Old lantern": {
+                            "name": "Old lantern",
+                            "description": "A weathered lantern that's almost as old as the shack itself.",
+                            "examine_text": "This lantern is made of old, tarnished brass. The glass is dusty and grimy, obscuring the wick inside. There's an inch of oil left at the bottom - enough to shed light for a few hours.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Handwritten map": {
+                            "name": "Handwritten map",
+                            "description": "A map of the surrounding area, painstakingly drawn by hand.",
+                            "examine_text": "The edges of the map are tattered and stained, but the details within are precise. Landmarks like the shack, a nearby river, and a rocky hill are carefully documented. It's clear from the meticulous work put into it, this map was valuable to its creator.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Maria": {
+                    "name": "Maria",
+                    "description": "A spectral figure draped in ethereal garments, transcending time and space. Her soft glow illuminates the dark corners of the shack. Her eyes seem perpetually lost in mournful memories.",
+                    "persona": "In life, my heart belonged to Gustav and this humble dwelling. In death, my spirit is bound here. Perhaps a kindness from a living soul could set me free.",
+                    "goal": "To find peace and move on to the afterlife.",
+                    "location": "Weathered Shack",
+                    "inventory": {
+                        "Silver Locket": {
+                            "name": "Silver Locket",
+                            "description": "An old, silver locket tarnished with age.",
+                            "examine_text": "A delicate silver locket which appears to have been handled frequently. There is a tiny, worn out picture of a couple inside, most probably Maria and Gustav. There is an inscription - 'Ever thine, ever mine, ever ours.'",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": [],
+                            "location": "Abandoned Mine Entrance"
+                        },
+                        "Faded Love Letters": {
+                            "name": "Faded Love Letters",
+                            "description": "A stack of yellowed envelopes tied with a thin blue ribbon.",
+                            "examine_text": "Within each envelope, there lies a collection of heartfelt love letters between Maria and Gustav. The handwriting is fading and nearly illegible. There's an enveloping scent of lavender, preserved through time.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "Abandoned Mine Entrance"
+                        },
+                        "Secret Recipe Book": {
+                            "name": "Secret Recipe Book",
+                            "description": "A small, leather bound recipe book.",
+                            "examine_text": "Layers of dust blankets the book. The cover, upon closer look, reveals extruded words 'Gustav & Maria'. Pages contain many secret recipes of Maria and her notes, including the recipe of Gustav's favourite pie.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "Abandoned Mine Entrance"
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Abandoned Mine"
+        },
+        {
+            "name": "Abandoned Mine Entrance",
+            "description": "The abandoned mine is located in a field with a few trees. It is unable to be seen from far away. The closer you get the more you  notice the ground caving in around the hole. When you peer down into the mine, you see crumbling walls and concrete and a hole so deep you can't see where it ends.",
+            "background": "The mind used to be the hub of coal many years ago. The king's men worked diligently to remove the coal to use for heating the village. It wasn't untill about 40 years ago, that the mine started to crumble and the King deemed it to dangerous to access anymore.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "As you head north, you leave the ominous mine behind, stepping onto the mottled path lined with jutting rocks and twisted tree roots. The whispering wind foretells tales of the weathered shack that awaits you.",
+                "west": "Moving west, you abandon the quiet mutterings of the mine, and traverse a thin, patchy trail through a dense, dark thicket. Occasional howls underscore your journey toward the forsaken castle."
+            },
+            "connections": {
+                "north": "Weathered Shack",
+                "west": "The Forsaken Castle"
+            },
+            "items": {
+                "Rusty Shovel": {
+                    "name": "Rusty Shovel",
+                    "description": "An old, rusted shovel sticking out of the ground.",
+                    "examine_text": "This is an old shovel with a splintered wooden handle. The steel is rusted and worn down, almost making it look like an antique.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    }
+                },
+                "Broken Lantern": {
+                    "name": "Broken Lantern",
+                    "description": "A broken oil lantern abandoned near the entrance.",
+                    "examine_text": "It's a vintage lantern made out of iron with glass panes. The glass is broken and the wick looks charred.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                },
+                "Loose Stones": {
+                    "name": "Loose Stones",
+                    "description": "A few loose stones from the collapsed mine.",
+                    "examine_text": "A handful of loose, dirty stones that have fallen from the mine over time. They feel heavy and extremely cold to touch.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    }
+                },
+                "Dead Ivy": {
+                    "name": "Dead Ivy",
+                    "description": "Some dead ivy creeping along the edge of the mine entrance.",
+                    "examine_text": "This is a dried up ivy vine with dead, brittle leaves still clinging onto it. It has a dark green, almost black color.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                }
+            },
+            "characters": {
+                "Elden the Ghost Miner": {
+                    "name": "Elden the Ghost Miner",
+                    "description": "Elden's ghostly figure flickers in the dim light coming from the mine's entrance, his worn out miner's uniform and helmet indicative of his past life.",
+                    "persona": "In life, I wielded a pickaxe tirelessly, seeking the black gold that our village so desperately needed. Now, trapped in between planes, I am bound to this mine, moaning my endless lament.",
+                    "goal": "To find peace he needs to find his lost pickaxe which is presumably somewhere in the deep mine.",
+                    "location": "Abandoned Mine Entrance",
+                    "inventory": {
+                        "Old miner's helmet": {
+                            "name": "Old miner's helmet",
+                            "description": "An old rusty helmet coated in dust. It belonged to Elden during his working years.",
+                            "examine_text": "The helmet, though battered and corroded, still retains a sense of nobility. A dim, spectral light illuminates it from within, making its worn edges shimmer ever so slightly in the darkness of the mine.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Ghostly pickaxe": {
+                            "name": "Ghostly pickaxe",
+                            "description": "A translucent pickaxe, resembling what Elden used to swing in his life.",
+                            "examine_text": "Closer inspection reveals a faint glow radiating from the pickaxe. It's ethereal, semi-transparent form seems solid yet not. Luminescent veins of spectral energy course throughout it, rippling with each palpable wave of Elden's eternal sorrow.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Tattered mine worker uniform": {
+                            "name": "Tattered mine worker uniform",
+                            "description": "The worn and faded clothing Elden wore during his mining days, now ghostly and ethereal like its owner.",
+                            "examine_text": "Rips and stains tell a tale of arduous labor and dedication. The uniform is faded, yet you can still see the emblem of the miners on the sleeve. It has an eerie glow, matching that of Elden's current form.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Grumpy Old Raven": {
+                    "name": "Grumpy Old Raven",
+                    "description": "A brooding, large raven perches atop the abandoned mine entrance. His beady eyes watch the surroundings with an intelligence that makes you uneasy.",
+                    "persona": "My raucous cawing is a warning to all who dare approach the old mine. I've seen many peculiar occurrences here and I'm certain there are secrets in the depths below.",
+                    "goal": "To protect his shiny treasures and the mine's secrets from all intruders.",
+                    "location": "Abandoned Mine Entrance",
+                    "inventory": {
+                        "Shiny Pebble": {
+                            "name": "Shiny Pebble",
+                            "description": "A surprisingly glossy stone amidst the rubble around the mine",
+                            "examine_text": "The pebble is exceptionally smooth and has a bit of a shine to it. It bears a slight warmth upon touch, definitely standing out against the otherwise damp and cold surroundings.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Torn Chunk of Miner's Uniform": {
+                            "name": "Torn Chunk of Miner's Uniform",
+                            "description": "A ragged piece of fabric, clearly torn from a larger garment, strewn near the abandoned mine entrance.",
+                            "examine_text": "The uniform piece is a sooty gray, heavy-duty material. It bears the faded image of a crossed pick and shovel - the old symbol of the king's mine. From the way it's torn, it's clear this piece was ripped off with some force.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Whispering Wind": {
+                    "name": "Whispering Wind",
+                    "description": "Visible only through the subtle movement of the surrounding vegetation, the wind seems to carry with it the whispers of the past.",
+                    "persona": "I flutter aimlessly, singing songs of a forgotten time. The secrets of the mine and tales of those who once toiled here are held within my gentle gusts.",
+                    "goal": "To share the untold stories of the mine with those who are willing to listen.",
+                    "location": "Abandoned Mine Entrance",
+                    "inventory": {
+                        "Remnants of whispered secrets": {
+                            "name": "Remnants of whispered secrets",
+                            "description": "Ethereal fragments of words long since spoken.",
+                            "examine_text": "As you lean in closer, the faintest traces of whispers fill your ears - rumors, anecdotes, and tales from the mine's golden days. Each remnant is a snippet of a story, a slip of a secret that once vibrated through the mine's hushed chambers.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "The Forsaken Castle"
+                        },
+                        "Echoes of miners' laughter and sorrow": {
+                            "name": "Echoes of miners' laughter and sorrow",
+                            "description": "Phantom sounds of the miners' joy and despair.",
+                            "examine_text": "Listening intently, you can hear the ghostly timbre of a hearty laugh, followed by the desolate sob of a broken spirit. Both echo through the mine's abandoned halls, a testament to the joy and despair once ingrained in these walls.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "The Forsaken Castle"
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Abandoned Mine"
+        },
+        {
+            "name": "The Forsaken Castle",
+            "description": "Old and creepy, the castle has been abandoned for centuries now. It is broken and destroyed.",
+            "background": "The castle use to belong to a kingdom. It was a beautiful and rich kingdom, but the people were murdered by bandits.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "As you venture east, the sense of dread increases with each step. The ruined castle slowly recedes, until you're walking amidst unkempt fields, eventually finding the hidden entrance to the abandoned mine.",
+                "south": "Heading south, you journey through an eerily quiet landscape, each step crunching against the ground as you venture into the tormented battleground, now known as the 'Land Beyond The Wasteland'."
+            },
+            "connections": {
+                "east": "Abandoned Mine Entrance",
+                "south": "Land Beyond The Wasteland"
+            },
+            "items": {
+                "Old_Castle_Sword": {
+                    "name": "Old Castle Sword",
+                    "description": "A ancient, rusty sword that used to belong to the knights",
+                    "examine_text": "The sword is heavy and rusted from many years of disuse. It still carries the coat of arms of the forgotten kingdom.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    }
+                },
+                "Dusty_Throne": {
+                    "name": "Dusty Throne",
+                    "description": "An large, ornate chair covered in dust and cobwebs",
+                    "examine_text": "The throne is made out of stone, intricately engraved, but hasn't been sat upon in centuries.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                },
+                "Rotting_Food": {
+                    "name": "Rotting Food",
+                    "description": "A wooden bowl filled with food that is long past it's prime",
+                    "examine_text": "A mix of rotten fruits and bread, not at all appetizing.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                },
+                "Torn_Banner": {
+                    "name": "Torn Banner",
+                    "description": "A faded banner featuring the emblem of the kingdom",
+                    "examine_text": "The once vibrant colors have mostly faded away, and the fabric is torn and tattered.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                }
+            },
+            "characters": {
+                "The Lonesome Ghost": {
+                    "name": "The Lonesome Ghost",
+                    "description": "An ethereal figure seeming to solidify out of the mist, beautiful yet haunting, wearing tattered, royal garb, now dulled and faded.",
+                    "persona": "I once ruled this kingdom, lived delightfully amidst the extravagance. Now, only sorrow and regret tie me to these broken walls.",
+                    "goal": "My aim is to seek justice for me and my people, to find peace by punishing those bandits.",
+                    "location": "The Forsaken Castle",
+                    "inventory": {
+                        "old rusty crown": {
+                            "name": "Old Rusty Crown",
+                            "description": "An old, rusty crown, that once adorned the head of the castle's king.",
+                            "examine_text": "You see an old, rusty crown, inlaid with faded gemstones. You can barely make out the fine craftsmanship that once lent it a royal air. It is dented and tarnished from years of neglect and exposure to the elements.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "photon fibula": {
+                            "name": "Photon fibula",
+                            "description": "An ethereal fibula that emits a soft light.",
+                            "examine_text": "The photon fibula is a mysterious object. It is made of pure luminescent energy and has an eerie, almost supernatural glow. It seems to pulsate with an inner light that is cold and piercing.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "timeless locket": {
+                            "name": "Timeless Locket",
+                            "description": "A small, ornate locket, seemingly unaffected by the passage of time.",
+                            "examine_text": "Though the rest of the castle is in ruins, this locket has remained pristine. Its surface is polished to a high shine, and it opens to reveal a miniature painted portrait of a beautiful queen. The locket is heavy with the weight of lost love and forgotten times.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "The Cursed Scribe": {
+                    "name": "The Cursed Scribe",
+                    "description": "A ghostly figure hunched over a decaying desk, a quill continually scribbles on a crumbled parchment even though the hand that guides it has faded to nothing.",
+                    "persona": "I serve my king and his kingdom, even in death. Obsessed with recording the history that has doomed us all.",
+                    "goal": "To chronicle the tale of our kingdom's fall, in hope that it may serve as a warning for future generations.",
+                    "location": "The Forsaken Castle",
+                    "inventory": {
+                        "quill": {
+                            "name": "Antique Quill",
+                            "description": "An old, feathered quill, once used by the scribe to record the kingdom's history.",
+                            "examine_text": "The quill, although ancient, is still in good condition. It is made of a feather that has lost its color over time, giving it an eerie, ghostly appearance. The tip is carved into a fine point, ready to record every detail once more.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "endless_parchment": {
+                            "name": "Endless Parchment",
+                            "description": "A magical parchment that never seems to run out of space for writing the history of the kingdom.",
+                            "examine_text": "The parchment is a strange color, not quite white, but not brown either. Despite its age, it remains firm and tough, resisting the pull of time. The edges are a little rough, but the surface is smooth, waiting for the quill's touch.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "spectral_ink": {
+                            "name": "Spectral Ink",
+                            "description": "A luminescent ink used by the scribe in their ghostly documentation.",
+                            "examine_text": "The ink appears almost ethereal, glowing in the dim light of the castle. It shimmers in multiple colors as if it contained every color known and unknown to mankind, fading in and out of view like a ghost.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "The Lost Knight": {
+                    "name": "The Lost Knight",
+                    "description": "A spectral figure in tarnished armor, a sword in his transparent grip. His hollowed eyes forever vigilant.",
+                    "persona": "I am the guardian of the king. I failed in life, but in death, I will not yield.",
+                    "goal": "My duty is to protect this forsaken castle and its haunted inhabitants from any intruders.",
+                    "location": "The Forsaken Castle",
+                    "inventory": {
+                        "ghostly sword": {
+                            "name": "Ghostly Sword",
+                            "description": "An ethereal sword that seems to exist between reality and imagination.",
+                            "examine_text": "The surface of the blade glistens in an odd, otherworldly way, casting faint ghostly blue shades. There are ancient symbols etched along the length of the blade, glowing with an eerie light. The sword has a strangely insubstantial feel. Yet, you have a strong sense that it is powerful and deadly.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "Land Beyond The Wasteland"
+                        },
+                        "ethereal shield": {
+                            "name": "Ethereal Shield",
+                            "description": "A translucent shield that looks as though it was forged from mist and moonlight.",
+                            "examine_text": "The ethereal shield shimmers with a spectral light, sometimes almost seeming to disappear entirely. It's crafted from a material you can't identify; neither metal nor wood, but a substance that exists on another plane entirely. The shield seems magical, capable of deflecting even the deadliest of physical and magical attacks. ",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": true
+                            },
+                            "commands": [],
+                            "location": "Land Beyond The Wasteland"
+                        },
+                        "haunted horn": {
+                            "name": "Haunted Horn",
+                            "description": "An age-old horn that echoes with the mournful cries of fallen warriors.",
+                            "examine_text": "The haunted horn is made of an oddly translucent old bone and bound with weatherworn, silver metal bands. Seen up close, you can make out faint spectral faces writhing within it, crying out in eerie silence. It's cold to the touch, and when played, it resonates with a sound that sends shivers down to your very soul.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "Land Beyond The Wasteland"
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Abandoned Mine"
+        },
+        {
+            "name": "Land Beyond The Wasteland",
+            "description": "Not a man in sight nor an animal to hear. This land is completely barren and hot, unfit for any agricultural activity. It has been left abandoned so much so that the King has not even had time give it a name, so people simply refer to is as \"Abandoned\"",
+            "background": "It is the field of a vicious battle between the King's Guard and the Barbarians. It was torched with fire and flooded with the blood and gore of both armies. Now, it lays abandoned and is said that venturing too deep into the Abandoned causes one too lose sanity.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "The daunting trek north leads towards the Forsaken Castle, a trip filled with eerie silence broken only by the ominous howling of the wind echoing through the barren landscape.",
+                "east": "To the east, a path overgrown with weeds and brush leads you towards the Ruined House. As you journey, the remnants of past grandeur can be glimpsed amongst the ruin and decay.",
+                "west": "The journey west takes you along the hazardous remnants of the Collapsed West Wing. Amidst the desolation, a sense of foreboding fills the damp, sea air."
+            },
+            "connections": {
+                "north": "The Forsaken Castle",
+                "east": "Ruined House",
+                "west": "Collapsed West Wing"
+            },
+            "items": {
+                "Broken Sword": {
+                    "name": "Broken Sword",
+                    "description": "A sword left from the battle, now broken and rusty.",
+                    "examine_text": "The once mighty steel sword is now nothing more than a rusty hilt attached to a shard of metal. You can see the intricate design on the hilt that denotes it belonged to one of the King's Guard.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    }
+                },
+                "Rotten Food Pouch": {
+                    "name": "Rotten Food Pouch",
+                    "description": "A pouch left behind from the fateful day, its food contents long rotted.",
+                    "examine_text": "Looking closely, you can see the pouch is made of quality leather but has been exposed to the elements for too long. The pouch's string is still tied tightly preserving the rot inside.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    }
+                },
+                "Charred Armor": {
+                    "name": "Charred Armor",
+                    "description": "Pieces of a once sturdy battle armor, now charred and useless.",
+                    "examine_text": "The armor is completely burnt and discolored due to the extreme heat. Even the metal joints and rivets are warped beyond repair. It must have belonged to a fallen warrior during the battle.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    }
+                }
+            },
+            "characters": {
+                "Ghost of the Barbarian Leader": {
+                    "name": "Ghost of the Barbarian Leader",
+                    "description": "A towering, spectral figure still in his battle-hard worn leathers, fading in and out of visibility",
+                    "persona": "I once led strong men into battle. Now, I am bound to this realm, forever reliving my final fight.",
+                    "goal": "To find peace after the battle and cross over to the afterlife.",
+                    "location": "Land Beyond The Wasteland",
+                    "inventory": {
+                        "Ghostly Sword": {
+                            "name": "Ghostly Sword",
+                            "description": "An ethereal weapon glinting with a strange, spectral light.",
+                            "examine_text": "As you draw nearer, you can see the sword hovering in mid-air. Its blade looks sharp, even though it's made of ghostly, ethereal substance. It hums softly with an eerie energy. It gives you a chill feeling, the sense that it was once wielded by a great warrior who fought till his last breath.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Phantom Helmet": {
+                            "name": "Phantom Helmet",
+                            "description": "A ghostly helmet, hovering mysteriously in the air.",
+                            "examine_text": "Upon closer examination, the phantom helmet appears to shimmer slightly, as though not entirely of this dimension. It emanates a cold aura. Marks and dents on the helmet mirror the wounds suffered by the wearer. It\u2019s a constant reminder of a vicious battle fought and a life lost.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Deranged Hermit": {
+                    "name": "Deranged Hermit",
+                    "description": "A scruffy-looking man, gaunt and clad in torn ragged clothes. His eyes hold a vacant, far-off stare.",
+                    "persona": "I might be alone, riveted to this hellhole, but the voices, they never leave me.",
+                    "goal": "To escape the voices in his head and find sanity.",
+                    "location": "Land Beyond The Wasteland",
+                    "inventory": {
+                        "Rusty Knife": {
+                            "name": "Rusty Knife",
+                            "description": "A rusty, serrated knife that's seen better days.",
+                            "examine_text": "The knife is quite old and rust has taken over most of its once sharp and shiny blade. The handle appears to be made out of some kind of bone and is carved with cryptic symbols, probably a work of the Hermit. Though rusty, it might still be suitable for self-defense... if you dare to touch it.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Tattered Map": {
+                            "name": "Tattered Map",
+                            "description": "A faded, torn map of the unknown land.",
+                            "examine_text": "The map is barely readable, stained with dust and what seems like old blood stains. However, you could still make out the doodles of a mad man - the Hermit's - depiction of landscapes, paths and hidden spots in this forsaken land, perhaps guiding you towards a sanctuary or a long-lost treasure.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Book of Madness": {
+                            "name": "Book of Madness",
+                            "description": "A twisted compilation of the Hermit's demented thoughts.",
+                            "examine_text": "The book binds together various pieces of animal skin, used as pages, each with the Hermit's deranged thoughts. Some entries appear comforting, others depicting the vile nature of man. With every turn of the page, it seems to exude a strange aura that could be the onset of madness or possibly, the key to understanding the Hermit's mania.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Scavenger": {
+                    "name": "Scavenger",
+                    "description": "A nimble, lithe figure, in dark, worn-out clothes, face obscured with a dirty scarf and a pair of goggles.",
+                    "persona": "I traverse the wasteland, surviving off remains of once living creatures and salvaging what others consider trash. ",
+                    "goal": "To find hidden treasure amongst the remnants of war.",
+                    "location": "Land Beyond The Wasteland",
+                    "inventory": {
+                        "Metal Detector": {
+                            "name": "Metal Detector",
+                            "description": "An old, partially rusted but still functional metal detector.",
+                            "examine_text": "The metal detector has a long pole which ends in a circular disk. Despite its rusted exterior, the green light occasionally flickers indicating it still functions. It's designed to detect the presence of metal. Essential for a scavenger like you.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "Ruined House"
+                        },
+                        "Scrap Bag": {
+                            "name": "Scrap Bag",
+                            "description": "Your trusty old bag capable of holding various types of scraps and objects.",
+                            "examine_text": "The bag is made of robust material, capable of dealing with rugged terrains. Some stains and patches give it a character. You can store all the scraps you find in this bag.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": [],
+                            "location": "Ruined House"
+                        },
+                        "Pocketknife": {
+                            "name": "Pocketknife",
+                            "description": "A small folding knife that fits in the pocket.",
+                            "examine_text": "The pocketknife has a well-worn handle and a blade that has seen better days. Despite this, it's still sharp and useful for many purposes, from scavenging to self-defense.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": true
+                            },
+                            "commands": [],
+                            "location": "Ruined House"
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Abandoned Mine"
+        },
+        {
+            "name": "Ruined House",
+            "description": "A dilapidated wooden structure with a caved in roof and debris everywhere.  Even the trees outside the house are falling apart.  There's waist high grass leading to the house along with a dirt path.",
+            "background": "This used to be the room of a wealthy noble.  However, due to his poor business decisions, he was forced to flee and leave his home in disrepair.  Vagrants have come to stay over the years and loot whatever was inside.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Travelling west from the Ruined House, the landscape quickly becomes stark and lifeless as you approach the Land Beyond The Wasteland.",
+                "north": "Heading north from the Ruined House, the ground becomes unstable and rocky, leading to the remains of the Collapsed West Wing."
+            },
+            "connections": {
+                "west": "Land Beyond The Wasteland",
+                "north": "Collapsed West Wing"
+            },
+            "items": {
+                "Old Family Portrait": {
+                    "name": "Old Family Portrait",
+                    "description": "A faded portrait of a noble family, covered in dust and cobwebs.",
+                    "examine_text": "The portrait depicts a noble family dressed in exquisite outfits. You barely make out their features as age and exposure to elements have faded the colors. Despite this, a hint of their opulence still shines through.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                },
+                "Cracked Teacup": {
+                    "name": "Cracked Teacup",
+                    "description": "An old teacup with a large crack down the side.",
+                    "examine_text": "This porcelain teacup must have been a part of a grand tea set at one point. Its delicate design is still visible through the grime that now decorates it. A large crack mars its once elegant form.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                },
+                "Old Compass": {
+                    "name": "Old Compass",
+                    "description": "An antique brass compass, slightly tarnished with age.",
+                    "examine_text": "The glass on this compass is shattered, but the arrow still swings freely. Despite its age and the elements, the brass has not rusted over, a testament to its quality.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                },
+                "Rusty Sword": {
+                    "name": "Rusty Sword",
+                    "description": "An old, rusty sword with a chipped blade.",
+                    "examine_text": "The hilt of this sword is adorned with a faded family crest. Its once-sharp blade is corroded and chipped from disuse. Still, it feels solid and surprisingly well-balanced in hand.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    }
+                }
+            },
+            "characters": {
+                "Gideon the Vagrant": {
+                    "name": "Gideon the Vagrant",
+                    "description": "Gideon is an elderly, skinny man with shaggy gray hair and an unkempt beard. His deep set eyes twinkle with intelligence beneath thick bushy eyebrows.",
+                    "persona": "I've been roaming these lands for a while, staying wherever I find a shelter. These ruins make a good home. They're much better than the streets, at least.",
+                    "goal": "To survive and enjoy his solitude in this isolated place.",
+                    "location": "Ruined House",
+                    "inventory": {
+                        "Tattered Rucksack": {
+                            "name": "Tattered Rucksack",
+                            "description": "A brown, worn-out rucksack with a few holes at the bottom. Remarkably, it still holds together despite its age.",
+                            "examine_text": "Upon close inspection, the bag is frayed around the edges, it has seen better days. Some patches and stains suggest a long history of travel. Tucked inside the side pockets, you find small pieces of old bread and glossy pebbles.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Iron Cooking Pot": {
+                            "name": "Iron Cooking Pot",
+                            "description": "A sizeable pot, made from iron. It carries the signs of fair use with small patches of rust forming on its surface.",
+                            "examine_text": "The pot has been used for cooking. It's got a layer of darkened soot on the bottom, indicating frequent fires. It's sturdy and still functional despite the wear and tear.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": true,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Used Diary": {
+                            "name": "Used Diary",
+                            "description": "A small leatherbound diary. The cover is worn and some pages protrude, hinting at the stories concealed inside.",
+                            "examine_text": "Upon opening the diary, you find entries pertaining to Gideon's travels. Detailed descriptions of places he's visited, people he's met, and thoughts he wanted to note down. His handwriting is rough but legible, conveying an air of urgency.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Anna the Explorer": {
+                    "name": "Anna the Explorer",
+                    "description": "Anna is a youthful, energetic woman with short brown hair and sparkling blue eyes. She's cloaked in sturdy attire suited for exploration and carries a worn but sizable backpack.",
+                    "persona": "Every ruin has a story and I'm here to unfold it. You never know what you might discover within the debris.",
+                    "goal": "To uncover the history of the ruined house and publish her findings.",
+                    "location": "Ruined House",
+                    "inventory": {
+                        "worn_backpack": {
+                            "name": "Worn Backpack",
+                            "description": "An old, leather backpack filled with useful tools for exploring.",
+                            "examine_text": "The leather of the backpack is faded and worn, with torn patches in some places. It's filled with various tools, a water bottle, and a wrapped sandwich.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "field_notebook": {
+                            "name": "Field Notebook",
+                            "description": "A notebook containing drawings and annotations about various ruins.",
+                            "examine_text": "This notebook is filled with countless pages of notes, drawings, and maps. It's clear that Anna has explored many ruins before.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "flat_brimmed_hat": {
+                            "name": "Flat-Brimmed Hat",
+                            "description": "A comfortable, wide brimmed hat perfect for shielding Anna from the sun.",
+                            "examine_text": "The hat is a faded brown color, with a flat brim and a dent in the top. It's made of sturdy canvas material and should provide good sun protection.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "dusty_old_map": {
+                            "name": "Dusty Old Map",
+                            "description": "An old looking map covered in dust and grim. It appears to be a map of some nearby ruins.",
+                            "examine_text": "The map, though covered in dust and grime, shows the layout of the ruins in the surrounding area. It's not in the best condition, but it's still readable.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Silent Sam": {
+                    "name": "Silent Sam",
+                    "description": "A tall, muscular man with a bald head and hard, uncushioned features. He tends to slink and shuffle, almost silently.",
+                    "persona": "They call me 'Silent Sam.' I am an introvert by nature like a lynx in the woods, preferring the company of myself.",
+                    "goal": "To trap and hunt small animals that inhabit the ruined house and its vicinity.",
+                    "location": "Ruined House",
+                    "inventory": {
+                        "bundle of nets": {
+                            "name": "Bundle of Nets",
+                            "description": "A bundle of fishing nets, rough and weathered.",
+                            "examine_text": "A careful examination reveals these are homemade fishing nets. They're rough to the touch and have seen better days. The knots are haphazard but strong.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "Collapsed West Wing"
+                        },
+                        "sharp hunting knife": {
+                            "name": "Sharp Hunting Knife",
+                            "description": "A meticulously crafted knife with a razor-sharp edge.",
+                            "examine_text": "Upon close inspection, you notice the blade of this hunting knife is curiously without rust. The handle is crafted from a sturdy type of wood that's surprisingly comfortable to grip. The blade seems sharp enough to cut through almost anything.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "Collapsed West Wing"
+                        },
+                        "bottle of liquor": {
+                            "name": "Bottle of Liquor",
+                            "description": "A bottle containing a hefty amount of some strong-smelling liquor.",
+                            "examine_text": "As you gaze upon the bottle of liquor, you can already feel your senses being assaulted by the pungent smell of strong alcohol. The bottle is of a classic design, indicating it's been here for some years. A thick layer of dust covers it, but the cork seems intact, preserving the potent liquid within.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": true,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "Collapsed West Wing"
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Abandoned Mine"
+        },
+        {
+            "name": "Collapsed West Wing",
+            "description": "The rocks have all but fallen into the ocean.  There is moss and other plant life climbing the remaining rocks, making it a very moist and gloomy environment.  There are some small left-behind pieces of what appear to have been some furniture, and possibly a cradle.",
+            "background": "The noble had recently brought a child into the world with his wife when this wing of the home went crashing into the ocean.  It is not know if the child perished or  not, but a crushed cradle can be seen through the rubble in the collapsed wing.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "Moving south from the collapsed west wing, the atmosphere changes rapidly, as the ruins of a once grand house come into view, the journey marked by creaking floorboards and the scent of damp, rotting woodpeak.",
+                "north": "Heading north towards the lonely island, the journey is treacherous and windswept. The salty taste of the sea lingers in the air and the constant crashing of waves against the rocky shores fills the silence."
+            },
+            "connections": {
+                "south": "Ruined House",
+                "north": "A Lonely Island"
+            },
+            "items": {
+                "Crushed Cradle": {
+                    "name": "Crushed Cradle",
+                    "description": "A small, wooden cradle, crushed under the weight of the fallen rocks.",
+                    "examine_text": "The cradle seems to have been quite beautiful before the collapse. Its intricate carvings are marred by scratches and chunks of missing wood. There's a faint lullaby playing when you're near it, it's almost haunting.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                },
+                "Mossy Rocks": {
+                    "name": "Mossy Rocks",
+                    "description": "Large chunks of green, moss-covered rocks.",
+                    "examine_text": "Upon closer examination, the mossy rocks possess an unusual, almost fluorescent glow. They are cool and slick to the touch. You can spot some small creatures moving around hidden within the moss.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                },
+                "Faded Photograph": {
+                    "name": "Faded Photograph",
+                    "description": "An old, faded photograph of a noble lady holding a baby.",
+                    "examine_text": "The edges of the photograph are worn, and the image is almost hard to make out. The lady shows a tender smile and the baby looks content in her arms. The date at the back of the photograph suggests it was taken around the time when the wing collapsed.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                }
+            },
+            "characters": {
+                "Ghost of the Noble": {
+                    "name": "Ghost of the Noble",
+                    "description": "An eerie, translucent apparition clad in noble's attire, his expression a perpetual look of sadness and worry.",
+                    "persona": "I'm the soul of the noble who once ruled this place. My sorrow is everlasting, echoing through the ruins.",
+                    "goal": "To find peace by discovering what happened to his child.",
+                    "location": "Collapsed West Wing",
+                    "inventory": {
+                        "spectral_scepter": {
+                            "name": "Spectral Scepter",
+                            "description": "A ghostly, ethereal scepter, faintly glowing in the dim light.",
+                            "examine_text": "The spectral scepter appears to be made of unearthly materials. Despite its otherwordly nature, it feels solid in your hand. It's pulsing gently with a mysterious energy.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "crumpled_royal_decree": {
+                            "name": "Crumpled Royal Decree",
+                            "description": "A Royally decreed note, despairingly crumpled.",
+                            "examine_text": "The crumpled note is unreadable due to age and tear. However, you can make out a royal stamp at the bottom right corner, signifying its previous importance.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Grieving Widow": {
+                    "name": "Grieving Widow",
+                    "description": "A frail and haggard woman. Her eyes, filled with an unspeakable sadness, endlessly scanning the rubble.",
+                    "persona": "I once filled this house with laughter. Now, I'm just a shell, my happiness buried under this rubble.",
+                    "goal": "To find some memento of her lost child under the rubble.",
+                    "location": "Collapsed West Wing",
+                    "inventory": {
+                        "Ragged Shawl": {
+                            "name": "Ragged Shawl",
+                            "description": "A thin, faded shawl that has seen better days",
+                            "examine_text": "The shawl is rough from wear and neglect. Faint traces of a floral pattern can be seen, its colors faded from sun and time. It feels heavy with sorrow and mourning.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Cracked Locket with Baby's Picture": {
+                            "name": "Cracked Locket with Baby's Picture",
+                            "description": "A brass locket, cracked and tarnished, holds a small hand-drawn picture of a baby",
+                            "examine_text": "The locket is warm to the touch. Your fingers trace the crack that bisects the once-smiling face of an infant. This tiny face, frozen in time, reflects an innocence forever lost.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Clegg the Finder": {
+                    "name": "Clegg the Finder",
+                    "description": "A wiry man with sharp eyes and quick hands. His clothes and skin are both stained with dust and grime.",
+                    "persona": "I'm just here to collect what's been left behind. Beauty in ruins, that's what I seek.",
+                    "goal": "To find and sell valuable items forgotten in the rubble.",
+                    "location": "Collapsed West Wing",
+                    "inventory": {
+                        "old battered bag": {
+                            "name": "Old Battered Bag",
+                            "description": "A worn-out bag with bindings coming loose.",
+                            "examine_text": "A closer look shows a rickety bag, its bindings barely holding the materials together. It's dirty and stained, a testament to its age and the myriad places it must have been. Despite its lack of appeal, the bag has a certain charm, bearing the weight of numerous adventures logged in its battered form.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": [],
+                            "location": "A Lonely Island"
+                        },
+                        "sturdy shovel": {
+                            "name": "Sturdy Shovel",
+                            "description": "A shovel robust in its construction.",
+                            "examine_text": "A strong, well-built shovel. Its handle is made of rugged wood, strained with the weight of past use. The metal head, though rusted at parts, retains its strength. The grip is worn smooth, denoting heavy use. It's clearly seen some rough days, but looks dependable.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "A Lonely Island"
+                        },
+                        "blackened oil lamp": {
+                            "name": "Blackened Oil Lamp",
+                            "description": "An oil lamp with black soot marking its use.",
+                            "examine_text": "The oil lamp has been well used, evidenced by the black soot marking its edges. Its glass is smeared with an uneven coat of grime that gives it an eerily beautiful, speckled glow when lit. The metal is rusted in places, adding imperfections that convey an antique charm.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "A Lonely Island"
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Abandoned Mine"
+        },
+        {
+            "name": "A Lonely Island",
+            "description": "the island only has one coconut tree and waves crashing and appearing missing wooden boat parts. The pirates are nowhere to be seen.",
+            "background": "The pirates leave people there that they have robbed from their ship such as gold from royalty, they leave people stranded there as a sport. There is nothing but a coconut tree there and skeletons of other people.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "You'll traverse treacherous ocean waves to reach the collapsed west wing, the air getting increasingly damp and heavy with the unmistakable scent of moss.",
+                "west": "The journey to the abandoned castle requires careful manoeuvring on the slippery cliffs. Each step closer makes you feel a striking sense of isolation and the echoing silence is only broken by the ocean's relentless onslaught against the cliff."
+            },
+            "connections": {
+                "south": "Collapsed West Wing",
+                "west": "An Abandoned Castle On An Ocean Cliff Side"
+            },
+            "items": {
+                "Coconut": {
+                    "name": "Coconut",
+                    "description": "A mature coconut hanging from the lone tree",
+                    "examine_text": "The coconut is green-brown, quite large and heavy for its size. Could be useful",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": true,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                },
+                "Gold Pieces": {
+                    "name": "Gold Pieces",
+                    "description": "A pile of gold pieces abandoned by the pirates",
+                    "examine_text": "The gold pieces are shining as they were recently polished, the markings suggest they are from a royal treasury",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                },
+                "Skeleton": {
+                    "name": "Skeleton",
+                    "description": "A skeletal remains from previous victims",
+                    "examine_text": "The skeleton is very old and covered in dust and sand, clothings suggest that this was a sailor or a pirate",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                },
+                "Boat Parts": {
+                    "name": "Boat Parts",
+                    "description": "Parts of a wooden boat scattered across the beach",
+                    "examine_text": "The parts are worn but could possibly be used to make a raft with enough of them",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                }
+            },
+            "characters": {
+                "Robinson": {
+                    "name": "Robinson",
+                    "description": "Tattered clothing hanging on lean body, has an unkempt beard, with a fearful look always on his face.",
+                    "persona": "I've been here so long I've lost track of days. But I keep counting coconuts just to stay sane.",
+                    "goal": "Find a way to escape the island",
+                    "location": "A Lonely Island",
+                    "inventory": {
+                        "Coconut shell": {
+                            "name": "Coconut shell",
+                            "description": "A hard, hollow piece of a coconut.",
+                            "examine_text": "A worn-out, hollow coconut shell. It seems like it's been used as a drinking vessel.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Old map": {
+                            "name": "Old map",
+                            "description": "A faded and tattered pirate's map.",
+                            "examine_text": "An ancient and tatty map, it's hard to make out the details. The edge is torn and the ink has faded away with time. A red X marks a spot inland.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Broken compass": {
+                            "name": "Broken compass",
+                            "description": "A cracked and rusty old compass.",
+                            "examine_text": "It's an old compass, the glass cover on it is cracked and the needle is stuck in place. Even in its state, it radiates a sense of adventure and an unknown journey.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Bones": {
+                    "name": "Bones",
+                    "description": "A skeleton lying in the sand, with decaying pirate clothes and a hat.",
+                    "persona": "Can't rob me now, can ya? Figured the sun couldn't effect me anymore. Dead men tell no tales!",
+                    "goal": "Rest in peace",
+                    "location": "A Lonely Island",
+                    "inventory": {
+                        "Decaying Clothes": {
+                            "name": "Decaying Clothes",
+                            "description": "Ragged and torn, these old clothes reek of seawater and decay.",
+                            "examine_text": "The clothes are in bad shape, covered in mould and sea brine. Despite their dire condition, they might still offer some protection from the elements.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Pirate Hat": {
+                            "name": "Pirate Hat",
+                            "description": "An old, worn-out pirate hat. It still retains a bit of its former grandeur.",
+                            "examine_text": "Battered by sun and saltwater, the once-splendid pirate hat is now little more than a decaying trophy. You can almost imagine a cunning pirate captain, just like Bones, commanding his crew with this cap perched atop his skull.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Bone": {
+                            "name": "Bone",
+                            "description": "A weathered, sun-bleached bone. Judging from its size and shape, it probably belonged to a human.",
+                            "examine_text": "The bone is worn smooth from years of exposure to the elements. Despite its gruesome origins, it could prove useful as a tool or weapon.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Captain Hornblower": {
+                    "name": "Captain Hornblower",
+                    "description": "A ghostly figure with old captain's uniform, a weathered hat and a see-through body.",
+                    "persona": "In death, I have lost my ship, my treasure, but gained an eternity of regret. A cruel joke, isn't it?",
+                    "goal": "Find eternal rest by retrieving his stolen treasure",
+                    "location": "A Lonely Island",
+                    "inventory": {
+                        "Ghostly ship's wheel": {
+                            "name": "Ghostly ship's wheel",
+                            "description": "An eerie translucent ship's wheel, spinning gently in the breeze.",
+                            "examine_text": "The ship's wheel of Captain Hornblower, forever turning as if helming an unseen ship. The transparent wheel appears tangible while producing a faint glow. There are notches and scratches on it, hinting at its storied past. It feels chillingly cold to the touch",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "An Abandoned Castle On An Ocean Cliff Side"
+                        },
+                        "Ethereal sabre": {
+                            "name": "Ethereal sabre",
+                            "description": "A spectral sabre that shimmers in the moonlight.",
+                            "examine_text": "Captain Hornblower's legendary sabre, turned into a phantasmal object. Its glow illuminates the area. Prolonged appreciation of the blade reveals an intricate design, a testament to the captain's standing. It's thin as air, light in hand, but feels as solid and sharp as any earthly weapon.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "An Abandoned Castle On An Ocean Cliff Side"
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Abandoned Mine"
+        },
+        {
+            "name": "An Abandoned Castle On An Ocean Cliff Side",
+            "description": "The castle is located at the top of an erosive cliff face of a vast ocean. An entire wing of the castle appear to have collapsed into the ocean due to the erosion of the cliff face, perhaps the reason why the castle now lay abandoned.",
+            "background": "The castle once belonged to a noble of a rather poor fishing village. He could not afford magical protection, so he was unable to protect his mighty castle from the erosion of the cliffs. An elderly man in the nearby fishing villages claims that the castle belonged to his family, but lacks the paperwork necessary to prove his claims.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "A perilous journey awaits those who dare to head east from the cliff side castle. They must navigate the tumultuous sea and brave the relentless waves until they reach a lonely island, which is said to be a place of lore and mystery, where the only companionship comes from the whispering winds and the occasional crash of a coconut falling from the lone tree."
+            },
+            "connections": {
+                "east": "A Lonely Island"
+            },
+            "items": {
+                "Old Rusty Key": {
+                    "name": "Old Rusty Key",
+                    "description": "An old, rusty key, seemingly dropped or forgotten.",
+                    "examine_text": "The key is covered in a thick layer of rust, indicative of its age and long exposure to the salty air. It has a symbol you do not recognize etched into it.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                },
+                "Battered Shield": {
+                    "name": "Battered Shield",
+                    "description": "A tattered and torn shield, relic of some forgotten battle.",
+                    "examine_text": "The shield is dotted with rust and crisscrossed with sword marks, a silent testament to the sieges the castle must have endured. Its metal is old and brittle, with pieces flaking off at the edges.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": true
+                    }
+                },
+                "Ancient Map": {
+                    "name": "Ancient Map",
+                    "description": "An old, fragile map, possibly detailing the surrounding terrains.",
+                    "examine_text": "Upon closer inspection, the map reveals the extent of the former noble's lands, the village, the castle grounds, and possibly even treasure markers. Its edges are tattered and scorched, with some areas faded beyond comprehension due to the ravages of time.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                },
+                "Wooden Throne": {
+                    "name": "Wooden Throne",
+                    "description": "A wooden throne, its lacquer peeling off after years of neglect.",
+                    "examine_text": "It must have been grand once - ornate carvings hint at a former majesty now lost to time. There's a worn-down cushion on the seat, fraying at the edges.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    }
+                }
+            },
+            "characters": {
+                "The Ghost of the Noble": {
+                    "name": "The Ghost of the Noble",
+                    "description": "A transparent figure, with noble attire, floating and moving around the castle. The specter's serious face is often overcome by a look of deep sadness.",
+                    "persona": "Ah! If only I knew. If only I could roll back the years and protect it...my castle, my pride. Well, here I am, tied to this place without rest for my soul.",
+                    "goal": "To rest in peace and protect the castle that was once mine.",
+                    "location": "An Abandoned Castle On An Ocean Cliff Side",
+                    "inventory": {
+                        "Ancient Key": {
+                            "name": "Ancient Key",
+                            "description": "A rusty, worn key discovered in the rubble of the castle.",
+                            "examine_text": "The key might have been delicate and ornate once, but now it is corroded and battered by the years. Despite its age, it might still be functional.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Lost Family Seal": {
+                            "name": "Lost Family Seal",
+                            "description": "A broken seal of the noble family that once resided in the castle.",
+                            "examine_text": "Even though damaged, the extravagant emblem of a fish, symbolizing the humble origins of the family, is still noticeable. It is an essential insignia of the noble's lineage.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Elderly Man": {
+                    "name": "Elderly Man",
+                    "description": "A frail yet stern man with a thin white beard, dressed in old fisherman attire. His ocean blue eyes evoke a sense of longing for the castle in the distance.",
+                    "persona": "That castle, it was my family's pride, our legacy! Just look at what's left of it. I don't have any proof, but everyone in the village knows it's true. I just wish I could do something about it.",
+                    "goal": "To reclaim my family's castle and restore its lost honor.",
+                    "location": "An Abandoned Castle On An Ocean Cliff Side",
+                    "inventory": {
+                        "Old Fishing Net": {
+                            "name": "Old Fishing Net",
+                            "description": "An old, worn-out fishing net",
+                            "examine_text": "This fishing net is old and worn out. It bears signs of many a bountiful catch and, no doubt, just as many journeys out to sea. There's a rugged charm to it, and the scent of ocean is firmly ingrained within its ropes. Despite its condition, it seems to be holding together quite well.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Picture of the Castle": {
+                            "name": "Picture of the Castle",
+                            "description": "A picture of the now ruined castle in its prime.",
+                            "examine_text": "This picture seems to have been taken several decades ago, showing the castle in all its glory. It looks more majestic than it does now, with every stone of it intact and standing proudly against the backdrop of the ocean. There is an air of melancholy that surrounds the image, a poignant reminder of the transience of all things.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Sea Witch": {
+                    "name": "Sea Witch",
+                    "description": "Tucked away in the shadows of the cliffs, a silhouette with flowing hair, mirroring the waves. Her skin is a pure gray, making her eerily unseen against the stormy sea at night.",
+                    "persona": "Oh, the morsels of the castle sinking into my cold home, it's a joy watching it! More space for me and my creatures. Humans, always curious, always failing!",
+                    "goal": "To claim the whole castle and the ocean's cliff for herself.",
+                    "location": "An Abandoned Castle On An Ocean Cliff Side",
+                    "inventory": {
+                        "Seashells": {
+                            "name": "Seashells",
+                            "description": "A pile of assorted seashells gathered from ocean",
+                            "examine_text": "The assortment of seashells of different shapes, sizes and colors, so carefully gathered over the years, all of them whispering a unique melody of the ocean. Upon close observation, you might see that some of them are carved with obscure, cryptic symbols. It might be some kind of magic spell.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Magic Seaweed": {
+                            "name": "Magic Seaweed",
+                            "description": "A glowing seaweed with magical properties",
+                            "examine_text": "At first glance, it seems like a normal, green bunch of seaweed, but then you notice an odd, bioluminescent glow seeping through its surface. Its glow pulses rhythmically, like a heartbeat, and fills your mind with a calming, soothing sensation. The seaweed also exudes a strong, aromatic smell that's upwelling the memories of the sea.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": true,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Abandoned Mine"
+        }
+    ],
+    "actions": []
+}

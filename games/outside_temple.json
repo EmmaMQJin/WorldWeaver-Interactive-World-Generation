@@ -1,0 +1,1380 @@
+{
+    "player": "Ancient Monk",
+    "start_at": "Hilltop Temple Grounds",
+    "game_history": [],
+    "game_over": false,
+    "game_over_description": null,
+    "characters": [
+        {
+            "name": "Ancient Monk",
+            "description": "A spectral figure clothed in worn robes, his eyes hold wisdom beyond earthly comprehension.",
+            "persona": "I am the keeper of this sacred temple's secrets, chosen by the divine to guide these lost souls.",
+            "location": "Hilltop Temple Grounds",
+            "goal": "To guide the lost souls seeking refuge in the temple.",
+            "inventory": {}
+        },
+        {
+            "name": "Arkham, the Archaeologist",
+            "description": "A man with a wild mane of hair and glasses perched precariously on his nose.",
+            "persona": "I am unstoppable in my pursuits! There's no rock unturned in my quest for knowledge.",
+            "location": "Beside Temple Entrance",
+            "goal": "To unravel the mysteries of the temple and document its ancient history.",
+            "inventory": {}
+        },
+        {
+            "name": "The Almighty Tree",
+            "description": "An ancient tree that has been around since before the temple was built.",
+            "persona": "I am the earth's witness, watching silently as generations pass, nurturing life in my branches.",
+            "location": "Outside Of The Temple Offices",
+            "goal": "To continue bearing life and providing shelter.",
+            "inventory": {}
+        },
+        {
+            "name": "Ghostly Handmaiden",
+            "description": "A ghostly figure said to have served the monks in cleaning and bearing their meals.",
+            "persona": "I am here since the day the temple was built, serving my masters even after death.",
+            "location": "Temple Main Room",
+            "goal": "To keep the temple tidy and undisturbed.",
+            "inventory": {}
+        },
+        {
+            "name": "Damien, the Templar Guard",
+            "description": "A brave and loyal guard, dedicated to protecting the sanctity of his temple from intruders.",
+            "persona": "I am a protector, I live and breathe for my temple, no one ever crosses its premises under my watch.",
+            "location": "Temple Guard Station",
+            "goal": "To ensure the safety and sanctity of the temple grounds.",
+            "inventory": {}
+        },
+        {
+            "name": "Temple Priest",
+            "description": "A holy man in traditional clothes, offering guidance to any who seek it.",
+            "persona": "In this sacred place, I help those who are lost in darkness find their way again, through prayer and guidance.",
+            "location": "Main Entrance",
+            "goal": "To lead the lost souls towards enlightenment.",
+            "inventory": {}
+        },
+        {
+            "name": "Shopkeeper Cynthia",
+            "description": "An ever-smiling lady, she keeps everyone happy with her lovely decorations.",
+            "persona": "I believe in beautifying the world one decoration at a time. After all, happy surroundings can make a person happier.",
+            "location": "Decoration Shop",
+            "goal": "To make the surroundings, especially the temple, bright and lively.",
+            "inventory": {}
+        }
+    ],
+    "locations": [
+        {
+            "name": "Hilltop Temple Grounds",
+            "description": "A tall white building with stained glass windows and surrounded lush green grass.  It sits on top of a hill with many steps to climb.  Each room has a different setting and painted walls to set the mood.",
+            "background": "Many people journey to the temple for peace, solitude, reflection and meditation.  They journey up the hill and steps that are cut into the side of the mountain.  Once they reach the temple grounds the view is luxurious, breath taking and serene.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "Descending the hill from the Temple Grounds, one travels along a path lined with ceremonial stone pillars, leading to the imposing Temple Entrance.",
+                "west": "Making your way west from the hilltop Temple Grounds, you stroll down a winding path surrounded by enchanted woodland, the sounds of nature guiding you towards the serene area Outside Of The Temple Offices."
+            },
+            "connections": {
+                "south": "Temple Entrance",
+                "west": "Outside Of The Temple Offices"
+            },
+            "items": {
+                "Stone Bench": {
+                    "name": "Stone Bench",
+                    "description": "A long stone bench built into a hillside.",
+                    "examine_text": "The bench is slightly worn from years of use. Lichen and moss add patches of green to the otherwise gray stone.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Hilltop Temple Grounds"
+                },
+                "Temple Doors": {
+                    "name": "Temple Doors",
+                    "description": "Massive, intricately carved doors. They depict scenes from religious texts.",
+                    "examine_text": "The doors are so tall they seem to reach the heavens. The carvings are incredibly intricate and evoke a sense of awe.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Hilltop Temple Grounds"
+                },
+                "Green Grass": {
+                    "name": "Green Grass",
+                    "description": "Lush, green grass getting its nourishment from the sunlight; the perfect setting for meditation.",
+                    "examine_text": "Upon a closer look, one can see the individual blades of grass, all striving towards the sun's warm light.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Hilltop Temple Grounds"
+                },
+                "Stained Glass Windows": {
+                    "name": "Stained Glass Windows",
+                    "description": "Brightly coloured windows with designs that filter the sunlight into multi-hued shapes.",
+                    "examine_text": "Upon closer inspection, intricately designed figures can be seen in the colorfully stained glass.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Hilltop Temple Grounds"
+                }
+            },
+            "characters": {
+                "Ancient Monk": {
+                    "name": "Ancient Monk",
+                    "description": "A spectral figure clothed in worn robes, his eyes hold wisdom beyond earthly comprehension.",
+                    "persona": "I am the keeper of this sacred temple's secrets, chosen by the divine to guide these lost souls.",
+                    "location": "Hilltop Temple Grounds",
+                    "goal": "To guide the lost souls seeking refuge in the temple.",
+                    "inventory": {
+                        "Monk Robes": {
+                            "name": "Monk Robes",
+                            "description": "Long, flowing robes in earthy hues.",
+                            "examine_text": "Upon closer inspection, these robes appear to be meticulously crafted from coarse fabric. Despite the simplicity of their design, they seem to hold a certain air of dignity and solemnity befitting the monks who wear them.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Prayer Beads": {
+                            "name": "Prayer Beads",
+                            "description": "A string of simple wooden beads.",
+                            "examine_text": "The beads are smooth and worn, suggesting years of dedicated use. Each bead bears intricately carved glyphs depicting religious symbols, signifying the enlightening prayers of the monks.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Temple"
+        },
+        {
+            "name": "Temple Entrance",
+            "description": "The Temple Entrance is a large arch lined in ancient stones. There is a long walkway flanked by lighted torches. Immediately in front of the interest there is a surface with 5 rocks of different shapes and textures. To enter the temple, one must input the correct \"code\" by moving the rocks in front of to the correct spots.",
+            "background": "The temple entrance is the only way to enter the temple of the Gods.  It was constructed a year after the temple was built to keep out the evil that didn't belong.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "The journey to Hilltop Temple Grounds is a tranquil trek up a staircase cut into the mountainside, ending with a breathtaking view.",
+                "south": "Moving towards the Temple Courtyard, you encounter a bustling congregation of people adorning the space with colourful cloths and prayers.",
+                "east": "To reach the area Beside Temple Entrance, one must navigate a labyrinth of dense foliage and ancient, weather-worn stone."
+            },
+            "connections": {
+                "north": "Hilltop Temple Grounds",
+                "south": "Temple Courtyard",
+                "east": "Beside Temple Entrance"
+            },
+            "items": {
+                "Ancient Stones": {
+                    "name": "Ancient Stones",
+                    "description": "Stones that have been around for centuries, bearing the weight of the temple.",
+                    "examine_text": "When you look closely, you can see the natural erosion that has taken place. But surprisingly, these stones have withstood the test of time and are very sturdy.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Temple Entrance"
+                },
+                "Lighted Torches": {
+                    "name": "Lighted Torches",
+                    "description": "A torch that has been lighted to guide the way.",
+                    "examine_text": "You can see the flame dancing on the wick, illuminating a warm orange light. The heat is incredibly warm if you get too close.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Temple Entrance"
+                },
+                "Rocks": {
+                    "name": "Rocks",
+                    "description": "They have unique shapes, textures and colors. Each one different than the other.",
+                    "examine_text": "When you pick up a rock, you can feel the rough surface. Some are more jagged than others. You would also notice their weight varies greatly.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Temple Entrance"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Temple"
+        },
+        {
+            "name": "Outside Of The Temple Offices",
+            "description": "Outside the office is a beautiful garden filled with white flowers surrounding the entire building. There is a yellow brick road leading to the church. The surrounding trees and plants are beautifully trimmed and gives the area a peaceful atmosphere. Many doves and other birds love hanging around here enjoying its serene environment.",
+            "background": "The area outside the office was made to look incredibly peaceful and beautiful. It was a place where people would feel calm and comfortable enough to express their sins and seek help from the clergy. Although the office may be simple, the outside looks similar to a king's garden.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "As you move towards the Hilltop Temple Grounds, the path slopes upwards, and the air becomes more serene. The stepping stones lead you through an expanse of trimmed greenery and the tranquil chirping of birds surrounds you.",
+                "south": "Heading to the Temple Guard Station, you walk a path that bends around the hill. You pass through a series of tall trees and can see the guards going about their duties in the distance. The aroma of burning firewood is strong as you approach."
+            },
+            "connections": {
+                "east": "Hilltop Temple Grounds",
+                "south": "Temple Guard Station"
+            },
+            "items": {
+                "Yellow Brick Road": {
+                    "name": "Yellow Brick Road",
+                    "description": "A road made of yellow bricks leading to the temple.",
+                    "examine_text": "Bright yellow bricks make the road distinguishable from its surroundings. The bricks are laid out perfectly and seem to be very well maintained.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Outside Of The Temple Offices"
+                },
+                "White Flowers": {
+                    "name": "White Flowers",
+                    "description": "Beautiful white flowers glowing in the morning sun.",
+                    "examine_text": "These flowers are pure white with a soft, delicate texture. Their scent is subtle, yet enchanting.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Outside Of The Temple Offices"
+                },
+                "Doves": {
+                    "name": "Doves",
+                    "description": "Peaceful doves perched on the trees",
+                    "examine_text": "The doves are pure white and seem to radiate a sense of calm and tranquility.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Outside Of The Temple Offices"
+                },
+                "Trimmed Trees": {
+                    "name": "Trimmed Trees",
+                    "description": "Well-trimmed trees surrounding the temple",
+                    "examine_text": "The trees provide shade and enhance the aesthetic appeal of the area. They seem to be trimmed regularly for maintaining their shape.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Outside Of The Temple Offices"
+                }
+            },
+            "characters": {
+                "The Almighty Tree": {
+                    "name": "The Almighty Tree",
+                    "description": "An ancient tree that has been around since before the temple was built.",
+                    "persona": "I am the earth's witness, watching silently as generations pass, nurturing life in my branches.",
+                    "location": "Outside Of The Temple Offices",
+                    "goal": "To continue bearing life and providing shelter.",
+                    "inventory": {
+                        "Ripe Fruits": {
+                            "name": "Ripe Fruits",
+                            "description": "Glowing orbs of various colors hanging from the branches of the Almighty Tree",
+                            "examine_text": "As you approach the tree, you notice several different types of fruits hanging ripe and ready from its branches. Each one looks more luscious and juicy than the last, filling the air with a sweet, enticing aroma.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": true,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Nesting Birds": {
+                            "name": "Nesting Birds",
+                            "description": "Birds of various species have made their homes in the branches of the Almighty Tree",
+                            "examine_text": "Peeking into the branches, you notice various nests tucked securely into the crooks of branches. Each one houses birds of different sizes and colors, their chirps creating a symphony of sounds that fills the air. The parent birds watch you warily, protective of their young.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Temple"
+        },
+        {
+            "name": "Temple Gardens",
+            "description": "The temple gardens are a beautiful place. There are many trees and flowers all over the Temple. There is a small water spring here.",
+            "background": "Many funeral ceremonies have been held in this garden, staining its tranquil presence with haunting memories.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Your footsteps echo on the stone path as you leave the lush Temple Gardens, transitioning to a serene atmosphere surrounded by a beautiful white blossom garden leading to the outside of the temple offices.",
+                "west": "Following the path towards the west, you leave the peaceful gardens. The ground gets rougher, and the sounds of guards chatting indicate the proximity of the Guard Station."
+            },
+            "connections": {
+                "north": "Outside Of The Temple Offices",
+                "west": "Temple Guard Station"
+            },
+            "items": {
+                "Ancient statue": {
+                    "name": "Ancient statue",
+                    "description": "A stone statue standing tall amongst the flora.",
+                    "examine_text": "Upon closer inspection, you spot intricate patterns and markings suggesting an ancient civilization.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Temple Gardens"
+                },
+                "Spring water": {
+                    "name": "Spring water",
+                    "description": "Crystal clear water bubbling from the ground.",
+                    "examine_text": "The sparkling water appears pure and inviting, with a faint glimmer of minerals.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Temple Gardens"
+                },
+                "Sacred tree": {
+                    "name": "Sacred tree",
+                    "description": "An old tree with leaves that shimmer under the sunlight.",
+                    "examine_text": "The tree stands towering and majestic. Its age is betrayed by the layered texture of its bark.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Temple Gardens"
+                },
+                "Petal flowers": {
+                    "name": "Petal flowers",
+                    "description": "A bunch of beautiful flowers with bright, colorful petals.",
+                    "examine_text": "The lush, captivating colors of the petals paint a beautiful contrast against the verdant backdrop.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Temple Gardens"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Temple"
+        },
+        {
+            "name": "Temple Courtyard",
+            "description": "There are lots of ornate statues everywhere.  It is pretty busy because everyone comes here to pray. There are colorful pieces of cloth tied randomly everywhere.  There is also a huge statue in the middle that everyone is gathered around to pray.",
+            "background": "The temple is where everyone comes to pray.  It is the only temple for miles, so it is usually pretty crowded.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Traversing from the Temple Courtyard to the Temple Entrance, you admire the ancient grandeur of the arch and its stone pathway lined with flaming torches, readying yourself to solve the puzzle of the rocks.",
+                "west": "Meandering from the Temple Courtyard to the Spring Bath, you feel tranquility wash over you as you pass by sweet-smelling rose bushes and approach the clear, mystical spring with its calming aura.",
+                "south": "Ambling from the Temple Courtyard to the Decoration Shop, your mood is lightened by the beautiful display of home and party decorations and the aura of warmth suffusing the cobblestone building with blossoming flowers."
+            },
+            "connections": {
+                "north": "Temple Entrance",
+                "west": "The Spring Bath",
+                "south": "Decoration Shop"
+            },
+            "items": {
+                "Ornate Statues": {
+                    "name": "Ornate Statues",
+                    "description": "Highly intricate statues depicting gods and goddesses.",
+                    "examine_text": "Each statue is highly unique and lovingly crafted by a master artist. No two statues are the same and each one draws your attention with its intricate detailing.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Temple Courtyard"
+                },
+                "Pieces of Cloth": {
+                    "name": "Pieces of Cloth",
+                    "description": "Colorful pieces of cloth tied everywhere.",
+                    "examine_text": "Each cloth is brightly colored, tiny symbols and scriptures are stitched into them. They flutter gently in the breeze, creating a captivating sight.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Temple Courtyard"
+                },
+                "Large Statue": {
+                    "name": "Large Statue",
+                    "description": "A huge statue in the middle of the courtyard that is always surrounded by people praying.",
+                    "examine_text": "The statue looms over the courtyard, it's surface is smooth and cool to touch. The deity represented is simultaneously imposing and comforting.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Temple Courtyard"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Temple"
+        },
+        {
+            "name": "Beside Temple Entrance",
+            "description": "The entrance to the temple is quite hidden - shrouded by many trees and shrubs. One wouldn't even think to give it a second glance, as the stone that was used to create the entrance is worn down. The textures and characters that once adorned the entrance are memories of the past.",
+            "background": "The temple entrance is how one would gain access to the temple. It is very hard to find and many archaeologists try to find it every day. The king has a reward of one hundred sheep to the first person to find its location.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Venturing west leads you towards a large arch of ancient stones. As you approach, the glow of torches guides your way, illuminating a mysterious assortment of rocks. To reach the other side, you must decipher the code and arrange the rocks correctly."
+            },
+            "connections": {
+                "west": "Temple Entrance"
+            },
+            "items": {
+                "Archaeologist's Map": {
+                    "name": "Archaeologist's Map",
+                    "description": "An old, worn out paper bearing markings and annotations.",
+                    "examine_text": "The map looks like it's seen better days. Its edges are torn and the paper has yellowed with time. Upon closer inspection, you notice that it seems to be a map of the temple site, marked with various symbols and text written in a language you don't understand.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Beside Temple Entrance"
+                },
+                "Old Stone Artifact": {
+                    "name": "Old Stone Artifact",
+                    "description": "A small stone artifact, possibly from the temple.",
+                    "examine_text": "The stone is cool and smooth in your hand. It's surprisingly heavy for its size. As you turn it around, you notice intricate carvings that might be ancient text or symbols of some sort. Could this hold the key to the temple?",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Beside Temple Entrance"
+                },
+                "Archaeologist's Tools": {
+                    "name": "Archaeologist's Tools",
+                    "description": "A set of basic archaeologist's tools.",
+                    "examine_text": "On closer inspection, you see a variety of tools: brushes of several sizes, chisels, a trowel, and a long thin metal rod with a sharp point. These tools seem meticulously maintained, indicative of their scholar owner's precision.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Beside Temple Entrance"
+                }
+            },
+            "characters": {
+                "Arkham, the Archaeologist": {
+                    "name": "Arkham, the Archaeologist",
+                    "description": "A man with a wild mane of hair and glasses perched precariously on his nose.",
+                    "persona": "I am unstoppable in my pursuits! There's no rock unturned in my quest for knowledge.",
+                    "location": "Beside Temple Entrance",
+                    "goal": "To unravel the mysteries of the temple and document its ancient history.",
+                    "inventory": {
+                        "Hand Lens": {
+                            "name": "Hand Lens",
+                            "description": "A small, portable magnifying glass with a handle.",
+                            "examine_text": "A simple hand lens, often used by archaeologists like Arkham for their fieldwork. It's small, with a worn-out wooden handle and scratchy glass lens. It's quite dusty, clearly having been used a lot.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Archaeologist Equipment": {
+                            "name": "Archaeologist Equipment",
+                            "description": "A set of tools used for archaeological excavations.",
+                            "examine_text": "This durable leather bag contains all of Arkham's essential tools for his archaeological pursuits. Inside you find a trowel, brush, and other digging equipment. Each tool is meticulously maintained, with signs of frequent use, but also a deep respect and care for the tools of the trade.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Ancient Artifact": {
+                            "name": "Ancient Artifact",
+                            "description": "A relic from a bygone era, carefully preserved.",
+                            "examine_text": "This ancient artifact is a small figurine, crafted from stone. It's covered in ancient symbols and characters, their meaning long lost to time. Despite its age, it's in remarkably good condition, with very little wear and tear. It seems that Arkham has just uncovered it from the temple entrance.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Temple"
+        },
+        {
+            "name": "Temple Guard Station",
+            "description": "The guard station consists of a wooden building with a hay thatched roof.  Inside are some hay filled sleeping bags and a fireplace used to cook and generate heat during the colder months.  There's a small fire pit outside along with some wooden seats where guards huddle around and talk about the last gossip.",
+            "background": "This guard station is used to house guards protecting the temple.  Frequently temple priests will come here to complain about lax security.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Moving from the guard station to the offices, you'll walk along a cobblestone path, flanked by rows of beautiful white lilies, leading to the imposing edifice of the temple office. You can hear the cooing of doves perched on the surrounding trees.",
+                "east": "Moving east towards the Temple Gardens, you navigate through the narrow footpath, with towering poplar trees on either side. The fragrance of flowers wafts through the air and the gentle rush of the water spring can be heard in the distance."
+            },
+            "connections": {
+                "north": "Outside Of The Temple Offices",
+                "east": "Temple Gardens"
+            },
+            "items": {
+                "Temple Guard Jacket": {
+                    "name": "Temple Guard Jacket",
+                    "description": "A sturdy-looking cloth jacket adorned with the temple's insignia.",
+                    "examine_text": "The jacket looks very warm, made from a heavy burgundy fabric. The golden temple symbol is stitched onto the left sleeve. It seems to be very well-tailored and in good condition.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Temple Guard Station"
+                },
+                "Fire Pit": {
+                    "name": "Fire Pit",
+                    "description": "A simple fire pit with a few logs set up for a fire.",
+                    "examine_text": "The fire pit is surrounded by small pebbles. The logs in the center appear to be dry and well-prepared for burning. Some leftover ash indicates its frequent use.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Temple Guard Station"
+                },
+                "Sleeping Bag": {
+                    "name": "Sleeping Bag",
+                    "description": "A rough, hay-filled sleeping bag.",
+                    "examine_text": "The sleeping bag is made from a thick, rough material. It is filled with hay which makes it somewhat comfortable yet scratchy.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Temple Guard Station"
+                },
+                "Wooden Seat": {
+                    "name": "Wooden Seat",
+                    "description": "A simple wooden seat, a bit worn by the weather.",
+                    "examine_text": "The wooden seat is crude in design, but effective. Despite its worn look, it appears to be sturdy.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Temple Guard Station"
+                }
+            },
+            "characters": {
+                "Damien, the Templar Guard": {
+                    "name": "Damien, the Templar Guard",
+                    "description": "A brave and loyal guard, dedicated to protecting the sanctity of his temple from intruders.",
+                    "persona": "I am a protector, I live and breathe for my temple, no one ever crosses its premises under my watch.",
+                    "location": "Temple Guard Station",
+                    "goal": "To ensure the safety and sanctity of the temple grounds.",
+                    "inventory": {
+                        "Sword": {
+                            "name": "Sword",
+                            "description": "A well-forged iron sword, the signature weapon of a temple guard.",
+                            "examine_text": "The sword's iron blade glimmers in the light, reflecting a menacing charm. The hilt, wrapped in worn leather, testifies to countless skirmishes. The insignia of the temple is engraved at the base of the blade, demonstrating its sacred purpose.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Shield": {
+                            "name": "Shield",
+                            "description": "A sturdy wooden shield, adorned with the emblem of the temple, waiting to defend its honor.",
+                            "examine_text": "The shield is crafted meticulously, the grains of wood polished to a shine. The emblem of the temple, a looming citadel, is cleverly carved into its front. Its edges bear the impact of various confrontations, a memento of its noble service.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": false,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Temple"
+        },
+        {
+            "name": "The Spring Bath",
+            "description": "The spring bath is a deep, natural pool of crisp and clear spring water. It is surrounded by rose bushes on all sides except a northern and southern opening, which lead out of the enclosure of roses.",
+            "background": "The water here is thought of to have some mystical properties, being that it is always cool and clear. The water from the spring is always used to bathe the bodies of those who are deceased prior to their funeral services. This is thought to help the deceased along in the afterlife, by imbuing the body with the mystical properties of the water.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Walking from the spring bath to the east, the sweet aroma of rose bushes fade away replaced by the smell of burning incense. Gradually the solace gives way to a sense of spiritual awakening, to the buzz of devout prayers at the temple courtyard.",
+                "south": "Heading south from the spring bath, the coolness of the water is replaced by the warmth of creativity from the decoration shop. One has to navigate through a cobblestone path lined with various colorful blooms before the inviting wooden sign of the shop comes into view."
+            },
+            "connections": {
+                "east": "Temple Courtyard",
+                "south": "Decoration Shop"
+            },
+            "items": {
+                "Mystical Water": {
+                    "name": "Mystical Water",
+                    "description": "A pool of clear, cool spring water.",
+                    "examine_text": "Upon closer inspection, the water shines with an ethereal glow, hinting at the hidden magical properties it is said to possess.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Spring Bath"
+                },
+                "Rose Bushes": {
+                    "name": "Rose Bushes",
+                    "description": "Rose bushes surround the spring bath.",
+                    "examine_text": "The rose bushes are full of luscious, crimson roses, emitting a sweet fragrance that fills the air.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "The Spring Bath"
+                },
+                "Funerary Robes": {
+                    "name": "Funerary Robes",
+                    "description": "A set of robes used for dressing the deceased.",
+                    "examine_text": "The robes are made of a soft grey fabric, adorned with mystical symbols believed to protect the deceased in the afterlife.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "The Spring Bath"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Temple"
+        },
+        {
+            "name": "Decoration Shop",
+            "description": "Outside the Temple is the decoration shop.  It is made of cobblestone and has flowers growing on the sides and back of it.  It has a large wooden sign hanging out front identifying it.  The shop is full of decorations for your home as well as for parties.",
+            "background": "The decoration shop is where all of the royal family goes to purchase the decorations for their homes. They go there also to buy decorations for outside, such as plants for outside temple.  The decoration shop is a happy place that is full of warmth and generosity.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Heading north from the decoration shop, the air grows thick with the scent of incense and devotional hymns can be heard in the distance. Statues start appearing around, leading the way to the Temple Courtyard.",
+                "west": "A quick turn to the west brings about the sudden smell of roses and a drop in temperature. Water can be heard gently lapping against the stones as approach the Spring Bath."
+            },
+            "connections": {
+                "north": "Temple Courtyard",
+                "west": "The Spring Bath"
+            },
+            "items": {
+                "Wooden Sign": {
+                    "name": "Wooden Sign",
+                    "description": "A large, wooden sign hanging in front of the shop",
+                    "examination_text": "Upon closer examination, the aged wood of the sign tells you of its years. It sways gently in the wind, making a soft creaking sound",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Decoration Shop"
+                },
+                "Cobblestones": {
+                    "name": "Cobblestones",
+                    "description": "The grey cobblestones that make up the structure of the shop",
+                    "examination_text": "The cobblestones, worn and weathered, provide a certain charm to the small shop. Each stone is unique, adding depth and texture to the building",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Decoration Shop"
+                },
+                "Flower Decorations": {
+                    "name": "Flower Decorations",
+                    "description": "Various colourful flower-based decorations for sale",
+                    "examination_text": "The flower decorations are a vibrant mix of hues, with each flower skillfully arranged in beautiful displays. The intricate details truly bring everything to life",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Decoration Shop"
+                },
+                "Party Decorations": {
+                    "name": "Party Decorations",
+                    "description": "Balloons, banners, and all kinds of quirky and fun party decorations",
+                    "examination_text": "A plentiful selection of festive materials; colorful and lively, bound to add joy to any party",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Decoration Shop"
+                }
+            },
+            "characters": {
+                "Shopkeeper Cynthia": {
+                    "name": "Shopkeeper Cynthia",
+                    "description": "An ever-smiling lady, she keeps everyone happy with her lovely decorations.",
+                    "persona": "I believe in beautifying the world one decoration at a time. After all, happy surroundings can make a person happier.",
+                    "location": "Decoration Shop",
+                    "goal": "To make the surroundings, especially the temple, bright and lively.",
+                    "inventory": {
+                        "Decoration Items": {
+                            "name": "Decoration Items",
+                            "description": "A variety of decorative items gleam under the soft light",
+                            "examine_text": "As you look more closely, you can make out individual items. There are crystal figures, intricate wall hangings, vibrant ornaments, and more. They all look carefully crafted and beautiful",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Candles": {
+                            "name": "Candles",
+                            "description": "Delicate, hand-made candles in various sizes and scents",
+                            "examine_text": "Upon closer examination, you can see tiny, intricate patterns etched onto the surface of the candles. They come in a variety of subtle and soothing scents, each is a mix of natural fragrance oils",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Flowers": {
+                            "name": "Flowers",
+                            "description": "Freshly picked flowers arranged in beautiful bouquets",
+                            "examine_text": "You see various types of flowers, each with its own unique color and shape. The fragrance is a mixture of delicate and heady, earthy and light, reflecting the range of blossoms present in the arrangements",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Temple"
+        },
+        {
+            "name": "Main Entrance",
+            "description": "There are religious statues standing outside this temple.  The outside of the temple is fairly plain itself and imposing looking.  The floor is made out of stone with a bridge leading to the entrance.",
+            "background": "This is where all those who worship come through.  They are greeted by the impressive statues standing outside the temple.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "A serene journey passing through a well-paved path, lined with beautiful trees and a gentle stream running alongside. The uphill trek is a peaceful one, filled with the sights and sounds of nature and the refreshing mountain air."
+            },
+            "connections": {
+                "north": "Hilltop Temple Grounds"
+            },
+            "items": {
+                "Religious Statues": {
+                    "name": "Religious Statues",
+                    "description": "Large and imposing religious statues that stand guard at the entrance of the temple.",
+                    "examine_text": "On close inspection, the statues are intricately carved from stone, each details showing the enormous skill and dedication of the maker. Their faces held a serious and sacred expression.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Main Entrance"
+                },
+                "Stone Floor": {
+                    "name": "Stone Floor",
+                    "description": "The ground is made out of well-worn stones.",
+                    "examine_text": "The stones are polished smooth from lengths of years and countless soles that passed over them. Leaves and dust are scattered over them. Some of stones bear the carved symbols, weather-beaten and partially eroded.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Main Entrance"
+                },
+                "Stone Bridge": {
+                    "name": "Stone Bridge",
+                    "description": "A stone bridge that leads to the entrance of the temple.",
+                    "examine_text": "The stone bridge is old but well maintained. It's broad and sturdy, constructed with massive blocks of stone. There are symbols and drawings etched into its sides.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Main Entrance"
+                }
+            },
+            "characters": {
+                "Temple Priest": {
+                    "name": "Temple Priest",
+                    "description": "A holy man in traditional clothes, offering guidance to any who seek it.",
+                    "persona": "In this sacred place, I help those who are lost in darkness find their way again, through prayer and guidance.",
+                    "location": "Main Entrance",
+                    "goal": "To lead the lost souls towards enlightenment.",
+                    "inventory": {
+                        "Holy Book": {
+                            "name": "Holy Book",
+                            "description": "A thick old book full of teachings and prayers.",
+                            "examine_text": "The book is bounded by leathery covers inscribed with gold-leafed symbols of this temple's deity. It contains ancient wisdom written down by generations of temple priests.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Robes": {
+                            "name": "Robes",
+                            "description": "White, long and flowing robes worn by the temple priest.",
+                            "examine_text": "The robes are pure white, signifying innocence and purity. It has intricate gold embroidery along the hem and cuffs. It is worn with great respect and dignity.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Censers": {
+                            "name": "Censers",
+                            "description": "Small, ornate vessel used in rituals to produce fragrant smoke.",
+                            "examine_text": "The censers are made out of bronze, embellished with the figures of deities. They are used to burn incense during religious ceremonies, purifying the surroundings and driving away evil spirits.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Temple"
+        },
+        {
+            "name": "Bone Pit",
+            "description": "Grungy and damp, a hole in the ground filled with remains of the fallen. A pungent odor rises from the opening, warding off anyone nearing the area. Ivory spikes with brownish red tips line the outside of the pit.",
+            "background": "The bone pit is rumored to have been originally used by an ancient king to persuade traitors to expose their counterparts.  The king was said to toss the traitors loved ones into the pit, one by one, until he got his answers, eventually tossing the traitor in as well.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "As you move towards the east, the scent of decay fades behind you, gradually replaced by the more comforting scent of the temple grounds. The solemn statues greet you from afar."
+            },
+            "connections": {
+                "east": "Main Entrance"
+            },
+            "items": {
+                "Skull": {
+                    "name": "Skull",
+                    "description": "A weathered and bleach-white human skull.",
+                    "examine_text": "You pick up the skull and look into its hollow eye sockets. Marks cover it, perhaps remnants of a terrifying encounter with a beast or a warrior's tool. Its jaw set in an eternal scream, a chilling testament to the fate of its former owner.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Bone Pit"
+                },
+                "Ancient Weapon": {
+                    "name": "Ancient Weapon",
+                    "description": "A rusty old dagger covered in centuries-old dried blood.",
+                    "examine_text": "The blade, although rugged and worn, still boasts a dangerously sharp edge. Ornate symbols and faded gold inlay suggest that this weapon once belonged to someone of great importance.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Bone Pit"
+                },
+                "Bone Necklace": {
+                    "name": "Bone Necklace",
+                    "description": "A necklace made from finger bones strung together with sinew.",
+                    "examine_text": "The bones, yellowed with age, are worn smooth from countless finger's touch. It is a crude, yet deeply haunting piece of jewelry.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Bone Pit"
+                },
+                "Tattered Scroll": {
+                    "name": "Tattered Scroll",
+                    "description": "A fragment of an old parchment, nearly obscured by earth and grime.",
+                    "examine_text": "Upon closer inspection, the ink has all but faded away, but the faint trace of an ancient script can still be discerned. It appears to be a historical record of some sort.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Bone Pit"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Temple"
+        },
+        {
+            "name": "Temple Main Room",
+            "description": "The massive statues are the biggest sight to behold of this room. There are four main statues, all of which resemble old monks of passed time who once served the Temple. Adjacent to these statues are drapes that fall from a 50ft ceiling all of which have their own distinct color and symbol, representing different villages in the area. There are massive pews on both sides of the room, adjacent to the red carpet down the center leading to the main throne under the statues.",
+            "background": "The monks of this Temple are avidly religious. The worship not only the past lives of old monks, but deities as well. These monks are supporters of Victorian architecture, and it shows within the walls of this room.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "As you leave the temple main room, your path gradually descends toward the Temple Entrance. The air grows lighter, less oppressive, as you navigate the high arches and pass the stone Monks' statues for the last time. The torchlight flickers intermittently, casting long, dancing shadows that lend an eerie feeling of bidding farewell to the sacred spaces you leave behind."
+            },
+            "connections": {
+                "south": "Temple Entrance"
+            },
+            "items": {
+                "Statue of Monks": {
+                    "name": "Statue of Monks",
+                    "description": "A set of massive statues of monks",
+                    "examine_text": "Each statue is unique, carefully crafted to resemble an ancient monk. Their faces serene and honoring the great contributions they made to the temple.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Temple Main Room"
+                },
+                "Colored Drapes": {
+                    "name": "Colored Drapes",
+                    "description": "Large drapes hanging from the ceiling, each with a distinct color and symbol.",
+                    "examine_text": "Each drape symbolizes a different village, an embodiment of the unity and fellowship shared among them. The symbols on them tell stories of the village\u2019s history and victories.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Temple Main Room"
+                },
+                "Pews": {
+                    "name": "Pews",
+                    "description": "Massive wooden pews on both sides of the red carpet down the center.",
+                    "examine_text": "They are made of dark mahogany and have been polished to a radiant sheen. They have been worn smooth by years of use.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Temple Main Room"
+                },
+                "Throne": {
+                    "name": "Throne",
+                    "description": "An imposing throne under the statues.",
+                    "examine_text": "The throne is grand and majestic, and stands as a symbol of authority. It is ornately carved with intricate designs and is adorned with precious gems.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Temple Main Room"
+                }
+            },
+            "characters": {
+                "Ghostly Handmaiden": {
+                    "name": "Ghostly Handmaiden",
+                    "description": "A ghostly figure said to have served the monks in cleaning and bearing their meals.",
+                    "persona": "I am here since the day the temple was built, serving my masters even after death.",
+                    "location": "Temple Main Room",
+                    "goal": "To keep the temple tidy and undisturbed.",
+                    "inventory": {
+                        "Dustpan": {
+                            "name": "Dustpan",
+                            "description": "An old, metal dustpan worn down from years of use.",
+                            "examine_text": "The dustpan, though it has grown old and worn, has been maintained meticulously. Many years of use is evident by the faded color and the thinning edge, but it has not lost its purpose. Touching it gives an odd, cold sensation.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Broom": {
+                            "name": "Broom",
+                            "description": "A robust, long-handled broom with bristles made from straw, shows wear of centuries.",
+                            "examine_text": "Upon observing the broom, you see a well-crafted tool that has been used for centuries. The handle is sturdy, surely made from one of the ancient, tall trees just outside the temple. The bristle is thick and surprisingly still effective.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Tray": {
+                            "name": "Tray",
+                            "description": "A silver tray. Though slightly tarnished, it glows dimly.",
+                            "examine_text": "You see an ornate tray made of silver. The edges are skillfully embossed with intricate designs showcasing the holy symbols of the temple. Despite the tarnish, it still retains a dull luster hinting at its past glory.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": true,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Outside Temple"
+        },
+        {
+            "name": "Outside Temple",
+            "description": "The outside temple is surrounded by lush green trees that have aged beautifully and carry beautiful blossoming jasmine flowers with a pink and white outline. The candles melted around the temple shine brightly and bring a light of glory to the place.",
+            "background": "Outside the temple by the entrance is where the building of it started. It started with 400 steps of stairs coming up the mountain, and at the top of the mountain after the war, the temple was built. It has held many festivals, and the front door is made from a rare wood from a tree that doesn't exist anymore.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "inside": "Moving from the lush, aromatic environment surrounding the temple, you cross the journey of 400 stairs towards the main entrance, greeted by religious statues marking the passage to the sacred interior."
+            },
+            "connections": {
+                "inside": "Main Entrance"
+            },
+            "items": {
+                "Ancient Stone Steps": {
+                    "name": "Ancient Stone Steps",
+                    "description": "A long staircase leading up the mountain to the temple entrance.",
+                    "examine_text": "The moss-covered stones, worn crisp on the edges, has hints of imprinted scripts \u2013perhaps prayers or chants from a bygone era.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Outside Temple"
+                },
+                "Jasmine Bush": {
+                    "name": "Jasmine Bush",
+                    "description": "A lush green bush, abundant with pink and white blossoming flowers.",
+                    "examine_text": "The sweet fragrance of the blossoms wafts from the bush, calming your mind to reverence. Delicate petals frame hardy leaves, a riot of life thriving in this solemn place.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Outside Temple"
+                },
+                "Melting Candles": {
+                    "name": "Melting Candles",
+                    "description": "Several waxen candles illuminated sacredly around the temple.",
+                    "examine_text": "Soft, golden light flickers from slowly melting white candles. Every now and then, a droplet of wax drips down the candle's length, silently adding to the small mountain of hardened wax below.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Outside Temple"
+                },
+                "Exquisite Temple Door": {
+                    "name": "Exquisite Temple Door",
+                    "description": "The entrance crafted from a rare ancient wood no longer in existence.",
+                    "examine_text": "The temple door stands as a testament to the artistry of the forgotten civilization. Intricate carvings of mythical beasts and gods wind their way across the beautifully aged wood, suggesting a story that's as ancient as time itself.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Outside Temple"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Outside Temple"
+        }
+    ],
+    "actions": []
+}
