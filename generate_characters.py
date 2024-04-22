@@ -33,7 +33,7 @@ def extract_characters(directory):
     return characters
 
 # Set the directory containing the JSON files
-directory = ''  # Adjust the path to the directory of your JSON files
+directory = '/Users/manvikaul/Documents/Classwork/CIS-7000/project/shriyamanvi/WorldWeaver-Interactive-World-Generation/'  # Adjust the path to the directory of your JSON files
 output_filename = 'extracted_characters.json'  # The filename for the output JSON
 
 # Extract character data
@@ -48,7 +48,7 @@ output_filename = 'extracted_characters.json'  # The filename for the output JSO
 #few shot GPT-4
 def promptGPT(stories, directory):
     if 'HELICONE_API_KEY' not in os.environ:
-        os.environ['HELICONE_API_KEY'] = ''
+        os.environ['HELICONE_API_KEY'] = 'sk-helicone-cp-nivtfgy-pyhuewy-tzhkqva-vuhszwy'
 
 
     client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
@@ -66,9 +66,9 @@ def promptGPT(stories, directory):
  
     messages = [
         {'role': 'system', 'content': prompt},
-        {'role': 'user', 'content': "The example story 1 is : {story}".format(story=stories[1])},
+        {'role': 'user', 'content': "The example story 1 is : {story}".format(story=stories[0])},
         {"role": "assistant", "content": json.dumps(examples[0])},
-        {'role': 'user', 'content': "The example story 2 is : {story}".format(story=stories[2])},
+        {'role': 'user', 'content': "The example story 2 is : {story}".format(story=stories[1])},
         {"role": "assistant", "content": json.dumps(examples[1])}
     ]
     response = client.chat.completions.create(
@@ -92,7 +92,6 @@ def promptGPT(stories, directory):
     #         file.seek(0, 0)
     #         file.write(json.dumps(json.loads(gpt_response), indent=4) + '\n]')
 
-    print("returning gpt response")
 
     return json.loads(gpt_response)
 
@@ -127,14 +126,21 @@ def generate_npc(stories, directory):
         # Adjusting the index to avoid out of range errors
         story_index = num % len(stories)  # Loop back to the first story if there are fewer stories than NPCs
         example_index = num % len(examples)  # Similar wrap-around for examples
+        
+        with open(directory+"data/approved_characters.json", "r") as file:
+            generated = file.read()
 
-        prompt = ("You are a helpful character generator for building a text adventure game. Given the background "
-                  "story of the game from the user and the main character of the game, generate one single NPC character "
-                  "in JSON, formatted like the given examples. Make sure to leave the fields for location and inventory empty.")
+        prompt = ("You are a helpful character generator for building a text adventure game for the following story:{story}. Given the "
+                  "background story of the game from the user and the main character of the game, generate one single NPC character "
+                  "in JSON, formatted like the the following JSON format:{form}. Make sure to leave the fields for location and inventory empty. "
+                  "Do not generate any previously generated character, i.e. the the generated charecter should not match any character or "
+                  "share any value with any character from {gen}").format(story=stories[0],form=examples[0],gen = generated)
         messages = [
             {'role': 'system', 'content': prompt},
-            {'role': 'user', 'content': f"The background story is: {stories[story_index]}"},
-            {'role': 'assistant', 'content': json.dumps(examples[example_index])}
+            {'role': 'user', 'content': "The example story 1 is : {story}".format(story=stories[0])},
+            {"role": "assistant", "content": json.dumps(examples[0])},
+            {'role': 'user', 'content': "The example story 2 is : {story}".format(story=stories[1])},
+            {"role": "assistant", "content": json.dumps(examples[1])}
         ]
 
         response = client.chat.completions.create(
@@ -211,6 +217,4 @@ def generate_npc(stories, directory):
 #     return json.loads(npc_list)
 
 
-
-        
 
