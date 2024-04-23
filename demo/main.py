@@ -63,7 +63,7 @@ def main():
     generate_neighbor_locs_HITL([central_loc], num_locs-1, central_loc, background_story, neib_locs_shots, connections_shots)
 
     # TODO: loop through all locations to generate npcs
-    npcs = generate_npc(background_story, stories, character_format)
+    npcs = generate_npc(background_story, stories, character_format, main_character)
     print(npcs)
 
     

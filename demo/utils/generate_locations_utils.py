@@ -142,7 +142,7 @@ def create_new_location_shot(story, output):
     return [user, assistant]
 
 def generate_new_location(story, example, shots, main_character, winning_state):
-    client = OpenAI()
+    client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
     sys_prompt = f"""You are a helpful location generator for building a text adventure game.
 The player (main character) of this game is {main_character}, and their goal is: {winning_state}.
 Given the background story of the game from the user, what you do think the central location of the game should be?

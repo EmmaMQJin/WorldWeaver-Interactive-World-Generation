@@ -1,14 +1,16 @@
 [
     {
-        "name": "The Spooky Lake\n",
-        "description": "Encircled by ancient trees, the lake presents an aura of mystery. Its clear, almost ethereal waters remain perpetually still, mirroring the old tales spun around it. The northern shore, bustling with uncanny rumors, acts as the starting point for an elusive hunt for a legendary giant fish. Nearby, a weathered dock peers into the lonesome depths, while a secluded lagoon hides far from prying eyes. Visible through the lake's transparency is Drinking Water City, an underwater metropolis said to rest at the lake's navel. This realm, where natural and supernatural blur into one strange reality, awaits those daring enough to uncover it.\n",
+        "name": "Fairy Enclave\n",
+        "description": "The Fairy Enclave is a shimmering, mystical realm cocooned in the heart of the Dreamwood forest. Veiled beneath an enchanting canopy of luminous leaves that sparkle under starlit skies, this ethereal sanctuary is home to a myriad of fairies, each radiating an extraordinary spectrum of colors. Intricate, delicate houses, shaped from the flowers and fauna, are cradled in the grand trees, connected by swirling paths of stardust. The elusive fairy council resides in the enchanted royal blossom palace suspended in the tallest tree, only visible to those pure of heart. Gentle dapples of light straining through the foliage, the soft tinkling of laughter and songs floating on the breeze, and the continuous shimmer of magic make this realm an awe-inspiring cradle of mystery, beauty, and ancient power.\n",
         "connections": {
-            "west": "The Gloom Forest",
-            "east": "The Whispering Caves"
+            "out": "Dreamwood Edge",
+            "west": "Shadowgrove",
+            "east": "Star Pond"
         },
         "travel_descriptions": {
-            "west": "Leaving the mysterious allure of the Spooky Lake, you venture west towards the Gloom Forest. The steady crinkle of leaves under your feet replaces the clinging stillness of the lake as you delve into the shadowy heart of the ancient sanctuary.",
-            "east": "From the Spooky Lake, surrounded by its ancient trees and restless tales, you head east towards the low hills where the Whispering Caves lay hidden. With each step, the serene waters recede behind you, giving way to the inviting yet ominous murmur of the caves."
+            "out": "Leaving the lively heart of the Fairy Enclave, you meander along the vibrant paths of stardust, moving towards the outskirts. As you travel further from the core of the forest, the radiant light of the fairies ebbs into a softer, twinkling glow, signifying your arrival at Dreamwood Edge.",
+            "west": "From the Fairy Enclave, you trace the ethereal stardust paths to the edge of the magical forest. Shimmering leaves and fairies gradually transition into a serene, bewitching realm of nocturnal flora bloom in moonlight. As the bright enchantment softens, you find yourself standing in the mystical region known as Shadowgrove.",
+            "east": "Walking along the intricate patterns of stardust, you leave the vibrant heart of the Fairy Enclave. You journey towards Star Pond, the mythical source of fairy magic. As the sparkling realm of fairies recedes behind you, the twinkling reflection of stars on the serenely clear pond water illuminates your path. The silent whispers of magic grow ever stronger as you approach the mesmerizing pond."
         },
         "blocks": {},
         "items": {},
@@ -18,13 +20,13 @@
         "properties": {}
     },
     {
-        "name": "The Gloom Forest",
-        "description": "Just beyond the lake's edge, the Gloom Forest stretches to the horizon. Its trees, older than many civilizations, rise like ancient sentinels, their leaves whispering forgotten tales in the haunt of the wind. The ground is blanketed by moss and shadowed by the thick foliage, capturing the mystique of the forest. Many paths weave through the woods, leading to places unknown, their secrets guarded by the forest dwellers.",
+        "name": "Dreamwood Edge",
+        "description": "Dreamwood Edge is a realm on the outskirts of the Fairy Enclave.  It is filled with tall trees in mystical colors. Twinkling Firefly flock the sky, creating an enchanting glow which illuminates the area. The air here is filled with a mystic hum that touches everything around.",
         "connections": {
-            "east": "The Spooky Lake\n"
+            "in": "Fairy Enclave\n"
         },
         "travel_descriptions": {
-            "east": "Leaving behind the haunting whispers of the Gloom Forest, you tread eastward back towards the otherworldly aura of the Spooky Lake. Your steps echo softly as the trees recede, giving way to the spectral stillness of the ancient waters."
+            "in": "From the Dreamwood Edge, you venture deeper into the forest, drawn by the increasingly vibrant glow punctuating the foliage. As the magical hum intensifies, mirroring the crescendo of fairy laughter and steadily growing radiance, you re-enter the pulsing heart of the Fairy Enclave."
         },
         "blocks": {},
         "items": {},
@@ -34,13 +36,29 @@
         "properties": {}
     },
     {
-        "name": "The Whispering Caves",
-        "description": "Nestled within a range of low hills near the lake, the Whispering Caves echo with the murmurs of a bygone era. Stone formations hang from the ceiling like delicate icicles and rise from the ground like ancient structures. A soft wind persistently whistles through the labyrinthine passages, bringing with it the faint echo of whispers, as though the caves themselves have stories to tell. Darkness looms heavily inside, illuminated faintly by patches of phosphorescent moss and lichen.",
+        "name": "Shadowgrove",
+        "description": "Shadowgrove is a realm where the darker, nocturnal fairies reside. It is adorned with luminescent mushrooms and ferns that only bloom at night, and the moonlight is the only illumination. The aura here is serene yet bewitching.",
         "connections": {
-            "west": "The Spooky Lake\n"
+            "east": "Fairy Enclave\n"
         },
         "travel_descriptions": {
-            "west": "Leaving the echoing whispers and the eerie beauty of the Whispering Caves behind, you travel west. In your journey, you draw near the Spooky Lake again, its mirror-like waters reflecting the towering treetops and your own image as well."
+            "east": "Departing the serene aura of Shadowgrove, you wander into the tranquil moonlit realm, slowly blending into a glimmering landscape of stardust trails and radiant lights. Gradually, the luminous mushrooms and silent ferns give way to vivacious fairies and sparkling leaves, signaling your arrival back in the Fairy Enclave."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Star Pond",
+        "description": "Star Pond is a beautiful pond located near the Fairy Enclave. It gets its name from its clear water, which mirrors the chandelier of stars at night. This pond is believed to be the source of fairy magic.",
+        "connections": {
+            "west": "Fairy Enclave\n"
+        },
+        "travel_descriptions": {
+            "west": "Leaving the magical tranquility of the Star Pond behind, you travel towards the Fairy Enclave. As the serene glow of the celestial reflections recedes, the starlit path towards the ethereal realm of the fairies emerges. The delightful chiming of fairy music and the increasing intensity of radiating colors signals your arrival into the magical sanctuary of fairies. The whimsical, ethereal beauty of the Enclave unveils itself after your trip through the magical Dreamwood."
         },
         "blocks": {},
         "items": {},

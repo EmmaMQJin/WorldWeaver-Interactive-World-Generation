@@ -1,0 +1,16 @@
+{
+    "name": "Star Pond",
+    "description": "Star Pond is a beautiful pond located near the Fairy Enclave. It gets its name from its clear water, which mirrors the chandelier of stars at night. This pond is believed to be the source of fairy magic.",
+    "connections": {
+        "west": "Fairy Enclave\n"
+    },
+    "travel_descriptions": {
+        "west": "Leaving the magical tranquility of the Star Pond behind, you travel towards the Fairy Enclave. As the serene glow of the celestial reflections recedes, the starlit path towards the ethereal realm of the fairies emerges. The delightful chiming of fairy music and the increasing intensity of radiating colors signals your arrival into the magical sanctuary of fairies. The whimsical, ethereal beauty of the Enclave unveils itself after your trip through the magical Dreamwood."
+    },
+    "blocks": {},
+    "items": {},
+    "characters": {},
+    "has_been_visited": false,
+    "commands": [],
+    "properties": {}
+}

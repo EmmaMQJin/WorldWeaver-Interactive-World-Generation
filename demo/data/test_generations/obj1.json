@@ -1,11 +1,11 @@
 {
-    "name": "The Gloom Forest",
-    "description": "Just beyond the lake's edge, the Gloom Forest stretches to the horizon. Its trees, older than many civilizations, rise like ancient sentinels, their leaves whispering forgotten tales in the haunt of the wind. The ground is blanketed by moss and shadowed by the thick foliage, capturing the mystique of the forest. Many paths weave through the woods, leading to places unknown, their secrets guarded by the forest dwellers.",
+    "name": "Dreamwood Edge",
+    "description": "Dreamwood Edge is a realm on the outskirts of the Fairy Enclave.  It is filled with tall trees in mystical colors. Twinkling Firefly flock the sky, creating an enchanting glow which illuminates the area. The air here is filled with a mystic hum that touches everything around.",
     "connections": {
-        "east": "The Spooky Lake\n"
+        "in": "Fairy Enclave\n"
     },
     "travel_descriptions": {
-        "east": "Leaving behind the haunting whispers of the Gloom Forest, you tread eastward back towards the otherworldly aura of the Spooky Lake. Your steps echo softly as the trees recede, giving way to the spectral stillness of the ancient waters."
+        "in": "From the Dreamwood Edge, you venture deeper into the forest, drawn by the increasingly vibrant glow punctuating the foliage. As the magical hum intensifies, mirroring the crescendo of fairy laughter and steadily growing radiance, you re-enter the pulsing heart of the Fairy Enclave."
     },
     "blocks": {},
     "items": {},

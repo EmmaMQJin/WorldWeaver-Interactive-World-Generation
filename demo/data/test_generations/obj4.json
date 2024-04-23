@@ -1,0 +1,16 @@
+{
+    "name": "Dewdrop Grotto",
+    "description": "The grotto hidden behind translucent dewdrop curtains that twinkle in the morning sunlight. The interior sparkles with luminescent moss and precious gemstones, creating a serene and magical ambience, ideal for meditating pixies.",
+    "connections": {
+        "in": "Flower Village\n"
+    },
+    "travel_descriptions": {
+        "in": "Emerging from the tranquility of the Dewdrop Grotto, you make your way back towards the bustling Flower Village. As you traverse through the dewdrop curtain, the twinkling beauty of the grotto gives way to the vibrant, fragrant landscape of the Flower Village, alive with the cheerful hum of its pixie residents."
+    },
+    "blocks": {},
+    "items": {},
+    "characters": {},
+    "has_been_visited": false,
+    "commands": [],
+    "properties": {}
+}

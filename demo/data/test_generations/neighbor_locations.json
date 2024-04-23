@@ -1,7 +1,7 @@
 [
     {
-        "name": "The Gloom Forest",
-        "description": "Just beyond the lake's edge, the Gloom Forest stretches to the horizon. Its trees, older than many civilizations, rise like ancient sentinels, their leaves whispering forgotten tales in the haunt of the wind. The ground is blanketed by moss and shadowed by the thick foliage, capturing the mystique of the forest. Many paths weave through the woods, leading to places unknown, their secrets guarded by the forest dwellers.",
+        "name": "Dreamwood Edge",
+        "description": "Dreamwood Edge is a realm on the outskirts of the Fairy Enclave.  It is filled with tall trees in mystical colors. Twinkling Firefly flock the sky, creating an enchanting glow which illuminates the area. The air here is filled with a mystic hum that touches everything around.",
         "connections": {},
         "travel_descriptions": {},
         "blocks": {},
@@ -12,8 +12,20 @@
         "properties": {}
     },
     {
-        "name": "The Whispering Caves",
-        "description": "Nestled within a range of low hills near the lake, the Whispering Caves echo with the murmurs of a bygone era. Stone formations hang from the ceiling like delicate icicles and rise from the ground like ancient structures. A soft wind persistently whistles through the labyrinthine passages, bringing with it the faint echo of whispers, as though the caves themselves have stories to tell. Darkness looms heavily inside, illuminated faintly by patches of phosphorescent moss and lichen.",
+        "name": "Shadowgrove",
+        "description": "Shadowgrove is a realm where the darker, nocturnal fairies reside. It is adorned with luminescent mushrooms and ferns that only bloom at night, and the moonlight is the only illumination. The aura here is serene yet bewitching.",
+        "connections": {},
+        "travel_descriptions": {},
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Star Pond",
+        "description": "Star Pond is a beautiful pond located near the Fairy Enclave. It gets its name from its clear water, which mirrors the chandelier of stars at night. This pond is believed to be the source of fairy magic.",
         "connections": {},
         "travel_descriptions": {},
         "blocks": {},

@@ -52,7 +52,7 @@ def generate_main_character(background_story, example_stories, character_format,
     with open(directory + "data/few-shot-examples/example-character.json", 'r') as file:
         examples = json.load(file)
 
-    prompt = "You are a helpful main character generator for building a text adventure game for the following story:{story}. Generate one main character from this story in a JSON format. Character's inventory should be empty so remember to leave the values to the location, goal, and inventory keys empty. The JSON should be in the following JSON format:{form}.".format(story=background_story,form=character_format)
+    prompt = "You are a helpful main character generator for building a text adventure game based on a given story. Generate one main character from this story in a JSON format. Character's inventory should be empty so remember to leave the values to the location, goal, and inventory keys empty. The JSON should be in the following JSON format:{form}.".format(form=character_format)
     messages = [
         {'role': 'system', 'content': prompt},
         {'role': 'user', 'content': "The example story 1 is : {story}".format(story=example_stories[0])},
@@ -60,6 +60,9 @@ def generate_main_character(background_story, example_stories, character_format,
         {'role': 'user', 'content': "The example story 2 is : {story}".format(story=example_stories[1])},
         {"role": "assistant", "content": json.dumps(examples[1])}
     ]
+
+    messages += [{"role": "user", "content": background_story}]
+
     response = client.chat.completions.create(
         model='gpt-4',
         messages=messages,
@@ -72,7 +75,7 @@ def generate_main_character(background_story, example_stories, character_format,
     gpt_response = response.choices[0].message.content
     return json.loads(gpt_response)
 
-def generate_npc(background_story, stories, character_format, directory=""):
+def generate_npc(background_story, stories, character_format, main_character, directory=""):
     print("here in npc")
     default_num_npc = 4
     try:
@@ -86,7 +89,7 @@ def generate_npc(background_story, stories, character_format, directory=""):
     
     print("num npc: ", num_npc)
 
-    client = OpenAI()
+    client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
 
     try:
         with open(directory + "data/few-shot-examples/example-character.json", 'r') as file:
@@ -99,31 +102,31 @@ def generate_npc(background_story, stories, character_format, directory=""):
     for num in range(num_npc):
         print("Generating NPC:", num + 1)
 
-        with open(directory+"data/approved_characters.json", "r") as file:
-            generated = file.read()
+        # with open(directory+"data/approved_characters.json", "r") as file:
+        #     generated = file.read()
+        # generated = main_character
 
-        with open(directory+"data/approved_NPC_characters.json", "r") as file:
-            generated_npc = file.read()
+        # with open(directory+"data/approved_NPC_characters.json", "r") as file:
+        #     generated_npc = file.read()
+        #generated_npc = main_character
 
-        prompt = ("You are a helpful character generator for building a text adventure game for the following story:{story}. Given the "
+        prompt = ("You are a helpful character generator for building a text adventure game based on a given story description. Given the "
                   "background story of the game from the user and the main character:{character} of the game, generate one single NPC character "
-                  "in JSON, formatted like the the following JSON format:{form}. Make sure to leave the fields for location and inventory empty. "
+                  "in JSON. Make sure to leave the fields for location and inventory empty. "
                   "Do not generate any previously generated character, i.e. the the generated charecter should not match any character or "
                   "share any value with any character from {character} OR {NPC} "
-                  "The generated NPC should have the goal of either helping the main character achieve their goal or to prevent them from achieving their  goal."
-                  "The goal should be simple and easy to understand and very specific."
-                  "Do not generate any previously generated character that is in your current context or in any of the files passed to you."
-                  "If you dont see any extra characters in the story for NPC roles, create any character from your imagination that fits the story."
-                  "Generate a character you have never generated before."
-                  "No value of any of the keys of the character should match any of the previously generated characters' values."
-                  "None of the characters should match any character or share any value with any character from {character} OR {NPC}").format(story=background_story,form=character_format,NPC = generated_npc, character = generated)
+                  "The generated NPC should have a goal that either helps the main character achieve their goal or to prevent them from achieving their  goal."
+                  "The goal for the generated NPC should be simple and very specific."
+                  "If you dont see any extra characters in the story for NPC roles, create any character from your imagination that fits the story.").format(form=character_format,NPC = npc_dict, character = main_character)
         messages = [
             {'role': 'system', 'content': prompt},
-            {'role': 'user', 'content': "The example story 1 is : {story}".format(story=stories[0])},
+            {'role': 'user', 'content': "{story}".format(story=stories[0])},
             {"role": "assistant", "content": json.dumps(examples[0])},
-            {'role': 'user', 'content': "The example story 2 is : {story}".format(story=stories[1])},
+            {'role': 'user', 'content': "{story}".format(story=stories[1])},
             {"role": "assistant", "content": json.dumps(examples[1])}
         ]
+
+        messages += [{"role": "user", "content": background_story}]
 
         response = client.chat.completions.create(
             model='gpt-4',
