@@ -46,45 +46,57 @@ output_filename = 'data/extracted_items.json'  # The filename for the output JSO
 
 # ####################
 # #few shot GPT-4
-def promptGPT(directory):
+def generate_object(directory):
     if 'HELICONE_API_KEY' not in os.environ:
         os.environ['HELICONE_API_KEY'] = 'sk-helicone-cp-nuxlzea-i3cuq6q-xpvlrga-pgbu4si'
 
 
     client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
 
-    objects = {}
+
+     # Load location data
+    with open(f"../data/test_generations/all_the_locations.json", 'r') as file:
+        locations = json.load(file)
+
+    # Load extracted items for few-shot learning
+    with open(f"../data/extracted_items.json", 'r') as file:
+        extracted_items = json.load(file)
     
-    with open("data/extracted_items.json", 'r') as file:
-        objects = json.load(file)
+     # Sample of extracted items for the few-shot example
+    sample_items = json.dumps(extracted_items[:5], indent=4)
 
-     # Prompt user for the number of new objects to create
-    num_items = input("Enter the number of new items you want to generate: ")
-        
-    # objects selected for few-shot learning
-    sample_items = json.dumps(objects[:5], indent=4) 
+    for location in locations:
+        print(f"Generating items for: {location['name']}")
+
+        # Prompt user for the number of new objects to create
+        num_items = input(f"Enter the number of new items you want to generate for {location['name'].strip()}:")
+
+        # Create a detailed prompt with location context and few-shot examples
+        messages = [
+            {'role': 'system', 'content': f'Generate {num_items} new items for the mystical setting of {location["name"].strip()}.Include all necessary attributes such as name, description, examine text, and properties. Follow the style and depth of the given examples.'},
+            {'role': 'user', 'content': 'Here are some examples of items:'},
+            {'role': 'assistant', 'content': sample_items},
+            {'role': 'user', 'content': f'Please create {num_items} new items based on these examples for the location: {location["description"].strip()}'}
+        ]
  
-    # Create a detailed prompt with a few-shot example and define roles
-    messages = [
-        {'role': 'system', 'content': 'Generate a new item for a mystical game world. Include all necessary attributes such as name, description, examine text, and properties. Follow the style and depth of the given examples.'},
-        {'role': 'user', 'content': 'Here are some examples of items:'},
-        {'role': 'assistant', 'content': sample_items},
-        {'role': 'user', 'content': f'Can you create {num_items} new items based on these examples?'}
-    ]
+        response = client.chat.completions.create(
+                model='gpt-4',
+                messages=messages,
+                temperature=1,
+                max_tokens=2048,
+                top_p=1.0,
+                frequency_penalty=0,
+                presence_penalty=0
+            )
+        gpt_response = response.choices[0].message.content
+        new_items = json.loads(gpt_response)
+        # Append generated items to the location's 'items' field
+        location['items'] = new_items
 
-    response = client.chat.completions.create(
-        model='gpt-4',
-        messages=messages,
-        temperature=1,
-        max_tokens=2048,
-        top_p=1.0,
-        frequency_penalty=0,
-        presence_penalty=0
-    )
-    gpt_response = response.choices[0].message.content
-    filename = "analysis_items.json"
+         # Save the updated location data back to the same file
+    with open(f"../data/test_generations/all_the_locations.json", 'w') as file:
+        json.dump(locations, file, indent=4)
 
-    with open(filename, 'w') as file:
-        json.dump(json.loads(gpt_response), file, indent=4)
 
-# promptGPT(directory)
+# Example directory to pass
+# generate_object(directory)
