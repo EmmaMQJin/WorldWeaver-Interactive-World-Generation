@@ -1,0 +1,16 @@
+{
+    "name": "The Gloom Forest",
+    "description": "Just beyond the lake's edge, the Gloom Forest stretches to the horizon. Its trees, older than many civilizations, rise like ancient sentinels, their leaves whispering forgotten tales in the haunt of the wind. The ground is blanketed by moss and shadowed by the thick foliage, capturing the mystique of the forest. Many paths weave through the woods, leading to places unknown, their secrets guarded by the forest dwellers.",
+    "connections": {
+        "east": "The Spooky Lake\n"
+    },
+    "travel_descriptions": {
+        "east": "Leaving behind the haunting whispers of the Gloom Forest, you tread eastward back towards the otherworldly aura of the Spooky Lake. Your steps echo softly as the trees recede, giving way to the spectral stillness of the ancient waters."
+    },
+    "blocks": {},
+    "items": {},
+    "characters": {},
+    "has_been_visited": false,
+    "commands": [],
+    "properties": {}
+}

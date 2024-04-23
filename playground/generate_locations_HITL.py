@@ -41,15 +41,15 @@ def generate_central_loc_HITL(desc, example, central_loc_shots):
     loc_center = generate_new_location(all_descs, example, central_loc_shots)
     
     # get feedback from user about central location
-    print("OK, here is the generated central location:")
-    new_name = open_vim_with_string(loc_center["name"])
-    print("Edited name: ", new_name)
-    new_desc = open_vim_with_string(loc_center["description"])
-    print("Edited description: ", new_desc)
-    loc_center["name"] = new_name
-    loc_center["description"] = new_desc
+    # input("OK, here is the generated central location:")
+    # new_name = open_vim_with_string(loc_center["name"])
+    # print("Edited name: ", new_name)
+    # new_desc = open_vim_with_string(loc_center["description"])
+    # print("Edited description: ", new_desc)
+    # loc_center["name"] = new_name
+    # loc_center["description"] = new_desc
 
-    dict_to_json_file(loc_center, "test_generations/init_location.json")
+    dict_to_json_file(loc_center, "data/test_generations/init_location.json")
 
 # TODO:
 def generate_neighbor_locs_HITL(all_locs, num_neib_locs, orig_loc_dict, story, neib_shots, connections_shots):
@@ -134,7 +134,7 @@ def main():
     if choice.lower() == "location":
         # generate central location
         generate_central_loc_HITL(story_cyberpunk, neib_locs_insidetemple_3_list[0], central_loc_shots)
-        central_loc = read_json_examples("test_generations/init_location.json")
+        central_loc = read_json_examples("data/test_generations/init_location.json")
         # generate neighboring locations
         num_locs = int(input("How many locations would you like to have in the game?\n"))
         generate_neighbor_locs_HITL([central_loc], num_locs-1, central_loc, story_cyberpunk, neib_locs_shots, connections_shots)

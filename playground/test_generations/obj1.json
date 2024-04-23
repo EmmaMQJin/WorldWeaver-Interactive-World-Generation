@@ -1,0 +1,16 @@
+{
+    "name": "The Cybernetic Slums",
+    "description": "This is a crumbled side of the Neon City, where people salvage technology and create makeshift cybernetics for their survival. Amidst ramshackle buildings, meandering wires form a complex network overhead, connecting disparate pieces of tech, some of which is quite advanced. It is a neighborhood filled with the hum of generators, the sputtering of old neon lights, and the determined spirit of those who refuse to be left behind.",
+    "connections": {
+        "east": "Neon City\n"
+    },
+    "travel_descriptions": {
+        "east": "From the heart of the Cybernetic Slums, you navigate the labyrinth of ramshackle buildings, back into Neon City. As you follow the rising sun, the meandering, wire-laced skyline gives way to towering skyscrapers and digital billboards, and the hum of barely-there generators is replaced by the constant melody of city traffic."
+    },
+    "blocks": {},
+    "items": {},
+    "characters": {},
+    "has_been_visited": false,
+    "commands": [],
+    "properties": {}
+}

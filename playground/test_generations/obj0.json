@@ -1,0 +1,18 @@
+{
+    "name": "Neon City\n",
+    "description": "Neon City is an urban labyrinth with concrete walls scribbled with graffiti and towering skyscrapers which disappear into the smoky sky. Billboards flash with digital messages in various languages. The sound of incoming and outgoing traffic fills the air at all times, occasionally being overpowered by the boom of hovercrafts. The air is thick, almost tangible, filled with the scent of rain-soaked concrete, engine grease, cheerless cafes, and a hundred different types of citizens. It is home to both high-tech establishments and decrepit slums, a stark reminder of the disparity between those who benefit from the advanced technology and those who are left behind.\n",
+    "connections": {
+        "west": "The Cybernetic Slums",
+        "up": "The Sky-high Tower"
+    },
+    "travel_descriptions": {
+        "west": "Leaving the heart of Neon City, you head towards the setting sun until the sleek skyscrapers give way to the cluttered skyline of the Cybernetic Slums. As you navigate through the relentless traffic, you can't help but notice how quickly the hi-tech intimidations replaced by a spirited, albeit disordered, monument of survival.",
+        "up": "From the heart of Neon City, you take an elevator that shoots upwards at speeds that make your stomach flip. As the doors ding open, you are greeted by the sterile, crisp environment of the Sky-high Tower. There is an immediate change from the hustle outside, into a quiet, efficient workspace."
+    },
+    "blocks": {},
+    "items": {},
+    "characters": {},
+    "has_been_visited": false,
+    "commands": [],
+    "properties": {}
+}

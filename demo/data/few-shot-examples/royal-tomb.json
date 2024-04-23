@@ -1,0 +1,16 @@
+{
+    "name": "Royal Tomb",
+    "description": "This is a large room in the center of the Temple with really high ceilings and there are tombs for every empress and emperor of which are decorated with jewels and treasures and precious stones.",
+    "connections": {
+    },
+    "travel_descriptions": {
+    },
+    "blocks": {
+    },
+    "items": {},
+    "characters": {
+    },
+    "has_been_visited": false,
+    "commands": [],
+    "properties": {}
+}

@@ -1,6 +1,9 @@
 import json
 from random import randint
 from openai import OpenAI
+import tempfile
+import subprocess
+import os
 
 direction_mappings = {"up": "down",
                       "down": "up",
@@ -11,6 +14,86 @@ direction_mappings = {"up": "down",
                       "north": "south",
                       "south": "north"}
 
+# TODO: add feature such that user can specify what categories of locations to include
+# e.g. shops, bars, etc.
+# have an existence flag for each category? If flag is still false, augment prompt with that category
+
+def open_vim_with_string(text):
+    with tempfile.NamedTemporaryFile(mode='w+', suffix='.txt', delete=False) as temp_file:
+        temp_file.write(text)
+    subprocess.run(['vim', temp_file.name])
+
+    with open(temp_file.name, 'r') as edited_file:
+        edited_text = edited_file.read()
+    os.unlink(temp_file.name)
+
+    return edited_text
+
+def open_vim_with_json(json_data):
+    with tempfile.NamedTemporaryFile(mode='w+', suffix='.json', delete=False) as temp_file:
+        json.dump(json_data, temp_file, indent=4)
+        temp_file.flush()
+    subprocess.run(['vim', temp_file.name])
+    with open(temp_file.name, 'r') as edited_file:
+        try:
+            edited_json = json.load(edited_file)
+        except json.JSONDecodeError:
+            print("Edited data is not valid JSON.")
+            return None
+    os.unlink(temp_file.name)
+    return edited_json
+
+def generate_central_loc_HITL(desc, example, central_loc_shots, main_character, winning_state):
+    # generate central location with user input
+    central_loc_desc = input("Do you have any thoughts on what the central location is like?\n")
+    all_descs = desc
+    if central_loc_desc:
+        all_descs += "\nAbout the central location of the game: " + central_loc_desc
+    loc_center = generate_new_location(all_descs, example, central_loc_shots, main_character, winning_state)
+    
+    # get feedback from user about central location
+    print("OK, here is the generated central location:")
+    new_name = open_vim_with_string(loc_center["name"])
+    print("Edited name: ", new_name)
+    new_desc = open_vim_with_string(loc_center["description"])
+    print("Edited description: ", new_desc)
+    loc_center["name"] = new_name
+    loc_center["description"] = new_desc
+
+    dict_to_json_file(loc_center, "data/test_generations/init_location.json")
+
+def generate_neighbor_locs_HITL(all_locs, num_neib_locs, orig_loc_dict, story, neib_shots, connections_shots):
+    # A
+    # B    C     D
+    # EF   GH
+    prev_layer = all_locs[:]
+    while num_neib_locs > 0:
+        temp_layer = []
+        for j, loc in enumerate(prev_layer):
+            if num_neib_locs == 0:
+                break
+            if num_neib_locs <= 4:
+                n = num_neib_locs
+            else:
+                n = randint(2, 4)
+            print("Number of neighboring locations: ", n)
+            neib_locs = generate_neighboring_locations(
+                all_locs, n, loc, story, neib_shots)
+            # Generate connections
+            directions = ["east", "west", "north", "south", "up", "down", "in", "out"]
+            for k, _ in enumerate(neib_locs):
+                prev_layer[j], neib_locs[k], dir_take_out = generate_connections(
+                    prev_layer[j], neib_locs[k], directions, connections_shots)
+                print("direction linked: ", dir_take_out)
+                directions.remove(dir_take_out)
+                print("Took out ", dir_take_out, " | list now: ", directions)
+            all_locs += neib_locs[:]
+            temp_layer += neib_locs[:]
+            num_neib_locs -= n
+        print("all locs 1: ", all_locs)
+        prev_layer = temp_layer[:]
+    print("all locs 2: ", all_locs)
+    list_to_json_file(all_locs, "data/test_generations/all_the_locations.json")
 
 def read_file_to_str(filepath):
     to_return = ""
@@ -36,7 +119,7 @@ def list_to_json_file(data, filepath):
     print("data before writing: ", data)
     print(type(data))
     for i, obj in enumerate(data):
-        temp_path = f"test_generations/obj{i}.json"
+        temp_path = f"data/test_generations/obj{i}.json"
         with open(temp_path, 'w') as tempfile:
             json.dump(obj, tempfile, indent=4)
         print(obj)
@@ -58,9 +141,10 @@ def create_new_location_shot(story, output):
 
     return [user, assistant]
 
-def generate_new_location(story, example, shots):
+def generate_new_location(story, example, shots, main_character, winning_state):
     client = OpenAI()
-    sys_prompt = """You are a helpful location generator for building a text adventure game.
+    sys_prompt = f"""You are a helpful location generator for building a text adventure game.
+The player (main character) of this game is {main_character}, and their goal is: {winning_state}.
 Given the background story of the game from the user, what you do think the central location of the game should be?
 Give the name and description for the location in a JSON, formatted like the examples below:
 """
@@ -114,7 +198,7 @@ Location to generate neighboring locations for:
     print(model_output)
     model_output_list = json.loads(model_output)
     dict_to_json_file(model_output_list,
-                      "test_generations/neighbor_locations.json")
+                      "data/test_generations/neighbor_locations.json")
     return model_output_list
 
 
@@ -247,7 +331,7 @@ def main():
         all_locs += neib_neib_locs
 
     # all_locs.append(loc_center)
-    list_to_json_file(all_locs, "test_generations/locations.json")
+    list_to_json_file(all_locs, "data/test_generations/locations.json")
 
 
 if __name__ == "__main__":

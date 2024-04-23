@@ -1,0 +1,18 @@
+{
+    "name": "The Spooky Lake\n",
+    "description": "Encircled by ancient trees, the lake presents an aura of mystery. Its clear, almost ethereal waters remain perpetually still, mirroring the old tales spun around it. The northern shore, bustling with uncanny rumors, acts as the starting point for an elusive hunt for a legendary giant fish. Nearby, a weathered dock peers into the lonesome depths, while a secluded lagoon hides far from prying eyes. Visible through the lake's transparency is Drinking Water City, an underwater metropolis said to rest at the lake's navel. This realm, where natural and supernatural blur into one strange reality, awaits those daring enough to uncover it.\n",
+    "connections": {
+        "west": "The Gloom Forest",
+        "east": "The Whispering Caves"
+    },
+    "travel_descriptions": {
+        "west": "Leaving the mysterious allure of the Spooky Lake, you venture west towards the Gloom Forest. The steady crinkle of leaves under your feet replaces the clinging stillness of the lake as you delve into the shadowy heart of the ancient sanctuary.",
+        "east": "From the Spooky Lake, surrounded by its ancient trees and restless tales, you head east towards the low hills where the Whispering Caves lay hidden. With each step, the serene waters recede behind you, giving way to the inviting yet ominous murmur of the caves."
+    },
+    "blocks": {},
+    "items": {},
+    "characters": {},
+    "has_been_visited": false,
+    "commands": [],
+    "properties": {}
+}

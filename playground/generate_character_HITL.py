@@ -63,7 +63,7 @@ def human_in_loop_interaction(story, directory):
         if user_input == "yes":
             approved_characters.append(edited_character)
             # Save immediately if approved
-            with open(directory+"data/approved_characters.json", "a" if os.path.exists(directory+"data/approved_characters.json") else "w") as file:
+            with open(directory+"data/approved_characters.json", "w" if os.path.exists(directory+"data/approved_characters.json") else "w") as file:
                 json.dump(approved_characters, file, indent=4)
                 file.write('\n')  # Ensure newline for JSON arrays on subsequent entries
             print("Character approved and added.")

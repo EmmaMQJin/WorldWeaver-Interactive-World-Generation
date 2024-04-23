@@ -1,0 +1,16 @@
+{
+    "name": "The Sky-high Tower",
+    "description": "The tower is an imposing skyscraper that scrapes the smoky sky, the pinnacle of corporate power. Its gleaming glass and steel facade reflect the flashing digital messages of nearby billboards, while inside, it is a cold, mechanized environment filled with an efficient workforce and guarded secrets. With several underground layers dedicated to research and security, only a select few even know what lies beneath the offices that crowd its upper floors.",
+    "connections": {
+        "down": "Neon City\n"
+    },
+    "travel_descriptions": {
+        "down": "Leaving the echelons of power, you take the elevator down from the Sky-high Tower. As the doors open, you are greeted enthusiastically by the uproar of Neon City. Your senses are quickly overwhelmed by the sight, sound, and smell of a living, breathing metropolis."
+    },
+    "blocks": {},
+    "items": {},
+    "characters": {},
+    "has_been_visited": false,
+    "commands": [],
+    "properties": {}
+}

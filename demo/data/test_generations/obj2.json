@@ -1,0 +1,16 @@
+{
+    "name": "The Whispering Caves",
+    "description": "Nestled within a range of low hills near the lake, the Whispering Caves echo with the murmurs of a bygone era. Stone formations hang from the ceiling like delicate icicles and rise from the ground like ancient structures. A soft wind persistently whistles through the labyrinthine passages, bringing with it the faint echo of whispers, as though the caves themselves have stories to tell. Darkness looms heavily inside, illuminated faintly by patches of phosphorescent moss and lichen.",
+    "connections": {
+        "west": "The Spooky Lake\n"
+    },
+    "travel_descriptions": {
+        "west": "Leaving the echoing whispers and the eerie beauty of the Whispering Caves behind, you travel west. In your journey, you draw near the Spooky Lake again, its mirror-like waters reflecting the towering treetops and your own image as well."
+    },
+    "blocks": {},
+    "items": {},
+    "characters": {},
+    "has_been_visited": false,
+    "commands": [],
+    "properties": {}
+}

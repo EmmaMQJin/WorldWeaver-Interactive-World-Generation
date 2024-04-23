@@ -1,0 +1,52 @@
+[
+    {
+        "name": "The Spooky Lake\n",
+        "description": "Encircled by ancient trees, the lake presents an aura of mystery. Its clear, almost ethereal waters remain perpetually still, mirroring the old tales spun around it. The northern shore, bustling with uncanny rumors, acts as the starting point for an elusive hunt for a legendary giant fish. Nearby, a weathered dock peers into the lonesome depths, while a secluded lagoon hides far from prying eyes. Visible through the lake's transparency is Drinking Water City, an underwater metropolis said to rest at the lake's navel. This realm, where natural and supernatural blur into one strange reality, awaits those daring enough to uncover it.\n",
+        "connections": {
+            "west": "The Gloom Forest",
+            "east": "The Whispering Caves"
+        },
+        "travel_descriptions": {
+            "west": "Leaving the mysterious allure of the Spooky Lake, you venture west towards the Gloom Forest. The steady crinkle of leaves under your feet replaces the clinging stillness of the lake as you delve into the shadowy heart of the ancient sanctuary.",
+            "east": "From the Spooky Lake, surrounded by its ancient trees and restless tales, you head east towards the low hills where the Whispering Caves lay hidden. With each step, the serene waters recede behind you, giving way to the inviting yet ominous murmur of the caves."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "The Gloom Forest",
+        "description": "Just beyond the lake's edge, the Gloom Forest stretches to the horizon. Its trees, older than many civilizations, rise like ancient sentinels, their leaves whispering forgotten tales in the haunt of the wind. The ground is blanketed by moss and shadowed by the thick foliage, capturing the mystique of the forest. Many paths weave through the woods, leading to places unknown, their secrets guarded by the forest dwellers.",
+        "connections": {
+            "east": "The Spooky Lake\n"
+        },
+        "travel_descriptions": {
+            "east": "Leaving behind the haunting whispers of the Gloom Forest, you tread eastward back towards the otherworldly aura of the Spooky Lake. Your steps echo softly as the trees recede, giving way to the spectral stillness of the ancient waters."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "The Whispering Caves",
+        "description": "Nestled within a range of low hills near the lake, the Whispering Caves echo with the murmurs of a bygone era. Stone formations hang from the ceiling like delicate icicles and rise from the ground like ancient structures. A soft wind persistently whistles through the labyrinthine passages, bringing with it the faint echo of whispers, as though the caves themselves have stories to tell. Darkness looms heavily inside, illuminated faintly by patches of phosphorescent moss and lichen.",
+        "connections": {
+            "west": "The Spooky Lake\n"
+        },
+        "travel_descriptions": {
+            "west": "Leaving the echoing whispers and the eerie beauty of the Whispering Caves behind, you travel west. In your journey, you draw near the Spooky Lake again, its mirror-like waters reflecting the towering treetops and your own image as well."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    }
+]
