@@ -66,6 +66,9 @@ def main():
     npcs = generate_npc(background_story, stories, character_format)
     print(npcs)
 
+    #Object generation based on the generated location json
+    generate_object("../games-data")
+
     
 
 if __name__ == "__main__":
