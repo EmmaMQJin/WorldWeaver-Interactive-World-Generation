@@ -47,7 +47,7 @@ output_filename = 'extracted_characters.json'  # The filename for the output JSO
 ####################
 #few shot GPT-4
 def generate_main_character(background_story, example_stories, character_format, examples, directory = ""):
-    client = OpenAI()
+    client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
 
     with open(directory + "data/few-shot-examples/example-character.json", 'r') as file:
         examples = json.load(file)

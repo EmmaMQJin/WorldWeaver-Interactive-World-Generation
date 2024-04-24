@@ -55,11 +55,11 @@ def generate_object(directory):
 
 
      # Load location data
-    with open(f"../data/test_generations/all_the_locations.json", 'r') as file:
+    with open(f"data/test_generations/all_the_locations.json", 'r') as file:
         locations = json.load(file)
 
     # Load extracted items for few-shot learning
-    with open(f"../data/extracted_items.json", 'r') as file:
+    with open(f"data/extracted_items.json", 'r') as file:
         extracted_items = json.load(file)
     
      # Sample of extracted items for the few-shot example
@@ -94,7 +94,7 @@ def generate_object(directory):
         location['items'] = new_items
 
          # Save the updated location data back to the same file
-    with open(f"../data/test_generations/all_the_locations.json", 'w') as file:
+    with open(f"data/test_generations/all_the_locations.json", 'w') as file:
         json.dump(locations, file, indent=4)
 
 

@@ -176,7 +176,7 @@ Location to generate neighboring locations for:
 
 
 def generate_neighboring_locations(existing_locs, n, orig_loc_dict, story, shots):
-    client = OpenAI()
+    client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
     sys_prompt = f"""You are a helpful location generator for building a text adventure game.
 Given the background story of the game, a location that is already in the game, and the number of neighboring locations to generate from the user,
 generate logical neighboring locations of the location given and output as a list of JSON objects.
@@ -211,7 +211,7 @@ def create_connections_shot(loc1, loc2, output):
 
 def generate_connections(loc1, loc2, dirs, shots):
     loc1_name, loc2_name = loc1["name"], loc2["name"]
-    client = OpenAI()
+    client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
     sys_prompt = f"""You are a helpful map generator for building a text adventure game.
 Now, given the name and description of two locations (the first one is location 1, the second one is location 2)
 from the user, determine which direction (pick from THIS LIST: {dirs}) the player should go to get from location 1 to location 2.
