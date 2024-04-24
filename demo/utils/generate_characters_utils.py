@@ -76,7 +76,7 @@ def generate_main_character(background_story, example_stories, character_format,
     return json.loads(gpt_response)
 
 def generate_npc(background_story, stories, character_format, main_character, directory=""):
-    print("here in npc")
+    print("-----------NPC GENERATION----------------")
     default_num_npc = 4
     try:
         num_npc = int(input("How many NPC characters do you want to generate? Choose a number between 0-10 (Default value is 4): "))

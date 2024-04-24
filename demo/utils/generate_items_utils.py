@@ -64,7 +64,7 @@ def generate_object(directory):
     
      # Sample of extracted items for the few-shot example
     sample_items = json.dumps(extracted_items[:5], indent=4)
-
+    print("-----------ITEM GENERATION----------------")
     for location in locations:
         print(f"Generating items for: {location['name']}")
 
