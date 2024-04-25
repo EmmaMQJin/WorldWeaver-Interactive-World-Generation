@@ -144,8 +144,25 @@ def create_new_location_shot(story, output):
 def generate_new_location(story, example, shots, main_character, winning_state):
     client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
     sys_prompt = f"""You are a helpful location generator for building a text adventure game.
-The player (main character) of this game is {main_character}, and their goal is: {winning_state}.
-Given the background story of the game from the user, what you do think the central location of the game should be?
+The player (main character) of this game is {main_character}.
+
+Winning state of player:
+The player successfully sneaks into the headquarters of the reigning organization and rescues the captived previous leader.
+
+All locations in the game to achieve the main character's goal:
+1. Abandoned Alleyway - where the player starts the game and collects the rusty key.
+2. Nearby Building - where the player enters after collecting the key.
+3. City Street - where the player needs to avoid the stalking drone.
+4. Control Room - inside the building where the player hacks in to get the electronic map.
+5. Marketplace - where the player gathers discarded tech and trades it for cyber wings.
+6. Rooftop Platform - where the player flies to after getting the cyber wings.
+7. Old Hacker's Hideout - where the player meets the old hacker and solves the riddle.
+8. Corporation Building Entrance - where the player needs to avoid security bots before entering.
+9. Secret Lab - where the player unlocks with the key received from the old hacker.
+10. Transportation Machine Room - where the player hacks into to enter the original world.
+
+
+Given the background story of the game from the user and all locations in the game to achieve the winning state of the player, what you do think the central location of the game should be?
 Give the name and description for the location in a JSON, formatted like the examples below:
 """
     sys_prompt += json.dumps(example)
@@ -178,8 +195,24 @@ Location to generate neighboring locations for:
 def generate_neighboring_locations(existing_locs, n, orig_loc_dict, story, shots):
     client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
     sys_prompt = f"""You are a helpful location generator for building a text adventure game.
-Given the background story of the game, a location that is already in the game, and the number of neighboring locations to generate from the user,
+Given the background story of the game, a location that is already in the game, the number of neighboring locations to generate from the user, and all locations in the game to achieve the winning state of the player,
 generate logical neighboring locations of the location given and output as a list of JSON objects.
+
+Winning state of player:
+The player successfully sneaks into the headquarters of the reigning organization and rescues the captived previous leader.
+
+All locations in the game to achieve the main character's goal:
+1. Abandoned Alleyway - where the player starts the game and collects the rusty key.
+2. Nearby Building - where the player enters after collecting the key.
+3. City Street - where the player needs to avoid the stalking drone.
+4. Control Room - inside the building where the player hacks in to get the electronic map.
+5. Marketplace - where the player gathers discarded tech and trades it for cyber wings.
+6. Rooftop Platform - where the player flies to after getting the cyber wings.
+7. Old Hacker's Hideout - where the player meets the old hacker and solves the riddle.
+8. Corporation Building Entrance - where the player needs to avoid security bots before entering.
+9. Secret Lab - where the player unlocks with the key received from the old hacker.
+10. Transportation Machine Room - where the player hacks into to enter the original world.
+
 The locations that already exist in the game are: {existing_locs}. DO NOT generate locations that have the same name or a similar name as an existing location.
 """
     user_prompt = f"""Background story: {story}
