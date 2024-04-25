@@ -89,7 +89,11 @@ def generate_neighbor_locs_HITL(all_locs, num_neib_locs, orig_loc_dict, story, n
                 prev_layer[j], neib_locs[k], dir_take_out = generate_connections(
                     prev_layer[j], neib_locs[k], directions, connections_shots)
                 print("direction linked: ", dir_take_out)
-                directions.remove(dir_take_out)
+                if dir_take_out not in directions:
+                    dir_take_out = directions.pop()
+                else:
+                    directions.remove(dir_take_out)
+                # directions.remove(dir_take_out)
                 print("Took out ", dir_take_out, " | list now: ", directions)
             all_locs += neib_locs[:]
             temp_layer += neib_locs[:]
@@ -241,6 +245,7 @@ Note that the values of the "direction" key of the 2 JSON objects should be oppo
         messages=messages
     )
     model_output = completion.choices[0].message.content
+    print("Model output connections: ", model_output)
     model_output_list = json.loads(model_output)
     direction1, desc1 = model_output_list[0]["direction"].strip(
     ), model_output_list[0]["travel description"]
@@ -255,92 +260,92 @@ Note that the values of the "direction" key of the 2 JSON objects should be oppo
     return loc1, loc2, direction1
 
 
-def main():
-    story_cyberpunk = read_file_to_str("data/story-cyberpunk.txt")
-    story_insidetemple = read_file_to_str("data/story-insidetemple.txt")
-    story_lake = read_file_to_str("data/story-lake.txt")
+# def main():
+#     story_cyberpunk = read_file_to_str("data/story-cyberpunk.txt")
+#     story_insidetemple = read_file_to_str("data/story-insidetemple.txt")
+#     story_lake = read_file_to_str("data/story-lake.txt")
 
-    central_loc_lake_obj = read_json_examples(
-        "data/few-shot-examples/central-loc-lake.json")
-    neib_locs_lake_5_list = read_json_examples(
-        "data/few-shot-examples/neighb-locs-lake-5.json")
+#     central_loc_lake_obj = read_json_examples(
+#         "data/few-shot-examples/central-loc-lake.json")
+#     neib_locs_lake_5_list = read_json_examples(
+#         "data/few-shot-examples/neighb-locs-lake-5.json")
 
-    central_loc_insidetemple_obj = read_json_examples(
-        "data/few-shot-examples/central-loc-insidetemple.json")
-    neib_locs_insidetemple_3_list = read_json_examples(
-        "data/few-shot-examples/neighb-locs-insidetemple-3.json")
+#     central_loc_insidetemple_obj = read_json_examples(
+#         "data/few-shot-examples/central-loc-insidetemple.json")
+#     neib_locs_insidetemple_3_list = read_json_examples(
+#         "data/few-shot-examples/neighb-locs-insidetemple-3.json")
     
-    hall_of_goddess_obj = read_json_examples("data/few-shot-examples/hall-of-goddess.json")
-    royal_tomb_obj = read_json_examples("data/few-shot-examples/royal-tomb.json")
+#     hall_of_goddess_obj = read_json_examples("data/few-shot-examples/hall-of-goddess.json")
+#     royal_tomb_obj = read_json_examples("data/few-shot-examples/royal-tomb.json")
     
-    # few-shot for central location format
-    central_loc_shot_1 = create_new_location_shot(story_insidetemple, central_loc_insidetemple_obj)
-    central_loc_shot_2 = create_new_location_shot(story_lake, central_loc_lake_obj)
-    central_loc_shots = central_loc_shot_1 + central_loc_shot_2
+#     # few-shot for central location format
+#     central_loc_shot_1 = create_new_location_shot(story_insidetemple, central_loc_insidetemple_obj)
+#     central_loc_shot_2 = create_new_location_shot(story_lake, central_loc_lake_obj)
+#     central_loc_shots = central_loc_shot_1 + central_loc_shot_2
 
-    # few-shot for neighboring locations
-    neib_locs_shot_1 = create_neib_locs_shot(
-        central_loc_insidetemple_obj, story_insidetemple, 1, neib_locs_insidetemple_3_list[:1])
-    neib_locs_shot_2 = create_neib_locs_shot(
-        central_loc_insidetemple_obj, story_insidetemple, 3, neib_locs_insidetemple_3_list)
-    neib_locs_shot_3 = create_neib_locs_shot(
-        central_loc_lake_obj, story_lake, 5, neib_locs_lake_5_list)
-    neib_locs_shots = neib_locs_shot_1 + neib_locs_shot_2 + neib_locs_shot_3
+#     # few-shot for neighboring locations
+#     neib_locs_shot_1 = create_neib_locs_shot(
+#         central_loc_insidetemple_obj, story_insidetemple, 1, neib_locs_insidetemple_3_list[:1])
+#     neib_locs_shot_2 = create_neib_locs_shot(
+#         central_loc_insidetemple_obj, story_insidetemple, 3, neib_locs_insidetemple_3_list)
+#     neib_locs_shot_3 = create_neib_locs_shot(
+#         central_loc_lake_obj, story_lake, 5, neib_locs_lake_5_list)
+#     neib_locs_shots = neib_locs_shot_1 + neib_locs_shot_2 + neib_locs_shot_3
 
-    # few-shot for connections
-    hall_tomb_connection = [{"direction": "down",
-                             "travel description": "Descending the stairs from the Hall of the Goddess, you move towards the Royal Tomb, the air growing cooler and heavier with the weight of centuries."},
-                            {"direction": "up",
-                             "travel description": "Ascending the stairs from the depths of the Royal Tomb, you journey back towards the Hall of the Goddess. With each step upwards, the air becomes lighter and warmer, shedding the cool, heavy presence of ancient history. The atmosphere subtly shifts, as if leaving behind the echoes of the past to embrace the divine serenity of the Goddess's hall."}]
-    connections_shot_1 = create_connections_shot(hall_of_goddess_obj, royal_tomb_obj, hall_tomb_connection)
-    connections_shots = connections_shot_1
-
-
-
-    # Generate the central location
-    loc_center = generate_new_location(
-        story_cyberpunk, neib_locs_insidetemple_3_list[0], central_loc_shots)
-    print("Central location: ", loc_center)
-    # Generate first-round of neighbors
-    # num_locs = randint(3, 7)
-    # print("Number of neighboring locations: ", num_locs)
-    neib_locs = generate_neighboring_locations(
-        [loc_center], num_locs, loc_center, story_cyberpunk, neib_locs_shots)
-
-    # Generate connections for first-round of neighbors
-    directions = ["east", "west", "north", "south", "up", "down", "in", "out"]
-    for i, _ in enumerate(neib_locs):
-        loc_center, neib_locs[i], dir_take_out = generate_connections(
-            loc_center, neib_locs[i], directions, connections_shots)
-        directions.remove(dir_take_out)
-        print("Took out ", dir_take_out, " | list now: ", directions)
-
-    # neib_locs = read_json_examples("test_generations/locations_first_round_8.json")
-    all_locs = neib_locs + [loc_center]
-
-    # Do another round of location gen for all first-round locations (except the central)
-    for j, _ in enumerate(neib_locs):
-        # num_locs = randint(0, 3)
-        print("Number of neighboring locations: ", num_locs)
-        if num_locs == 0:
-            continue
-        existing_loc_names = extract_keys_from_list(all_locs, "name")
-        neib_neib_locs = generate_neighboring_locations(existing_loc_names, num_locs, neib_locs[j], story_cyberpunk,
-                                                        neib_locs_shots)
-        directions = ["east", "west", "north",
-                      "south", "up", "down", "in", "out"]
-        # Generate connections for each of these neighboring connections
-        for k, _ in enumerate(neib_neib_locs):
-            neib_locs[j], neib_neib_locs[k], dir_take_out = generate_connections(
-                neib_locs[j], neib_neib_locs[k], directions, connections_shots)
-            print("direction linked: ", dir_take_out)
-            directions.remove(dir_take_out)
-            print("Took out ", dir_take_out, " | list now: ", directions)
-        all_locs += neib_neib_locs
-
-    # all_locs.append(loc_center)
-    list_to_json_file(all_locs, "data/test_generations/locations.json")
+#     # few-shot for connections
+#     hall_tomb_connection = [{"direction": "down",
+#                              "travel description": "Descending the stairs from the Hall of the Goddess, you move towards the Royal Tomb, the air growing cooler and heavier with the weight of centuries."},
+#                             {"direction": "up",
+#                              "travel description": "Ascending the stairs from the depths of the Royal Tomb, you journey back towards the Hall of the Goddess. With each step upwards, the air becomes lighter and warmer, shedding the cool, heavy presence of ancient history. The atmosphere subtly shifts, as if leaving behind the echoes of the past to embrace the divine serenity of the Goddess's hall."}]
+#     connections_shot_1 = create_connections_shot(hall_of_goddess_obj, royal_tomb_obj, hall_tomb_connection)
+#     connections_shots = connections_shot_1
 
 
-if __name__ == "__main__":
-    main()
+
+#     # Generate the central location
+#     loc_center = generate_new_location(
+#         story_cyberpunk, neib_locs_insidetemple_3_list[0], central_loc_shots)
+#     print("Central location: ", loc_center)
+#     # Generate first-round of neighbors
+#     # num_locs = randint(3, 7)
+#     # print("Number of neighboring locations: ", num_locs)
+#     neib_locs = generate_neighboring_locations(
+#         [loc_center], num_locs, loc_center, story_cyberpunk, neib_locs_shots)
+
+#     # Generate connections for first-round of neighbors
+#     directions = ["east", "west", "north", "south", "up", "down", "in", "out"]
+#     for i, _ in enumerate(neib_locs):
+#         loc_center, neib_locs[i], dir_take_out = generate_connections(
+#             loc_center, neib_locs[i], directions, connections_shots)
+#         directions.remove(dir_take_out)
+#         print("Took out ", dir_take_out, " | list now: ", directions)
+
+#     # neib_locs = read_json_examples("test_generations/locations_first_round_8.json")
+#     all_locs = neib_locs + [loc_center]
+
+#     # Do another round of location gen for all first-round locations (except the central)
+#     for j, _ in enumerate(neib_locs):
+#         # num_locs = randint(0, 3)
+#         print("Number of neighboring locations: ", num_locs)
+#         if num_locs == 0:
+#             continue
+#         existing_loc_names = extract_keys_from_list(all_locs, "name")
+#         neib_neib_locs = generate_neighboring_locations(existing_loc_names, num_locs, neib_locs[j], story_cyberpunk,
+#                                                         neib_locs_shots)
+#         directions = ["east", "west", "north",
+#                       "south", "up", "down", "in", "out"]
+#         # Generate connections for each of these neighboring connections
+#         for k, _ in enumerate(neib_neib_locs):
+#             neib_locs[j], neib_neib_locs[k], dir_take_out = generate_connections(
+#                 neib_locs[j], neib_neib_locs[k], directions, connections_shots)
+#             print("direction linked: ", dir_take_out)
+#             directions.remove(dir_take_out)
+#             print("Took out ", dir_take_out, " | list now: ", directions)
+#         all_locs += neib_neib_locs
+
+#     # all_locs.append(loc_center)
+#     list_to_json_file(all_locs, "data/test_generations/locations.json")
+
+
+# if __name__ == "__main__":
+#     main()
