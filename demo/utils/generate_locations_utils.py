@@ -89,11 +89,11 @@ def generate_neighbor_locs_HITL(all_locs, num_neib_locs, orig_loc_dict, story, n
                 prev_layer[j], neib_locs[k], dir_take_out = generate_connections(
                     prev_layer[j], neib_locs[k], directions, connections_shots)
                 print("direction linked: ", dir_take_out)
-                if dir_take_out not in directions:
-                    dir_take_out = directions.pop()
-                else:
-                    directions.remove(dir_take_out)
-                # directions.remove(dir_take_out)
+                # if dir_take_out not in directions:
+                #     dir_take_out = directions.pop()
+                # else:
+                #     directions.remove(dir_take_out)
+                directions.remove(dir_take_out)
                 print("Took out ", dir_take_out, " | list now: ", directions)
             all_locs += neib_locs[:]
             temp_layer += neib_locs[:]
@@ -187,7 +187,7 @@ def generate_neighboring_locations(existing_locs, orig_loc_dict, story, shots, a
     client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
     sys_prompt = f"""You are a helpful location generator for building a text adventure game.
 Given the background story of the game, a location that is already in the game, and a list of all locations in the game to choose from, 
-generate logical neighboring locations of the location given and output as a list of JSON objects. Choose the most logical neighboring locations from the input locations. 
+generate logical neighboring locations of the location given and output as a list of JSON objects. Choose the most logical neighboring locations from the input locations. You don't need to choose all locations from the input locations, only some logically connected locations.
 """
     user_prompt = f"""Background story: {story}
 Location to generate neighboring locations for:
@@ -207,6 +207,7 @@ Location to generate neighboring locations for:
     dict_to_json_file(model_output_list,
                       "data/test_generations/neighbor_locations.json")
     for loc in model_output_list:
+        print("Chosen location name", loc["name"])
         if loc["name"] not in all_locations_input:
             print("ERROR, loc not in all_locations_input")
         else:
