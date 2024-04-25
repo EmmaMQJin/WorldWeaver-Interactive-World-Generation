@@ -23,6 +23,7 @@ def main():
     
     hall_of_goddess_obj = read_json_examples("data/few-shot-examples/hall-of-goddess.json")
     royal_tomb_obj = read_json_examples("data/few-shot-examples/royal-tomb.json")
+    all_locations_input = read_json_examples("data/locations-input-with-goal.json")
 
     # few-shot for central location format
     central_loc_shot_1 = create_new_location_shot(story_insidetemple, central_loc_insidetemple_obj)
@@ -56,11 +57,13 @@ def main():
     winning_state = input("What do you want the winning state of the game to be?")
     print("winning state is: ", winning_state)
     # TODO: ask GPT to output a one-sentence goal of main character given json obj and winning_state
-    generate_central_loc_HITL(background_story, neib_locs_insidetemple_3_list[0], central_loc_shots, main_character, winning_state)
+    
+    all_locations_input = generate_central_loc_HITL(background_story, neib_locs_insidetemple_3_list[0], central_loc_shots, main_character, winning_state, all_locations_input)
     central_loc = read_json_examples("data/test_generations/init_location.json")
 
     num_locs = int(input("How many locations would you like to have in the game?\n"))
-    generate_neighbor_locs_HITL([central_loc], num_locs-1, central_loc, background_story, neib_locs_shots, connections_shots)
+    # TODO - uncomment above line, tell user about num of locations we are generating. If they would like to have more locations, generate filler locations
+    generate_neighbor_locs_HITL([central_loc], num_locs-1, central_loc, background_story, neib_locs_shots, connections_shots, all_locations_input)
 
     # TODO: loop through all locations to generate npcs
     npcs = generate_npc(background_story, stories, character_format, main_character)

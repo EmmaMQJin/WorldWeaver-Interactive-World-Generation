@@ -43,13 +43,14 @@ def open_vim_with_json(json_data):
     os.unlink(temp_file.name)
     return edited_json
 
-def generate_central_loc_HITL(desc, example, central_loc_shots, main_character, winning_state):
+def generate_central_loc_HITL(desc, example, central_loc_shots, main_character, winning_state, all_locations_input):
     # generate central location with user input
-    central_loc_desc = input("Do you have any thoughts on what the central location is like?\n")
+    # central_loc_desc = input("Do you have any thoughts on what the central location is like?\n")
     all_descs = desc
-    if central_loc_desc:
-        all_descs += "\nAbout the central location of the game: " + central_loc_desc
-    loc_center = generate_new_location(all_descs, example, central_loc_shots, main_character, winning_state)
+    # if central_loc_desc:
+    #     all_descs += "\nAbout the central location of the game: " + central_loc_desc
+    all_descs += "\nList of all locations in the game: " + json.dumps(all_locations_input)
+    loc_center = generate_new_location(all_descs, example, central_loc_shots, main_character, winning_state, all_locations_input)
     
     # get feedback from user about central location
     print("OK, here is the generated central location:")
@@ -59,26 +60,29 @@ def generate_central_loc_HITL(desc, example, central_loc_shots, main_character, 
     print("Edited description: ", new_desc)
     loc_center["name"] = new_name
     loc_center["description"] = new_desc
-
+    string_without_newline = loc_center["name"].replace('\n', '')
+    del all_locations_input[string_without_newline] ## TODO - put a check here
     dict_to_json_file(loc_center, "data/test_generations/init_location.json")
+    return all_locations_input
 
-def generate_neighbor_locs_HITL(all_locs, num_neib_locs, orig_loc_dict, story, neib_shots, connections_shots):
+def generate_neighbor_locs_HITL(all_locs, num_neib_locs, orig_loc_dict, story, neib_shots, connections_shots, all_locations_input):
     # A
     # B    C     D
     # EF   GH
     prev_layer = all_locs[:]
-    while num_neib_locs > 0:
+    while len(all_locations_input) > 0:
         temp_layer = []
         for j, loc in enumerate(prev_layer):
-            if num_neib_locs == 0:
-                break
-            if num_neib_locs <= 4:
-                n = num_neib_locs
-            else:
-                n = randint(2, 4)
-            print("Number of neighboring locations: ", n)
-            neib_locs = generate_neighboring_locations(
-                all_locs, n, loc, story, neib_shots)
+            # if num_neib_locs == 0:
+            #     break
+            # if num_neib_locs <= 4:
+            #     n = num_neib_locs
+            # else:
+            #     n = randint(2, 4)
+            # print("Number of neighboring locations: ", n)
+            # n = 10 # TODO - dummy value. Change later
+            neib_locs, all_locations_input = generate_neighboring_locations(
+                all_locs, loc, story, neib_shots, all_locations_input)
             # Generate connections
             directions = ["east", "west", "north", "south", "up", "down", "in", "out"]
             for k, _ in enumerate(neib_locs):
@@ -89,7 +93,7 @@ def generate_neighbor_locs_HITL(all_locs, num_neib_locs, orig_loc_dict, story, n
                 print("Took out ", dir_take_out, " | list now: ", directions)
             all_locs += neib_locs[:]
             temp_layer += neib_locs[:]
-            num_neib_locs -= n
+            # num_neib_locs -= n
         print("all locs 1: ", all_locs)
         prev_layer = temp_layer[:]
     print("all locs 2: ", all_locs)
@@ -141,28 +145,11 @@ def create_new_location_shot(story, output):
 
     return [user, assistant]
 
-def generate_new_location(story, example, shots, main_character, winning_state):
+def generate_new_location(story, example, shots, main_character, winning_state, all_locations_input):
     client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
     sys_prompt = f"""You are a helpful location generator for building a text adventure game.
-The player (main character) of this game is {main_character}.
 
-Winning state of player:
-The player successfully sneaks into the headquarters of the reigning organization and rescues the captived previous leader.
-
-All locations in the game to achieve the main character's goal:
-1. Abandoned Alleyway - where the player starts the game and collects the rusty key.
-2. Nearby Building - where the player enters after collecting the key.
-3. City Street - where the player needs to avoid the stalking drone.
-4. Control Room - inside the building where the player hacks in to get the electronic map.
-5. Marketplace - where the player gathers discarded tech and trades it for cyber wings.
-6. Rooftop Platform - where the player flies to after getting the cyber wings.
-7. Old Hacker's Hideout - where the player meets the old hacker and solves the riddle.
-8. Corporation Building Entrance - where the player needs to avoid security bots before entering.
-9. Secret Lab - where the player unlocks with the key received from the old hacker.
-10. Transportation Machine Room - where the player hacks into to enter the original world.
-
-
-Given the background story of the game from the user and all locations in the game to achieve the winning state of the player, what you do think the central location of the game should be?
+Given the background story of the game from the user and a list of all locations in the game, choose the most logical starting location from the input locations. 
 Give the name and description for the location in a JSON, formatted like the examples below:
 """
     sys_prompt += json.dumps(example)
@@ -192,34 +179,17 @@ Location to generate neighboring locations for:
     return [user, assistant]
 
 
-def generate_neighboring_locations(existing_locs, n, orig_loc_dict, story, shots):
+def generate_neighboring_locations(existing_locs, orig_loc_dict, story, shots, all_locations_input):
     client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
     sys_prompt = f"""You are a helpful location generator for building a text adventure game.
-Given the background story of the game, a location that is already in the game, the number of neighboring locations to generate from the user, and all locations in the game to achieve the winning state of the player,
-generate logical neighboring locations of the location given and output as a list of JSON objects.
-
-Winning state of player:
-The player successfully sneaks into the headquarters of the reigning organization and rescues the captived previous leader.
-
-All locations in the game to achieve the main character's goal:
-1. Abandoned Alleyway - where the player starts the game and collects the rusty key.
-2. Nearby Building - where the player enters after collecting the key.
-3. City Street - where the player needs to avoid the stalking drone.
-4. Control Room - inside the building where the player hacks in to get the electronic map.
-5. Marketplace - where the player gathers discarded tech and trades it for cyber wings.
-6. Rooftop Platform - where the player flies to after getting the cyber wings.
-7. Old Hacker's Hideout - where the player meets the old hacker and solves the riddle.
-8. Corporation Building Entrance - where the player needs to avoid security bots before entering.
-9. Secret Lab - where the player unlocks with the key received from the old hacker.
-10. Transportation Machine Room - where the player hacks into to enter the original world.
-
-The locations that already exist in the game are: {existing_locs}. DO NOT generate locations that have the same name or a similar name as an existing location.
+Given the background story of the game, a location that is already in the game, and a list of all locations in the game to choose from, 
+generate logical neighboring locations of the location given and output as a list of JSON objects. Choose the most logical neighboring locations from the input locations. 
 """
     user_prompt = f"""Background story: {story}
 Location to generate neighboring locations for:
 """
     user_prompt += json.dumps(orig_loc_dict)
-    user_prompt += f"\nNumber of neighboring locations to generate: {n}"
+    user_prompt +=  "\nList of all locations in the game: " + json.dumps(all_locations_input)
     messages = [{"role": "system", "content": sys_prompt}]
     messages += shots
     messages += [{"role": "user", "content": user_prompt}]
@@ -232,7 +202,12 @@ Location to generate neighboring locations for:
     model_output_list = json.loads(model_output)
     dict_to_json_file(model_output_list,
                       "data/test_generations/neighbor_locations.json")
-    return model_output_list
+    for loc in model_output_list:
+        if loc["name"] not in all_locations_input:
+            print("ERROR, loc not in all_locations_input")
+        else:
+            del all_locations_input[loc["name"]]
+    return model_output_list, all_locations_input
 
 
 def create_connections_shot(loc1, loc2, output):
@@ -327,8 +302,8 @@ def main():
         story_cyberpunk, neib_locs_insidetemple_3_list[0], central_loc_shots)
     print("Central location: ", loc_center)
     # Generate first-round of neighbors
-    num_locs = randint(3, 7)
-    print("Number of neighboring locations: ", num_locs)
+    # num_locs = randint(3, 7)
+    # print("Number of neighboring locations: ", num_locs)
     neib_locs = generate_neighboring_locations(
         [loc_center], num_locs, loc_center, story_cyberpunk, neib_locs_shots)
 
@@ -345,7 +320,7 @@ def main():
 
     # Do another round of location gen for all first-round locations (except the central)
     for j, _ in enumerate(neib_locs):
-        num_locs = randint(0, 3)
+        # num_locs = randint(0, 3)
         print("Number of neighboring locations: ", num_locs)
         if num_locs == 0:
             continue
