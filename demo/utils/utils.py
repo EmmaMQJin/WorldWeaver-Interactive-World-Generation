@@ -140,7 +140,7 @@ initial state:
 winning state:
 {winning_state}"""
     shots = create_actions_playthrough_shots()
-    client = OpenAI()
+    client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
     messages = [{"role": "system", "content": sys_prompt}]
     messages += shots
     messages += [{"role": "user", "content": user_prompt}]
@@ -273,7 +273,7 @@ Mention which location is the starting location of the game in its description.
 {actions_list}
 """
     shots = create_locations_list_shots()
-    client = OpenAI()
+    client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
     messages = [{"role": "system", "content": sys_prompt}]
     messages += shots
     messages += [{"role": "user", "content": user_prompt}]
