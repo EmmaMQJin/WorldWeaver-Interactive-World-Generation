@@ -1,0 +1,90 @@
+[
+    {
+        "name": "Whisper",
+        "description": "A quirky, mysterious feline possessing an uncanny ability to communicate through speech. Known for its sharp wit and a knack for trouble, Whisper is more than just a simple cat; its piercing gaze seems to hold centuries of wisdom.",
+        "persona": "Unlike any ordinary feline, Whisper has the ability to converse and understand human language. With a sly sense of humor and a dismissive attitude towards normal cat behavior, this feline walks the line between adorable and annoying.",
+        "location": {},
+        "goal": "",
+        "inventory": {}
+    },
+    {
+        "name": "Fairy King Oberon",
+        "description": "Oberon is the regal and wise ruler of the fairies. His aura glows with an enchanting blend of colors that's mesmerizing to anyone who beholds him. He's known for his profound wisdom and impartial judgment.",
+        "persona": "As king, Oberon holds a deep sense of responsibility for maintaining harmony within his domain. He possesses a gentle yet stern demeanor, and his twinkling eyes are filled with kindness mixed with a glint of playfulness.",
+        "location": {},
+        "goal": "Provide the magic ribbon to Whisper, the talking cat, to complete its mission and celebrate the victory in the end.",
+        "inventory": {}
+    },
+    {
+        "name": "Chatterbox",
+        "description": "A surprisingly loquacious local cat with a crisp, articulate meow that seems able to form human words. His fur is a striking mix of azure and amethyst hues that shine under the fairy lights, and his eyes are as green as the enchanted forest he frequents.",
+        "persona": "Chatterbox is a peculiar companion with an even stranger ability - he can talk. He is the comical spanner in the works, a reliable source of odd wisdom and humor in various situations of the game. Chatterbox often acts as a guide, helping characters navigate the fairy world's secrets, all the while entertaining with his feline wit.",
+        "location": {},
+        "goal": "To provide valuable hints and guidance to the player during their quests in the fairy kingdom and ensure the celebration happens at the Fairy King's Throne.",
+        "inventory": {}
+    },
+    {
+        "name": "Jerry",
+        "description": "Jerry is an unlikely custodian of deep-seated wisdom and celestial magic. As a talking cat with intense amethyst eyes and silken fur that sparkles with an uncanny luminescence, he has been guarding the magical ribbon for centuries, awaiting a worthy recipient.",
+        "persona": "Preternaturally wise and unexpectedly verbose, Jerry disentangles the cosmic tapestries of destiny and time with mesmerizing tales from epochs past and glimpses of futures yet unknown. He carries a solemn duty to protect his magical artifact until the right bearer comes along to fulfill an age-old prophecy.",
+        "location": {},
+        "goal": "To test the converse cat, Whisper, and if found worthy, allow the usage of the magic ribbon to control flies and release himself from the cage.",
+        "inventory": {}
+    },
+    {
+        "name": "Echo",
+        "description": "Echo is a captivating talking cat with vibrant turquoise eyes that seem to comprehend more than the average feline. Her fur is a mix of midnight black and silver stripes, giving her an enchanting, almost ethereal appearance. Despite her soft-spoken nature, Echo commands attention with her regal demeanour and refined articulation.",
+        "persona": "Anything but typical, Echo possesses not only the ability to communicate in the human language, but also a profound wisdom that she shares sparingly, often cloaked in riddles. Her eerie calmness and calculated manner hint at a cat who observes more than she lets on.",
+        "location": {},
+        "goal": "To help Whisper, the main character, reach Jerry\u2019s Cage using her ability to understand the complex language of the magic ribbon.",
+        "inventory": {}
+    },
+    {
+        "name": "Babble",
+        "description": "Babble is a charmingly eccentric talking cat. Her unusual hazel eyes seem to sparkle with wisdom well beyond her years and her tortoiseshell fur has subtle streaks of gold that shimmer under sunlight. Just like her unique appearance, her voice is quite unlike any other cat's. She speaks articulately, with an eloquence that can astonish even the most well-versed scholars.",
+        "persona": "Babble is wise and charismatic, known for her enlightening ruminations and sage counsel. Her speeches are wittily phrased and often adorned with ancient proverbs and allusions to folklore. She is cautious in nature and only speaks when required, making her words all the more impactful.",
+        "location": {},
+        "goal": "To guide the Whisper along the magical path to Jerry's cage by decoding the enigmatic instructions entwined with the path's magic.",
+        "inventory": {}
+    },
+    {
+        "name": "Whisper Echo",
+        "description": "An enigmatic talking feline with a fur as black as the night, adorned with twinkling spots making it resemble a starry sky. Her bright green eyes hold a curious glow, giving her an otherworldly appearance.",
+        "persona": "Whisper Echo is known in the Fly Territory for her ability to soothe the irritable flies with her melodious purrs, effectively making her the bridge between the flies and the travellers. Despite her soft-spoken nature, she carries an air of authority and calm, displaying wisdom beyond her apparent years.",
+        "location": {},
+        "goal": "Guide Whisper and whoever dares cross the Fly Territory, ensuring they can pass without the flies' disturbance, maintaining the delicate balance of this peculiar area.",
+        "inventory": {}
+    },
+    {
+        "name": "Murmur",
+        "description": "A peculiar, slate-grey feline with swirls of white across her coat. Murmur has delicate whiskers that twitch with her emotions and vibrant yellow eyes full of mischief. Bombarded with an enduring curiosity, she has a knack for finding trouble.",
+        "persona": "Murmur possesses the unusual ability to converse with humans in their own tongue. She has a playful personality, often indulging in witty banter with those fortunate enough to understand her. But even for a talking cat, she holds a trove of wisdom that belies her jovial exterior.",
+        "location": {},
+        "goal": "To assist Whisper by distracting the swarm of flies in the Fly Territory, allowing Whisper to cross the area without hindrance.",
+        "inventory": {}
+    },
+    {
+        "name": "Purrqui",
+        "description": "A captivatingly charming feline with an uncanny ability to speak human language. Purrqui sports a sleek coat of sun-kissed copper hue and mesmerizing aquamarine eyes that exude an almost hypnotic calm. Seen by many as a paradox, Purrqui can hold long conversations ranging from the mysteries of the universe to the merits of a good scratching post.",
+        "persona": "Despite her unusual gift, Purrqui embodies the best of both worlds - the wit of a human with the indifference of a cat. She possesses an adventurous spirit, is insanely curious, and has an understatedly sarcastic sense of humor which she uses generously in her discourse with humans.",
+        "location": {},
+        "goal": "To guide Whisper safely through the pestering flies of the Fly Territory, using her unique ability to communicate with these insects.",
+        "inventory": {}
+    },
+    {
+        "name": "Prattle",
+        "description": "Prattle, a sleek white cat with a unique ability to communicate verbally with humans, carries an aura of mystique. Whiskers twitching in curiosity, her amber eyes sparkle with a seamless blend of wisdom and playfulness, enveloped in a cloak of ethereal beauty.",
+        "persona": "Prattle is known for her eloquence and profound understanding, often surprising those around her with thought-provoking insights. Despite her small size and cute appearance, she carries a gravitas and rare intelligence, favoring discourse over mundane feline pursuits.",
+        "location": {},
+        "goal": "To guide Whisper through the ocean shore, using her wisdom to locate the magical fish that could teach the fairy language.",
+        "inventory": {}
+    },
+    {
+        "name": "Ripple",
+        "description": "Ripple is a talking cat with glossy, ebony fur and emerald eyes that seem to glow in the dark. With a tranquil aura and a soft, articulate voice, Ripple is not your ordinary feline. A peculiar insignia on his forehead marks him as part of a long-lost lineage of sentient cats.",
+        "persona": "Contrary to common feline behavior, Ripple is talkative and sociable, often mingling with other creatures and sharing intricate tales of his adventures. His speech is laced with wisdom, echoing a past as old as time, and he holds a serene disposition that instantly puts others at ease.",
+        "location": {},
+        "goal": "To protect and guide Jerry Mouse safely through the dangerous urban labyrinth to reach the Safe House, using his deep knowledge of the hidden paths and his keen sense of any imminent danger.",
+        "inventory": {}
+    }
+]

@@ -1,14 +1,19 @@
 from utils.generate_characters_utils import *
 from utils.generate_items_utils import *
 from utils.generate_locations_utils import *
+from utils.utils import *
+import copy
 
 def main():
     story_cyberpunk = read_file_to_str("data/story-cyberpunk.txt")
     story_insidetemple = read_file_to_str("data/story-insidetemple.txt")
     story_lake = read_file_to_str("data/story-lake.txt")
 
+    location_format = read_json_examples(
+        "data/location-empty.json")
+
     stories = [story_cyberpunk, story_insidetemple]
-    with open("data/few-shot-examples/example-character.json", 'r') as file:
+    with open("data/few-shot-examples/example-characters.json", 'r') as file:
         example_characters = json.load(file)
     character_format = read_file_to_str("data/character-empty.json")
 
@@ -48,26 +53,43 @@ def main():
 
     print("Welcome to WorldWeaver!!!!")
 
-    background_story = input("Please give a description of the type of game you want to build.\n")
+    background_story = input("\nPlease give a description of the type of game you want to build.\n")
 
     main_character = generate_main_character(background_story, stories, character_format, example_characters)
-    print("Here is your main character, which is also your player: \n", json.dumps(main_character))
-
-    winning_state = input("What do you want the winning state of the game to be?")
-    print("winning state is: ", winning_state)
-    # TODO: ask GPT to output a one-sentence goal of main character given json obj and winning_state
-    generate_central_loc_HITL(background_story, neib_locs_insidetemple_3_list[0], central_loc_shots, main_character, winning_state)
+    print("\nHere is your main character, who is also your player: \n", json.dumps(main_character))
+    all_characters = [main_character]
+    initial_state = input("\nWhat do you want the initial state of the game to be?\n")
+    print("OK. The initial state of the game will be: ", initial_state)
+    winning_state = input("\nWhat do you want the winning state of the game to be?\n")
+    print("OK. The winning state of the game will be: ", winning_state)
+    actions_list = generate_actions_playthrough(background_story, initial_state, winning_state)
+    locations_to_use = generate_locations_to_use(background_story, actions_list)
+    remaining_locations = copy.deepcopy(locations_to_use)
+    dict_to_json_file(locations_to_use, "test.json")
+    num_locs = int(input(f"\nThe number of locations available is {len(locations_to_use)}. How many locations would you like to have in the game?\n"))
+    remaining_locations = generate_central_loc_HITL(background_story, neib_locs_insidetemple_3_list[0], central_loc_shots, remaining_locations)
     central_loc = read_json_examples("data/test_generations/init_location.json")
+    print("\nOK, here is the generated central location:\n")
+    print(json.dumps(central_loc))
+    generate_neighbor_locs_HITL(num_locs-1, central_loc, background_story, neib_locs_shots, connections_shots, remaining_locations, location_format)
 
-    num_locs = int(input("How many locations would you like to have in the game?\n"))
-    generate_neighbor_locs_HITL([central_loc], num_locs-1, central_loc, background_story, neib_locs_shots, connections_shots)
+    all_locations = read_json_examples("data/test_generations/all_the_locations.json")
+    print("read all locations of length", len(all_locations))
+    print("locations to use:", locations_to_use)
+    for i, location_json in enumerate(all_locations):
+        name = location_json["name"]
+        print("location name:", name)
+        if name not in locations_to_use:
+            continue
+        purpose = locations_to_use[name]
+        # location_name, location_purpose, background_story, main_character, character_format, stories, all_characters
+        npcs_dict, all_characters = generate_npc_in_location(name, purpose, background_story, main_character, character_format, stories, all_characters)
+        all_locations[i]["characters"] = npcs_dict
+    dict_to_json_file(all_locations, "data/test_generations/all_the_locations.json")
+    dict_to_json_file(all_characters, "data/test_generations/all_the_characters.json")
 
-    # TODO: loop through all locations to generate npcs
-    npcs = generate_npc(background_story, stories, character_format, main_character)
-    print(npcs)
-
-    #Object generation based on the generated location json
-    generate_object("games-data")
+    # #Object generation based on the generated location json
+    # generate_object("games-data")
 
     
 
