@@ -29,7 +29,7 @@ def generate_blocks(background_story, action_list, game_locations, directory = "
             "Given the background story of the game, the set locations in the game and the actions that the main character can take, "
             "write a detailed list of blocks that can be added to game locations to make the came more interesting and fun. "
              " The block descriptions should be detailed and should be coherent with the rest of the game objects. "
-             "Write python code based on the blocks you generate.Generate 3 or more blocks.")
+             "Write python code based on the blocks you generate.")
     
     few_shot_prompt1 = ("For the game given, create a block as a function, that takes in a location and a character as a Troll. "
                         "Block should be applied if the troll is at the location, the troll is alive and conscious, and the troll is still hungry")
