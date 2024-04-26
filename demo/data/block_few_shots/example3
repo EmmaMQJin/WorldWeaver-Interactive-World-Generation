@@ -1,0 +1,14 @@
+def is_blocked(self) -> bool:
+        # Conditions of block:
+        # * The location is dark
+        # * Unblocked if any character at the location is carrying a lit item (like a lamp or candle)
+
+        if not self.location.get_property("is_dark"):
+            return False
+        for character_name in self.location.characters:
+            character = self.location.characters[character_name]
+            for item_name in character.inventory:
+                item = character.inventory[item_name]
+                if item.get_property("is_lit"):
+                    return False
+        return True

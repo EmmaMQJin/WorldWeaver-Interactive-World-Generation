@@ -1,11 +1,11 @@
 {
-    "name": "Star Pond",
-    "description": "Star Pond is a beautiful pond located near the Fairy Enclave. It gets its name from its clear water, which mirrors the chandelier of stars at night. This pond is believed to be the source of fairy magic.",
+    "name": "Whisker Windmill",
+    "description": "A short distance from the Kingdom, lies the Whisker Windmill, a rustic structure constructed from aged wood, responsible for grinding down the grain used to make the bread for the palace\u2019s feasts. Shaped like a cat's whiskers, the windmill is a visual delight, with its hypnotic, spinning wheel and gentle whirring sound.",
     "connections": {
-        "west": "Fairy Enclave\n"
+        "west": "Kingdom of Cats\n"
     },
     "travel_descriptions": {
-        "west": "Leaving the magical tranquility of the Star Pond behind, you travel towards the Fairy Enclave. As the serene glow of the celestial reflections recedes, the starlit path towards the ethereal realm of the fairies emerges. The delightful chiming of fairy music and the increasing intensity of radiating colors signals your arrival into the magical sanctuary of fairies. The whimsical, ethereal beauty of the Enclave unveils itself after your trip through the magical Dreamwood."
+        "west": "Heading west from the Whisker Windmill, the lush greenery of the Kingdom of Cats slowly engulfs your sight. The gentle rumble of the windmill fades, slowly replaced by the soft rustle of leaves and quiet whispers of nature. With each step, the grand silhouette of the Cat King's palace comes into view, nestled amidst the verdant foliage."
     },
     "blocks": {},
     "items": {},

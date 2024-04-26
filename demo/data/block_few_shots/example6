@@ -1,0 +1,19 @@
+class Rock_Block(blocks.Block):
+    """
+    Blocks progress in this direction until the rock has cracks which unblock the way.
+    """
+
+    def __init__(self, location: things.Location, rock: things.Item):
+        super().__init__("A rock blocks your way", "The path is blocked by a solid rock.")
+        self.rock = rock
+        self.location = location
+
+    def is_blocked(self) -> bool:
+        # Conditions of block:
+        # * The rock has no cracks
+        if self.rock:
+            if not self.location.here(self.rock):
+                return False
+            if not self.rock.get_property("has_cracks"):
+                return True
+        return False

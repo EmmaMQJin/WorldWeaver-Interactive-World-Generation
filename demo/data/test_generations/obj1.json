@@ -1,11 +1,11 @@
 {
-    "name": "Dreamwood Edge",
-    "description": "Dreamwood Edge is a realm on the outskirts of the Fairy Enclave.  It is filled with tall trees in mystical colors. Twinkling Firefly flock the sky, creating an enchanting glow which illuminates the area. The air here is filled with a mystic hum that touches everything around.",
+    "name": "Cat King's Palace",
+    "description": "This grand tree fortress is truly a sight to behold. Towering above the rest of the Kingdom, its intricate architecture and whimsical design are reminiscent of the natural beauty of the forest. Graceful, flourishing tree branches cradle the Palace, and vibrantly colored blooms decorate its exterior. Atop the palace, a magnificent crown-shaped turret overlooks the entire Kingdom.",
     "connections": {
-        "in": "Fairy Enclave\n"
+        "down": "Kingdom of Cats\n"
     },
     "travel_descriptions": {
-        "in": "From the Dreamwood Edge, you venture deeper into the forest, drawn by the increasingly vibrant glow punctuating the foliage. As the magical hum intensifies, mirroring the crescendo of fairy laughter and steadily growing radiance, you re-enter the pulsing heart of the Fairy Enclave."
+        "down": "Descending from the grand heights of the Cat King's Palace, you journey back towards the Kingdom of Cats. You traverse down the intertwined branches, feeling the rhythm of the forest, the scent of rich soil and flowers escorting you back to the heart of the kingdom."
     },
     "blocks": {},
     "items": {},

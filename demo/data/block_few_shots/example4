@@ -1,0 +1,19 @@
+class Door_Block(blocks.Block):
+    """
+    Blocks progress in this direction until the character unlocks the door.
+    """
+
+    def __init__(self, location: things.Location, door: things.Item):
+        super().__init__("A locked door blocks your way", "The door ahead is locked.")
+        self.door = door
+        self.location = location
+
+    def is_blocked(self) -> bool:
+        # Conditions of block:
+        # * The door is locked
+        if self.door:
+            if not self.location.here(self.door):
+                return False
+            if self.door.get_property("is_locked"):
+                return True
+        return False

@@ -1,7 +1,7 @@
 [
     {
-        "name": "Dreamwood Edge",
-        "description": "Dreamwood Edge is a realm on the outskirts of the Fairy Enclave.  It is filled with tall trees in mystical colors. Twinkling Firefly flock the sky, creating an enchanting glow which illuminates the area. The air here is filled with a mystic hum that touches everything around.",
+        "name": "Cat King's Palace",
+        "description": "This grand tree fortress is truly a sight to behold. Towering above the rest of the Kingdom, its intricate architecture and whimsical design are reminiscent of the natural beauty of the forest. Graceful, flourishing tree branches cradle the Palace, and vibrantly colored blooms decorate its exterior. Atop the palace, a magnificent crown-shaped turret overlooks the entire Kingdom.",
         "connections": {},
         "travel_descriptions": {},
         "blocks": {},
@@ -12,8 +12,8 @@
         "properties": {}
     },
     {
-        "name": "Shadowgrove",
-        "description": "Shadowgrove is a realm where the darker, nocturnal fairies reside. It is adorned with luminescent mushrooms and ferns that only bloom at night, and the moonlight is the only illumination. The aura here is serene yet bewitching.",
+        "name": "Ancient Oak Library",
+        "description": "Carved into the trunk of an enormous ancient oak, you find the knowledge repository of the kingdom. Scrolls, books, and other records collected over countless cat generations are stored on wooden shelves, illuminated by the soft light of sparkling globules. The air smells of old paper, wood, and a hint of catnip.",
         "connections": {},
         "travel_descriptions": {},
         "blocks": {},
@@ -24,8 +24,8 @@
         "properties": {}
     },
     {
-        "name": "Star Pond",
-        "description": "Star Pond is a beautiful pond located near the Fairy Enclave. It gets its name from its clear water, which mirrors the chandelier of stars at night. This pond is believed to be the source of fairy magic.",
+        "name": "Whisker Windmill",
+        "description": "A short distance from the Kingdom, lies the Whisker Windmill, a rustic structure constructed from aged wood, responsible for grinding down the grain used to make the bread for the palace\u2019s feasts. Shaped like a cat's whiskers, the windmill is a visual delight, with its hypnotic, spinning wheel and gentle whirring sound.",
         "connections": {},
         "travel_descriptions": {},
         "blocks": {},
