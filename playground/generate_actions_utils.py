@@ -1,12 +1,40 @@
 import json
 import os
+import ast
 from openai import OpenAI
+
+def find_class_name(code):
+    """
+    Parses Python code to find the first class name.
+    """
+    try:
+        tree = ast.parse(code)
+        for node in tree.body:
+            if isinstance(node, ast.ClassDef):
+                return node.name
+        raise ValueError("No class definition found in the code.")
+    except SyntaxError as e:
+        raise ValueError(f"Error parsing code: {e}")
+
+def write_code_to_file(folder, class_name, code):
+    """
+    Writes code to a Python file in the specified folder, named after the class.
+    """
+    base_path = os.path.dirname(os.path.abspath(__file__))  # Get the directory of the current script
+    full_path = os.path.join(base_path, folder)
+    os.makedirs(full_path, exist_ok=True)  # Create the folder if it doesn't exist
+    file_path = os.path.join(full_path, f"{class_name}.py")
+    with open(file_path, 'w') as file:
+        file.write(code.strip())
+    print(f"File written: {file_path}")
+
 
 client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
 system_prompt_unique_actions = """
-Find the unique actions from the list of actions i give you.
-If you find actions that are synonymous or similar in meaning, add only one of them to your list and write the others as alias in the format:
-get [alias: procure, retrieve]
+Given a list of action words, analyze each word to determine its uniqueness. For actions that have synonyms, consult the Oxford Dictionary to verify if they are indeed synonymous. 
+For each unique action, compile a list where synonymous actions are grouped together. 
+Use the format "get [alias: procure, retrieve]" to display the primary action followed by its synonyms in brackets, prefixed by "alias:".
+Ensure to include only one primary action for each group of synonyms, with all other synonymous actions listed as aliases.
 """
 user_prompt_one = """
 go to the amusement park
@@ -18,7 +46,7 @@ retreive pegasus
 """
 assistant_prompt_one = """
 go 
-get [alias: procure, pegasus]
+get [alias: procure, retrieve]
 plant
 """
 user_prompt_two = """
@@ -41,74 +69,67 @@ fly back down to Earth
 return to cottage
 celebrate victory with Moon Dancer
 """
-system_prompt = ("You are a helpful assistant that will create a python class for the action given to you."+
-"""
-The class must have the following functions: def __init__(self, game, command: str):,def check_preconditions(self) -> bool: and def apply_effects(self):
-No other extra functions must be added.
-The aliases part should be added as a class member for the associated action like so : 
-class get:
+system_prompt = """
+Task: Develop a Python Class for Game Actions
 
+You are tasked with creating a Python class to represent a specific action within a game. The class should inherit from a base class and include the following methods:
+
+1. Constructor (__init__): Initialize with parameters self, game, command: str.
+2. Check Preconditions (check_preconditions): This method should return a boolean value. Return False if any preconditions are not met, otherwise return True if all conditions are met. The method signature should be def check_preconditions(self) -> bool:.
+3. Apply Effects (apply_effects): Implement this method to apply the effects of the action. It should not return any value. The method signature should be def apply_effects(self):.
+
+The class should also include a class member for aliases of the action word, using the format:
 ACTION_ALIASES = ["procure", "retrieve"]
 
-Remember to return False if any precondition is not met and return True at the end of the precondition function if all the conditions are met
-
-__init__ and apply_effects functions will not have any return statements.
-
-The items, characters and locations already generated will have the following JSON structures(Make sure to NOT include any property outside of what is given in the JSONs below):
-
-JSON structure for an item:
-{
-    "name": "",
-    "description": "",
-    "examine_text": "",
-    "properties": {
-        "is_container": ,
-        "is_drink": ,
-        "is_food": ,
-        "is_gettable": ,
-        "is_surface": ,
-        "is_weapon": ,
-        "is_wearable": 
-    }
-
-JSON structure for a character:
+Additional Guidelines:
+- Do not add any functions other than the ones specified.
+- Use the following JSON structures to guide your implementation. Ensure properties match exactly with no additions:
+  - Item Structure:
     {
-    "name": "",
-    "description": "",
-    "persona": "",
-    "location": {},
-    "goal": "",
-    "inventory": {}
-}
-JSON structure for location:
-{
-    "name": "",
-    "description": "",
-    "connections": {
-    },
-    "travel_descriptions": {
-    },
-    "blocks": {},
-    "items": {},
-    "characters": {},
-    "has_been_visited": ,
-    "commands": [],
-    "properties": {}
-}
-
-game JSON structure:
-{
-
-}
-    """
-)
-
+      "name": "",
+      "description": "",
+      "examine_text": "",
+      "properties": {
+        "is_container": false,
+        "is_drink": false,
+        "is_food": false,
+        "is_gettable": false,
+        "is_surface": false,
+        "is_weapon": false,
+        "is_wearable": false
+      }
+    }
+  - Character Structure:
+    {
+      "name": "",
+      "description": "",
+      "persona": "",
+      "location": {},
+      "goal": "",
+      "inventory": {}
+    }
+  - Location Structure:
+    {
+      "name": "",
+      "description": "",
+      "connections": {},
+      "travel_descriptions": {},
+      "blocks": {},
+      "items": {},
+      "characters": {},
+      "has_been_visited": false,
+      "commands": [],
+      "properties": {}
+    }
+"""
 user_example_prompt_one = "get [alias: procure, retrieve]"   
 user_example_prompt_two = "eat [alias: consume, ingest]"
 user_example_prompt_three = "cook"
 user_example_prompt_four = "unlock door"
+user_example_prompt_five = "Unlock"
 
 assistant_example_prompt_one = """
+import base
 class Get(base.Action):
     ACTION_NAME = "get"
     ACTION_DESCRIPTION = "Get something and add it to the inventory"
@@ -160,6 +181,7 @@ class Get(base.Action):
         self.parser.ok(description)
 """
 assistant_example_prompt_two="""
+import base
 class Eat(base.Action):
     ACTION_NAME = "eat"
     ACTION_DESCRIPTION = "Eat something"
@@ -217,7 +239,8 @@ class Eat(base.Action):
         self.parser.ok(description)
 """
 assistant_example_prompt_three = """
-    class Cook(actions.Action):
+    import base
+    class Cook(base.Action):
         ACTION_NAME = 'cook'
         ACTION_DESCRIPTION = 'Cook some food'
 
@@ -243,7 +266,8 @@ assistant_example_prompt_three = """
 
 """
 assistant_example_prompt_four = """
-    class Unlock_Door(actions.Action):
+    import base 
+    class Unlock_Door(base.Action):
     ACTION_NAME = "unlock door"
     ACTION_DESCRIPTION = "Unlock a door with a key"
     ACTION_ALIASES = []
@@ -264,6 +288,54 @@ assistant_example_prompt_four = """
         if self.door and (self.door.location == self.character.location) and (self.door.get_property("is_locked") is True) and (self.key is True):
             self.door.set_property("is_locked", False)
 """
+assistant_example_prompt_five = """
+import base
+class Unlock(base.Action):
+    ACTION_NAME = "unlock"
+    ACTION_DESCRIPTION = "Unlock something"
+
+    def __init__(self, game, command: str):
+        super().__init__(game)
+        self.character = self.parser.get_character(command)
+        self.item = self.parser.match_item(
+            command, self.parser.get_items_in_scope(self.character)
+        )
+
+    def check_preconditions(self) -> bool:
+        
+        #Preconditions:
+        #* There must be a matched item
+        #* The item must be lockable
+        #* The item must be locked
+        #* The character must have a key in their inventory
+        
+        if not self.was_matched(self.item):
+            return False
+        if not self.item.get_property("is_lockable"):
+            description = "That's not something you can unlock."
+            self.parser.fail(description)
+            return False
+        if not self.item.get_property("is_locked"):
+            description = "It's already unlocked."
+            self.parser.fail(description)
+            return False
+        if not self.character.has_key():
+            description = "You don't have a key."
+            self.parser.fail(description)
+            return False
+        return True
+
+    def apply_effects(self):
+        
+        #Effects:
+        #* Unlocks the item
+        #* Describes the unlocking
+        self.item.set_property("is_locked", False)
+        description = "{name} unlocks the {item}.".format(
+            name=self.character.name.capitalize(), item=self.item.name
+        )
+        self.parser.ok(description)
+"""
 messages = [
     {'role': 'system', 'content': system_prompt_unique_actions},
     {'role': 'user', 'content': user_prompt_one},
@@ -282,27 +354,6 @@ response = client.chat.completions.create(
 gpt_response = response.choices[0].message.content
 print(gpt_response)
 
-locations= ["Enchanted Meadow: Starting location. Where the magic feather can be found.",
-"Cottage:The initial location where the player must unlock the door and then later return to celebrate victory.",
-"Forest Clearing:The player must find a path to enter the dark forest.",
-"Dark Forest:Where the glowing mushrooms can be gathered.",
-"Ancient Well:A mysterious location where the magic feather must be dropped to receive enchanted wing armor.",
-"Moonlit Sky:Where the player must wear the enchanted wing armor and fly upwards towards the moon.",
-"Ghostly Cloud:A mystical area where the player must use glowing mushrooms to repel ghosts.",
-"Moon Dancer's Labyrinth:Where Moon Dancer is held captive by ghosts.",
-"Celestial Realm:Where Moon Dancer resides and where the player must eventually return to celebrate victory."]
-
-items = [
-    "Magic Feather: Found here, this feather is key to unlocking mystical events; Guide Stone: Offers hints to find the path leading to the Forest Clearing.",
-    "Ancient Key: Used to unlock the cottage door; Victory Banner: Appears after victory to celebrate with Moon Dancer.",
-    "Pathfinder Compass: Reveals the hidden entrance to the Dark Forest.",
-    "Glowing Mushrooms: Can be collected here, used later to repel ghosts; Forest Map: Helps navigate through the dense and dark forest.",
-    "Enchanted Bucket: Used to retrieve the enchanted wing armor from the well after dropping the feather.",
-    "Wing Armor: Acquired from the well, necessary for flight; Stardust Cloak: Enhances the ability to fly towards the moon.",
-    "Mushroom Pouch: Contains the glowing mushrooms collected earlier to repel ghosts; Spirit Lantern: Helps illuminate and navigate through the ghostly cloud.",
-    "Rescue Rope: Essential for freeing Moon Dancer from the ghosts; Labyrinth Map: Aids in navigating the complex pathways of the labyrinth.",
-    "Celestial Crown: Symbolizes the successful rescue and alliance with Moon Dancer; Festive Fireworks: Used to celebrate the victory with Moon Dancer."
-]
 actions = gpt_response.split("\n")
 
 for action in actions:
@@ -316,6 +367,8 @@ for action in actions:
     {'role': 'assistant', 'content': assistant_example_prompt_three},
     {'role': 'user', 'content': user_example_prompt_four},
     {'role': 'assistant', 'content': assistant_example_prompt_four},
+    {'role': 'user', 'content': user_example_prompt_five},
+    {'role': 'assistant', 'content': assistant_example_prompt_five},
     {'role': 'user', 'content': f"{action}"}
     ]
     response_code = client.chat.completions.create(
@@ -328,5 +381,12 @@ for action in actions:
         presence_penalty=0
     )
     gpt_response_code = response_code.choices[0].message.content
-    print(gpt_response_code)
+    try:
+        class_name = find_class_name(gpt_response_code)
+        write_code_to_file('actions', class_name, gpt_response_code)
+    except ValueError as e:
+        print(e)
+
+
+
 
