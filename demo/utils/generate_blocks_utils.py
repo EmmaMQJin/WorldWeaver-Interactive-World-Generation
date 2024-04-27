@@ -16,13 +16,61 @@ def save_json(data, filename):
 def save_code_as_str(filename):
     with open(filename , 'r') as file:  
         code_as_string = file.read()
+    return code_as_string
+
+def main():
+    print("in main")
+    background_story = """
+    Set aboard the 'Orion' space station, the game revolves around escaping the station before it self-destructs in 60 minutes. 
+    Key areas include the command center, crew quarters, engine room, and escape pods. 
+    Important items are a space suit, keycards, a toolkit, and oxygen tanks. 
+    Characters include the station's AI 'Helios', which provides hints and can control doors, and various crew members who can help or hinder the player.
+    """
+
+    action_list = """
+    pick up space suit
+    wear space suit
+    pick up oxygen tank
+    turn on oxygen tank
+    search quarters for keycard
+    take keycard
+    exit crew quarters
+    go to engine room
+    use the toolkit to repair door
+    enter command centre
+    talk to Helios
+    show keycard to Helios
+    get door code from Helios
+    use keycard on malfunctioning door
+    put in door code
+    enter escape pod area
+    take second oxygen tank
+    attach tank to space suit
+    enter escape pod
+    launch escape pod
+    """
+
+    game_locations = """
+    {
+        "Crew Quarters": "Starting location. Where the player can find the space suit, oxygen tank, and search for the keycard.",
+        "Engine Room": "Where the player must use the toolkit to repair a door.",
+        "Command Center": "Where the player can talk to Helios and get the door code.",
+        "Escape Pod Bay": "The final location where the player will launch the escape pod.",
+        "Helios Control Room": "A special room where Helios, the AI, is located.",
+        "Storage Area": "Where the player can find the second oxygen tank to attach to the space suit."
+    }
+    """
+
+
+    print(generate_blocks(background_story, action_list, game_locations))
+
 
 
 def generate_blocks(background_story, action_list, game_locations, directory = ""):
     client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
 
-    with open(directory + "data/few-shot-examples/example-character.json", 'r') as file:
-        examples = json.load(file)
+    # with open(directory + "data/few-shot-examples/example-character.json", 'r') as file:
+    #     examples = json.load(file)
 
     prompt = ("You are a helpful playthrough block generator for text adventure games. " 
                "Your job is to create blocks in some of the locations of the game so that the user needs to complete a task or puzzle to go forward. "
@@ -49,9 +97,11 @@ def generate_blocks(background_story, action_list, game_locations, directory = "
     few_shot_result5 = save_code_as_str("data/block_few_shots/example5")
     few_shot_result6 = save_code_as_str("data/block_few_shots/example6")
 
-    print("prompt result1 ", few_shot_prompt1)
-    print("prompt result6 ", few_shot_prompt6)
+    print("prompt input1 ", few_shot_prompt1)
+    print("prompt input6 ", few_shot_prompt6)
 
+    print("prompt result1 ", few_shot_result1)
+    print("prompt result6 ", few_shot_result6)
 
     messages = [
         {'role': 'system', 'content': prompt},
@@ -73,7 +123,7 @@ def generate_blocks(background_story, action_list, game_locations, directory = "
     "and the locations it has, based on this,  generate 5 blocks, with code, that are relevant. DO NOT GO OUT OF CONTEXT. "
     "Background Story: {story} "
     "Steps: {steps} "
-    "Locations: {loc} ").format(story = background_story, steps = action_list, locs = game_locations)
+    "Locations: {locs} ").format(story = background_story, steps = action_list, locs = game_locations)
 
 
     messages += [{"role": "user", "content": input_prompt}]
@@ -81,7 +131,7 @@ def generate_blocks(background_story, action_list, game_locations, directory = "
     response = client.chat.completions.create(
         model='gpt-4',
         messages=messages,
-        temperature=1,
+        temperature=0.2,
         max_tokens=2048,
         top_p=1.0,
         frequency_penalty=0,
@@ -90,3 +140,5 @@ def generate_blocks(background_story, action_list, game_locations, directory = "
     gpt_response = response.choices[0].message.content
     return gpt_response
 
+if __name__ == "__main__":
+    main()

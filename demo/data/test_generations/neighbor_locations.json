@@ -1,7 +1,7 @@
 [
     {
-        "name": "Gatekeeper Gnome's Lodge",
-        "description": "Where the player gives flowers and enters the enchanted forest.",
+        "name": "Candyland Trailhead",
+        "description": "Where the player must find the trail that will lead them to Candyland.",
         "connections": {},
         "travel_descriptions": {},
         "blocks": {},
@@ -12,20 +12,8 @@
         "properties": {}
     },
     {
-        "name": "Rainbow Bridge",
-        "description": "Where the player tosses the candy token to cross into Candyland.",
-        "connections": {},
-        "travel_descriptions": {},
-        "blocks": {},
-        "items": {},
-        "characters": {},
-        "has_been_visited": false,
-        "commands": [],
-        "properties": {}
-    },
-    {
-        "name": "Candyland",
-        "description": "The final location where the player asks the mayor for candy supply and celebrates with a candy feast.",
+        "name": "Apple Tree Grove",
+        "description": "Where the player can gather apples.",
         "connections": {},
         "travel_descriptions": {},
         "blocks": {},

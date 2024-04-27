@@ -1,10 +1,11 @@
 {
-    "Piggie's House": "Starting location. Where the player finds the wooden key and unlocks the piggy bank.",
-    "Old Boar's Hut": "Where the player meets the old boar and gives him the piggy coins.",
-    "Candyland Path": "Where the player needs to follow to reach the enchanted forest.",
-    "Spring Meadow": "Where the player picks spring flowers to give to the gatekeeper gnome.",
-    "Gatekeeper Gnome's Lodge": "Where the player gives flowers and enters the enchanted forest.",
-    "Enchanted Forest": "Where the player avoids sweet-tooth trolls and finds the rainbow bridge.",
-    "Rainbow Bridge": "Where the player tosses the candy token to cross into Candyland.",
-    "Candyland": "The final location where the player asks the mayor for candy supply and celebrates with a candy feast."
+    "Piggie's Home": "Starting location. This is where gamer pick up the backpack and start the journey.",
+    "Candyland Trailhead": "Where the player must find the trail that will lead them to Candyland.",
+    "Apple Tree Grove": "Where the player can gather apples.",
+    "River Crossing": "A stream with stepping stones the player must cross.",
+    "Goblin Bridge": "Where the player must trade apples with a goblin to receive magic candy.",
+    "Candy Mountain": "Where the player consumes the magic candy for strength, ascend the mountain, and solve the pixie's riddle to get the key.",
+    "Candy Cane Forest": "Where the player finds a candy cane stick to help cross the dangerous chasm.",
+    "Gate to Candyland": "Where the player unlocks the gate to Candyland with the key from the riddle.",
+    "Candyland": "The final location, where, upon arrival, Piggie celebrates reaching their destination."
 }
