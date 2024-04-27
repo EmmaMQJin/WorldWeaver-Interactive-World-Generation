@@ -105,6 +105,9 @@ game JSON structure:
 
 user_example_prompt_one = "get [alias: procure, retrieve]"   
 user_example_prompt_two = "eat [alias: consume, ingest]"
+user_example_prompt_three = "cook"
+user_example_prompt_four = "unlock door"
+
 assistant_example_prompt_one = """
 class Get(base.Action):
     ACTION_NAME = "get"
@@ -213,6 +216,54 @@ class Eat(base.Action):
             )
         self.parser.ok(description)
 """
+assistant_example_prompt_three = """
+    class Cook(actions.Action):
+        ACTION_NAME = 'cook'
+        ACTION_DESCRIPTION = 'Cook some food'
+
+        def __init__(self, game, command):
+            super().__init__(game)
+            self.command = command
+            self.character = self.parser.get_character(command)
+            self.food = self.parser.match_item(
+                command, self.parser.get_items_in_scope(self.character)
+            )
+
+        def check_preconditions(self) -> bool:
+            if not self.food:
+                self.parser.fail("No food found")
+            if not self.food.get_property("is_food"):
+                self.parser.fail(f"{self.food.name} is not food")
+                return False
+            return True
+
+        def apply_effects(self):
+            self.food.set_property("taste", "deliciously cooked")
+            self.parser.ok(f"You cooked the {self.food.name}")
+
+"""
+assistant_example_prompt_four = """
+    class Unlock_Door(actions.Action):
+    ACTION_NAME = "unlock door"
+    ACTION_DESCRIPTION = "Unlock a door with a key"
+    ACTION_ALIASES = []
+    
+    def __init__(self, game, command):
+        super().__init__(game)
+        self.character = self.parser.get_character(command)
+        self.key = self.is_in_inventory(self.character, key)
+        self.door = door  
+
+    def check_preconditions(self) -> bool:
+        if self.door and (self.door.location == self.character.location) and (self.door.get_property("is_locked") is True) and (self.key is True):
+            print("unlocking door")
+            return True
+        return False
+
+    def apply_effects(self):
+        if self.door and (self.door.location == self.character.location) and (self.door.get_property("is_locked") is True) and (self.key is True):
+            self.door.set_property("is_locked", False)
+"""
 messages = [
     {'role': 'system', 'content': system_prompt_unique_actions},
     {'role': 'user', 'content': user_prompt_one},
@@ -259,8 +310,12 @@ for action in actions:
     {'role': 'system', 'content': system_prompt},
     {'role': 'user', 'content': user_example_prompt_one},
     {'role': 'assistant', 'content': assistant_example_prompt_one},
-     {'role': 'user', 'content': user_example_prompt_two},
+    {'role': 'user', 'content': user_example_prompt_two},
     {'role': 'assistant', 'content': assistant_example_prompt_two},
+    {'role': 'user', 'content': user_example_prompt_three},
+    {'role': 'assistant', 'content': assistant_example_prompt_three},
+    {'role': 'user', 'content': user_example_prompt_four},
+    {'role': 'assistant', 'content': assistant_example_prompt_four},
     {'role': 'user', 'content': f"{action}"}
     ]
     response_code = client.chat.completions.create(
