@@ -1,18 +1,5 @@
 [
     {
-<<<<<<< HEAD
-        "name": "Kingdom of Cats\n",
-        "description": "In the heart of a lush and vibrant forest, lies the enigmatic Kingdom of Cats. Hidden from human eyes, this secluded realm is woven into the verdant foliage and massive ancient trees. The kingdom holds a magical city where cats of all sorts reside, with intricate pathways woven into the treetops and radiant flowers that glow in the moonlight serving as lighting. The main structures are fashioned from enormous, twisty tree trunks and interlaced branches, draped with hanging vines and bright, colorful flowers. In the center lies the royal palace, a resplendent and grand tree fortress, home to the Cat King. The air here is filled with the scent of rich soil, blooming flowers, and a hint of mystery. The Kingdom of Cats whispers tales of adventure, peril, and regality, waiting patiently for those brave enough to explore.\n",
-        "connections": {
-            "up": "Cat King's Palace",
-            "west": "Ancient Oak Library",
-            "east": "Whisker Windmill"
-        },
-        "travel_descriptions": {
-            "up": "Ascending the intricate tree pathways from the heart of the Kingdom of Cats, you move towards the Cat King's Palace. The scent of blooming flowers grows stronger as you climb higher, embracing the lofty structure that harmoniously merges with the lively forest.",
-            "west": "Walking along the wooden pathways, you leave the Kingdom of Cats towards the Ancient Oak Library. As you approach, the merriment fades into a respectful silence as the great oak welcomes you to the heart of knowledge and wisdom.",
-            "east": "Leaving the Kingdom of Cats, you head east. As you traverse the vibrant and lush forest, the royal palace slowly disappears from sight, and the Whisker Windmill comes into view. Its spinning wheel and gentle whirring sound entice you closer, whispering tales of rustic charm and humble labor."
-=======
         "name": "Cat's Cozy Corner",
         "description": "Cat's Cozy Corner is a quaint, snug little nook that feels like the epitome of comfort. Vibrant, warm hues fill the space, creating a relaxing haven. There is a content aura that radiates from the place, with an undertone of excitement hinting at the adventurous day ahead. A comfy cushion lies at the center of the room, presenting an alluring sight of tranquility. Despite the name, this corner is anything but ordinary, it is the cherished spot of the talking cat.",
         "connections": {
@@ -22,7 +9,6 @@
         "travel_descriptions": {
             "east": "From the Cat's Cozy Corner, venture eastwards, following the path where whimsy rules and twinkles, heading towards the Fairy King's Throne, a place gleaming with mysterious allure and royal elegance.",
             "out": "Leaving the warm blanket nook of the Cozy Corner, you venture into the unknown, led by the magic ribbon. Gradually, entering the different premises of Jerry's Cage - the kingdom of the imprisoned Jerry awaiting liberation."
->>>>>>> 9991833fa1874141aff200a2f1b5d7f68c747ad0
         },
         "blocks": {},
         "items": [
@@ -61,48 +47,6 @@
         "properties": {}
     },
     {
-<<<<<<< HEAD
-        "name": "Cat King's Palace",
-        "description": "This grand tree fortress is truly a sight to behold. Towering above the rest of the Kingdom, its intricate architecture and whimsical design are reminiscent of the natural beauty of the forest. Graceful, flourishing tree branches cradle the Palace, and vibrantly colored blooms decorate its exterior. Atop the palace, a magnificent crown-shaped turret overlooks the entire Kingdom.",
-        "connections": {
-            "down": "Kingdom of Cats\n"
-        },
-        "travel_descriptions": {
-            "down": "Descending from the grand heights of the Cat King's Palace, you journey back towards the Kingdom of Cats. You traverse down the intertwined branches, feeling the rhythm of the forest, the scent of rich soil and flowers escorting you back to the heart of the kingdom."
-        },
-        "blocks": {},
-        "items": [
-            {
-                "name": "Jeweled Vine",
-                "description": "A vine that hangs from the Palace's terrace, adorned with tiny, multi-colored jewels.",
-                "examine_text": "As you look closely, the vine is laden with multiple tiny gemstones that glitter in the faint sunlight. Shimmering between the spectrum of azure to hues of violet and crimson, these jewels add an exquisite charm to the natural surroundings. The vine itself is sturdy, a vibrant green twisted against itself with leaves protruding at intervals.",
-                "properties": {
-                    "is_container": false,
-                    "is_drink": false,
-                    "is_food": false,
-                    "is_gettable": false,
-                    "is_surface": false,
-                    "is_weapon": false,
-                    "is_wearable": false
-                }
-            },
-            {
-                "name": "Crown Turret Key",
-                "description": "A beautiful golden key designed to access the crown-shaped turret of the palace.",
-                "examine_text": "The golden key glitters with a magnificent shine. Its handle is ornately designed, fashioned to look like intertwining branches filled with inlaid leaves of sparkling emerald. The teeth at the end appear complex, mimicking the complicated locking mechanism of the crown turret. It's lightweight but firm in your hands.",
-                "properties": {
-                    "is_container": false,
-                    "is_drink": false,
-                    "is_food": false,
-                    "is_gettable": true,
-                    "is_surface": false,
-                    "is_weapon": false,
-                    "is_wearable": false
-                }
-            }
-        ],
-        "characters": {},
-=======
         "name": "Fairy King's Throne",
         "description": "Where the Fairy King resides and where the talking cat gets and returns the magic ribbon to complete the mission. Also where the hero celebrates in the end.",
         "connections": {
@@ -133,40 +77,11 @@
                 "inventory": {}
             }
         },
->>>>>>> 9991833fa1874141aff200a2f1b5d7f68c747ad0
         "has_been_visited": false,
         "commands": [],
         "properties": {}
     },
     {
-<<<<<<< HEAD
-        "name": "Ancient Oak Library",
-        "description": "Carved into the trunk of an enormous ancient oak, you find the knowledge repository of the kingdom. Scrolls, books, and other records collected over countless cat generations are stored on wooden shelves, illuminated by the soft light of sparkling globules. The air smells of old paper, wood, and a hint of catnip.",
-        "connections": {
-            "east": "Kingdom of Cats\n"
-        },
-        "travel_descriptions": {
-            "east": "Leaving the aura of ancient knowledge behind, you traverse back to the vibrant hues of the Kingdom of Cats from the Ancient Oak Library. The familiar sounds of life gradually replacing the silent whispers of the old books and scrolls."
-        },
-        "blocks": {},
-        "items": [
-            {
-                "name": "Aurora Scroll",
-                "description": "An old and fragile scroll, glowing faintly in multiple colors, stored in the Ancient Oak Library. It's known to hold profound knowledge about the celestial bodies.",
-                "examine_text": "Upon closer inspection, the Aurora Scroll is a massive parchment, rolled neatly and secured with a golden seal. It brims with a gentle and calming light, fading in and out, mimicking the auroras of the night sky. The inked symbols dance across the scroll, and though you can't understand them, their mystery captivates you. Despite its obvious age, it's been remarkably well-preserved. It emits the gentlest scent of catnip that makes the holder reluctant to let it go.",
-                "properties": {
-                    "is_container": false,
-                    "is_drink": false,
-                    "is_food": false,
-                    "is_gettable": false,
-                    "is_surface": false,
-                    "is_weapon": false,
-                    "is_wearable": false
-                }
-            }
-        ],
-        "characters": {},
-=======
         "name": "Jerry's Cage",
         "description": "The location the talking cat must reach using the magic ribbon to control flies and release Jerry.",
         "connections": {
@@ -199,38 +114,11 @@
                 "inventory": {}
             }
         },
->>>>>>> 9991833fa1874141aff200a2f1b5d7f68c747ad0
         "has_been_visited": false,
         "commands": [],
         "properties": {}
     },
     {
-<<<<<<< HEAD
-        "name": "Whisker Windmill",
-        "description": "A short distance from the Kingdom, lies the Whisker Windmill, a rustic structure constructed from aged wood, responsible for grinding down the grain used to make the bread for the palace\u2019s feasts. Shaped like a cat's whiskers, the windmill is a visual delight, with its hypnotic, spinning wheel and gentle whirring sound.",
-        "connections": {
-            "west": "Kingdom of Cats\n"
-        },
-        "travel_descriptions": {
-            "west": "Heading west from the Whisker Windmill, the lush greenery of the Kingdom of Cats slowly engulfs your sight. The gentle rumble of the windmill fades, slowly replaced by the soft rustle of leaves and quiet whispers of nature. With each step, the grand silhouette of the Cat King's palace comes into view, nestled amidst the verdant foliage."
-        },
-        "blocks": {},
-        "items": {
-            "name": "Whisker Wind Cog",
-            "description": "A peculiar wooden cog imprinted with symbols of the wind, essential for the working of Whisker Windmill.",
-            "examine_text": "This cog, unlike any regular piece of machinery, is both unusual and mesmerizing. Crafted from the same aged wood as the Windmill itself, it is infused with carvings of swirling wind symbols, each intricately etched. The cog fits snugly into the mechanism of the Windmill, converting the power of the wind into motion to grind the grain.",
-            "properties": {
-                "is_container": false,
-                "is_drink": false,
-                "is_food": false,
-                "is_gettable": true,
-                "is_surface": false,
-                "is_weapon": false,
-                "is_wearable": false
-            }
-        },
-        "characters": {},
-=======
         "name": "Winding Path",
         "description": "Where the magical path to Jerry's cage can be found.",
         "connections": {
@@ -342,7 +230,6 @@
                 "inventory": {}
             }
         },
->>>>>>> 9991833fa1874141aff200a2f1b5d7f68c747ad0
         "has_been_visited": false,
         "commands": [],
         "properties": {}

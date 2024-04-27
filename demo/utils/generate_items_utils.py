@@ -46,6 +46,76 @@ output_filename = 'data/extracted_items.json'  # The filename for the output JSO
 
 # ####################
 # #few shot GPT-4
+
+
+def populate_character_inventories(directory, main_character, winning_state):
+    if 'HELICONE_API_KEY' not in os.environ:
+        os.environ['HELICONE_API_KEY'] = 'sk-helicone-cp-nuxlzea-i3cuq6q-xpvlrga-pgbu4si'
+
+    client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
+
+    # Load location data
+    with open(f"data/test_generations/all_the_locations.json", 'r') as file:
+        locations_data = json.load(file)
+
+     # Load action descriptions
+    with open("test.json", 'r') as file:
+        action_descriptions = json.load(file)
+
+    # Load extracted items for few-shot learning
+    with open(f"data/extracted_items.json", 'r') as file:
+        extracted_items = json.load(file)
+    
+     # Sample of extracted items for the few-shot example
+    sample_items = json.dumps(extracted_items[:5], indent=4)
+
+    all_characters = []  # List to store all characters for all_the_characters.json
+    print("-----------ITEM GENERATION----------------")
+    print(f"Generating Inventory for all characters:")
+    # Iterate through each location and their characters
+    for location in locations_data:
+        location_actions = action_descriptions.get(location['name'], "No specific actions described.")
+        location_items_names = [item["name"] for item in location["items"]]
+        location_items = json.dumps(location_items_names, indent=4)
+        
+        for char_name, character in location["characters"].items():
+            # Determine if the character is the main character
+            goal = winning_state if character["name"] == main_character["name"] else character["goal"]
+
+            # Create a detailed prompt with location context, action list, and few-shot examples
+            prompt = f"Given the character '{char_name}', described as '{character['description']}', who must achieve the goal: '{goal}', generate suitable inventory items. Consider the actions: {location_actions}. Available items in '{location['name']}' are: {location_items}. Each item should include name, description, examine text, and properties that fit the character's role and actions in the narrative."
+            
+            messages = [
+                {'role': 'system', 'content': prompt},
+                {'role': 'user', 'content': f"Please list potential items for {char_name} based on their goal, actions, and available location items."},
+                {'role': 'assistant', 'content': sample_items},
+                {'role': 'user', 'content': f"Now, generate detailed inventory items for {char_name} based on the goal and available items."}
+            ]
+
+
+            response = client.chat.completions.create(
+                model='gpt-4',
+                messages=messages,
+                temperature=1,
+                max_tokens=2048,
+                top_p=1.0,
+                frequency_penalty=0,
+                presence_penalty=0
+            )
+        
+            inventory_items = json.loads(response.choices[0].message.content)
+            character['inventory'] = inventory_items
+            all_characters.append(character)  # Add updated character to the list
+
+    # Save the updated location data back to the same file
+    with open(f"data/test_generations/all_the_locations.json", 'w') as file:
+        json.dump(locations_data, file, indent=4)
+     # Save all characters to all_the_characters.json
+    with open(f"data/test_generations/all_the_characters.json", 'w') as file:
+        json.dump(all_characters, file, indent=4)
+
+
+
 def generate_object(directory):
     if 'HELICONE_API_KEY' not in os.environ:
         os.environ['HELICONE_API_KEY'] = 'sk-helicone-cp-nuxlzea-i3cuq6q-xpvlrga-pgbu4si'
@@ -57,7 +127,9 @@ def generate_object(directory):
      # Load location data
     with open(f"data/test_generations/all_the_locations.json", 'r') as file:
         locations = json.load(file)
-
+    # Load the action descriptions from the test.json file
+    with open("test.json", 'r') as file:
+        action_descriptions = json.load(file)
     # Load extracted items for few-shot learning
     with open(f"data/extracted_items.json", 'r') as file:
         extracted_items = json.load(file)
@@ -67,13 +139,15 @@ def generate_object(directory):
     print("-----------ITEM GENERATION----------------")
     for location in locations:
         print(f"Generating items for: {location['name']}")
+         # Retrieve action description from test.json for the current location
+        location_actions = action_descriptions.get(location['name'], "No specific actions described.")
 
-        # Prompt user for the number of new objects to create
+        # Create a detailed prompt with location context, action list, and few-shot examples
+        prompt = f"Based on the activities described for {location['name'].strip()}: '{location_actions}', generate appropriate items. Include all necessary attributes such as name, description, examine text, and properties. Follow the style and depth of the given examples."
         num_items = input(f"Enter the number of new items you want to generate for {location['name'].strip()}:")
 
-        # Create a detailed prompt with location context and few-shot examples
         messages = [
-            {'role': 'system', 'content': f'Generate {num_items} new items for the mystical setting of {location["name"].strip()}.Include all necessary attributes such as name, description, examine text, and properties. Follow the style and depth of the given examples.'},
+            {'role': 'system', 'content': prompt},
             {'role': 'user', 'content': 'Here are some examples of items:'},
             {'role': 'assistant', 'content': sample_items},
             {'role': 'user', 'content': f'Please create {num_items} new items based on these examples for the location: {location["description"].strip()}'}
@@ -98,5 +172,3 @@ def generate_object(directory):
         json.dump(locations, file, indent=4)
 
 
-# Example directory to pass
-# generate_object(directory)

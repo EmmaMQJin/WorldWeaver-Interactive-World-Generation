@@ -89,7 +89,8 @@ def main():
     dict_to_json_file(all_characters, "data/test_generations/all_the_characters.json")
 
     # #Object generation based on the generated location json
-    # generate_object("games-data")
+    generate_object("games-data")
+    populate_character_inventories("games-data", main_character, winning_state)
 
     
 
