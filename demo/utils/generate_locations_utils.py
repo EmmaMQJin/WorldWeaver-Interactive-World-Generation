@@ -1,9 +1,8 @@
 import json
 from random import randint
 from openai import OpenAI
-import tempfile
-import subprocess
 import os
+from utils.json_utils import *
 
 direction_mappings = {"up": "down",
                       "down": "up",
@@ -18,67 +17,39 @@ direction_mappings = {"up": "down",
 # e.g. shops, bars, etc.
 # have an existence flag for each category? If flag is still false, augment prompt with that category
 
-def open_vim_with_string(text):
-    with tempfile.NamedTemporaryFile(mode='w+', suffix='.txt', delete=False) as temp_file:
-        temp_file.write(text)
-    subprocess.run(['vim', temp_file.name])
-
-    with open(temp_file.name, 'r') as edited_file:
-        edited_text = edited_file.read()
-    os.unlink(temp_file.name)
-
-    return edited_text
-
-def open_vim_with_json(json_data):
-    with tempfile.NamedTemporaryFile(mode='w+', suffix='.json', delete=False) as temp_file:
-        json.dump(json_data, temp_file, indent=4)
-        temp_file.flush()
-    subprocess.run(['vim', temp_file.name])
-    with open(temp_file.name, 'r') as edited_file:
-        try:
-            edited_json = json.load(edited_file)
-        except json.JSONDecodeError:
-            print("Edited data is not valid JSON.")
-            return None
-    os.unlink(temp_file.name)
-    return edited_json
-
-def generate_central_loc_HITL(desc, example, central_loc_shots, main_character, winning_state):
-    # generate central location with user input
-    central_loc_desc = input("Do you have any thoughts on what the central location is like?\n")
-    all_descs = desc
-    if central_loc_desc:
-        all_descs += "\nAbout the central location of the game: " + central_loc_desc
-    loc_center = generate_new_location(all_descs, example, central_loc_shots, main_character, winning_state)
-    
-    # get feedback from user about central location
-    print("OK, here is the generated central location:")
-    new_name = open_vim_with_string(loc_center["name"])
-    print("Edited name: ", new_name)
-    new_desc = open_vim_with_string(loc_center["description"])
-    print("Edited description: ", new_desc)
-    loc_center["name"] = new_name
-    loc_center["description"] = new_desc
-
+def generate_central_loc_HITL(desc, formatting_example, central_loc_shots, remaining_locations):
+    central_loc_desc = input("\nDo you have any thoughts on what the central location is like?\n")
+    user_prompt = desc
+    user_prompt += f"More comments on the starting location of the game: {central_loc_desc}"
+    user_prompt += "\nList of all locations in the game: " + json.dumps(remaining_locations)
+    loc_center = pick_new_location(user_prompt, formatting_example, central_loc_shots)
+    # new_name = open_vim_with_string(loc_center["name"])
+    # print("Edited name: ", new_name)
+    # new_desc = open_vim_with_string(loc_center["description"])
+    # print("Edited description: ", new_desc)
+    # loc_center["name"] = new_name
+    # loc_center["description"] = new_desc
+    string_without_newline = loc_center["name"].replace('\n', '')
+    del remaining_locations[string_without_newline] ## TODO - put a check here
     dict_to_json_file(loc_center, "data/test_generations/init_location.json")
+    return remaining_locations
 
-def generate_neighbor_locs_HITL(all_locs, num_neib_locs, orig_loc_dict, story, neib_shots, connections_shots):
-    # A
-    # B    C     D
-    # EF   GH
-    prev_layer = all_locs[:]
-    while num_neib_locs > 0:
+def generate_neighbor_locs_HITL(num_neib_locs, central_loc_dict, story, neib_shots, connections_shots, remaining_locations, format):
+    graph = {central_loc_dict["name"] : {}}
+    prev_layer = [central_loc_dict]
+    all_locs = [central_loc_dict]
+    while len(remaining_locations) > 0:
         temp_layer = []
         for j, loc in enumerate(prev_layer):
-            if num_neib_locs == 0:
+            if len(remaining_locations) == 0:
                 break
-            if num_neib_locs <= 4:
-                n = num_neib_locs
+            if len(remaining_locations) <= 3:
+                n =  len(remaining_locations)
             else:
-                n = randint(2, 4)
-            print("Number of neighboring locations: ", n)
-            neib_locs = generate_neighboring_locations(
-                all_locs, n, loc, story, neib_shots)
+                n = randint(1, 3)
+            print("n: ", n)
+            neib_locs, remaining_locations = pick_neighboring_locations(
+                n, loc, story, neib_shots, remaining_locations, format)
             # Generate connections
             directions = ["east", "west", "north", "south", "up", "down", "in", "out"]
             for k, _ in enumerate(neib_locs):
@@ -86,54 +57,11 @@ def generate_neighbor_locs_HITL(all_locs, num_neib_locs, orig_loc_dict, story, n
                     prev_layer[j], neib_locs[k], directions, connections_shots)
                 print("direction linked: ", dir_take_out)
                 directions.remove(dir_take_out)
-                print("Took out ", dir_take_out, " | list now: ", directions)
             all_locs += neib_locs[:]
             temp_layer += neib_locs[:]
-            num_neib_locs -= n
-        print("all locs 1: ", all_locs)
         prev_layer = temp_layer[:]
-    print("all locs 2: ", all_locs)
     list_to_json_file(all_locs, "data/test_generations/all_the_locations.json")
 
-def read_file_to_str(filepath):
-    to_return = ""
-    with open(filepath, 'r', encoding='utf-8') as file:
-        lines = file.readlines()
-        file.close()
-    to_return = ''.join(lines)
-    return to_return.strip()
-
-
-def read_json_examples(filepath):
-    with open(filepath, 'r', encoding='utf-8') as file:
-        example_jsons = json.load(file)
-    return example_jsons
-
-
-def dict_to_json_file(data, filepath):
-    with open(filepath, 'w', encoding='utf-8') as file:
-        json.dump(data, file, indent=4)
-
-
-def list_to_json_file(data, filepath):
-    print("data before writing: ", data)
-    print(type(data))
-    for i, obj in enumerate(data):
-        temp_path = f"data/test_generations/obj{i}.json"
-        with open(temp_path, 'w') as tempfile:
-            json.dump(obj, tempfile, indent=4)
-        print(obj)
-        print(type(obj))
-
-    with open(filepath, 'w', encoding='utf-8') as file:
-        json.dump(data, file, indent=4)
-
-
-def extract_keys_from_list(list_json_objs, key):
-    to_return = []
-    for json_obj in list_json_objs:
-        to_return.append(json_obj[key])
-    return to_return
 
 def create_new_location_shot(story, output):
     user = {"role": "user", "content": story}
@@ -141,17 +69,24 @@ def create_new_location_shot(story, output):
 
     return [user, assistant]
 
-def generate_new_location(story, example, shots, main_character, winning_state):
+def pick_new_location(user_prompt, formatting_example, shots):
     client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
     sys_prompt = f"""You are a helpful location generator for building a text adventure game.
-The player (main character) of this game is {main_character}, and their goal is: {winning_state}.
-Given the background story of the game from the user, what you do think the central location of the game should be?
-Give the name and description for the location in a JSON, formatted like the examples below:
+
+The user will give you the background story of the game and a JSON of all locations that should be in the game.
+The keys in the JSON are names of the locations, and the values are what the player needs to do in each location.
+Your job is to choose the most logical starting location from the JSON, and generate the appropriate description for it.
+The description of the location should focus on the background story of the location; don't mention what the user needs to do in the location at all.
+You can mention what the location looks like and contains, but don't mention its neighboring locations at all.
+Remember, you are CHOOSING a location from the JSON provided, not inventing a new one. The name of the location you choose should be
+kept exactly the same as how it is in the JSON provided by the user.
+Format your output like the example below:
+{json.dumps(formatting_example)}
+Remember to only populate the name, description, and set has_been_visited to false. Leave all values to the other keys empty.
 """
-    sys_prompt += json.dumps(example)
     messages = [{"role": "system", "content": sys_prompt}]
     messages += shots
-    messages += [{"role": "user", "content": story}]
+    messages += [{"role": "user", "content": user_prompt}]
     completion = client.chat.completions.create(
         model="gpt-4",
         messages=messages
@@ -167,7 +102,7 @@ def create_neib_locs_shot(orig_loc, story, n, output):
 Location to generate neighboring locations for:
 """
     user_prompt += json.dumps(orig_loc)
-    user_prompt += f"\nNumber of neighboring locations to generate: {n}"
+    user_prompt += f"\nNumber of neighboring locations to pick: {n}"
     assistant_output = json.dumps(output)
     user = {"role": "user", "content": user_prompt}
     assistant = {"role": "assistant", "content": assistant_output}
@@ -175,18 +110,26 @@ Location to generate neighboring locations for:
     return [user, assistant]
 
 
-def generate_neighboring_locations(existing_locs, n, orig_loc_dict, story, shots):
+def pick_neighboring_locations(n, orig_loc_dict, story, shots, existing_locs, format):
+            # neib_locs, remaining_locations = pick_neighboring_locations(
+            #     loc, story, neib_shots, remaining_locations)
     client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
     sys_prompt = f"""You are a helpful location generator for building a text adventure game.
-Given the background story of the game, a location that is already in the game, and the number of neighboring locations to generate from the user,
-generate logical neighboring locations of the location given and output as a list of JSON objects.
-The locations that already exist in the game are: {existing_locs}. DO NOT generate locations that have the same name or a similar name as an existing location.
+
+The user will give you the background story of the game, the location to pick neighbors for, and the number of neighboring locations to pick.
+Your job is to choose the most logical neighboring locations of the location given from this JSON: {json.dumps(existing_locs)}, and generate the appropriate descriptions for each neighboring location.
+The description of each location should focus on the background story of the location; don't mention what the user needs to do in the location at all.
+Remember, you are CHOOSING locations from the JSON above, not inventing new ones. The names of the locations you choose should be
+kept exactly the same as how they are in the JSON above.
+Output the neighbors as a list of JSON objects, where each JSON object is formatted as below:
+{json.dumps(format)}
+Remember to only populate the name, description, and set has_been_visited to false. Leave all values to the other keys empty.
 """
     user_prompt = f"""Background story: {story}
 Location to generate neighboring locations for:
 """
     user_prompt += json.dumps(orig_loc_dict)
-    user_prompt += f"\nNumber of neighboring locations to generate: {n}"
+    user_prompt += f"\nNumber of neighboring locations to pick: {n}"
     messages = [{"role": "system", "content": sys_prompt}]
     messages += shots
     messages += [{"role": "user", "content": user_prompt}]
@@ -195,11 +138,16 @@ Location to generate neighboring locations for:
         messages=messages
     )
     model_output = completion.choices[0].message.content
-    print(model_output)
     model_output_list = json.loads(model_output)
     dict_to_json_file(model_output_list,
                       "data/test_generations/neighbor_locations.json")
-    return model_output_list
+    for loc in model_output_list:
+        print("Picked neighboring location: ", loc["name"])
+        if loc["name"] not in existing_locs:
+            print("ERROR, {name} not in remaining_locations".format(name=loc["name"]))
+        else:
+            del existing_locs[loc["name"]]
+    return model_output_list, existing_locs
 
 
 def create_connections_shot(loc1, loc2, output):
@@ -215,7 +163,8 @@ def generate_connections(loc1, loc2, dirs, shots):
     sys_prompt = f"""You are a helpful map generator for building a text adventure game.
 Now, given the name and description of two locations (the first one is location 1, the second one is location 2)
 from the user, determine which direction (pick from THIS LIST: {dirs}) the player should go to get from location 1 to location 2.
-DO NOT pick a direction that is not in the list.
+Remember, the only valid directions are ones in this list: {dirs}; DO NOT pick a direction that is not in the list, even if it makes logical sense.
+The direction you choose should be exactly as it shows up in {dirs}, not a character different.
 Pick the direction that is the most logically coherent with the location descriptions.
 Output the direction and a description of how the player moves from location 1 to location 2 as a JSON object.
 Then, generate another description of how the player moves from location 2 to location 1 (i.e. in the opposite ).
@@ -236,10 +185,8 @@ Note that the values of the "direction" key of the 2 JSON objects should be oppo
     model_output_list = json.loads(model_output)
     direction1, desc1 = model_output_list[0]["direction"].strip(
     ), model_output_list[0]["travel description"]
-    direction2, desc2 = model_output_list[1]["direction"].strip(
+    _, desc2 = model_output_list[1]["direction"].strip(
     ), model_output_list[1]["travel description"]
-    if direction_mappings[direction1] != direction2:
-        print(direction1, direction2)
     loc1["connections"][direction1] = loc2_name
     loc2["connections"][direction_mappings[direction1]] = loc1_name
     loc1["travel_descriptions"][direction1] = desc1
@@ -252,6 +199,8 @@ def main():
     story_insidetemple = read_file_to_str("data/story-insidetemple.txt")
     story_lake = read_file_to_str("data/story-lake.txt")
 
+    location_format = read_json_examples(
+        "data/location-empty.json")
     central_loc_lake_obj = read_json_examples(
         "data/few-shot-examples/central-loc-lake.json")
     neib_locs_lake_5_list = read_json_examples(
@@ -290,14 +239,14 @@ def main():
 
 
     # Generate the central location
-    loc_center = generate_new_location(
+    loc_center = pick_new_location(
         story_cyberpunk, neib_locs_insidetemple_3_list[0], central_loc_shots)
     print("Central location: ", loc_center)
     # Generate first-round of neighbors
     num_locs = randint(3, 7)
     print("Number of neighboring locations: ", num_locs)
-    neib_locs = generate_neighboring_locations(
-        [loc_center], num_locs, loc_center, story_cyberpunk, neib_locs_shots)
+    neib_locs = pick_neighboring_locations(
+        [loc_center], num_locs, loc_center, story_cyberpunk, neib_locs_shots, location_format)
 
     # Generate connections for first-round of neighbors
     directions = ["east", "west", "north", "south", "up", "down", "in", "out"]
@@ -317,7 +266,7 @@ def main():
         if num_locs == 0:
             continue
         existing_loc_names = extract_keys_from_list(all_locs, "name")
-        neib_neib_locs = generate_neighboring_locations(existing_loc_names, num_locs, neib_locs[j], story_cyberpunk,
+        neib_neib_locs = pick_neighboring_locations(existing_loc_names, num_locs, neib_locs[j], story_cyberpunk,
                                                         neib_locs_shots)
         directions = ["east", "west", "north",
                       "south", "up", "down", "in", "out"]
