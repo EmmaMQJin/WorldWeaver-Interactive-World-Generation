@@ -1,0 +1,12 @@
+pack suitcase 
+leave home
+take bus to airport
+get boarding pass
+pass the security check
+board the plane
+fly to NYC
+get off the plane
+collect suitcase
+exit airport
+take a taxi
+arrive in NYC

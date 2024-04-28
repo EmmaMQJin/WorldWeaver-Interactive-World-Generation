@@ -1,6 +1,7 @@
 from utils.generate_characters_utils import *
 from utils.generate_items_utils import *
 from utils.generate_locations_utils import *
+from utils.generate_actions_utils import *
 from utils.utils import *
 import copy
 
@@ -63,6 +64,7 @@ def main():
     winning_state = input("\nWhat do you want the winning state of the game to be?\n")
     print("OK. The winning state of the game will be: ", winning_state)
     actions_list = generate_actions_playthrough(background_story, initial_state, winning_state)
+    write_list_to_file(actions_list.strip().split("\n"), "data/actions.txt")
     locations_to_use = generate_locations_to_use(background_story, actions_list)
     remaining_locations = copy.deepcopy(locations_to_use)
     dict_to_json_file(locations_to_use, "test.json")
@@ -91,6 +93,7 @@ def main():
     # #Object generation based on the generated location json
     generate_object("games-data")
     populate_character_inventories("games-data", main_character, winning_state)
+
 
     
 
