@@ -138,6 +138,7 @@ Location to generate neighboring locations for:
         messages=messages
     )
     model_output = completion.choices[0].message.content
+    print(model_output)
     model_output_list = json.loads(model_output)
     dict_to_json_file(model_output_list,
                       "data/test_generations/neighbor_locations.json")

@@ -142,6 +142,7 @@ Remember to leave the location and inventory of each character empty.
         print("Received NPC Content:", npc_content)
         try:
             npc_json = json.loads(npc_content)
+            npc_json["location"] = location_name
             npc_dict[npc_json["name"]] = npc_json
             all_characters.append(npc_json)
             

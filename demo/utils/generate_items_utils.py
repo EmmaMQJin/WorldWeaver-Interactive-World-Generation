@@ -55,15 +55,15 @@ def populate_character_inventories(directory, main_character, winning_state):
     client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
 
     # Load location data
-    with open(f"data/test_generations/all_the_locations.json", 'r') as file:
+    with open(f"../data/test_generations/all_the_locations.json", 'r') as file:
         locations_data = json.load(file)
 
      # Load action descriptions
-    with open("test.json", 'r') as file:
+    with open("../test.json", 'r') as file:
         action_descriptions = json.load(file)
 
     # Load extracted items for few-shot learning
-    with open(f"data/extracted_items.json", 'r') as file:
+    with open(f"../data/extracted_items.json", 'r') as file:
         extracted_items = json.load(file)
     
      # Sample of extracted items for the few-shot example
@@ -75,7 +75,7 @@ def populate_character_inventories(directory, main_character, winning_state):
     # Iterate through each location and their characters
     for location in locations_data:
         location_actions = action_descriptions.get(location['name'], "No specific actions described.")
-        location_items_names = [item["name"] for item in location["items"]]
+        location_items_names = [item_name for item_name in location["items"]]
         location_items = json.dumps(location_items_names, indent=4)
         
         for char_name, character in location["characters"].items():
@@ -104,14 +104,20 @@ def populate_character_inventories(directory, main_character, winning_state):
             )
         
             inventory_items = json.loads(response.choices[0].message.content)
-            character['inventory'] = inventory_items
+            items_dict = {}
+            # Append generated items to the location's 'items' field
+            
+            for i, item_key in enumerate(inventory_items):
+                items_dict[inventory_items[i]['name']] = inventory_items[i]
+
+            character['inventory'] = items_dict
             all_characters.append(character)  # Add updated character to the list
 
     # Save the updated location data back to the same file
-    with open(f"data/test_generations/all_the_locations.json", 'w') as file:
+    with open(f"../data/test_generations/all_the_locations.json", 'w') as file:
         json.dump(locations_data, file, indent=4)
      # Save all characters to all_the_characters.json
-    with open(f"data/test_generations/all_the_characters.json", 'w') as file:
+    with open(f"../data/test_generations/all_the_characters.json", 'w') as file:
         json.dump(all_characters, file, indent=4)
 
 
@@ -125,13 +131,13 @@ def generate_object(directory):
 
 
      # Load location data
-    with open(f"data/test_generations/all_the_locations.json", 'r') as file:
+    with open(f"../data/test_generations/all_the_locations.json", 'r') as file:
         locations = json.load(file)
     # Load the action descriptions from the test.json file
-    with open("test.json", 'r') as file:
+    with open("../test.json", 'r') as file:
         action_descriptions = json.load(file)
     # Load extracted items for few-shot learning
-    with open(f"data/extracted_items.json", 'r') as file:
+    with open(f"../data/extracted_items.json", 'r') as file:
         extracted_items = json.load(file)
     
      # Sample of extracted items for the few-shot example
@@ -150,13 +156,13 @@ def generate_object(directory):
             {'role': 'system', 'content': prompt},
             {'role': 'user', 'content': 'Here are some examples of items:'},
             {'role': 'assistant', 'content': sample_items},
-            {'role': 'user', 'content': f'Please create {num_items} new items based on these examples for the location: {location["description"].strip()}'}
+            {'role': 'user', 'content': f'Please create a list of {num_items} new items based on these examples for the location: {location["description"].strip()}'}
         ]
  
         response = client.chat.completions.create(
                 model='gpt-4',
                 messages=messages,
-                temperature=1,
+                temperature=0.8,
                 max_tokens=2048,
                 top_p=1.0,
                 frequency_penalty=0,
@@ -164,11 +170,30 @@ def generate_object(directory):
             )
         gpt_response = response.choices[0].message.content
         new_items = json.loads(gpt_response)
+        items_dict = {}
         # Append generated items to the location's 'items' field
-        location['items'] = new_items
+        print("NEW ITEMS: \n", new_items)
+        for i, item_key in enumerate(new_items):
+            print(i, item_key)
+            new_items[i]['location'] = location['name']
+            items_dict[new_items[i]['name']] = new_items[i]
+
+        location['items'] = items_dict
 
          # Save the updated location data back to the same file
-    with open(f"data/test_generations/all_the_locations.json", 'w') as file:
+    with open(f"../data/test_generations/all_the_locations.json", 'w') as file:
         json.dump(locations, file, indent=4)
 
 
+# #Object generation based on the generated location json
+main_character = {
+        "name": "Serenity",
+        "description": "In a calming, serene world, Serenity is a tranquil entity. Known for her calm demeanor, she embodies peace and tranquility. With her soft voice and gentle touch, she exerts a soothing aura that radiates restfulness. Often found meditating or reading under a sprawling tree, she is considered by many to be the epitome of relaxation.",
+        "persona": "I am Serenity. They say my presence is like a gentle melody, soothing and calm. I believe in the rhythm of nature and the power of stillness to bring about harmony and balance. I find joy in quiet moments, in watching the sunset, listening to the rustling leaves, and in the peace that solitude brings.",
+        "location": {},
+        "goal": "",
+        "inventory": {}
+    }
+winning_state = "Serenity finds peace"
+generate_object(directory)
+populate_character_inventories(directory, main_character, winning_state)
