@@ -398,9 +398,9 @@ class Unlock(base.Action):
         except ValueError as e:
             print(e)
 
-action_list = read_from_file("data/actions.txt")
-print(action_list)
-generate_action_class(action_list)
+# action_list = read_from_file("data/actions.txt")
+# print(action_list)
+# generate_action_class(action_list)
 
 # find magic feather
 # unlock cottage door

@@ -55,7 +55,7 @@ def populate_character_inventories(directory, main_character, winning_state):
     client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
 
     # Load location data
-    with open(f"../data/test_generations/all_the_locations.json", 'r') as file:
+    with open(f"data/test_generations/all_the_locations.json", 'r') as file:
         locations_data = json.load(file)
 
      # Load action descriptions
@@ -63,15 +63,13 @@ def populate_character_inventories(directory, main_character, winning_state):
         action_descriptions = json.load(file)
 
     # Load extracted items for few-shot learning
-    with open(f"../data/extracted_items.json", 'r') as file:
+    with open(f"data/extracted_items.json", 'r') as file:
         extracted_items = json.load(file)
     
      # Sample of extracted items for the few-shot example
     sample_items = json.dumps(extracted_items[:5], indent=4)
 
     all_characters = []  # List to store all characters for all_the_characters.json
-    print("-----------ITEM GENERATION----------------")
-    print(f"Generating Inventory for all characters:")
     # Iterate through each location and their characters
     for location in locations_data:
         location_actions = action_descriptions.get(location['name'], "No specific actions described.")
@@ -114,10 +112,10 @@ def populate_character_inventories(directory, main_character, winning_state):
             all_characters.append(character)  # Add updated character to the list
 
     # Save the updated location data back to the same file
-    with open(f"../data/test_generations/all_the_locations.json", 'w') as file:
+    with open(f"data/test_generations/all_the_locations.json", 'w') as file:
         json.dump(locations_data, file, indent=4)
      # Save all characters to all_the_characters.json
-    with open(f"../data/test_generations/all_the_characters.json", 'w') as file:
+    with open(f"data/test_generations/all_the_characters.json", 'w') as file:
         json.dump(all_characters, file, indent=4)
 
 
@@ -131,26 +129,27 @@ def generate_object(directory):
 
 
      # Load location data
-    with open(f"../data/test_generations/all_the_locations.json", 'r') as file:
+    with open(f"data/test_generations/all_the_locations.json", 'r') as file:
         locations = json.load(file)
     # Load the action descriptions from the test.json file
-    with open("../test.json", 'r') as file:
+    with open("test.json", 'r') as file:
         action_descriptions = json.load(file)
     # Load extracted items for few-shot learning
-    with open(f"../data/extracted_items.json", 'r') as file:
+    with open(f"data/extracted_items.json", 'r') as file:
         extracted_items = json.load(file)
     
      # Sample of extracted items for the few-shot example
     sample_items = json.dumps(extracted_items[:5], indent=4)
-    print("-----------ITEM GENERATION----------------")
     for location in locations:
-        print(f"Generating items for: {location['name']}")
+        print(f"\nNow, let's generate items in the location {location['name']}......\n")
          # Retrieve action description from test.json for the current location
         location_actions = action_descriptions.get(location['name'], "No specific actions described.")
 
         # Create a detailed prompt with location context, action list, and few-shot examples
         prompt = f"Based on the activities described for {location['name'].strip()}: '{location_actions}', generate appropriate items. Include all necessary attributes such as name, description, examine text, and properties. Follow the style and depth of the given examples."
-        num_items = input(f"Enter the number of new items you want to generate for {location['name'].strip()}:")
+        num_items = input(f"Enter the number of new items you want to generate for the location {location['name'].strip()}:\n")
+        if num_items == 0:
+            continue
 
         messages = [
             {'role': 'system', 'content': prompt},
@@ -172,28 +171,26 @@ def generate_object(directory):
         new_items = json.loads(gpt_response)
         items_dict = {}
         # Append generated items to the location's 'items' field
-        print("NEW ITEMS: \n", new_items)
         for i, item_key in enumerate(new_items):
-            print(i, item_key)
             new_items[i]['location'] = location['name']
             items_dict[new_items[i]['name']] = new_items[i]
 
         location['items'] = items_dict
 
          # Save the updated location data back to the same file
-    with open(f"../data/test_generations/all_the_locations.json", 'w') as file:
+    with open(f"data/test_generations/all_the_locations.json", 'w') as file:
         json.dump(locations, file, indent=4)
 
 
 # #Object generation based on the generated location json
-main_character = {
-        "name": "Serenity",
-        "description": "In a calming, serene world, Serenity is a tranquil entity. Known for her calm demeanor, she embodies peace and tranquility. With her soft voice and gentle touch, she exerts a soothing aura that radiates restfulness. Often found meditating or reading under a sprawling tree, she is considered by many to be the epitome of relaxation.",
-        "persona": "I am Serenity. They say my presence is like a gentle melody, soothing and calm. I believe in the rhythm of nature and the power of stillness to bring about harmony and balance. I find joy in quiet moments, in watching the sunset, listening to the rustling leaves, and in the peace that solitude brings.",
-        "location": {},
-        "goal": "",
-        "inventory": {}
-    }
-winning_state = "Serenity finds peace"
-generate_object(directory)
-populate_character_inventories(directory, main_character, winning_state)
+# main_character = {
+#         "name": "Serenity",
+#         "description": "In a calming, serene world, Serenity is a tranquil entity. Known for her calm demeanor, she embodies peace and tranquility. With her soft voice and gentle touch, she exerts a soothing aura that radiates restfulness. Often found meditating or reading under a sprawling tree, she is considered by many to be the epitome of relaxation.",
+#         "persona": "I am Serenity. They say my presence is like a gentle melody, soothing and calm. I believe in the rhythm of nature and the power of stillness to bring about harmony and balance. I find joy in quiet moments, in watching the sunset, listening to the rustling leaves, and in the peace that solitude brings.",
+#         "location": {},
+#         "goal": "",
+#         "inventory": {}
+#     }
+# winning_state = "Serenity finds peace"
+# generate_object(directory)
+# populate_character_inventories(directory, main_character, winning_state)

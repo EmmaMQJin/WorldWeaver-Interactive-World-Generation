@@ -81,10 +81,9 @@ Output the character in JSON format, like this:
     return json.loads(gpt_response)
 
 def generate_npc_in_location(location_name, location_purpose, background_story, main_character, character_format, stories, all_characters):
-    print("-----------NPC GENERATION----------------")
     default_num_npc = 1
     try:
-        num_npc = int(input(f"\nHow many NPC characters do you want to generate in the location {location_name}? Choose a number between 0-4 (Default value is 1):\n "))
+        num_npc = int(input(f"\nHow many NPC characters do you want to generate in the location {location_name}?\nChoose a number between 0-4 (Default value is 1):\n"))
         if num_npc < 0 or num_npc > 4:
             num_npc = default_num_npc
             print(f"Invalid input. Using default value: {default_num_npc}")
@@ -92,7 +91,7 @@ def generate_npc_in_location(location_name, location_purpose, background_story, 
         num_npc = default_num_npc
         print(f"Invalid input. Using default value: {default_num_npc}")
     
-    print(f"OK, the number of NPCs generated in {location_name} will be {num_npc}.\n")
+    print(f"\nOK, the number of NPCs generated in {location_name} will be {num_npc}.\n")
 
     client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
 
@@ -139,7 +138,7 @@ Remember to leave the location and inventory of each character empty.
         )
 
         npc_content = response.choices[0].message.content
-        print("Received NPC Content:", npc_content)
+        print("Generated NPC: \n", npc_content)
         try:
             npc_json = json.loads(npc_content)
             npc_json["location"] = location_name

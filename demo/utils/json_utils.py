@@ -49,14 +49,10 @@ def dict_to_json_file(data, filepath):
 
 
 def list_to_json_file(data, filepath):
-    print("data before writing: ", data)
-    print(type(data))
     for i, obj in enumerate(data):
         temp_path = f"data/test_generations/obj{i}.json"
         with open(temp_path, 'w') as tempfile:
             json.dump(obj, tempfile, indent=4)
-        print(obj)
-        print(type(obj))
 
     with open(filepath, 'w', encoding='utf-8') as file:
         json.dump(data, file, indent=4)
