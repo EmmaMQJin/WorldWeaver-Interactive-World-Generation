@@ -11,36 +11,38 @@
             "out": "Leaving the warm blanket nook of the Cozy Corner, you venture into the unknown, led by the magic ribbon. Gradually, entering the different premises of Jerry's Cage - the kingdom of the imprisoned Jerry awaiting liberation."
         },
         "blocks": {},
-        "items": [
-            {
-                "name": "King's Crystal Collar",
-                "description": "A dazzling collar adorned with an array of shimmering crystals, said to be worn by the Cat King himself.",
-                "examine_text": "The collar is woven from silver threads, and adorned with incandescent crystals. The crystals are a vivid blue, like the deepest ocean or the infinite night sky. Smaller diamonds are woven intricately into the design, reflecting light and making the collar sparkle with every movement. They say this collar contains the accumulated wisdom of past Cat Kings.",
+        "items": {
+            "Comfy Cushion": {
+                "name": "Comfy Cushion",
+                "description": "A large, plush cushion in a vibrant color, it's the centerpiece of the cozy corner.",
+                "examine_text": "The cushion seems unusually large, big enough to envelop whoever sits on it. Its material is soft and plush, making it feel like a piece of heaven. The color is vibrant, adding a splash of joy to the room. You imagine it to be the perfect spot for the talking cat to rest and watch the world go by.",
                 "properties": {
                     "is_container": false,
                     "is_drink": false,
                     "is_food": false,
                     "is_gettable": false,
-                    "is_surface": false,
-                    "is_weapon": false,
-                    "is_wearable": true
-                }
-            },
-            {
-                "name": "Moonlight Blossom",
-                "description": "A large, radiant flower that blooms only under the moonlight. Its illumination brings light to the entire Kingdom of Cats.",
-                "examine_text": "The blossom is radiant and wide, with a mystical ethereal glow. Each petal is large, delicate, and translucent, somehow retaining the day's sunlight to release it during the night. Its light is tranquil, enveloping the surroundings in a calming, soft luminescence. Its scent is sweet, calming and seeping into every corner of the kingdom.",
-                "properties": {
-                    "is_container": false,
-                    "is_drink": false,
-                    "is_food": true,
-                    "is_gettable": true,
                     "is_surface": true,
                     "is_weapon": false,
                     "is_wearable": false
-                }
+                },
+                "location": "Cat's Cozy Corner"
+            },
+            "Chest of Memories": {
+                "name": "Chest of Memories",
+                "description": "A small wooden chest filled with various trinkets and memorabilia.",
+                "examine_text": "The chest is small but sturdy, with various carvings etched into the wood. Upon opening, you see a variety of items - a shell from a faraway beach, a feather from a rare bird, and many others. Each item seems to carry a story, hinting at the adventures of the talking cat.",
+                "properties": {
+                    "is_container": true,
+                    "is_drink": false,
+                    "is_food": false,
+                    "is_gettable": false,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": false
+                },
+                "location": "Cat's Cozy Corner"
             }
-        ],
+        },
         "characters": {},
         "has_been_visited": false,
         "commands": [],
@@ -58,7 +60,38 @@
             "east": "From the grandeur of the Fairy King's Throne, you venture east towards the Winding Path. The landscape transforms from the regal beauty of the fairy realm to the soothing enchantment of the forest path. The sounds of the forest waft past, carrying mysterious allure and the promise of a magical journey ahead."
         },
         "blocks": {},
-        "items": {},
+        "items": {
+            "Fairy King's Crown": {
+                "name": "Fairy King's Crown",
+                "description": "A dazzling crown that rests on the head of the Fairy King. It is embedded with precious stones.",
+                "examine_text": "The crown, elaborate and stately, sits atop the king's head as a symbol of his authority. Each jewel is carefully placed to form a pattern, casting a range of colors when it reflects light. The metalwork is intricate, beautiful, showing off the craftsman's skill. Touching it is not allowed.",
+                "properties": {
+                    "is_container": false,
+                    "is_drink": false,
+                    "is_food": false,
+                    "is_gettable": false,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": true
+                },
+                "location": "Fairy King's Throne"
+            },
+            "Magic Ribbon": {
+                "name": "Magic Ribbon",
+                "description": "The magic ribbon is a key item in the quest. The talking cat gets it and returns it to the Fairy King.",
+                "examine_text": "The ribbon is a beautiful shade of midnight blue, almost iridescent, as if it's made from a piece of the night sky. Soft to touch, it emits a faint glow which is both enchanting and mysterious. You can feel the magic pulsing from it. This is not an object to be trifled with.",
+                "properties": {
+                    "is_container": false,
+                    "is_drink": false,
+                    "is_food": false,
+                    "is_gettable": true,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": true
+                },
+                "location": "Fairy King's Throne"
+            }
+        },
         "characters": {
             "Fairy King Oberon": {
                 "name": "Fairy King Oberon",
@@ -66,7 +99,36 @@
                 "persona": "As king, Oberon holds a deep sense of responsibility for maintaining harmony within his domain. He possesses a gentle yet stern demeanor, and his twinkling eyes are filled with kindness mixed with a glint of playfulness.",
                 "location": {},
                 "goal": "Provide the magic ribbon to Whisper, the talking cat, to complete its mission and celebrate the victory in the end.",
-                "inventory": {}
+                "inventory": {
+                    "Fairy King's Crown": {
+                        "name": "Fairy King's Crown",
+                        "description": "A dazzling crown made up of iridescent fairy dust and dewdrops, it signifies Oberon's rule over the fairy kingdom.",
+                        "examine_text": "As you draw closer, the crown seems to shimmer in the light, throwing tiny rainbows onto surrounding surfaces. The dewdrops flawlessly cling to the wreath of fairy dust, catching and reflecting light. It's smaller than a human-sized crown perhaps, but it radiates an undeniable air of regality.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drink": false,
+                            "is_food": false,
+                            "is_gettable": false,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": true
+                        }
+                    },
+                    "Magic Ribbon": {
+                        "name": "Magic Ribbon",
+                        "description": "A silken ribbon imbued with fairy magic, it serves as passkeys in the fairy world and can imbue non-magical beings with temporary magical abilities.",
+                        "examine_text": "The Magic Ribbon sparkles under the light with hues of the whole spectrum dancing on its surface. It's delicate yet resilient to touch. The moment you set your eyes on it, you can sense the powerful magic residing within this seemingly simple item.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drink": false,
+                            "is_food": false,
+                            "is_gettable": true,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": true
+                        }
+                    }
+                }
             },
             "Chatterbox": {
                 "name": "Chatterbox",
@@ -74,7 +136,78 @@
                 "persona": "Chatterbox is a peculiar companion with an even stranger ability - he can talk. He is the comical spanner in the works, a reliable source of odd wisdom and humor in various situations of the game. Chatterbox often acts as a guide, helping characters navigate the fairy world's secrets, all the while entertaining with his feline wit.",
                 "location": {},
                 "goal": "To provide valuable hints and guidance to the player during their quests in the fairy kingdom and ensure the celebration happens at the Fairy King's Throne.",
-                "inventory": {}
+                "inventory": {
+                    "Chatterbox's Crystal Collar": {
+                        "name": "Chatterbox's Crystal Collar",
+                        "description": "A shimmering crystal collar, capturing the hues of azure and amethyst, much like Chatterbox's fur.",
+                        "examine_text": "Upon closer inspection, the collar appears to be made of fine, light-reflecting crystals, interspersed with silver clasps. The gems seem to whisper subtle hints when you draw closer.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drink": false,
+                            "is_food": false,
+                            "is_gettable": true,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": true
+                        }
+                    },
+                    "Forest Map": {
+                        "name": "Forest Map",
+                        "description": "A worn map of the enchanted forest featuring markings and annotated hints.",
+                        "examine_text": "Unfolding the map reveals meticulous details of the enchanted forest, complete with paths, landmarks and incomprehensible symbols that, presumably, Chatterbox understands.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drink": false,
+                            "is_food": false,
+                            "is_gettable": true,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": false
+                        }
+                    },
+                    "Silver-Thread Whiskers": {
+                        "name": "Silver-Thread Whiskers",
+                        "description": "Chatterbox's surprisingly firm and lengthy whiskers, imbued with silver threads that sparkle under the fairy lights.",
+                        "examine_text": "A closer look at the whiskers reveals they are not ordinary; they are woven with thin silver threads and quiver on their own, discerning truths unseen by mortal eyes.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drink": false,
+                            "is_food": false,
+                            "is_gettable": false,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": false
+                        }
+                    },
+                    "Ancient Fairy Parchment": {
+                        "name": "Ancient Fairy Parchment",
+                        "description": "A scroll of ancient fairy tales and legends, left behind at the Fairy King's Throne.",
+                        "examine_text": "The parchment, though delicate, holds tales of ages past. Faint illustrations depict fae circles, ethereal dances, and a crisis that the fairy kingdom once faced.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drink": false,
+                            "is_food": false,
+                            "is_gettable": true,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": false
+                        }
+                    },
+                    "Fairy King's Crown": {
+                        "name": "Fairy King's Crown",
+                        "description": "The imposing crown of the Fairy King, studded with multi-colored gemstones.",
+                        "examine_text": "The magnificently crafted crown boasts a diverse array of gemstones that dance under the light. The crown gives off a sense of authority and power that demands respect.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drink": false,
+                            "is_food": false,
+                            "is_gettable": false,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": true
+                        }
+                    }
+                }
             }
         },
         "has_been_visited": false,
@@ -95,7 +228,38 @@
             "east": "From Jerry's Cage, you make your way towards the unknown. Following different signs and cryptic instructions, you finally reach the Safe House. It gives a strong aura of security and safety, enough for the little mouse to let its guard down."
         },
         "blocks": {},
-        "items": {},
+        "items": {
+            "Magic Ribbon": {
+                "name": "Magic Ribbon",
+                "description": "A seemingly ordinary ribbon that shimmers with a strange, otherworldly glow.",
+                "examine_text": "Upon closer inspection, the ribbon is not so ordinary after all. The colors on it shift and change in the light, casting a mesmerizing, iridescent glow. According to legends, this ribbon has the power to control flies, a useful tool for a talking cat.",
+                "properties": {
+                    "is_container": false,
+                    "is_drink": false,
+                    "is_food": false,
+                    "is_gettable": true,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": true
+                },
+                "location": "Jerry's Cage"
+            },
+            "Mysterious Cage Key": {
+                "name": "Mysterious Cage Key",
+                "description": "A tiny, intricate key with unknown origins.",
+                "examine_text": "The key is small, delicate, and made of an unusual metal that you can't quite identify. Its bow is ornately decorated with elaborate carvings that appear to tell a story. The bit is oddly shaped, hinting that it might be used to unlock a very specific lock - perhaps a cage's.",
+                "properties": {
+                    "is_container": false,
+                    "is_drink": false,
+                    "is_food": false,
+                    "is_gettable": true,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": false
+                },
+                "location": "Jerry's Cage"
+            }
+        },
         "characters": {
             "Jerry": {
                 "name": "Jerry",
@@ -103,7 +267,51 @@
                 "persona": "Preternaturally wise and unexpectedly verbose, Jerry disentangles the cosmic tapestries of destiny and time with mesmerizing tales from epochs past and glimpses of futures yet unknown. He carries a solemn duty to protect his magical artifact until the right bearer comes along to fulfill an age-old prophecy.",
                 "location": {},
                 "goal": "To test the converse cat, Whisper, and if found worthy, allow the usage of the magic ribbon to control flies and release himself from the cage.",
-                "inventory": {}
+                "inventory": {
+                    "Magic Ribbon": {
+                        "name": "Magic Ribbon",
+                        "description": "An ancient ribbon with celestial magic imbued within it, guarded by Jerry for centuries.",
+                        "examine_text": "At first glance, the Magic Ribbon looks like a simple, old piece of fabric. But upon closer inspection, one can see a faint glow coming from within. You can almost feel the immense power seeping from it, waiting to be unleashed by a worthy recipient.",
+                        "properties": {
+                            "is_container": false,
+                            "is_magic": true,
+                            "is_gettable": false,
+                            "controls_flies": true
+                        }
+                    },
+                    "Mysterious Cage Key": {
+                        "name": "Mysterious Cage Key",
+                        "description": "A unique key that opens the cage confining Jerry.",
+                        "examine_text": "This key, made from a material you can't quite recognize, glimmers slightly in the light. It's intricately designed, with its shaft winding in loops and whirls like a maze. You can't help but wonder who created this piece, and the secrets that it must hold.",
+                        "properties": {
+                            "is_container": false,
+                            "is_gettable": true,
+                            "opens_cage": true
+                        }
+                    },
+                    "Crystal Cat Locket": {
+                        "name": "Crystal Cat Locket",
+                        "description": "A small crystal locket worn by Jerry etched with mystical symbols.",
+                        "examine_text": "The locket is fashioned from an iridescent crystal radiating an assortment of colors. The front of the locket is intricately etched with mystical symbols, which you don't quite understand but somehow find comforting.",
+                        "properties": {
+                            "is_container": true,
+                            "is_magic": true,
+                            "is_gettable": false,
+                            "contains_clue": true
+                        }
+                    },
+                    "Enchanted Mirror": {
+                        "name": "Enchanted Mirror",
+                        "description": "A handheld mirror enchanted to show the reflection of the soul, not the outward appearance.",
+                        "examine_text": "The mirror is small enough to tuck into a pocket but is quite dense. As you gaze at your reflection, you see not your own face, but depths of your soul. It's an eerie experience.",
+                        "properties": {
+                            "is_container": false,
+                            "is_magic": true,
+                            "is_gettable": true,
+                            "reveals_truth": true
+                        }
+                    }
+                }
             },
             "Echo": {
                 "name": "Echo",
@@ -111,7 +319,78 @@
                 "persona": "Anything but typical, Echo possesses not only the ability to communicate in the human language, but also a profound wisdom that she shares sparingly, often cloaked in riddles. Her eerie calmness and calculated manner hint at a cat who observes more than she lets on.",
                 "location": {},
                 "goal": "To help Whisper, the main character, reach Jerry\u2019s Cage using her ability to understand the complex language of the magic ribbon.",
-                "inventory": {}
+                "inventory": {
+                    "Magic Ribbon Manual": {
+                        "name": "Magic Ribbon Manual",
+                        "description": "A worn out booklet that holds the key to understanding the complex language of the Magic Ribbon.",
+                        "examine_text": "This booklet, though appearing rather frail, has evidently been used for centuries. It is filled with ancient scripting, diagrams, and symbols that hold the key to understanding the Magic Ribbon's language.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drink": false,
+                            "is_food": false,
+                            "is_gettable": true,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": false
+                        }
+                    },
+                    "Prophecy Variscite": {
+                        "name": "Prophecy Variscite",
+                        "description": "A smooth crystal with a hue matching Echo\u2019s vibrant turquoise eyes, able to unveil the will of fate.",
+                        "examine_text": "The Variscite crystal emits a faint but warm turquoise glow. As you peer into its depths, faint images and whispers of the fate seem to dance within.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drinking": false,
+                            "is_food": false,
+                            "is_gettable": true,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": false
+                        }
+                    },
+                    "Gleaming Fishhook Key": {
+                        "name": "Gleaming Fishhook Key",
+                        "description": "A peculiar key shaped like a fishhook, believed to be the pair for the Mysterious Cage Key.",
+                        "examine_text": "It's exactly like a regular fishhook, except for the top part which is fashioned to fit perfectly into a keyhole. The craftsmanship is delicate, yet robust.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drinking": false,
+                            "is_food": false,
+                            "is_gettable": true,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": false
+                        }
+                    },
+                    "Moonlight Essence": {
+                        "name": "Moonlight Essence",
+                        "description": "A vial of shimmering liquid infused with the essence of moonlight, Echo's element.",
+                        "examine_text": "The liquid within the glass vial shimmers with a silvery light, reflecting the incandescent glow of the moon.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drinking": true,
+                            "is_food": false,
+                            "is_gettable": true,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": false
+                        }
+                    },
+                    "Obsidian Scratcher": {
+                        "name": "Obsidian Scratcher",
+                        "description": "A sturdy cat scratcher made from obsidian, doubles as a tool for Echo.",
+                        "examine_text": "The scratcher is sharp at the edges and perfect for Echo to sharpen her claws on. Its obsidian surface glistens in the sunlight.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drinking": false,
+                            "is_food": false,
+                            "is_gettable": true,
+                            "is_surface": false,
+                            "is_weapon": true,
+                            "is_wearable": false
+                        }
+                    }
+                }
             }
         },
         "has_been_visited": false,
@@ -128,7 +407,38 @@
             "west": "From the tranquility of the Winding Path, you set your steps west, back towards the grandeur of the Fairy King's Throne. Parting from the fairy forest's charming whispers of the breeze, the regal opulence of the throne awaits as the hero's celebrations beckon."
         },
         "blocks": {},
-        "items": {},
+        "items": {
+            "Enchanted Key": {
+                "name": "Enchanted Key",
+                "description": "A shiny, silver key that hums with magical energy.",
+                "examine_text": "The key is entirely made of silver and glows faintly. Intricate symbols are engraved onto its surface, shimmering with an inner light. It hums gently when held and seems to pull towards Jerry's cage.",
+                "properties": {
+                    "is_container": false,
+                    "is_drink": false,
+                    "is_food": false,
+                    "is_gettable": true,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": false
+                },
+                "location": "Winding Path"
+            },
+            "Magic Map": {
+                "name": "Magic Map",
+                "description": "An old parchment that reveals the path to Jerry's cage.",
+                "examine_text": "The map is worn and crinkled, obviously of some age. When you gaze upon it, a magical light traces a path on the parchment, leading from your current location to Jerry's cage. The path shines brightly, then fades, only to reappear when you glance at it again. It's a clear guide to reach Jerry.",
+                "properties": {
+                    "is_container": false,
+                    "is_drink": false,
+                    "is_food": false,
+                    "is_gettable": true,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": false
+                },
+                "location": "Winding Path"
+            }
+        },
         "characters": {
             "Babble": {
                 "name": "Babble",
@@ -136,7 +446,64 @@
                 "persona": "Babble is wise and charismatic, known for her enlightening ruminations and sage counsel. Her speeches are wittily phrased and often adorned with ancient proverbs and allusions to folklore. She is cautious in nature and only speaks when required, making her words all the more impactful.",
                 "location": {},
                 "goal": "To guide the Whisper along the magical path to Jerry's cage by decoding the enigmatic instructions entwined with the path's magic.",
-                "inventory": {}
+                "inventory": {
+                    "Enchanted Key": {
+                        "name": "Enchanted Key",
+                        "description": "A beautifully intricate key with an iridescent glow hinting at its magical properties.",
+                        "examine_text": "Examining it closer, the key's handle is remarkably detailed with swirling patterns and embedded with small, sparkling gemstones. The light reflects off of it, casting rainbow shadows on your paw as you hold it up. It seems to thrum lightly with anticipation.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drink": false,
+                            "is_food": false,
+                            "is_gettable": true,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": false
+                        }
+                    },
+                    "Magic Map": {
+                        "name": "Magic Map",
+                        "description": "An enchanted failing apart parchment, filled with shifting lines depicting paths and landmarks that alter as per the user's need.",
+                        "examine_text": "As Babble unrolls the map, the lines dance and move to form a route. The parchment is old but sturdy, having endured time and travel. It's imprinted with various cryptic symbols and signs. There's an aura of hidden knowledge that only she, with the right decoding skills, could understand.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drink": false,
+                            "is_food": false,
+                            "is_gettable": true,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": false
+                        }
+                    },
+                    "Babble's Translation Glass": {
+                        "name": "Babble's Translation Glass",
+                        "description": "A magical monocle crafted specifically for Babble that allows her to decode hidden messages.",
+                        "examine_text": "Stationary light reflects off of the round glass frame, and when it does, a slight twinkle catches the eye. To the untrained eye, it is just a piece of glass, but for Babble, it holds the power to decipher the most undecodable scripts.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drink": false,
+                            "is_food": false,
+                            "is_gettable": false,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": true
+                        }
+                    },
+                    "Guidance Bell": {
+                        "name": "Guidance Bell",
+                        "description": "A tiny silver bell that rings out a clear tune, meant to guide the Whisper along the magical path.",
+                        "examine_text": "Intricate designs of ancient symbols grace the bell's surface. It's evidently more than just decorative; Babble recognizes these are spells of guidance. When shaken gently, the bell issues a sound so clear and melodious it could charm even the wildest creature into calmness.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drink": false,
+                            "is_food": false,
+                            "is_gettable": true,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": true
+                        }
+                    }
+                }
             }
         },
         "has_been_visited": false,
@@ -153,7 +520,38 @@
             "out": "From the Fly Territory, escaping from the irritating insects, the cat must move 'out' to reach back to his cage. Using the magic ribbon, the cat makes his way back to the cage and finally reaches safety."
         },
         "blocks": {},
-        "items": {},
+        "items": {
+            "Fly Swatter": {
+                "name": "Fly Swatter",
+                "description": "A practical tool made of lightweight, flexible material, designed to swat flies.",
+                "examine_text": "The fly swatter has a long handle and a perforated, paddle-like end. It's light, but the material is sturdy enough to handle a strong swat. Its bright color is intended to attract pesky flies.",
+                "properties": {
+                    "is_container": false,
+                    "is_drink": false,
+                    "is_food": false,
+                    "is_gettable": true,
+                    "is_surface": false,
+                    "is_weapon": true,
+                    "is_wearable": false
+                },
+                "location": "Fly Territory"
+            },
+            "Jar of Honey": {
+                "name": "Jar of Honey",
+                "description": "A small mason jar filled with thick, sweet honey, known for attracting flies.",
+                "examine_text": "The jar is filled nearly to the brim with viscous honey. Its golden hue shimmers under the light, a testament to its sweetness. Flies seem to be irresistibly attracted to it.",
+                "properties": {
+                    "is_container": true,
+                    "is_drink": true,
+                    "is_food": true,
+                    "is_gettable": true,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": false
+                },
+                "location": "Fly Territory"
+            }
+        },
         "characters": {
             "Whisper Echo": {
                 "name": "Whisper Echo",
@@ -161,7 +559,64 @@
                 "persona": "Whisper Echo is known in the Fly Territory for her ability to soothe the irritable flies with her melodious purrs, effectively making her the bridge between the flies and the travellers. Despite her soft-spoken nature, she carries an air of authority and calm, displaying wisdom beyond her apparent years.",
                 "location": {},
                 "goal": "Guide Whisper and whoever dares cross the Fly Territory, ensuring they can pass without the flies' disturbance, maintaining the delicate balance of this peculiar area.",
-                "inventory": {}
+                "inventory": {
+                    "Astral Cloak": {
+                        "name": "Astral Cloak",
+                        "description": "A mystical cloak that mirrors the appearance of Whisper, with a material as black as the night sprinkled with twinkling stars.",
+                        "examine_text": "The Astral Cloak is as enigmatic as its wearer, Whisper Echo. It's soft and lightweight but holds an unworldly warmth. The star-patterned fur twinkles softly, complementing its utterly dark background. The cloak shimmers subtly, reflecting the wearers' mystical aura.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drink": false,
+                            "is_food": false,
+                            "is_gettable": true,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": true
+                        }
+                    },
+                    "Echolocation Whistle": {
+                        "name": "Echolocation Whistle",
+                        "description": "A small, enchanted whistle that could cast sound waves for mapping the nearby area.",
+                        "examine_text": "The whistle is small, made up of compressed darkness, seeming to absorb light around it. When blown, it does not echo any human-audible sound, but a subtle vibration can be felt nearby. Whisper Echo, with her heightened senses, can pick up these vibrations for echolocation.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drink": false,
+                            "is_food": false,
+                            "is_gettable": true,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": false
+                        }
+                    },
+                    "Fly Swatter": {
+                        "name": "Fly Swatter",
+                        "description": "A lightweight yet durable swatter, tailored to rid the area of any pesky flies.",
+                        "examine_text": "The Fly Swatter is pretty standard: A long, thin handle ending in a larger, flat swatting surface, but it's noticeably sturdier compared to common variants. It carries a faint smell of citronella, repelling nature\u2019s pesky buzzing annoyances.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drink": false,
+                            "is_food": false,
+                            "is_gettable": true,
+                            "is_surface": false,
+                            "is_weapon": true,
+                            "is_wearable": false
+                        }
+                    },
+                    "Jar of Honey": {
+                        "name": "Jar of Honey",
+                        "description": "A simple glass jar filled to the brim with golden, sticky honey.",
+                        "examine_text": "A glass jar, with metal lid, is filled with golden, viscous honey, harvested from a local hive. Its sweetness is tempting, with a strong, rich flavour. It's sticky but loved by all, including flies. It can be used to attract the flies away, ensuring safe passage through the Fly Territory.",
+                        "properties": {
+                            "is_container": true,
+                            "is_drink": false,
+                            "is_food": true,
+                            "is_gettable": true,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": false
+                        }
+                    }
+                }
             },
             "Murmur": {
                 "name": "Murmur",
@@ -169,7 +624,78 @@
                 "persona": "Murmur possesses the unusual ability to converse with humans in their own tongue. She has a playful personality, often indulging in witty banter with those fortunate enough to understand her. But even for a talking cat, she holds a trove of wisdom that belies her jovial exterior.",
                 "location": {},
                 "goal": "To assist Whisper by distracting the swarm of flies in the Fly Territory, allowing Whisper to cross the area without hindrance.",
-                "inventory": {}
+                "inventory": {
+                    "Fly Swatter": {
+                        "name": "Fly Swatter",
+                        "description": "A large, flat, handheld device with a long handle, designed for swatting flies.",
+                        "examine_text": "The Fly Swatter is bigger than most, made specifically to deal with the bigger insects that inhabit the Fly Territory. It's made of a lightweight, durable material and has a long handle that ends in a large, flat disk with holes in it.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drink": false,
+                            "is_food": false,
+                            "is_gettable": true,
+                            "is_surface": false,
+                            "is_weapon": true,
+                            "is_wearable": false
+                        }
+                    },
+                    "Jar of Honey": {
+                        "name": "Jar of Honey",
+                        "description": "A glass jar filled with fragrant, golden honey.",
+                        "examine_text": "This is a round, glass jar filled with bright, golden honey. The sweet, aromatic scent wafts up from it, attracting every insect in the vicinity. The lid is screwed on tightly, but it could be loosened.",
+                        "properties": {
+                            "is_container": true,
+                            "is_drink": true,
+                            "is_food": true,
+                            "is_gettable": true,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": false
+                        }
+                    },
+                    "Murmur's Whiskers": {
+                        "name": "Murmur's Whiskers",
+                        "description": "Murmur's long, delicate whiskers twitch with her emotions, providing valuable sensory information.",
+                        "examine_text": "Murmur's whiskers quiver in the air, picking up subtle shifts in the wind and other environmental cues. They are an invaluable tool in her quest to distract the swarm of flies.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drink": false,
+                            "is_food": false,
+                            "is_gettable": false,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": true
+                        }
+                    },
+                    "Slate-Gray Fur": {
+                        "name": "Slate-Gray Fur",
+                        "description": "Murmur's slate-gray fur is an exquisite camouflage in the grayish, stony Fly Territory.",
+                        "examine_text": "Murmur's coat is a beautiful slate-gray, mingled with swirls of white. The peculiar coloring provides excellent camouflage in the Fly Territory, making it easier for her to move around unnoticed.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drink": false,
+                            "is_food": false,
+                            "is_gettable": false,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": true
+                        }
+                    },
+                    "Yellow Eyes": {
+                        "name": "Yellow Eyes",
+                        "description": "Murmur's bright, yellow eyes have a hint of mischief and are quite striking.",
+                        "examine_text": "Her yellow eyes glint with intelligence and an impish curiosity. With a quick scan, she can decipher hidden details in her surroundings, aiding her in her mission.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drink": false,
+                            "is_food": false,
+                            "is_gettable": false,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": true
+                        }
+                    }
+                }
             },
             "Purrqui": {
                 "name": "Purrqui",
@@ -177,7 +703,36 @@
                 "persona": "Despite her unusual gift, Purrqui embodies the best of both worlds - the wit of a human with the indifference of a cat. She possesses an adventurous spirit, is insanely curious, and has an understatedly sarcastic sense of humor which she uses generously in her discourse with humans.",
                 "location": {},
                 "goal": "To guide Whisper safely through the pestering flies of the Fly Territory, using her unique ability to communicate with these insects.",
-                "inventory": {}
+                "inventory": {
+                    "Jar of Honey": {
+                        "name": "Jar of Honey",
+                        "description": "A sizeable glass jar filled with luscious golden honey. It's a sweet magnet for pesky flies and other insects.",
+                        "examine_text": "As Purrqui gazes at the jar, she sees the light catching the viscous honey, giving it a warm and inviting glow. It's sealed tight, but even through the thick glass, she can sense the sweetness that lies within. A precious and tantalizing treat for the flies of the territory!",
+                        "properties": {
+                            "is_container": true,
+                            "is_drink": false,
+                            "is_food": true,
+                            "is_gettable": true,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": false
+                        }
+                    },
+                    "Fly Swatter": {
+                        "name": "Fly Swatter",
+                        "description": "A lightweight, flexible swatter designed for pestering flies. Handy for protection but lethal for the small creatures.",
+                        "examine_text": "Purrqui gives a glance to the fly swatter. It wielded enough power to cause devastation among the flies, and Purrqui didn't believe in any form of harm. She knew there had to be a non-violent way to guide Whisper across. Maybe the swatter could be repurposed for her needs.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drink": false,
+                            "is_food": false,
+                            "is_gettable": true,
+                            "is_surface": true,
+                            "is_weapon": true,
+                            "is_wearable": false
+                        }
+                    }
+                }
             }
         },
         "has_been_visited": false,
@@ -194,7 +749,38 @@
             "in": "From the Ocean Shore, lured by the buzzing of the flies, you navigate 'in' towards Jerry's Cage. Using the magic ribbon, you control the flies, guiding you through their territory back to the safety of the Cage."
         },
         "blocks": {},
-        "items": {},
+        "items": {
+            "Enchanted Fishing Net": {
+                "name": "Enchanted Fishing Net",
+                "description": "A shimmering fishing net, said to capture the elusive magical fish.",
+                "examine_text": "The net seems to glow with a soft light, the threads seem to be woven from moonlight. It is said only this net can capture the magical fish that grants the ability to understand fairy language.",
+                "properties": {
+                    "is_container": false,
+                    "is_drink": false,
+                    "is_food": false,
+                    "is_gettable": true,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": false
+                },
+                "location": "Ocean Shore"
+            },
+            "Magical Fish": {
+                "name": "Magical Fish",
+                "description": "A magnificently iridescent fish, its scales reflecting all the colors of the rainbow. Consuming it grants the ability to speak the fairy language.",
+                "examine_text": "Its scales are more brilliant and vibrant than any other fish you've ever seen. It is said that eating this fish allows one to comprehend and speak the fairy language.",
+                "properties": {
+                    "is_container": false,
+                    "is_drink": false,
+                    "is_food": true,
+                    "is_gettable": true,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": false
+                },
+                "location": "Ocean Shore"
+            }
+        },
         "characters": {
             "Prattle": {
                 "name": "Prattle",
@@ -202,7 +788,78 @@
                 "persona": "Prattle is known for her eloquence and profound understanding, often surprising those around her with thought-provoking insights. Despite her small size and cute appearance, she carries a gravitas and rare intelligence, favoring discourse over mundane feline pursuits.",
                 "location": {},
                 "goal": "To guide Whisper through the ocean shore, using her wisdom to locate the magical fish that could teach the fairy language.",
-                "inventory": {}
+                "inventory": {
+                    "Enchanted Fishing Net": {
+                        "name": "Enchanted Fishing Net",
+                        "description": "A large fishing net woven with seaweed and seashells, infused with magical properties.",
+                        "examine_text": "The enchanted net glistens in the sunlight, its seaweed strands and seashells woven in a complex pattern. The net seems to humm with magic. It vibrates softly in tune with the waves.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drink": false,
+                            "is_food": false,
+                            "is_gettable": true,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": false
+                        }
+                    },
+                    "Sea Compass Necklace": {
+                        "name": "Sea Compass Necklace",
+                        "description": "A small vintage-style compass encased in shiny bronze metal that hangs onto a strong, fine chain. It leads the way to hidden things in the ocean.",
+                        "examine_text": "The sea compass necklace looks antique and valuable, held on a thin yet sturdy chain. The compass needle twitches restlessly, as if eager to lead the way to magical secrets hidden in the ocean's depths.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drink": false,
+                            "is_food": false,
+                            "is_gettable": true,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": true
+                        }
+                    },
+                    "Magical Fish": {
+                        "name": "Magical Fish",
+                        "description": "A mystical fish with silver scales and expressive eyes. It is known to understand and teach the language of fairies.",
+                        "examine_text": "The magical fish is a thing of beauty, its gleaming silver-scaled body glows under sunlight, and its eyes seem to possess wisdom beyond comprehension. It moves gently in the water, its fins and tail creating soft ripples.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drink": false,
+                            "is_food": false,
+                            "is_gettable": true,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": false
+                        }
+                    },
+                    "Mystical Sea Whistle": {
+                        "name": "Mystical Sea Whistle",
+                        "description": "A beautifully carved whistle made from mother of pearl, rumored to call forth magical beings of the sea.",
+                        "examine_text": "Crafted with great care and precision, the whistle is an exquisite piece of art. Its surface is smooth to the touch, reflecting a myriad colors in the light. When blown, it releases a soft, melodious sound that is soothing to the ears.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drink": false,
+                            "is_food": false,
+                            "is_gettable": true,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": false
+                        }
+                    },
+                    "Wisdom Pebble": {
+                        "name": "Wisdom Pebble",
+                        "description": "A pebble that bestows wisdom upon its holder, known to enhance the cognitive ability of the being that carries it.",
+                        "examine_text": "The pebble shimmers under the light, emanating an almost entrancing glow. It fits comfortably within the holder's grasp, giving off a strange warmth that seems to pulse with wisdom.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drink": false,
+                            "is_food": false,
+                            "is_gettable": true,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": false
+                        }
+                    }
+                }
             }
         },
         "has_been_visited": false,
@@ -219,7 +876,38 @@
             "west": "Leaving the secure and peaceful environment of the Safe House behind, you make your way back to Jerry's Cage. Remembering all the directions and signs you had followed, you manage to get back to the cage where the adventure began."
         },
         "blocks": {},
-        "items": {},
+        "items": {
+            "Cheese Crumbs": {
+                "name": "Cheese Crumbs",
+                "description": "Some cheese crumbs scattered in the corner, a telltale sign of a mouse's presence",
+                "examine_text": "A small pile of cheese crumbs are scattered in the corner. They are bright yellow and slightly moldy. Jerry Mouse must be near.",
+                "properties": {
+                    "is_container": false,
+                    "is_drink": false,
+                    "is_food": true,
+                    "is_gettable": true,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": false
+                },
+                "location": "Safe House"
+            },
+            "Mouse Hole": {
+                "name": "Mouse Hole",
+                "description": "A small hole in the wall that Jerry Mouse uses to navigate through the house.",
+                "examine_text": "The hole is small, just large enough to fit a mouse. It's perfectly round and the edges are worn smooth from use. Jerry must have been using this hole to navigate through the house.",
+                "properties": {
+                    "is_container": false,
+                    "is_drink": false,
+                    "is_food": false,
+                    "is_gettable": false,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": false
+                },
+                "location": "Safe House"
+            }
+        },
         "characters": {
             "Ripple": {
                 "name": "Ripple",
@@ -227,7 +915,78 @@
                 "persona": "Contrary to common feline behavior, Ripple is talkative and sociable, often mingling with other creatures and sharing intricate tales of his adventures. His speech is laced with wisdom, echoing a past as old as time, and he holds a serene disposition that instantly puts others at ease.",
                 "location": {},
                 "goal": "To protect and guide Jerry Mouse safely through the dangerous urban labyrinth to reach the Safe House, using his deep knowledge of the hidden paths and his keen sense of any imminent danger.",
-                "inventory": {}
+                "inventory": {
+                    "Ancient City Map": {
+                        "name": "Ancient City Map",
+                        "description": "A tattered and worn piece of parchment depicting the labyrinthine structures of the city.",
+                        "examine_text": "This age-worn parchment holds traces of routes and shortcuts through the urban labyrinth, some paths marked by Ripple himself over the years. Faint inscriptions and marks adorn its edges, indicating danger zones or hiding spots.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drink": false,
+                            "is_food": false,
+                            "is_gettable": true,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": false
+                        }
+                    },
+                    "Hunter's Bell": {
+                        "name": "Hunter's Bell",
+                        "description": "A tiny silver bell with a resonating chime, used to alert on imminent danger.",
+                        "examine_text": "The bell is made of finely worked silver, covered in intricate designs that catch the light. As Ripple rings it, the sound echoes ominously, active enough to alert of any danger around.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drink": false,
+                            "is_food": false,
+                            "is_gettable": true,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": true
+                        }
+                    },
+                    "Pouch of Kitty Treats": {
+                        "name": "Pouch of Kitty Treats",
+                        "description": "A small pouch containing tiny, crunchy nuggets that ripple enjoys.",
+                        "examine_text": "Inside the pouch, you find a handful of small nuggets, perfect for a quick recharge. These treats seem to possess a strong aroma that Ripple finds irresistible.",
+                        "properties": {
+                            "is_container": true,
+                            "is_drink": false,
+                            "is_food": true,
+                            "is_gettable": true,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": false
+                        }
+                    },
+                    "Cloak of Shadows": {
+                        "name": "Cloak of Shadows",
+                        "description": "A cloak made from dark, sleek material that reflects very little light. Allows Ripple to blend into the deep shadows.",
+                        "examine_text": "This dark cloak feels luxuriously soft to the touch, it shimmers with an ethereal glow when viewed from certain angles, likely contributing to its shadow-camouflaging abilities.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drink": false,
+                            "is_food": false,
+                            "is_gettable": true,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": true
+                        }
+                    },
+                    "Mouse Whisker": {
+                        "name": "Mouse Whisker",
+                        "description": "A fallen whisker from Jerry, which Ripple keeps as a means to track him if they get separated.",
+                        "examine_text": "It's a tiny, delicate whisker, yet strong. Ripple can tune into its unique energy, granting him a supernatural ability to locate Jerry if need be.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drink": false,
+                            "is_food": false,
+                            "is_gettable": true,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": false
+                        }
+                    }
+                }
             }
         },
         "has_been_visited": false,
