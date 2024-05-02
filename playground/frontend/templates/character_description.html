@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Description</title>
+    <link rel="stylesheet" href="../static/indexStyles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Enter a description about your character</h1>
+        <p>Previously submitted game description: {{ description }}</p>
+        <textarea id="characterDescription" rows="10" cols="50" placeholder="Describe your character..."></textarea>
+        <button onclick="submitCharacterDescription()">Submit</button>
+    </div>
+
+    <script src="../static/script.js"></script>
+</body>
+</html>

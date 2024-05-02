@@ -1,40 +1,29 @@
-# app.py
-from fastapi import FastAPI, WebSocket, WebSocketDisconnect
+from fastapi import FastAPI, Request
 from fastapi.staticfiles import StaticFiles
-from typing import List
+from fastapi.templating import Jinja2Templates
 
 app = FastAPI()
 
-# Assuming your HTML, CSS, JavaScript files are in a folder named 'static'
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
-class ConnectionManager:
-    def __init__(self):
-        self.active_connections: List[WebSocket] = []
+templates = Jinja2Templates(directory="templates")
 
-    async def connect(self, websocket: WebSocket):
-        await websocket.accept()
-        self.active_connections.append(websocket)
+@app.get("/")
+async def get_index(request: Request):
+    return templates.TemplateResponse("index.html", {"request": request})
 
-    def disconnect(self, websocket: WebSocket):
-        self.active_connections.remove(websocket)
+@app.post("/submit-description")
+async def submit_description(request: Request):
+    data = await request.json()
+    description = data.get("description", "")
+    print("Received description:", description)
+    return templates.TemplateResponse("character_description.html", {"request": request, "description": description})
 
-    async def send_personal_message(self, message: str, websocket: WebSocket):
-        await websocket.send_text(message)
+@app.get("/character-description")
+async def character_description(request: Request):
+    return templates.TemplateResponse("character_description.html", {"request": request, "description": ""})
 
-    async def broadcast(self, message: str):
-        for connection in self.active_connections:
-            await connection.send_text(message)
-
-manager = ConnectionManager()
-
-@app.websocket("/ws")
-async def websocket_endpoint(websocket: WebSocket):
-    await manager.connect(websocket)
-    try:
-        while True:
-            data = await websocket.receive_text()
-            await manager.broadcast(f"Message: {data}")
-    except WebSocketDisconnect:
-        manager.disconnect(websocket)
-        await manager.broadcast("A user has left the chat.")
+@app.get("/list-page")
+async def get_list_page(request: Request):
+    # This assumes list.html is located in the 'templates' directory
+    return templates.TemplateResponse("list.html", {"request": request})
