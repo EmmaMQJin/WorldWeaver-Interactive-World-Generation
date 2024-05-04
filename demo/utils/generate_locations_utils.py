@@ -19,23 +19,16 @@ direction_mappings = {"up": "down",
 # have an existence flag for each category? If flag is still false, augment prompt with that category
 
 def generate_central_loc_HITL(desc, formatting_example, central_loc_shots, remaining_locations):
-    central_loc_desc = input("\nDo you have any thoughts on what the central location is like?\n")
     user_prompt = desc
-    user_prompt += f"More comments on the starting location of the game: {central_loc_desc}"
     user_prompt += "\nList of all locations in the game: " + json.dumps(remaining_locations)
     loc_center = pick_new_location(user_prompt, formatting_example, central_loc_shots)
-    # new_name = open_vim_with_string(loc_center["name"])
-    # print("Edited name: ", new_name)
-    # new_desc = open_vim_with_string(loc_center["description"])
-    # print("Edited description: ", new_desc)
-    # loc_center["name"] = new_name
-    # loc_center["description"] = new_desc
     string_without_newline = loc_center["name"].replace('\n', '')
     del remaining_locations[string_without_newline] ## TODO - put a check here
     dict_to_json_file(loc_center, "data/test_generations/init_location.json")
     return remaining_locations
 
-def generate_neighbor_locs_HITL(num_neib_locs, central_loc_dict, story, neib_shots, connections_shots, remaining_locations, format):
+def generate_neighbor_locs_HITL(central_loc_dict, story, neib_shots, connections_shots, remaining_locations, format):
+    # let the user pick layer by layer
     graph = {central_loc_dict["name"] : {}}
     prev_layer = [central_loc_dict]
     all_locs = [central_loc_dict]
@@ -55,7 +48,7 @@ def generate_neighbor_locs_HITL(num_neib_locs, central_loc_dict, story, neib_sho
             for k, _ in enumerate(neib_locs):
                 prev_layer[j], neib_locs[k], dir_take_out = generate_connections_step(
                     prev_layer[j], neib_locs[k], directions, connections_shots)
-                # print("direction linked for location: ", dir_take_out)
+
                 directions.remove(dir_take_out)
             all_locs += neib_locs[:]
             temp_layer += neib_locs[:]
@@ -167,7 +160,9 @@ def generate_connections_step(loc1, loc2, dirs, shots):
     dirs_ids = get_token_ids(dirs)
     logit_biases = {}
     for tid in dirs_ids:
-        logit_biases[tid] = 11
+        logit_biases[tid] = 12
+    quote_id = get_token_ids(["'\""])
+    logit_biases[quote_id[0]] = -100
     loc1_name, loc2_name = loc1["name"], loc2["name"]
     client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
     sys_prompt = f"""You are a helpful map generator for building a text adventure game.
@@ -181,12 +176,15 @@ Just output the one word for the direction.
     user_prompt = json.dumps(loc1) + json.dumps(loc2)
     messages = [{"role": "system", "content": sys_prompt}]
     messages += [{"role": "user", "content": user_prompt}]
-    completion = client.chat.completions.create(
-        model="gpt-4",
-        messages=messages,
-        logit_bias=logit_biases
-    )
-    direction = completion.choices[0].message.content.strip()
+    direction = ""
+    while direction not in dirs:
+        completion = client.chat.completions.create(
+            model="gpt-4",
+            messages=messages,
+            logit_bias=logit_biases
+        )
+        direction = completion.choices[0].message.content.strip().lower()
+    print(direction)
     
     messages += [{"role": "assistant", "content": direction}]
     user_prompt_2 = f"""Now, output a one-sentence description of how the player moves {direction} from location 1 to location 2.

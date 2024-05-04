@@ -5,6 +5,9 @@ from utils.generate_actions_utils import *
 from utils.utils import *
 import copy
 
+# TODO: Maybe show the neighbor locations and items to the player (make it editable)
+# TODO: Maybe can evaluate what the user prefers vs. what the model prefers
+
 def main():
     story_cyberpunk = read_file_to_str("data/story-cyberpunk.txt")
     story_insidetemple = read_file_to_str("data/story-insidetemple.txt")
@@ -64,16 +67,15 @@ def main():
     print(main_character["description"])
     print("----------------------------")
     all_characters = [main_character]
-    initial_state = input("\nWhat do you want the starting state of the game to be?\nThis could be something like: the main character wakes up in a cave.\n")
+    initial_state = input("\nWhat do you want the starting state of the game to be?\n(This could be something like: the main character wakes up in a cave.)\n")
     print("\nOK. The starting state of the game will be: ", initial_state)
-    winning_state = input("\nWhat do you want the winning state of the game to be?\nThis could be something like: the main character saves the poisoned princess.\n")
+    winning_state = input("\nWhat do you want the winning state of the game to be?\n(This could be something like: the main character saves the poisoned princess.)\n")
     print("\nOK. The winning state of the game will be: ", winning_state)
-    actions_list = generate_actions_playthrough(background_story, initial_state, winning_state)
+    actions_list = generate_actions_playthrough(background_story, main_character, initial_state, winning_state)
     write_list_to_file(actions_list.strip().split("\n"), "data/actions.txt")
-    locations_to_use = generate_locations_to_use(background_story, actions_list)
+    locations_to_use = generate_locations_to_use(background_story, actions_list, initial_state, winning_state, main_character)
     remaining_locations = copy.deepcopy(locations_to_use)
     dict_to_json_file(locations_to_use, "test.json")
-    # num_locs = int(input(f"\nThe number of locations that will be generated is {len(locations_to_use)}. How many locations would you like to have in the game?\n"))
     print(f"\nThe number of locations that will be generated is {len(locations_to_use)}.\n")
     num_locs = len(locations_to_use)
     print("\nNow, let's generate the starting location of the game!\n")
@@ -86,7 +88,7 @@ def main():
     print(central_loc["description"])
     print("-------------------------------")
     print("\nGenerating the entire map......\n")
-    generate_neighbor_locs_HITL(num_locs-1, central_loc, background_story, neib_locs_shots, connections_shots, remaining_locations, location_format)
+    generate_neighbor_locs_HITL(central_loc, background_story, neib_locs_shots, connections_shots, remaining_locations, location_format)
     print("\nLocation generation completed! ^v^\n")
     print("Now, let's populate each location with NPCs\n")
     all_locations = read_json_examples("data/test_generations/all_the_locations.json")
@@ -95,9 +97,8 @@ def main():
         if name not in locations_to_use:
             continue
         purpose = locations_to_use[name]
-        # location_name, location_purpose, background_story, main_character, character_format, stories, all_characters
         print(f"\nLet's generate NPCs in the location {name}... ...")
-        npcs_dict, all_characters = generate_npc_in_location(name, purpose, background_story, main_character, character_format, stories, all_characters)
+        npcs_dict, all_characters = generate_npc_in_location(name, location_json["description"], purpose, background_story, main_character, all_characters)
         all_locations[i]["characters"] = npcs_dict
     dict_to_json_file(all_locations, "data/test_generations/all_the_locations.json")
     dict_to_json_file(all_characters, "data/test_generations/all_the_characters.json")
@@ -105,7 +106,7 @@ def main():
     # #Object generation based on the generated location json
     print("\nLastly, let's populate generate the objects in each location and each character's inventory!\n")
     print("\nGenerating objects in each location......\n")
-    generate_object("games-data")
+    generate_objects_in_locations("games-data")
     print("\nPopulating character inventories......\n")
     populate_character_inventories("games-data", main_character, winning_state)
 

@@ -1,6 +1,8 @@
 import json
 import os
 from openai import OpenAI
+from random import randint
+from utils.frontend_utils import *
 
 def load_json(filename):
     """ Load JSON data from a file """
@@ -80,72 +82,167 @@ Output the character in JSON format, like this:
     gpt_response = response.choices[0].message.content
     return json.loads(gpt_response)
 
-def generate_npc_in_location(location_name, location_purpose, background_story, main_character, character_format, stories, all_characters):
-    default_num_npc = 1
-    try:
-        num_npc = int(input(f"\nHow many NPC characters do you want to generate in the location {location_name}?\nChoose a number between 0-4 (Default value is 1):\n"))
-        if num_npc < 0 or num_npc > 4:
-            num_npc = default_num_npc
-            print(f"Invalid input. Using default value: {default_num_npc}")
-    except ValueError:
-        num_npc = default_num_npc
-        print(f"Invalid input. Using default value: {default_num_npc}")
-    
-    print(f"\nOK, the number of NPCs generated in {location_name} will be {num_npc}.\n")
 
+def generate_npc_shots():
+    shot1_user = f"""Please list of 3 potential characters for the location Enchanted Garden based on the information below:
+    location name: 
+    Enchanted Garden
+
+    location description: 
+    A lush, mystical grove shimmering with iridescent plants and the soft glow of ethereal lights.
+
+    location purpose: 
+    Where the player can find the magic hat and collect fairy dust.
+
+    player:
+    Whisker Wordsmith
+    A clever and enchanting talking cat with bright, interested eyes and a black and white coat. Whisker Wordsmith, as he's known, has a nimble mind and a sharp tongue, using his words to guide, aid, or sometimes just entertain whoever he encounters.
+    """
+
+    shot1_assistant = """
+[
+    {
+        "name": "Luna the Lightweaver",
+        "description": "Luna is a delicate, luminous fairy known for her ethereal beauty and her ability to weave light into shimmering, protective cloaks. With wings that glisten like morning dew, she is a guardian spirit of the Enchanted Garden.",
+        "persona": "I'm Luna, the fairy guardian of this mystical grove. By weaving light, I create enchanting illusions and barriers to protect this magical realm and its secrets. My presence ensures that only the worthy can access the garden's most hidden treasures.",
+        "location": "",
+        "goal": "To protect the magic hat and oversee the distribution of fairy dust to those who are deemed worthy.",
+        "inventory": {}
+    },
+    {
+        "name": "Thornwick the Elder",
+        "description": "Thornwick is a wise old tree spirit whose bark is etched with runes of ancient wisdom. His deep, resonant voice and slow, thoughtful movements make him a revered figure among the garden's mystical creatures.",
+        "persona": "I am Thornwick, the ancient keeper of lore and wisdom in this enchanted land. My roots delve deep, binding the magic of the garden with the essence of the earth. I share tales and secrets with those who respect the harmony of nature.",
+        "location": "",
+        "goal": "To educate visitors about the history of the garden and its magical properties, ensuring that its secrets are respected and preserved.",
+        "inventory": {}
+    },
+    {
+        "name": "Glitterpaw the Mischievous",
+        "description": "Glitterpaw is a playful and cheeky pixie cat with a coat that sparkles like starlight and eyes full of mischief. Known for her tricks and games, she loves leading visitors on merry chases through the twilight mists of the garden.",
+        "persona": "They call me Glitterpaw, the whimsical trickster of the Enchanted Garden. With a flick of my sparkling tail, I lead curious adventurers astray or into magical discoveries, depending on my mood. Laughter and surprise are my favorite creations.",
+        "location": "",
+        "goal": "To entertain and sometimes mislead visitors, testing their cleverness and sense of humor as they seek the garden's treasures.",
+        "inventory": {}
+    }
+]
+"""
+    shot2_user = f"""Please list of 3 potential characters for the location Tech Marketplace based on the information below:
+    location name: 
+    Tech Marketplace
+
+    location description: 
+    A bustling, neon-lit bazaar brimming with vendors selling all manner of discarded and refurbished technology, creating a treasure trove for tech enthusiasts and scavengers alike.
+
+    location purpose: 
+    Where Echo can gather discarded tech and trade it for cyber wings.
+
+    player:
+    Echo the Pigeon
+    An unexpected digital explorer who accidentally wandered into the dangerous cyberpunk world. Originally just an average pigeon, they now navigate unpredictable digital landscapes filled with covert corporations and unscrupulous hackers.
+    """
+    shot2_assistant = """
+[
+    {
+        "name": "Circuit the Fixer",
+        "description": "Circuit is a skilled engineer known for her ability to repair and repurpose any piece of technology into something unique and valuable. With a workshop filled with blinking lights and scattered gadgets, she is a central figure in the Tech Marketplace.",
+        "persona": "I'm Circuit, the marketplace's master engineer. I transform broken tech into innovative marvels, making old things new and useful.",
+        "location": "",
+        "goal": "To create innovative tech solutions and trade unique items that help Echo in gathering tech for cyber wings.",
+        "inventory": {}
+    },
+    {
+        "name": "Volt the Trader",
+        "description": "Volt is a charismatic vendor with a knack for spotting valuable tech among heaps of electronic waste. His stall is a popular stop for collectors and tech scavengers looking for rare finds.",
+        "persona": "I'm Volt, your friendly tech trader. I have an eye for hidden tech treasures and a deal always ready to be struck.",
+        "location": "",
+        "goal": "To supply Echo with essential components for cyber wings in exchange for interesting tech pieces.",
+        "inventory": {}
+    },
+    {
+        "name": "Spark the Informant",
+        "description": "Spark is a sly, street-smart informant who deals in information as much as in hardware. Always cloaked in a digital visor, he knows the latest buzz and the deepest secrets of the digital realm.",
+        "persona": "Call me Spark. I trade in whispers and wires, knowing more about this digital jungle than anyone else.",
+        "location": "",
+        "goal": "To provide Echo with vital information and guidance on where to find the best discarded tech for crafting cyber wings.",
+        "inventory": {}
+    }
+]
+
+"""
+    shots = [{"role": "user", "content": shot1_user},
+             {"role": "assistant", "content": shot1_assistant},
+             {"role": "user", "content": shot2_user},
+             {"role": "assistant", "content": shot2_assistant}]
+    return shots
+
+def generate_npcs_round(location_name, location_description, location_purpose, background_story, main_character, existing_npcs):
     client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
 
-    try:
-        with open("data/few-shot-examples/example-characters.json", 'r') as file:
-            examples = json.load(file)
-    except FileNotFoundError:
-        print("File not found.")
-        return []
+    prompt = "You are a helpful character generator for building a text adventure game."
+    prompt += "Your job is to generate NPC characters in a given location."
+    prompt += f"Given the location's name, description, purpose, as well as the description of the player of the game from the user,"
+    prompt += "you should generate a list of 3 suitable and purposeful NPCs that should be in this location."
+    prompt += "you should espeially focus on aligning with the location's given purpose."
+    prompt += "Output the NPCs as a list of JSON objects."
+    prompt += "You should always populate name, description, persona, and goal of an NPC character."
+    prompt += "You should always leave the location and inventory of each character empty."
+    prompt += f"Here are the NPCs you have already before and SHOULD NOT generate again: {existing_npcs}"
 
-    npc_dict = {}
-    for num in range(num_npc):
-        prompt = f"""You are a helpful character generator for building a text adventure game.
-Your job is to generate an NPC in the location {location_name}. The purpose of this location is: {location_purpose}, and the player of the game is: {main_character}.
-Given the background story of the game from the user, generate one single NPC character in JSON.
-Do not generate any previously generated character, i.e. the the generated charecter should not be a duplicate of any character or
-be similar to these characters that already exists: {all_characters}.
-However, if the location name or the purpose of the location mentions some character name that is not in the list of existing characters,
-you should definitely generate that character as an NPC.
-The generated NPC should have a goal that either helps the main character achieve their goal or to prevent them from achieving their goal. The goal for the generated NPC should be simple and very specific.
-If you dont see any extra characters in the story for NPC roles, create any character from your imagination that fits the story.
-Output the character in JSON format, like this:
-{character_format}
-Remember to leave the location and inventory of each character empty.
-"""
-        messages = [
-            {'role': 'system', 'content': prompt},
-            {'role': 'user', 'content': "{story}".format(story=stories[0])},
-            {"role": "assistant", "content": json.dumps(examples[0])},
-            {'role': 'user', 'content': "{story}".format(story=stories[1])},
-            {"role": "assistant", "content": json.dumps(examples[1])}
-        ]
+    user_prompt = f"""Please list of 3 potential characters for the location {location_name} based on the information below:
+    location name: 
+    {location_name}
 
-        messages += [{"role": "user", "content": background_story}]
+    location description: 
+    {location_description}
 
-        response = client.chat.completions.create(
-            model='gpt-4',
-            messages=messages,
-            temperature=1,
-            max_tokens=2048,
-            top_p=1.0,
-            frequency_penalty=0,
-            presence_penalty=0
-        )
+    location purpose: 
+    {location_purpose}
 
-        npc_content = response.choices[0].message.content
-        print("Generated NPC: \n", npc_content)
-        try:
-            npc_json = json.loads(npc_content)
-            npc_json["location"] = location_name
-            npc_dict[npc_json["name"]] = npc_json
-            all_characters.append(npc_json)
-            
-        except json.JSONDecodeError:
-            print(f"Failed to parse JSON for NPC {num}: {npc_content}")
+    player:
+    {main_character["name"]}
+    {main_character["description"]}
+    """
 
-    return npc_dict, all_characters
+    messages = [{'role': 'system', 'content': prompt}]
+    messages += generate_npc_shots()
+    messages += [{"role": "user", "content": user_prompt}]
+
+    response = client.chat.completions.create(
+        model='gpt-4',
+        messages=messages,
+        temperature=1,
+        max_tokens=2048,
+        top_p=1.0,
+        frequency_penalty=0,
+        presence_penalty=0
+    )
+
+    npc_content = json.loads(response.choices[0].message.content)
+    return npc_content
+
+
+
+def generate_npc_in_location(location_name, location_description, location_purpose, background_story, main_character, all_characters):
+
+    already_generated_npcs = []
+    all_selected_npcs = []
+    while True:
+        location_npcs = generate_npcs_round(location_name, location_description, location_purpose, background_story,
+                                            main_character, already_generated_npcs)
+        render_items_choices(location_npcs)
+        already_generated_npcs += location_npcs
+        selected_npcs_in_round = get_selected_items(location_npcs)
+        all_selected_npcs += selected_npcs_in_round
+        render_selected_items(all_selected_npcs)
+        if user_submit():
+            break
+    # Append generated items to the location's 'items' field
+    npcs_dict = {}
+    for _, npc in enumerate(all_selected_npcs):
+        npc['location'] = location_name
+        npcs_dict[npc['name']] = npc
+
+    all_characters += all_selected_npcs
+
+    return npcs_dict, all_characters
