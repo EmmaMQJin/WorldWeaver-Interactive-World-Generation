@@ -101,6 +101,33 @@ def populate_character_inventories(directory, main_character, winning_state):
     sample_items = json.dumps(extracted_items[:5], indent=4)
 
     all_characters = []  # List to store all characters for all_the_characters.json
+
+   
+   # Handle the main character separately
+    main_char_prompt = f"Given the main character '{main_character['name']}', described as '{main_character['description']}', who must achieve the goal: '{winning_state}', generate suitable inventory items. Each item should include name, description, examine text, and properties that fit the character's role and actions in the narrative."
+    main_char_messages = [
+        {'role': 'system', 'content': main_char_prompt},
+        {'role': 'user', 'content': f"Please list potential items for {main_character['name']}."},
+        {'role': 'assistant', 'content': sample_items},
+        {'role': 'user', 'content': f"Now, generate detailed inventory items for {main_character['name']}."}
+    ]
+
+    main_response = client.chat.completions.create(
+        model='gpt-4',
+        messages=main_char_messages,
+        temperature=1,
+        max_tokens=2048,
+        top_p=1.0,
+        frequency_penalty=0,
+        presence_penalty=0
+    )
+
+    main_inventory_items = json.loads(main_response.choices[0].message.content)
+    main_character['inventory'] = {item['name']: item for item in main_inventory_items}
+    all_characters.append(main_character)  # Add the main character
+
+
+
     # Iterate through each location and their characters
     for loc_ind, location in enumerate(locations_data):
         location_actions = action_descriptions.get(location['name'], "No specific actions described.") # purpose of location
@@ -129,6 +156,7 @@ def populate_character_inventories(directory, main_character, winning_state):
             character['inventory'] = items_dict
             all_characters.append(character)  # Add updated character to the list
             locations_data[loc_ind]["characters"][char_name]["inventory"] = items_dict
+
 
     # Save the updated location data back to the same file
     with open(f"data/test_generations/all_the_locations.json", 'w') as file:
