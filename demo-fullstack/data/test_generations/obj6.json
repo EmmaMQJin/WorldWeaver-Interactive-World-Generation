@@ -1,0 +1,16 @@
+{
+    "name": "Shopping District",
+    "description": "A bustling part of the city where Peregrine needs to observe human behavior.",
+    "connections": {
+        "up": "Urban Building"
+    },
+    "travel_descriptions": {
+        "up": "From the hustle and bustle of the Shopping District, Peregrine takes to the sky, ascending with powerful wing strokes until reaching the vantage point of the Urban Building."
+    },
+    "blocks": {},
+    "items": {},
+    "characters": {},
+    "has_been_visited": false,
+    "commands": [],
+    "properties": {}
+}

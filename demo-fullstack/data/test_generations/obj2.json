@@ -1,0 +1,16 @@
+{
+    "name": "Streetlamp Overlook",
+    "description": "An elevated spot where the pigeon lands to scout for food sources.",
+    "connections": {
+        "west": "Pigeon Nest"
+    },
+    "travel_descriptions": {
+        "west": "Departing from the elevated vantage point of the Streetlamp Overlook, you wing westward, navigating through the urban jungle, until the familiar comfort of the Pigeon Nest emerges amidst the towering concrete structures, greeting you with its tranquil solace."
+    },
+    "blocks": {},
+    "items": {},
+    "characters": {},
+    "has_been_visited": false,
+    "commands": [],
+    "properties": {}
+}

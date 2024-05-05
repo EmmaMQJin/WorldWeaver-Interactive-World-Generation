@@ -1,0 +1,16 @@
+{
+    "name": "Magic Reservoir",
+    "description": "The magic reservoir is a spectacular sight to behold. It's where all the magic in the land is stored and controlled. One can see the magic in its purest form, changing colors like the northern lights. It's a mesmerizing dance of lights, changing and shifting in response to the ebb and flow of magical energy.",
+    "connections": {
+        "west": "Observation Deck"
+    },
+    "travel_descriptions": {
+        "west": "Leaving the captivating spectacle of the Magic Reservoir, you journey west, relishing the shift in scenery as the kaleidoscopic dance of magic gives way to the scenic panorama of the Observation Deck."
+    },
+    "blocks": {},
+    "items": {},
+    "characters": {},
+    "has_been_visited": false,
+    "commands": [],
+    "properties": {}
+}

@@ -1,0 +1,16 @@
+{
+    "name": "The Magical Reservoir",
+    "description": "The sheer force of magic in the reservoir is so palpable. It is indeed a massive pool of liquid magic, shimmering with radiant energies of all colors and hues possible. The reservoir is in a secluded location and is the heart of the magic system. It is here magic is born and harnessed, before being piped around the world, in water-like form. This place is a testament to the ingenuity and spirit of the Ancient Mages who dared to bend the physical world to their will and create a powerful source for magic.",
+    "connections": {
+        "west": "Ancient Mage's Abode"
+    },
+    "travel_descriptions": {
+        "west": "Stepping away from the luminescent brilliance of the Magical Reservoir, you travel west, following streams of mystical energy back towards the familiarity of the Ancient Mage's Abode."
+    },
+    "blocks": {},
+    "items": {},
+    "characters": {},
+    "has_been_visited": false,
+    "commands": [],
+    "properties": {}
+}

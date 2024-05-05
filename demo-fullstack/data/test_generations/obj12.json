@@ -1,0 +1,16 @@
+{
+    "name": "Spellcraft Lab",
+    "description": "Within its weathered walls, the Spellcraft Lab houses the heart of magical innovation and learning in the community. It contains numerous, well-equipped stations for conjuring, enchanting, and brewing magical potions. Pulsating with arcane energy, the lab is a hub for researchers and magic practitioners of all levels, providing a platform for sharing knowledge and fostering a community of magical thinkers.",
+    "connections": {
+        "west": "Community Centre"
+    },
+    "travel_descriptions": {
+        "west": "Leaving the pulsating arcane energy of the Spellcraft Lab behind, you travel west, drawn by the comforting and homely essence, finding yourself back in the supportive environment of the Community Centre."
+    },
+    "blocks": {},
+    "items": {},
+    "characters": {},
+    "has_been_visited": false,
+    "commands": [],
+    "properties": {}
+}

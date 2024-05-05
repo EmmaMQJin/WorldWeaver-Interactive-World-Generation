@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Character Display</title>
+    <script>
+        function toggleForm() {
+            var form = document.getElementById('updateForm');
+            if (form.style.display === 'none') {
+                form.style.display = 'block';
+            } else {
+                form.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Here is your main character, who is also your player:</h1>
+    <p><strong>Name:</strong> {{ main_character.name }}</p>
+    <p><strong>Description:</strong> {{ main_character.description }}</p>
+    <button onclick="toggleForm()">Update Character</button>
+    <form id="updateForm" style="display: none;" action="/main-character" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="{{ main_character.name }}" required><br><br>
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" cols="50" required>{{ main_character.description }}</textarea><br><br>
+        <button type="submit">Submit Update</button>
+    </form>
+    <a href="/initial-state">Proceed to define the initial state of the game</a>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+    "name": "Busy City Streets",
+    "description": "A bustling area the pigeon must navigate to avoid pedestrians while flying towards Costco.",
+    "connections": {
+        "west": "City Park"
+    },
+    "travel_descriptions": {
+        "west": "Leaving the bustling heartbeat of the Busy City Streets, you navigate westward, skillfully avoiding pedestrians, until you reach the tranquil openness of the City Park, offering a peaceful respite in the midst of the city's chaos."
+    },
+    "blocks": {},
+    "items": {},
+    "characters": {},
+    "has_been_visited": false,
+    "commands": [],
+    "properties": {}
+}

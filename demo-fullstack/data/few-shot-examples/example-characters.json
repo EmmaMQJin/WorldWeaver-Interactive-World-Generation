@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Vox Mirage",
+        "description": "A notorious hacker known in the cybernetic subcultures for her ability to traverse and manipulate digital landscapes. With a background shrouded in mystery, she is feared by mega-corporations and revered by digital rebels.",
+        "persona": "They call me Vox Mirage. In the neon glow of the city, I am both nowhere and everywhere—my true self hidden behind layers of code and digital veils. My fingers dance across keyboards as I orchestrate revolutions in silence.",
+        "location": "",
+        "goal": "To steal the 'Master Algorithm' to free the cybernetic city from corporate control.",
+        "inventory": {},
+        "properties": {
+            "character_type": "human",
+            "is_dead": false
+        }
+    },
+    {
+        "name": "Guardian Wraith",
+        "description": "Once a formidable stone sentinel, now a spectral wraith imbued with the essence of ancient protectors. Swift and silent, it glides through the corridors of the tomb, vigilant against any threat to its sacred charge.",
+        "persona": "I am the Guardian Wraith, a spectral embodiment of protection. My duty is to roam the ancient grounds, swift and unseen, safeguarding the relics and secrets of ages past.",
+        "location": "",
+        "goal": "To patrol the ancient grounds and prevent any trespassers from disturbing the sacred relics.",
+        "inventory": {},
+        "properties": {
+            "character_type": "spectral",
+            "is_dead": false
+        }
+    }
+]

@@ -1,0 +1,106 @@
+[
+    {
+        "name": "Pigeon Nest",
+        "description": "Nestled in a tucked away corner of a tall, imposing building, the Pigeon Nest is a rough construction of twigs, leaves, and found objects. A true symbol of resilience in the bustling cityscape. It's a cozy, sheltered nook overlooking the lively streets below\u2014the perfect perch for observation and rest. Amid the noise and commotion of city life, this Pigeon Nest offers a sense of calm and respite.",
+        "connections": {
+            "down": "City Park",
+            "east": "Streetlamp Overlook"
+        },
+        "travel_descriptions": {
+            "down": "Leaving the sheltered tranquility of the Pigeon Nest, you plunge down with a flutter of wings and courage, navigating through the bustling cityscape below towards the wide expanses of the City Park, a strategic challenge laden with obstructions posing as branches.",
+            "east": "Leaving the sheltered tranquility of the Pigeon Nest, you venture east, gliding from building to building, until you spot the solitary perch of the Streetlamp Overlook, the landmark of your next food source amidst the bustling cityscape."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "City Park",
+        "description": "A large open area where the pigeon must avoid branches while in flight. Also the return point after the pizza has been stolen.",
+        "connections": {
+            "up": "Pigeon Nest",
+            "east": "Busy City Streets",
+            "west": "Costco",
+            "north": "Costco Eating Area"
+        },
+        "travel_descriptions": {
+            "up": "Soaring out of the maze-like obstruction of the City Park, your wings power through the wind, lifting you up among the looming buildings until you reach the secluding tranquility of your quiet sanctuary, the Pigeon Nest, hidden in a corner of the bustling city.",
+            "east": "Leaving the open area of the City Park, you fly towards the bustling activity of the Busy City Streets, deftly avoiding pedestrians as you navigate eastward towards the thrumming heart of the city.",
+            "west": "Leaving the verdant expanse of the City Park, you fly west, blending in with the city's concrete backdrop until you reach the abundance of the Costco, eyeing enticing opportunities for a tasty pizza snatch.",
+            "north": "Leaving the open area of the City Park, you fly north, blending in with the city's concrete backdrop until you reach the bustling activity of the Costco Eating Area, cunningly mimicking human actions to snatch a tasty slice of pizza."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Streetlamp Overlook",
+        "description": "An elevated spot where the pigeon lands to scout for food sources.",
+        "connections": {
+            "west": "Pigeon Nest"
+        },
+        "travel_descriptions": {
+            "west": "Departing from the elevated vantage point of the Streetlamp Overlook, you wing westward, navigating through the urban jungle, until the familiar comfort of the Pigeon Nest emerges amidst the towering concrete structures, greeting you with its tranquil solace."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Busy City Streets",
+        "description": "A bustling area the pigeon must navigate to avoid pedestrians while flying towards Costco.",
+        "connections": {
+            "west": "City Park"
+        },
+        "travel_descriptions": {
+            "west": "Leaving the bustling heartbeat of the Busy City Streets, you navigate westward, skillfully avoiding pedestrians, until you reach the tranquil openness of the City Park, offering a peaceful respite in the midst of the city's chaos."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Costco",
+        "description": "A location full of potential food sources. Here is where the pigeon spots the delectable pizza and attempts to steal a slice.",
+        "connections": {
+            "east": "City Park"
+        },
+        "travel_descriptions": {
+            "east": "Departing from the bustling activity of Costco, laden with your stolen slice of pizza, you fly eastwards, returning to the peaceful openness of the City Park."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Costco Eating Area",
+        "description": "A site of human activity where the pigeon must cunningly mimic human actions to steal a slice of pizza, dodge angry customers, and take off.",
+        "connections": {
+            "south": "City Park"
+        },
+        "travel_descriptions": {
+            "south": "Navigating out of the bustling Costco Eating Area, you flap your wings southward, leaving behind the human activity and swiftly returning to the sprawling greenness and tranquility of the City Park."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    }
+]
