@@ -1,0 +1,16 @@
+{
+    "name": "Graduation Hall",
+    "description": "Where player finish their journey by returning to graduate school and graduate without using magic.",
+    "connections": {
+        "west": "Reflection Meadow"
+    },
+    "travel_descriptions": {
+        "west": "Departing from the solemn atmosphere of the Graduation Hall, you journey west, retracing your steps with a nostalgic longing for magic, until you find yourself back in the enchanting serenity of Reflection Meadow."
+    },
+    "blocks": {},
+    "items": {},
+    "characters": {},
+    "has_been_visited": false,
+    "commands": [],
+    "properties": {}
+}

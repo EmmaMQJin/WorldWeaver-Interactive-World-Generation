@@ -1,7 +1,7 @@
 import json
 import os
 from openai import OpenAI
-from utils.frontend_utils import *
+from backend.utils.frontend_utils import *
 
 def load_json(filename):
     """ Load JSON data from a file """
@@ -102,7 +102,7 @@ def populate_character_inventories(directory, main_character, winning_state):
 
     all_characters = []  # List to store all characters for all_the_characters.json
 
-   # TODO:
+   
    # Handle the main character separately
     main_char_prompt = f"Given the main character '{main_character['name']}', described as '{main_character['description']}', who must achieve the goal: '{winning_state}', generate suitable inventory items. Each item should include name, description, examine text, and properties that fit the character's role and actions in the narrative."
     main_char_messages = [
@@ -111,9 +111,7 @@ def populate_character_inventories(directory, main_character, winning_state):
         {'role': 'assistant', 'content': sample_items},
         {'role': 'user', 'content': f"Now, generate detailed inventory items for {main_character['name']}."}
     ]
-    
-    client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
-    
+
     main_response = client.chat.completions.create(
         model='gpt-4',
         messages=main_char_messages,

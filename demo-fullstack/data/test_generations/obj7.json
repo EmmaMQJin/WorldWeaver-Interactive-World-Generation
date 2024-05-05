@@ -1,0 +1,16 @@
+{
+    "name": "Safe Distance",
+    "description": "Location in the sky where Peregrine can swiftly fly to after grabbing the pizza slice.",
+    "connections": {
+        "down": "Urban Building"
+    },
+    "travel_descriptions": {
+        "down": "From the Safe Distance in the sky, you plunge downwards, soaring over the bustling city until descending back at your original perch atop the Urban Building."
+    },
+    "blocks": {},
+    "items": {},
+    "characters": {},
+    "has_been_visited": false,
+    "commands": [],
+    "properties": {}
+}

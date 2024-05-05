@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starting Location Display</title>
+    <script>
+        function toggleForm() {
+            var form = document.getElementById('updateForm');
+            if (form.style.display === 'none') {
+                form.style.display = 'block';
+            } else {
+                form.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Here is the starting location of the game</h1>
+    <p><strong>Name:</strong> {{ cent_loc['name'] }}</p>
+    <p><strong>Description:</strong> {{ cent_loc['description'] }}</p>
+    <button onclick="toggleForm()">Update Starting Location</button>
+    <form id="updateForm" style="display: none;" action="/central-location" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="{{ cent_loc['name'] }}" required><br><br>
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" cols="50" required>{{ cent_loc['description'] }}</textarea><br><br>
+        <button type="submit">Submit Update</button>
+    </form>
+    <a href="/map">Proceed to generate the entire map of the game</a>
+</body>
+</html>

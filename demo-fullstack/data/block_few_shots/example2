@@ -1,0 +1,30 @@
+class Guard_Block(blocks.Block):
+    """
+    Blocks progress in this direction until the guard is no longer suspicious, or
+    leaves, or is unconscious, or dead.
+    """
+
+    def __init__(self, location: things.Location, guard: things.Character):
+        super().__init__(
+            "A guard blocks your way", "The guard refuses to let you pass."
+        )
+        self.guard = guard
+        self.location = location
+
+    def is_blocked(self) -> bool:
+        # Conditions of block:
+        # * There is a guard here
+        # * The guard is alive and conscious
+        # * The guard is suspicious
+
+        if self.guard:
+            if not self.location.here(self.guard):
+                return False
+            if self.guard.get_property("is_dead"):
+                return False
+            if self.guard.get_property("is_unconscious"):
+                return False
+            if self.guard.get_property("emotional_state") != "suspicious":
+                return False
+            return True
+        return False

@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Busy City Streets",
+        "description": "A bustling area the pigeon must navigate to avoid pedestrians while flying towards Costco.",
+        "connections": {},
+        "travel_descriptions": {},
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Costco",
+        "description": "A location full of potential food sources. Here is where the pigeon spots the delectable pizza and attempts to steal a slice.",
+        "connections": {},
+        "travel_descriptions": {},
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Costco Eating Area",
+        "description": "A site of human activity where the pigeon must cunningly mimic human actions to steal a slice of pizza, dodge angry customers, and take off.",
+        "connections": {},
+        "travel_descriptions": {},
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    }
+]

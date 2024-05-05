@@ -1,0 +1,16 @@
+{
+    "name": "Royal Kingdom",
+    "description": "The princess's home that the player must return her to after saving her from poison.",
+    "connections": {
+        "west": "Princess's Crypt"
+    },
+    "travel_descriptions": {
+        "west": "Departing from the resplendent Royal Kingdom, you head west, making your way through the mysterious forest and finally returning to the haunting tranquility of the Princess's Crypt."
+    },
+    "blocks": {},
+    "items": {},
+    "characters": {},
+    "has_been_visited": false,
+    "commands": [],
+    "properties": {}
+}

@@ -1,0 +1,97 @@
+[{
+    "name": "Northern Shore",
+    "description": "The lake gives way to a slightly sandy and rocky shore. It is dotted with small shrubs and a few trees, but mostly it is a fairly open expanse. It is covered in places by a green short grass. The lake level falls away swiftly from the beach going from a few feet to well over ten feet in a short span.",   
+    "connections": {
+    },
+    "travel_descriptions": {
+    },
+    "blocks": {
+    },
+    "items": {},
+    "characters": {
+    },
+    "has_been_visited": false,
+    "commands": [],
+    "properties": {}
+
+},
+{
+    "name": "Lake",
+    "description": "The beautiful lake glistens in the sun as water can be seen in all directions. you can see several feet beneath the water because it is so clear.",
+    "connections": {
+    },
+    "travel_descriptions": {
+    },
+    "blocks": {
+    },
+    "items": {},
+    "characters": {
+    },
+    "has_been_visited": false,
+    "commands": [],
+    "properties": {}
+},
+{
+    "name": "Dock",
+    "description": "The wood used to make the dock is of highest quality, commissioned from trees that stand towering in the local forests. Despite time having passed it has been taken care of to the point where even a hint of warping from the water beneath will have a plank torn and replaced within a night.",
+    "connections": {
+    },
+    "travel_descriptions": {
+    },
+    "blocks": {
+    },
+    "items": {},
+    "characters": {
+    },
+    "has_been_visited": false,
+    "commands": [],
+    "properties": {}
+},
+{
+    "name": "The Swimming Hole",
+    "description": "The swimming hole is calm and clear.  The sun sparkles off the ripples that form on the surface of the water.  Fish occasionally jump from the water and splash back in.",
+    "connections": {
+    },
+    "travel_descriptions": {
+    },
+    "blocks": {
+    },
+    "items": {},
+    "characters": {
+    },
+    "has_been_visited": false,
+    "commands": [],
+    "properties": {}
+},
+{
+    "name": "Island",
+    "description": "This island is located in the center of a lake. It is smaller than a ship and covered in moss.",
+    "connections": {
+    },
+    "travel_descriptions": {
+    },
+    "blocks": {
+    },
+    "items": {},
+    "characters": {
+    },
+    "has_been_visited": false,
+    "commands": [],
+    "properties": {}
+},
+{
+    "name": "Lakeside House",
+    "description": "Its white and vibrant, certainly a location for some lord, It has 3 floors, and fine gardening surround the house. Its open and breezy this place is calm and peaceful.",
+    "connections": {
+    },
+    "travel_descriptions": {
+    },
+    "blocks": {
+    },
+    "items": {},
+    "characters": {
+    },
+    "has_been_visited": false,
+    "commands": [],
+    "properties": {}
+}]

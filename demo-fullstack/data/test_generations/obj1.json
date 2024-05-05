@@ -1,0 +1,22 @@
+{
+    "name": "City Park",
+    "description": "A large open area where the pigeon must avoid branches while in flight. Also the return point after the pizza has been stolen.",
+    "connections": {
+        "up": "Pigeon Nest",
+        "east": "Busy City Streets",
+        "west": "Costco",
+        "north": "Costco Eating Area"
+    },
+    "travel_descriptions": {
+        "up": "Soaring out of the maze-like obstruction of the City Park, your wings power through the wind, lifting you up among the looming buildings until you reach the secluding tranquility of your quiet sanctuary, the Pigeon Nest, hidden in a corner of the bustling city.",
+        "east": "Leaving the open area of the City Park, you fly towards the bustling activity of the Busy City Streets, deftly avoiding pedestrians as you navigate eastward towards the thrumming heart of the city.",
+        "west": "Leaving the verdant expanse of the City Park, you fly west, blending in with the city's concrete backdrop until you reach the abundance of the Costco, eyeing enticing opportunities for a tasty pizza snatch.",
+        "north": "Leaving the open area of the City Park, you fly north, blending in with the city's concrete backdrop until you reach the bustling activity of the Costco Eating Area, cunningly mimicking human actions to snatch a tasty slice of pizza."
+    },
+    "blocks": {},
+    "items": {},
+    "characters": {},
+    "has_been_visited": false,
+    "commands": [],
+    "properties": {}
+}

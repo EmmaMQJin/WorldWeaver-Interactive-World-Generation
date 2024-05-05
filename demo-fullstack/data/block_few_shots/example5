@@ -1,0 +1,26 @@
+class Monster_Block(blocks.Block):
+    """
+    Blocks progress in this direction until the monster is defeated, or
+    leaves, or is unconscious, or dead, or is no longer old.
+    """
+
+    def __init__(self, location: things.Location, monster: things.Character):
+        super().__init__("A monster blocks your way", "An old monster blocks your way")
+        self.location = location
+        self.monster = monster
+
+    def is_blocked(self) -> bool:
+        # Conditions of block:
+        # * There is a monster here
+        # * The monster is alive and conscious
+        # * The monster is old
+        if self.monster:
+            if not self.location.here(self.monster):
+                return False
+            if self.monster.get_property("is_dead"):
+                return False
+            if self.monster.get_property("is_unconscious"):
+                return False
+            if self.monster.get_property("age") == "old":
+                return True
+        return False

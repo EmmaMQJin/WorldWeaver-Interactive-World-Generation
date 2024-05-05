@@ -1,0 +1,16 @@
+{
+    "name": "Costco",
+    "description": "A location full of potential food sources. Here is where the pigeon spots the delectable pizza and attempts to steal a slice.",
+    "connections": {
+        "east": "City Park"
+    },
+    "travel_descriptions": {
+        "east": "Departing from the bustling activity of Costco, laden with your stolen slice of pizza, you fly eastwards, returning to the peaceful openness of the City Park."
+    },
+    "blocks": {},
+    "items": {},
+    "characters": {},
+    "has_been_visited": false,
+    "commands": [],
+    "properties": {}
+}

@@ -1,0 +1,16 @@
+{
+    "name": "Pigeon Meetup Spot",
+    "description": "The local favorite hangout of the pigeon flock where Paco shares his procured breakfast.",
+    "connections": {
+        "west": "Sample Cart"
+    },
+    "travel_descriptions": {
+        "west": "Departing from the lively Pigeon Meetup Spot, you embark on a journey westward, navigating through the unknown, and gradually re-emerging into the bustling atmosphere of the Sample Cart, the destination for cheese cube samples."
+    },
+    "blocks": {},
+    "items": {},
+    "characters": {},
+    "has_been_visited": false,
+    "commands": [],
+    "properties": {}
+}

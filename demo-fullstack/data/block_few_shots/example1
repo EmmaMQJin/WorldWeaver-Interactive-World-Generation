@@ -1,0 +1,26 @@
+class Troll_Block(blocks.Block):
+    """
+    Blocks progress in this direction until the troll is no longer hungry, or
+    leaves, or is unconscious, or dead.
+    """
+
+    def __init__(self, location: things.Location, troll: things.Character):
+        super().__init__("A troll blocks your way", "A hungry troll blocks your way")
+        self.location = location
+        self.troll = troll
+
+    def is_blocked(self) -> bool:
+        # Conditions of block:
+        # * There is a troll here
+        # * The troll is alive and conscious
+        # * The troll is still hungry
+        if self.troll:
+            if not self.location.here(self.troll):
+                return False
+            if self.troll.get_property("is_dead"):
+                return False
+            if self.troll.get_property("is_unconscious"):
+                return False
+            if self.troll.get_property("is_hungry"):
+                return True
+        return False

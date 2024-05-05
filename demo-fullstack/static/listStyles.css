@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.list-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.list-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list-container ul li {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    background-color: #ffffff;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.list-container ul li:last-child {
+    border-bottom: none;
+}
+
+.list-container ul li:hover {
+    background-color: #f9f9f9;
+}
