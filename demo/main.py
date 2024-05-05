@@ -2,6 +2,7 @@ from utils.generate_characters_utils import *
 from utils.generate_items_utils import *
 from utils.generate_locations_utils import *
 from utils.generate_actions_utils import *
+from utils.generate_game_class import *
 from utils.utils import *
 import copy
 
@@ -129,6 +130,8 @@ def main():
     dict_to_json_file(game_dict, "data/test_generations/game.json")
     print("\nGenerated the entire game json! ^v^\n")
 
+    generate_action_class(actions_list)
+    generate_game_class(winning_state, characters[0])
 
     
 
