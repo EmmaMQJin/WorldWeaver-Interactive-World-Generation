@@ -102,7 +102,7 @@ def populate_character_inventories(directory, main_character, winning_state):
 
     all_characters = []  # List to store all characters for all_the_characters.json
 
-   
+   # TODO:
    # Handle the main character separately
     main_char_prompt = f"Given the main character '{main_character['name']}', described as '{main_character['description']}', who must achieve the goal: '{winning_state}', generate suitable inventory items. Each item should include name, description, examine text, and properties that fit the character's role and actions in the narrative."
     main_char_messages = [
