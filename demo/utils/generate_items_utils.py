@@ -111,7 +111,9 @@ def populate_character_inventories(directory, main_character, winning_state):
         {'role': 'assistant', 'content': sample_items},
         {'role': 'user', 'content': f"Now, generate detailed inventory items for {main_character['name']}."}
     ]
-
+    
+    client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
+    
     main_response = client.chat.completions.create(
         model='gpt-4',
         messages=main_char_messages,
