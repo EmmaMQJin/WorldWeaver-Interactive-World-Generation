@@ -4,7 +4,8 @@ import os
 import ast
 from openai import OpenAI
 from utils.json_utils import read_json_examples
-
+from utils.generate_actions_utils import read_from_file, write_code_to_file
+from data.static.constants import Constants
 def extract_class_names(file_path):
     with open(file_path, 'r') as file:
         content = file.read()
@@ -26,9 +27,7 @@ def extract_class_names(file_path):
     
     return visitor.class_names
 
-
-def generate_game_class(winning_state, main_character):
-    
+def generate_is_won(winning_state, main_character):
     #end state, main character
     client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
     system_prompt_is_won = """
@@ -93,9 +92,18 @@ def generate_game_class(winning_state, main_character):
         frequency_penalty=0,
         presence_penalty=0
     )
-    gpt_response = response.choices[0].message.content
-    print(gpt_response)
+    iswon = response.choices[0].message.content
+    return iswon
 
+def generate_game_class(winning_state, main_character):
+    worldweaver_init = Constants.worldweaver_init
+    iswon = generate_is_won(winning_state, main_character)
+    actions = read_from_file("actions.py")
+    blocks = read_from_file("extracted_block_classes.py")
+    code = worldweaver_init + "\n" + iswon + "\n" + actions + "\n" + blocks
+    write_code_to_file("",code, "worldweaver")
+    
+    
 winning_state = "pigeon steal costco burger"
 characters = read_json_examples("/Users/manvikaul/Documents/Classwork/CIS-7000/project/WorldWeaver-Interactive-World-Generation/demo/data/test_generations/all_the_characters.json")
 generate_game_class(winning_state, characters[0])
