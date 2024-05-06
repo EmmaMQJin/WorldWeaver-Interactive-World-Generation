@@ -1,0 +1,16 @@
+{
+    "name": "Pigeon Dance Stage",
+    "description": "The rooftop of Costco, with an impressively expansive ventilation system fan and some old antennas, has unknowingly become Percy's stage for his victory dances. It offers a panoramic view of the area and enough privacy for Percy to flap his wings in celebration whenever he manages to grab his favorite bread buns.",
+    "connections": {
+        "down": "Shopper's Area"
+    },
+    "travel_descriptions": {
+        "down": "From the heights of the Pigeon Dance Stage, with its panoramic vista, you descend back down into the heart of the bustling Shopper's Area, immersing yourself once more in the shopping frenzy."
+    },
+    "blocks": {},
+    "items": {},
+    "characters": {},
+    "has_been_visited": false,
+    "commands": [],
+    "properties": {}
+}

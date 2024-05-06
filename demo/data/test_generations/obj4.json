@@ -1,11 +1,11 @@
 {
-    "name": "Dewdrop Grotto",
-    "description": "The grotto hidden behind translucent dewdrop curtains that twinkle in the morning sunlight. The interior sparkles with luminescent moss and precious gemstones, creating a serene and magical ambience, ideal for meditating pixies.",
+    "name": "Bakery Aisle",
+    "description": "Where Pippin can find the bread buds.",
     "connections": {
-        "in": "Flower Village\n"
+        "west": "Costco Entrance"
     },
     "travel_descriptions": {
-        "in": "Emerging from the tranquility of the Dewdrop Grotto, you make your way back towards the bustling Flower Village. As you traverse through the dewdrop curtain, the twinkling beauty of the grotto gives way to the vibrant, fragrant landscape of the Flower Village, alive with the cheerful hum of its pixie residents."
+        "west": "Navigating away from the enticing whiffs of the Bakery Aisle with the bread buds in hand, you journey west, back through the bustling aisles, until you find yourself back at the bustling Costco Entrance, the gateway to shoppers' paradise."
     },
     "blocks": {},
     "items": {},

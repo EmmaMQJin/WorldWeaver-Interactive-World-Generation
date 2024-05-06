@@ -1,0 +1,16 @@
+{
+    "name": "Safe Location",
+    "description": "Tucked away from the buzzing activity of Costco, this hidden spot offers a sanctuary for Percy. Brushing through some overgrown foliage, he finds himself in a quaint little clearing, the perfect refuge for his hidden bread buns.",
+    "connections": {
+        "east": "Shopper's Area"
+    },
+    "travel_descriptions": {
+        "east": "Emerging from the tranquility of the Safe Location, you push through overgrown foliage and immerse yourself once again in the bustling Shopper's Area, navigating between chatty families and bargain hunters in the heart of the lively Costco."
+    },
+    "blocks": {},
+    "items": {},
+    "characters": {},
+    "has_been_visited": false,
+    "commands": [],
+    "properties": {}
+}

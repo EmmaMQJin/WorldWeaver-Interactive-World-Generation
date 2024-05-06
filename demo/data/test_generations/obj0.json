@@ -1,15 +1,15 @@
 {
-    "name": "Kingdom of Cats\n",
-    "description": "In the heart of a lush and vibrant forest, lies the enigmatic Kingdom of Cats. Hidden from human eyes, this secluded realm is woven into the verdant foliage and massive ancient trees. The kingdom holds a magical city where cats of all sorts reside, with intricate pathways woven into the treetops and radiant flowers that glow in the moonlight serving as lighting. The main structures are fashioned from enormous, twisty tree trunks and interlaced branches, draped with hanging vines and bright, colorful flowers. In the center lies the royal palace, a resplendent and grand tree fortress, home to the Cat King. The air here is filled with the scent of rich soil, blooming flowers, and a hint of mystery. The Kingdom of Cats whispers tales of adventure, peril, and regality, waiting patiently for those brave enough to explore.\n",
+    "name": "Costco Parking Lot",
+    "description": "The vast expanse of the Costco parking lot stretches before you, filled with vehicles of all shapes and sizes. The smell of fresh asphalt and the faint hum of engine noise creates a thrum of modern day life. Here providence has placed you, a pigeon amongst the giant steel boxes. You can see people with shopping carts making their way to and from the exploitative superstore, their hands busily pushing carts filled with myriad goods. The monolithic facade of the store looms ominously in the distance.",
     "connections": {
-        "up": "Cat King's Palace",
-        "west": "Ancient Oak Library",
-        "east": "Whisker Windmill"
+        "east": "Costco Entrance",
+        "in": "Produce Aisle",
+        "west": "Security Guard Station"
     },
     "travel_descriptions": {
-        "up": "Ascending the intricate tree pathways from the heart of the Kingdom of Cats, you move towards the Cat King's Palace. The scent of blooming flowers grows stronger as you climb higher, embracing the lofty structure that harmoniously merges with the lively forest.",
-        "west": "Walking along the wooden pathways, you leave the Kingdom of Cats towards the Ancient Oak Library. As you approach, the merriment fades into a respectful silence as the great oak welcomes you to the heart of knowledge and wisdom.",
-        "east": "Leaving the Kingdom of Cats, you head east. As you traverse the vibrant and lush forest, the royal palace slowly disappears from sight, and the Whisker Windmill comes into view. Its spinning wheel and gentle whirring sound entice you closer, whispering tales of rustic charm and humble labor."
+        "east": "Navigating through the maze of parked cars, you head towards the ominous facade of Costco, your journey eastward leading you from the busy parking lot to the bustling entrance of the mega store.",
+        "in": "Leaving the hum of Costco's vast parking lot, you navigate your way, moving in towards the monolithic facade of the superstore, until you find yourself amidst the bustling shoppers of the Produce Aisle.",
+        "west": "Leaving the hustle and bustle of the Costco parking lot behind, you veer west, cautiously approaching the unassuming parameters of the Security Guard Station."
     },
     "blocks": {},
     "items": {},

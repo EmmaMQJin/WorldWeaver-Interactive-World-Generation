@@ -1,0 +1,16 @@
+{
+    "name": "Checkout Lane",
+    "description": "Another place where Pippin may run into security guards while navigating to the exit.",
+    "connections": {
+        "east": "Costco Entrance"
+    },
+    "travel_descriptions": {
+        "east": "Leaving the Checkout Lane, you head east, fighting your way through the bustling crowds, back into the energetic world of the Costco Entrance."
+    },
+    "blocks": {},
+    "items": {},
+    "characters": {},
+    "has_been_visited": false,
+    "commands": [],
+    "properties": {}
+}

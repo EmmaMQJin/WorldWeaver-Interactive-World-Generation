@@ -3,7 +3,7 @@ import json
 import os
 import ast
 from openai import OpenAI
-from json_utils import read_json_examples
+from utils.json_utils import read_json_examples
 
 def extract_class_names(file_path):
     with open(file_path, 'r') as file:
@@ -97,5 +97,5 @@ def generate_game_class(winning_state, main_character):
     print(gpt_response)
 
 winning_state = "pigeon steal costco burger"
-characters = read_json_examples("/Users/ishitaagarwal/Library/Mobile Documents/com~apple~CloudDocs/Penn/Spring 2024/CIS 7000 Interactive Fiction/Project/WorldWeaver-Interactive-World-Generation/demo/data/test_generations/all_the_characters.json")
+characters = read_json_examples("/Users/manvikaul/Documents/Classwork/CIS-7000/project/WorldWeaver-Interactive-World-Generation/demo/data/test_generations/all_the_characters.json")
 generate_game_class(winning_state, characters[0])

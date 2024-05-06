@@ -1,11 +1,11 @@
 {
-    "name": "Whisker Windmill",
-    "description": "A short distance from the Kingdom, lies the Whisker Windmill, a rustic structure constructed from aged wood, responsible for grinding down the grain used to make the bread for the palace\u2019s feasts. Shaped like a cat's whiskers, the windmill is a visual delight, with its hypnotic, spinning wheel and gentle whirring sound.",
+    "name": "Security Guard Station",
+    "description": "A key location to maneuver around to avoid getting caught.",
     "connections": {
-        "west": "Kingdom of Cats\n"
+        "east": "Costco Parking Lot"
     },
     "travel_descriptions": {
-        "west": "Heading west from the Whisker Windmill, the lush greenery of the Kingdom of Cats slowly engulfs your sight. The gentle rumble of the windmill fades, slowly replaced by the soft rustle of leaves and quiet whispers of nature. With each step, the grand silhouette of the Cat King's palace comes into view, nestled amidst the verdant foliage."
+        "east": "Stepping away from the confines of the Security Guard Station, you head east, returning to the vast, vibrant expanse of the Costco parking lot bustling with life and commerce."
     },
     "blocks": {},
     "items": {},

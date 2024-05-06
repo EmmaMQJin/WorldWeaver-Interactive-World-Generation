@@ -1,11 +1,9 @@
 {
-    "Piggie's Home": "Starting location. This is where gamer pick up the backpack and start the journey.",
-    "Candyland Trailhead": "Where the player must find the trail that will lead them to Candyland.",
-    "Apple Tree Grove": "Where the player can gather apples.",
-    "River Crossing": "A stream with stepping stones the player must cross.",
-    "Goblin Bridge": "Where the player must trade apples with a goblin to receive magic candy.",
-    "Candy Mountain": "Where the player consumes the magic candy for strength, ascend the mountain, and solve the pixie's riddle to get the key.",
-    "Candy Cane Forest": "Where the player finds a candy cane stick to help cross the dangerous chasm.",
-    "Gate to Candyland": "Where the player unlocks the gate to Candyland with the key from the riddle.",
-    "Candyland": "The final location, where, upon arrival, Piggie celebrates reaching their destination."
+    "Costco Parking Lot": "Starting location. Where Pippin starts his journey to enter Costco.",
+    "Costco Entrance": "Where Pippin needs to dodge eager shoppers to get inside the store.",
+    "Produce Aisle": "A location Pippin has to navigate through to avoid more shoppers.",
+    "Bakery Aisle": "Where Pippin can find the bread buds.",
+    "Security Guard Station": "A key location to maneuver around to avoid getting caught.",
+    "Checkout Lane": "Another place where Pippin may run into security guards while navigating to the exit.",
+    "Costco Exit": "The final location where Pippin can evade the guard and leave the superstore with the bread buds."
 }

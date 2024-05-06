@@ -1,7 +1,7 @@
 [
     {
-        "name": "Candyland Trailhead",
-        "description": "Where the player must find the trail that will lead them to Candyland.",
+        "name": "Bakery Aisle",
+        "description": "Where Pippin can find the bread buds.",
         "connections": {},
         "travel_descriptions": {},
         "blocks": {},
@@ -12,8 +12,20 @@
         "properties": {}
     },
     {
-        "name": "Apple Tree Grove",
-        "description": "Where the player can gather apples.",
+        "name": "Checkout Lane",
+        "description": "Another place where Pippin may run into security guards while navigating to the exit.",
+        "connections": {},
+        "travel_descriptions": {},
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Costco Exit",
+        "description": "The final location where Pippin can evade the guard and leave the superstore with the bread buds.",
         "connections": {},
         "travel_descriptions": {},
         "blocks": {},

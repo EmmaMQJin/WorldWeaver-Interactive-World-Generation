@@ -1,27 +1,9 @@
-pack suitcase 
-leave home
-take bus to airport
-get boarding pass
-pass the security check
-board the plane
-fly to NYC
-get off the plane
-collect suitcase
-exit airport
-take a taxi
-arrive in NYC
-
-locate breakfast buns
-observe store employees
-distract store employee
-fly to bakery area
-wait for opportunity
-grab breakfast bun
-avoid security cameras
-evade store customers
-hide breakfast bun
-create diversion
-retrieve breakfast bun
-exit the store
-hide bun safely
-celebrate victory
+Enter Costco
+Dodge eager shoppers
+Find bakery aisle
+Spot bread buds
+Avoid security guards
+Grab bread buds
+Navigate to exit
+Evade final security guard
+Exit Costco
