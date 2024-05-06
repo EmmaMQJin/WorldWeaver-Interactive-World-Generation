@@ -15,35 +15,35 @@ def save_json(data, filename):
     with open(filename, 'w') as file:
         json.dump(data, file, indent=4)
 
-def extract_characters(directory):
-    characters = []
-    for filename in os.listdir(directory):
-        if filename.endswith('.json'):
-            full_path = os.path.join(directory, filename)
-            try:
-                json_data = load_json(full_path)
-                if 'characters' in json_data:
-                    # Process each character to remove the 'location' key
-                    for character in json_data['characters']:
-                        if 'location' in character:
-                            character['location'] = {} 
-                    characters.extend(json_data['characters'])
-            except json.JSONDecodeError:
-                print(f"Error decoding JSON from file {filename}")
-            except Exception as e:
-                print(f"An error occurred with file {filename}: {str(e)}")
-    return characters
+# def extract_characters(directory):
+#     characters = []
+#     for filename in os.listdir(directory):
+#         if filename.endswith('.json'):
+#             full_path = os.path.join(directory, filename)
+#             try:
+#                 json_data = load_json(full_path)
+#                 if 'characters' in json_data:
+#                     # Process each character to remove the 'location' key
+#                     for character in json_data['characters']:
+#                         if 'location' in character:
+#                             character['location'] = {} 
+#                     characters.extend(json_data['characters'])
+#             except json.JSONDecodeError:
+#                 print(f"Error decoding JSON from file {filename}")
+#             except Exception as e:
+#                 print(f"An error occurred with file {filename}: {str(e)}")
+#     return characters
 
-# Set the directory containing the JSON files
-directory = ''  # Adjust the path to the directory of your JSON files
-output_filename = 'extracted_characters.json'  # The filename for the output JSON
+# # Set the directory containing the JSON files
+# directory = ''  # Adjust the path to the directory of your JSON files
+# output_filename = 'extracted_characters.json'  # The filename for the output JSON
 
-# Extract character data
-# extracted_characters = extract_characters(directory)
+# # Extract character data
+# # extracted_characters = extract_characters(directory)
 
-# Save the extracted data to a new JSON file in the same directory as this script
-#save_json(extracted_characters, output_filename)
-#print(f"Data extracted and saved to {output_filename}")
+# # Save the extracted data to a new JSON file in the same directory as this script
+# #save_json(extracted_characters, output_filename)
+# #print(f"Data extracted and saved to {output_filename}")
 
 
 ####################
@@ -69,18 +69,22 @@ Output the character in JSON format, like this:
     ]
 
     messages += [{"role": "user", "content": background_story}]
-
-    response = client.chat.completions.create(
-        model='gpt-4',
-        messages=messages,
-        temperature=1,
-        max_tokens=2048,
-        top_p=1.0,
-        frequency_penalty=0,
-        presence_penalty=0
-    )
-    gpt_response = response.choices[0].message.content
-    return json.loads(gpt_response)
+    while True:
+        try:
+            response = client.chat.completions.create(
+                model='gpt-4',
+                messages=messages,
+                temperature=1,
+                max_tokens=2048,
+                top_p=1.0,
+                frequency_penalty=0,
+                presence_penalty=0
+            )
+            gpt_response = response.choices[0].message.content
+            result = json.loads(gpt_response)
+            return result
+        except:
+            print("Error in generating main character --- trying again...")
 
 
 def generate_npc_shots():
@@ -107,7 +111,12 @@ def generate_npc_shots():
         "persona": "I'm Luna, the fairy guardian of this mystical grove. By weaving light, I create enchanting illusions and barriers to protect this magical realm and its secrets. My presence ensures that only the worthy can access the garden's most hidden treasures.",
         "location": "",
         "goal": "To protect the magic hat and oversee the distribution of fairy dust to those who are deemed worthy.",
-        "inventory": {}
+        "inventory": {},
+        "properties": {
+            "character_type": "fairy",
+            "is_dead": false,
+            "has_magic": true
+        }
     },
     {
         "name": "Thornwick the Elder",
@@ -115,7 +124,13 @@ def generate_npc_shots():
         "persona": "I am Thornwick, the ancient keeper of lore and wisdom in this enchanted land. My roots delve deep, binding the magic of the garden with the essence of the earth. I share tales and secrets with those who respect the harmony of nature.",
         "location": "",
         "goal": "To educate visitors about the history of the garden and its magical properties, ensuring that its secrets are respected and preserved.",
-        "inventory": {}
+        "inventory": {},
+        "properties": {
+            "character_type": "spirit",
+            "is_dead": false,
+            "has_magic": true,
+            "is_wise": true
+        }
     },
     {
         "name": "Glitterpaw the Mischievous",
@@ -123,7 +138,11 @@ def generate_npc_shots():
         "persona": "They call me Glitterpaw, the whimsical trickster of the Enchanted Garden. With a flick of my sparkling tail, I lead curious adventurers astray or into magical discoveries, depending on my mood. Laughter and surprise are my favorite creations.",
         "location": "",
         "goal": "To entertain and sometimes mislead visitors, testing their cleverness and sense of humor as they seek the garden's treasures.",
-        "inventory": {}
+        "inventory": {},
+        "properties": {
+            "character_type": "cat",
+            "is_dead": false
+        }
     }
 ]
 """
@@ -149,7 +168,12 @@ def generate_npc_shots():
         "persona": "I'm Circuit, the marketplace's master engineer. I transform broken tech into innovative marvels, making old things new and useful.",
         "location": "",
         "goal": "To create innovative tech solutions and trade unique items that help Echo in gathering tech for cyber wings.",
-        "inventory": {}
+        "inventory": {},
+        "properties": {
+            "character_type": "human",
+            "is_dead": false,
+            "is_skilled": true
+        }
     },
     {
         "name": "Volt the Trader",
@@ -157,7 +181,11 @@ def generate_npc_shots():
         "persona": "I'm Volt, your friendly tech trader. I have an eye for hidden tech treasures and a deal always ready to be struck.",
         "location": "",
         "goal": "To supply Echo with essential components for cyber wings in exchange for interesting tech pieces.",
-        "inventory": {}
+        "inventory": {},
+            "properties": {
+            "character_type": "human",
+            "is_dead": false,
+        }
     },
     {
         "name": "Spark the Informant",
@@ -165,7 +193,12 @@ def generate_npc_shots():
         "persona": "Call me Spark. I trade in whispers and wires, knowing more about this digital jungle than anyone else.",
         "location": "",
         "goal": "To provide Echo with vital information and guidance on where to find the best discarded tech for crafting cyber wings.",
-        "inventory": {}
+        "inventory": {},
+            "properties": {
+            "character_type": "human",
+            "is_dead": false,
+            "is_smart": true
+        }
     }
 ]
 
@@ -185,7 +218,7 @@ def generate_npcs_round(location_name, location_description, location_purpose, b
     prompt += "you should generate a list of 3 suitable and purposeful NPCs that should be in this location."
     prompt += "you should espeially focus on aligning with the location's given purpose."
     prompt += "Output the NPCs as a list of JSON objects."
-    prompt += "You should always populate name, description, persona, and goal of an NPC character."
+    prompt += "You should always populate name, description, persona, goal, and properties of an NPC character."
     prompt += "You should always leave the location and inventory of each character empty."
     prompt += f"Here are the NPCs you have already before and SHOULD NOT generate again: {existing_npcs}"
 
@@ -207,19 +240,22 @@ def generate_npcs_round(location_name, location_description, location_purpose, b
     messages = [{'role': 'system', 'content': prompt}]
     messages += generate_npc_shots()
     messages += [{"role": "user", "content": user_prompt}]
+    while True:
+        try:
+            response = client.chat.completions.create(
+                model='gpt-4',
+                messages=messages,
+                temperature=1,
+                max_tokens=2048,
+                top_p=1.0,
+                frequency_penalty=0,
+                presence_penalty=0
+            )
 
-    response = client.chat.completions.create(
-        model='gpt-4',
-        messages=messages,
-        temperature=1,
-        max_tokens=2048,
-        top_p=1.0,
-        frequency_penalty=0,
-        presence_penalty=0
-    )
-
-    npc_content = json.loads(response.choices[0].message.content)
-    return npc_content
+            npc_content = json.loads(response.choices[0].message.content)
+            return npc_content
+        except:
+            print("Error in NPC generation --- trying again...")
 
 
 
