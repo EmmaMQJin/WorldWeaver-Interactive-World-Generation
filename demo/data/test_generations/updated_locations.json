@@ -234,7 +234,14 @@
         "travel_descriptions": {
             "up": "From the Costco Roof, Penny Pigeon launches herself into the air with a powerful flap of her wings, ascending through the bustling cityscape, returning to her peaceful sanctuary, the Pigeon Nest perched high in the old oak tree."
         },
-        "blocks": {},
+        "blocks": {
+            "up": {
+                "_type": "CostcoRoofUpBlock",
+                "connection": "Pigeon Nest",
+                "chopper_the_crow": "Chopper the Crow",
+                "location": "Costco Roof"
+            }
+        },
         "items": {
             "Pigeon Feed": {
                 "name": "Pigeon Feed",
@@ -431,7 +438,14 @@
         "travel_descriptions": {
             "east": "Having secured a piece of leftover pizza in the bustling Costco Food Court, you take a swift flight east, weaving between urban jungle obstacles until you return to the cozy safety of the Pigeon Nest perched high in the old oak tree."
         },
-        "blocks": {},
+        "blocks": {
+            "east": {
+                "_type": "CostcoFoodCourtEastBlock",
+                "connection": "Pigeon Nest",
+                "watcher_willis": "Watcher Willis",
+                "location": "Costco Food Court"
+            }
+        },
         "items": {
             "Pizza Stand": {
                 "name": "Pizza Stand",
@@ -515,7 +529,14 @@
         "travel_descriptions": {
             "west": "Leaving the hustle and bustle of the Pizza Stand, you navigate west through the labyrinth of Costco, emerging into the relative calm of the Costco Parking Lot."
         },
-        "blocks": {},
+        "blocks": {
+            "west": {
+                "_type": "PizzaStandWestBlock",
+                "connection": "Costco Parking Lot",
+                "cheesy_the_cashier": "Cheesy the Cashier",
+                "location": "Pizza Stand"
+            }
+        },
         "items": {
             "Pizza Slice": {
                 "name": "Pizza Slice",
@@ -661,7 +682,14 @@
         "travel_descriptions": {
             "east": "Leaving the cacophonous Territory of the Seagulls, Penny Pigeon swiftly sails eastwards, maneuvering her way back into the relative chaos of the Costco Parking Lot, leaving the aggressive birds and their discarded food spoils behind."
         },
-        "blocks": {},
+        "blocks": {
+            "east": {
+                "_type": "TerritoryOfTheSeagullsEastBlock",
+                "connection": "Costco Parking Lot",
+                "swooper_the_scout": "Swooper the Scout",
+                "location": "Territory of the Seagulls"
+            }
+        },
         "items": {
             "Discarded Food": {
                 "name": "Discarded Food",

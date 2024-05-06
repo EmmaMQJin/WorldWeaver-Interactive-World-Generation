@@ -2,6 +2,7 @@ from utils.generate_characters_utils import *
 from utils.generate_items_utils import *
 from utils.generate_locations_utils import *
 from utils.generate_actions_utils import *
+from utils.generate_blocks_utils import *
 from utils.utils import *
 import copy
 
@@ -109,6 +110,18 @@ def main():
     generate_objects_in_locations("games-data")
     print("\nPopulating character inventories......\n")
     populate_character_inventories("games-data", main_character, winning_state)
+
+    #Block Generation
+    print("\nGenerating Blocks in the game......\n")
+    all_locations_path = "data/test_generations/all_the_locations.json"
+    generate_blocks(background_story, action_list,all_locations_path)
+    input_file_path = 'data/generated_blocks.py'  # Path to the file containing the block classes
+    output_file_path = 'data/extracted_block_classes.py'  # Path to save the extracted block classes
+    extract_block_classes(input_file_path, output_file_path)
+    blocks_file_path = 'data/generated_blocks.py'
+    locations_json_path = "data/test_generations/all_the_locations.json"
+    output_json_path = 'data/test_generations/all_the_locations.json'
+    integrate_blocks(locations_json_path, blocks_file_path, output_json_path)
 
     print("\nGenerating the entire game JSON... ...\n")
     characters = read_json_examples("data/test_generations/all_the_characters.json")

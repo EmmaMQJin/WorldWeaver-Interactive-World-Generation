@@ -1,11 +1,9 @@
 {
-    "Piggie's Home": "Starting location. This is where gamer pick up the backpack and start the journey.",
-    "Candyland Trailhead": "Where the player must find the trail that will lead them to Candyland.",
-    "Apple Tree Grove": "Where the player can gather apples.",
-    "River Crossing": "A stream with stepping stones the player must cross.",
-    "Goblin Bridge": "Where the player must trade apples with a goblin to receive magic candy.",
-    "Candy Mountain": "Where the player consumes the magic candy for strength, ascend the mountain, and solve the pixie's riddle to get the key.",
-    "Candy Cane Forest": "Where the player finds a candy cane stick to help cross the dangerous chasm.",
-    "Gate to Candyland": "Where the player unlocks the gate to Candyland with the key from the riddle.",
-    "Candyland": "The final location, where, upon arrival, Piggie celebrates reaching their destination."
-}
+    "Nest": "Starting location. The player then needs to exit their nest to start the adventure.",
+    "Central Park": "A intermediate location where player flies after exiting nest",
+    "Costco Entrance": "The player needs to fly to and dodge shopping carts here.",
+    "Free Sample Table": "Where the player can grab a cracker while avoiding the clerk.",
+    "Pizza Display": "Where the player distracts the Costco employee with the cracker and nabs a pizza slice.",
+    "Sky above Park": "An intermediate location to fly back through to get to the nest.",
+    "Back to Nest": "The final location where the player consumes the pizza slice."
+    }
