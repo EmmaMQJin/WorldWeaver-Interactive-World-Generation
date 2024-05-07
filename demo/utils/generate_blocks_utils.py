@@ -170,7 +170,7 @@ def generate_blocks(background_story, action_list, all_locations_path, directory
         file.write(gpt_response)
 
 
-#This function just extracts the Block class from the tuple and adds to a seperate file extracted_block_classes.py.
+#This function just extracts the Block class from the tuple and add
 def extract_block_classes(input_file_path, output_file_path):
     """
     This function reads a Python file containing tuples of location names, connection direction,

@@ -114,7 +114,7 @@ def main():
     #Block Generation
     print("\nGenerating Blocks in the game......\n")
     all_locations_path = "data/test_generations/all_the_locations.json"
-    generate_blocks(background_story, action_list,all_locations_path)
+    generate_blocks(background_story, actions_list,all_locations_path)
     input_file_path = 'data/generated_blocks.py'  # Path to the file containing the block classes
     output_file_path = 'data/extracted_block_classes.py'  # Path to save the extracted block classes
     extract_block_classes(input_file_path, output_file_path)
