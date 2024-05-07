@@ -3,10 +3,22 @@ import json
 import os
 import ast
 from openai import OpenAI
-from utils.generate_actions_utils import read_from_file, write_code_to_file
+from utils.json_utils import read_json_examples
+from utils.generate_actions_utils import read_from_file
 from utils.constants import Constants
-import utils.actions
-import worldweaver
+
+def write_code_to_file(folder, code, filename):
+    """
+    Appends code to a Python file named 'actions.py' in the specified folder, or creates it if it doesn't exist.
+    """
+    base_path = os.path.dirname(os.path.abspath(__file__))  # Get the directory of the current script
+    full_path = os.path.join(base_path, folder)
+    os.makedirs(full_path, exist_ok=True)  # Create the folder if it doesn't exist
+    file_path = os.path.join(full_path, filename+".py")
+    with open(file_path, 'w') as file:  # Open the file in append mode
+        file.write(code.strip() + '\n')  # Append the code to the file
+    print(f"Code appended to: {file_path}")
+
 def extract_class_names(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         content = file.read()
@@ -397,10 +409,12 @@ class WorldWeaver(games.Game):
 def generate_game_class(winning_state, main_character):
     worldweaver_init = Constants.worldweaver_init
     iswon = generate_is_won(winning_state, main_character)
-    acts = read_from_file("actions.py")
-    blocks = read_from_file("../data/extracted_block_classes.py")
-    code = acts+ "\n"+ blocks +"\n"+ worldweaver_init + "\n"+iswon
+    acts = read_from_file("utils/actions.py")
+    blocks = read_from_file("data/extracted_block_classes.py")
     write_code_to_file("",acts+ "\n"+ blocks +"\n"+ populate_custom_actions(acts, blocks, worldweaver_init) + "\n"+iswon, "worldweaver")
 
+# winning_state = "pigeon steal costco burger"
+# characters = read_json_examples("data/test_generations/all_the_characters.json")
+# generate_game_class(winning_state, characters[0])
 
 

@@ -34,7 +34,7 @@ def find_class_name(code):
     except SyntaxError as e:
         raise ValueError(f"Error parsing code: {e}")
 
-def write_code_to_file(folder, code, filename):
+def append_code_to_file(folder, code, filename):
     """
     Appends code to a Python file named 'actions.py' in the specified folder, or creates it if it doesn't exist.
     """
@@ -558,8 +558,10 @@ class Unlock(actions.Action):
     print(gpt_response)
 
     actions = gpt_response.split("\n")
-
+    c=0
     for action in actions:
+        if c>=3:
+            break
         messages = [
         {'role': 'system', 'content': system_prompt},
         {'role': 'user', 'content': user_example_prompt_one},
@@ -583,9 +585,10 @@ class Unlock(actions.Action):
         )
         gpt_response_code = response_code.choices[0].message.content
         try:
-            write_code_to_file('', gpt_response_code, 'actions')
+            append_code_to_file('', gpt_response_code, 'actions')
         except ValueError as e:
             print(e)
+        c+=1
 
 # action_list = read_from_file("data/actions.txt")
 # print(action_list)
