@@ -6,7 +6,7 @@ class WorldWeaver(games.Game):
         start_at: things.Location,
         player: things.Character,
         characters=None,
-        #custom_actions=[Locate, Observe, Distract, Celebrate, Wait, Avoid, Exit, Create, Hide, Grab, Locate, Fly],
+        #custom_actions=None,
         custom_actions=None,
     ):
         super().__init__(start_at, player, characters, custom_actions)

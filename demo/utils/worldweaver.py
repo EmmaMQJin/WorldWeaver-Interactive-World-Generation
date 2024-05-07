@@ -1,106 +1,3 @@
-import ast
-import json
-import os
-import ast
-from openai import OpenAI
-from json_utils import read_json_examples
-from generate_actions_utils import read_from_file, write_code_to_file
-from constants import Constants
-import actions
-import worldweaver
-def extract_class_names(file_path):
-    with open(file_path, 'r', encoding='utf-8') as file:
-        content = file.read()
-
-    # Parse the content to an AST
-    tree = ast.parse(content)
-
-    # This class will visit each ClassDef and store the names
-    class ClassVisitor(ast.NodeVisitor):
-        def __init__(self):
-            self.class_names = []
-
-        def visit_ClassDef(self, node):
-            self.class_names.append(node.name)
-            self.generic_visit(node)  # Continue traversing
-
-    visitor = ClassVisitor()
-    visitor.visit(tree)
-    return visitor.class_names
-
-
-def generate_is_won(winning_state, main_character):
-    #end state, main character
-    client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
-    system_prompt_is_won = """
-    Given the winning state of the game and a description of the main character, generate is_won python function.
-    Task: Develop a Python function called is_won for Checking if main character has reached game winning state.
-    Make the end state check on a given property of the main character.
-    DO NOT create functions/methods of your own. Only create is_won() method."""
-    user_prompt_example = """
-
-    Main Character:
-        {
-            "name": "The player",
-            "description":"You are a simple peasant destined for greatness.",
-            "persona":"I am on an adventure.",
-            "properties": {
-                "character_type": "human",
-                "is_dead": false,
-                "is_reigning": false
-            }
-        }
-
-    Winning state: The game is won once any character is sitting on the throne.
-"""
-    assistant_prompt_example = """
-    
-    def is_won(self) -> bool:
-    \"""
-    Checks whether the game has been won. For Action Castle, the game is won
-    once any character is sitting on the throne (has the property is_reigning).
-    \"""
-    for name, character in self.characters.items():
-        if character.get_property("is_reigning"):
-            self.parser.ok(
-                "{name} is now reigns in ACTION CASTLE! {name} has won the game!".format(
-                    name=character.name.title()
-                )
-            )
-            return True
-    return False
-    """
-
-    user_prompt = f"""
-
-    Main Character:
-    {json.dumps(main_character)}
-
-    Winning State: {winning_state}
-"""
-
-    messages = [
-        {'role': 'system', 'content': system_prompt_is_won},
-        {'role': 'user', 'content': user_prompt_example},
-        {'role': 'assistant', 'content': assistant_prompt_example},
-        {'role': 'user', 'content': user_prompt}
-    ]
-    response = client.chat.completions.create(
-        model='gpt-4',
-        messages=messages,
-        temperature=0.1,
-        max_tokens=2048,
-        top_p=1.0,
-        frequency_penalty=0,
-        presence_penalty=0
-    )
-    iswon = response.choices[0].message.content
-    return iswon
-
-def populate_custom_actions(actions, blocks, weaver):
-    client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
-    system_prompt = f"Write {weaver} word for word with the only difference that custom_actions=None is replaced by custom_actions=[all the class names from {actions}] and custom_blocks=None is replaced by custom_blocks=[all the classes from the {blocks}]"
-    user_prompt = """
 from text_adventure_games import games, things, actions, blocks
 class Enter(actions.Action):
     ACTION_NAME = "enter"
@@ -363,48 +260,83 @@ class CostcoExitSouthBlock(blocks.Block):
             return self.location.here(self.shelly_the_shopper)
 
 
-"""
-    assistant_prompt = """
+class CostcoEntranceEastBlock(blocks.Block):
+        def __init__(self, location: things.Location, chester_the_sample_giver: things.Character, connection: str):
+            super().__init__('Chester the Sample Giver is blocking the way', 'You need to distract Chester the Sample Giver to proceed to the Bakery Aisle.')
+            self.chester_the_sample_giver = chester_the_sample_giver
+            self.location = location
+            self.connection = connection  # This parameter reflects the destination name
+
+        def is_blocked(self) -> bool:
+            return self.location.here(self.chester_the_sample_giver)
+
+class ProduceAisleOutBlock(blocks.Block):
+        def __init__(self, location: things.Location, bobby_the_shopper: things.Character, connection: str):
+            super().__init__('Bobby the Shopper is blocking the way', 'You need to distract Bobby the Shopper to proceed to the Costco Parking Lot.')
+            self.bobby_the_shopper = bobby_the_shopper
+            self.location = location
+            self.connection = connection  # This parameter reflects the destination name
+
+        def is_blocked(self) -> bool:
+            return self.location.here(self.bobby_the_shopper)
+
+class SecurityGuardStationEastBlock(blocks.Block):
+        def __init__(self, location: things.Location, ranger_feline: things.Character, connection: str):
+            super().__init__('Ranger Feline is blocking the way', 'You need to distract Ranger Feline to proceed to the Costco Parking Lot.')
+            self.ranger_feline = ranger_feline
+            self.location = location
+            self.connection = connection  # This parameter reflects the destination name
+
+        def is_blocked(self) -> bool:
+            return self.location.here(self.ranger_feline)
+
+class BakeryAisleWestBlock(blocks.Block):
+        def __init__(self, location: things.Location, mrs_crumble: things.Character, connection: str):
+            super().__init__('Mrs. Crumble is blocking the way', 'You need to distract Mrs. Crumble to proceed to the Costco Entrance.')
+            self.mrs_crumble = mrs_crumble
+            self.location = location
+            self.connection = connection  # This parameter reflects the destination name
+
+        def is_blocked(self) -> bool:
+            return self.location.here(self.mrs_crumble)
+
+class CheckoutLaneEastBlock(blocks.Block):
+        def __init__(self, location: things.Location, rusty_the_security_guard: things.Character, connection: str):
+            super().__init__('Rusty the Security Guard is blocking the way', 'You need to distract Rusty the Security Guard to proceed to the Costco Entrance.')
+            self.rusty_the_security_guard = rusty_the_security_guard
+            self.location = location
+            self.connection = connection  # This parameter reflects the destination name
+
+        def is_blocked(self) -> bool:
+            return self.location.here(self.rusty_the_security_guard)
+
+class CostcoExitSouthBlock(blocks.Block):
+        def __init__(self, location: things.Location, shelly_the_shopper: things.Character, connection: str):
+            super().__init__('Shelly the Shopper is blocking the way', 'You need to distract Shelly the Shopper to proceed to the Costco Entrance.')
+            self.shelly_the_shopper = shelly_the_shopper
+            self.location = location
+            self.connection = connection  # This parameter reflects the destination name
+
+        def is_blocked(self) -> bool:
+            return self.location.here(self.shelly_the_shopper)
+
 class WorldWeaver(games.Game):
     def __init__(
         self,
         start_at: things.Location,
         player: things.Character,
         characters=None,
-        custom_actions=[Dodge,Find,Avoid,Add],
+        custom_actions=[Enter, Dodge, Find, Avoid, Grab],
         custom_blocks=[CostcoEntranceEastBlock, ProduceAisleOutBlock, SecurityGuardStationEastBlock, BakeryAisleWestBlock, CheckoutLaneEastBlock, CostcoExitSouthBlock]
     ):
-        super().__init__(start_at, player, characters, custom_actions)
-"""
-    messages = [
-        {'role': 'system', 'content': system_prompt},
-        {'role': 'user', 'content':user_prompt},
-        {'role': 'assistant', 'content': assistant_prompt},
-        {'role': 'user', 'content': actions}
-    ]
-    response = client.chat.completions.create(
-        model='gpt-4',
-        messages=messages,
-        temperature=0.1,
-        max_tokens=2048,
-        top_p=1.0,
-        frequency_penalty=0,
-        presence_penalty=0
-    )
-    replaced = response.choices[0].message.content
-    print(replaced)
-    return replaced
+        super().__init__(start_at, player, characters, custom_actions, custom_blocks)
 
-def generate_game_class(winning_state, main_character):
-    worldweaver_init = Constants.worldweaver_init
-    iswon = generate_is_won(winning_state, main_character)
-    acts = read_from_file("actions.py")
-    blocks = read_from_file("../data/extracted_block_classes.py")
-    code = acts+ "\n"+ blocks +"\n"+ worldweaver_init + "\n"+iswon
-    write_code_to_file("",acts+ "\n"+ blocks +"\n"+ populate_custom_actions(acts, blocks, worldweaver_init) + "\n"+iswon, "worldweaver")
-
-    
-winning_state = "pigeon steal costco burger"
-characters = read_json_examples("../data/test_generations/all_the_characters.json")
-generate_game_class(winning_state, characters[0])
-
+    def is_won(character) -> bool:
+        """
+        Checks whether the game has been won. The game is won
+        once Pippin the Pigeon has stolen the Costco burger.
+        """
+        if "Costco Burger" in character["inventory"]:
+            return True
+        else:
+            return False
