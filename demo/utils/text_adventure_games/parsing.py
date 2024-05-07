@@ -10,7 +10,7 @@ The implementation that I have given below only uses simple keyword matching.
 import inspect
 import textwrap
 
-from text_adventure_games import games
+from ..text_adventure_games import games
 
 from .things import Character, Item, Location
 from . import actions, blocks

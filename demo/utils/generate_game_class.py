@@ -3,10 +3,9 @@ import json
 import os
 import ast
 from openai import OpenAI
-from json_utils import read_json_examples
-from generate_actions_utils import read_from_file, write_code_to_file
-from constants import Constants
-import actions
+from utils.generate_actions_utils import read_from_file, write_code_to_file
+from utils.constants import Constants
+import utils.actions
 import worldweaver
 def extract_class_names(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
@@ -403,8 +402,5 @@ def generate_game_class(winning_state, main_character):
     code = acts+ "\n"+ blocks +"\n"+ worldweaver_init + "\n"+iswon
     write_code_to_file("",acts+ "\n"+ blocks +"\n"+ populate_custom_actions(acts, blocks, worldweaver_init) + "\n"+iswon, "worldweaver")
 
-    
-winning_state = "pigeon steal costco burger"
-characters = read_json_examples("../data/test_generations/all_the_characters.json")
-generate_game_class(winning_state, characters[0])
+
 
