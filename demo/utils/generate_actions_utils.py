@@ -34,14 +34,14 @@ def find_class_name(code):
     except SyntaxError as e:
         raise ValueError(f"Error parsing code: {e}")
 
-def write_code_to_file(folder, code):
+def append_code_to_file(folder, code, filename):
     """
     Appends code to a Python file named 'actions.py' in the specified folder, or creates it if it doesn't exist.
     """
     base_path = os.path.dirname(os.path.abspath(__file__))  # Get the directory of the current script
     full_path = os.path.join(base_path, folder)
     os.makedirs(full_path, exist_ok=True)  # Create the folder if it doesn't exist
-    file_path = os.path.join(full_path, "actions.py")
+    file_path = os.path.join(full_path, filename+".py")
     with open(file_path, 'a') as file:  # Open the file in append mode
         file.write(code.strip() + '\n')  # Append the code to the file
     print(f"Code appended to: {file_path}")
@@ -292,6 +292,7 @@ def generate_action_class(action_list):
     user_example_prompt_four = "Unlock"
 
     assistant_example_prompt_three = """
+from text_adventure_games import games, things, actions, blocks
 class Attack(actions.Action):
     ACTION_NAME = "attack"
     ACTION_DESCRIPTION = "Attack someone with a weapon"
@@ -404,6 +405,7 @@ class Attack(actions.Action):
                     drop.apply_effects()
     """
     assistant_example_prompt_two="""
+from text_adventure_games import games, things, actions, blocks
 class Eat(actions.Action):
     ACTION_NAME = "eat"
     ACTION_DESCRIPTION = "Eat something"
@@ -463,6 +465,7 @@ class Eat(actions.Action):
     
     """
     assistant_example_prompt_one = """
+from text_adventure_games import games, things, actions, blocks
 class Cook(actions.Action):
     ACTION_NAME = 'cook'
     ACTION_DESCRIPTION = 'Cook some food'
@@ -489,6 +492,7 @@ class Cook(actions.Action):
 
     """
     assistant_example_prompt_four = """
+from text_adventure_games import games, things, actions, blocks
 class Unlock(actions.Action):
     ACTION_NAME = "unlock"
     ACTION_DESCRIPTION = "Unlock something"
@@ -554,8 +558,10 @@ class Unlock(actions.Action):
     print(gpt_response)
 
     actions = gpt_response.split("\n")
-
+    c=0
     for action in actions:
+        if c>=3:
+            break
         messages = [
         {'role': 'system', 'content': system_prompt},
         {'role': 'user', 'content': user_example_prompt_one},
@@ -579,11 +585,12 @@ class Unlock(actions.Action):
         )
         gpt_response_code = response_code.choices[0].message.content
         try:
-            write_code_to_file('actions', gpt_response_code)
+            append_code_to_file('', gpt_response_code, 'actions')
         except ValueError as e:
             print(e)
+        c+=1
 
-# action_list = read_from_file("./data/actions.txt")
+# action_list = read_from_file("data/actions.txt")
 # print(action_list)
 # generate_action_class(action_list)
 

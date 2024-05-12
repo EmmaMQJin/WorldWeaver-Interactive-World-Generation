@@ -1,0 +1,16 @@
+{
+    "name": "Costco Exit",
+    "description": "The final location where Pippin can evade the guard and leave the superstore with the bread buds.",
+    "connections": {
+        "south": "Costco Entrance"
+    },
+    "travel_descriptions": {
+        "south": "Leaving the Costco Exit, you meander south through the dynamic crowd, gradually heading back to the lively and filled-to-the-brim world of the Costco Entrance."
+    },
+    "blocks": {},
+    "items": {},
+    "characters": {},
+    "has_been_visited": false,
+    "commands": [],
+    "properties": {}
+}

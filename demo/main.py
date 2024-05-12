@@ -2,8 +2,14 @@ from utils.generate_characters_utils import *
 from utils.generate_items_utils import *
 from utils.generate_locations_utils import *
 from utils.generate_actions_utils import *
+from utils.generate_game_class import *
+from utils.generate_blocks_utils import *
 from utils.utils import *
 import copy
+import json
+from utils.gpt_parser import GptParser
+from utils.worldweaver import WorldWeaver
+from copy import deepcopy
 
 # TODO: Maybe show the neighbor locations and items to the player (make it editable)
 # TODO: Maybe can evaluate what the user prefers vs. what the model prefers
@@ -110,6 +116,29 @@ def main():
     print("\nPopulating character inventories......\n")
     populate_character_inventories("games-data", main_character, winning_state)
 
+
+#     background_story = "I want to build a gma with a pigeon in costco"
+#     actions_list = """ Enter Costco
+# Dodge eager shoppers
+# Find bakery aisle
+# Spot bread buds
+# Avoid security guards
+# Grab bread buds
+# Navigate to exit
+# Evade final security guard
+# Exit Costco"""
+    #Block Generation
+    print("\nGenerating Blocks in the game......\n")
+    all_locations_path = "data/test_generations/all_the_locations.json"
+    generate_blocks(background_story, actions_list,all_locations_path)
+    input_file_path = 'data/generated_blocks.py'  # Path to the file containing the block classes
+    output_file_path = 'data/extracted_block_classes.py'  # Path to save the extracted block classes
+    extract_block_classes(input_file_path, output_file_path)
+    blocks_file_path = 'data/generated_blocks.py'
+    locations_json_path = "data/test_generations/all_the_locations.json"
+    output_json_path = 'data/test_generations/all_the_locations.json'
+    integrate_blocks(locations_json_path, blocks_file_path, output_json_path)
+
     print("\nGenerating the entire game JSON... ...\n")
     characters = read_json_examples("data/test_generations/all_the_characters.json")
     locations = read_json_examples("data/test_generations/all_the_locations.json")
@@ -129,8 +158,17 @@ def main():
     dict_to_json_file(game_dict, "data/test_generations/game.json")
     print("\nGenerated the entire game json! ^v^\n")
 
+    generate_action_class(actions_list)
+    generate_game_class(winning_state, characters[0])
 
-    
+    with open('data/test_generations/game.json') as f:
+        data = json.load(f)
+
+    data_obj = WorldWeaver.from_primitive(deepcopy(data))
+    game = WorldWeaver(data_obj.start_at, data_obj.player)
+    parser = GptParser(game, verbose=False, narration_style="Describe the game.")
+    game.set_parser(parser)
+    game.game_loop()
 
 if __name__ == "__main__":
     main()

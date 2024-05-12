@@ -1,6 +1,8 @@
 import json
 import os
 from openai import OpenAI
+import re
+
 
 def load_json(filename):
     """ Load JSON data from a file """
@@ -18,55 +20,48 @@ def save_code_as_str(filename):
         code_as_string = file.read()
     return code_as_string
 
-def main():
-    print("in main")
-    background_story = """
-    Set aboard the 'Orion' space station, the game revolves around escaping the station before it self-destructs in 60 minutes. 
-    Key areas include the command center, crew quarters, engine room, and escape pods. 
-    Important items are a space suit, keycards, a toolkit, and oxygen tanks. 
-    Characters include the station's AI 'Helios', which provides hints and can control doors, and various crew members who can help or hinder the player.
-    """
+# def main():
+#     print("in main")
+#     background_story = "A Costco themed game with hungry pigeons"
 
-    action_list = """
-    pick up space suit
-    wear space suit
-    pick up oxygen tank
-    turn on oxygen tank
-    search quarters for keycard
-    take keycard
-    exit crew quarters
-    go to engine room
-    use the toolkit to repair door
-    enter command centre
-    talk to Helios
-    show keycard to Helios
-    get door code from Helios
-    use keycard on malfunctioning door
-    put in door code
-    enter escape pod area
-    take second oxygen tank
-    attach tank to space suit
-    enter escape pod
-    launch escape pod
-    """
+#     action_list = """
+#     exit nest
+#     fly towards Costco
+#     land on Costco roof
+#     observe food court
+#     locate pizza stand
+#     evade Costco employees
+#     sneak into food court
+#     find leftover pizza
+#     grab pizza slice
+#     dodge hungry seagull
+#     escape back to roof
+#     fly back to nest
+#     eat pizza slice
+#     """
 
-    game_locations = """
-    {
-        "Crew Quarters": "Starting location. Where the player can find the space suit, oxygen tank, and search for the keycard.",
-        "Engine Room": "Where the player must use the toolkit to repair a door.",
-        "Command Center": "Where the player can talk to Helios and get the door code.",
-        "Escape Pod Bay": "The final location where the player will launch the escape pod.",
-        "Helios Control Room": "A special room where Helios, the AI, is located.",
-        "Storage Area": "Where the player can find the second oxygen tank to attach to the space suit."
-    }
-    """
+#     game_locations = """
+#     {
+#     "Nest": "Starting location. The player then needs to exit their nest to start the adventure.",
+#     "Central Park": "A intermediate location where player flies after exiting nest",
+#     "Costco Entrance": "The player needs to fly to and dodge shopping carts here.",
+#     "Free Sample Table": "Where the player can grab a cracker while avoiding the clerk.",
+#     "Pizza Display": "Where the player distracts the Costco employee with the cracker and nabs a pizza slice.",
+#     "Sky above Park": "An intermediate location to fly back through to get to the nest.",
+#     "Back to Nest": "The final location where the player consumes the pizza slice."
+#     }
+#     """
+#     all_locations_path = "data/test_generations/all_the_locations.json"
+#     generate_blocks(background_story, action_list,all_locations_path)
+#     input_file_path = 'data/generated_blocks.py'  # Path to the file containing the block classes
+#     output_file_path = 'data/extracted_block_classes.py'  # Path to save the extracted block classes
+#     extract_block_classes(input_file_path, output_file_path)
+#     blocks_file_path = 'data/generated_blocks.py'
+#     locations_json_path = "data/test_generations/all_the_locations.json"
+#     output_json_path = 'data/test_generations/all_the_locations.json'
+#     integrate_blocks(locations_json_path, blocks_file_path, output_json_path)
 
-
-    print(generate_blocks(background_story, action_list, game_locations))
-
-
-
-def generate_blocks(background_story, action_list, game_locations, directory = ""):
+def generate_blocks(background_story, action_list, all_locations_path, directory = "../data"):
     client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
 
     # with open(directory + "data/few-shot-examples/example-character.json", 'r') as file:
@@ -97,11 +92,6 @@ def generate_blocks(background_story, action_list, game_locations, directory = "
     few_shot_result5 = save_code_as_str("data/block_few_shots/example5")
     few_shot_result6 = save_code_as_str("data/block_few_shots/example6")
 
-    print("prompt input1 ", few_shot_prompt1)
-    print("prompt input6 ", few_shot_prompt6)
-
-    print("prompt result1 ", few_shot_result1)
-    print("prompt result6 ", few_shot_result6)
 
     messages = [
         {'role': 'system', 'content': prompt},
@@ -119,14 +109,52 @@ def generate_blocks(background_story, action_list, game_locations, directory = "
         {"role": "assistant", "content": few_shot_result6}
     ]
 
-    input_prompt = ("Below is a background story for a game, followed by steps to complete this game, "
-    "and the locations it has, based on this,  generate 5 blocks, with code, that are relevant. DO NOT GO OUT OF CONTEXT. "
-    "Background Story: {story} "
-    "Steps: {steps} "
-    "Locations: {locs} ").format(story = background_story, steps = action_list, locs = game_locations)
+     # Load all locations data to use in block generation
+    with open(all_locations_path, 'r') as file:
+        all_locations = json.load(file)
+    with open("test.json", 'r') as file:
+        game_locations = json.load(file)
+
+    # Construct a context of game state for block generation
+  
+    locations_context = ""
+    for location in all_locations:
+        connections = ", ".join([f"{k} leads to {v}" for k, v in location.get('connections', {}).items()])
+        items = ", ".join([item['name'] for item in location.get('items', {}).values()])
+        characters = ", ".join([char['name'] for char in location.get('characters', {}).values()])
+        locations_context += f"Location: {location['name']}, Connections: {connections}, Items: {items}, Characters: {characters}\n"
+
+    prompt = (
+        "You are a playthrough block generator for text adventure games. "
+        "Given a background story, locations with specific connections and travel descriptions, and a list of actions, your job is to create Python class definitions for blocks. "
+        "These blocks should represent challenges or tasks that must be completed at all locations and connections in the game based on the actions. "
+        "Specifically, for locations with multiple connections, ensure that you generate blocks that can be logically and strategically placed based on the storyline and player actions. "
+        "Choose connections that are most integral to the story's progression or challenge level for placing these blocks. "
+        "Each block should have parameters for characters and items that exactly match their full names as found in the game data, converted into snake_case. "
+        "For example, 'Whiskers the Stray Cat' should be 'whiskers_the_stray_cat'. Include the connection direction and the destination name as parameters in the class constructor."
+        f"\n\nBackground Story: {background_story}\nGame Actions: {action_list}\n Actions in locations: {game_locations}\nLocations Context: {locations_context}"
+    )
+
+    examples = """
+    Example output:
+    ('Costco Parking Lot', 'west', 'Territory of the Seagulls', 
+    '''
+    class CostcoParkingLotWestBlock(blocks.Block):
+        def __init__(self, location: things.Location, whiskers_the_stray_cat: things.Character, connection: str):
+            super().__init__('Whiskers the Stray Cat is blocking the way', 'You need to distract Whiskers the Stray Cat to proceed to the Territory of the Seagulls.')
+            self.whiskers_the_stray_cat = whiskers_the_stray_cat
+            self.location = location
+            self.connection = connection  # This parameter reflects the destination name
+
+        def is_blocked(self) -> bool:
+            return self.location.here(self.whiskers_the_stray_cat)
+    '''),
+    """
+    
+    full_prompt = f"{prompt}\n{examples}"
 
 
-    messages += [{"role": "user", "content": input_prompt}]
+    messages += [{"role": "user", "content": full_prompt}]
 
     response = client.chat.completions.create(
         model='gpt-4',
@@ -138,7 +166,126 @@ def generate_blocks(background_story, action_list, game_locations, directory = "
         presence_penalty=0
     )
     gpt_response = response.choices[0].message.content
-    return gpt_response
+    with open("data/generated_blocks.py", 'w') as file:
+        file.write(gpt_response)
 
-if __name__ == "__main__":
-    main()
+
+#This function just extracts the Block class from the tuple and adds to a seperate file extracted_block_classes.py.
+def extract_block_classes(input_file_path, output_file_path):
+    """
+    This function reads a Python file containing tuples of location names, connection direction,
+    connection destination, and block class definitions, and extracts just the block class definitions
+    to write them to a new Python file.
+    
+    Args:
+    input_file_path (str): The path to the input Python file with block definitions.
+    output_file_path (str): The path to the output Python file to store only block classes.
+    """
+    try:
+        with open(input_file_path, 'r') as file:
+            lines = file.read()
+        
+        # Pattern to capture the class definitions within the tuples
+        #block_class_pattern = re.compile(r"\'\'\'\n(class\s+[\s\S]+?)\'\'\'\)", re.MULTILINE)
+        block_class_pattern = re.compile(r"'''\s*\n\s*(class\s+[\s\S]+?)\s*'''", re.MULTILINE)
+        
+        block_classes = block_class_pattern.findall(lines)
+
+        # Write the extracted block classes to the output file
+        with open(output_file_path, 'w') as file:
+            for block_class in block_classes:
+                file.write(block_class + '\n\n')
+
+        print(f"Block classes extracted successfully to {output_file_path}")
+    
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+
+def normalize_key(name):
+    return re.sub(r'\s+|_', '', name).lower()
+
+# def parse_block_definitions(blocks_content):
+#     block_patterns = re.findall(r"\('([^']+)',\s*'([^']+)',\s*'([^']+)',\s*'''\n([\s\S]+?)\n'''\)", blocks_content)
+#     #block_patterns = re.findall(r"'''\s*\n\s*(class\s+[\s\S]+?)\s*'''", blocks_content)
+
+#     block_info = {}
+#     for location, direction, destination, block_code in block_patterns:
+#         class_name_match = re.search(r"class\s+(\w+)(Block)\(blocks\.Block\):", block_code)
+#         if class_name_match:
+#             class_name = class_name_match.group(1) + class_name_match.group(2)
+#             parameters = dict(re.findall(r"self\.(\w+)\s*=\s*(\w+)", block_code))
+#             block_info[(location, direction, destination)] = {
+#                 "class_name": f"{class_name}",
+#                 "parameters": parameters
+#             }
+#     return block_info
+
+def parse_block_definitions(blocks_content):
+    # Regex updated to handle variable whitespace and potential new lines before the class definition
+    block_patterns = re.findall(r"\('([^']+)',\s*'([^']+)',\s*'([^']+)',\s*'''\s*\n([\s\S]+?)\n\s*'''\)", blocks_content)
+    block_info = {}
+    for location, direction, destination, block_code in block_patterns:
+        # Adjusting regex to handle variable whitespace around the class name and parameters
+        class_name_match = re.search(r"class\s+(\w+)(Block)\s*\(\s*blocks\.Block\s*\)\s*:", block_code)
+        if class_name_match:
+            class_name = class_name_match.group(1) + class_name_match.group(2)
+            # Updated to handle possible additional spaces and complex parameter parsing
+            parameters = dict(re.findall(r"self\.(\w+)\s*=\s*(\w+|\w+\s*\w+)", block_code))
+            block_info[(location, direction, destination)] = {
+                "class_name": f"{class_name}",
+                "parameters": parameters
+            }
+    return block_info
+
+def integrate_blocks(locations_json_path, blocks_file_path, output_json_path):
+    with open(locations_json_path, 'r') as file:
+        locations = json.load(file)
+
+    with open(blocks_file_path, 'r') as file:
+        blocks_content = file.read()
+
+    block_definitions = parse_block_definitions(blocks_content)
+
+    for location in locations:
+        location_items = {normalize_key(item): item_data['name'] for item, item_data in location.get('items', {}).items()}
+        location_characters = {normalize_key(char): char_data['name'] for char, char_data in location.get('characters', {}).items()}
+
+        for direction, destination in location.get('connections', {}).items():
+            key = (location['name'], direction, destination)
+            if key in block_definitions:
+                info = block_definitions[key]
+                block_info = {
+                    "_type": info['class_name'],
+                    # Initially set connection to the actual destination name
+                    "connection": destination
+                }
+                
+                for param, placeholder in info['parameters'].items():
+                    if param == 'connection':
+                        # Skip processing for 'connection' parameter, it's already correctly assigned
+                        continue
+
+                    normalized_param = normalize_key(placeholder)
+                    if normalized_param == 'location':
+                        actual_value = location['name']
+                    elif normalized_param in location_items:
+                        actual_value = location_items[normalized_param]
+                    elif normalized_param in location_characters:
+                        actual_value = location_characters[normalized_param]
+                    else:
+                        actual_value = placeholder  # Use the placeholder if no match is found
+                    
+                    block_info[param] = actual_value
+
+                location['blocks'][direction] = block_info
+
+    with open(output_json_path, 'w') as file:
+        json.dump(locations, file, indent=4)
+    print(f"Block classes extracted integrated to all_the_locations.")
+
+
+
+
+# if __name__ == "__main__":
+#     main()

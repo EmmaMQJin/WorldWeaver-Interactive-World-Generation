@@ -1,23 +1,398 @@
 [
     {
-        "name": "Cat's Cozy Corner",
-        "description": "Cat's Cozy Corner is a quaint, snug little nook that feels like the epitome of comfort. Vibrant, warm hues fill the space, creating a relaxing haven. There is a content aura that radiates from the place, with an undertone of excitement hinting at the adventurous day ahead. A comfy cushion lies at the center of the room, presenting an alluring sight of tranquility. Despite the name, this corner is anything but ordinary, it is the cherished spot of the talking cat.",
+        "name": "Costco Parking Lot",
+        "description": "The vast expanse of the Costco parking lot stretches before you, filled with vehicles of all shapes and sizes. The smell of fresh asphalt and the faint hum of engine noise creates a thrum of modern day life. Here providence has placed you, a pigeon amongst the giant steel boxes. You can see people with shopping carts making their way to and from the exploitative superstore, their hands busily pushing carts filled with myriad goods. The monolithic facade of the store looms ominously in the distance.",
         "connections": {
-            "east": "Fairy King's Throne",
-            "out": "Jerry's Cage"
+            "east": "Costco Entrance",
+            "in": "Produce Aisle",
+            "west": "Security Guard Station"
         },
         "travel_descriptions": {
-            "east": "From the Cat's Cozy Corner, venture eastwards, following the path where whimsy rules and twinkles, heading towards the Fairy King's Throne, a place gleaming with mysterious allure and royal elegance.",
-            "out": "Leaving the warm blanket nook of the Cozy Corner, you venture into the unknown, led by the magic ribbon. Gradually, entering the different premises of Jerry's Cage - the kingdom of the imprisoned Jerry awaiting liberation."
+            "east": "Navigating through the maze of parked cars, you head towards the ominous facade of Costco, your journey eastward leading you from the busy parking lot to the bustling entrance of the mega store.",
+            "in": "Leaving the hum of Costco's vast parking lot, you navigate your way, moving in towards the monolithic facade of the superstore, until you find yourself amidst the bustling shoppers of the Produce Aisle.",
+            "west": "Leaving the hustle and bustle of the Costco parking lot behind, you veer west, cautiously approaching the unassuming parameters of the Security Guard Station."
         },
         "blocks": {},
         "items": {
-            "Comfy Cushion": {
-                "name": "Comfy Cushion",
-                "description": "A large, plush cushion in a vibrant color, it's the centerpiece of the cozy corner.",
-                "examine_text": "The cushion seems unusually large, big enough to envelop whoever sits on it. Its material is soft and plush, making it feel like a piece of heaven. The color is vibrant, adding a splash of joy to the room. You imagine it to be the perfect spot for the talking cat to rest and watch the world go by.",
+            "Shopping Cart": {
+                "name": "Shopping Cart",
+                "description": "A silver metal shopping cart, it's slightly rusty but still usable.",
+                "examine_text": "You see a shopping cart, it's large enough to carry a respectable number of items. The wheels seem to be in good condition.",
+                "properties": {
+                    "is_container": true,
+                    "is_drink": false,
+                    "is_food": false,
+                    "is_gettable": false,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": false
+                },
+                "location": "Costco Parking Lot"
+            }
+        },
+        "characters": {
+            "Larry the Cart Collector": {
+                "name": "Larry the Cart Collector",
+                "description": "Larry is an industrious and observant employee of Costco, responsible for gathering scattered shopping carts across the vast expanse of the parking lot.",
+                "persona": "I am Larry, the reliable cart collector at Costco. I keep a close eye on everything happening in this area, from stray carts to sneaky birds.",
+                "location": "Costco Parking Lot",
+                "goal": "To keep the parking lot orderly by constantly gathering and organizing shopping carts, while keeping an eye out for pesky pigeons.",
+                "inventory": {}
+            }
+        },
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Costco Entrance",
+        "description": "Where Pippin needs to dodge eager shoppers to get inside the store.",
+        "connections": {
+            "west": "Checkout Lane",
+            "east": "Bakery Aisle",
+            "north": "Costco Exit"
+        },
+        "travel_descriptions": {
+            "west": "Stepping out of the frenzied Costco store, you find yourself heading west, back through the relentless sea of shoppers, into the vast expanse of the Costco parking lot, on your way to the Checkout Lane.",
+            "east": "Stepping beyond the Costco Entrance, you maneuver through the bustle of eager shoppers, heading east into the inviting and aromatic world of the Bakery Aisle, the home of the much sought-after bread buds.",
+            "north": "Dodging through the eager shoppers of the Costco Entrance, you move north amidst the bustling crowd, eventually reaching the final location, the Costco Exit, where the challenge of avoiding the guard stands."
+        },
+        "blocks": {
+            "east": {
+                "_type": "CostcoEntranceEastBlock",
+                "connection": "Bakery Aisle",
+                "chester_the_sample_giver": "Chester the Sample Giver",
+                "location": "Costco Entrance"
+            }
+        },
+        "items": {
+            "Sample Station": {
+                "name": "Sample Station",
+                "description": "A station offering free samples of a new product",
+                "examine_text": "The station is manned by a friendly attendant offering small cups of a mysterious but delicious looking food. Maybe a quick snack will give Pippin the energy boost needed to make it through the store.",
                 "properties": {
                     "is_container": false,
+                    "is_drink": false,
+                    "is_food": true,
+                    "is_gettable": true,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": false
+                },
+                "location": "Costco Entrance"
+            },
+            "Costco Membership Card": {
+                "name": "Costco Membership Card",
+                "description": "A plastic card with the Costco logo and a bar code",
+                "examine_text": "This card grants access to the wonders of bulk shopping within the store. Don't lose it!",
+                "properties": {
+                    "is_container": false,
+                    "is_drink": false,
+                    "is_food": false,
+                    "is_gettable": true,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": false
+                },
+                "location": "Costco Entrance"
+            }
+        },
+        "characters": {
+            "Chester the Sample Giver": {
+                "name": "Chester the Sample Giver",
+                "description": "Chester is a friendly employee who handles the free sample station near the entrance. With a tray full of bite-sized goodies and an inviting smile, Chester inadvertently attracts Pippin's attention.",
+                "persona": "Welcome, I'm Chester. Everybody loves a free sample, and I provide just that. Watch out for a cheeky pigeon though!",
+                "location": "Costco Entrance",
+                "goal": "To entice shoppers with delicious samples, while keeping an eye on Pippin's attempts to snatch some treats.",
+                "inventory": {}
+            }
+        },
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Produce Aisle",
+        "description": "A location Pippin has to navigate through to avoid more shoppers.",
+        "connections": {
+            "out": "Costco Parking Lot"
+        },
+        "travel_descriptions": {
+            "out": "Navigating through the throng of shoppers in the Produce Aisle, you gradually make your way out, back into the vast expanse of the busy Costco parking lot."
+        },
+        "blocks": {
+            "out": {
+                "_type": "ProduceAisleOutBlock",
+                "connection": "Costco Parking Lot",
+                "bobby_the_shopper": "Bobby the Shopper",
+                "location": "Produce Aisle"
+            }
+        },
+        "items": {
+            "Produce Bags": {
+                "name": "Produce Bags",
+                "description": "A roll of clear, thin plastic bags for selecting and packaging produce",
+                "examine_text": "The bags are lightweight and transparent, perfect for holding a selection of fruits or vegetables.",
+                "properties": {
+                    "is_container": true,
+                    "is_drink": false,
+                    "is_food": false,
+                    "is_gettable": true,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": false
+                },
+                "location": "Produce Aisle"
+            },
+            "Shopping Cart": {
+                "name": "Shopping Cart",
+                "description": "An empty shopping cart with a slightly squeaky wheel",
+                "examine_text": "The cart is sturdy, made of metal and plastic. It has enough space to carry a good number of items.",
+                "properties": {
+                    "is_container": true,
+                    "is_drink": false,
+                    "is_food": false,
+                    "is_gettable": false,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": false
+                },
+                "location": "Produce Aisle"
+            },
+            "Apples": {
+                "name": "Apples",
+                "description": "A pile of shiny, red apples stacked neatly on a stand",
+                "examine_text": "Upon closer inspection, these apples look fresh and juicy. Their sweet aroma fills the air around you.",
+                "properties": {
+                    "is_container": false,
+                    "is_drink": false,
+                    "is_food": true,
+                    "is_gettable": true,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": false
+                },
+                "location": "Produce Aisle"
+            }
+        },
+        "characters": {
+            "Bobby the Shopper": {
+                "name": "Bobby the Shopper",
+                "description": "Bobby is an absent-minded regular shopper. He is known for taking too long in the aisles as he reads the details of every product thoroughly.",
+                "persona": "The name's Bobby. I come to Costco all the time. I like to take my time, peruse each product, and see what's fresh. The best deals are hidden in the details, after all.",
+                "location": "Produce Aisle",
+                "goal": "To find the freshest produce in the store and, unintentionally, provide coverage for Pippin to navigate amidst the chaos.",
+                "inventory": {}
+            },
+            "Chirpy the Bird-Watcher": {
+                "name": "Chirpy the Bird-Watcher",
+                "description": "Chirpy is a quirky customer who loves to observe birds in and around Costco. With her binoculars always at the ready, she adds an unexpected challenge to Pippin\u2019s adventures.",
+                "persona": "Hello, I'm Chirpy. I love to watch the beautiful birds that have made a home in this bustling store. Every species is a story, don't you know?",
+                "location": "Produce Aisle",
+                "goal": "To observe birds in their unusual habitat, unknowingly causing Pippin to adjust his routes and tactics.",
+                "inventory": {}
+            },
+            "Ginger the Produce Manager": {
+                "name": "Ginger the Produce Manager",
+                "description": "Ginger is a diligent and experienced manager who runs the Produce Aisle with efficiency and care. Despite her strict rules on order, she has a soft spot for animals.",
+                "persona": "I'm Ginger, the arbiter of freshness in this bustling Costco. I ensure everything in my domain is fresh and perfectly displayed. Just because we're in a superstore doesn't mean we can't eat fresh.",
+                "location": "Produce Aisle",
+                "goal": "Maintain order in the Produce Aisle while subtly helping Pippin navigate through without causing any disruption.",
+                "inventory": {}
+            }
+        },
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Security Guard Station",
+        "description": "A key location to maneuver around to avoid getting caught.",
+        "connections": {
+            "east": "Costco Parking Lot"
+        },
+        "travel_descriptions": {
+            "east": "Stepping away from the confines of the Security Guard Station, you head east, returning to the vast, vibrant expanse of the Costco parking lot bustling with life and commerce."
+        },
+        "blocks": {
+            "east": {
+                "_type": "SecurityGuardStationEastBlock",
+                "connection": "Costco Parking Lot",
+                "ranger_feline": "Ranger Feline",
+                "location": "Security Guard Station"
+            }
+        },
+        "items": {
+            "Radio": {
+                "name": "Radio",
+                "description": "A two-way communication device used by the security guards",
+                "examine_text": "The radio is in good condition and seems to be operational. You might be able to listen in on security communications.",
+                "properties": {
+                    "is_container": false,
+                    "is_drink": false,
+                    "is_food": false,
+                    "is_gettable": true,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": false
+                },
+                "location": "Security Guard Station"
+            },
+            "Security Guard's Clipboard": {
+                "name": "Security Guard's Clipboard",
+                "description": "A clipboard with notes and a patrol schedule",
+                "examine_text": "The clipboard contains a detailed schedule of when each security guard patrols this area.",
+                "properties": {
+                    "is_container": false,
+                    "is_drink": false,
+                    "is_food": false,
+                    "is_gettable": true,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": false
+                },
+                "location": "Security Guard Station"
+            }
+        },
+        "characters": {
+            "Ranger Feline": {
+                "name": "Ranger Feline",
+                "description": "Ranger Feline is the store's pet cat and mouse catcher. With her sleek black and white coat, she loves prowling around the store and is always on the hunt for unexpected guests, like Pippin.",
+                "persona": "I'm Feline, the store's watch-cat. Each corner, each shelf, each aisle is within my territory. I sniff out intruders and send them scampering.",
+                "location": "Security Guard Station",
+                "goal": "To spot and chase Pippin, keeping the store clear of any flying unwanted guests.",
+                "inventory": {}
+            }
+        },
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Bakery Aisle",
+        "description": "Where Pippin can find the bread buds.",
+        "connections": {
+            "west": "Costco Entrance"
+        },
+        "travel_descriptions": {
+            "west": "Navigating away from the enticing whiffs of the Bakery Aisle with the bread buds in hand, you journey west, back through the bustling aisles, until you find yourself back at the bustling Costco Entrance, the gateway to shoppers' paradise."
+        },
+        "blocks": {
+            "west": {
+                "_type": "BakeryAisleWestBlock",
+                "connection": "Costco Entrance",
+                "mrs_crumble": "mrs_crumble",
+                "location": "Bakery Aisle"
+            }
+        },
+        "items": {
+            "Baker's Hat": {
+                "name": "Baker's Hat",
+                "description": "A tall, white hat typically worn by bakers",
+                "examine_text": "Made from sturdy cloth, this hat is a symbol of the baking profession. It's designed to prevent hair from falling into the food while preparing it.",
+                "properties": {
+                    "is_container": false,
+                    "is_drink": false,
+                    "is_food": false,
+                    "is_gettable": true,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": true
+                },
+                "location": "Bakery Aisle"
+            },
+            "Bread Buds": {
+                "name": "Bread Buds",
+                "description": "A specialized type of bread that blooms into beautiful edible flowers",
+                "examine_text": "These tiny spheres of dough look ordinary until they are baked, whereupon they open up like flowers, ready to be eaten.",
+                "properties": {
+                    "is_container": false,
+                    "is_drink": false,
+                    "is_food": true,
+                    "is_gettable": true,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": false
+                },
+                "location": "Bakery Aisle"
+            },
+            "Basket": {
+                "name": "Basket",
+                "description": "A sturdy, hand-woven basket",
+                "examine_text": "Used primarily for holding and carrying items, this basket appears to be quite durable and sturdy.",
+                "properties": {
+                    "is_container": true,
+                    "is_drink": false,
+                    "is_food": false,
+                    "is_gettable": true,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": false
+                },
+                "location": "Bakery Aisle"
+            }
+        },
+        "characters": {
+            "Mrs. Crumble": {
+                "name": "Mrs. Crumble",
+                "description": "Mrs. Crumble is an elderly lady who visits the bakery aisle every day. She has a particular fondness for bread and enjoys chatting with others while selecting her daily loaf.",
+                "persona": "I am Mrs. Crumble. I find comfort and pleasure in the smell and taste of freshly made bread. I'm known for my gentle manners and my love for engaging in heartwarming conversations.",
+                "location": "Bakery Aisle",
+                "goal": "To keep up with her daily routine while unintentionally serving as a distraction that allows Pippin an opportunity to gather bread buds undisturbed.",
+                "inventory": {}
+            },
+            "Baker Bob": {
+                "name": "Baker Bob",
+                "description": "Baker Bob is a cheerful, rotund man who is in charge of baking fresh bread at the bakery. His plump form, jolly laugh, and apron dusted in flour are familiar and comforting presences within the aisle.",
+                "persona": "I'm Baker Bob, fun-loving and genial, committed to the craft of breadmaking. I ensure that the bakery aisle is always filled with the aroma of fresh-baked goods and a welcoming atmosphere.",
+                "location": "Bakery Aisle",
+                "goal": "To ensure the availability of fresh bread in the bakery aisle, inadvertently providing Pippin with a consistent source of bread buds.",
+                "inventory": {}
+            }
+        },
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Checkout Lane",
+        "description": "Another place where Pippin may run into security guards while navigating to the exit.",
+        "connections": {
+            "east": "Costco Entrance"
+        },
+        "travel_descriptions": {
+            "east": "Leaving the Checkout Lane, you head east, fighting your way through the bustling crowds, back into the energetic world of the Costco Entrance."
+        },
+        "blocks": {
+            "east": {
+                "_type": "CheckoutLaneEastBlock",
+                "connection": "Costco Entrance",
+                "rusty_the_security_guard": "Rusty the Security Guard",
+                "location": "Checkout Lane"
+            }
+        },
+        "items": {
+            "Security Camera": {
+                "name": "Security Camera",
+                "description": "A security camera is mounted on the ceiling, its lens sweeping the area.",
+                "examine_text": "The camera is high-tech, with a small blinking red light indicating it's recording.",
+                "properties": {
+                    "is_container": false,
+                    "is_drink": false,
+                    "is_food": false,
+                    "is_gettable": false,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": false
+                },
+                "location": "Checkout Lane"
+            },
+            "Cash Register": {
+                "name": "Cash Register",
+                "description": "An old-fashioned cash register sits on the counter, a relic of a time before digital payments.",
+                "examine_text": "The cash register is closed. It has a small keyhole on the side.",
+                "properties": {
+                    "is_container": true,
                     "is_drink": false,
                     "is_food": false,
                     "is_gettable": false,
@@ -25,189 +400,17 @@
                     "is_weapon": false,
                     "is_wearable": false
                 },
-                "location": "Cat's Cozy Corner"
-            },
-            "Chest of Memories": {
-                "name": "Chest of Memories",
-                "description": "A small wooden chest filled with various trinkets and memorabilia.",
-                "examine_text": "The chest is small but sturdy, with various carvings etched into the wood. Upon opening, you see a variety of items - a shell from a faraway beach, a feather from a rare bird, and many others. Each item seems to carry a story, hinting at the adventures of the talking cat.",
-                "properties": {
-                    "is_container": true,
-                    "is_drink": false,
-                    "is_food": false,
-                    "is_gettable": false,
-                    "is_surface": false,
-                    "is_weapon": false,
-                    "is_wearable": false
-                },
-                "location": "Cat's Cozy Corner"
-            }
-        },
-        "characters": {},
-        "has_been_visited": false,
-        "commands": [],
-        "properties": {}
-    },
-    {
-        "name": "Fairy King's Throne",
-        "description": "Where the Fairy King resides and where the talking cat gets and returns the magic ribbon to complete the mission. Also where the hero celebrates in the end.",
-        "connections": {
-            "west": "Cat's Cozy Corner",
-            "east": "Winding Path"
-        },
-        "travel_descriptions": {
-            "west": "Leaving the Fairy King's Throne, travel westwards back to the warmth and comfort of the Cat's Cozy Corner, where the adventures of the day beautifully unwind into the tranquil aura of tranquility, creating a cozy haven for both body and mind after the day's excitements.",
-            "east": "From the grandeur of the Fairy King's Throne, you venture east towards the Winding Path. The landscape transforms from the regal beauty of the fairy realm to the soothing enchantment of the forest path. The sounds of the forest waft past, carrying mysterious allure and the promise of a magical journey ahead."
-        },
-        "blocks": {},
-        "items": {
-            "Fairy King's Crown": {
-                "name": "Fairy King's Crown",
-                "description": "A dazzling crown that rests on the head of the Fairy King. It is embedded with precious stones.",
-                "examine_text": "The crown, elaborate and stately, sits atop the king's head as a symbol of his authority. Each jewel is carefully placed to form a pattern, casting a range of colors when it reflects light. The metalwork is intricate, beautiful, showing off the craftsman's skill. Touching it is not allowed.",
-                "properties": {
-                    "is_container": false,
-                    "is_drink": false,
-                    "is_food": false,
-                    "is_gettable": false,
-                    "is_surface": false,
-                    "is_weapon": false,
-                    "is_wearable": true
-                },
-                "location": "Fairy King's Throne"
-            },
-            "Magic Ribbon": {
-                "name": "Magic Ribbon",
-                "description": "The magic ribbon is a key item in the quest. The talking cat gets it and returns it to the Fairy King.",
-                "examine_text": "The ribbon is a beautiful shade of midnight blue, almost iridescent, as if it's made from a piece of the night sky. Soft to touch, it emits a faint glow which is both enchanting and mysterious. You can feel the magic pulsing from it. This is not an object to be trifled with.",
-                "properties": {
-                    "is_container": false,
-                    "is_drink": false,
-                    "is_food": false,
-                    "is_gettable": true,
-                    "is_surface": false,
-                    "is_weapon": false,
-                    "is_wearable": true
-                },
-                "location": "Fairy King's Throne"
+                "location": "Checkout Lane"
             }
         },
         "characters": {
-            "Fairy King Oberon": {
-                "name": "Fairy King Oberon",
-                "description": "Oberon is the regal and wise ruler of the fairies. His aura glows with an enchanting blend of colors that's mesmerizing to anyone who beholds him. He's known for his profound wisdom and impartial judgment.",
-                "persona": "As king, Oberon holds a deep sense of responsibility for maintaining harmony within his domain. He possesses a gentle yet stern demeanor, and his twinkling eyes are filled with kindness mixed with a glint of playfulness.",
-                "location": {},
-                "goal": "Provide the magic ribbon to Whisper, the talking cat, to complete its mission and celebrate the victory in the end.",
-                "inventory": {
-                    "Fairy King's Crown": {
-                        "name": "Fairy King's Crown",
-                        "description": "A dazzling crown made up of iridescent fairy dust and dewdrops, it signifies Oberon's rule over the fairy kingdom.",
-                        "examine_text": "As you draw closer, the crown seems to shimmer in the light, throwing tiny rainbows onto surrounding surfaces. The dewdrops flawlessly cling to the wreath of fairy dust, catching and reflecting light. It's smaller than a human-sized crown perhaps, but it radiates an undeniable air of regality.",
-                        "properties": {
-                            "is_container": false,
-                            "is_drink": false,
-                            "is_food": false,
-                            "is_gettable": false,
-                            "is_surface": false,
-                            "is_weapon": false,
-                            "is_wearable": true
-                        }
-                    },
-                    "Magic Ribbon": {
-                        "name": "Magic Ribbon",
-                        "description": "A silken ribbon imbued with fairy magic, it serves as passkeys in the fairy world and can imbue non-magical beings with temporary magical abilities.",
-                        "examine_text": "The Magic Ribbon sparkles under the light with hues of the whole spectrum dancing on its surface. It's delicate yet resilient to touch. The moment you set your eyes on it, you can sense the powerful magic residing within this seemingly simple item.",
-                        "properties": {
-                            "is_container": false,
-                            "is_drink": false,
-                            "is_food": false,
-                            "is_gettable": true,
-                            "is_surface": false,
-                            "is_weapon": false,
-                            "is_wearable": true
-                        }
-                    }
-                }
-            },
-            "Chatterbox": {
-                "name": "Chatterbox",
-                "description": "A surprisingly loquacious local cat with a crisp, articulate meow that seems able to form human words. His fur is a striking mix of azure and amethyst hues that shine under the fairy lights, and his eyes are as green as the enchanted forest he frequents.",
-                "persona": "Chatterbox is a peculiar companion with an even stranger ability - he can talk. He is the comical spanner in the works, a reliable source of odd wisdom and humor in various situations of the game. Chatterbox often acts as a guide, helping characters navigate the fairy world's secrets, all the while entertaining with his feline wit.",
-                "location": {},
-                "goal": "To provide valuable hints and guidance to the player during their quests in the fairy kingdom and ensure the celebration happens at the Fairy King's Throne.",
-                "inventory": {
-                    "Chatterbox's Crystal Collar": {
-                        "name": "Chatterbox's Crystal Collar",
-                        "description": "A shimmering crystal collar, capturing the hues of azure and amethyst, much like Chatterbox's fur.",
-                        "examine_text": "Upon closer inspection, the collar appears to be made of fine, light-reflecting crystals, interspersed with silver clasps. The gems seem to whisper subtle hints when you draw closer.",
-                        "properties": {
-                            "is_container": false,
-                            "is_drink": false,
-                            "is_food": false,
-                            "is_gettable": true,
-                            "is_surface": false,
-                            "is_weapon": false,
-                            "is_wearable": true
-                        }
-                    },
-                    "Forest Map": {
-                        "name": "Forest Map",
-                        "description": "A worn map of the enchanted forest featuring markings and annotated hints.",
-                        "examine_text": "Unfolding the map reveals meticulous details of the enchanted forest, complete with paths, landmarks and incomprehensible symbols that, presumably, Chatterbox understands.",
-                        "properties": {
-                            "is_container": false,
-                            "is_drink": false,
-                            "is_food": false,
-                            "is_gettable": true,
-                            "is_surface": false,
-                            "is_weapon": false,
-                            "is_wearable": false
-                        }
-                    },
-                    "Silver-Thread Whiskers": {
-                        "name": "Silver-Thread Whiskers",
-                        "description": "Chatterbox's surprisingly firm and lengthy whiskers, imbued with silver threads that sparkle under the fairy lights.",
-                        "examine_text": "A closer look at the whiskers reveals they are not ordinary; they are woven with thin silver threads and quiver on their own, discerning truths unseen by mortal eyes.",
-                        "properties": {
-                            "is_container": false,
-                            "is_drink": false,
-                            "is_food": false,
-                            "is_gettable": false,
-                            "is_surface": false,
-                            "is_weapon": false,
-                            "is_wearable": false
-                        }
-                    },
-                    "Ancient Fairy Parchment": {
-                        "name": "Ancient Fairy Parchment",
-                        "description": "A scroll of ancient fairy tales and legends, left behind at the Fairy King's Throne.",
-                        "examine_text": "The parchment, though delicate, holds tales of ages past. Faint illustrations depict fae circles, ethereal dances, and a crisis that the fairy kingdom once faced.",
-                        "properties": {
-                            "is_container": false,
-                            "is_drink": false,
-                            "is_food": false,
-                            "is_gettable": true,
-                            "is_surface": false,
-                            "is_weapon": false,
-                            "is_wearable": false
-                        }
-                    },
-                    "Fairy King's Crown": {
-                        "name": "Fairy King's Crown",
-                        "description": "The imposing crown of the Fairy King, studded with multi-colored gemstones.",
-                        "examine_text": "The magnificently crafted crown boasts a diverse array of gemstones that dance under the light. The crown gives off a sense of authority and power that demands respect.",
-                        "properties": {
-                            "is_container": false,
-                            "is_drink": false,
-                            "is_food": false,
-                            "is_gettable": false,
-                            "is_surface": false,
-                            "is_weapon": false,
-                            "is_wearable": true
-                        }
-                    }
-                }
+            "Rusty the Security Guard": {
+                "name": "Rusty the Security Guard",
+                "description": "Rusty is a hardy, once-retired security guard who has seen it all. He has a soft spot for animals but is strict about maintaining order in the store.",
+                "persona": "I'm Rusty, keeping an eye on all the aisles and citizens of this superstore. Even a quick pigeon like Pippin can't get by me unnoticed.",
+                "location": "Checkout Lane",
+                "goal": "Rusty's goal is to ensure the safety and order of the superstore, by gently escorting Pippin to the exit whenever he is found.",
+                "inventory": {}
             }
         },
         "has_been_visited": false,
@@ -215,687 +418,27 @@
         "properties": {}
     },
     {
-        "name": "Jerry's Cage",
-        "description": "The location the talking cat must reach using the magic ribbon to control flies and release Jerry.",
+        "name": "Costco Exit",
+        "description": "The final location where Pippin can evade the guard and leave the superstore with the bread buds.",
         "connections": {
-            "in": "Fly Territory",
-            "out": "Ocean Shore",
-            "east": "Safe House"
+            "south": "Costco Entrance"
         },
         "travel_descriptions": {
-            "in": "To reach the Fly Territory, the talking cat must go 'in' from Jerry's Cage. Using the magic ribbon, the cat controls the flies as he navigates through this irritating region.",
-            "out": "Stepping out of Jerry's Cage, you follow the salty air ascending towards the wide expanse of the Ocean Shore, the sound of the waves growing louder as you come closer. You know once you reach the shore, you will find the magical fish which when eaten will help you learn the fairy language.",
-            "east": "From Jerry's Cage, you make your way towards the unknown. Following different signs and cryptic instructions, you finally reach the Safe House. It gives a strong aura of security and safety, enough for the little mouse to let its guard down."
+            "south": "Leaving the Costco Exit, you meander south through the dynamic crowd, gradually heading back to the lively and filled-to-the-brim world of the Costco Entrance."
         },
-        "blocks": {},
+        "blocks": {
+            "south": {
+                "_type": "CostcoExitSouthBlock",
+                "connection": "Costco Entrance",
+                "shelly_the_shopper": "Shelly the Shopper",
+                "location": "Costco Exit"
+            }
+        },
         "items": {
-            "Magic Ribbon": {
-                "name": "Magic Ribbon",
-                "description": "A seemingly ordinary ribbon that shimmers with a strange, otherworldly glow.",
-                "examine_text": "Upon closer inspection, the ribbon is not so ordinary after all. The colors on it shift and change in the light, casting a mesmerizing, iridescent glow. According to legends, this ribbon has the power to control flies, a useful tool for a talking cat.",
-                "properties": {
-                    "is_container": false,
-                    "is_drink": false,
-                    "is_food": false,
-                    "is_gettable": true,
-                    "is_surface": false,
-                    "is_weapon": false,
-                    "is_wearable": true
-                },
-                "location": "Jerry's Cage"
-            },
-            "Mysterious Cage Key": {
-                "name": "Mysterious Cage Key",
-                "description": "A tiny, intricate key with unknown origins.",
-                "examine_text": "The key is small, delicate, and made of an unusual metal that you can't quite identify. Its bow is ornately decorated with elaborate carvings that appear to tell a story. The bit is oddly shaped, hinting that it might be used to unlock a very specific lock - perhaps a cage's.",
-                "properties": {
-                    "is_container": false,
-                    "is_drink": false,
-                    "is_food": false,
-                    "is_gettable": true,
-                    "is_surface": false,
-                    "is_weapon": false,
-                    "is_wearable": false
-                },
-                "location": "Jerry's Cage"
-            }
-        },
-        "characters": {
-            "Jerry": {
-                "name": "Jerry",
-                "description": "Jerry is an unlikely custodian of deep-seated wisdom and celestial magic. As a talking cat with intense amethyst eyes and silken fur that sparkles with an uncanny luminescence, he has been guarding the magical ribbon for centuries, awaiting a worthy recipient.",
-                "persona": "Preternaturally wise and unexpectedly verbose, Jerry disentangles the cosmic tapestries of destiny and time with mesmerizing tales from epochs past and glimpses of futures yet unknown. He carries a solemn duty to protect his magical artifact until the right bearer comes along to fulfill an age-old prophecy.",
-                "location": {},
-                "goal": "To test the converse cat, Whisper, and if found worthy, allow the usage of the magic ribbon to control flies and release himself from the cage.",
-                "inventory": {
-                    "Magic Ribbon": {
-                        "name": "Magic Ribbon",
-                        "description": "An ancient ribbon with celestial magic imbued within it, guarded by Jerry for centuries.",
-                        "examine_text": "At first glance, the Magic Ribbon looks like a simple, old piece of fabric. But upon closer inspection, one can see a faint glow coming from within. You can almost feel the immense power seeping from it, waiting to be unleashed by a worthy recipient.",
-                        "properties": {
-                            "is_container": false,
-                            "is_magic": true,
-                            "is_gettable": false,
-                            "controls_flies": true
-                        }
-                    },
-                    "Mysterious Cage Key": {
-                        "name": "Mysterious Cage Key",
-                        "description": "A unique key that opens the cage confining Jerry.",
-                        "examine_text": "This key, made from a material you can't quite recognize, glimmers slightly in the light. It's intricately designed, with its shaft winding in loops and whirls like a maze. You can't help but wonder who created this piece, and the secrets that it must hold.",
-                        "properties": {
-                            "is_container": false,
-                            "is_gettable": true,
-                            "opens_cage": true
-                        }
-                    },
-                    "Crystal Cat Locket": {
-                        "name": "Crystal Cat Locket",
-                        "description": "A small crystal locket worn by Jerry etched with mystical symbols.",
-                        "examine_text": "The locket is fashioned from an iridescent crystal radiating an assortment of colors. The front of the locket is intricately etched with mystical symbols, which you don't quite understand but somehow find comforting.",
-                        "properties": {
-                            "is_container": true,
-                            "is_magic": true,
-                            "is_gettable": false,
-                            "contains_clue": true
-                        }
-                    },
-                    "Enchanted Mirror": {
-                        "name": "Enchanted Mirror",
-                        "description": "A handheld mirror enchanted to show the reflection of the soul, not the outward appearance.",
-                        "examine_text": "The mirror is small enough to tuck into a pocket but is quite dense. As you gaze at your reflection, you see not your own face, but depths of your soul. It's an eerie experience.",
-                        "properties": {
-                            "is_container": false,
-                            "is_magic": true,
-                            "is_gettable": true,
-                            "reveals_truth": true
-                        }
-                    }
-                }
-            },
-            "Echo": {
-                "name": "Echo",
-                "description": "Echo is a captivating talking cat with vibrant turquoise eyes that seem to comprehend more than the average feline. Her fur is a mix of midnight black and silver stripes, giving her an enchanting, almost ethereal appearance. Despite her soft-spoken nature, Echo commands attention with her regal demeanour and refined articulation.",
-                "persona": "Anything but typical, Echo possesses not only the ability to communicate in the human language, but also a profound wisdom that she shares sparingly, often cloaked in riddles. Her eerie calmness and calculated manner hint at a cat who observes more than she lets on.",
-                "location": {},
-                "goal": "To help Whisper, the main character, reach Jerry\u2019s Cage using her ability to understand the complex language of the magic ribbon.",
-                "inventory": {
-                    "Magic Ribbon Manual": {
-                        "name": "Magic Ribbon Manual",
-                        "description": "A worn out booklet that holds the key to understanding the complex language of the Magic Ribbon.",
-                        "examine_text": "This booklet, though appearing rather frail, has evidently been used for centuries. It is filled with ancient scripting, diagrams, and symbols that hold the key to understanding the Magic Ribbon's language.",
-                        "properties": {
-                            "is_container": false,
-                            "is_drink": false,
-                            "is_food": false,
-                            "is_gettable": true,
-                            "is_surface": false,
-                            "is_weapon": false,
-                            "is_wearable": false
-                        }
-                    },
-                    "Prophecy Variscite": {
-                        "name": "Prophecy Variscite",
-                        "description": "A smooth crystal with a hue matching Echo\u2019s vibrant turquoise eyes, able to unveil the will of fate.",
-                        "examine_text": "The Variscite crystal emits a faint but warm turquoise glow. As you peer into its depths, faint images and whispers of the fate seem to dance within.",
-                        "properties": {
-                            "is_container": false,
-                            "is_drinking": false,
-                            "is_food": false,
-                            "is_gettable": true,
-                            "is_surface": false,
-                            "is_weapon": false,
-                            "is_wearable": false
-                        }
-                    },
-                    "Gleaming Fishhook Key": {
-                        "name": "Gleaming Fishhook Key",
-                        "description": "A peculiar key shaped like a fishhook, believed to be the pair for the Mysterious Cage Key.",
-                        "examine_text": "It's exactly like a regular fishhook, except for the top part which is fashioned to fit perfectly into a keyhole. The craftsmanship is delicate, yet robust.",
-                        "properties": {
-                            "is_container": false,
-                            "is_drinking": false,
-                            "is_food": false,
-                            "is_gettable": true,
-                            "is_surface": false,
-                            "is_weapon": false,
-                            "is_wearable": false
-                        }
-                    },
-                    "Moonlight Essence": {
-                        "name": "Moonlight Essence",
-                        "description": "A vial of shimmering liquid infused with the essence of moonlight, Echo's element.",
-                        "examine_text": "The liquid within the glass vial shimmers with a silvery light, reflecting the incandescent glow of the moon.",
-                        "properties": {
-                            "is_container": false,
-                            "is_drinking": true,
-                            "is_food": false,
-                            "is_gettable": true,
-                            "is_surface": false,
-                            "is_weapon": false,
-                            "is_wearable": false
-                        }
-                    },
-                    "Obsidian Scratcher": {
-                        "name": "Obsidian Scratcher",
-                        "description": "A sturdy cat scratcher made from obsidian, doubles as a tool for Echo.",
-                        "examine_text": "The scratcher is sharp at the edges and perfect for Echo to sharpen her claws on. Its obsidian surface glistens in the sunlight.",
-                        "properties": {
-                            "is_container": false,
-                            "is_drinking": false,
-                            "is_food": false,
-                            "is_gettable": true,
-                            "is_surface": false,
-                            "is_weapon": true,
-                            "is_wearable": false
-                        }
-                    }
-                }
-            }
-        },
-        "has_been_visited": false,
-        "commands": [],
-        "properties": {}
-    },
-    {
-        "name": "Winding Path",
-        "description": "Where the magical path to Jerry's cage can be found.",
-        "connections": {
-            "west": "Fairy King's Throne"
-        },
-        "travel_descriptions": {
-            "west": "From the tranquility of the Winding Path, you set your steps west, back towards the grandeur of the Fairy King's Throne. Parting from the fairy forest's charming whispers of the breeze, the regal opulence of the throne awaits as the hero's celebrations beckon."
-        },
-        "blocks": {},
-        "items": {
-            "Enchanted Key": {
-                "name": "Enchanted Key",
-                "description": "A shiny, silver key that hums with magical energy.",
-                "examine_text": "The key is entirely made of silver and glows faintly. Intricate symbols are engraved onto its surface, shimmering with an inner light. It hums gently when held and seems to pull towards Jerry's cage.",
-                "properties": {
-                    "is_container": false,
-                    "is_drink": false,
-                    "is_food": false,
-                    "is_gettable": true,
-                    "is_surface": false,
-                    "is_weapon": false,
-                    "is_wearable": false
-                },
-                "location": "Winding Path"
-            },
-            "Magic Map": {
-                "name": "Magic Map",
-                "description": "An old parchment that reveals the path to Jerry's cage.",
-                "examine_text": "The map is worn and crinkled, obviously of some age. When you gaze upon it, a magical light traces a path on the parchment, leading from your current location to Jerry's cage. The path shines brightly, then fades, only to reappear when you glance at it again. It's a clear guide to reach Jerry.",
-                "properties": {
-                    "is_container": false,
-                    "is_drink": false,
-                    "is_food": false,
-                    "is_gettable": true,
-                    "is_surface": false,
-                    "is_weapon": false,
-                    "is_wearable": false
-                },
-                "location": "Winding Path"
-            }
-        },
-        "characters": {
-            "Babble": {
-                "name": "Babble",
-                "description": "Babble is a charmingly eccentric talking cat. Her unusual hazel eyes seem to sparkle with wisdom well beyond her years and her tortoiseshell fur has subtle streaks of gold that shimmer under sunlight. Just like her unique appearance, her voice is quite unlike any other cat's. She speaks articulately, with an eloquence that can astonish even the most well-versed scholars.",
-                "persona": "Babble is wise and charismatic, known for her enlightening ruminations and sage counsel. Her speeches are wittily phrased and often adorned with ancient proverbs and allusions to folklore. She is cautious in nature and only speaks when required, making her words all the more impactful.",
-                "location": {},
-                "goal": "To guide the Whisper along the magical path to Jerry's cage by decoding the enigmatic instructions entwined with the path's magic.",
-                "inventory": {
-                    "Enchanted Key": {
-                        "name": "Enchanted Key",
-                        "description": "A beautifully intricate key with an iridescent glow hinting at its magical properties.",
-                        "examine_text": "Examining it closer, the key's handle is remarkably detailed with swirling patterns and embedded with small, sparkling gemstones. The light reflects off of it, casting rainbow shadows on your paw as you hold it up. It seems to thrum lightly with anticipation.",
-                        "properties": {
-                            "is_container": false,
-                            "is_drink": false,
-                            "is_food": false,
-                            "is_gettable": true,
-                            "is_surface": false,
-                            "is_weapon": false,
-                            "is_wearable": false
-                        }
-                    },
-                    "Magic Map": {
-                        "name": "Magic Map",
-                        "description": "An enchanted failing apart parchment, filled with shifting lines depicting paths and landmarks that alter as per the user's need.",
-                        "examine_text": "As Babble unrolls the map, the lines dance and move to form a route. The parchment is old but sturdy, having endured time and travel. It's imprinted with various cryptic symbols and signs. There's an aura of hidden knowledge that only she, with the right decoding skills, could understand.",
-                        "properties": {
-                            "is_container": false,
-                            "is_drink": false,
-                            "is_food": false,
-                            "is_gettable": true,
-                            "is_surface": false,
-                            "is_weapon": false,
-                            "is_wearable": false
-                        }
-                    },
-                    "Babble's Translation Glass": {
-                        "name": "Babble's Translation Glass",
-                        "description": "A magical monocle crafted specifically for Babble that allows her to decode hidden messages.",
-                        "examine_text": "Stationary light reflects off of the round glass frame, and when it does, a slight twinkle catches the eye. To the untrained eye, it is just a piece of glass, but for Babble, it holds the power to decipher the most undecodable scripts.",
-                        "properties": {
-                            "is_container": false,
-                            "is_drink": false,
-                            "is_food": false,
-                            "is_gettable": false,
-                            "is_surface": false,
-                            "is_weapon": false,
-                            "is_wearable": true
-                        }
-                    },
-                    "Guidance Bell": {
-                        "name": "Guidance Bell",
-                        "description": "A tiny silver bell that rings out a clear tune, meant to guide the Whisper along the magical path.",
-                        "examine_text": "Intricate designs of ancient symbols grace the bell's surface. It's evidently more than just decorative; Babble recognizes these are spells of guidance. When shaken gently, the bell issues a sound so clear and melodious it could charm even the wildest creature into calmness.",
-                        "properties": {
-                            "is_container": false,
-                            "is_drink": false,
-                            "is_food": false,
-                            "is_gettable": true,
-                            "is_surface": false,
-                            "is_weapon": false,
-                            "is_wearable": true
-                        }
-                    }
-                }
-            }
-        },
-        "has_been_visited": false,
-        "commands": [],
-        "properties": {}
-    },
-    {
-        "name": "Fly Territory",
-        "description": "An area that needs to be crossed which is pestering with flies.",
-        "connections": {
-            "out": "Jerry's Cage"
-        },
-        "travel_descriptions": {
-            "out": "From the Fly Territory, escaping from the irritating insects, the cat must move 'out' to reach back to his cage. Using the magic ribbon, the cat makes his way back to the cage and finally reaches safety."
-        },
-        "blocks": {},
-        "items": {
-            "Fly Swatter": {
-                "name": "Fly Swatter",
-                "description": "A practical tool made of lightweight, flexible material, designed to swat flies.",
-                "examine_text": "The fly swatter has a long handle and a perforated, paddle-like end. It's light, but the material is sturdy enough to handle a strong swat. Its bright color is intended to attract pesky flies.",
-                "properties": {
-                    "is_container": false,
-                    "is_drink": false,
-                    "is_food": false,
-                    "is_gettable": true,
-                    "is_surface": false,
-                    "is_weapon": true,
-                    "is_wearable": false
-                },
-                "location": "Fly Territory"
-            },
-            "Jar of Honey": {
-                "name": "Jar of Honey",
-                "description": "A small mason jar filled with thick, sweet honey, known for attracting flies.",
-                "examine_text": "The jar is filled nearly to the brim with viscous honey. Its golden hue shimmers under the light, a testament to its sweetness. Flies seem to be irresistibly attracted to it.",
-                "properties": {
-                    "is_container": true,
-                    "is_drink": true,
-                    "is_food": true,
-                    "is_gettable": true,
-                    "is_surface": false,
-                    "is_weapon": false,
-                    "is_wearable": false
-                },
-                "location": "Fly Territory"
-            }
-        },
-        "characters": {
-            "Whisper Echo": {
-                "name": "Whisper Echo",
-                "description": "An enigmatic talking feline with a fur as black as the night, adorned with twinkling spots making it resemble a starry sky. Her bright green eyes hold a curious glow, giving her an otherworldly appearance.",
-                "persona": "Whisper Echo is known in the Fly Territory for her ability to soothe the irritable flies with her melodious purrs, effectively making her the bridge between the flies and the travellers. Despite her soft-spoken nature, she carries an air of authority and calm, displaying wisdom beyond her apparent years.",
-                "location": {},
-                "goal": "Guide Whisper and whoever dares cross the Fly Territory, ensuring they can pass without the flies' disturbance, maintaining the delicate balance of this peculiar area.",
-                "inventory": {
-                    "Astral Cloak": {
-                        "name": "Astral Cloak",
-                        "description": "A mystical cloak that mirrors the appearance of Whisper, with a material as black as the night sprinkled with twinkling stars.",
-                        "examine_text": "The Astral Cloak is as enigmatic as its wearer, Whisper Echo. It's soft and lightweight but holds an unworldly warmth. The star-patterned fur twinkles softly, complementing its utterly dark background. The cloak shimmers subtly, reflecting the wearers' mystical aura.",
-                        "properties": {
-                            "is_container": false,
-                            "is_drink": false,
-                            "is_food": false,
-                            "is_gettable": true,
-                            "is_surface": false,
-                            "is_weapon": false,
-                            "is_wearable": true
-                        }
-                    },
-                    "Echolocation Whistle": {
-                        "name": "Echolocation Whistle",
-                        "description": "A small, enchanted whistle that could cast sound waves for mapping the nearby area.",
-                        "examine_text": "The whistle is small, made up of compressed darkness, seeming to absorb light around it. When blown, it does not echo any human-audible sound, but a subtle vibration can be felt nearby. Whisper Echo, with her heightened senses, can pick up these vibrations for echolocation.",
-                        "properties": {
-                            "is_container": false,
-                            "is_drink": false,
-                            "is_food": false,
-                            "is_gettable": true,
-                            "is_surface": false,
-                            "is_weapon": false,
-                            "is_wearable": false
-                        }
-                    },
-                    "Fly Swatter": {
-                        "name": "Fly Swatter",
-                        "description": "A lightweight yet durable swatter, tailored to rid the area of any pesky flies.",
-                        "examine_text": "The Fly Swatter is pretty standard: A long, thin handle ending in a larger, flat swatting surface, but it's noticeably sturdier compared to common variants. It carries a faint smell of citronella, repelling nature\u2019s pesky buzzing annoyances.",
-                        "properties": {
-                            "is_container": false,
-                            "is_drink": false,
-                            "is_food": false,
-                            "is_gettable": true,
-                            "is_surface": false,
-                            "is_weapon": true,
-                            "is_wearable": false
-                        }
-                    },
-                    "Jar of Honey": {
-                        "name": "Jar of Honey",
-                        "description": "A simple glass jar filled to the brim with golden, sticky honey.",
-                        "examine_text": "A glass jar, with metal lid, is filled with golden, viscous honey, harvested from a local hive. Its sweetness is tempting, with a strong, rich flavour. It's sticky but loved by all, including flies. It can be used to attract the flies away, ensuring safe passage through the Fly Territory.",
-                        "properties": {
-                            "is_container": true,
-                            "is_drink": false,
-                            "is_food": true,
-                            "is_gettable": true,
-                            "is_surface": false,
-                            "is_weapon": false,
-                            "is_wearable": false
-                        }
-                    }
-                }
-            },
-            "Murmur": {
-                "name": "Murmur",
-                "description": "A peculiar, slate-grey feline with swirls of white across her coat. Murmur has delicate whiskers that twitch with her emotions and vibrant yellow eyes full of mischief. Bombarded with an enduring curiosity, she has a knack for finding trouble.",
-                "persona": "Murmur possesses the unusual ability to converse with humans in their own tongue. She has a playful personality, often indulging in witty banter with those fortunate enough to understand her. But even for a talking cat, she holds a trove of wisdom that belies her jovial exterior.",
-                "location": {},
-                "goal": "To assist Whisper by distracting the swarm of flies in the Fly Territory, allowing Whisper to cross the area without hindrance.",
-                "inventory": {
-                    "Fly Swatter": {
-                        "name": "Fly Swatter",
-                        "description": "A large, flat, handheld device with a long handle, designed for swatting flies.",
-                        "examine_text": "The Fly Swatter is bigger than most, made specifically to deal with the bigger insects that inhabit the Fly Territory. It's made of a lightweight, durable material and has a long handle that ends in a large, flat disk with holes in it.",
-                        "properties": {
-                            "is_container": false,
-                            "is_drink": false,
-                            "is_food": false,
-                            "is_gettable": true,
-                            "is_surface": false,
-                            "is_weapon": true,
-                            "is_wearable": false
-                        }
-                    },
-                    "Jar of Honey": {
-                        "name": "Jar of Honey",
-                        "description": "A glass jar filled with fragrant, golden honey.",
-                        "examine_text": "This is a round, glass jar filled with bright, golden honey. The sweet, aromatic scent wafts up from it, attracting every insect in the vicinity. The lid is screwed on tightly, but it could be loosened.",
-                        "properties": {
-                            "is_container": true,
-                            "is_drink": true,
-                            "is_food": true,
-                            "is_gettable": true,
-                            "is_surface": false,
-                            "is_weapon": false,
-                            "is_wearable": false
-                        }
-                    },
-                    "Murmur's Whiskers": {
-                        "name": "Murmur's Whiskers",
-                        "description": "Murmur's long, delicate whiskers twitch with her emotions, providing valuable sensory information.",
-                        "examine_text": "Murmur's whiskers quiver in the air, picking up subtle shifts in the wind and other environmental cues. They are an invaluable tool in her quest to distract the swarm of flies.",
-                        "properties": {
-                            "is_container": false,
-                            "is_drink": false,
-                            "is_food": false,
-                            "is_gettable": false,
-                            "is_surface": false,
-                            "is_weapon": false,
-                            "is_wearable": true
-                        }
-                    },
-                    "Slate-Gray Fur": {
-                        "name": "Slate-Gray Fur",
-                        "description": "Murmur's slate-gray fur is an exquisite camouflage in the grayish, stony Fly Territory.",
-                        "examine_text": "Murmur's coat is a beautiful slate-gray, mingled with swirls of white. The peculiar coloring provides excellent camouflage in the Fly Territory, making it easier for her to move around unnoticed.",
-                        "properties": {
-                            "is_container": false,
-                            "is_drink": false,
-                            "is_food": false,
-                            "is_gettable": false,
-                            "is_surface": false,
-                            "is_weapon": false,
-                            "is_wearable": true
-                        }
-                    },
-                    "Yellow Eyes": {
-                        "name": "Yellow Eyes",
-                        "description": "Murmur's bright, yellow eyes have a hint of mischief and are quite striking.",
-                        "examine_text": "Her yellow eyes glint with intelligence and an impish curiosity. With a quick scan, she can decipher hidden details in her surroundings, aiding her in her mission.",
-                        "properties": {
-                            "is_container": false,
-                            "is_drink": false,
-                            "is_food": false,
-                            "is_gettable": false,
-                            "is_surface": false,
-                            "is_weapon": false,
-                            "is_wearable": true
-                        }
-                    }
-                }
-            },
-            "Purrqui": {
-                "name": "Purrqui",
-                "description": "A captivatingly charming feline with an uncanny ability to speak human language. Purrqui sports a sleek coat of sun-kissed copper hue and mesmerizing aquamarine eyes that exude an almost hypnotic calm. Seen by many as a paradox, Purrqui can hold long conversations ranging from the mysteries of the universe to the merits of a good scratching post.",
-                "persona": "Despite her unusual gift, Purrqui embodies the best of both worlds - the wit of a human with the indifference of a cat. She possesses an adventurous spirit, is insanely curious, and has an understatedly sarcastic sense of humor which she uses generously in her discourse with humans.",
-                "location": {},
-                "goal": "To guide Whisper safely through the pestering flies of the Fly Territory, using her unique ability to communicate with these insects.",
-                "inventory": {
-                    "Jar of Honey": {
-                        "name": "Jar of Honey",
-                        "description": "A sizeable glass jar filled with luscious golden honey. It's a sweet magnet for pesky flies and other insects.",
-                        "examine_text": "As Purrqui gazes at the jar, she sees the light catching the viscous honey, giving it a warm and inviting glow. It's sealed tight, but even through the thick glass, she can sense the sweetness that lies within. A precious and tantalizing treat for the flies of the territory!",
-                        "properties": {
-                            "is_container": true,
-                            "is_drink": false,
-                            "is_food": true,
-                            "is_gettable": true,
-                            "is_surface": false,
-                            "is_weapon": false,
-                            "is_wearable": false
-                        }
-                    },
-                    "Fly Swatter": {
-                        "name": "Fly Swatter",
-                        "description": "A lightweight, flexible swatter designed for pestering flies. Handy for protection but lethal for the small creatures.",
-                        "examine_text": "Purrqui gives a glance to the fly swatter. It wielded enough power to cause devastation among the flies, and Purrqui didn't believe in any form of harm. She knew there had to be a non-violent way to guide Whisper across. Maybe the swatter could be repurposed for her needs.",
-                        "properties": {
-                            "is_container": false,
-                            "is_drink": false,
-                            "is_food": false,
-                            "is_gettable": true,
-                            "is_surface": true,
-                            "is_weapon": true,
-                            "is_wearable": false
-                        }
-                    }
-                }
-            }
-        },
-        "has_been_visited": false,
-        "commands": [],
-        "properties": {}
-    },
-    {
-        "name": "Ocean Shore",
-        "description": "Where the magical fish can be found and eaten to learn fairy language.",
-        "connections": {
-            "in": "Jerry's Cage"
-        },
-        "travel_descriptions": {
-            "in": "From the Ocean Shore, lured by the buzzing of the flies, you navigate 'in' towards Jerry's Cage. Using the magic ribbon, you control the flies, guiding you through their territory back to the safety of the Cage."
-        },
-        "blocks": {},
-        "items": {
-            "Enchanted Fishing Net": {
-                "name": "Enchanted Fishing Net",
-                "description": "A shimmering fishing net, said to capture the elusive magical fish.",
-                "examine_text": "The net seems to glow with a soft light, the threads seem to be woven from moonlight. It is said only this net can capture the magical fish that grants the ability to understand fairy language.",
-                "properties": {
-                    "is_container": false,
-                    "is_drink": false,
-                    "is_food": false,
-                    "is_gettable": true,
-                    "is_surface": false,
-                    "is_weapon": false,
-                    "is_wearable": false
-                },
-                "location": "Ocean Shore"
-            },
-            "Magical Fish": {
-                "name": "Magical Fish",
-                "description": "A magnificently iridescent fish, its scales reflecting all the colors of the rainbow. Consuming it grants the ability to speak the fairy language.",
-                "examine_text": "Its scales are more brilliant and vibrant than any other fish you've ever seen. It is said that eating this fish allows one to comprehend and speak the fairy language.",
-                "properties": {
-                    "is_container": false,
-                    "is_drink": false,
-                    "is_food": true,
-                    "is_gettable": true,
-                    "is_surface": false,
-                    "is_weapon": false,
-                    "is_wearable": false
-                },
-                "location": "Ocean Shore"
-            }
-        },
-        "characters": {
-            "Prattle": {
-                "name": "Prattle",
-                "description": "Prattle, a sleek white cat with a unique ability to communicate verbally with humans, carries an aura of mystique. Whiskers twitching in curiosity, her amber eyes sparkle with a seamless blend of wisdom and playfulness, enveloped in a cloak of ethereal beauty.",
-                "persona": "Prattle is known for her eloquence and profound understanding, often surprising those around her with thought-provoking insights. Despite her small size and cute appearance, she carries a gravitas and rare intelligence, favoring discourse over mundane feline pursuits.",
-                "location": {},
-                "goal": "To guide Whisper through the ocean shore, using her wisdom to locate the magical fish that could teach the fairy language.",
-                "inventory": {
-                    "Enchanted Fishing Net": {
-                        "name": "Enchanted Fishing Net",
-                        "description": "A large fishing net woven with seaweed and seashells, infused with magical properties.",
-                        "examine_text": "The enchanted net glistens in the sunlight, its seaweed strands and seashells woven in a complex pattern. The net seems to humm with magic. It vibrates softly in tune with the waves.",
-                        "properties": {
-                            "is_container": false,
-                            "is_drink": false,
-                            "is_food": false,
-                            "is_gettable": true,
-                            "is_surface": false,
-                            "is_weapon": false,
-                            "is_wearable": false
-                        }
-                    },
-                    "Sea Compass Necklace": {
-                        "name": "Sea Compass Necklace",
-                        "description": "A small vintage-style compass encased in shiny bronze metal that hangs onto a strong, fine chain. It leads the way to hidden things in the ocean.",
-                        "examine_text": "The sea compass necklace looks antique and valuable, held on a thin yet sturdy chain. The compass needle twitches restlessly, as if eager to lead the way to magical secrets hidden in the ocean's depths.",
-                        "properties": {
-                            "is_container": false,
-                            "is_drink": false,
-                            "is_food": false,
-                            "is_gettable": true,
-                            "is_surface": false,
-                            "is_weapon": false,
-                            "is_wearable": true
-                        }
-                    },
-                    "Magical Fish": {
-                        "name": "Magical Fish",
-                        "description": "A mystical fish with silver scales and expressive eyes. It is known to understand and teach the language of fairies.",
-                        "examine_text": "The magical fish is a thing of beauty, its gleaming silver-scaled body glows under sunlight, and its eyes seem to possess wisdom beyond comprehension. It moves gently in the water, its fins and tail creating soft ripples.",
-                        "properties": {
-                            "is_container": false,
-                            "is_drink": false,
-                            "is_food": false,
-                            "is_gettable": true,
-                            "is_surface": false,
-                            "is_weapon": false,
-                            "is_wearable": false
-                        }
-                    },
-                    "Mystical Sea Whistle": {
-                        "name": "Mystical Sea Whistle",
-                        "description": "A beautifully carved whistle made from mother of pearl, rumored to call forth magical beings of the sea.",
-                        "examine_text": "Crafted with great care and precision, the whistle is an exquisite piece of art. Its surface is smooth to the touch, reflecting a myriad colors in the light. When blown, it releases a soft, melodious sound that is soothing to the ears.",
-                        "properties": {
-                            "is_container": false,
-                            "is_drink": false,
-                            "is_food": false,
-                            "is_gettable": true,
-                            "is_surface": false,
-                            "is_weapon": false,
-                            "is_wearable": false
-                        }
-                    },
-                    "Wisdom Pebble": {
-                        "name": "Wisdom Pebble",
-                        "description": "A pebble that bestows wisdom upon its holder, known to enhance the cognitive ability of the being that carries it.",
-                        "examine_text": "The pebble shimmers under the light, emanating an almost entrancing glow. It fits comfortably within the holder's grasp, giving off a strange warmth that seems to pulse with wisdom.",
-                        "properties": {
-                            "is_container": false,
-                            "is_drink": false,
-                            "is_food": false,
-                            "is_gettable": true,
-                            "is_surface": false,
-                            "is_weapon": false,
-                            "is_wearable": false
-                        }
-                    }
-                }
-            }
-        },
-        "has_been_visited": false,
-        "commands": [],
-        "properties": {}
-    },
-    {
-        "name": "Safe House",
-        "description": "A secure location where Jerry Mouse needs to be escorted to.",
-        "connections": {
-            "west": "Jerry's Cage"
-        },
-        "travel_descriptions": {
-            "west": "Leaving the secure and peaceful environment of the Safe House behind, you make your way back to Jerry's Cage. Remembering all the directions and signs you had followed, you manage to get back to the cage where the adventure began."
-        },
-        "blocks": {},
-        "items": {
-            "Cheese Crumbs": {
-                "name": "Cheese Crumbs",
-                "description": "Some cheese crumbs scattered in the corner, a telltale sign of a mouse's presence",
-                "examine_text": "A small pile of cheese crumbs are scattered in the corner. They are bright yellow and slightly moldy. Jerry Mouse must be near.",
-                "properties": {
-                    "is_container": false,
-                    "is_drink": false,
-                    "is_food": true,
-                    "is_gettable": true,
-                    "is_surface": false,
-                    "is_weapon": false,
-                    "is_wearable": false
-                },
-                "location": "Safe House"
-            },
-            "Mouse Hole": {
-                "name": "Mouse Hole",
-                "description": "A small hole in the wall that Jerry Mouse uses to navigate through the house.",
-                "examine_text": "The hole is small, just large enough to fit a mouse. It's perfectly round and the edges are worn smooth from use. Jerry must have been using this hole to navigate through the house.",
+            "Exit Gate": {
+                "name": "Exit Gate",
+                "description": "The exit gate leading out of the Costco.",
+                "examine_text": "The gate is large and mechanical, typically manned by a guard checking receipts.",
                 "properties": {
                     "is_container": false,
                     "is_drink": false,
@@ -905,88 +448,55 @@
                     "is_weapon": false,
                     "is_wearable": false
                 },
-                "location": "Safe House"
+                "location": "Costco Exit"
+            },
+            "Receipt": {
+                "name": "Receipt",
+                "description": "A receipt for the purchased bread buds.",
+                "examine_text": "The receipt clearly lists the name and price of the bread buds. A barcode is printed at the bottom.",
+                "properties": {
+                    "is_container": false,
+                    "is_drink": false,
+                    "is_food": false,
+                    "is_gettable": true,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": false
+                },
+                "location": "Costco Exit"
+            },
+            "Guard": {
+                "name": "Guard",
+                "description": "A stern-looking guard who checks receipts at the exit.",
+                "examine_text": "The guard is wearing a Costco uniform and is equipped with a barcode scanner.",
+                "properties": {
+                    "is_container": false,
+                    "is_drink": false,
+                    "is_food": false,
+                    "is_gettable": false,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": false
+                },
+                "location": "Costco Exit"
             }
         },
         "characters": {
-            "Ripple": {
-                "name": "Ripple",
-                "description": "Ripple is a talking cat with glossy, ebony fur and emerald eyes that seem to glow in the dark. With a tranquil aura and a soft, articulate voice, Ripple is not your ordinary feline. A peculiar insignia on his forehead marks him as part of a long-lost lineage of sentient cats.",
-                "persona": "Contrary to common feline behavior, Ripple is talkative and sociable, often mingling with other creatures and sharing intricate tales of his adventures. His speech is laced with wisdom, echoing a past as old as time, and he holds a serene disposition that instantly puts others at ease.",
-                "location": {},
-                "goal": "To protect and guide Jerry Mouse safely through the dangerous urban labyrinth to reach the Safe House, using his deep knowledge of the hidden paths and his keen sense of any imminent danger.",
-                "inventory": {
-                    "Ancient City Map": {
-                        "name": "Ancient City Map",
-                        "description": "A tattered and worn piece of parchment depicting the labyrinthine structures of the city.",
-                        "examine_text": "This age-worn parchment holds traces of routes and shortcuts through the urban labyrinth, some paths marked by Ripple himself over the years. Faint inscriptions and marks adorn its edges, indicating danger zones or hiding spots.",
-                        "properties": {
-                            "is_container": false,
-                            "is_drink": false,
-                            "is_food": false,
-                            "is_gettable": true,
-                            "is_surface": false,
-                            "is_weapon": false,
-                            "is_wearable": false
-                        }
-                    },
-                    "Hunter's Bell": {
-                        "name": "Hunter's Bell",
-                        "description": "A tiny silver bell with a resonating chime, used to alert on imminent danger.",
-                        "examine_text": "The bell is made of finely worked silver, covered in intricate designs that catch the light. As Ripple rings it, the sound echoes ominously, active enough to alert of any danger around.",
-                        "properties": {
-                            "is_container": false,
-                            "is_drink": false,
-                            "is_food": false,
-                            "is_gettable": true,
-                            "is_surface": false,
-                            "is_weapon": false,
-                            "is_wearable": true
-                        }
-                    },
-                    "Pouch of Kitty Treats": {
-                        "name": "Pouch of Kitty Treats",
-                        "description": "A small pouch containing tiny, crunchy nuggets that ripple enjoys.",
-                        "examine_text": "Inside the pouch, you find a handful of small nuggets, perfect for a quick recharge. These treats seem to possess a strong aroma that Ripple finds irresistible.",
-                        "properties": {
-                            "is_container": true,
-                            "is_drink": false,
-                            "is_food": true,
-                            "is_gettable": true,
-                            "is_surface": false,
-                            "is_weapon": false,
-                            "is_wearable": false
-                        }
-                    },
-                    "Cloak of Shadows": {
-                        "name": "Cloak of Shadows",
-                        "description": "A cloak made from dark, sleek material that reflects very little light. Allows Ripple to blend into the deep shadows.",
-                        "examine_text": "This dark cloak feels luxuriously soft to the touch, it shimmers with an ethereal glow when viewed from certain angles, likely contributing to its shadow-camouflaging abilities.",
-                        "properties": {
-                            "is_container": false,
-                            "is_drink": false,
-                            "is_food": false,
-                            "is_gettable": true,
-                            "is_surface": false,
-                            "is_weapon": false,
-                            "is_wearable": true
-                        }
-                    },
-                    "Mouse Whisker": {
-                        "name": "Mouse Whisker",
-                        "description": "A fallen whisker from Jerry, which Ripple keeps as a means to track him if they get separated.",
-                        "examine_text": "It's a tiny, delicate whisker, yet strong. Ripple can tune into its unique energy, granting him a supernatural ability to locate Jerry if need be.",
-                        "properties": {
-                            "is_container": false,
-                            "is_drink": false,
-                            "is_food": false,
-                            "is_gettable": true,
-                            "is_surface": false,
-                            "is_weapon": false,
-                            "is_wearable": false
-                        }
-                    }
-                }
+            "Shelly the Shopper": {
+                "name": "Shelly the Shopper",
+                "description": "Shelly is a regular Costco shopper who is always carrying a load of grocery items. Oblivious to Pippin's antics, her shopping cart could be the perfect cover for a sneaky exit strategy.",
+                "persona": "I'm Shelly, a weekly shopper here at Costco. I simply love the variety and practicality here. Consequently, my trolley is always filled with a bit of everything!",
+                "location": "Costco Exit",
+                "goal": "To offer an unintended yet valuable distraction for Pippin during his exit strategy without realising it herself.",
+                "inventory": {}
+            },
+            "Benji the Bread Supplier": {
+                "name": "Benji the Bread Supplier",
+                "description": "Benji is a dedicated Costco employee tasked with restocking the bread aisle. While trying to keep the shelves filled, he inadvertently provides Pippin with access to necessary bread buds.",
+                "persona": "Name's Benji, your friendly bread supplier at Costco. My job is to keep the bread aisle full, but I really do wonder where all these extra bread crumbs come from.",
+                "location": "Costco Exit",
+                "goal": "To continue providing Pippin with access to bread buds while diligently replenishing the bread aisle.",
+                "inventory": {}
             }
         },
         "has_been_visited": false,

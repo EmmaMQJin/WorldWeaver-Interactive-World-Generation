@@ -1,5 +1,5 @@
 from openai import OpenAI
-from utils.generate_locations_utils import *
+from generate_locations_utils import *
 
 
 def create_actions_playthrough_shots():

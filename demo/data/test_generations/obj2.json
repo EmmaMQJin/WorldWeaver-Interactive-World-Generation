@@ -1,11 +1,11 @@
 {
-    "name": "Ancient Oak Library",
-    "description": "Carved into the trunk of an enormous ancient oak, you find the knowledge repository of the kingdom. Scrolls, books, and other records collected over countless cat generations are stored on wooden shelves, illuminated by the soft light of sparkling globules. The air smells of old paper, wood, and a hint of catnip.",
+    "name": "Produce Aisle",
+    "description": "A location Pippin has to navigate through to avoid more shoppers.",
     "connections": {
-        "east": "Kingdom of Cats\n"
+        "out": "Costco Parking Lot"
     },
     "travel_descriptions": {
-        "east": "Leaving the aura of ancient knowledge behind, you traverse back to the vibrant hues of the Kingdom of Cats from the Ancient Oak Library. The familiar sounds of life gradually replacing the silent whispers of the old books and scrolls."
+        "out": "Navigating through the throng of shoppers in the Produce Aisle, you gradually make your way out, back into the vast expanse of the busy Costco parking lot."
     },
     "blocks": {},
     "items": {},

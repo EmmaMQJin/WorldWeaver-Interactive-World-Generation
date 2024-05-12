@@ -1,11 +1,15 @@
 {
-    "name": "Cat King's Palace",
-    "description": "This grand tree fortress is truly a sight to behold. Towering above the rest of the Kingdom, its intricate architecture and whimsical design are reminiscent of the natural beauty of the forest. Graceful, flourishing tree branches cradle the Palace, and vibrantly colored blooms decorate its exterior. Atop the palace, a magnificent crown-shaped turret overlooks the entire Kingdom.",
+    "name": "Costco Entrance",
+    "description": "Where Pippin needs to dodge eager shoppers to get inside the store.",
     "connections": {
-        "down": "Kingdom of Cats\n"
+        "west": "Checkout Lane",
+        "east": "Bakery Aisle",
+        "north": "Costco Exit"
     },
     "travel_descriptions": {
-        "down": "Descending from the grand heights of the Cat King's Palace, you journey back towards the Kingdom of Cats. You traverse down the intertwined branches, feeling the rhythm of the forest, the scent of rich soil and flowers escorting you back to the heart of the kingdom."
+        "west": "Stepping out of the frenzied Costco store, you find yourself heading west, back through the relentless sea of shoppers, into the vast expanse of the Costco parking lot, on your way to the Checkout Lane.",
+        "east": "Stepping beyond the Costco Entrance, you maneuver through the bustle of eager shoppers, heading east into the inviting and aromatic world of the Bakery Aisle, the home of the much sought-after bread buds.",
+        "north": "Dodging through the eager shoppers of the Costco Entrance, you move north amidst the bustling crowd, eventually reaching the final location, the Costco Exit, where the challenge of avoiding the guard stands."
     },
     "blocks": {},
     "items": {},
