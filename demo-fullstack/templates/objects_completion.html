@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Objects Completed</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+    <h3>All Objects Finalized for Location {{loc_name}}</h3>
+    <p>Here are the items selected for each location:</p>
+    <div class="location-box">
+    {% for location in locations %}
+        <h2>{{ location.name }}</h2>
+        <p> {{ location.items }} </p>
+    {% endfor %}
+    </div>
+    <a href="{% if location_index == -1 %}/inventory-generation{% else %}/object-generation/{{ location_index + 1 }}{% endif %}">
+        {% if location_index == -1 %}
+            Proceed to Generate NPC inventories
+        {% else %}
+            Generate Objects in Next Location
+        {% endif %}
+    </a>
+    </div>
+</body>
+</html>

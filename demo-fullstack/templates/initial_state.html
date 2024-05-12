@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Initial State Input</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
+    <div class="container">
     <form action="/initial-state" method="post">
         <label for="init_state">What do you want the starting state of the game to be?</label>
         <textarea id="init_state" name="init_state" rows="4" cols="50" placeholder="e.g., the main character wakes up in a cave."></textarea>
         <button type="submit">Submit</button>
     </form>
+    </div>
 </body>
 </html>

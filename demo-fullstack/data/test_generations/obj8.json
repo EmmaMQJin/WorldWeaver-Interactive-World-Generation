@@ -1,11 +1,11 @@
 {
-    "name": "Pigeon Meetup Spot",
-    "description": "The local favorite hangout of the pigeon flock where Paco shares his procured breakfast.",
+    "name": "Steep Mountain Path",
+    "description": "A treacherous path on the side of the mountain that proves to be a challenge for even the most sure-footed adventurers. The path is littered with falling rocks and with each step, the fear of dropping off the edge is a very real possibility.",
     "connections": {
-        "west": "Sample Cart"
+        "west": "Home Exterior"
     },
     "travel_descriptions": {
-        "west": "Departing from the lively Pigeon Meetup Spot, you embark on a journey westward, navigating through the unknown, and gradually re-emerging into the bustling atmosphere of the Sample Cart, the destination for cheese cube samples."
+        "west": "Navigating carefully along the treacherous terrain of the Steep Mountain Path, you make your journey westward, eventually finding yourself at the safety and comfort of the Home Exterior."
     },
     "blocks": {},
     "items": {},

@@ -1,11 +1,11 @@
 {
-    "name": "Costco",
-    "description": "A location full of potential food sources. Here is where the pigeon spots the delectable pizza and attempts to steal a slice.",
+    "name": "Cozy Bedroom",
+    "description": "A room full of soft cushions and warm blankets, it's the perfect cozy retreat after a long day. Moonlight pours in through a circular window, casting long shadows and bathing everything in a soft glow.",
     "connections": {
-        "east": "City Park"
+        "east": "Kitchen"
     },
     "travel_descriptions": {
-        "east": "Departing from the bustling activity of Costco, laden with your stolen slice of pizza, you fly eastwards, returning to the peaceful openness of the City Park."
+        "east": "Leaving the comforting embrace of the Cozy Bedroom, you head eastward, drawn by the tantalizing scents of the Kitchen, the promise of culinary delights enticing you with each creak of the well-trodden floorboards."
     },
     "blocks": {},
     "items": {},

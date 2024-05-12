@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Central Location Thoughts</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <form action="/central-location-thoughts" method="post">
-        <label for="central_loc_thoughts">Do you have any thoughts on what the starting location of the game is like?</label>
-        <textarea id="central_loc_thoughts" name="central_loc_thoughts" rows="4" cols="50" placeholder="e.g., it has many delicious treats"></textarea>
-        <button type="submit">Submit</button>
-    </form>
+    <div class="container">
+        <form action="/central-location-thoughts" method="post">
+            <label for="central_loc_thoughts">Do you have any thoughts on what the starting location of the game is like?</label>
+            <textarea id="central_loc_thoughts" name="central_loc_thoughts" rows="4" cols="50" placeholder="e.g., it has many delicious treats"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 </body>
 </html>

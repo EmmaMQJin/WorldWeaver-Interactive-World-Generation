@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select NPCs in Location {{ loc_name }}</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Select NPCs in Location {{ loc_name }}</h3>
+        <form action="/npc-generation/{{location_index}}/select" method="post">
+
+                {% for item in items %}
+                <div class="items-container">
+                    <label class="item-label">
+                        <input type="checkbox" name="selected_items" value="{{ loop.index0 }}">
+                        {{ item }}
+                    </label>
+                </div>
+                {% endfor %}
+
+            <button type="submit" class="submit-btn">Add Selected Items</button>
+        </form>
+        <button onclick="location.href='/npc-generation/{{location_index}}/regenerate'" class="regenerate-btn">Regenerate NPCs</button>
+        <a href="/npc-generation/{{location_index}}/final_selection" class="finalize-link">Finalize Selection for Location {{ loc_name }}</a>
+    </div>
+</body>
+</html>

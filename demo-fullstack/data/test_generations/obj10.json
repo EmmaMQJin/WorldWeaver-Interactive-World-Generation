@@ -1,11 +1,11 @@
 {
-    "name": "Magic Reservoir",
-    "description": "The magic reservoir is a spectacular sight to behold. It's where all the magic in the land is stored and controlled. One can see the magic in its purest form, changing colors like the northern lights. It's a mesmerizing dance of lights, changing and shifting in response to the ebb and flow of magical energy.",
+    "name": "Top of Peach Tree",
+    "description": "The final location where the road ends and the tree begins. This is not just any tree though, it's the peach tree. Standing tall against the backdrop of the mountain, its fruits are just out of reach. The challenge is not in getting to the tree but in reaching for its peaches.",
     "connections": {
-        "west": "Observation Deck"
+        "down": "Home Exterior"
     },
     "travel_descriptions": {
-        "west": "Leaving the captivating spectacle of the Magic Reservoir, you journey west, relishing the shift in scenery as the kaleidoscopic dance of magic gives way to the scenic panorama of the Observation Deck."
+        "down": "Descending from the lofty heights of the Top of the Peach Tree, you traverse downwards through knotted branches and sturdy trunk, finally finding yourself back at the familiar Home Exterior, the beginning of your journey."
     },
     "blocks": {},
     "items": {},

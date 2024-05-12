@@ -1,14 +1,14 @@
 [
     {
-        "name": "Pigeon Nest",
-        "description": "Nestled in a tucked away corner of a tall, imposing building, the Pigeon Nest is a rough construction of twigs, leaves, and found objects. A true symbol of resilience in the bustling cityscape. It's a cozy, sheltered nook overlooking the lively streets below\u2014the perfect perch for observation and rest. Amid the noise and commotion of city life, this Pigeon Nest offers a sense of calm and respite.",
+        "name": "Cozy Bedroom",
+        "description": "It's a small, comfortable room, filled with cozy cushions and colorful blankets. Sunlight streams in through a half-open window, throwing warm rays onto Whisper's favorite rug. The shinny floorboards creak slightly under weight, a sound Whisper knows well. A beloved poster of distant, mystical mountains hangs on one of the walls, a reminder of Whisper's dreams of adventure.",
         "connections": {
-            "down": "City Park",
-            "east": "Streetlamp Overlook"
+            "east": "Kitchen",
+            "west": "Whisper's Home"
         },
         "travel_descriptions": {
-            "down": "Leaving the sheltered tranquility of the Pigeon Nest, you plunge down with a flutter of wings and courage, navigating through the bustling cityscape below towards the wide expanses of the City Park, a strategic challenge laden with obstructions posing as branches.",
-            "east": "Leaving the sheltered tranquility of the Pigeon Nest, you venture east, gliding from building to building, until you spot the solitary perch of the Streetlamp Overlook, the landmark of your next food source amidst the bustling cityscape."
+            "east": "Leaving behind the comforting embrace of the Cozy Bedroom, creased under shafts of sunlight, you confidently step eastwards onto the shiny floorboards towards the familiar, homely scent wafting from the Kitchen awaiting your hungry exploration.",
+            "west": "Leaving the comfort of the Cozy Bedroom and its promise of adventure, you step onto the well-worn floorboards, making a determined move towards the west, and gradually find yourself in the familiar surroundings of Whisper's Home, where your journey completes.\n"
         },
         "blocks": {},
         "items": {},
@@ -18,19 +18,15 @@
         "properties": {}
     },
     {
-        "name": "City Park",
-        "description": "A large open area where the pigeon must avoid branches while in flight. Also the return point after the pizza has been stolen.",
+        "name": "Kitchen",
+        "description": "Where Whisper can search for food and eat breakfast.",
         "connections": {
-            "up": "Pigeon Nest",
-            "east": "Busy City Streets",
-            "west": "Costco",
-            "north": "Costco Eating Area"
+            "west": "Cozy Bedroom",
+            "out": "Home Exterior"
         },
         "travel_descriptions": {
-            "up": "Soaring out of the maze-like obstruction of the City Park, your wings power through the wind, lifting you up among the looming buildings until you reach the secluding tranquility of your quiet sanctuary, the Pigeon Nest, hidden in a corner of the bustling city.",
-            "east": "Leaving the open area of the City Park, you fly towards the bustling activity of the Busy City Streets, deftly avoiding pedestrians as you navigate eastward towards the thrumming heart of the city.",
-            "west": "Leaving the verdant expanse of the City Park, you fly west, blending in with the city's concrete backdrop until you reach the abundance of the Costco, eyeing enticing opportunities for a tasty pizza snatch.",
-            "north": "Leaving the open area of the City Park, you fly north, blending in with the city's concrete backdrop until you reach the bustling activity of the Costco Eating Area, cunningly mimicking human actions to snatch a tasty slice of pizza."
+            "west": "Emerging from the full and satisfied atmosphere of the Kitchen, laden with culinary triumphs, you meander back westward, drawn in by the inviting coziness of the cushion-laden Bedroom, the promise of comfort and dreams singing in the creaking floorboards.",
+            "out": "Leaving the warmth and pleasant aroma of the Kitchen, you venture outward, passing through the front door and stepping into the crisp air of the Home Exterior, marking the start of your journey towards the mountain."
         },
         "blocks": {},
         "items": {},
@@ -40,13 +36,17 @@
         "properties": {}
     },
     {
-        "name": "Streetlamp Overlook",
-        "description": "An elevated spot where the pigeon lands to scout for food sources.",
+        "name": "Whisper's Home",
+        "description": "The final destination. Whisper must return here with the peaches she collected to complete her journey.",
         "connections": {
-            "west": "Pigeon Nest"
+            "east": "Mountain Base",
+            "west": "Forest Clearing",
+            "north": "Peach Tree Grove"
         },
         "travel_descriptions": {
-            "west": "Departing from the elevated vantage point of the Streetlamp Overlook, you wing westward, navigating through the urban jungle, until the familiar comfort of the Pigeon Nest emerges amidst the towering concrete structures, greeting you with its tranquil solace."
+            "east": "Leaving the familiarity of Whisper's Home behind, you step confidently towards the east, beginning your ascent from the base of the mountain, embarking on an exciting journey of adventure.",
+            "west": "Leaving the safety of Whisper's Home, you stride purposefully towards the west, gradually entering into the enigmatic realm of the Forest Clearing, ready to tackle the riddle that awaits.",
+            "north": "Leaving the comforting confines of Whisper's Home, you journey towards the north, guided by your mission to secure the peaches. Gradually, you find yourself in the heart of the Peach Tree Grove, dodging aggressive birds as you search for the prized peach tree."
         },
         "blocks": {},
         "items": {},
@@ -56,13 +56,19 @@
         "properties": {}
     },
     {
-        "name": "Busy City Streets",
-        "description": "A bustling area the pigeon must navigate to avoid pedestrians while flying towards Costco.",
+        "name": "Home Exterior",
+        "description": "This is the location outside of Whisper's door where she starts her journey towards the mountain.",
         "connections": {
-            "west": "City Park"
+            "in": "Kitchen",
+            "east": "Steep Mountain Path",
+            "west": "Stone Steps",
+            "up": "Top of Peach Tree"
         },
         "travel_descriptions": {
-            "west": "Leaving the bustling heartbeat of the Busy City Streets, you navigate westward, skillfully avoiding pedestrians, until you reach the tranquil openness of the City Park, offering a peaceful respite in the midst of the city's chaos."
+            "in": "Leaving the openness of the Home Exterior behind, you step back in through the front door, re-entering the familiar and comforting confines of the Kitchen, where adventure is often born from the simplest of meals.",
+            "east": "Departing from the familiar setting of the Home Exterior, you begin your trek eastwards, every step drawing you closer to the challenges and perils of the Steep Mountain Path.",
+            "west": "Departing the familiar exterior of your home, you move west, embarking on a challenging journey towards the Stone Steps, the age-worn pathway cutting through the intimidating mountainous terrain.",
+            "up": "Leaving the familiar surroundings of the Home Exterior, you bravely stride towards the towering peach tree, steadily ascending its sturdy trunk and branches until you reach the Top of Peach Tree, laden with the promise of juicy fruits."
         },
         "blocks": {},
         "items": {},
@@ -72,13 +78,13 @@
         "properties": {}
     },
     {
-        "name": "Costco",
-        "description": "A location full of potential food sources. Here is where the pigeon spots the delectable pizza and attempts to steal a slice.",
+        "name": "Cozy Bedroom",
+        "description": "A room full of soft cushions and warm blankets, it's the perfect cozy retreat after a long day. Moonlight pours in through a circular window, casting long shadows and bathing everything in a soft glow.",
         "connections": {
-            "east": "City Park"
+            "east": "Kitchen"
         },
         "travel_descriptions": {
-            "east": "Departing from the bustling activity of Costco, laden with your stolen slice of pizza, you fly eastwards, returning to the peaceful openness of the City Park."
+            "east": "Leaving the comforting embrace of the Cozy Bedroom, you head eastward, drawn by the tantalizing scents of the Kitchen, the promise of culinary delights enticing you with each creak of the well-trodden floorboards."
         },
         "blocks": {},
         "items": {},
@@ -88,13 +94,93 @@
         "properties": {}
     },
     {
-        "name": "Costco Eating Area",
-        "description": "A site of human activity where the pigeon must cunningly mimic human actions to steal a slice of pizza, dodge angry customers, and take off.",
+        "name": "Mountain Base",
+        "description": "This is the base of the mountain from where Whisper begins her ascent.",
         "connections": {
-            "south": "City Park"
+            "west": "Whisper's Home"
         },
         "travel_descriptions": {
-            "south": "Navigating out of the bustling Costco Eating Area, you flap your wings southward, leaving behind the human activity and swiftly returning to the sprawling greenness and tranquility of the City Park."
+            "west": "Descending from the base of the mountain, you move westwards, the comforting scent of Whisper's Home gradually growing stronger as you approach, returning from an exciting journey of adventure."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Forest Clearing",
+        "description": "Where Whisper interacts with a forest creature and answers its riddle to gain advice on the peach tree.",
+        "connections": {
+            "east": "Whisper's Home"
+        },
+        "travel_descriptions": {
+            "east": "Departing from the mysteries of the Forest Clearing, you journey steadfastly towards the east, soon finding yourself back amidst the familiar surroundings of Whisper's Home."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Peach Tree Grove",
+        "description": "Where Whisper must locate the Peach tree while dodging aggressive birds.",
+        "connections": {
+            "south": "Whisper's Home"
+        },
+        "travel_descriptions": {
+            "south": "With a triumphant heart and peaches in hand, you journey south from the bustling Peach Tree Grove, feeling the thrill of victory with every step. Gradually, you return to the welcoming solace of Whisper's Home, ready to celebrate your successful quest."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Steep Mountain Path",
+        "description": "A treacherous path on the side of the mountain that proves to be a challenge for even the most sure-footed adventurers. The path is littered with falling rocks and with each step, the fear of dropping off the edge is a very real possibility.",
+        "connections": {
+            "west": "Home Exterior"
+        },
+        "travel_descriptions": {
+            "west": "Navigating carefully along the treacherous terrain of the Steep Mountain Path, you make your journey westward, eventually finding yourself at the safety and comfort of the Home Exterior."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Stone Steps",
+        "description": "A steep flight of stone steps that cuts through the mountain's daunting terrain. The steps themselves are worn from years of use, a testament to the travelers who have ventured this way for centuries.",
+        "connections": {
+            "east": "Home Exterior"
+        },
+        "travel_descriptions": {
+            "east": "Leaving the steep, stone-carved steps of the mountain behind, you journey east, retracing your path back to the welcoming comfort of your Home Exterior."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Top of Peach Tree",
+        "description": "The final location where the road ends and the tree begins. This is not just any tree though, it's the peach tree. Standing tall against the backdrop of the mountain, its fruits are just out of reach. The challenge is not in getting to the tree but in reaching for its peaches.",
+        "connections": {
+            "down": "Home Exterior"
+        },
+        "travel_descriptions": {
+            "down": "Descending from the lofty heights of the Top of the Peach Tree, you traverse downwards through knotted branches and sturdy trunk, finally finding yourself back at the familiar Home Exterior, the beginning of your journey."
         },
         "blocks": {},
         "items": {},

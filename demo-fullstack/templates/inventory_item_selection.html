@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Items</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Select Items for Character {{ char_name }} in Location {{ loc_name }}</h3>
+        <form action="/inventory-generation/{{location_index}}/{{character_id}}/select" method="post">
+
+                {% for item in items %}
+                <div class="items-container">
+                    <label class="item-label">
+                        <input type="checkbox" name="selected_items" value="{{ loop.index0 }}">
+                        {{ item }}
+                    </label><br>
+                </div>
+                {% endfor %}
+
+            <button type="submit" class="submit-btn">Add Selected Items</button>
+        </form>
+        <button onclick="location.href='/inventory-generation/{{location_index}}/{{character_id}}/regenerate'" class="regenerate-btn">Regenerate Items</button>
+        <a href="/inventory-generation/{{location_index}}/{{character_id}}/final_selection" class="finalize-link">Finalize Selection for {{ char_name }}</a>
+    </div>
+</body>
+</html>
+

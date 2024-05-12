@@ -21,7 +21,7 @@
             "is_container": true,
             "is_drink": false,
             "is_food": false,
-            "is_gettable": false,
+            "is_gettable": true,
             "is_surface": false,
             "is_weapon": false,
             "is_wearable": false

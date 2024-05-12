@@ -1,8 +1,12 @@
 {
-    "Pigeon Nest": "Starting location. A humble abode located in a tucked away crevice of a towering building. This is also where the pigeon returns to eat its precious pizza slice.",
-    "City Park": "A large open area where the pigeon must avoid branches while in flight. Also the return point after the pizza has been stolen.",
-    "Streetlamp Overlook": "An elevated spot where the pigeon lands to scout for food sources.",
-    "Busy City Streets": "A bustling area the pigeon must navigate to avoid pedestrians while flying towards Costco.",
-    "Costco": "A location full of potential food sources. Here is where the pigeon spots the delectable pizza and attempts to steal a slice.",
-    "Costco Eating Area": "A site of human activity where the pigeon must cunningly mimic human actions to steal a slice of pizza, dodge angry customers, and take off."
+    "Cozy Bedroom": "Starting location. Whisper the talking cat wakes up here.",
+    "Kitchen": "Where Whisper can search for food and eat breakfast.",
+    "Home Exterior": "This is the location outside of Whisper's door where she starts her journey towards the mountain.",
+    "Mountain Base": "This is the base of the mountain from where Whisper begins her ascent.",
+    "Steep Mountain Path": "A treacherous path on the side of the mountain that Whisper must climb, overcoming the obstacle of falling rocks.",
+    "Forest Clearing": "Where Whisper interacts with a forest creature and answers its riddle to gain advice on the peach tree.",
+    "Stone Steps": "A steep flight of stone steps Whisper must navigate to get closer to the peach tree.",
+    "Peach Tree Grove": "Where Whisper must locate the Peach tree while dodging aggressive birds.",
+    "Top of Peach Tree": "The final location where Whisper must climb to grab the peaches.",
+    "Whisper's Home": "The final destination. Whisper must return here with the peaches she collected to complete her journey."
 }

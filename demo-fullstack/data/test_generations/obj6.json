@@ -1,11 +1,11 @@
 {
-    "name": "Shopping District",
-    "description": "A bustling part of the city where Peregrine needs to observe human behavior.",
+    "name": "Forest Clearing",
+    "description": "Where Whisper interacts with a forest creature and answers its riddle to gain advice on the peach tree.",
     "connections": {
-        "up": "Urban Building"
+        "east": "Whisper's Home"
     },
     "travel_descriptions": {
-        "up": "From the hustle and bustle of the Shopping District, Peregrine takes to the sky, ascending with powerful wing strokes until reaching the vantage point of the Urban Building."
+        "east": "Departing from the mysteries of the Forest Clearing, you journey steadfastly towards the east, soon finding yourself back amidst the familiar surroundings of Whisper's Home."
     },
     "blocks": {},
     "items": {},

@@ -1,7 +1,7 @@
 [
     {
-        "name": "Busy City Streets",
-        "description": "A bustling area the pigeon must navigate to avoid pedestrians while flying towards Costco.",
+        "name": "Steep Mountain Path",
+        "description": "A treacherous path on the side of the mountain that proves to be a challenge for even the most sure-footed adventurers. The path is littered with falling rocks and with each step, the fear of dropping off the edge is a very real possibility.",
         "connections": {},
         "travel_descriptions": {},
         "blocks": {},
@@ -12,8 +12,8 @@
         "properties": {}
     },
     {
-        "name": "Costco",
-        "description": "A location full of potential food sources. Here is where the pigeon spots the delectable pizza and attempts to steal a slice.",
+        "name": "Stone Steps",
+        "description": "A steep flight of stone steps that cuts through the mountain's daunting terrain. The steps themselves are worn from years of use, a testament to the travelers who have ventured this way for centuries.",
         "connections": {},
         "travel_descriptions": {},
         "blocks": {},
@@ -24,8 +24,8 @@
         "properties": {}
     },
     {
-        "name": "Costco Eating Area",
-        "description": "A site of human activity where the pigeon must cunningly mimic human actions to steal a slice of pizza, dodge angry customers, and take off.",
+        "name": "Top of Peach Tree",
+        "description": "The final location where the road ends and the tree begins. This is not just any tree though, it's the peach tree. Standing tall against the backdrop of the mountain, its fruits are just out of reach. The challenge is not in getting to the tree but in reaching for its peaches.",
         "connections": {},
         "travel_descriptions": {},
         "blocks": {},

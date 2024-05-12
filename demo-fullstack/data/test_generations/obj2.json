@@ -1,11 +1,15 @@
 {
-    "name": "Streetlamp Overlook",
-    "description": "An elevated spot where the pigeon lands to scout for food sources.",
+    "name": "Whisper's Home",
+    "description": "The final destination. Whisper must return here with the peaches she collected to complete her journey.",
     "connections": {
-        "west": "Pigeon Nest"
+        "east": "Mountain Base",
+        "west": "Forest Clearing",
+        "north": "Peach Tree Grove"
     },
     "travel_descriptions": {
-        "west": "Departing from the elevated vantage point of the Streetlamp Overlook, you wing westward, navigating through the urban jungle, until the familiar comfort of the Pigeon Nest emerges amidst the towering concrete structures, greeting you with its tranquil solace."
+        "east": "Leaving the familiarity of Whisper's Home behind, you step confidently towards the east, beginning your ascent from the base of the mountain, embarking on an exciting journey of adventure.",
+        "west": "Leaving the safety of Whisper's Home, you stride purposefully towards the west, gradually entering into the enigmatic realm of the Forest Clearing, ready to tackle the riddle that awaits.",
+        "north": "Leaving the comforting confines of Whisper's Home, you journey towards the north, guided by your mission to secure the peaches. Gradually, you find yourself in the heart of the Peach Tree Grove, dodging aggressive birds as you search for the prized peach tree."
     },
     "blocks": {},
     "items": {},

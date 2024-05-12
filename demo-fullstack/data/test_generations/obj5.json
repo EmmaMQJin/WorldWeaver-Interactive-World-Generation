@@ -1,11 +1,11 @@
 {
-    "name": "Costco Eating Area",
-    "description": "A site of human activity where the pigeon must cunningly mimic human actions to steal a slice of pizza, dodge angry customers, and take off.",
+    "name": "Mountain Base",
+    "description": "This is the base of the mountain from where Whisper begins her ascent.",
     "connections": {
-        "south": "City Park"
+        "west": "Whisper's Home"
     },
     "travel_descriptions": {
-        "south": "Navigating out of the bustling Costco Eating Area, you flap your wings southward, leaving behind the human activity and swiftly returning to the sprawling greenness and tranquility of the City Park."
+        "west": "Descending from the base of the mountain, you move westwards, the comforting scent of Whisper's Home gradually growing stronger as you approach, returning from an exciting journey of adventure."
     },
     "blocks": {},
     "items": {},

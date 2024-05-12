@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Winning State Input</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <p>{{initial_state}}</p>
+    <div class="container">
+    <p>Inital state of game: {{initial_state}}</p>
     <form action="/winning-state" method="post">
         <label for="win_state">What do you want the winning state of the game to be?</label>
         <textarea id="win_state" name="win_state" rows="4" cols="50" placeholder="e.g., the main character saves the poisoned princess."></textarea>
         <button type="submit">Submit</button>
     </form>
+    </div>
 </body>
 </html>

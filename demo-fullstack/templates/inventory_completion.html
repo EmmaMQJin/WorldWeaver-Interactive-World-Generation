@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Characters Completed</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+    <h3>All NPC Inventories Finalized for Location {{loc_name}}</h3>
+    <p>Here are the items selected by each character:</p>
+    {% for character in characters %}
+    <div class="location-box">
+        <h2>{{ character.name }}</h2>
+        <ul>
+            {% for item in character.inventory %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endfor %}
+    <a href="{% if location_index == -1 %}/action-generation{% else %}/inventory-generation/{{ location_index + 1 }}{% endif %}">
+        {% if location_index == -1 %}
+            Go to Review
+        {% else %}
+            Generate inventories for NPCs in next location
+        {% endif %}
+    </a>
+    </div>
+</body>
+</html>

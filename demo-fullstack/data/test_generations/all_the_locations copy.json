@@ -1,0 +1,505 @@
+[
+    {
+        "name": "Kitchen",
+        "description": "The kitchen is a homey, comforting room filled with warm aromas of cooking stews and baking breads. The room is lined with wooden cabinets and countertops, and you can see a small window just above the sink, showing the outside world filled with sunshine and life. A round table sits in the middle of the room, complete with dining apparatus and a plate full of delicacies. It is indeed a place that Whisper would deem his humble abode.",
+        "connections": {
+            "east": "Living Room",
+            "west": "Curtain",
+            "out": "Front Porch"
+        },
+        "travel_descriptions": {
+            "east": "Leaving the comforting aroma and warmth of the kitchen, you head east, drawn towards the sound of the television from the living room where Whisper the cat awaits to play.",
+            "west": "Leaving the comforting aroma and warmth of the kitchen, you head west, pulled by the mystery of the curtain where the key to exploring the rest of the house lies.",
+            "out": "Leaving the comforting aroma and warmth of the kitchen, you make your way towards the front door, navigating through the familiar premises of the house, before you step out onto the sunlit front porch where Whisper awaits his adventure."
+        },
+        "blocks": {},
+        "items": {
+            "Cookbook": {
+                "name": "Cookbook",
+                "description": "A well-loved cookbook with food stains on the cover.",
+                "examine_text": "Flipping through the pages, you find a variety of recipes, from simple stews to intricate cakes and breads.",
+                "properties": {
+                    "is_container": false,
+                    "is_drink": false,
+                    "is_food": false,
+                    "is_gettable": true,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": false
+                }
+            },
+            "Freshly Baked Bread": {
+                "name": "Freshly Baked Bread",
+                "description": "A loaf of freshly baked bread, still warm from the oven.",
+                "examine_text": "The bread is golden brown on the outside, and when you tear a piece off, it's soft and fluffy on the inside.",
+                "properties": {
+                    "is_container": false,
+                    "is_drink": false,
+                    "is_food": true,
+                    "is_gettable": true,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": false
+                }
+            },
+            "Apron": {
+                "name": "Apron",
+                "description": "A sturdy apron hung on a hook next to the door.",
+                "examine_text": "The apron is made of heavy-duty material and has several pockets for holding cooking utensils.",
+                "properties": {
+                    "is_container": false,
+                    "is_drink": false,
+                    "is_food": false,
+                    "is_gettable": true,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": true
+                }
+            }
+        },
+        "characters": {
+            "Charlie the Scraps Collector": {
+                "name": "Charlie the Scraps Collector",
+                "description": "Charlie is a curious little mouse with beady eyes and a twitching nose. He knows the ins and outs of the kitchen better than anyone, always scouting for scrumptious scraps left unattended.",
+                "persona": "They call me Charlie, and I'm known for being the quickest with the kitchen crumbles. Despite our differences, Whisper and I share a strange coexistence in this delightful culinary domain.",
+                "location": "",
+                "goal": "To collect food scraps unnoticed, well aware of the presence of Whisper, maintaining a delicate balance of respect and avoidance.",
+                "inventory": [
+                    {
+                        "name": "Cheese Smelling Candle",
+                        "description": "A tiny candle with the heavy aroma of cheese to keep Charlie's senses sharp.",
+                        "examine_text": "The candle is small with a piece of string serving as the wick. It's light yellow, and it smells strongly of cheddar which engulfs your senses as you hold it closer.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drink": false,
+                            "is_food": false,
+                            "is_gettable": true,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": false
+                        }
+                    }
+                ],
+                "properties": {
+                    "character_type": "mouse",
+                    "is_dead": false
+                }
+            }
+        },
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Living Room",
+        "description": "Where Whisper can climb up curtains to reach the house key.",
+        "connections": {
+            "west": "Kitchen",
+            "east": "Quiet Street"
+        },
+        "travel_descriptions": {
+            "west": "Stepping away from the playful antics of Whisper in the living room, you move west, guided by the inviting smell of fresh bread, into the warm, bustling kitchen.",
+            "east": "Departing from the playful atmosphere of the Living Room, you move east, towards the quiet stillness of the street, moving closer to your venture into the dense forest."
+        },
+        "blocks": {},
+        "items": {
+            "Throw Pillow": {
+                "name": "Throw Pillow",
+                "description": "A plush throw pillow lying on the couch.",
+                "examine_text": "The throw pillow is soft and squishy, covered with a decorative case. It's lightweight and could be useful for some purpose.",
+                "properties": {
+                    "is_container": false,
+                    "is_drink": false,
+                    "is_food": false,
+                    "is_gettable": true,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": false
+                }
+            }
+        },
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Curtain",
+        "description": "An interesting place to explore and where the house key is left.",
+        "connections": {
+            "east": "Dense Forest",
+            "west": "Large Tree"
+        },
+        "travel_descriptions": {
+            "east": "Leaving the intriguing mystery of the curtain behind, you head east, drawn into the dense wilderness of the forest, where you sense the closeness of nature and the allure of a lofty tree to scale.",
+            "west": "Leaving behind the intriguing mystery of the Curtain, you venture west, forced by instinct, until you find yourself at the base of the Large Tree, a prime location known for bird rides to the mountain foot."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {
+            "Threadbare the Mischievous": {
+                "name": "Threadbare the Mischievous",
+                "description": "Threadbare is a playful and curious sprite who loves to tangle threads, causing pockets and snags in the Curtain. Despite his mischief, he never harms the structure of the Curtain, understanding its importance.",
+                "persona": "I'm Threadbare, the sprite of mischief. I frolic within the Curtain, causing delightful disorder but ensuring the secret of the house key remains hidden.",
+                "location": "",
+                "goal": "To make the player work harder in their exploration, adding an element of challenge and mystery in finding the house key.",
+                "inventory": [
+                    {
+                        "name": "Silver Needles",
+                        "description": "A set of tiny, finely polished silver needles.",
+                        "examine_text": "The needles gleam under the light, sharp and impeccably clean. Small notches at the end make it perfect for attaching threads.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drink": false,
+                            "is_food": false,
+                            "is_gettable": true,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": false
+                        }
+                    }
+                ],
+                "properties": {
+                    "character_type": "sprite",
+                    "is_dead": false,
+                    "has_magic": false,
+                    "is_mischievous": true
+                }
+            }
+        },
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Front Porch",
+        "description": "Where Whisper must unlock and exit the front door of the house.",
+        "connections": {
+            "in": "Kitchen",
+            "up": "Mountainside",
+            "east": "Mountain Peak"
+        },
+        "travel_descriptions": {
+            "in": "From the open air of the front porch, you unlock the front door and step into the inviting warmth of the house, navigating towards the kitchen, where the enticing aroma of freshly-cooked meals pull you back into its comforting embrace.",
+            "up": "Departing from the familiar surroundings of the Front Porch, you are lifted by a bird for an adventurous ride, eventually finding yourself on the intimidating face of the Mountainside ready to conquer its steep ridges.",
+            "east": "Leaving the comfortable atmosphere of the Front Porch, you embark on a journey heading east, guided by the rugged mountain path. As you ascend, you gradually find yourself standing on the proud peak of the Mountain, the place of game's victory and exhilaration."
+        },
+        "blocks": {},
+        "items": {
+            "Potted Plant": {
+                "name": "Potted Plant",
+                "description": "A small potted plant sits by the front door, bearing bright yellow flowers",
+                "examine_text": "The plant is vibrant and well-cared for. The pot it's in is ceramic, with a beautiful floral design.",
+                "properties": {
+                    "is_container": true,
+                    "is_drink": false,
+                    "is_food": false,
+                    "is_gettable": false,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": false
+                }
+            },
+            "Umbrella": {
+                "name": "Umbrella",
+                "description": "A compact umbrella sitting in a stand by the front door",
+                "examine_text": "The umbrella is black with a curved wooden handle. It seems sturdy, capable of withstanding a heavy downpour.",
+                "properties": {
+                    "is_container": false,
+                    "is_drink": false,
+                    "is_food": false,
+                    "is_gettable": true,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": false
+                }
+            }
+        },
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Quiet Street",
+        "description": "The player will cross this to reach the dense forest.",
+        "connections": {
+            "west": "Living Room"
+        },
+        "travel_descriptions": {
+            "west": "Leaving the quiet solitude of the street, you move west, drawn by the cozy warmth and playful antics of Whisper in the Living Room, leaving the looming forest behind."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {
+            "Birdy the Storyteller": {
+                "name": "Birdy the Storyteller",
+                "description": "Birdy is a well-loved canary with a cage overlooking the Quiet Street. Known for her melodious chirping, she is a source of peaceful serenades, entertaining passers-by with her delightful tunes.",
+                "persona": "Chirp-chirp! I am Birdy, the feathered bard of Quiet Street. I sing stories, I hum histories, my melodies brighten days and lighten hearts.",
+                "location": "",
+                "goal": "To fill the quiet street with joyful music and give Whisper the latest local gossip in her unique musical language.",
+                "inventory": [
+                    {
+                        "name": "Piece of Mirror",
+                        "description": "A small, shiny piece of mirror Birdy uses to watch the street below.",
+                        "examine_text": "The fragment of mirror is surprisingly clear, reflecting a miniature world within its gleaming surface. Birdy can easily see activities on the street in it.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drink": false,
+                            "is_food": false,
+                            "is_gettable": true,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": false
+                        }
+                    },
+                    {
+                        "name": "Water Droplet Jewel",
+                        "description": "A sparkling dewdrop shaped jewel, shimmering beautifully in the sunlight. A treasure among Birdy's possessions.",
+                        "examine_text": "The jewel, a mimic perfect droplet of water, catches the light, creating tiny rainbows as Birdy moves it around. It's a cherished trinket, reflecting her simple, artistic lifestyle.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drink": false,
+                            "is_food": false,
+                            "is_gettable": true,
+                            "is_surface": false,
+                            "is_weapon": false,
+                            "is_wearable": true
+                        }
+                    }
+                ],
+                "properties": {
+                    "character_type": "bird",
+                    "is_dead": false
+                }
+            }
+        },
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Kitchen",
+        "description": "A warm place filled with the delightful aroma of freshly-baked bread and other victuals. The queen of the house often found hustling here, preparing delicacies while humming a merry tune.",
+        "connections": {
+            "east": "Living Room"
+        },
+        "travel_descriptions": {
+            "east": "Leaving the homely aroma of freshly baked bread in the kitchen, you journey east, drawn back into the lively antics of Whisper in the living room."
+        },
+        "blocks": {},
+        "items": {
+            "Loaf of Bread": {
+                "name": "Loaf of Bread",
+                "description": "A freshly baked and warm loaf of bread sitting on the kitchen counter",
+                "examine_text": "As you look closer, you can see the crust perfectly browned and can practically taste the soft, fluffy interior. The pleasant aroma is enough to make your mouth water.",
+                "properties": {
+                    "is_container": false,
+                    "is_drink": false,
+                    "is_food": true,
+                    "is_gettable": true,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": false
+                }
+            },
+            "Pot of Soup": {
+                "name": "Pot of Soup",
+                "description": "A large pot of soup simmering on the stove",
+                "examine_text": "A closer look reveals a rich, hearty broth filled with chunks of vegetables and meat. The aroma is mouthwatering.",
+                "properties": {
+                    "is_container": true,
+                    "is_drink": true,
+                    "is_food": true,
+                    "is_gettable": false,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": false
+                }
+            },
+            "Recipe Book": {
+                "name": "Recipe Book",
+                "description": "A well-worn book full of handwritten recipes",
+                "examine_text": "Flipping through the pages, you see countless recipes chronicling generations of family meals. Some pages are stained from ingredients spilled long ago.",
+                "properties": {
+                    "is_container": false,
+                    "is_drink": false,
+                    "is_food": false,
+                    "is_gettable": true,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": false
+                }
+            }
+        },
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Dense Forest",
+        "description": "Where Whisper can feel the nature and find the large tree to climb.",
+        "connections": {
+            "west": "Curtain"
+        },
+        "travel_descriptions": {
+            "west": "Departing from the dense embrace of the forest and the towering tree, you travel west, attracted by the intrigue of the curtain and a seemingly important house key."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {
+            "Featherwhisk the Owl": {
+                "name": "Featherwhisk the Owl",
+                "description": "Featherwhisk is a wise old owl who has made his nest in the heart of the forest. Known for his vast knowledge about the nature and its ways, he is a trusted source of wisdom among the woodland creatures.",
+                "persona": "They call me Featherwhisk, the wise one. Nothing happens beneath the forest canopy that escapes my gaze. With knowledge caught on silent wings, I assist those willing to respect the laws of nature.",
+                "location": "",
+                "goal": "To provide Whisper with information about the forest, the large tree, and the best time to climb it.",
+                "inventory": [
+                    {
+                        "name": "Forest Map",
+                        "description": "A detailed hand-drawn map of the forest, showing the location of the large tree and the best paths to it.",
+                        "examine_text": "The map is detailed and rich in colors, drawn skillfully in a blend of natural dyes. It reveals multiple trails, some marked as safe and some as dangerous, winding through the forest to a large tree placed prominently in the middle.",
+                        "properties": {
+                            "is_container": false,
+                            "is_drink": false,
+                            "is_food": false,
+                            "is_gettable": true,
+                            "is_surface": true,
+                            "is_weapon": false,
+                            "is_wearable": false
+                        }
+                    }
+                ],
+                "properties": {
+                    "character_type": "owl",
+                    "is_dead": false,
+                    "is_wise": true
+                }
+            }
+        },
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Large Tree",
+        "description": "An important location where Whisper catches a ride on a bird to the mountain foot.",
+        "connections": {
+            "east": "Curtain"
+        },
+        "travel_descriptions": {
+            "east": "Descending from the Large Tree, you journey east, guided by the allure of the familiar, until you are once again standing before the interesting expanse of the Curtain where the house key is kept."
+        },
+        "blocks": {},
+        "items": {
+            "Rope Ladder": {
+                "name": "Rope Ladder",
+                "description": "A rope ladder hangs down from one of the tree branches.",
+                "examine_text": "The ladder is made from strong, braided rope and sturdy wooden steps. It appears to be secure and should bear your weight.",
+                "properties": {
+                    "is_container": false,
+                    "is_drink": false,
+                    "is_food": false,
+                    "is_gettable": false,
+                    "is_surface": true,
+                    "is_weapon": false,
+                    "is_wearable": false
+                }
+            },
+            "Bag of Seeds": {
+                "name": "Bag of Seeds",
+                "description": "A small bag filled with a variety of seeds.",
+                "examine_text": "Inside the bag, there are several types of seeds. Some are small and round, others are larger and oblong. These could be used to attract birds.",
+                "properties": {
+                    "is_container": true,
+                    "is_drink": false,
+                    "is_food": true,
+                    "is_gettable": true,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": false
+                }
+            },
+            "Feather Quill": {
+                "name": "Feather Quill",
+                "description": "A feather quill from a large bird, left behind on the ground.",
+                "examine_text": "The quill is long and sharp, with soft, glossy feathers attached. It could be used to write with or signal to a bird.",
+                "properties": {
+                    "is_container": false,
+                    "is_drink": false,
+                    "is_food": false,
+                    "is_gettable": true,
+                    "is_surface": false,
+                    "is_weapon": true,
+                    "is_wearable": false
+                }
+            }
+        },
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Mountainside",
+        "description": "Where Whisper lands after the bird ride and starts climbing up the steep ridge.",
+        "connections": {
+            "down": "Front Porch"
+        },
+        "travel_descriptions": {
+            "down": "Descending from the stark, rugged heights of the Mountainside, you return to the warm, comforting atmosphere of the Front Porch, stepping over the threshold into the inviting scent of home."
+        },
+        "blocks": {},
+        "items": {},
+        "characters": {
+            "Snowleaf the Hermit": {
+                "name": "Snowleaf the Hermit",
+                "description": "Snowleaf is a wise old hermit who lives in a cave halfway up the mountainside. Known for his knowledge of local flora and fauna, he provides useful hints to climbers about potential hazards or opportunities.",
+                "persona": "I am Snowleaf, the hermit of the mountainside. With my knowledge, I help climbers understand the secrets and rhythms of the mountain.",
+                "location": "",
+                "goal": "To provide Whisper with valuable information about the mountainside's terrain, flora, and fauna.",
+                "inventory": [],
+                "properties": {
+                    "character_type": "human",
+                    "is_dead": false,
+                    "is_wise": true
+                }
+            }
+        },
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    },
+    {
+        "name": "Mountain Peak",
+        "description": "The highest point of the mountain and also the winning location of the game.",
+        "connections": {
+            "west": "Front Porch"
+        },
+        "travel_descriptions": {
+            "west": "Departing from the victorious heights of the Mountain Peak, you descend westwards along the rugged slope. As you navigate, you gradually find yourself back on the welcoming Front Porch, the comforting start of your adventurous journey."
+        },
+        "blocks": {},
+        "items": {
+            "Safety Rope": {
+                "name": "Safety Rope",
+                "description": "A long, strong rope used by climbers for safety.",
+                "examine_text": "On closer inspection, you can see the strong fibers woven together to make this rope, which feels strong and durable under your fingers.",
+                "properties": {
+                    "is_container": false,
+                    "is_drink": false,
+                    "is_food": false,
+                    "is_gettable": true,
+                    "is_surface": false,
+                    "is_weapon": false,
+                    "is_wearable": false
+                }
+            }
+        },
+        "characters": {},
+        "has_been_visited": false,
+        "commands": [],
+        "properties": {}
+    }
+]

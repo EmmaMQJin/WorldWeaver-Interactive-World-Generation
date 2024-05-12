@@ -63,7 +63,8 @@ def create_new_location_shot(story, output):
     return [user, assistant]
 
 def pick_new_location(user_prompt, formatting_example, shots):
-    client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
+    # client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
+    client = OpenAI(api_key=os.environ['OPENAI_API_KEY'])
     sys_prompt = f"""You are a helpful location generator for building a text adventure game.
 
 The user will give you the background story of the game and a JSON of all locations that should be in the game.
@@ -80,12 +81,17 @@ Remember to only populate the name, description, and set has_been_visited to fal
     messages = [{"role": "system", "content": sys_prompt}]
     messages += shots
     messages += [{"role": "user", "content": user_prompt}]
-    completion = client.chat.completions.create(
-        model="gpt-4",
-        messages=messages
-    )
-    model_output = completion.choices[0].message.content
-    model_output_dict = json.loads(model_output)
+    while True:
+        try:
+            completion = client.chat.completions.create(
+                model="gpt-4",
+                messages=messages
+            )
+            model_output = completion.choices[0].message.content
+            model_output_dict = json.loads(model_output)
+            break
+        except:
+            print("Error in location generation --- trying again....")
     dict_to_json_file(model_output_dict, "data/test_generations/init_location.json")
     return model_output_dict
 
@@ -106,7 +112,8 @@ Location to generate neighboring locations for:
 def pick_neighboring_locations(n, orig_loc_dict, story, shots, existing_locs, format):
             # neib_locs, remaining_locations = pick_neighboring_locations(
             #     loc, story, neib_shots, remaining_locations)
-    client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
+    # client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
+    client = OpenAI(api_key=os.environ['OPENAI_API_KEY'])
     sys_prompt = f"""You are a helpful location generator for building a text adventure game.
 
 The user will give you the background story of the game, the location to pick neighbors for, and the number of neighboring locations to pick.
@@ -126,12 +133,17 @@ Location to generate neighboring locations for:
     messages = [{"role": "system", "content": sys_prompt}]
     messages += shots
     messages += [{"role": "user", "content": user_prompt}]
-    completion = client.chat.completions.create(
-        model="gpt-4",
-        messages=messages
-    )
-    model_output = completion.choices[0].message.content
-    model_output_list = json.loads(model_output)
+    while True:
+        try:
+            completion = client.chat.completions.create(
+                model="gpt-4",
+                messages=messages
+            )
+            model_output = completion.choices[0].message.content
+            model_output_list = json.loads(model_output)
+            break
+        except:
+            print("Error in location generation --- trying again...")
     dict_to_json_file(model_output_list,
                       "data/test_generations/neighbor_locations.json")
     for loc in model_output_list:
@@ -164,7 +176,8 @@ def generate_connections_step(loc1, loc2, dirs, shots):
     quote_id = get_token_ids(["'\""])
     logit_biases[quote_id[0]] = -100
     loc1_name, loc2_name = loc1["name"], loc2["name"]
-    client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
+    # client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
+    client = OpenAI(api_key=os.environ['OPENAI_API_KEY'])
     sys_prompt = f"""You are a helpful map generator for building a text adventure game.
 Now, given the name and description of two locations (the first one is location 1, the second one is location 2)
 from the user, determine which direction (pick from THIS LIST: {dirs}) the player should go to get from location 1 to location 2.
@@ -213,7 +226,8 @@ Something like this: Leaving the warm blanket nook of the Cozy Corner, you ventu
 
 def generate_connections(loc1, loc2, dirs, shots):
     loc1_name, loc2_name = loc1["name"], loc2["name"]
-    client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
+    # client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
+    client = OpenAI(api_key=os.environ['OPENAI_API_KEY'])
     sys_prompt = f"""You are a helpful map generator for building a text adventure game.
 Now, given the name and description of two locations (the first one is location 1, the second one is location 2)
 from the user, determine which direction (pick from THIS LIST: {dirs}) the player should go to get from location 1 to location 2.

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Characters Completed</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+    <h3>All NPCs Finalized for Location {{loc_name}}</h3>
+    <p>Here are the NPCs selected for each location:</p>
+    {% for location in locations %}
+    <div class="location-box">
+        <h2>{{ location.name }}</h2>
+        <p> {{ location.characters }} </p>
+    </div>
+    {% endfor %}
+    <a href="{% if location_index == -1 %}/object-generation{% else %}/npc-generation/{{ location_index + 1 }}{% endif %}">
+        {% if location_index == -1 %}
+            Proceed to Generate NPC inventories
+        {% else %}
+            Generate Objects in Next Location
+        {% endif %}
+    </a>
+    </div>
+</body>
+</html>

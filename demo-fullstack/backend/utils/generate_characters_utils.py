@@ -49,7 +49,8 @@ def save_json(data, filename):
 ####################
 #few shot GPT-4
 def generate_main_character(background_story, example_stories, character_format, examples, directory = ""):
-    client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
+    # client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
+    client = OpenAI(api_key=os.environ['OPENAI_API_KEY'])
 
     with open(directory + "data/few-shot-examples/example-characters.json", 'r') as file:
         examples = json.load(file)
@@ -69,18 +70,22 @@ Output the character in JSON format, like this:
     ]
 
     messages += [{"role": "user", "content": background_story}]
-
-    response = client.chat.completions.create(
-        model='gpt-4',
-        messages=messages,
-        temperature=1,
-        max_tokens=2048,
-        top_p=1.0,
-        frequency_penalty=0,
-        presence_penalty=0
-    )
-    gpt_response = response.choices[0].message.content
-    return json.loads(gpt_response)
+    while True:
+        try:
+            response = client.chat.completions.create(
+                model='gpt-4',
+                messages=messages,
+                temperature=1,
+                max_tokens=2048,
+                top_p=1.0,
+                frequency_penalty=0,
+                presence_penalty=0
+            )
+            gpt_response = response.choices[0].message.content
+            result = json.loads(gpt_response)
+            return result
+        except:
+            print("Error in generating main character --- trying again...")
 
 
 def generate_npc_shots():
@@ -206,7 +211,8 @@ def generate_npc_shots():
     return shots
 
 def generate_npcs_round(location_name, location_description, location_purpose, background_story, main_character, existing_npcs):
-    client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
+    # client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
+    client = OpenAI(api_key=os.environ['OPENAI_API_KEY'])
 
     prompt = "You are a helpful character generator for building a text adventure game."
     prompt += "Your job is to generate NPC characters in a given location."
@@ -236,19 +242,22 @@ def generate_npcs_round(location_name, location_description, location_purpose, b
     messages = [{'role': 'system', 'content': prompt}]
     messages += generate_npc_shots()
     messages += [{"role": "user", "content": user_prompt}]
+    while True:
+        try:
+            response = client.chat.completions.create(
+                model='gpt-4',
+                messages=messages,
+                temperature=1,
+                max_tokens=2048,
+                top_p=1.0,
+                frequency_penalty=0,
+                presence_penalty=0
+            )
 
-    response = client.chat.completions.create(
-        model='gpt-4',
-        messages=messages,
-        temperature=1,
-        max_tokens=2048,
-        top_p=1.0,
-        frequency_penalty=0,
-        presence_penalty=0
-    )
-
-    npc_content = json.loads(response.choices[0].message.content)
-    return npc_content
+            npc_content = json.loads(response.choices[0].message.content)
+            return npc_content
+        except:
+            print("Error in NPC generation --- trying again...")
 
 
 

@@ -1,9 +1,8 @@
-from fastapi import FastAPI, Form, Request, Response
+from fastapi import FastAPI, Request, Form
 from fastapi.responses import HTMLResponse, RedirectResponse
 from fastapi.templating import Jinja2Templates
-from fastapi.staticfiles import StaticFiles
-import json
-import copy
+from random import randint
+
 from backend.utils.utils import *
 from backend.utils.json_utils import *
 from backend.utils.frontend_utils import *
@@ -14,10 +13,7 @@ from backend.utils.generate_characters_utils import *
 from backend.utils.generate_items_utils import *
 from backend.utils.generate_game_json import *
 
-
 app = FastAPI()
-
-app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
 
 # Global variable to hold character data
@@ -71,105 +67,27 @@ hall_tomb_connection = [{"direction": "down",
 connections_shot_1 = create_connections_shot(hall_of_goddess_obj, royal_tomb_obj, hall_tomb_connection)
 connections_shots = connections_shot_1
 
+# all_characters = read_json_examples("data/test_generations/all_the_characters.json")
+all_characters = []
+all_locations = read_json_examples("data/test_generations/all_the_locations.json")
+
 with open(f"data/extracted_items.json", 'r') as file:
     extracted_items = json.load(file)
 
 sample_items_inventory = json.dumps(extracted_items[2:4]+extracted_items[5:6]+extracted_items[11:12]+extracted_items[15:16], indent=4)
 sample_items_objects = json.dumps(extracted_items[5:10], indent=4)
 
-@app.get("/", response_class=HTMLResponse)
-async def get_index(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request})
+locations_to_use = {
+    "Fairy King's Throne": "Starting location. A humble abode located in a tucked away crevice of a towering building. This is also where the pigeon returns to eat its precious pizza slice.",
+    "Jerry's Cage": "A large open area where the pigeon must avoid branches while in flight. Also the return point after the pizza has been stolen.",
+    "Streetlamp Overlook": "An elevated spot where the pigeon lands to scout for food sources.",
+    "Busy City Streets": "A bustling area the pigeon must navigate to avoid pedestrians while flying towards Costco.",
+    "Costco": "A location full of potential food sources. Here is where the pigeon spots the delectable pizza and attempts to steal a slice.",
+    "Costco Eating Area": "A site of human activity where the pigeon must cunningly mimic human actions to steal a slice of pizza, dodge angry customers, and take off."
+}
 
-
-@app.get("/background-story")
-async def get_background_story(request: Request):
-    return templates.TemplateResponse("background_story.html", {"request": request })
-
-@app.post("/background-story")
-async def submit_background_story(background: str = Form(...)):
-    global main_character, background_story
-    background_story = background
-    main_character = generate_main_character(background_story, stories, character_format, example_characters)
-    return RedirectResponse(url="/main-character", status_code=303)
-
-
-@app.get("/main-character")
-async def display_character(request: Request):
-    return templates.TemplateResponse("main_character.html", {"request": request, "main_character": main_character})
-
-
-@app.post("/main-character")
-async def update_character(request: Request, name: str = Form(...), description: str = Form(...)):
-    global main_character, all_characters
-    main_character["name"] = name
-    main_character["description"] = description
-    all_characters = [main_character]
-    return RedirectResponse(url="/main-character", status_code=303)
-
-
-@app.get("/initial-state")
-async def get_initial_state(request: Request):
-    return templates.TemplateResponse("initial_state.html", {"request": request})
-
-
-@app.post("/initial-state")
-async def submit_initial_state(request: Request, response: Response, init_state: str = Form(...)):
-    global initial_state
-    initial_state = init_state
-    return RedirectResponse(url="/winning-state", status_code=303)
-
-
-@app.get("/winning-state")
-async def get_winning_state(request: Request):
-    return templates.TemplateResponse("winning_state.html", {"request": request, "initial_state": initial_state})
-
-
-@app.post("/winning-state")
-async def submit_winning_state(request: Request, response: Response, win_state: str = Form(...)):
-    global winning_state, actions_list
-    winning_state = win_state
-    actions_list = generate_actions_playthrough(background_story, main_character, initial_state, winning_state)
-    write_list_to_file(actions_list.strip().split("\n"), "data/actions.txt")
-    return RedirectResponse(url="/central-location-thoughts", status_code=303)
-
-
-@app.get("/central-location-thoughts")
-async def get_central_location_thoughts(request: Request):
-    return templates.TemplateResponse("central_location_thoughts.html", {"request": request})
-
-
-@app.post("/central-location-thoughts")
-async def submit_central_location_thoughts(request: Request, response: Response, central_loc_thoughts: str = Form(...)):
-    global locations_to_use, remaining_locations, central_loc
-    central_location_thoughts = central_loc_thoughts
-    locations_to_use = generate_locations_to_use(background_story, actions_list, initial_state, winning_state, main_character, central_location_thoughts)
-    dict_to_json_file(locations_to_use, "data/test.json")
-    remaining_locations = copy.deepcopy(locations_to_use)
-    remaining_locations = generate_central_loc_HITL(background_story, neib_locs_insidetemple_3_list[0], central_loc_shots, remaining_locations)
-    central_loc = read_json_examples("data/test_generations/init_location.json")
-    return RedirectResponse(url="/central-location", status_code=303)
-
-
-@app.get("/central-location")
-async def get_central_location(request: Request):
-    return templates.TemplateResponse("central_location.html", {"request": request, "cent_loc": central_loc})
-
-
-@app.post("/central-location")
-async def update_central_location(request: Request, name: str = Form(...), description: str = Form(...)):
-    central_loc["name"] = name
-    central_loc["description"] = description
-    return RedirectResponse(url="/central-location", status_code=303)
-
-
-@app.get("/map")
-async def get_map(request: Request):
-    global all_locations
-    generate_neighbor_locs_HITL(central_loc, background_story, neib_locs_shots, connections_shots, remaining_locations, location_format)
-    all_locations = read_json_examples("data/test_generations/all_the_locations.json")
-    return templates.TemplateResponse("map.html", {"request": request, "all_locations": all_locations})
-
+winning_state = "main character steals breakfast from costco"
+background_story = ""
 
 already_generated_items = []
 all_selected_items = []
@@ -300,7 +218,6 @@ def start_inventory(request: Request):
     # Redirects to the start inventory with a default location_index of 0
     return RedirectResponse(url="/inventory-generation/0", status_code=303)
 
-
 @app.get("/inventory-generation/{location_index}")
 async def start_location_inventory(request: Request, location_index: int):
     # Start with the first character and reset the global variables
@@ -308,7 +225,6 @@ async def start_location_inventory(request: Request, location_index: int):
     already_generated_items = []
     all_selected_items = []
     return await display_items_inventory(request, location_index, 0)
-
 
 @app.get("/inventory-generation/{location_index}/{character_id}")
 async def display_items_inventory(request: Request, location_index: int, character_id: int):
@@ -382,62 +298,6 @@ async def final_selection_inventory(request: Request, location_index: int, chara
         return templates.TemplateResponse("inventory_completion.html", context)
     return await display_items_inventory(request, location_index, next_character_id)
 
-@app.get("/action-generation")
-async def actions_generation(request: Request):
-    return templates.TemplateResponse("generating_actions.html")
-
-
-@app.get("/blocks-generation")
-async def blocks_generation(request: Request):
-    return templates.TemplateResponse("generating_blocks.html")
-
-
-@app.get("/game-json-generation")
-async def game_json_generation(request: Request):
-    characters = read_json_examples("data/test_generations/all_the_characters.json")
-    locations = read_json_examples("data/test_generations/all_the_locations.json")
-    main_char_name = characters[0]["name"]
-    starting_location_name = characters[0]["location"]
-
-    game_dict = {}
-    game_dict["player"] = main_char_name
-    game_dict["start_at"] = starting_location_name
-    game_dict["game_history"] = []
-    game_dict["game_over"] = False
-    game_dict["game_over_description"] = "Game over."
-    game_dict["characters"] = characters
-    game_dict["locations"] = locations
-    game_dict["actions"] = []
-
-    dict_to_json_file(game_dict, "data/test_generations/game.json")
-    print("\nGenerated the entire game json! ^v^\n")
-    return templates.TemplateResponse("generating_game_json.html")
-
-@app.get("/congratulations")
-async def get_index(request: Request):
-    return templates.TemplateResponse("congratulations.html", {"request": request})
-
-# @app.get("/generate_npcs")
-# async def get_npcs(request: Request):
-#     for i, location_json in enumerate(all_locations):
-#         name = location_json["name"]
-#         if name not in locations_to_use:
-#             continue
-#         purpose = locations_to_use[name]
-#         print(f"\nLet's generate NPCs in the location {name}... ...")
-#         npcs_dict, all_characters = generate_npc_in_location(name, location_json["description"], purpose, background_story, main_character, all_characters)
-#         all_locations[i]["characters"] = npcs_dict
-#     dict_to_json_file(all_locations, "data/test_generations/all_the_locations.json")
-#     dict_to_json_file(all_characters, "data/test_generations/all_the_characters.json")
-#     print("\nNPC generation completed! ^v^\n")
-
-# @app.get("/generate_location_objects")
-# async def get_location_objects(request: Request):
-#     generate_objects_in_locations("games-data")
-
-# @app.get("/generate_inventories")
-# async def get_character_inventories(request: Request):
-#     populate_character_inventories("games-data", main_character, winning_state)
 
 if __name__ == "__main__":
     import uvicorn

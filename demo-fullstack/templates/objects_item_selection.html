@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Items</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Select Items in Location {{ loc_name }}</h3>
+        <form action="/object-generation/{{location_index}}/select" method="post">
+                {% for item in items %}
+                <div class="items-container">
+                    <label class="item-label">
+                        <input type="checkbox" name="selected_items" value="{{ loop.index0 }}">
+                        {{ item }}
+                    </label><br>
+                </div>
+                {% endfor %}
+
+            <button type="submit" class="submit-btn">Add Selected Items</button>
+        </form>
+        <button onclick="location.href='/object-generation/{{location_index}}/regenerate'" class="regenerate-btn">Regenerate Items</button>
+        <a href="/object-generation/{{location_index}}/final_selection" class="finalize-link">Finalize Selection for Location {{ loc_name }}</a>
+    </div>
+</body>
+</html>

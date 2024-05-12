@@ -1,13 +1,13 @@
 {
-    "name": "Pigeon Nest",
-    "description": "Nestled in a tucked away corner of a tall, imposing building, the Pigeon Nest is a rough construction of twigs, leaves, and found objects. A true symbol of resilience in the bustling cityscape. It's a cozy, sheltered nook overlooking the lively streets below\u2014the perfect perch for observation and rest. Amid the noise and commotion of city life, this Pigeon Nest offers a sense of calm and respite.",
+    "name": "Cozy Bedroom",
+    "description": "It's a small, comfortable room, filled with cozy cushions and colorful blankets. Sunlight streams in through a half-open window, throwing warm rays onto Whisper's favorite rug. The shinny floorboards creak slightly under weight, a sound Whisper knows well. A beloved poster of distant, mystical mountains hangs on one of the walls, a reminder of Whisper's dreams of adventure.",
     "connections": {
-        "down": "City Park",
-        "east": "Streetlamp Overlook"
+        "east": "Kitchen",
+        "west": "Whisper's Home"
     },
     "travel_descriptions": {
-        "down": "Leaving the sheltered tranquility of the Pigeon Nest, you plunge down with a flutter of wings and courage, navigating through the bustling cityscape below towards the wide expanses of the City Park, a strategic challenge laden with obstructions posing as branches.",
-        "east": "Leaving the sheltered tranquility of the Pigeon Nest, you venture east, gliding from building to building, until you spot the solitary perch of the Streetlamp Overlook, the landmark of your next food source amidst the bustling cityscape."
+        "east": "Leaving behind the comforting embrace of the Cozy Bedroom, creased under shafts of sunlight, you confidently step eastwards onto the shiny floorboards towards the familiar, homely scent wafting from the Kitchen awaiting your hungry exploration.",
+        "west": "Leaving the comfort of the Cozy Bedroom and its promise of adventure, you step onto the well-worn floorboards, making a determined move towards the west, and gradually find yourself in the familiar surroundings of Whisper's Home, where your journey completes.\n"
     },
     "blocks": {},
     "items": {},

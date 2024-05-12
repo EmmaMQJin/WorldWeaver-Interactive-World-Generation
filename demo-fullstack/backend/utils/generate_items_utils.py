@@ -48,11 +48,46 @@ output_filename = 'data/extracted_items.json'  # The filename for the output JSO
 # ####################
 # #few shot GPT-4
 
+def populate_main_character_inventory(main_character):
+   # TODO:
+   # Handle the main character separately
+       # Load extracted items for few-shot learning
+    with open(f"data/extracted_items.json", 'r') as file:
+        extracted_items = json.load(file)
+    
+     # Sample of extracted items for the few-shot example
+    sample_items = json.dumps(extracted_items[2:4]+extracted_items[5:6]+extracted_items[11:12]+extracted_items[15:16], indent=4)
+    main_char_prompt = f"Given the main character '{main_character['name']}', described as '{main_character['description']}', who must achieve the goal: '{winning_state}', generate suitable inventory items. Each item should include name, description, examine text, and properties that fit the character's role and actions in the narrative."
+    main_char_messages = [
+        {'role': 'system', 'content': main_char_prompt},
+        {'role': 'user', 'content': f"Please list potential items for {main_character['name']}."},
+        {'role': 'assistant', 'content': sample_items},
+        {'role': 'user', 'content': f"Now, generate detailed inventory items for {main_character['name']}."}
+    ]
+    
+    # client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
+    client = OpenAI(api_key=os.environ['OPENAI_API_KEY'])
+    
+    main_response = client.chat.completions.create(
+        model='gpt-4',
+        messages=main_char_messages,
+        temperature=1,
+        max_tokens=2048,
+        top_p=1.0,
+        frequency_penalty=0,
+        presence_penalty=0
+    )
+
+    main_inventory_items = json.loads(main_response.choices[0].message.content)
+    main_character['inventory'] = {item['name']: item for item in main_inventory_items}
+
+
 def generate_inventory_items(character, main_character, winning_state, location_name, location_actions, 
                              location_items, sample_items, existing_items):
-    client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
+    # client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
+    client = OpenAI(api_key=os.environ['OPENAI_API_KEY'])
         # Determine if the character is the main character
-    goal = winning_state if character["name"] == main_character["name"] else character["goal"]
+    goal = character["goal"]
     # Create a detailed prompt with location context, action list, and few-shot examples
     prompt = "You are a helpful character inventory generator for building a text adventure game."
     prompt = f"Given the character '{character['name']}', described as '{character['description']}'"
@@ -60,7 +95,8 @@ def generate_inventory_items(character, main_character, winning_state, location_
     prompt += f"The character is in the location {location_name}, and the purpose of location is: {location_actions}."
     prompt += f"The items that are in '{location_name}' are: {location_items}."
     prompt += f"Taking all this information into consideration, generate inventory items for the given character."
-    prompt += f"Each inventory should include name, description, examine text,"
+    prompt += "Remember, each inventory item should be a specific item that the character can carry around, and the item should NOT be a character or a location."
+    prompt += f"Each inventory item should include name, description, examine text,"
     prompt += "and properties that fit the character's role and actions in the narrative."
     prompt += f"Here are the inventory items you have already generated for this character before and SHOULD NOT generate again: {existing_items}"
     
@@ -70,19 +106,22 @@ def generate_inventory_items(character, main_character, winning_state, location_
         {'role': 'assistant', 'content': sample_items},
         {'role': 'user', 'content': f"Please list 5 potential items for the character {character['name']} based on their goal, actions, and available location items."}
     ]
+    while True:
+        try:
+            response = client.chat.completions.create(
+                model='gpt-4',
+                messages=messages,
+                temperature=1,
+                max_tokens=2048,
+                top_p=1.0,
+                frequency_penalty=0,
+                presence_penalty=0
+            )
 
-    response = client.chat.completions.create(
-        model='gpt-4',
-        messages=messages,
-        temperature=1,
-        max_tokens=2048,
-        top_p=1.0,
-        frequency_penalty=0,
-        presence_penalty=0
-    )
-
-    inventory_items = json.loads(response.choices[0].message.content)
-    return inventory_items
+            inventory_items = json.loads(response.choices[0].message.content)
+            return inventory_items
+        except:
+            print("Error in generating inventory items --- trying again...")
 
 def populate_character_inventories(directory, main_character, winning_state):
     # Load location data
@@ -98,32 +137,10 @@ def populate_character_inventories(directory, main_character, winning_state):
         extracted_items = json.load(file)
     
      # Sample of extracted items for the few-shot example
-    sample_items = json.dumps(extracted_items[:5], indent=4)
+    sample_items = json.dumps(extracted_items[2:4]+extracted_items[5:6]+extracted_items[11:12]+extracted_items[15:16], indent=4)
 
     all_characters = []  # List to store all characters for all_the_characters.json
 
-   
-   # Handle the main character separately
-    main_char_prompt = f"Given the main character '{main_character['name']}', described as '{main_character['description']}', who must achieve the goal: '{winning_state}', generate suitable inventory items. Each item should include name, description, examine text, and properties that fit the character's role and actions in the narrative."
-    main_char_messages = [
-        {'role': 'system', 'content': main_char_prompt},
-        {'role': 'user', 'content': f"Please list potential items for {main_character['name']}."},
-        {'role': 'assistant', 'content': sample_items},
-        {'role': 'user', 'content': f"Now, generate detailed inventory items for {main_character['name']}."}
-    ]
-
-    main_response = client.chat.completions.create(
-        model='gpt-4',
-        messages=main_char_messages,
-        temperature=1,
-        max_tokens=2048,
-        top_p=1.0,
-        frequency_penalty=0,
-        presence_penalty=0
-    )
-
-    main_inventory_items = json.loads(main_response.choices[0].message.content)
-    main_character['inventory'] = {item['name']: item for item in main_inventory_items}
     all_characters.append(main_character)  # Add the main character
 
 
@@ -167,24 +184,26 @@ def populate_character_inventories(directory, main_character, winning_state):
 
 
 def populate_objects_in_location_round(location, action_descriptions, sample_items, existing_items):
-    client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
+    # client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
+    client = OpenAI(api_key=os.environ['OPENAI_API_KEY'])
 
     location_actions = action_descriptions.get(location['name'], "No specific actions described.")
 
-    prompt = "You are a helpful objects generator for building a text adventure game."
+    prompt = "You are a helpful items generator for building a text adventure game."
     prompt += f"Given the location name, its description, and its purpose from the user,"
-    prompt += "generate a list of 5 suitable and purposeful objects that should be in this location."
-    prompt += "Output the objects as a list of JSON objects."
+    prompt += "generate a list of 5 suitable and purposeful items that should be in this location."
+    prompt += "Remember, each item should be specific and purposeful, and should not be a character or a location."
+    prompt += "Output the items as a list of JSON items."
     prompt += "Include all necessary attributes such as name, description, examine text, and properties."
-    prompt += f"Here are the objects you have already generated for this location before and SHOULD NOT generate again: {existing_items}"
+    prompt += f"Here are the items you have already generated for this location before and SHOULD NOT generate again: {existing_items}"
 
 
-    shot1_user = """Please list of 5 potential objects for the location Lake Shore based on its description and purpose:
+    shot1_user = """Please list of 5 potential items for the location Lake Shore based on its description and purpose:
     location name: Lake Shore
     location description: Lake Shore is a serene spot where the gentle lapping of crystal-clear waters blends with the rustle of reeds, offering a peaceful retreat for both nature lovers and fishing enthusiasts.
     location purpose: The player needs to catch fish with a fishing rod and collect a shellfish.
     """
-    user_prompt = f"""Please list of 5 potential objects for the location Lake Shore based on its description and purpose:
+    user_prompt = f"""Please list of 5 potential items for the location Lake Shore based on its description and purpose:
     location name: {location['name'].strip()}
     location description: {location["description"].strip()}
     location purpose: {location_actions}
@@ -196,18 +215,22 @@ def populate_objects_in_location_round(location, action_descriptions, sample_ite
         {'role': 'assistant', 'content': sample_items},
         {'role': 'user', 'content': user_prompt}
     ]
-
-    response = client.chat.completions.create(
-            model='gpt-4',
-            messages=messages,
-            temperature=0.8,
-            max_tokens=2048,
-            top_p=1.0,
-            frequency_penalty=0,
-            presence_penalty=0
-        )
-    gpt_response = response.choices[0].message.content
-    new_items = json.loads(gpt_response)
+    while True:
+        try:
+            response = client.chat.completions.create(
+                    model='gpt-4',
+                    messages=messages,
+                    temperature=0.8,
+                    max_tokens=2048,
+                    top_p=1.0,
+                    frequency_penalty=0,
+                    presence_penalty=0
+                )
+            gpt_response = response.choices[0].message.content
+            new_items = json.loads(gpt_response)
+            break
+        except:
+            print(f"Error in generating items in location {location['name']} --- trying again...")
     return new_items
 
 def generate_objects_in_locations(directory):

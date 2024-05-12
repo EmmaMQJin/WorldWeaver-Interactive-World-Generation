@@ -1,11 +1,17 @@
 {
-    "name": "Busy City Streets",
-    "description": "A bustling area the pigeon must navigate to avoid pedestrians while flying towards Costco.",
+    "name": "Home Exterior",
+    "description": "This is the location outside of Whisper's door where she starts her journey towards the mountain.",
     "connections": {
-        "west": "City Park"
+        "in": "Kitchen",
+        "east": "Steep Mountain Path",
+        "west": "Stone Steps",
+        "up": "Top of Peach Tree"
     },
     "travel_descriptions": {
-        "west": "Leaving the bustling heartbeat of the Busy City Streets, you navigate westward, skillfully avoiding pedestrians, until you reach the tranquil openness of the City Park, offering a peaceful respite in the midst of the city's chaos."
+        "in": "Leaving the openness of the Home Exterior behind, you step back in through the front door, re-entering the familiar and comforting confines of the Kitchen, where adventure is often born from the simplest of meals.",
+        "east": "Departing from the familiar setting of the Home Exterior, you begin your trek eastwards, every step drawing you closer to the challenges and perils of the Steep Mountain Path.",
+        "west": "Departing the familiar exterior of your home, you move west, embarking on a challenging journey towards the Stone Steps, the age-worn pathway cutting through the intimidating mountainous terrain.",
+        "up": "Leaving the familiar surroundings of the Home Exterior, you bravely stride towards the towering peach tree, steadily ascending its sturdy trunk and branches until you reach the Top of Peach Tree, laden with the promise of juicy fruits."
     },
     "blocks": {},
     "items": {},

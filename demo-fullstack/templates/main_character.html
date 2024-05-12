@@ -14,9 +14,11 @@
             }
         }
     </script>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <h1>Here is your main character, who is also your player:</h1>
+    <div class="container">  
+    <h3>Here is your main character, who is also your player:</h3>
     <p><strong>Name:</strong> {{ main_character.name }}</p>
     <p><strong>Description:</strong> {{ main_character.description }}</p>
     <button onclick="toggleForm()">Update Character</button>
@@ -28,5 +30,6 @@
         <button type="submit">Submit Update</button>
     </form>
     <a href="/initial-state">Proceed to define the initial state of the game</a>
+    </div>
 </body>
 </html>

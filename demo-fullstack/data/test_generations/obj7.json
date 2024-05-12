@@ -1,11 +1,11 @@
 {
-    "name": "Safe Distance",
-    "description": "Location in the sky where Peregrine can swiftly fly to after grabbing the pizza slice.",
+    "name": "Peach Tree Grove",
+    "description": "Where Whisper must locate the Peach tree while dodging aggressive birds.",
     "connections": {
-        "down": "Urban Building"
+        "south": "Whisper's Home"
     },
     "travel_descriptions": {
-        "down": "From the Safe Distance in the sky, you plunge downwards, soaring over the bustling city until descending back at your original perch atop the Urban Building."
+        "south": "With a triumphant heart and peaches in hand, you journey south from the bustling Peach Tree Grove, feeling the thrill of victory with every step. Gradually, you return to the welcoming solace of Whisper's Home, ready to celebrate your successful quest."
     },
     "blocks": {},
     "items": {},

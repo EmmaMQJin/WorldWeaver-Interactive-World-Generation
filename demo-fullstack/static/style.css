@@ -1,0 +1,152 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+
+/* /static/style.css */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-image: url('/static/worldweaver.jpeg'); /* Ensure the path is correct */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background image */
+    background-repeat: repeat; /* Do not repeat the image */
+    height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center text */
+}
+
+
+h1 {
+    color: #140604; /* Dark brown color */
+    font-size: 80px; /* Large text */
+    font-weight: bold; /* Make the font bold */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 20px 0; /* Space above and below the headline */
+    text-shadow: 
+    /* -5px -5px 0 #8a5b5b,  
+     5px -5px 0 #8a5b5b,
+    -5px  5px 0 #8a5b5b, */
+     5px  5px 0 #eedcdc;
+}
+
+h3 {
+    color: #3f150e; /* Dark brown color */
+    font-weight: bold; /* Make the font bold */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 20px 0; /* Space above and below the headline */
+
+}
+
+h4 {
+    color: #3f150e; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    /* background-image: url('/static/worldweaver.jpeg'); /* Ensure the path is correct */
+    /* background-size: cover; Cover the entire page */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    /* width: 100%; Takes full width of its parent up to max-width */
+    max-width: 80%; /* Maximum width of the container */
+    margin: auto; /* Centers the container horizontally */
+    overflow-wrap: break-word;
+    overflow-y: auto; /* Makes the container scrollable vertically */
+    max-height: 80vh; /* Limits the height to 80% of the viewport height */
+}
+
+.location-box {
+    background-color: #f9f9f9; /* Light grey background for each location box */
+    border: 1px solid #ccc; /* Border for the box */
+    padding: 15px;
+    margin-bottom: 20px; /* Space between each location box */
+    border-radius: 5px; /* Rounded corners for the box */
+}
+
+textarea {
+    width: 90%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+.items-container {
+    text-align: left; /* Aligns checkboxes and labels to the left */
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.item-label {
+    display: block; /* Makes each label+checkbox pair appear on a new line */
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer; /* Changes the cursor when hovering over the label */
+}
+
+input[type="checkbox"] {
+    margin-right: 10px; /* Space between checkbox and label text */
+}
+
+.submit-btn, .regenerate-btn, .finalize-link {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-btn:hover, .regenerate-btn:hover, .finalize-link:hover {
+    background-color: #0056b3;
+}
+
+.finalize-link {
+    background-color: #008CBA; /* Different color for finalization link */
+}
+
+.finalize-link:hover {
+    background-color: #007B9A;
+}
+

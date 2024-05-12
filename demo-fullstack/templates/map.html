@@ -2,115 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Locations Network Graph</title>
-    <script src="https://d3js.org/d3.v6.min.js"></script>
-    <style>
-        svg {
-            width: 100vw;
-            height: 100vh;
-        }
-        .node circle {
-            fill: #ffab00;
-            stroke: #fff;
-            stroke-width: 1.5px;
-        }
-        .node text {
-            font: 12px sans-serif;
-            pointer-events: none;
-            text-anchor: middle;
-        }
-        .link line {
-            stroke: #999;
-            stroke-opacity: 0.6;
-        }
-    </style>
+    <title>All Locations Generated</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <p>{{all_locations}}</p>
-    <script type="application/json" id="locationsData">
-        {{ all_locations | tojson }}
-    </script>
-    <svg></svg>
-    <script type="text/javascript">
-
-        const all_locations = JSON.parse(document.getElementById('locationsData').textContent);
-        console.log(all_locations)
-
-        const svg = d3.select("svg"),
-            width = +svg.attr("width"),
-            height = +svg.attr("height");
-
-        const simulation = d3.forceSimulation()
-            .force("link", d3.forceLink().id(d => d.name).distance(100))
-            .force("charge", d3.forceManyBody().strength(-400))
-            .force("center", d3.forceCenter(width / 2, height / 2));
-
-        // Preparing nodes and links data from the JSON structure
-        const nodes = all_locations.map(loc => ({ id: loc.name, description: loc.description }));
-        const linkData = all_locations.flatMap(loc =>
-            Object.entries(loc.connections).map(([key, value]) => ({
-                source: loc.name,
-                target: value
-            }))
-        );
-
-        const links = linkData.filter(link => nodes.some(node => node.id === link.target));
-
-        const link = svg.append("g")
-            .attr("class", "links")
-            .selectAll("line")
-            .data(links)
-            .enter().append("line");
-
-        const node = svg.append("g")
-            .attr("class", "nodes")
-            .selectAll("circle")
-            .data(nodes)
-            .enter().append("circle")
-            .attr("r", 5)
-            .call(d3.drag()
-                .on("start", dragstarted)
-                .on("drag", dragged)
-                .on("end", dragended));
-
-        node.append("title")
-            .text(d => d.id);
-
-        simulation
-            .nodes(nodes)
-            .on("tick", ticked);
-
-        simulation.force("link")
-            .links(links);
-
-        function ticked() {
-            link
-                .attr("x1", d => d.source.x)
-                .attr("y1", d => d.source.y)
-                .attr("x2", d => d.target.x)
-                .attr("y2", d => d.target.y);
-
-            node
-                .attr("cx", d => d.x)
-                .attr("cy", d => d.y);
-        }
-
-        function dragstarted(event) {
-            if (!event.active) simulation.alphaTarget(0.3).restart();
-            event.subject.fx = event.subject.x;
-            event.subject.fy = event.subject.y;
-        }
-
-        function dragged(event) {
-            event.subject.fx = event.x;
-            event.subject.fy = event.y;
-        }
-
-        function dragended(event) {
-            if (!event.active) simulation.alphaTarget(0);
-            event.subject.fx = null;
-            event.subject.fy = null;
-        }
-    </script>
+    <div class="container">
+    <h3>All Locations Generated</h3>
+    <p>Here are all locations generated:</p>
+    {% for location in all_locations %}
+    <div class="location-box">
+        <h2>{{ location.name }}</h3>
+        <h4>Connections</h4>
+        <p>{{ location.connections }}</p>
+    </div>
+    {% endfor %}
+    <a href="/npc-generation">Proceed to Generate NPCs</a>
+    </a>
+    </div>
 </body>
 </html>
