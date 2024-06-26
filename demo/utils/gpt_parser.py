@@ -91,15 +91,23 @@ class GptParser(parsing.Parser):
     def ok(self, description):
         """
         In this homework, we'll replace this with a call to the OpenAI API
-        in order to create more evocative descriptions.  For this part,
+        in order to create more evocative descriptions. For this part,
         all you need to do is create your own system instructions.
         """
         system_instructions = "".join(
             [
-                "You are the narrator for a text adventure game. You create short, ",
-                "evocative descriptions of the game. The player can be described in ",
-                "the 2nd person, and you should use present tense. If a command ",
-                "doesn't work, tell the player why. If the command is 'look' the describe the game location and its characters and items.",
+                "You are the narrator for a text adventure game. Given commands from the player, you create short, ",
+                "evocative descriptions of the game. You should refer to the player in ",
+                "2nd person, and you should use present tense. If a command ",
+                "doesn't work, tell the player why. "
+                "If the command is 'look', describe the game location in a few sentences, and then list its connections, characters, and items according to the information provided to you, in the following format:",
+                "Connections:\n",
+                "East to A\n",
+                "West to B\n\n",
+                "NPCs:\n",
+                "Elwin the Dwarf\n\n",
+                "Objects:\n",
+                "Fishing Pole\n"
             ]
         )
         # if self.narration_style:
@@ -199,8 +207,8 @@ class GptParser(parsing.Parser):
         """
         instructions = "".join(
             [
-                "You are the parser for a text adventure game. For a user input, say which ",
-                "of the commands it most closely matches. The commands are:",
+                "You are the command parser for a text adventure game. Given an input from the player, output which ",
+                "of the follwing commands it most closely matches:",
             ]
         )
 
@@ -245,8 +253,8 @@ class GptParser(parsing.Parser):
 
         instructions = "".join(
             [
-                "You are the parser for a text adventure game. For an input command try to ",
-                "match the character in the command (if no character is mentioned in the ",
+                "You are the command parser for a text adventure game. Given an input command from the player, ",
+                "match the character in the command according to the following list (if no character is mentioned in the ",
                 "command, then default to '{player}').".format(
                     player=self.game.player.name
                 ),
@@ -275,7 +283,7 @@ class GptParser(parsing.Parser):
         """
         if self.verbose:
             print("Matching an item with GPT.")
-        instructions = "You are the parser for a text adventure game. For an input command try to match the item in the command."
+        instructions = "You are the command parser for a text adventure game. Given an input command from the player, try to match the item refered to in the command."
         if hint:
             instructions += f"\nHint: {hint}."
         instructions += "\n\nThe possible items are:"
@@ -307,7 +315,7 @@ class GptParser(parsing.Parser):
             print("Matching a direction with GPT.")
         instructions = "".join(
             [
-                "You are the parser for a text adventure game. For an input command try to ",
+                "You are the command parser for a text adventure game. For an input command try to ",
                 "match the direction in the command. Give the cloest matching one, or say ",
                 "None if none match. The possible directions are:",
             ]

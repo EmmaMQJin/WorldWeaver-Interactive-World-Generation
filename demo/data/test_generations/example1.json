@@ -1,0 +1,118 @@
+{
+    "player": "Celestia",
+    "start_at": "Cloud Kingdom",
+    "game_history": [],
+    "game_over": false,
+    "game_over_description": null,
+    "characters": [
+        {
+            "name": "Celestia",
+            "description": "A majestic flying unicorn known for her shimmering, pearlescent mane and a horn that glows under the moonlight.",
+            "persona": "As the guardian of the Cloud Kingdom, I seek to maintain peace and harmony in the skies.",
+            "location": "Cloud Kingdom",
+            "goal": "Protect the Cloud Kingdom from dark forces.",
+            "inventory": {}
+        },
+        {
+            "name": "Zephyr",
+            "description": "A mischievous wind spirit that loves playing tricks but means no harm.",
+            "persona": "They call me Zephyr, the playful breeze! Catch me if you can!",
+            "location": "Windy Valley",
+            "goal": "Spread joy and playfulness.",
+            "inventory": {}
+        }
+    ],
+    "locations": [
+        {
+            "name": "Cloud Kingdom",
+            "description": "A heavenly realm located high above the earth, made up of fluffy, soft clouds that shimmer with a golden glow.",
+            "background": "This ethereal kingdom floats silently, safeguarded by Celestia and her kin, serving as a haven for all sky spirits.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Flying north takes you towards the Starry Archway, a gateway lined with twinkling stars that leads to other mystical realms.",
+                "south": "Heading south, you descend slightly into the Misty Meadows, a tranquil area frequented by peaceful creatures."
+            },
+            "connections": {
+                "north": "Starry Archway",
+                "south": "Misty Meadows"
+            },
+            "items": {
+                "Cloud Feather": {
+                    "name": "Cloud Feather",
+                    "description": "A light, fluffy feather that falls from the sky's creatures.",
+                    "examine_text": "Soft and incredibly light, this feather seems to hold the essence of the clouds themselves, capable of floating on the lightest breeze.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Cloud Kingdom"
+                }
+            },
+            "characters": {
+                "Celestia": {
+                    "name": "Celestia",
+                    "description": "A majestic flying unicorn known for her shimmering, pearlescent mane and a horn that glows under the moonlight.",
+                    "persona": "As the guardian of the Cloud Kingdom, I seek to maintain peace and harmony in the skies.",
+                    "location": "Cloud Kingdom",
+                    "goal": "Protect the Cloud Kingdom from dark forces.",
+                    "inventory": {
+                        "Magic Horn Dust": {
+                            "name": "Magic Horn Dust",
+                            "description": "Sparkling dust that falls off Celestia's horn, with magical properties.",
+                            "examine_text": "This radiant dust sparkles with potent magic, capable of healing minor wounds and purifying water.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Kingdom"
+        },
+        {
+            "name": "Windy Valley",
+            "description": "A valley where the winds converge, creating a symphony of whispers and gusts that dance through the air.",
+            "background": "The home of Zephyr and other wind spirits, this valley is alive with the sounds and forces of the wind.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "To return to the Cloud Kingdom, you must fly against the gentle breezes that push back playfully.",
+                "east": "The eastern path leads to the Thunderous Peaks, where the storms are born."
+            },
+            "connections": {
+                "north": "Cloud Kingdom",
+                "east": "Thunderous Peaks"
+            },
+            "items": {},
+            "characters": {
+                "Zephyr": {
+                    "name": "Zephyr",
+                    "description": "A mischievous wind spirit that loves playing tricks but means no harm.",
+                    "persona": "They call me Zephyr, the playful breeze! Catch me if you can!",
+                    "location": "Windy Valley",
+                    "goal": "Spread joy and playfulness.",
+                    "inventory": {}
+                }
+            },
+            "has_been_visited": false,
+            "category": "Valley"
+        }
+    ],
+    "actions": []
+}

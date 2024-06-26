@@ -1,6 +1,6 @@
 {
     "player": "Pippin the Pigeon",
-    "start_at": {},
+    "start_at": "Costco Parking Lot",
     "game_history": [],
     "game_over": false,
     "game_over_description": null,
@@ -9,7 +9,7 @@
             "name": "Pippin the Pigeon",
             "description": "Pippin is a clever and resourceful pigeon who has taken up residence in a bustling Costco. With slick feathers, bright eyes, and faster than expected reflexes, this pigeon thrives amidst the chaos of the superstore.",
             "persona": "Pippin might be small, but he doesn't let size define him. He maneuvers through the store with ease, always alert and ready to swoop in to snatch a breadcrumb or two.",
-            "location": {},
+            "location": "Costco Parking Lot",
             "goal": "",
             "inventory": {
                 "Blunt Feathers": {

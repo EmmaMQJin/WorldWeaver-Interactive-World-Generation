@@ -1,61 +1,28 @@
 from text_adventure_games import games, things, actions, blocks
-
-class Climb(actions.Action):
-    ACTION_NAME = "climb"
-    ACTION_DESCRIPTION = "Climb something"
-    ACTION_ALIASES = ["jump"]
-
-    def __init__(self, game, command: str):
-        super().__init__(game)
-        self.character = self.parser.get_character(command)
-        self.item = self.parser.match_item(
-            command, self.parser.get_items_in_scope(self.character)
-        )
-
-    def check_preconditions(self) -> bool:
-        
-        # Preconditions:
-        # * There must be a matched item
-        # * The item must be climbable
-        
-        if not self.was_matched(self.item):
-            return False
-        if not self.item.get_property("is_climbable"):
-            description = "That's not something you can climb."
-            self.parser.fail(description)
-            return False
-        return True
-
-    def apply_effects(self):
-        
-        # Effects:
-        # * Describes the climbing
-        description = "{name} climbs the {item}.".format(
-            name=self.character.name.capitalize(), item=self.item.name
-        )
-        self.parser.ok(description)
-from text_adventure_games import games, things, actions, blocks
-class Spot(actions.Action):
-    ACTION_NAME = "spot"
-    ACTION_DESCRIPTION = "Spot something or someone"
+class Enter(actions.Action):
+    ACTION_NAME = "enter"
+    ACTION_DESCRIPTION = "Enter a location"
+    ACTION_ALIASES = ["access"]
 
     def __init__(self, game, command: str):
         super().__init__(game)
         self.character = self.parser.get_character(command)
-        self.target = self.parser.match_item_or_character(
-            command, self.parser.get_items_in_scope(self.character)
+        self.location = self.parser.match_location(
+            command, self.character.location.connections
         )
 
     def check_preconditions(self) -> bool:
         
         #Preconditions:
-        #* There must be a matched target
-        #* The target must be in the same location as the character
+        #* There must be a matched location
+        #* The location must not be blocked
         
-        if not self.was_matched(self.target):
+        if not self.was_matched(self.location):
             return False
-        if not self.character.location.here(self.target):
-            description = "The target is not here."
+        if self.character.location.is_blocked(self.location.name):
+            description = self.character.location.get_block_description(
+                self.location.name
+            )
             self.parser.fail(description)
             return False
         return True
@@ -63,16 +30,61 @@ class Spot(actions.Action):
     def apply_effects(self):
         
         #Effects:
-        #* Describes the target
-        description = "{name} spots the {target}.".format(
-            name=self.character.name.capitalize(), target=self.target.name
+        #* Moves the character to the new location
+        #* Describes the new location
+        self.character.location.remove_character(self.character)
+        self.location.add_character(self.character)
+        description = "{name} enters the {location}.".format(
+            name=self.character.name.capitalize(), location=self.location.name
         )
         self.parser.ok(description)
-from text_adventure_games import games, things, actions, blocks
-class Decode(actions.Action):
-    ACTION_NAME = "decode"
-    ACTION_DESCRIPTION = "Decode a message or a code"
-    ACTION_ALIASES = ["understand"]
+        self.game.describe_location(self.character.location)
+class Dodge(actions.Action):
+    ACTION_NAME = "dodge"
+    ACTION_DESCRIPTION = "Dodge an attack"
+    ACTION_ALIASES = ["avoid", "evade"]
+
+    def __init__(self, game, command: str):
+        super().__init__(game)
+        self.character = self.parser.get_character(command)
+
+    def check_preconditions(self) -> bool:
+        
+        #Preconditions:
+        #* The character must be in a location where an attack is happening
+        #* The character must not already be dead or unconscious
+        
+        if not self.character.location.is_under_attack():
+            description = "There's nothing to dodge."
+            self.parser.fail(description)
+            return False
+        if self.character.get_property("is_unconscious"):
+            description = "{name} is unconscious and can't dodge.".format(
+                name=self.character.name
+            )
+            self.parser.fail(description)
+            return False
+        if self.character.get_property("is_dead"):
+            description = "{name} is dead and can't dodge.".format(
+                name=self.character.name
+            )
+            self.parser.fail(description)
+            return False
+        return True
+
+    def apply_effects(self):
+        
+        #Effects:
+        #* The character dodges the attack
+        #* Describes the dodging
+        description = "{name} dodges the attack.".format(
+            name=self.character.name.capitalize()
+        )
+        self.parser.ok(description)
+class Find(actions.Action):
+    ACTION_NAME = "find"
+    ACTION_DESCRIPTION = "Find something"
+    ACTION_ALIASES = ["spot", "locate"]
 
     def __init__(self, game, command: str):
         super().__init__(game)
@@ -85,17 +97,14 @@ class Decode(actions.Action):
         
         #Preconditions:
         #* There must be a matched item
-        #* The item must be decodable
-        #* The character must have the item in their inventory
+        #* The item must be in the same location as the character
         
         if not self.was_matched(self.item):
-            return False
-        if not self.item.get_property("is_decodable"):
-            description = "That's not something you can decode."
+            description = "There's no such item to find."
             self.parser.fail(description)
             return False
-        if not self.character.is_in_inventory(self.item):
-            description = "You don't have it."
+        if not self.character.location.here(self.item):
+            description = "The item is not here."
             self.parser.fail(description)
             return False
         return True
@@ -103,10 +112,10 @@ class Decode(actions.Action):
     def apply_effects(self):
         
         #Effects:
-        #* Decodes the item
-        #* Describes the decoding
-        self.item.set_property("is_decoded", True)
-        description = "{name} decodes the {item}.".format(
-            name=self.character.name.capitalize(), item=self.item.name
+        #* Describes the item
+        description = "{name} found the {item}. {item_desc}".format(
+            name=self.character.name.capitalize(),
+            item=self.item.name,
+            item_desc=self.item.description,
         )
         self.parser.ok(description)

@@ -1,0 +1,133 @@
+{
+    "player": "Fluffy the Talking Cat",
+    "start_at": "Kitchen",
+    "game_history": [],
+    "game_over": false,
+    "game_over_description": null,
+    "characters": [
+        {
+            "name": "Fluffy the Talking Cat",
+            "description": "A smart looking cat with the ability to speak human language.",
+            "persona": "Adventurous and curious.",
+            "location": "Kitchen",
+            "goal": "Reach the top of the mountain.",
+            "inventory": {
+               "Catnip": {
+                   "name": "Catnip",
+                   "description": "A herb popular among cats.",
+                   "examine_text": "It's a bag of dried catnip.",
+                   "properties": {
+                       "is_container": true,
+                       "is_drink": false,
+                       "is_food": true,
+                       "is_gettable": true,
+                       "is_surface": false,
+                       "is_weapon": false,
+                       "is_wearable": false
+                   },
+                   "commands": []
+              }
+            }
+        },
+        {
+            "name": "Spike the Dog",
+            "description": "A friendly and playful dog.",
+            "persona": "Playful and protective.",
+            "location": "Living Room",
+            "goal": "To have fun",
+            "inventory": {}
+        },
+        {
+            "name": "Oliver the Owl",
+            "description": "A wise and old owl.",
+            "persona": "Wise and knowledgeable.",
+            "location": "Woods",
+            "goal": "To impart wisdom",
+            "inventory": {}
+        },
+        {
+            "name": "Bobby the Bear",
+            "description": "A large and intimidating but gentle bear.",
+            "persona": "Calm and strong.",
+            "location": "Mountain Base",
+            "goal": "To protect the forest",
+            "inventory": {}
+        },
+        {
+            "name": "Eagle Eye",
+            "description": "A mighty majestic eagle.",
+            "persona": "Brave and fast.",
+            "location": "Mountain Peak",
+            "goal": "Keep an eye on everything",
+            "inventory": {}
+        }
+    ],
+    "locations": [
+        {
+            "name": "Kitchen",
+            "description": "A typical home kitchen with all the appliances.",
+            "background": "Home kitchen",
+            "commands": [],
+            "properties": {},
+            "blocks": {"north": "A wall blocks your way to the north."},
+            "travel_descriptions": {"west": "To the west is the Living Room."},
+            "connections": {"west": "Living Room"},
+            "items": {},
+            "characters": { "Fluffy the Talking Cat"},
+            "has_been_visited": true
+        },
+        {
+            "name": "Living Room",
+            "description": "A cozy living room filled with comfortable furniture.",
+            "background": "Home living room",
+            "commands": [],
+            "properties": {},
+            "blocks": {"east": "A wall blocks your way to the east."},
+            "travel_descriptions": {"west": "To the west are the Woods."},
+            "connections": {"west": "Woods"},
+            "items": {},
+            "characters": { "Spike the Dog"},
+            "has_been_visited": false
+        },
+        {
+            "name": "Woods",
+            "description": "A dense, dark forest.",
+            "background": "Forest",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {"north": "To the north is the Mountain Base."},
+            "connections": {"north": "Mountain Base"},
+            "items": {},
+            "characters": {"Oliver the Owl"},
+            "has_been_visited": false
+        },
+        {
+            "name": "Mountain Base",
+            "description": "The start of an intimidating rocky mountain.",
+            "background": "Mountain base",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {"north": "Northwards leads to the Mountain Peak."},
+            "connections": {"north": "Mountain Peak"},
+            "items": {},
+            "characters": {"Bobby the Bear"},
+            "has_been_visited": false
+        },
+        {
+            "name": "Mountain Peak",
+            "description": "The top of the high mountain with a breathtaking view.",
+            "background": "Mountain peak",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {},
+            "connections": {},
+            "items": {},
+            "characters": {"Eagle Eye"},
+            "has_been_visited": false
+        }
+    ],
+    "actions": []
+}

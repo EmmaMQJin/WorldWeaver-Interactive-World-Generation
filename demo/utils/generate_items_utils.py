@@ -1,7 +1,7 @@
 import json
 import os
 from openai import OpenAI
-from utils.frontend_utils import *
+from frontend_utils import *
 
 def load_json(filename):
     """ Load JSON data from a file """

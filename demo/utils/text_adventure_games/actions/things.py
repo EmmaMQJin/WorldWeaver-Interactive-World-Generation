@@ -273,3 +273,6 @@ class Unlock_Door(base.Action):
     def apply_effects(self):
         self.door.set_property("is_locked", False)
         self.parser.ok("Door is unlocked")
+
+
+    # TODO: add an action called "UNLOCK" here?

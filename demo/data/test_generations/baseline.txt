@@ -1,0 +1,190 @@
+{
+    "player": "Whiskers the Cat",
+    "start_at": "Kitchen",
+    "game_history": [],
+    "game_over": false,
+    "game_over_description": null,
+    "characters": [
+        {
+            "name": "Whiskers the Cat",
+            "description": "You are a cunning, talking cat full of adventure!",
+            "persona": "Adventurous and mischievous.",
+            "location": "Kitchen",
+            "goal": "Reach the top of the mountain",
+            "inventory": {
+                "Fish Bone": {
+                    "name": "Fish Bone",
+                    "description": "A fish bone, the last remains of your dinner.",
+                    "examine_text": "A slender, pointy fish bone. Could come in handy...",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "commands": []
+                }
+            }
+        },
+        {
+            "name": "Bruce the Bulldog",
+            "description": "A gruff dog who stays in the backyard.",
+            "persona": "Rough and tough but has a kind heart.",
+            "location": "Backyard",
+            "goal": "Protect the house.",
+            "inventory": {}
+        },
+        {
+            "name": "Olivia the Owl",
+            "description": "A wise old owl who resides in the forest.",
+            "persona": "Intelligent and usually has valuable advice.",
+            "location": "Forest",
+            "goal": "Keep the forest peaceful.",
+            "inventory": {
+                "Feather": {
+                    "name": "Feather",
+                    "description": "A beautiful, large feather.",
+                    "examine_text": "A feather from Olivia. Could be a useful tool.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "commands": []
+                }
+            }
+        },
+        {
+            "name": "Harry the Hawk",
+            "description": "A skilled hunter who comes down the mountain rarely.",
+            "persona": "Highly proficient and a know-it-all.",
+            "location": "Mountain Base",
+            "goal": "Hunt for food.",
+            "inventory": {}
+        },
+        {
+            "name": "Patty the Parrot",
+            "description": "A joyful bird who loves to chitter-chatter.",
+            "persona": "Joyful and a bit of a gossip.",
+            "location": "Top of the Mountain",
+            "goal": "Enjoy the scenery.",
+            "inventory": {}
+        }
+    ],
+    "locations": [
+        {
+            "name": "Kitchen",
+            "description": "A warm place filled with the smell of cooking. A door to the east leads to the backyard.",
+            "background": "The place where you started your adventures. Not much action here.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "You move towards the door leading to the backyard."
+            },
+            "connections": {
+                "east": "Backyard"
+            },
+            "items": {},
+            "characters": {
+                "Whiskers the Cat": {
+                    "name": "Whiskers the Cat",
+                    "description": "You are a cunning, talking cat full of adventure!",
+                    "persona": "Adventurous and mischievous.",
+                    "location": "Kitchen",
+                    "goal": "Reach the top of the mountain",
+                    "inventory": {
+                        "Fish Bone": {
+                            "name": "Fish Bone",
+                            "description": "A fish bone, the last remains of your dinner.",
+                            "examine_text": "A slender, pointy fish bone. Could come in handy...",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false
+        },
+        {
+            "name": "Backyard",
+            "description": "A wide open area with lots of room to run. To the east is a thick forest shade.",
+            "background": "Your playground and Bruce's territory.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "You approach the leafy entrance to the forest."
+            },
+            "connections": {
+                "east": "Forest"
+            },
+            "items": {},
+            "characters": {},
+            "has_been_visited": false
+        },
+        {
+            "name": "Forest",
+            "description": "A serene space, silent except for the whispering of the trees. A path leads up towards the mountain.",
+            "background": "A place full of secrets and wisdom.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "You climb the winding path up towards the base of the mountain."
+            },
+            "connections": {
+                "north": "Mountain Base"
+            },
+            "items": {},
+            "characters": {},
+            "has_been_visited": false
+        },
+        {
+            "name": "Mountain Base",
+            "description": "The air gets thinner and the trees start to thin out. A rocky path stretches up to the summit.",
+            "background": "The start of a true adventure.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "You begin the tough climb up the mountain trail."
+            },
+            "connections": {
+                "north": "Top of the Mountain"
+            },
+            "items": {},
+            "characters": {},
+            "has_been_visited": false
+        },
+        {
+            "name": "Top of the Mountain",
+            "description": "The world stretches out beneath you. Patty's joyous chatter fills the air. You've made it.",
+            "background": "",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {},
+            "connections": {},
+            "items": {},
+            "characters": {},
+            "has_been_visited": false
+        }
+    ],
+    "actions": []
+}

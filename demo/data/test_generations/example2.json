@@ -1,0 +1,262 @@
+{
+    "player": "Celestia",
+    "start_at": "Cloud Kingdom",
+    "game_history": [],
+    "game_over": false,
+    "game_over_description": null,
+    "characters": [
+        {
+            "name": "Celestia",
+            "description": "A majestic flying unicorn with a shimmering mane and a glowing horn.",
+            "persona": "As the guardian of the Cloud Kingdom, I seek to maintain peace and harmony in the skies.",
+            "location": "Cloud Kingdom",
+            "goal": "Protect the Cloud Kingdom from dark forces.",
+            "inventory": {}
+        },
+        {
+            "name": "Zephyr",
+            "description": "A mischievous wind spirit that loves playing tricks but means no harm.",
+            "persona": "They call me Zephyr, the playful breeze! Catch me if you can!",
+            "location": "Windy Valley",
+            "goal": "Spread joy and playfulness.",
+            "inventory": {}
+        },
+        {
+            "name": "Luminara",
+            "description": "A wise old owl whose feathers shimmer with starlight, guiding lost travelers.",
+            "persona": "I am Luminara, keeper of ancient wisdom and guide to the seekers of truth.",
+            "location": "Starry Archway",
+            "goal": "Guide and enlighten the wayward spirits.",
+            "inventory": {}
+        },
+        {
+            "name": "Thunderhoof",
+            "description": "A powerful pegasus who commands the storms from the Thunderous Peaks.",
+            "persona": "With every beat of my hooves, the sky trembles! I am Thunderhoof, master of storms!",
+            "location": "Thunderous Peaks",
+            "goal": "Control the weather to maintain balance in nature.",
+            "inventory": {}
+        },
+        {
+            "name": "Mist Weaver",
+            "description": "A gentle spirit that weaves the morning mists in the Misty Meadows.",
+            "persona": "Silently, I craft the veils of dawn. I am Mist Weaver, the silent artisan of the skies.",
+            "location": "Misty Meadows",
+            "goal": "Create beautiful landscapes with mist.",
+            "inventory": {}
+        },
+        {
+            "name": "Aurora",
+            "description": "A radiant spirit whose presence brings the aurora to the Nightlight Northern Sky.",
+            "persona": "Behold my colors that dance in the dark sky. I am Aurora, painter of the night.",
+            "location": "Nightlight Northern Sky",
+            "goal": "Illuminate the night sky with beautiful colors.",
+            "inventory": {}
+        },
+        {
+            "name": "Solaris",
+            "description": "A fiery phoenix seen only during the day, soaring across the Daylight Southern Sky.",
+            "persona": "From ashes, I rise with the sun. I am Solaris, embodiment of solar flare and fire.",
+            "location": "Daylight Southern Sky",
+            "goal": "Renew and bring warmth to the world each day.",
+            "inventory": {}
+        },
+        {
+            "name": "Nimbus",
+            "description": "A cloud giant who shapes the clouds into various forms in the Cloud Sculpture Garden.",
+            "persona": "I am Nimbus, shaper of clouds and dreams. Watch as the sky becomes my canvas.",
+            "location": "Cloud Sculpture Garden",
+            "goal": "Sculpt clouds into inspiring shapes.",
+            "inventory": {}
+        },
+        {
+            "name": "Cirrus",
+            "description": "A swift sky runner who races the wind currents across the Sky Racecourse.",
+            "persona": "Faster than the fastest wind, I am Cirrus, the ultimate competitor in the sky!",
+            "location": "Sky Racecourse",
+            "goal": "Win every race and prove to be the fastest in the skies.",
+            "inventory": {}
+        },
+        {
+            "name": "Halley",
+            "description": "A mysterious comet spirit who appears only once every few years in the Comet’s Tail.",
+            "persona": "I traverse the cosmos, returning with stories from afar. I am Halley, wanderer of the stars.",
+            "location": "Comet’s Tail",
+            "goal": "Share cosmic wisdom and celestial tales.",
+            "inventory": {}
+        }
+    ],
+    "locations": [
+        {
+            "name": "Cloud Kingdom",
+            "description": "A heavenly realm high above the earth, made of soft clouds shimmering with a golden glow.",
+            "background": "This kingdom floats silently, safeguarded by Celestia and her kin.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Flying north leads to the Starry Archway.",
+                "south": "Heading south descends into the Misty Meadows."
+            },
+            "connections": {
+                "north": "Starry Archway",
+                "south": "Misty Meadows"
+            },
+            "items": {}
+        },
+        {
+            "name": "Windy Valley",
+            "description": "A valley where winds converge, creating a symphony of whispers and gusts.",
+            "background": "Home of Zephyr and other wind spirits, this valley is alive with the sounds of the wind.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "To return to the Cloud Kingdom.",
+                "east": "The eastern path leads to the Thunderous Peaks."
+            },
+            "connections": {
+                "north": "Cloud Kingdom",
+                "east": "Thunderous Peaks"
+            },
+            "items": {}
+        },
+        {
+            "name": "Starry Archway",
+            "description": "A mystical gateway lined with twinkling stars, leading to other realms.",
+            "background": "Guarded by Luminara, this archway serves as a portal to mystical lands.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "Returning south to the Cloud Kingdom.",
+                "east": "Leading east to the Nightlight Northern Sky."
+            },
+            "connections": {
+                "south": "Cloud Kingdom",
+                "east": "Nightlight Northern Sky"
+            },
+            "items": {}
+        },
+        {
+            "name": "Thunderous Peaks",
+            "description": "Rugged peaks where storms are born, ruled by the powerful pegasus Thunderhoof.",
+            "background": "These peaks resonate with the power of nature, controlling the weather far and wide.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Windy Valley to the west.",
+                "south": "South leads to the Daylight Southern Sky."
+            },
+            "connections": {
+                "west": "Windy Valley",
+                "south": "Daylight Southern Sky"
+            },
+            "items": {}
+        },
+        {
+            "name": "Misty Meadows",
+            "description": "Tranquil fields blanketed by morning mists, woven by Mist Weaver.",
+            "background": "These meadows are a canvas for the artistry of mists, inviting peaceful contemplation.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Ascending back to the Cloud Kingdom.",
+                "east": "East takes you to the Cloud Sculpture Garden."
+            },
+            "connections": {
+                "north": "Cloud Kingdom",
+                "east": "Cloud Sculpture Garden"
+            },
+            "items": {}
+        },
+        {
+            "name": "Nightlight Northern Sky",
+            "description": "A captivating expanse where the night sky is painted with auroras by Aurora.",
+            "background": "This part of the sky transforms at night into a canvas of dazzling colors.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "West back to the Starry Archway.",
+                "south": "South to the Sky Racecourse."
+            },
+            "connections": {
+                "west": "Starry Archway",
+                "south": "Sky Racecourse"
+            },
+            "items": {}
+        },
+        {
+            "name": "Daylight Southern Sky",
+            "description": "The sky glows with the fire of the sun, traversed by Solaris.",
+            "background": "During the day, this sky is alive with the power of the sun, radiating warmth and light.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "North back to the Thunderous Peaks.",
+                "east": "East leads to the Comet’s Tail."
+            },
+            "connections": {
+                "north": "Thunderous Peaks",
+                "east": "Comet’s Tail"
+            },
+            "items": {}
+        },
+        {
+            "name": "Cloud Sculpture Garden",
+            "description": "A whimsical garden where clouds are shaped into incredible forms by Nimbus.",
+            "background": "This garden showcases the creative potential of cloud crafting.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "West back to the Misty Meadows.",
+                "south": "South leads to the Comet’s Tail."
+            },
+            "connections": {
+                "west": "Misty Meadows",
+                "south": "Comet’s Tail"
+            },
+            "items": {}
+        },
+        {
+            "name": "Sky Racecourse",
+            "description": "A thrilling racecourse in the sky, where Cirrus and other speedsters compete.",
+            "background": "This course is a test of speed and skill, with air currents that challenge the racers.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "North to the Nightlight Northern Sky.",
+                "east": "East leads to the Daylight Southern Sky."
+            },
+            "connections": {
+                "north": "Nightlight Northern Sky",
+                "east": "Daylight Southern Sky"
+            },
+            "items": {}
+        },
+        {
+            "name": "Comet’s Tail",
+            "description": "A mystical trail left by comets, explored by the comet spirit Halley.",
+            "background": "This celestial pathway appears when comets pass by, filled with cosmic energies.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "West back to the Daylight Southern Sky.",
+                "north": "North leads to the Cloud Sculpture Garden."
+            },
+            "connections": {
+                "west": "Daylight Southern Sky",
+                "north": "Cloud Sculpture Garden"
+            },
+            "items": {}
+        }
+    ],
+    "actions": []
+}

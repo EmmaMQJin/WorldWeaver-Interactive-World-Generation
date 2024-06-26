@@ -3,7 +3,7 @@ from random import randint
 from openai import OpenAI
 import tiktoken
 import os
-from utils.json_utils import *
+from json_utils import *
 
 direction_mappings = {"up": "down",
                       "down": "up",

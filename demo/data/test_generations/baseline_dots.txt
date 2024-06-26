@@ -1,0 +1,123 @@
+{
+    "player": "Talking Cat",
+    "start_at": "Kitchen",
+    "game_history": [],
+    "game_over": false,
+    "game_over_description": null,
+    "characters": [
+        {
+            "name": "Talking Cat",
+            "description": "A sly, talkative feline with a curious spirit.",
+            "persona": "Curious, cunning, and ready for an adventure!",
+            "location": "Kitchen",
+            "goal": "To reach the top of The Grand Mountain.",
+            "inventory": {
+                "Catnip": {
+                    "name": "Catnip",
+                    "description": "A tantalizing herb for cats.",
+                    "examine_text": "This catnip looks freshly picked, and smells irresistible.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "commands": []
+                }
+            }
+        },
+        {  
+            "name": "Old Man",
+            "description": "An elderly man who lives in the house.",
+            "persona": "Firm, yet kind-hearted.",
+            "location": "Living Room",
+            "goal": "To live out his days in peace.",
+            "inventory": {
+                "Old Book": {
+                    "name": "Old Book",
+                    "description": "A timeworn book of folk tales.",
+                    "examine_text": "Great tales of old are contained in this book.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "commands": []
+                }
+            }
+        },
+        ...
+    ],
+    "locations": [
+        {
+            "name": "Kitchen",
+            "description": "The house's cozy, well-equipped kitchen.",
+            "background": "It's filled with the scent of freshly baked cookies.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "You walk through a doorway to the Living Room."
+            },
+            "connections": {
+                "east": "Living Room"
+            },
+            "items": {
+                "Frozen Fish": {
+                    "name": "Frozen Fish",
+                    "description": "A raw, frozen fish.",
+                    "examine_text": "Looks like the Old Man is planning to cook fish for dinner.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Kitchen"
+                },
+                ...
+            },
+            "characters": {
+                "Talking Cat": {
+                    "name": "Talking Cat",
+                    "description": "A sly, talkative feline with a curious spirit.",
+                    "persona": "Curious, cunning, and ready for an adventure!",
+                    "location": "Kitchen",
+                    "goal": "To reach the top of The Grand Mountain.",
+                    "inventory": {
+                        "Catnip": {
+                            "name": "Catnip",
+                            "description": "A tantalizing herb for cats.",
+                            "examine_text": "This catnip looks freshly picked, and smells irresistible.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": true,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        ...
+                    }
+                },
+                ...
+            },
+            "has_been_visited": false
+        },
+        ...
+    ],
+    "actions": []
+}

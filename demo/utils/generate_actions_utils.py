@@ -60,12 +60,13 @@ def read_from_file(filename):
 
 def generate_action_class(action_list):
     client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
-    system_prompt_unique_actions = """
-    Given a list of action words, analyze each word to determine its uniqueness. For actions that have synonyms, consult the Oxford Dictionary to verify if they are indeed synonymous. 
-    For each unique action, compile a list where synonymous actions are grouped together. 
-    Use the format "get [alias: procure, retrieve]" to display the primary action followed by its synonyms in brackets, prefixed by "alias:".
-    Ensure to include only one primary action for each group of synonyms, with all other synonymous actions listed as aliases.
-    DO NOT ADD the following actions : Go, Get, Drop, Inventory, Give, Unlock Door, Examine or their synonyms.
+    system_prompt_unique_actions = """You are an extractor for valid actions for a text adventure game.
+    Given a list of actions that the player needs to take to win the game, extract a list of unique and distinct single-word action verbs from the list.
+    If any action verbs are in this list: [Go, Get, Drop, Inventory, Give, Unlock Door, Examine], or are synonyms of these actions, skip them and DO NOT extract them.
+    Note that in this step, each extracted action verb should be unique. If synonymous action verbs exist in the given list,
+    choose one action verb to be the primary one and put the synonymous action verbs in brackets after the primary action verb, prefixed by "alias:", like this: "get [alias: procure, retrieve]"
+    Then, for each action verb you extracted, if the action verb has some commonly-used synonyms (consult the Oxford Dictionary for verification), add fewer than 3 of those to the alias section as well.
+    Make sure to include ONLY ONE primary action for each group of synonyms, with all other synonymous actions listed as aliases.
     """
     user_prompt_one = """
     go to the amusement park
@@ -73,29 +74,32 @@ def generate_action_class(action_list):
     plant the rose
     go to the palace
     procure the dragon tear
-    retreive pegasus
+    heal pegasus
+
+    DO NOT EXTRACT:
+    [Go, Get, Drop, Inventory, Give, Unlock Door, Examine]
     """
     assistant_prompt_one = """
-    go 
-    get [alias: procure, retrieve]
     plant
+    heal [alias: cure]
     """
-    user_prompt_two = f"{action_list}"
+    user_prompt_two = f"{action_list}\n" + """\nDO NOT EXTRACT:
+    [Go, Get, Drop, Inventory, Give, Unlock Door, Examine]"""
    
     system_prompt = """
-    Task: Develop a Python Class for Game Actions
+    You are a game actions developer for a text adventure game. Given an action (and possibly its aliases in the game) from the user,
+    your task is to write a Python class to represent that action.
 
-    DO NOT create functions/methods of your own like has_exit, has_skill, match_item_or_character etc.
+    Remember, this Python class is part of the game and the game needs to be playable, so make sure to always stick to the information you are given
+    from the user, and also always double check the logic of each method.
 
-    You are tasked with creating a Python class to represent a specific action within a game.
+    The class you create should inherit from the base class actions.Action and include the following methods:
 
-    The class created should inherit from a base class and include the following methods:
-
-    1. Constructor (__init__): Initialize with parameters self, game, command: str.
-    2. Check Preconditions (check_preconditions): This method should return a boolean value. Return False if any preconditions are not met, otherwise return True if all conditions are met. The method signature should be def check_preconditions(self) -> bool:.
-    3. Apply Effects (apply_effects): Implement this method to apply the effects of the action. It should not return any value. The method signature should be def apply_effects(self):.
+    1. __init__: Initialize with parameters (self, game, command: str).
+    2. check_preconditions: This method should return a boolean value. Return False if any preconditions are not met, otherwise return True if all conditions are met. The method signature should be def check_preconditions(self) -> bool:.
+    3. apply_effects: Implement this method to apply the effects of the action. It should not return any value. The method signature should be def apply_effects(self):.
  
-    The class should also include a class member for aliases of the action word, using the format:
+    The class should also include a class member for aliases of the action word, using the following format:
     ACTION_ALIASES = ["procure", "retrieve"]
 
     Additional Guidelines:
@@ -139,7 +143,7 @@ def generate_action_class(action_list):
         "properties": {}
         }
 
-    Every character has access to the following functions so call these functions if you need to apply any function to characters, do not create functions/methods of your own:
+    Every character has access to the following functions, so call these functions if you need to apply any function to characters, do not create functions/methods of your own:
 
     def add_to_inventory(self, item):
         
@@ -201,12 +205,6 @@ def generate_action_class(action_list):
         if direction == "out":
             connected_location.connections["in"] = self
             connected_location.travel_descriptions["in"] = ""
-        if direction == "inside":
-            connected_location.connections["outside"] = self
-            connected_location.travel_descriptions["outside"] = ""
-        if direction == "outside":
-            connected_location.connections["inside"] = self
-            connected_location.travel_descriptions["inside"] = ""
 
     def get_connection(self, direction: str):
         return self.connections.get(direction, None)
@@ -292,7 +290,6 @@ def generate_action_class(action_list):
     user_example_prompt_four = "Unlock"
 
     assistant_example_prompt_three = """
-from text_adventure_games import games, things, actions, blocks
 class Attack(actions.Action):
     ACTION_NAME = "attack"
     ACTION_DESCRIPTION = "Attack someone with a weapon"
@@ -405,7 +402,6 @@ class Attack(actions.Action):
                     drop.apply_effects()
     """
     assistant_example_prompt_two="""
-from text_adventure_games import games, things, actions, blocks
 class Eat(actions.Action):
     ACTION_NAME = "eat"
     ACTION_DESCRIPTION = "Eat something"
@@ -465,7 +461,6 @@ class Eat(actions.Action):
     
     """
     assistant_example_prompt_one = """
-from text_adventure_games import games, things, actions, blocks
 class Cook(actions.Action):
     ACTION_NAME = 'cook'
     ACTION_DESCRIPTION = 'Cook some food'
@@ -492,7 +487,6 @@ class Cook(actions.Action):
 
     """
     assistant_example_prompt_four = """
-from text_adventure_games import games, things, actions, blocks
 class Unlock(actions.Action):
     ACTION_NAME = "unlock"
     ACTION_DESCRIPTION = "Unlock something"
@@ -558,6 +552,7 @@ class Unlock(actions.Action):
     print(gpt_response)
 
     actions = gpt_response.split("\n")
+    append_code_to_file('', 'from text_adventure_games import games, things, actions, blocks\n', 'actions')
     c=0
     for action in actions:
         if c>=3:
@@ -585,14 +580,20 @@ class Unlock(actions.Action):
         )
         gpt_response_code = response_code.choices[0].message.content
         try:
-            append_code_to_file('', gpt_response_code, 'actions')
+            append_code_to_file('', gpt_response_code + '\n', 'actions')
         except ValueError as e:
             print(e)
         c+=1
 
-# action_list = read_from_file("data/actions.txt")
-# print(action_list)
-# generate_action_class(action_list)
+def main():
+    action_list = read_from_file("data/actions.txt")
+    generate_action_class(action_list)
+
+if __name__ == "__main__":
+    main()
+
+action_list = read_from_file("data/actions.txt")
+generate_action_class(action_list)
 
 # find magic feather
 # unlock cottage door
