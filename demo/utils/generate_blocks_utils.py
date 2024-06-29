@@ -127,6 +127,7 @@ def generate_blocks(background_story, action_list, all_locations_path, directory
     prompt = (
         "You are a playthrough block generator for text adventure games. "
         "Given a background story, locations with specific connections and travel descriptions, and a list of actions, your job is to create Python class definitions for blocks. "
+        "Each class should inherit from blocks.Block, and contain __init__, is_blocked, and from_primitive as methods.",
         "These blocks should represent challenges or tasks that must be completed at all locations and connections in the game based on the actions. "
         "Specifically, for locations with multiple connections, ensure that you generate blocks that can be logically and strategically placed based on the storyline and player actions. "
         "Choose connections that are most integral to the story's progression or challenge level for placing these blocks. "
@@ -148,6 +149,14 @@ def generate_blocks(background_story, action_list, all_locations_path, directory
 
         def is_blocked(self) -> bool:
             return self.location.here(self.whiskers_the_stray_cat)
+        
+        @classmethod
+        def from_primitive(cls, data):
+            location = data["location"]
+            block = data["whiskers_the_stray_cat"]
+            connection = data["connection"]
+            instance = cls(location, block, connection)
+            return instance
     '''),
     """
     

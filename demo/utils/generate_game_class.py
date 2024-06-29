@@ -255,8 +255,8 @@ if __name__ == "__main__":
     main()
 
 
-winning_state = "pigeon succcessfully steals breakfast from Target"
-characters = read_json_examples("data/test_generations/all_the_characters.json")
-generate_game_class(winning_state, characters[0])
+# winning_state = "pigeon succcessfully steals breakfast from Target"
+# characters = read_json_examples("data/test_generations/all_the_characters.json")
+# generate_game_class(winning_state, characters[0])
 
 

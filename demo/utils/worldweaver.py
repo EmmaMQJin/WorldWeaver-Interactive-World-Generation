@@ -129,6 +129,14 @@ class CostcoEntranceEastBlock(blocks.Block):
 
         def is_blocked(self) -> bool:
             return self.location.here(self.chester_the_sample_giver)
+        
+        @classmethod
+        def from_primitive(cls, data):
+            location = data["location"]
+            door = data["chester_the_sample_giver"]
+            connection = data["connection"]
+            instance = cls(location, door, connection)
+            return instance
 
 class ProduceAisleOutBlock(blocks.Block):
         def __init__(self, location: things.Location, bobby_the_shopper: things.Character, connection: str):
@@ -139,6 +147,15 @@ class ProduceAisleOutBlock(blocks.Block):
 
         def is_blocked(self) -> bool:
             return self.location.here(self.bobby_the_shopper)
+        
+        @classmethod
+        def from_primitive(cls, data):
+            location = data["location"]
+            door = data["chester_the_sample_giver"]
+            connection = data["connection"]
+            instance = cls(location, door, connection)
+            return instance
+
 
 class SecurityGuardStationEastBlock(blocks.Block):
         def __init__(self, location: things.Location, ranger_feline: things.Character, connection: str):

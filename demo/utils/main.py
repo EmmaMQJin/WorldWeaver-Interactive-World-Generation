@@ -8,7 +8,7 @@ from utils import *
 import copy
 import json
 from gpt_parser import GptParser
-from worldweaver import WorldWeaver
+from worldweaver import *
 from copy import deepcopy
 from text_adventure_games import games
 
@@ -165,7 +165,7 @@ def main():
     with open('data/test_generations/game.json') as f:
         data = json.load(f)
 
-    data_obj = WorldWeaver.from_primitive(deepcopy(data))
+    data_obj = WorldWeaver.from_primitive(deepcopy(data), custom_actions=[Enter, Dodge, Find], custom_blocks=[CostcoEntranceEastBlock, ProduceAisleOutBlock, SecurityGuardStationEastBlock, BakeryAisleWestBlock, CheckoutLaneEastBlock, CostcoExitSouthBlock])
     game = WorldWeaver(data_obj.start_at, data_obj.player)
     # data_obj = games.Game.from_primitive(deepcopy(data))
     # game = games.Game(data_obj.start_at, data_obj.player)
