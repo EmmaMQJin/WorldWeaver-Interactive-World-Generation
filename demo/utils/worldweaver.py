@@ -238,7 +238,7 @@ class CostcoExitSouthBlock(blocks.Block):
 
 
 class WorldWeaver(games.Game):
-    custom_actions = [[Enter, Dodge, Find]]
+    custom_actions = [Enter, Dodge, Find]
     custom_blocks=[CostcoEntranceEastBlock, ProduceAisleOutBlock, SecurityGuardStationEastBlock, BakeryAisleWestBlock, CheckoutLaneEastBlock, CostcoExitSouthBlock]
     def __init__(
         self,
