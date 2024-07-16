@@ -109,7 +109,7 @@ def generate_npc_shots():
         "name": "Luna the Lightweaver",
         "description": "Luna is a delicate, luminous fairy known for her ethereal beauty and her ability to weave light into shimmering, protective cloaks. With wings that glisten like morning dew, she is a guardian spirit of the Enchanted Garden.",
         "persona": "I'm Luna, the fairy guardian of this mystical grove. By weaving light, I create enchanting illusions and barriers to protect this magical realm and its secrets. My presence ensures that only the worthy can access the garden's most hidden treasures.",
-        "location": "",
+        "location": "Enchanted Garden",
         "goal": "To protect the magic hat and oversee the distribution of fairy dust to those who are deemed worthy.",
         "inventory": {},
         "properties": {
@@ -122,7 +122,7 @@ def generate_npc_shots():
         "name": "Thornwick the Elder",
         "description": "Thornwick is a wise old tree spirit whose bark is etched with runes of ancient wisdom. His deep, resonant voice and slow, thoughtful movements make him a revered figure among the garden's mystical creatures.",
         "persona": "I am Thornwick, the ancient keeper of lore and wisdom in this enchanted land. My roots delve deep, binding the magic of the garden with the essence of the earth. I share tales and secrets with those who respect the harmony of nature.",
-        "location": "",
+        "location": "Enchanted Garden",
         "goal": "To educate visitors about the history of the garden and its magical properties, ensuring that its secrets are respected and preserved.",
         "inventory": {},
         "properties": {
@@ -136,7 +136,7 @@ def generate_npc_shots():
         "name": "Glitterpaw the Mischievous",
         "description": "Glitterpaw is a playful and cheeky pixie cat with a coat that sparkles like starlight and eyes full of mischief. Known for her tricks and games, she loves leading visitors on merry chases through the twilight mists of the garden.",
         "persona": "They call me Glitterpaw, the whimsical trickster of the Enchanted Garden. With a flick of my sparkling tail, I lead curious adventurers astray or into magical discoveries, depending on my mood. Laughter and surprise are my favorite creations.",
-        "location": "",
+        "location": "Enchanted Garden",
         "goal": "To entertain and sometimes mislead visitors, testing their cleverness and sense of humor as they seek the garden's treasures.",
         "inventory": {},
         "properties": {
@@ -166,7 +166,7 @@ def generate_npc_shots():
         "name": "Circuit the Fixer",
         "description": "Circuit is a skilled engineer known for her ability to repair and repurpose any piece of technology into something unique and valuable. With a workshop filled with blinking lights and scattered gadgets, she is a central figure in the Tech Marketplace.",
         "persona": "I'm Circuit, the marketplace's master engineer. I transform broken tech into innovative marvels, making old things new and useful.",
-        "location": "",
+        "location": "Tech Marketplace",
         "goal": "To create innovative tech solutions and trade unique items that help Echo in gathering tech for cyber wings.",
         "inventory": {},
         "properties": {
@@ -179,7 +179,7 @@ def generate_npc_shots():
         "name": "Volt the Trader",
         "description": "Volt is a charismatic vendor with a knack for spotting valuable tech among heaps of electronic waste. His stall is a popular stop for collectors and tech scavengers looking for rare finds.",
         "persona": "I'm Volt, your friendly tech trader. I have an eye for hidden tech treasures and a deal always ready to be struck.",
-        "location": "",
+        "location": "Tech Marketplace",
         "goal": "To supply Echo with essential components for cyber wings in exchange for interesting tech pieces.",
         "inventory": {},
             "properties": {
@@ -191,7 +191,7 @@ def generate_npc_shots():
         "name": "Spark the Informant",
         "description": "Spark is a sly, street-smart informant who deals in information as much as in hardware. Always cloaked in a digital visor, he knows the latest buzz and the deepest secrets of the digital realm.",
         "persona": "Call me Spark. I trade in whispers and wires, knowing more about this digital jungle than anyone else.",
-        "location": "",
+        "location": "Tech Marketplace",
         "goal": "To provide Echo with vital information and guidance on where to find the best discarded tech for crafting cyber wings.",
         "inventory": {},
             "properties": {
