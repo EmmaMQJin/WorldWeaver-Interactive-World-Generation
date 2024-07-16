@@ -9,6 +9,7 @@ a puzzle for the player to solve before making progress).
 
 from .base import Thing
 from .items import Item
+from ..blocks.base import Block
 
 
 class Location(Thing):

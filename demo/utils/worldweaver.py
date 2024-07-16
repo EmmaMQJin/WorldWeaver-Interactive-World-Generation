@@ -151,7 +151,7 @@ class ProduceAisleOutBlock(blocks.Block):
         @classmethod
         def from_primitive(cls, data):
             location = data["location"]
-            door = data["chester_the_sample_giver"]
+            door = data["bobby_the_shopper"]
             connection = data["connection"]
             instance = cls(location, door, connection)
             return instance
@@ -166,6 +166,14 @@ class SecurityGuardStationEastBlock(blocks.Block):
 
         def is_blocked(self) -> bool:
             return self.location.here(self.ranger_feline)
+        
+        @classmethod
+        def from_primitive(cls, data):
+            location = data["location"]
+            door = data["ranger_feline"]
+            connection = data["connection"]
+            instance = cls(location, door, connection)
+            return instance
 
 class BakeryAisleWestBlock(blocks.Block):
         def __init__(self, location: things.Location, mrs_crumble: things.Character, connection: str):
@@ -176,6 +184,14 @@ class BakeryAisleWestBlock(blocks.Block):
 
         def is_blocked(self) -> bool:
             return self.location.here(self.mrs_crumble)
+        
+        @classmethod
+        def from_primitive(cls, data):
+            location = data["location"]
+            door = data["mrs_crumble"]
+            connection = data["connection"]
+            instance = cls(location, door, connection)
+            return instance
 
 class CheckoutLaneEastBlock(blocks.Block):
         def __init__(self, location: things.Location, rusty_the_security_guard: things.Character, connection: str):
@@ -186,6 +202,14 @@ class CheckoutLaneEastBlock(blocks.Block):
 
         def is_blocked(self) -> bool:
             return self.location.here(self.rusty_the_security_guard)
+        
+        @classmethod
+        def from_primitive(cls, data):
+            location = data["location"]
+            door = data["rusty_the_security_guard"]
+            connection = data["connection"]
+            instance = cls(location, door, connection)
+            return instance
 
 class CostcoExitSouthBlock(blocks.Block):
         def __init__(self, location: things.Location, shelly_the_shopper: things.Character, connection: str):
@@ -196,6 +220,14 @@ class CostcoExitSouthBlock(blocks.Block):
 
         def is_blocked(self) -> bool:
             return self.location.here(self.shelly_the_shopper)
+        
+        @classmethod
+        def from_primitive(cls, data):
+            location = data["location"]
+            door = data["shelly_the_shopper"]
+            connection = data["connection"]
+            instance = cls(location, door, connection)
+            return instance
 
 
 class WorldWeaver(games.Game):

@@ -51,6 +51,9 @@ class GptParser(parsing.Parser):
             messages = [{"role": "system", "content": system_instructions}]
             context = self.limit_context_length(command_history, self.max_tokens)
             messages.extend(context)
+
+            for m in messages:
+                print(m)
             
             if self.verbose:
                 print(json.dumps(messages, indent=2))
@@ -96,18 +99,23 @@ class GptParser(parsing.Parser):
         """
         system_instructions = "".join(
             [
-                "You are the narrator for a text adventure game. Given commands from the player, you create short, ",
-                "evocative descriptions of the game. You should refer to the player in ",
-                "2nd person, and you should use present tense. If a command ",
-                "doesn't work, tell the player why. "
+                "You are the narrator for a text adventure game. You create short, ",
+                "evocative descriptions of the game.",
+                "After each command from the user, you will see an assistant command."
+                "You should ALWAYS base your description solely on the information of that assistant command.",
+                "You should refer to the player in ",
+                "2nd person, and you should use present tense. ",
+                "If a command doesn't work, tell the player why. "
                 "If the command is 'look', describe the game location in a few sentences, and then list its connections, characters, and items according to the information provided to you, in the following format:",
+                "Description of location (based on what's given to you)\n",
                 "Connections:\n",
                 "East to A\n",
-                "West to B\n\n",
+                "West to B\n",
+                "...\n\n",
                 "NPCs:\n",
-                "Elwin the Dwarf\n\n",
+                "...\n\n",
                 "Objects:\n",
-                "Fishing Pole\n"
+                "...\n"
             ]
         )
         # if self.narration_style:
@@ -157,7 +165,7 @@ class GptParser(parsing.Parser):
         # Create a numbered list of options
         for i, option in enumerate(options_list):
             choices_str += "{i}. {option}\n".format(i=i, option=option)
-
+        print(choices_str)
         # Call the OpenAI API
         response = self.client.chat.completions.create(
             model=self.gpt_model,

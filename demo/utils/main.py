@@ -166,12 +166,9 @@ def main():
         data = json.load(f)
 
     data_obj = WorldWeaver.from_primitive(deepcopy(data), custom_actions=[Enter, Dodge, Find], custom_blocks=[CostcoEntranceEastBlock, ProduceAisleOutBlock, SecurityGuardStationEastBlock, BakeryAisleWestBlock, CheckoutLaneEastBlock, CostcoExitSouthBlock])
-    game = WorldWeaver(data_obj.start_at, data_obj.player)
-    # data_obj = games.Game.from_primitive(deepcopy(data))
-    # game = games.Game(data_obj.start_at, data_obj.player)
-    parser = GptParser(game, verbose=False)
-    game.set_parser(parser)
-    game.game_loop()
+    parser = GptParser(data_obj, verbose=False)
+    data_obj.set_parser(parser)
+    data_obj.game_loop()
 
 if __name__ == "__main__":
     main()

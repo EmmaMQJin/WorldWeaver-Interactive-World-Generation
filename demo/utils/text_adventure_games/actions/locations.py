@@ -57,7 +57,6 @@ class Go(base.Action):
             )
             self.parser.fail(description)
             return False
-
         if self.location.is_blocked(self.direction):
             description = self.location.get_block_description(self.direction)
             if not description:

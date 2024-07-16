@@ -67,15 +67,27 @@ class Game:
         # Parser
         self.custom_actions = custom_actions
         self.custom_blocks = custom_blocks
+        block_map = {}
+        if custom_blocks:
+            for cb in custom_blocks:
+                if inspect.isclass(cb) and issubclass(cb, blocks.Block):
+                    block_map[cb.__name__] = cb
+                else:
+                    err_msg = f"ERROR: invalid custom block ({cb})"
+                    raise Exception(err_msg)
         self.set_parser(parsing.Parser(self))
 
         # Visit each location and add any blocks found to parser
         seen_before = {}
         for name, location in self.locations.items():
             if len(location.blocks) > 0 and name not in seen_before:
-                for b in location.blocks:
+                for k, b in location.blocks.items():
+                    cls_type = block_map[b["_type"]]
+                    # del b["_type"]
+                    instance = cls_type.from_primitive(b)
                     self.parser.add_block(b)
                     seen_before[name] = True
+                    self.locations[name].blocks[k] = instance
 
     def game_loop(self):
         """
@@ -337,7 +349,6 @@ class Game:
 
         # Actions
         action_map = cls.default_actions()
-
         # Validate custom actions
         if custom_actions:
             for ca in custom_actions:
@@ -373,38 +384,43 @@ class Game:
 
         # Instantiate all blocks for all locations
         # CCB - temporarially removing this.
-        # for l in context.locations.values():
-        #     for direction, block_data in l.blocks.items():
-        #         # it is possible for two locations to have the same block, so
-        #         # skip any that have already been instantiated
-        #         if isinstance(block_data, blocks.Block):
-        #             continue
-        #         cls_type = block_map[block_data["_type"]]
-        #         del block_data["_type"]
-        #         # we will copy the properties of relevant items before we
-        #         # install the block, so we can restore them after
-        #         prop_map = {}
-        #         # replace thing names in primitive with thing instances
-        #         for param_name, param in block_data.items():
-        #             if param in context.items:
-        #                 param_instance = context.items[param]
-        #             elif param in context.locations:
-        #                 param_instance = context.locations[param]
-        #             block_data[param_name] = param_instance
-        #             prop_map[param_name] = param_instance.properties.copy()
-        #         instance = cls_type.from_primitive(block_data)
-        #         # restore properties found in primitive data
-        #         for param_name, param in block_data.items():
-        #             param.properties = prop_map[param_name]
+        blocks_instances = []
+        for l in context.locations.values():
+            for direction, block_data in l.blocks.items():
+                # it is possible for two locations to have the same block, so
+                # skip any that have already been instantiated
+                if isinstance(block_data, blocks.Block):
+                    continue
+                cls_type = block_map[block_data["_type"]]
+                # del block_data["_type"]
+                # we will copy the properties of relevant items before we
+                # install the block, so we can restore them after
+                prop_map = {}
+                # replace thing names in primitive with thing instances
+                for param_name, param in block_data.items():
+                    if param_name != "_type":
+                        if param in context.items:
+                            param_instance = context.items[param]
+                        elif param in context.locations:
+                            param_instance = context.locations[param]
+                        elif param in context.characters:
+                            param_instance = context.characters[param]
+                        block_data[param_name] = param_instance
+                        prop_map[param_name] = param_instance.properties.copy()
+                instance = cls_type.from_primitive(block_data)
+                blocks_instances.append(instance)
+                # restore properties found in primitive data
+                for param_name, param in block_data.items():
+                    if param_name != "_type":
+                        param.properties = prop_map[param_name]
+                
 
         start_at = context.locations[data["start_at"]]
         player = context.characters[data["player"]]
-
-        instance = cls(start_at, player, custom_actions=action_map.values())
+        instance = cls(start_at, player, custom_actions=action_map.values(), custom_blocks=custom_blocks)
         instance.game_history = data["game_history"]
         instance.game_over = data["game_over"]
         instance.game_over_description = data["game_over_description"]
-
         return instance
 
     def to_json(self):
