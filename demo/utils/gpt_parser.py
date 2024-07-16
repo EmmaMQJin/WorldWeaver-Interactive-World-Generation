@@ -52,8 +52,8 @@ class GptParser(parsing.Parser):
             context = self.limit_context_length(command_history, self.max_tokens)
             messages.extend(context)
 
-            for m in messages:
-                print(m)
+            # for m in messages:
+            #     print(m)
             
             if self.verbose:
                 print(json.dumps(messages, indent=2))
@@ -101,11 +101,11 @@ class GptParser(parsing.Parser):
             [
                 "You are the narrator for a text adventure game. You create short, ",
                 "evocative descriptions of the game.",
-                "After each command from the user, you will see an assistant command."
-                "You should ALWAYS base your description solely on the information of that assistant command.",
-                "You should refer to the player in ",
-                "2nd person, and you should use present tense. ",
-                "If a command doesn't work, tell the player why. "
+                "The player of this game is {player}. ".format(player=self.game.player),
+                "After each command from the player, you will see another message"
+                "You should ALWAYS base your description solely on the information of that message.",
+                "You should refer to the player in 2nd person, and you should use present tense. ",
+                "If a command doesn't work, tell the player why based on the message before. "
                 "If the command is 'look', describe the game location in a few sentences, and then list its connections, characters, and items according to the information provided to you, in the following format:",
                 "Description of location (based on what's given to you)\n",
                 "Connections:\n",
@@ -165,7 +165,10 @@ class GptParser(parsing.Parser):
         # Create a numbered list of options
         for i, option in enumerate(options_list):
             choices_str += "{i}. {option}\n".format(i=i, option=option)
-        print(choices_str)
+        # print("------")
+        # print(instructions)
+        # print(choices_str)
+        # print("------")
         # Call the OpenAI API
         response = self.client.chat.completions.create(
             model=self.gpt_model,
@@ -176,7 +179,7 @@ class GptParser(parsing.Parser):
                         instructions=instructions, choices_str=choices_str
                     ),
                 },
-                {"role": "user", "content": input_str},
+                {"role": "user", "content": "PLAYER COMMAND: " + input_str},
             ],
             temperature=1,
             max_tokens=256,
@@ -185,6 +188,7 @@ class GptParser(parsing.Parser):
             presence_penalty=0,
         )
         content = response.choices[0].message.content
+        # print("PPP: ", content)
 
         if self.verbose:
             v = "{instructions}\n\n{choices_str}\nReturn just the number.\n---\n> {input_str}"
@@ -261,15 +265,16 @@ class GptParser(parsing.Parser):
 
         instructions = "".join(
             [
-                "You are the command parser for a text adventure game. Given an input command from the player, ",
-                "match the character in the command according to the following list (if no character is mentioned in the ",
-                "command, then default to '{player}').".format(
-                    player=self.game.player.name
-                ),
+                "You are the command parser in charge of matching characters in the commands for a text adventure game. ",
+                "Given an input command from the player, {command}, ".format(command=command),
+                "match the character in the command that is most likely to be involved in the action from the list of options below. ",
+                "PAY ATTENTION TO whether the character you are looking for is the one acting or the one being acted upon from the HINT. ",
+                "For example, if the play says 'hit A', then the attacker is the player, and A is the victim. "
+                
             ]
         )
         if hint:
-            instructions += f"\nHint: the character you are looking for is the {hint}. "
+            instructions += f"\nIMPORTANT HINT: the character you are looking for is the {hint}. "
         instructions += "\n\nThe possible characters are:"
 
         return self.gpt_pick_an_option(instructions, character_descriptions, command)
@@ -312,6 +317,7 @@ class GptParser(parsing.Parser):
                 )
 
             item_descriptions[description] = item
+        # print("DESC: ", item_descriptions)
         return self.gpt_pick_an_option(instructions, item_descriptions, command)
 
     def get_direction(self, command: str, location: Location = None) -> str:

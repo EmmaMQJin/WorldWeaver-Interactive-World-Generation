@@ -128,7 +128,14 @@ class CostcoEntranceEastBlock(blocks.Block):
             self.connection = connection  # This parameter reflects the destination name
 
         def is_blocked(self) -> bool:
-            return self.location.here(self.chester_the_sample_giver)
+            if self.chester_the_sample_giver:
+                if not self.location.here(self.chester_the_sample_giver):
+                    return False
+                if self.chester_the_sample_giver.get_property("is_dead"):
+                    return False
+                if self.chester_the_sample_giver.get_property("is_unconscious"):
+                    return False
+            return False
         
         @classmethod
         def from_primitive(cls, data):

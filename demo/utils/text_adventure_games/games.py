@@ -307,7 +307,6 @@ class Game:
         locations = {l["name"]: Location.from_primitive(l) for l in data["locations"]}
         items = {}
         context = SkeletonContext(characters, locations, items)
-
         # SECOND PASS
 
         # Characters
@@ -417,7 +416,7 @@ class Game:
 
         start_at = context.locations[data["start_at"]]
         player = context.characters[data["player"]]
-        instance = cls(start_at, player, custom_actions=action_map.values(), custom_blocks=custom_blocks)
+        instance = cls(start_at, player, characters=context.characters.values(), custom_actions=action_map.values(), custom_blocks=custom_blocks)
         instance.game_history = data["game_history"]
         instance.game_over = data["game_over"]
         instance.game_over_description = data["game_over_description"]

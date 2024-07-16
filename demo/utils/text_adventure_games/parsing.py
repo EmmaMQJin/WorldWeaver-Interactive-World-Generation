@@ -105,6 +105,7 @@ class Parser:
         we will use AI to do more flexible matching.
         """
         # check which character is acting (defaults to the player)
+        print("HIHIHIHI")
         character = self.get_character(command)
         command = command.lower()
         if "," in command:
@@ -181,6 +182,7 @@ class Parser:
         This method tries to match a character's name in the command.
         If no names are matched, it returns the default value.
         """
+        print("HIHIHI")
         command = command.lower()
         if split_words:
             for word in split_words:
