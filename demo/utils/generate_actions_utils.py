@@ -503,7 +503,7 @@ class Eat(actions.Action):
             description = "That's not edible."
             self.parser.fail(description)
             return False
-        elif not self.character.is_in_inventory(self.item):
+        elif not self.is_in_inventory(self.character, self.item):
             description = "You don't have it."
             self.parser.fail(description)
             return False
@@ -573,6 +573,9 @@ class Unlock(actions.Action):
         self.item = self.parser.match_item(
             command, self.parser.get_items_in_scope(self.character)
         )
+        self.key = self.parser.match_item(
+            "key", self.parser.get_items_in_scope(self.character), hint="key"
+        )
 
     def check_preconditions(self) -> bool:
         
@@ -592,9 +595,7 @@ class Unlock(actions.Action):
             description = "It's already unlocked."
             self.parser.fail(description)
             return False
-        if not self.character.has_key():
-            description = "You don't have a key."
-            self.parser.fail(description)
+        if not self.was_matched(self.key, "There's no key here."):
             return False
         return True
 
