@@ -166,8 +166,7 @@ def main():
 
     with open('data/test_generations/game.json') as f:
         data = json.load(f)
-
-    data_obj = WorldWeaver.from_primitive(deepcopy(data), custom_actions=[Enter, Dodge, Find], custom_blocks=[CostcoEntranceEastBlock, ProduceAisleOutBlock, SecurityGuardStationEastBlock, BakeryAisleWestBlock, CheckoutLaneEastBlock, CostcoExitSouthBlock])
+    data_obj = WorldWeaver.from_primitive(deepcopy(data), custom_actions=WorldWeaver.custom_actions, custom_blocks=WorldWeaver.custom_blocks)
     parser = GptParser(data_obj, verbose=False)
     data_obj.set_parser(parser)
     data_obj.game_loop()

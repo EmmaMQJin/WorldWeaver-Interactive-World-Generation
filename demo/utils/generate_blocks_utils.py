@@ -141,22 +141,29 @@ def generate_blocks(background_story, action_list, all_locations_path, directory
     Example output:
     ('Costco Parking Lot', 'west', 'Territory of the Seagulls', 
     '''
-    class CostcoParkingLotWestBlock(blocks.Block):
-        def _init_(self, location: things.Location, whiskers_the_stray_cat: things.Character, connection: str):
-            super()._init_('Whiskers the Stray Cat is blocking the way', 'You need to distract Whiskers the Stray Cat to proceed to the Territory of the Seagulls.')
-            self.whiskers_the_stray_cat = whiskers_the_stray_cat
+    class CostcoEntranceEastBlock(blocks.Block):
+        def __init__(self, location: things.Location, chester_the_sample_giver: things.Character, connection: str):
+            super().__init__('Chester the Sample Giver is blocking the way', 'You need to distract Chester the Sample Giver to proceed to the Bakery Aisle.')
+            self.chester_the_sample_giver = chester_the_sample_giver
             self.location = location
             self.connection = connection  # This parameter reflects the destination name
 
         def is_blocked(self) -> bool:
-            return self.location.here(self.whiskers_the_stray_cat)
+            if self.chester_the_sample_giver:
+                if not self.location.here(self.chester_the_sample_giver):
+                    return False
+                if self.chester_the_sample_giver.get_property("is_dead"):
+                    return False
+                if self.chester_the_sample_giver.get_property("is_unconscious"):
+                    return False
+            return False
         
         @classmethod
         def from_primitive(cls, data):
             location = data["location"]
-            block = data["whiskers_the_stray_cat"]
+            door = data["chester_the_sample_giver"]
             connection = data["connection"]
-            instance = cls(location, block, connection)
+            instance = cls(location, door, connection)
             return instance
     '''),
     """

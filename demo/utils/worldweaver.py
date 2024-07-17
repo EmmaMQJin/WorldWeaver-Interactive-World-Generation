@@ -238,13 +238,15 @@ class CostcoExitSouthBlock(blocks.Block):
 
 
 class WorldWeaver(games.Game):
+    custom_actions = [Enter, Dodge, Find]
+    custom_blocks=[CostcoEntranceEastBlock, ProduceAisleOutBlock, SecurityGuardStationEastBlock, BakeryAisleWestBlock, CheckoutLaneEastBlock, CostcoExitSouthBlock]
     def __init__(
         self,
         start_at: things.Location,
         player: things.Character,
         characters=None,
-        custom_actions=[Enter, Dodge, Find],
-        custom_blocks=[CostcoEntranceEastBlock, ProduceAisleOutBlock, SecurityGuardStationEastBlock, BakeryAisleWestBlock, CheckoutLaneEastBlock, CostcoExitSouthBlock]
+        custom_actions=custom_actions,
+        custom_blocks=custom_blocks
     ):
         super().__init__(start_at, player, characters, custom_actions, custom_blocks)
 

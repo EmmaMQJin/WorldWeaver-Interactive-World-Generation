@@ -282,6 +282,82 @@ def generate_action_class(action_list):
             block = self.blocks[direction]
             return block.description
 
+   __init__(self, game)
+    Initializes the action with the game instance.
+
+    def check_preconditions(self) -> bool
+        Called before apply_effects to ensure the state for applying the action is valid.
+
+    def apply_effects(self)
+        This method applies the action and changes the state of the game.
+
+    def __call__(self)
+        Executes the action by first checking preconditions and then applying effects.
+
+    def action_name(cls)
+        This method plays a crucial role in how command strings are routed to actual action names. This method provides the key used in the game's dict of actions.
+
+    def at(self, thing: Thing, location: Location, describe_error: bool = True) -> bool
+        Checks if the thing is at the location.
+
+    def has_connection(self, location: Location, direction: str, describe_error: bool = True) -> bool
+        Checks if the location has an exit in this direction.
+
+    def is_blocked(self, location: Location, direction: str, describe_error: bool = True) -> bool
+        Checks if the location is blocked in this direction.
+
+    def property_equals(self, thing: Thing, property_name: str, property_value: str, error_message: str = None, display_message_upon: bool = False, describe_error: bool = True) -> bool
+        Checks whether the thing has the specified property.
+
+    def has_property(self, thing: Thing, property_name: str, error_message: str = None, display_message_upon: bool = False, describe_error: bool = True) -> bool
+        Checks whether the thing has the specified property.
+
+    def loc_has_item(self, location: Location, item: Item, describe_error: bool = True) -> bool
+        Checks to see if the location has the item. Similar functionality to at, but checks for items that have multiple locations like doors.
+
+    def is_in_inventory(self, character: Character, item: Item, describe_error: bool = True) -> bool
+        Checks if the character has this item in their inventory.
+
+    def was_matched(self, thing: Thing, error_message: str = None, describe_error: bool = True) -> bool
+        Checks to see if the thing was matched by the parser.
+    def __init__(self, game)
+        Initializes the action with the game instance.
+
+    def check_preconditions(self) -> bool
+        Called before apply_effects to ensure the state for applying the action is valid.
+
+    def apply_effects(self)
+        This method applies the action and changes the state of the game.
+
+    def __call__(self)
+        Executes the action by first checking preconditions and then applying effects.
+
+    def action_name(cls)
+        This method plays a crucial role in how command strings are routed to actual action names. This method provides the key used in the game's dict of actions.
+
+    def at(self, thing: Thing, location: Location, describe_error: bool = True) -> bool
+        Checks if the thing is at the location.
+
+    def has_connection(self, location: Location, direction: str, describe_error: bool = True) -> bool
+        Checks if the location has an exit in this direction.
+
+    def is_blocked(self, location: Location, direction: str, describe_error: bool = True) -> bool
+        Checks if the location is blocked in this direction.
+
+    def property_equals(self, thing: Thing, property_name: str, property_value: str, error_message: str = None, display_message_upon: bool = False, describe_error: bool = True) -> bool
+        Checks whether the thing has the specified property.
+
+    def has_property(self, thing: Thing, property_name: str, error_message: str = None, display_message_upon: bool = False, describe_error: bool = True) -> bool
+        Checks whether the thing has the specified property.
+
+    def loc_has_item(self, location: Location, item: Item, describe_error: bool = True) -> bool
+        Checks to see if the location has the item. Similar functionality to at, but checks for items that have multiple locations like doors.
+
+    def is_in_inventory(self, character: Character, item: Item, describe_error: bool = True) -> bool
+        Checks if the character has this item in their inventory.
+
+    def was_matched(self, thing: Thing, error_message: str = None, describe_error: bool = True) -> bool
+        Checks to see if the thing was matched by the parser.
 
     """
     user_example_prompt_one = "cook"
