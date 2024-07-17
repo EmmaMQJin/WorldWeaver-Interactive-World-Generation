@@ -36,22 +36,8 @@
                         "is_food": false,
                         "is_gettable": true,
                         "is_surface": false,
-                        "is_weapon": false,
+                        "is_weapon": true,
                         "is_wearable": true
-                    }
-                },
-                "Perceptive Eyes": {
-                    "name": "Perceptive Eyes",
-                    "description": "Pippin's clear, bright, perceptive eyes",
-                    "examine_text": "Pippin's eyes, aside from adding to his charm, act as his primary survival tool. Quick to spot opportunities, threats, and map out escape routes amidst chaos.",
-                    "properties": {
-                        "is_container": false,
-                        "is_drink": false,
-                        "is_food": false,
-                        "is_gettable": false,
-                        "is_surface": false,
-                        "is_weapon": false,
-                        "is_wearable": false
                     }
                 },
                 "Sharp Claws": {
