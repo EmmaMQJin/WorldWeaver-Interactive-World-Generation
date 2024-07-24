@@ -1,29 +1,38 @@
 from openai import OpenAI
 import os
-import json
 from utils.json_utils import *
+
+###########################################################################################
+background_story = "In the eccentric city of Cheddarville, where cheese is the main currency, the Grand Cheese Wheel has rolled away, causing an economic meltdown. The town’s most lactose-intolerant resident must navigate a world of cheese to bring it back and restore balance."
+initial_state = "The Grand Cheese Wheel has rolled away, causing an economic meltdown in Cheddarville, and the town's most lactose-intolerant resident is reluctantly tasked with retrieving it."
+winning_state = "The player successfully returns the Grand Cheese Wheel to Cheddarville's town square, restoring economic stability and earning the town's gratitude."
+###########################################################################################
 
 system_prompt = """You are a helpful text adventure game generator. Given the background story, starting state, and winning state of the game, you should generate a game JSON in the following example format:
 {
-    "player": "",
-    "start_at": "Example Location",
+    "player": "Example Character 1",
+    "start_at": "Example Location 1",
     "game_history": [],
     "game_over": false,
     "game_over_description": null,
     "characters": [
         {
-            "name": "Example Character",
+            "name": "Example Character 1",
             "description": "",
             "persona": "",
             "location": "",
             "goal": "",
             "inventory": {...}
         },
-        ...
+        {
+            "name": ....
+            ....
+        },
+        ....
     ],
     "locations": [
         {
-            "name": "Example Location",
+            "name": "Example Location 1",
             "description": "",
             "background": "",
             "commands": [],
@@ -57,7 +66,7 @@ system_prompt = """You are a helpful text adventure game generator. Given the ba
             },
             "characters": {
                 "Example Character": {
-                    "name": "Example Character",
+                    "name": "Example Character 2",
                     "description": "",
                     "persona": "",
                     "location": "",
@@ -89,28 +98,34 @@ system_prompt = """You are a helpful text adventure game generator. Given the ba
     ],
     "actions": []
 }
-The ... means you should expand with more items.
-Be sure to populate all empty string fields. Each location should have NPC characters and items in it.
-Each character should have objects in their inventory.
-The player needs to be an existing character.
-Generate at least 5 locations and 5 characters."""
+The ... means you should expand with more actual items.
 
-user_prompt = """background story: the player is a talking cat
-starting state: player in kitchen
-winning state: player at the top of a mountain"""
+IMPORTANT RULES TO ABIDE BY:
+- Be sure to populate all empty string fields
+- DO NOT put any comments
+- Generate 5 to 8 locations
+- The player should be the first character in the "characters":[...] list
+- Generate at least one character (NPC) in each location
+- Generate at least 3 Inventory Items for each character
+- Generate at least 3 Location Items in each location
+
+Make sure you are GENERATING ENOUGH OF EVERYTHING
+
+"""
+
+user_prompt = "Background Story:" + background_story + "\nInitial State:" + initial_state + "\nWinning State:" + winning_state
 
 client = OpenAI(base_url="https://oai.hconeai.com/v1", api_key=os.environ['HELICONE_API_KEY'])
 messages = [{"role": "system", "content": system_prompt}]
 messages += [{"role": "user", "content": user_prompt}]
-completion = client.chat.completions.create(
-    model="gpt-4",
-    messages=messages
-)
-model_output = completion.choices[0].message.content
-with open("data/test_generations/baseline.txt", 'w') as file:
-    file.write(model_output)
-try:
-    model_output_dict = json.loads(model_output)
-except Exception as e:
-    print("JSON syntax error: ", e)
-dict_to_json_file(model_output_dict, "data/test_generations/baseline.json")
+for _ in range(7):
+    completion = client.chat.completions.create(
+        model="gpt-4",
+        messages=messages
+    )
+    model_output = completion.choices[0].message.content
+    messages += [{"role": "assistant", "content": model_output}]
+    messages += [{"role": "user", "content": "generate more locations and NPCs as well as thier items"}]
+
+    with open("data/test_generations/baseline.txt", 'a') as file:
+        file.write(model_output)
